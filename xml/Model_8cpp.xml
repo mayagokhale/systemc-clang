@@ -1,0 +1,729 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Model_8cpp" kind="file" language="C++">
+    <compoundname>Model.cpp</compoundname>
+    <includes refid="Model_8h" local="yes">Model.h</includes>
+    <includes local="no">string</includes>
+    <incdepgraph>
+      <node id="49">
+        <label>InterfaceDecl.h</label>
+        <link refid="InterfaceDecl_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>clang/AST/Decl.h</label>
+      </node>
+      <node id="48">
+        <label>queue</label>
+      </node>
+      <node id="31">
+        <label>clang/Basic/SourceManager.h</label>
+      </node>
+      <node id="26">
+        <label>clang/Analysis/CFG.h</label>
+      </node>
+      <node id="9">
+        <label>llvm/Support/raw_ostream.h</label>
+      </node>
+      <node id="25">
+        <label>clang/AST/ParentMap.h</label>
+      </node>
+      <node id="27">
+        <label>clang/Analysis/CFGStmtMap.h</label>
+      </node>
+      <node id="20">
+        <label>clang/AST/PrettyPrinter.h</label>
+      </node>
+      <node id="8">
+        <label>clang/AST/RecursiveASTVisitor.h</label>
+      </node>
+      <node id="56">
+        <label>InstanceMatcher.h</label>
+        <link refid="InstanceMatcher_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>FindSimTime.h</label>
+        <link refid="FindSimTime_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>map</label>
+      </node>
+      <node id="37">
+        <label>json.hpp</label>
+      </node>
+      <node id="1">
+        <label>src/model/Model.cpp</label>
+        <link refid="Model_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>FindEntryFunctions.h</label>
+        <link refid="FindEntryFunctions_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>FindTemplateTypes.h</label>
+        <link refid="FindTemplateTypes_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>PortMatcher.h</label>
+        <link refid="PortMatcher_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>WaitContainer.h</label>
+        <link refid="WaitContainer_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>NotifyContainer.h</label>
+        <link refid="NotifyContainer_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>EventContainer.h</label>
+        <link refid="EventContainer_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>clang/ASTMatchers/ASTMatchers.h</label>
+      </node>
+      <node id="2">
+        <label>Model.h</label>
+        <link refid="Model_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>clang/AST/Expr.h</label>
+      </node>
+      <node id="23">
+        <label>Automata.h</label>
+        <link refid="Automata_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>FindNetlist.h</label>
+        <link refid="FindNetlist_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>clang/AST/Type.h</label>
+      </node>
+      <node id="52">
+        <label>ProcessDecl.h</label>
+        <link refid="ProcessDecl_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>systemc-clang.h</label>
+        <link refid="systemc-clang_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>Matchers.h</label>
+        <link refid="Matchers_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>Tree.h</label>
+        <link refid="Tree_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>stack</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+      <node id="51">
+        <label>PortDecl.h</label>
+        <link refid="PortDecl_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>sstream</label>
+      </node>
+      <node id="41">
+        <label>ModuleInstance.h</label>
+        <link refid="ModuleInstance_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>SuspensionAutomata.h</label>
+        <link refid="SuspensionAutomata_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>FindNotify.h</label>
+        <link refid="FindNotify_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>clang/AST/ExprCXX.h</label>
+      </node>
+      <node id="50">
+        <label>PortBinding.h</label>
+        <link refid="PortBinding_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>SCuitable/FindGPUMacro.h</label>
+        <link refid="FindGPUMacro_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>deque</label>
+      </node>
+      <node id="18">
+        <label>FindWait.h</label>
+        <link refid="FindWait_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>FindConstructor.h</label>
+        <link refid="FindConstructor_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>llvm/Support/Debug.h</label>
+      </node>
+      <node id="30">
+        <label>Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>ModuleInstanceType.h</label>
+        <link refid="ModuleInstanceType_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>SensitivityMatcher.h</label>
+        <link refid="SensitivityMatcher_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>EntryFunctionContainer.h</label>
+        <link refid="EntryFunctionContainer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>clang/AST/DeclCXX.h</label>
+      </node>
+      <node id="34">
+        <label>FindGlobalEvents.h</label>
+        <link refid="FindGlobalEvents_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>enums.h</label>
+        <link refid="enums_8h"/>
+      </node>
+      <node id="53">
+        <label>SignalDecl.h</label>
+        <link refid="SignalDecl_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>clang/ASTMatchers/ASTMatchFinder.h</label>
+      </node>
+      <node id="59">
+        <label>set</label>
+      </node>
+      <node id="44">
+        <label>FindTLMInterfaces.h</label>
+        <link refid="FindTLMInterfaces_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>stdio.h</label>
+      </node>
+      <node id="15">
+        <label>ArrayTypeUtils.h</label>
+        <link refid="ArrayTypeUtils_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Model_8h" kindref="compound">Model.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesystemc__clang" kindref="compound">systemc_clang</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="classsystemc__clang_1_1Model_1ae3b375de5f6df4faf74a95d64748e048" kindref="member">Model::Model</ref>()<sp/>:<sp/>root_module_inst_{nullptr}<sp/>{}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Model::populateNestedModules()<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/>llvm::outs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;=====<sp/>TEST<sp/>to<sp/>see<sp/>who<sp/>has<sp/>parents<sp/>====<sp/>\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref><sp/>*inst<sp/>:<sp/><ref refid="classsystemc__clang_1_1Model_1af69296c842ac8745cc924453f70a98ad" kindref="member">module_instances_</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType" kindref="compound">ModuleInstanceType</ref><sp/>instance_info{inst-&gt;getInstanceInfo()};</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>instance_info.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a442d565b3145ed94b42106a8be15a906" kindref="member">dump</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>llvm::outs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ModuleInstance&apos;s<sp/>instance<sp/>delc:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>inst-&gt;getInstanceDecl()</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>inst-&gt;getName()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref><sp/>*parent{<ref refid="classsystemc__clang_1_1Model_1aaa520d4751e3356adf95d22da04efb3b" kindref="member">getInstance</ref>(instance_info.getParentDecl())};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((parent<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>&amp;&amp;<sp/>(parent<sp/>!=<sp/>inst))<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>parent-&gt;<ref refid="classsystemc__clang_1_1ModuleInstance_1a17a42d855d884812c66b3041c7ef6487" kindref="member">addNestedModule</ref>(inst);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>llvm::outs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Add<sp/>child<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>inst-&gt;getName()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>into<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>parent-&gt;getName()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>llvm::outs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Root<sp/>ModuleInstance:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>inst-&gt;getName()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classsystemc__clang_1_1Model_1a2350c5ffc4550cb37502891c31e4c9d1" kindref="member">root_module_inst_</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>llvm::errs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Multiple<sp/>root<sp/>module<sp/>instances<sp/>are<sp/>not<sp/>allowed\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1Model_1a2350c5ffc4550cb37502891c31e4c9d1" kindref="member">root_module_inst_</ref><sp/>=<sp/>inst;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref><sp/>*<ref refid="classsystemc__clang_1_1Model_1a04cfa4254df094161b4f8672d6fbac90" kindref="member">Model::getRootModuleInstance</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1Model_1a2350c5ffc4550cb37502891c31e4c9d1" kindref="member">root_module_inst_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><ref refid="classsystemc__clang_1_1Model_1ad6ebd2062a0b823db841a0b88baac4c0" kindref="member">Model::~Model</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;~Model\n&quot;</highlight><highlight class="normal">;);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;inst<sp/>:<sp/><ref refid="classsystemc__clang_1_1Model_1af69296c842ac8745cc924453f70a98ad" kindref="member">module_instances_</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>auto<sp/>incomplete_decl{inst.first};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>auto<sp/>instance_list{inst.second};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Delete<sp/>instances<sp/>for<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>inst-&gt;getName(););</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>(ModuleInstance<sp/>*inst_in_list<sp/>:<sp/>instance_list)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>a<sp/>ModuleInstance*</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;-<sp/>delete<sp/>instance:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>inst-&gt;getInstanceName()</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>pointer:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>inst<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>IMPORTANT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>design<sp/>creates<sp/>an<sp/>incomplete<sp/>ModuleInstance<sp/>in<sp/>Matchers.<sp/>The</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ports<sp/>are<sp/>populated<sp/>there.<sp/><sp/>Then,<sp/>for<sp/>each<sp/>instance<sp/>that<sp/>is<sp/>recognized,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>a<sp/>new<sp/>ModuleInstance<sp/>is<sp/>created,<sp/>and<sp/>information<sp/>from<sp/>the<sp/>incomplete</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ModuleInstance<sp/>is<sp/>copied<sp/>into<sp/>the<sp/>new<sp/>instance-specific<sp/>ModuleInstance.<sp/>When</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>deleting<sp/>an<sp/>instance<sp/>of<sp/>ModuleInstance,<sp/>we<sp/>have<sp/>to<sp/>be<sp/>careful.<sp/><sp/>This<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>because<sp/>we<sp/>do<sp/>not<sp/>want<sp/>to<sp/>delete<sp/>the<sp/>instance-specific<sp/>ModuleInstance,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>which<sp/>has<sp/>structures<sp/>with<sp/>pointers<sp/>in<sp/>it<sp/>(PortDecl),<sp/>and<sp/>then<sp/>delete</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>incomplete<sp/>ModuleInstance<sp/>because<sp/>the<sp/>latter<sp/>will<sp/>cause<sp/>a<sp/>double<sp/>free</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>memory<sp/>error.<sp/><sp/>This<sp/>is<sp/>because<sp/>the<sp/>deletion<sp/>of<sp/>the<sp/>instance-specific</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ModuleInstance<sp/>will<sp/>free<sp/>the<sp/>objects<sp/>identified<sp/>in<sp/>the<sp/>incomplete</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ModuleInstance.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>current<sp/>solution<sp/>is<sp/>to<sp/>clear<sp/>the<sp/>information<sp/>for<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>instance-specific<sp/>ModuleInstance<sp/>before<sp/>deleting<sp/>it.<sp/><sp/>Then,<sp/>the<sp/>deletion<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>incomplete<sp/>ModuleInstance<sp/>will<sp/>free<sp/>the<sp/>other<sp/>objects<sp/>such<sp/>as<sp/>PortDecl.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>clearOnlyGlobal<sp/>does<sp/>exactly<sp/>this.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>ENHANCEMENT:<sp/>This<sp/>is<sp/>one<sp/>major<sp/>refactoring<sp/>that<sp/>should<sp/>be<sp/>done<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>some<sp/>point.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>inst-&gt;clearOnlyGlobal();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>inst;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>deleted<sp/>in<sp/>the<sp/>vector.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1Model_1a2350c5ffc4550cb37502891c31e4c9d1" kindref="member">root_module_inst_</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Done<sp/>with<sp/>delete\n&quot;</highlight><highlight class="normal">;);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Model::Model(const<sp/>Model<sp/>&amp;from)<sp/>{<sp/>modules_<sp/>=<sp/>from.modules_;<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1Model_1aba1517e147f013fe0d98e6f30c86dbeb" kindref="member">Model::addInstance</ref>(<ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref><sp/>*mod)<sp/>{<sp/><ref refid="classsystemc__clang_1_1Model_1af69296c842ac8745cc924453f70a98ad" kindref="member">module_instances_</ref>.push_back(mod);<sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1Model_1a74a2ff371b953881310a41432331b3d9" kindref="member">Model::addSimulationTime</ref>(<ref refid="classsystemc__clang_1_1FindSimTime_1a825b0d05702c9257ea2e4b7abf29b1a6" kindref="member">FindSimTime::simulationTimeMapType</ref><sp/>simTime)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1Model_1aba295d5c65270b693dcac7320e6815a5" kindref="member">simulation_time_</ref><sp/>=<sp/>simTime;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1Model_1ac773c1205e29c552d9b1a5b2df435a4c" kindref="member">Model::addEntryFunctionGPUMacroMap</ref>(entryFunctionGPUMacroMapType<sp/>e)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1Model_1a5900aec67e9e1839581eefdec2542d7e" kindref="member">entry_function_gpu_macro_map_</ref><sp/>=<sp/>e;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>llvm::errs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>\n<sp/>Size<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classsystemc__clang_1_1Model_1a5900aec67e9e1839581eefdec2542d7e" kindref="member">entry_function_gpu_macro_map_</ref>.size()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>e.size();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1Model_1a616e60f9b7a63145f646c6a96fe11e87" kindref="member">Model::addGlobalEvents</ref>(<ref refid="classsystemc__clang_1_1FindGlobalEvents_1a07d8ada4c3bf82ddeaf241c30cdd257a" kindref="member">FindGlobalEvents::globalEventMapType</ref><sp/>eventMap)<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(FindGlobalEvents::globalEventMapType::iterator<sp/>it<sp/>=<sp/>eventMap.begin();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it<sp/>!=<sp/>eventMap.end();<sp/>it++)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>eventName<sp/>=<sp/>it-&gt;first;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1EventContainer" kindref="compound">EventContainer</ref><sp/>*</highlight><highlight class="keyword">event</highlight><highlight class="normal">{</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1EventContainer" kindref="compound">EventContainer</ref>(eventName,<sp/>it-&gt;second)};</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1Model_1ac60e8933f8817916d083544aa2a567e3" kindref="member">event_map_</ref>.insert(<ref refid="classsystemc__clang_1_1Model_1aac5d70784acba705b517bffe69a1438d" kindref="member">eventPairType</ref>(eventName,<sp/>event));</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1Model_1a7c60331399e34281366679b7bfb484c6" kindref="member">Model::addSCMain</ref>(FunctionDecl<sp/>*fnDecl)<sp/>{<sp/><ref refid="classsystemc__clang_1_1Model_1a472229d8f8fe429335a85d95e61a4c46" kindref="member">scmain_function_decl_</ref><sp/>=<sp/>fnDecl;<sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref><sp/>*<ref refid="classsystemc__clang_1_1Model_1aaa520d4751e3356adf95d22da04efb3b" kindref="member">Model::getInstance</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;instance_name)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>llvm::outs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;getInstance\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>llvm::outs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;-<sp/>Looking<sp/>for<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>instance_name<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>test_module_it<sp/>=<sp/>std::find_if(</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1Model_1af69296c842ac8745cc924453f70a98ad" kindref="member">module_instances_</ref>.begin(),<sp/><ref refid="classsystemc__clang_1_1Model_1af69296c842ac8745cc924453f70a98ad" kindref="member">module_instances_</ref>.end(),</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>[instance_name](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;instance)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>llvm::outs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;-<sp/>instance<sp/>name:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>instance-&gt;getInstanceName()</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>(instance-&gt;getInstanceName()<sp/>==<sp/>instance_name);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(test_module_it<sp/>!=<sp/><ref refid="classsystemc__clang_1_1Model_1af69296c842ac8745cc924453f70a98ad" kindref="member">module_instances_</ref>.end())<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*test_module_it;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Must<sp/>provide<sp/>the<sp/>Instance<sp/>decl.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref><sp/>*<ref refid="classsystemc__clang_1_1Model_1aaa520d4751e3356adf95d22da04efb3b" kindref="member">Model::getInstance</ref>(Decl<sp/>*instance_decl)<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>llvm::outs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;getInstance<sp/>Decl<sp/>to<sp/>find<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>instance_decl<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>test_module_it<sp/>=</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::find_if(<ref refid="classsystemc__clang_1_1Model_1af69296c842ac8745cc924453f70a98ad" kindref="member">module_instances_</ref>.begin(),<sp/><ref refid="classsystemc__clang_1_1Model_1af69296c842ac8745cc924453f70a98ad" kindref="member">module_instances_</ref>.end(),</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[instance_decl](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;instance)<sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>(instance-&gt;getInstanceDecl()<sp/>==<sp/>instance_decl);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(test_module_it<sp/>!=<sp/><ref refid="classsystemc__clang_1_1Model_1af69296c842ac8745cc924453f70a98ad" kindref="member">module_instances_</ref>.end())<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>llvm::outs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Found\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*test_module_it;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><ref refid="classsystemc__clang_1_1Model_1a9ce62bbafa3ec966ba8de8c98a238bb2" kindref="member">Model::entryFunctionGPUMacroMapType</ref><sp/><ref refid="classsystemc__clang_1_1Model_1aa0c07dfe1669cce2d0da6869fc2eef88" kindref="member">Model::getEntryFunctionGPUMacroMap</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>llvm::errs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n<sp/>return<sp/>Size<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classsystemc__clang_1_1Model_1a5900aec67e9e1839581eefdec2542d7e" kindref="member">entry_function_gpu_macro_map_</ref>.size();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1Model_1a5900aec67e9e1839581eefdec2542d7e" kindref="member">entry_function_gpu_macro_map_</ref>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">std::vector&lt;ModuleInstance<sp/>*&gt;<sp/>&amp;<ref refid="classsystemc__clang_1_1Model_1ac1ad5e0f23656450e2a8183f6d7889c4" kindref="member">Model::getInstances</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1Model_1af69296c842ac8745cc924453f70a98ad" kindref="member">module_instances_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><ref refid="classsystemc__clang_1_1Model_1ad5b45a89d42a948313c31c35179745c9" kindref="member">Model::eventMapType</ref><sp/><ref refid="classsystemc__clang_1_1Model_1a2b9df68d993f0d43a194a7a1885d6565" kindref="member">Model::getEventMapType</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1Model_1ac60e8933f8817916d083544aa2a567e3" kindref="member">event_map_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1Model_1ad355f8ff01f39fd6338f65dc5c106a05" kindref="member">Model::getNumEvents</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="classsystemc__clang_1_1Model_1ac60e8933f8817916d083544aa2a567e3" kindref="member">event_map_</ref>.size()<sp/>-<sp/>3);<sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1Model_1a84f96d1ca4c931b4642eae4e0859a5e0" kindref="member">Model::dump</ref>(llvm::raw_ostream<sp/>&amp;os)<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;--<sp/>Number<sp/>of<sp/>sc_module<sp/>instances:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classsystemc__clang_1_1Model_1af69296c842ac8745cc924453f70a98ad" kindref="member">module_instances_</ref>.size()</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;inst<sp/>:<sp/><ref refid="classsystemc__clang_1_1Model_1af69296c842ac8745cc924453f70a98ad" kindref="member">module_instances_</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;--<sp/>Instance<sp/>name:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>inst-&gt;getInstanceName()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>inst-&gt;dump(os);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/model/Model.cpp"/>
+  </compounddef>
+</doxygen>

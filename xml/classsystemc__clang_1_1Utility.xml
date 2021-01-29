@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__clang_1_1Utility" kind="class" language="C++" prot="public">
+    <compoundname>systemc_clang::Utility</compoundname>
+    <derivedcompoundref refid="classsystemc__clang_1_1FindSimTime" prot="public" virt="non-virtual">systemc_clang::FindSimTime</derivedcompoundref>
+    <derivedcompoundref refid="classsystemc__clang_1_1GlobalSuspensionAutomata" prot="public" virt="non-virtual">systemc_clang::GlobalSuspensionAutomata</derivedcompoundref>
+    <derivedcompoundref refid="classsystemc__clang_1_1SuspensionAutomata" prot="public" virt="non-virtual">systemc_clang::SuspensionAutomata</derivedcompoundref>
+    <includes refid="Utility_8h" local="no">Utility.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1Utility_1a28bedc1e035e19b9d24726c57d224eb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>systemc_clang::Utility::Utility</definition>
+        <argsstring>()</argsstring>
+        <name>Utility</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Utility.h" line="28" column="3" bodyfile="src/SCuitable/Utility.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Utility_1afee859008a964bba751d6c914c4b04b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void systemc_clang::Utility::tabit</definition>
+        <argsstring>(raw_ostream &amp;os, int tabn)</argsstring>
+        <name>tabit</name>
+        <param>
+          <type>raw_ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tabn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Utility.h" line="37" column="8" bodyfile="src/SCuitable/Utility.h" bodystart="37" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Utility_1a2a23cd95dfe9b197856e28f1f2f70d0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string systemc_clang::Utility::strip</definition>
+        <argsstring>(string s, string sub)</argsstring>
+        <name>strip</name>
+        <param>
+          <type>string</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>sub</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Utility.h" line="43" column="10" bodyfile="src/SCuitable/Utility.h" bodystart="43" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Utility_1a1bfeb0d4469d75f5143c70bc2bae8e1a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename vec</type>
+          </param>
+        </templateparamlist>
+        <type>vec</type>
+        <definition>vec systemc_clang::Utility::removeDuplicate</definition>
+        <argsstring>(vec vecInput)</argsstring>
+        <name>removeDuplicate</name>
+        <param>
+          <type>vec</type>
+          <declname>vecInput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Utility.h" line="54" column="19" bodyfile="src/SCuitable/Utility.h" bodystart="54" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Utility_1a807a4944329acdc8c6b8b4bbf36a59a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename vec</type>
+          </param>
+          <param>
+            <type>typename element</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool systemc_clang::Utility::isElementPresent</definition>
+        <argsstring>(vec vecInput, element elemInput)</argsstring>
+        <name>isElementPresent</name>
+        <param>
+          <type>vec</type>
+          <declname>vecInput</declname>
+        </param>
+        <param>
+          <type>element</type>
+          <declname>elemInput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Utility.h" line="66" column="8" bodyfile="src/SCuitable/Utility.h" bodystart="66" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Utility_1a2b89b2bd4d7a3f10974b8904c1798921" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename expressionArg</type>
+          </param>
+        </templateparamlist>
+        <type>string</type>
+        <definition>string systemc_clang::Utility::getArgumentName</definition>
+        <argsstring>(expressionArg *exp)</argsstring>
+        <name>getArgumentName</name>
+        <param>
+          <type>expressionArg *</type>
+          <declname>exp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Utility.h" line="75" column="22" bodyfile="src/SCuitable/Utility.h" bodystart="75" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>systemc_clang::SuspensionAutomata</label>
+        <link refid="classsystemc__clang_1_1SuspensionAutomata"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>systemc_clang::FindSimTime</label>
+        <link refid="classsystemc__clang_1_1FindSimTime"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>systemc_clang::Utility</label>
+        <link refid="classsystemc__clang_1_1Utility"/>
+      </node>
+      <node id="3">
+        <label>systemc_clang::GlobalSuspensionAutomata</label>
+        <link refid="classsystemc__clang_1_1GlobalSuspensionAutomata"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="src/SCuitable/Utility.h" line="26" column="1" bodyfile="src/SCuitable/Utility.h" bodystart="26" bodyend="93"/>
+    <listofallmembers>
+      <member refid="classsystemc__clang_1_1Utility_1a2b89b2bd4d7a3f10974b8904c1798921" prot="public" virt="non-virtual"><scope>systemc_clang::Utility</scope><name>getArgumentName</name></member>
+      <member refid="classsystemc__clang_1_1Utility_1a807a4944329acdc8c6b8b4bbf36a59a4" prot="public" virt="non-virtual"><scope>systemc_clang::Utility</scope><name>isElementPresent</name></member>
+      <member refid="classsystemc__clang_1_1Utility_1a1bfeb0d4469d75f5143c70bc2bae8e1a" prot="public" virt="non-virtual"><scope>systemc_clang::Utility</scope><name>removeDuplicate</name></member>
+      <member refid="classsystemc__clang_1_1Utility_1a2a23cd95dfe9b197856e28f1f2f70d0d" prot="public" virt="non-virtual"><scope>systemc_clang::Utility</scope><name>strip</name></member>
+      <member refid="classsystemc__clang_1_1Utility_1afee859008a964bba751d6c914c4b04b0" prot="public" virt="non-virtual"><scope>systemc_clang::Utility</scope><name>tabit</name></member>
+      <member refid="classsystemc__clang_1_1Utility_1a28bedc1e035e19b9d24726c57d224eb9" prot="public" virt="non-virtual"><scope>systemc_clang::Utility</scope><name>Utility</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

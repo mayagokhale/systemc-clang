@@ -1,0 +1,280 @@
+\hypertarget{structsc__ast__matchers_1_1ModuleInstanceType}{}\doxysection{sc\+\_\+ast\+\_\+matchers\+::Module\+Instance\+Type Struct Reference}
+\label{structsc__ast__matchers_1_1ModuleInstanceType}\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+
+
+{\ttfamily \#include $<$Module\+Instance\+Type.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::tuple$<$ std\+::size\+\_\+t, std\+::size\+\_\+t, std\+::size\+\_\+t $>$ \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_aac2023ad45d93dba8f49b60a99187900}{Array\+Param\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_a10969391ab3bdda46fddafea615a17c0}{add\+\_\+instance\+\_\+name}} (const std\+::string \&name)
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_adea60ab02b411fa1c7c893b22bd60f2a}{get\+Instance\+Names}} ()
+\item 
+clang\+::\+Decl $\ast$ \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_af689bd6362ade596b39cf60e0580a7e2}{get\+Instance\+Type\+Decl}} () const
+\item 
+clang\+::\+Decl $\ast$ \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_a7de22e4517b0ea62852b08a721874e4f}{get\+Instance\+Decl}} () const
+\item 
+clang\+::\+Value\+Decl $\ast$ \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_a6f465b5e89502c3e28b91194c10bc15c}{get\+Parent\+Decl}} () const
+\item 
+void \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_afe46b03c037611210008d2163a5545a9}{set\+Array\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Array handling. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_a26667c2766b34d55061efedda27946be}{set\+Array\+Parameters}} (\mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_aac2023ad45d93dba8f49b60a99187900}{Array\+Param\+Type}} parm)
+\item 
+\mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_aac2023ad45d93dba8f49b60a99187900}{Array\+Param\+Type}} \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_a28162f2cd35d5d9f58bb6f6114ba3664}{get\+Array\+Parameters}} ()
+\item 
+bool \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_a4371dc69e15c57afbf4488d7897b8c83}{is\+Array\+Type}} ()
+\item 
+unsigned int \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_a04ffe18b47e0526bc72d523764f9cf01}{get\+Array\+Dimension}} () const
+\begin{DoxyCompactList}\small\item\em Return the array dimension, if the module instance is an array. 0 means a single instance k means kD array with a maximum of k = 3. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_af3c77277d6002bbc654332fcff9ac1de}{add\+Array\+Sizes}} (std\+::vector$<$ llvm\+::\+APInt $>$ sizes)
+\item 
+std\+::vector$<$ llvm\+::\+APInt $>$ \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_a2e2b3da949e2f822f1f07eaa8726f5af}{get\+Array\+Sizes}} ()
+\item 
+\mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_ad62e9f4402009961f4ba3383bcfb88df}{Module\+Instance\+Type}} ()
+\item 
+\mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_ac7d33859a1ca9e45797c1077c9246b4e}{Module\+Instance\+Type}} (const \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType}{Module\+Instance\+Type}} \&rhs)
+\item 
+bool \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_afaf59d3bf2ff23c65984cd66bdc5f072}{operator==}} (const \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType}{Module\+Instance\+Type}} \&rhs)
+\item 
+void \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_a442d565b3145ed94b42106a8be15a906}{dump}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_a3b3ac6bc7550058593b15444e3f058ce}{var\+\_\+name}}
+\item 
+std\+::string \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_a270baee7ec4b2b885ed4b765b7714062}{var\+\_\+type\+\_\+name}}
+\item 
+std\+::string \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_ac2e3331654217483b96515b50fd7172d}{instance\+\_\+name}}
+\item 
+std\+::string \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_a3f89bb63d3cb8f7aa0ba6ff6e08bb693}{parent\+\_\+name}}
+\item 
+bool \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_ace8d813116395be7de22d9d492283a69}{is\+\_\+field\+\_\+decl}}
+\item 
+clang\+::\+Decl $\ast$ \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_ab09f623c60a3aed02d2648512beca6e1}{type\+\_\+decl}}
+\item 
+clang\+::\+Decl $\ast$ \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_a2a82a26b5175ffbd26146154cde7b054}{instance\+\_\+decl}}
+\item 
+clang\+::\+Value\+Decl $\ast$ \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_a7176c5491aa5e6cd2fc04dae3e63eb66}{parent\+\_\+decl}}
+\item 
+bool \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_ad9056089538277c3b0fb3b04ed7a00c9}{is\+\_\+array}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_aca4d97a4786fa633d27ed90ecca494a0}{instance\+\_\+names}}
+\item 
+bool \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_afdb810b7b04e23673a3c2e64b4cb3001}{is\+\_\+array\+\_\+}}
+\item 
+std\+::vector$<$ llvm\+::\+APInt $>$ \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_add7481687d407362b2aa2771ab44c81f}{array\+\_\+sizes\+\_\+}}
+\item 
+\mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_aac2023ad45d93dba8f49b60a99187900}{Array\+Param\+Type}} \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_a236514c93fde675146a536181d6972c2}{array\+\_\+parameters\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_aac2023ad45d93dba8f49b60a99187900}\label{structsc__ast__matchers_1_1ModuleInstanceType_aac2023ad45d93dba8f49b60a99187900}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!ArrayParamType@{ArrayParamType}}
+\index{ArrayParamType@{ArrayParamType}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{ArrayParamType}{ArrayParamType}}
+{\footnotesize\ttfamily typedef std\+::tuple$<$std\+::size\+\_\+t, std\+::size\+\_\+t, std\+::size\+\_\+t$>$ \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_aac2023ad45d93dba8f49b60a99187900}{sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::\+Array\+Param\+Type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_ad62e9f4402009961f4ba3383bcfb88df}\label{structsc__ast__matchers_1_1ModuleInstanceType_ad62e9f4402009961f4ba3383bcfb88df}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!ModuleInstanceType@{ModuleInstanceType}}
+\index{ModuleInstanceType@{ModuleInstanceType}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{ModuleInstanceType()}{ModuleInstanceType()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::\+Module\+Instance\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_ac7d33859a1ca9e45797c1077c9246b4e}\label{structsc__ast__matchers_1_1ModuleInstanceType_ac7d33859a1ca9e45797c1077c9246b4e}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!ModuleInstanceType@{ModuleInstanceType}}
+\index{ModuleInstanceType@{ModuleInstanceType}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{ModuleInstanceType()}{ModuleInstanceType()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::\+Module\+Instance\+Type (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType}{Module\+Instance\+Type}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_a10969391ab3bdda46fddafea615a17c0}\label{structsc__ast__matchers_1_1ModuleInstanceType_a10969391ab3bdda46fddafea615a17c0}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!add\_instance\_name@{add\_instance\_name}}
+\index{add\_instance\_name@{add\_instance\_name}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{add\_instance\_name()}{add\_instance\_name()}}
+{\footnotesize\ttfamily void sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::add\+\_\+instance\+\_\+name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_af3c77277d6002bbc654332fcff9ac1de}\label{structsc__ast__matchers_1_1ModuleInstanceType_af3c77277d6002bbc654332fcff9ac1de}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!addArraySizes@{addArraySizes}}
+\index{addArraySizes@{addArraySizes}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{addArraySizes()}{addArraySizes()}}
+{\footnotesize\ttfamily void sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::add\+Array\+Sizes (\begin{DoxyParamCaption}\item[{std\+::vector$<$ llvm\+::\+APInt $>$}]{sizes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_a442d565b3145ed94b42106a8be15a906}\label{structsc__ast__matchers_1_1ModuleInstanceType_a442d565b3145ed94b42106a8be15a906}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!dump@{dump}}
+\index{dump@{dump}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_a04ffe18b47e0526bc72d523764f9cf01}\label{structsc__ast__matchers_1_1ModuleInstanceType_a04ffe18b47e0526bc72d523764f9cf01}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!getArrayDimension@{getArrayDimension}}
+\index{getArrayDimension@{getArrayDimension}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{getArrayDimension()}{getArrayDimension()}}
+{\footnotesize\ttfamily unsigned int sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::get\+Array\+Dimension (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the array dimension, if the module instance is an array. 0 means a single instance k means kD array with a maximum of k = 3. 
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_a28162f2cd35d5d9f58bb6f6114ba3664}\label{structsc__ast__matchers_1_1ModuleInstanceType_a28162f2cd35d5d9f58bb6f6114ba3664}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!getArrayParameters@{getArrayParameters}}
+\index{getArrayParameters@{getArrayParameters}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{getArrayParameters()}{getArrayParameters()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_aac2023ad45d93dba8f49b60a99187900}{Array\+Param\+Type}} sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::get\+Array\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_a2e2b3da949e2f822f1f07eaa8726f5af}\label{structsc__ast__matchers_1_1ModuleInstanceType_a2e2b3da949e2f822f1f07eaa8726f5af}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!getArraySizes@{getArraySizes}}
+\index{getArraySizes@{getArraySizes}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{getArraySizes()}{getArraySizes()}}
+{\footnotesize\ttfamily std\+::vector$<$llvm\+::\+APInt$>$ sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::get\+Array\+Sizes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_a7de22e4517b0ea62852b08a721874e4f}\label{structsc__ast__matchers_1_1ModuleInstanceType_a7de22e4517b0ea62852b08a721874e4f}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!getInstanceDecl@{getInstanceDecl}}
+\index{getInstanceDecl@{getInstanceDecl}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{getInstanceDecl()}{getInstanceDecl()}}
+{\footnotesize\ttfamily clang\+::\+Decl$\ast$ sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::get\+Instance\+Decl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_adea60ab02b411fa1c7c893b22bd60f2a}\label{structsc__ast__matchers_1_1ModuleInstanceType_adea60ab02b411fa1c7c893b22bd60f2a}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!getInstanceNames@{getInstanceNames}}
+\index{getInstanceNames@{getInstanceNames}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{getInstanceNames()}{getInstanceNames()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::get\+Instance\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_af689bd6362ade596b39cf60e0580a7e2}\label{structsc__ast__matchers_1_1ModuleInstanceType_af689bd6362ade596b39cf60e0580a7e2}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!getInstanceTypeDecl@{getInstanceTypeDecl}}
+\index{getInstanceTypeDecl@{getInstanceTypeDecl}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{getInstanceTypeDecl()}{getInstanceTypeDecl()}}
+{\footnotesize\ttfamily clang\+::\+Decl$\ast$ sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::get\+Instance\+Type\+Decl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_a6f465b5e89502c3e28b91194c10bc15c}\label{structsc__ast__matchers_1_1ModuleInstanceType_a6f465b5e89502c3e28b91194c10bc15c}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!getParentDecl@{getParentDecl}}
+\index{getParentDecl@{getParentDecl}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{getParentDecl()}{getParentDecl()}}
+{\footnotesize\ttfamily clang\+::\+Value\+Decl$\ast$ sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::get\+Parent\+Decl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_a4371dc69e15c57afbf4488d7897b8c83}\label{structsc__ast__matchers_1_1ModuleInstanceType_a4371dc69e15c57afbf4488d7897b8c83}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!isArrayType@{isArrayType}}
+\index{isArrayType@{isArrayType}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{isArrayType()}{isArrayType()}}
+{\footnotesize\ttfamily bool sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::is\+Array\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_afaf59d3bf2ff23c65984cd66bdc5f072}\label{structsc__ast__matchers_1_1ModuleInstanceType_afaf59d3bf2ff23c65984cd66bdc5f072}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!operator==@{operator==}}
+\index{operator==@{operator==}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType}{Module\+Instance\+Type}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_a26667c2766b34d55061efedda27946be}\label{structsc__ast__matchers_1_1ModuleInstanceType_a26667c2766b34d55061efedda27946be}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!setArrayParameters@{setArrayParameters}}
+\index{setArrayParameters@{setArrayParameters}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{setArrayParameters()}{setArrayParameters()}}
+{\footnotesize\ttfamily void sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::set\+Array\+Parameters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_aac2023ad45d93dba8f49b60a99187900}{Array\+Param\+Type}}}]{parm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_afe46b03c037611210008d2163a5545a9}\label{structsc__ast__matchers_1_1ModuleInstanceType_afe46b03c037611210008d2163a5545a9}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!setArrayType@{setArrayType}}
+\index{setArrayType@{setArrayType}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{setArrayType()}{setArrayType()}}
+{\footnotesize\ttfamily void sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::set\+Array\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Array handling. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_a236514c93fde675146a536181d6972c2}\label{structsc__ast__matchers_1_1ModuleInstanceType_a236514c93fde675146a536181d6972c2}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!array\_parameters\_@{array\_parameters\_}}
+\index{array\_parameters\_@{array\_parameters\_}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{array\_parameters\_}{array\_parameters\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType_aac2023ad45d93dba8f49b60a99187900}{Array\+Param\+Type}} sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::array\+\_\+parameters\+\_\+}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_add7481687d407362b2aa2771ab44c81f}\label{structsc__ast__matchers_1_1ModuleInstanceType_add7481687d407362b2aa2771ab44c81f}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!array\_sizes\_@{array\_sizes\_}}
+\index{array\_sizes\_@{array\_sizes\_}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{array\_sizes\_}{array\_sizes\_}}
+{\footnotesize\ttfamily std\+::vector$<$llvm\+::\+APInt$>$ sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::array\+\_\+sizes\+\_\+}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_a2a82a26b5175ffbd26146154cde7b054}\label{structsc__ast__matchers_1_1ModuleInstanceType_a2a82a26b5175ffbd26146154cde7b054}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!instance\_decl@{instance\_decl}}
+\index{instance\_decl@{instance\_decl}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{instance\_decl}{instance\_decl}}
+{\footnotesize\ttfamily clang\+::\+Decl$\ast$ sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::instance\+\_\+decl}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_ac2e3331654217483b96515b50fd7172d}\label{structsc__ast__matchers_1_1ModuleInstanceType_ac2e3331654217483b96515b50fd7172d}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!instance\_name@{instance\_name}}
+\index{instance\_name@{instance\_name}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{instance\_name}{instance\_name}}
+{\footnotesize\ttfamily std\+::string sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::instance\+\_\+name}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_aca4d97a4786fa633d27ed90ecca494a0}\label{structsc__ast__matchers_1_1ModuleInstanceType_aca4d97a4786fa633d27ed90ecca494a0}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!instance\_names@{instance\_names}}
+\index{instance\_names@{instance\_names}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{instance\_names}{instance\_names}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::instance\+\_\+names}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_ad9056089538277c3b0fb3b04ed7a00c9}\label{structsc__ast__matchers_1_1ModuleInstanceType_ad9056089538277c3b0fb3b04ed7a00c9}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!is\_array@{is\_array}}
+\index{is\_array@{is\_array}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{is\_array}{is\_array}}
+{\footnotesize\ttfamily bool sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::is\+\_\+array}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_afdb810b7b04e23673a3c2e64b4cb3001}\label{structsc__ast__matchers_1_1ModuleInstanceType_afdb810b7b04e23673a3c2e64b4cb3001}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!is\_array\_@{is\_array\_}}
+\index{is\_array\_@{is\_array\_}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{is\_array\_}{is\_array\_}}
+{\footnotesize\ttfamily bool sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::is\+\_\+array\+\_\+}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_ace8d813116395be7de22d9d492283a69}\label{structsc__ast__matchers_1_1ModuleInstanceType_ace8d813116395be7de22d9d492283a69}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!is\_field\_decl@{is\_field\_decl}}
+\index{is\_field\_decl@{is\_field\_decl}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{is\_field\_decl}{is\_field\_decl}}
+{\footnotesize\ttfamily bool sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::is\+\_\+field\+\_\+decl}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_a7176c5491aa5e6cd2fc04dae3e63eb66}\label{structsc__ast__matchers_1_1ModuleInstanceType_a7176c5491aa5e6cd2fc04dae3e63eb66}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!parent\_decl@{parent\_decl}}
+\index{parent\_decl@{parent\_decl}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{parent\_decl}{parent\_decl}}
+{\footnotesize\ttfamily clang\+::\+Value\+Decl$\ast$ sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::parent\+\_\+decl}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_a3f89bb63d3cb8f7aa0ba6ff6e08bb693}\label{structsc__ast__matchers_1_1ModuleInstanceType_a3f89bb63d3cb8f7aa0ba6ff6e08bb693}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!parent\_name@{parent\_name}}
+\index{parent\_name@{parent\_name}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{parent\_name}{parent\_name}}
+{\footnotesize\ttfamily std\+::string sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::parent\+\_\+name}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_ab09f623c60a3aed02d2648512beca6e1}\label{structsc__ast__matchers_1_1ModuleInstanceType_ab09f623c60a3aed02d2648512beca6e1}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!type\_decl@{type\_decl}}
+\index{type\_decl@{type\_decl}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{type\_decl}{type\_decl}}
+{\footnotesize\ttfamily clang\+::\+Decl$\ast$ sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::type\+\_\+decl}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_a3b3ac6bc7550058593b15444e3f058ce}\label{structsc__ast__matchers_1_1ModuleInstanceType_a3b3ac6bc7550058593b15444e3f058ce}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!var\_name@{var\_name}}
+\index{var\_name@{var\_name}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{var\_name}{var\_name}}
+{\footnotesize\ttfamily std\+::string sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::var\+\_\+name}
+
+\mbox{\Hypertarget{structsc__ast__matchers_1_1ModuleInstanceType_a270baee7ec4b2b885ed4b765b7714062}\label{structsc__ast__matchers_1_1ModuleInstanceType_a270baee7ec4b2b885ed4b765b7714062}} 
+\index{sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}!var\_type\_name@{var\_type\_name}}
+\index{var\_type\_name@{var\_type\_name}!sc\_ast\_matchers::ModuleInstanceType@{sc\_ast\_matchers::ModuleInstanceType}}
+\doxysubsubsection{\texorpdfstring{var\_type\_name}{var\_type\_name}}
+{\footnotesize\ttfamily std\+::string sc\+\_\+ast\+\_\+matchers\+::\+Module\+Instance\+Type\+::var\+\_\+type\+\_\+name}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/model/\mbox{\hyperlink{ModuleInstanceType_8h}{Module\+Instance\+Type.\+h}}\end{DoxyCompactItemize}

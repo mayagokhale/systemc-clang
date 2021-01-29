@@ -1,0 +1,67 @@
+\hypertarget{classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass}{}\doxysection{parselib.\+transforms.\+node\+\_\+merge.\+Node\+Merge\+Pass Class Reference}
+\label{classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass}\index{parselib.transforms.node\_merge.NodeMergePass@{parselib.transforms.node\_merge.NodeMergePass}}
+
+
+Inheritance diagram for parselib.\+transforms.\+node\+\_\+merge.\+Node\+Merge\+Pass\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for parselib.\+transforms.\+node\+\_\+merge.\+Node\+Merge\+Pass\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass_aed35906d36119161b6a78e4607cda805}{hnsbinop}} (self, tree)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass_a4619152edba63d56ad01f43807ad743e}{blkassign}} (self, tree)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass_a2d95f6b7a5fbdbc2ae200ff726a6f4b4}{\+\_\+\+\_\+transform\+\_\+arrayref\+\_\+syscread}} (self, tree)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This pass merges separate nodes that are created for easy recognition for grammar,
+but actually shares the same semantics
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass_a2d95f6b7a5fbdbc2ae200ff726a6f4b4}\label{classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass_a2d95f6b7a5fbdbc2ae200ff726a6f4b4}} 
+\index{parselib.transforms.node\_merge.NodeMergePass@{parselib.transforms.node\_merge.NodeMergePass}!\_\_transform\_arrayref\_syscread@{\_\_transform\_arrayref\_syscread}}
+\index{\_\_transform\_arrayref\_syscread@{\_\_transform\_arrayref\_syscread}!parselib.transforms.node\_merge.NodeMergePass@{parselib.transforms.node\_merge.NodeMergePass}}
+\doxysubsubsection{\texorpdfstring{\_\_transform\_arrayref\_syscread()}{\_\_transform\_arrayref\_syscread()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+node\+\_\+merge.\+Node\+Merge\+Pass.\+\_\+\+\_\+transform\+\_\+arrayref\+\_\+syscread (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass_a4619152edba63d56ad01f43807ad743e}\label{classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass_a4619152edba63d56ad01f43807ad743e}} 
+\index{parselib.transforms.node\_merge.NodeMergePass@{parselib.transforms.node\_merge.NodeMergePass}!blkassign@{blkassign}}
+\index{blkassign@{blkassign}!parselib.transforms.node\_merge.NodeMergePass@{parselib.transforms.node\_merge.NodeMergePass}}
+\doxysubsubsection{\texorpdfstring{blkassign()}{blkassign()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+node\+\_\+merge.\+Node\+Merge\+Pass.\+blkassign (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tree }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}this handler fixes the a[b].read() case by removing read() and making it a[b]\end{DoxyVerb}
+ \mbox{\Hypertarget{classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass_aed35906d36119161b6a78e4607cda805}\label{classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass_aed35906d36119161b6a78e4607cda805}} 
+\index{parselib.transforms.node\_merge.NodeMergePass@{parselib.transforms.node\_merge.NodeMergePass}!hnsbinop@{hnsbinop}}
+\index{hnsbinop@{hnsbinop}!parselib.transforms.node\_merge.NodeMergePass@{parselib.transforms.node\_merge.NodeMergePass}}
+\doxysubsubsection{\texorpdfstring{hnsbinop()}{hnsbinop()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+node\+\_\+merge.\+Node\+Merge\+Pass.\+hnsbinop (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tree }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+plugins/hdl/parselib/transforms/\mbox{\hyperlink{node__merge_8py}{node\+\_\+merge.\+py}}\end{DoxyCompactItemize}

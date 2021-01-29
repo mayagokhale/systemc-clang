@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__clang_1_1Edge" kind="class" language="C++" prot="public">
+    <compoundname>systemc_clang::Edge</compoundname>
+    <includes refid="Automata_8h" local="no">Automata.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classsystemc__clang_1_1Edge_1ac7df506142cb6616af813b07f4d61689" prot="public" static="no">
+        <type>pair&lt; unsigned int, unsigned int &gt;</type>
+        <definition>typedef pair&lt;unsigned int, unsigned int&gt; systemc_clang::Edge::timePairType</definition>
+        <argsstring></argsstring>
+        <name>timePairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="44" column="16" bodyfile="src/SCuitable/Automata.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1Edge_1a4aa1a27ab14ccfe1b547fd9546926858" prot="public" static="no">
+        <type>vector&lt; <ref refid="classsystemc__clang_1_1Edge_1ac7df506142cb6616af813b07f4d61689" kindref="member">timePairType</ref> &gt;</type>
+        <definition>typedef vector&lt;timePairType&gt; systemc_clang::Edge::timeAdvanceVectorType</definition>
+        <argsstring></argsstring>
+        <name>timeAdvanceVectorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="45" column="18" bodyfile="src/SCuitable/Automata.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classsystemc__clang_1_1Edge_1a7e6c2f9e7a22ac6a2073a25c2a570972" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int systemc_clang::Edge::_id</definition>
+        <argsstring></argsstring>
+        <name>_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="60" column="7" bodyfile="src/SCuitable/Automata.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1Edge_1a275236a8efc3e201d8b980fd0ec8b96b" prot="protected" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1Edge_1a4aa1a27ab14ccfe1b547fd9546926858" kindref="member">timeAdvanceVectorType</ref></type>
+        <definition>timeAdvanceVectorType systemc_clang::Edge::_timeAdvanceVector</definition>
+        <argsstring></argsstring>
+        <name>_timeAdvanceVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="61" column="25" bodyfile="src/SCuitable/Automata.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1Edge_1aef197f91341fac47770628fa679fa4d6" prot="protected" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> *</type>
+        <definition>Node* systemc_clang::Edge::_from</definition>
+        <argsstring></argsstring>
+        <name>_from</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="62" column="8" bodyfile="src/SCuitable/Automata.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1Edge_1aa668e70adba85721e85887dc47dfab8a" prot="protected" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> *</type>
+        <definition>Node* systemc_clang::Edge::_to</definition>
+        <argsstring></argsstring>
+        <name>_to</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="63" column="8" bodyfile="src/SCuitable/Automata.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1Edge_1a248f22d2315374dab5b17c2ed6c15f3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Edge::Edge</definition>
+        <argsstring>(Node *, Node *)</argsstring>
+        <name>Edge</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> *</type>
+          <defname>f</defname>
+        </param>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> *</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+<para><ref refid="classsystemc__clang_1_1Edge" kindref="compound">Edge</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="47" column="3" bodyfile="src/SCuitable/Automata.cpp" bodystart="63" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Edge_1a9520dcbab3eb27889dd2f3aeb43d5df8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Edge::Edge</definition>
+        <argsstring>(Node *, Node *, int)</argsstring>
+        <name>Edge</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> *</type>
+          <defname>f</defname>
+        </param>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> *</type>
+          <defname>t</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>i</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="48" column="3" bodyfile="src/SCuitable/Automata.cpp" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Edge_1a8b75a2cf256c99730cf755325cf9ec73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::updateSuspensionTime</definition>
+        <argsstring>(timePairType)</argsstring>
+        <name>updateSuspensionTime</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Edge_1ac7df506142cb6616af813b07f4d61689" kindref="member">timePairType</ref></type>
+          <defname>timePair</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="50" column="8" bodyfile="src/SCuitable/Automata.cpp" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Edge_1abfe372bacca411d0b654a0c83bed8b69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Edge::getId</definition>
+        <argsstring>()</argsstring>
+        <name>getId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="52" column="7" bodyfile="src/SCuitable/Automata.cpp" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Edge_1a85da4c31db3a91fc4a4907611ac7a85c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Edge::getToId</definition>
+        <argsstring>()</argsstring>
+        <name>getToId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="53" column="7" bodyfile="src/SCuitable/Automata.cpp" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Edge_1a8649bc1063d1be9387d3909b0ba36960" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Edge::getFromId</definition>
+        <argsstring>()</argsstring>
+        <name>getFromId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="54" column="7" bodyfile="src/SCuitable/Automata.cpp" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Edge_1a8eded928724037fb5f09f6c723c776cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1Edge_1a4aa1a27ab14ccfe1b547fd9546926858" kindref="member">timeAdvanceVectorType</ref></type>
+        <definition>Edge::timeAdvanceVectorType Edge::getTimeAdvanceVector</definition>
+        <argsstring>()</argsstring>
+        <name>getTimeAdvanceVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="55" column="25" bodyfile="src/SCuitable/Automata.cpp" bodystart="81" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Edge_1a79bf168790e4321c86c9a53dbe5c741a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Edge::dump</definition>
+        <argsstring>(raw_ostream &amp;, int)</argsstring>
+        <name>dump</name>
+        <param>
+          <type>raw_ostream &amp;</type>
+          <defname>os</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>tabn</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="57" column="8" bodyfile="src/SCuitable/Automata.cpp" bodystart="73" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>systemc_clang::Edge</label>
+        <link refid="classsystemc__clang_1_1Edge"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_from</edgelabel>
+          <edgelabel>_to</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>systemc_clang::Node</label>
+        <link refid="classsystemc__clang_1_1Node"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/SCuitable/Automata.h" line="42" column="1" bodyfile="src/SCuitable/Automata.h" bodystart="42" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classsystemc__clang_1_1Edge_1aef197f91341fac47770628fa679fa4d6" prot="protected" virt="non-virtual"><scope>systemc_clang::Edge</scope><name>_from</name></member>
+      <member refid="classsystemc__clang_1_1Edge_1a7e6c2f9e7a22ac6a2073a25c2a570972" prot="protected" virt="non-virtual"><scope>systemc_clang::Edge</scope><name>_id</name></member>
+      <member refid="classsystemc__clang_1_1Edge_1a275236a8efc3e201d8b980fd0ec8b96b" prot="protected" virt="non-virtual"><scope>systemc_clang::Edge</scope><name>_timeAdvanceVector</name></member>
+      <member refid="classsystemc__clang_1_1Edge_1aa668e70adba85721e85887dc47dfab8a" prot="protected" virt="non-virtual"><scope>systemc_clang::Edge</scope><name>_to</name></member>
+      <member refid="classsystemc__clang_1_1Edge_1a79bf168790e4321c86c9a53dbe5c741a" prot="public" virt="non-virtual"><scope>systemc_clang::Edge</scope><name>dump</name></member>
+      <member refid="classsystemc__clang_1_1Edge_1a248f22d2315374dab5b17c2ed6c15f3a" prot="public" virt="non-virtual"><scope>systemc_clang::Edge</scope><name>Edge</name></member>
+      <member refid="classsystemc__clang_1_1Edge_1a9520dcbab3eb27889dd2f3aeb43d5df8" prot="public" virt="non-virtual"><scope>systemc_clang::Edge</scope><name>Edge</name></member>
+      <member refid="classsystemc__clang_1_1Edge_1a8649bc1063d1be9387d3909b0ba36960" prot="public" virt="non-virtual"><scope>systemc_clang::Edge</scope><name>getFromId</name></member>
+      <member refid="classsystemc__clang_1_1Edge_1abfe372bacca411d0b654a0c83bed8b69" prot="public" virt="non-virtual"><scope>systemc_clang::Edge</scope><name>getId</name></member>
+      <member refid="classsystemc__clang_1_1Edge_1a8eded928724037fb5f09f6c723c776cb" prot="public" virt="non-virtual"><scope>systemc_clang::Edge</scope><name>getTimeAdvanceVector</name></member>
+      <member refid="classsystemc__clang_1_1Edge_1a85da4c31db3a91fc4a4907611ac7a85c" prot="public" virt="non-virtual"><scope>systemc_clang::Edge</scope><name>getToId</name></member>
+      <member refid="classsystemc__clang_1_1Edge_1a4aa1a27ab14ccfe1b547fd9546926858" prot="public" virt="non-virtual"><scope>systemc_clang::Edge</scope><name>timeAdvanceVectorType</name></member>
+      <member refid="classsystemc__clang_1_1Edge_1ac7df506142cb6616af813b07f4d61689" prot="public" virt="non-virtual"><scope>systemc_clang::Edge</scope><name>timePairType</name></member>
+      <member refid="classsystemc__clang_1_1Edge_1a8b75a2cf256c99730cf755325cf9ec73" prot="public" virt="non-virtual"><scope>systemc_clang::Edge</scope><name>updateSuspensionTime</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

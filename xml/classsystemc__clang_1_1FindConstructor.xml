@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__clang_1_1FindConstructor" kind="class" language="C++" prot="public">
+    <compoundname>systemc_clang::FindConstructor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">RecursiveASTVisitor&lt; FindConstructor &gt;</basecompoundref>
+    <includes refid="FindConstructor_8h" local="no">FindConstructor.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindConstructor_1ab0a16d0f1e9a7b0543f844f07a3e5a67" prot="private" static="no" mutable="no">
+        <type>llvm::raw_ostream &amp;</type>
+        <definition>llvm::raw_ostream&amp; systemc_clang::FindConstructor::os_</definition>
+        <argsstring></argsstring>
+        <name>os_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindConstructor.h" line="25" column="21" bodyfile="src/matchers/FindConstructor.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindConstructor_1abf7a289dd8a3f75cb9c75a697cef4777" prot="private" static="no" mutable="no">
+        <type>CXXRecordDecl *</type>
+        <definition>CXXRecordDecl* systemc_clang::FindConstructor::declaration_</definition>
+        <argsstring></argsstring>
+        <name>declaration_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindConstructor.h" line="26" column="17" bodyfile="src/matchers/FindConstructor.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindConstructor_1a17ab25ab8da5d6ff1f52498703598c29" prot="private" static="no" mutable="no">
+        <type>CXXConstructorDecl *</type>
+        <definition>CXXConstructorDecl* systemc_clang::FindConstructor::constructor_decl_</definition>
+        <argsstring></argsstring>
+        <name>constructor_decl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindConstructor.h" line="27" column="22" bodyfile="src/matchers/FindConstructor.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindConstructor_1a4b777eb95b5fc9259a840e387b88170f" prot="private" static="no" mutable="no">
+        <type>Stmt *</type>
+        <definition>Stmt* systemc_clang::FindConstructor::constructor_stmt_</definition>
+        <argsstring></argsstring>
+        <name>constructor_stmt_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindConstructor.h" line="28" column="8" bodyfile="src/matchers/FindConstructor.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindConstructor_1a05c3661a0c992c55af89336c3c00eb61" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int systemc_clang::FindConstructor::pass_</definition>
+        <argsstring></argsstring>
+        <name>pass_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindConstructor.h" line="29" column="16" bodyfile="src/matchers/FindConstructor.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1FindConstructor_1ad7ebf41c29960b6580b50666e691f2a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FindConstructor::FindConstructor</definition>
+        <argsstring>(CXXRecordDecl *, llvm::raw_ostream &amp;)</argsstring>
+        <name>FindConstructor</name>
+        <param>
+          <type>CXXRecordDecl *</type>
+          <defname>declaration</defname>
+        </param>
+        <param>
+          <type>llvm::raw_ostream &amp;</type>
+          <defname>os</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindConstructor.h" line="13" column="3" bodyfile="src/matchers/FindConstructor.cpp" bodystart="5" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindConstructor_1a1d795cc0e1cb85fee0eff5c30daa4bb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>FindConstructor::~FindConstructor</definition>
+        <argsstring>()</argsstring>
+        <name>~FindConstructor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindConstructor.h" line="14" column="11" bodyfile="src/matchers/FindConstructor.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindConstructor_1af7e25cb0250959d93c5816799ea80212" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool FindConstructor::VisitCXXMethodDecl</definition>
+        <argsstring>(CXXMethodDecl *)</argsstring>
+        <name>VisitCXXMethodDecl</name>
+        <param>
+          <type>CXXMethodDecl *</type>
+          <defname>method_declaration</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindConstructor.h" line="15" column="16" bodyfile="src/matchers/FindConstructor.cpp" bodystart="30" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindConstructor_1ab7ad6039b7b1bab020f607eb4b123a0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool FindConstructor::VisitCXXConstructorDecl</definition>
+        <argsstring>(CXXConstructorDecl *ctor_decl)</argsstring>
+        <name>VisitCXXConstructorDecl</name>
+        <param>
+          <type>CXXConstructorDecl *</type>
+          <declname>ctor_decl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindConstructor.h" line="16" column="16" bodyfile="src/matchers/FindConstructor.cpp" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindConstructor_1a0c97f5366eb8b05fe239a84c336ae946" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FindConstructor::shouldVisitTemplateInstantiations</definition>
+        <argsstring>() const</argsstring>
+        <name>shouldVisitTemplateInstantiations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindConstructor.h" line="17" column="8" bodyfile="src/matchers/FindConstructor.cpp" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindConstructor_1a3dada4efacabc409879361075f05b090" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>CXXRecordDecl *</type>
+        <definition>CXXRecordDecl * FindConstructor::getAsCXXRecordDecl</definition>
+        <argsstring>() const</argsstring>
+        <name>getAsCXXRecordDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindConstructor.h" line="19" column="17" bodyfile="src/matchers/FindConstructor.cpp" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindConstructor_1a1216b77cbe76345bf6ba9b30ce748a09" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>CXXConstructorDecl *</type>
+        <definition>CXXConstructorDecl * FindConstructor::getConstructorDecl</definition>
+        <argsstring>() const</argsstring>
+        <name>getConstructorDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindConstructor.h" line="20" column="22" bodyfile="src/matchers/FindConstructor.cpp" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindConstructor_1a2ce14eb7fcb1ff712ff52c9cdaa88b71" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Stmt *</type>
+        <definition>Stmt * FindConstructor::getConstructorStmt</definition>
+        <argsstring>() const</argsstring>
+        <name>getConstructorStmt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindConstructor.h" line="21" column="8" bodyfile="src/matchers/FindConstructor.cpp" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindConstructor_1afabbd1d4cc09c2c035fb51d7c9e4f555" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FindConstructor::dump</definition>
+        <argsstring>() const</argsstring>
+        <name>dump</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindConstructor.h" line="22" column="8" bodyfile="src/matchers/FindConstructor.cpp" bodystart="64" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1FindConstructor_1a21b99a9f47f3cb0687a4109ab6ef64b7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>systemc_clang::FindConstructor::FindConstructor</definition>
+        <argsstring>(llvm::raw_ostream &amp;)</argsstring>
+        <name>FindConstructor</name>
+        <param>
+          <type>llvm::raw_ostream &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindConstructor.h" line="32" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>RecursiveASTVisitor&lt; FindConstructor &gt;</label>
+      </node>
+      <node id="1">
+        <label>systemc_clang::FindConstructor</label>
+        <link refid="classsystemc__clang_1_1FindConstructor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>RecursiveASTVisitor&lt; FindConstructor &gt;</label>
+      </node>
+      <node id="1">
+        <label>systemc_clang::FindConstructor</label>
+        <link refid="classsystemc__clang_1_1FindConstructor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/matchers/FindConstructor.h" line="11" column="1" bodyfile="src/matchers/FindConstructor.h" bodystart="11" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classsystemc__clang_1_1FindConstructor_1a17ab25ab8da5d6ff1f52498703598c29" prot="private" virt="non-virtual"><scope>systemc_clang::FindConstructor</scope><name>constructor_decl_</name></member>
+      <member refid="classsystemc__clang_1_1FindConstructor_1a4b777eb95b5fc9259a840e387b88170f" prot="private" virt="non-virtual"><scope>systemc_clang::FindConstructor</scope><name>constructor_stmt_</name></member>
+      <member refid="classsystemc__clang_1_1FindConstructor_1abf7a289dd8a3f75cb9c75a697cef4777" prot="private" virt="non-virtual"><scope>systemc_clang::FindConstructor</scope><name>declaration_</name></member>
+      <member refid="classsystemc__clang_1_1FindConstructor_1afabbd1d4cc09c2c035fb51d7c9e4f555" prot="public" virt="non-virtual"><scope>systemc_clang::FindConstructor</scope><name>dump</name></member>
+      <member refid="classsystemc__clang_1_1FindConstructor_1ad7ebf41c29960b6580b50666e691f2a9" prot="public" virt="non-virtual"><scope>systemc_clang::FindConstructor</scope><name>FindConstructor</name></member>
+      <member refid="classsystemc__clang_1_1FindConstructor_1a21b99a9f47f3cb0687a4109ab6ef64b7" prot="private" virt="non-virtual"><scope>systemc_clang::FindConstructor</scope><name>FindConstructor</name></member>
+      <member refid="classsystemc__clang_1_1FindConstructor_1a3dada4efacabc409879361075f05b090" prot="public" virt="non-virtual"><scope>systemc_clang::FindConstructor</scope><name>getAsCXXRecordDecl</name></member>
+      <member refid="classsystemc__clang_1_1FindConstructor_1a1216b77cbe76345bf6ba9b30ce748a09" prot="public" virt="non-virtual"><scope>systemc_clang::FindConstructor</scope><name>getConstructorDecl</name></member>
+      <member refid="classsystemc__clang_1_1FindConstructor_1a2ce14eb7fcb1ff712ff52c9cdaa88b71" prot="public" virt="non-virtual"><scope>systemc_clang::FindConstructor</scope><name>getConstructorStmt</name></member>
+      <member refid="classsystemc__clang_1_1FindConstructor_1ab0a16d0f1e9a7b0543f844f07a3e5a67" prot="private" virt="non-virtual"><scope>systemc_clang::FindConstructor</scope><name>os_</name></member>
+      <member refid="classsystemc__clang_1_1FindConstructor_1a05c3661a0c992c55af89336c3c00eb61" prot="private" virt="non-virtual"><scope>systemc_clang::FindConstructor</scope><name>pass_</name></member>
+      <member refid="classsystemc__clang_1_1FindConstructor_1a0c97f5366eb8b05fe239a84c336ae946" prot="public" virt="non-virtual"><scope>systemc_clang::FindConstructor</scope><name>shouldVisitTemplateInstantiations</name></member>
+      <member refid="classsystemc__clang_1_1FindConstructor_1ab7ad6039b7b1bab020f607eb4b123a0e" prot="public" virt="virtual"><scope>systemc_clang::FindConstructor</scope><name>VisitCXXConstructorDecl</name></member>
+      <member refid="classsystemc__clang_1_1FindConstructor_1af7e25cb0250959d93c5816799ea80212" prot="public" virt="virtual"><scope>systemc_clang::FindConstructor</scope><name>VisitCXXMethodDecl</name></member>
+      <member refid="classsystemc__clang_1_1FindConstructor_1a1d795cc0e1cb85fee0eff5c30daa4bb5" prot="public" virt="virtual"><scope>systemc_clang::FindConstructor</scope><name>~FindConstructor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

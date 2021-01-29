@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classparselib_1_1primitives_1_1vmodule" kind="class" language="Python" prot="public">
+    <compoundname>parselib::primitives::vmodule</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classparselib_1_1primitives_1_1vmodule_1a794aa548e74d218e7aa8a17bed501fb8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.primitives.vmodule::type_name</definition>
+        <argsstring></argsstring>
+        <name>type_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/primitives.py" line="236" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparselib_1_1primitives_1_1vmodule_1a9151fa6eaaa337df4058ffc371bb711b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.primitives.vmodule::port_bindings</definition>
+        <argsstring></argsstring>
+        <name>port_bindings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/primitives.py" line="237" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparselib_1_1primitives_1_1vmodule_1affa5f8e3ed7e3158f9600ae7dc70de40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.primitives.vmodule.__init__</definition>
+        <argsstring>(self, type_name, port_bindings=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classparselib_1_1primitives_1_1vmodule_1a794aa548e74d218e7aa8a17bed501fb8" kindref="member">type_name</ref></type>
+          <defname>type_name</defname>
+        </param>
+        <param>
+          <type><ref refid="classparselib_1_1primitives_1_1vmodule_1a9151fa6eaaa337df4058ffc371bb711b" kindref="member">port_bindings</ref></type>
+          <defname>port_bindings</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/primitives.py" line="235" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="235" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1primitives_1_1vmodule_1ae962821040951ee61b40ffba8fb9fdf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.primitives.vmodule.to_str</definition>
+        <argsstring>(self, var_name, context=None)</argsstring>
+        <name>to_str</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>var_name</type>
+          <defname>var_name</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/primitives.py" line="239" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="239" bodyend="245"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>parselib.primitives.vmodule</label>
+        <link refid="classparselib_1_1primitives_1_1vmodule"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>parselib.primitives.vmodule</label>
+        <link refid="classparselib_1_1primitives_1_1vmodule"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/parselib/primitives.py" line="234" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="234" bodyend="245"/>
+    <listofallmembers>
+      <member refid="classparselib_1_1primitives_1_1vmodule_1affa5f8e3ed7e3158f9600ae7dc70de40" prot="public" virt="non-virtual"><scope>parselib::primitives::vmodule</scope><name>__init__</name></member>
+      <member refid="classparselib_1_1primitives_1_1vmodule_1a9151fa6eaaa337df4058ffc371bb711b" prot="public" virt="non-virtual"><scope>parselib::primitives::vmodule</scope><name>port_bindings</name></member>
+      <member refid="classparselib_1_1primitives_1_1vmodule_1ae962821040951ee61b40ffba8fb9fdf4" prot="public" virt="non-virtual"><scope>parselib::primitives::vmodule</scope><name>to_str</name></member>
+      <member refid="classparselib_1_1primitives_1_1vmodule_1a794aa548e74d218e7aa8a17bed501fb8" prot="public" virt="non-virtual"><scope>parselib::primitives::vmodule</scope><name>type_name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

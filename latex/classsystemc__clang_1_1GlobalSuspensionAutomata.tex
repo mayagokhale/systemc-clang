@@ -1,0 +1,549 @@
+\hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata}{}\doxysection{systemc\+\_\+clang\+::Global\+Suspension\+Automata Class Reference}
+\label{classsystemc__clang_1_1GlobalSuspensionAutomata}\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+
+
+{\ttfamily \#include $<$Global\+Suspension\+Automata.\+h$>$}
+
+
+
+Inheritance diagram for systemc\+\_\+clang\+::Global\+Suspension\+Automata\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{classsystemc__clang_1_1GlobalSuspensionAutomata__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for systemc\+\_\+clang\+::Global\+Suspension\+Automata\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsystemc__clang_1_1GlobalSuspensionAutomata__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef pair$<$ float, int $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad5b1dd2561dc533cb37ffa28c36c42e4}{time\+Pair\+Type}}
+\item 
+typedef vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a86977643d2ad2505b98f5fa2f412a1ed}{transition\+Vector\+Type}}
+\item 
+typedef pair$<$ \mbox{\hyperlink{classsystemc__clang_1_1EntryFunctionContainer}{Entry\+Function\+Container}} $\ast$, int $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a12e17f95884cf65775acb1e05899a58a}{entry\+Function\+Instance\+Id\+Pair\+Type}}
+\item 
+typedef map$<$ \mbox{\hyperlink{classsystemc__clang_1_1EntryFunctionContainer}{Entry\+Function\+Container}} $\ast$, int $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_aff1b79ef75c622aabe9e2bd384f64305}{entry\+Function\+Instance\+Id\+Map\+Type}}
+\item 
+typedef pair$<$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a12e17f95884cf65775acb1e05899a58a}{entry\+Function\+Instance\+Id\+Pair\+Type}}, \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a86977643d2ad2505b98f5fa2f412a1ed}{transition\+Vector\+Type}} $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a37c48830e073af6d4a513e6ce0762729}{instance\+Function\+Sauto\+Pair\+Type}}
+\item 
+typedef map$<$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a12e17f95884cf65775acb1e05899a58a}{entry\+Function\+Instance\+Id\+Pair\+Type}}, \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a86977643d2ad2505b98f5fa2f412a1ed}{transition\+Vector\+Type}} $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a5f78949942978b1e282d6240cb925280}{instance\+Function\+Sauto\+Map\+Type}}
+\item 
+typedef pair$<$ \mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad5b1dd2561dc533cb37ffa28c36c42e4}{time\+Pair\+Type}} $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_afc94bfa7f93a5a0fb01483dea38046c6}{transition\+Time\+Pair\+Type}}
+\item 
+typedef map$<$ \mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad5b1dd2561dc533cb37ffa28c36c42e4}{time\+Pair\+Type}} $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a63401a9884f8e9615b695b1dc9555b26}{transition\+Time\+Map\+Type}}
+\item 
+typedef pair$<$ string, \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad5b1dd2561dc533cb37ffa28c36c42e4}{time\+Pair\+Type}} $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a87b9935e2a92ea9266a4daa89de48a0c}{event\+Notification\+Time\+Pair\+Type}}
+\item 
+typedef map$<$ string, \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad5b1dd2561dc533cb37ffa28c36c42e4}{time\+Pair\+Type}} $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_aa89f9ae41fc5343a33462912b8037667}{event\+Notification\+Time\+Map\+Type}}
+\item 
+typedef pair$<$ \mbox{\hyperlink{classsystemc__clang_1_1State}{State}} $\ast$, vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$ $>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_aaee6cb4d3d4f63c2f860b0b83022bf78}{state\+Transitions\+Pair\+Type}}
+\item 
+typedef map$<$ \mbox{\hyperlink{classsystemc__clang_1_1State}{State}} $\ast$, vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$ $>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a878dca3e21d6fbd0d71240b2810b4621}{state\+Transitions\+Map\+Type}}
+\item 
+typedef pair$<$ \mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$, bool $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_aa98d9120219f6deb9d1c9f8bc2b03dc8}{visit\+Transition\+Pair\+Type}}
+\item 
+typedef map$<$ \mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$, bool $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad4740b081a0880d4735ec9e8c93354c7}{visit\+Transition\+Map\+Type}}
+\item 
+typedef pair$<$ \mbox{\hyperlink{classsystemc__clang_1_1EntryFunctionContainer}{Entry\+Function\+Container}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a683dfecf001a3f455e3894ac825ca1bc}{Find\+GPUMacro\+::for\+Stmt\+GPUMacro\+Map\+Type}} $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_abcce2a03d05d57d4d9dbc786f7edf9d1}{entry\+Function\+Macro\+Pair\+Type}}
+\item 
+typedef map$<$ \mbox{\hyperlink{classsystemc__clang_1_1EntryFunctionContainer}{Entry\+Function\+Container}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a683dfecf001a3f455e3894ac825ca1bc}{Find\+GPUMacro\+::for\+Stmt\+GPUMacro\+Map\+Type}} $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a1363a55892607c0e016d70e740a57f91}{entry\+Function\+Macro\+Map\+Type}}
+\item 
+typedef pair$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro}{GPUMacro}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a56876eccc173ec3bb55c2f9fd44624e7}{sus\+CFGBlock\+GPUMacro\+Pair\+Type}}
+\item 
+typedef map$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro}{GPUMacro}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a7e094423fe02ec74ca351dc96080b727}{sus\+CFGBlock\+GPUMacro\+Map\+Type}}
+\item 
+typedef pair$<$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad5b1dd2561dc533cb37ffa28c36c42e4}{time\+Pair\+Type}}, vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a59af33b23c7eb23246f0d95c642cf414}{common\+Time\+DPPair\+Type}}
+\item 
+typedef map$<$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad5b1dd2561dc533cb37ffa28c36c42e4}{time\+Pair\+Type}}, vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a74a356cce004fe03c3bae5f854ef6e06}{common\+Time\+DPMap\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_abb5f142fe7bd8216fd43ac3ba56c38e8}{Global\+Suspension\+Automata}} (\mbox{\hyperlink{classsystemc__clang_1_1Model}{Model}} $\ast$, raw\+\_\+ostream \&, ASTContext $\ast$)
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a6ec671b1adb921bf0e793ddc271ec4cc}{$\sim$\+Global\+Suspension\+Automata}} ()
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_afb504ec049dce4f340d6ee44de5d096f}{update\+Transition\+Time}} (\mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_adc9c80eb078bb6e328e19c4a423c317a}{update\+Event\+Notification\+Time}} (\mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad142848415fb20323f067f922baad102}{get\+Transport\+Type}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a2e2a5da7293995d455107f520b7a91cf}{annotate\+Transitions\+DPSeg}} (\mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$, int)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_aad741b181c5ecc30918fb7ba446c1cbc}{initialize\+Gpu\+Map}} ()
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a6cb4e29442e0d8d53e3c073873f63e4a}{GPUMap}} (float, vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$, float \&)
+\item 
+vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_acad967eb6262a3354775642a5189b92c}{arrange\+GPUSus\+CFGBlocks}} (vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$)
+\item 
+float \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a28a9fa1f175321b3c0d1701109d7734e}{max\+Time}} (vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$, unsigned int)
+\item 
+float \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ab21b606214fb62130eb276f10a98740b}{max}} (float, float)
+\item 
+vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a541f7970f925e473ded30afc41d0ad0a}{merge\+\_\+sort}} (vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$, vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ac0312fbc7b36799105cc2f377a1a2c2b}{initialise}} ()
+\item 
+string \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a6f133dd6587f8374c3f3cd54d4d7e881}{get\+Argument\+Name}} (Expr $\ast$)
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_abfd7ca3cb24ae7dcaa50b204c5a61066}{is\+Notify\+Call}} (const CFGStmt $\ast$)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_af343d5bf1434341a724d44faf24cbd2e}{gen\+GSauto}} ()
+\item 
+string \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a7961bf67e1bf59f3c41c8a52f3de8c66}{get\+Notify\+Event\+Name}} (const CFGStmt $\ast$)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a125522232acb8c31eb9bac5ba062a59d}{dump}} ()
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a86977643d2ad2505b98f5fa2f412a1ed}{transition\+Vector\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ae953d95b5a85a8b6593bbabea84066f6}{get\+Global\+Sauto}} ()
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a86977643d2ad2505b98f5fa2f412a1ed}{transition\+Vector\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a9c9a58b29db12a757c11c94cd7ff09e0}{get\+Transitions\+At\+Time}} (\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad5b1dd2561dc533cb37ffa28c36c42e4}{time\+Pair\+Type}})
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a86977643d2ad2505b98f5fa2f412a1ed}{transition\+Vector\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a5f17d7f6c359ed983d9d7a4ef643f904}{get\+Outgoing\+Transitions}} (\mbox{\hyperlink{classsystemc__clang_1_1State}{State}} $\ast$)
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a86977643d2ad2505b98f5fa2f412a1ed}{transition\+Vector\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a04b297442b832b6ac447b37301a351d5}{get\+Incoming\+Transitions}} (\mbox{\hyperlink{classsystemc__clang_1_1State}{State}} $\ast$)
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad5b1dd2561dc533cb37ffa28c36c42e4}{time\+Pair\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a99c7a6927d270bdd1086cfba84a3c190}{get\+Time\+For\+Transition}} (\mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$)
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a5f78949942978b1e282d6240cb925280}{instance\+Function\+Sauto\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a8d0d88d3ae3c4ecd0c8b09d324b27b6c}{get\+Instance\+Function\+Sauto\+Map}} ()
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a63401a9884f8e9615b695b1dc9555b26}{transition\+Time\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a5f28483e547807bbc4084904594e89cb}{get\+Transition\+Time\+Map}} ()
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a7e094423fe02ec74ca351dc96080b727}{sus\+CFGBlock\+GPUMacro\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_aa4036307db9207ba72c3ee12602bed21}{get\+Sus\+CFGBlock\+GPUMacro\+Map}} ()
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a1363a55892607c0e016d70e740a57f91}{entry\+Function\+Macro\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a5c29b2d9a82908fc99212b66a31dd385}{get\+Entry\+Function\+Macro\+Map}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+raw\+\_\+ostream \& \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a07a0cdab13d25f006b411f16363f83dc}{\+\_\+os}}
+\item 
+ASTContext $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a5e1103b8eb9d8c7db7ff8e1f26c753c8}{\+\_\+a}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a86977643d2ad2505b98f5fa2f412a1ed}{transition\+Vector\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ae1a92362fa42f934fe5a8f23f5e11d16}{\+\_\+global\+Sauto}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1Model}{Model}} $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_af0896e0c2ac16d8ef73e97759235c09c}{\+\_\+systemc\+Model}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1Model_adb14c5fc604752f5a1b5a26b58b3590b}{Model\+::module\+Instance\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a02578ca27be242f0eaf48fbe37e36254}{\+\_\+module\+Instance\+Map}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a878dca3e21d6fbd0d71240b2810b4621}{state\+Transitions\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a14b11f0d94e08f0ecb4af0f7fb88b3e8}{\+\_\+incoming\+Transitions\+Map}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a878dca3e21d6fbd0d71240b2810b4621}{state\+Transitions\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ab7727d723e440cce6492538fc4adbac3}{\+\_\+outgoing\+Transitions\+Map}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a5f78949942978b1e282d6240cb925280}{instance\+Function\+Sauto\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_aa88e19635275dcf98ca87f34a18cd776}{\+\_\+instance\+Function\+Sauto\+Map}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_aa89f9ae41fc5343a33462912b8037667}{event\+Notification\+Time\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ae3682ee2abc6d4ff164d1b6265807d75}{\+\_\+event\+Notification\+Time\+Map}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a63401a9884f8e9615b695b1dc9555b26}{transition\+Time\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a75a3cb959657bf75967419d5bf9e7421}{\+\_\+transition\+Time\+Map}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindNotify_aebd5c90665011a52c5037b4953a6796f}{Find\+Notify\+::\+Notify\+Call\+List\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad02212ec8e0d4ae9c80d9f8beb47150e}{\+\_\+notify\+Calls}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad4740b081a0880d4735ec9e8c93354c7}{visit\+Transition\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ae1dd6e905aaeecd749e6f1258403e9dd}{\+\_\+visit\+Transition\+Map}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a1363a55892607c0e016d70e740a57f91}{entry\+Function\+Macro\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ae47eb9e56122a81a612dd49c07b78d2c}{\+\_\+entry\+Function\+GPUMacro\+Map}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a7e094423fe02ec74ca351dc96080b727}{sus\+CFGBlock\+GPUMacro\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_afc72d8f6d8094cfa0076217c415f7ff3}{\+\_\+sus\+CFGBlock\+GPUMacro\+Map}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a74a356cce004fe03c3bae5f854ef6e06}{common\+Time\+DPMap\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ae81a2156319d9b225bb6ee85bee957b5}{\+\_\+common\+Time\+DPMap}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a74a356cce004fe03c3bae5f854ef6e06}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a74a356cce004fe03c3bae5f854ef6e06}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!commonTimeDPMapType@{commonTimeDPMapType}}
+\index{commonTimeDPMapType@{commonTimeDPMapType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{commonTimeDPMapType}{commonTimeDPMapType}}
+{\footnotesize\ttfamily typedef map$<$\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad5b1dd2561dc533cb37ffa28c36c42e4}{time\+Pair\+Type}}, vector$<$\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$$>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a74a356cce004fe03c3bae5f854ef6e06}{systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::common\+Time\+DPMap\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a59af33b23c7eb23246f0d95c642cf414}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a59af33b23c7eb23246f0d95c642cf414}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!commonTimeDPPairType@{commonTimeDPPairType}}
+\index{commonTimeDPPairType@{commonTimeDPPairType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{commonTimeDPPairType}{commonTimeDPPairType}}
+{\footnotesize\ttfamily typedef pair$<$\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad5b1dd2561dc533cb37ffa28c36c42e4}{time\+Pair\+Type}}, vector$<$\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$$>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a59af33b23c7eb23246f0d95c642cf414}{systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::common\+Time\+DPPair\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_aff1b79ef75c622aabe9e2bd384f64305}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_aff1b79ef75c622aabe9e2bd384f64305}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!entryFunctionInstanceIdMapType@{entryFunctionInstanceIdMapType}}
+\index{entryFunctionInstanceIdMapType@{entryFunctionInstanceIdMapType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{entryFunctionInstanceIdMapType}{entryFunctionInstanceIdMapType}}
+{\footnotesize\ttfamily typedef map$<$\mbox{\hyperlink{classsystemc__clang_1_1EntryFunctionContainer}{Entry\+Function\+Container}} $\ast$, int$>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_aff1b79ef75c622aabe9e2bd384f64305}{systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::entry\+Function\+Instance\+Id\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a12e17f95884cf65775acb1e05899a58a}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a12e17f95884cf65775acb1e05899a58a}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!entryFunctionInstanceIdPairType@{entryFunctionInstanceIdPairType}}
+\index{entryFunctionInstanceIdPairType@{entryFunctionInstanceIdPairType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{entryFunctionInstanceIdPairType}{entryFunctionInstanceIdPairType}}
+{\footnotesize\ttfamily typedef pair$<$\mbox{\hyperlink{classsystemc__clang_1_1EntryFunctionContainer}{Entry\+Function\+Container}} $\ast$, int$>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a12e17f95884cf65775acb1e05899a58a}{systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::entry\+Function\+Instance\+Id\+Pair\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a1363a55892607c0e016d70e740a57f91}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a1363a55892607c0e016d70e740a57f91}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!entryFunctionMacroMapType@{entryFunctionMacroMapType}}
+\index{entryFunctionMacroMapType@{entryFunctionMacroMapType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{entryFunctionMacroMapType}{entryFunctionMacroMapType}}
+{\footnotesize\ttfamily typedef map$<$\mbox{\hyperlink{classsystemc__clang_1_1EntryFunctionContainer}{Entry\+Function\+Container}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a683dfecf001a3f455e3894ac825ca1bc}{Find\+GPUMacro\+::for\+Stmt\+GPUMacro\+Map\+Type}}$>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a1363a55892607c0e016d70e740a57f91}{systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::entry\+Function\+Macro\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_abcce2a03d05d57d4d9dbc786f7edf9d1}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_abcce2a03d05d57d4d9dbc786f7edf9d1}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!entryFunctionMacroPairType@{entryFunctionMacroPairType}}
+\index{entryFunctionMacroPairType@{entryFunctionMacroPairType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{entryFunctionMacroPairType}{entryFunctionMacroPairType}}
+{\footnotesize\ttfamily typedef pair$<$\mbox{\hyperlink{classsystemc__clang_1_1EntryFunctionContainer}{Entry\+Function\+Container}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a683dfecf001a3f455e3894ac825ca1bc}{Find\+GPUMacro\+::for\+Stmt\+GPUMacro\+Map\+Type}}$>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_abcce2a03d05d57d4d9dbc786f7edf9d1}{systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::entry\+Function\+Macro\+Pair\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_aa89f9ae41fc5343a33462912b8037667}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_aa89f9ae41fc5343a33462912b8037667}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!eventNotificationTimeMapType@{eventNotificationTimeMapType}}
+\index{eventNotificationTimeMapType@{eventNotificationTimeMapType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{eventNotificationTimeMapType}{eventNotificationTimeMapType}}
+{\footnotesize\ttfamily typedef map$<$string, \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad5b1dd2561dc533cb37ffa28c36c42e4}{time\+Pair\+Type}}$>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_aa89f9ae41fc5343a33462912b8037667}{systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::event\+Notification\+Time\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a87b9935e2a92ea9266a4daa89de48a0c}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a87b9935e2a92ea9266a4daa89de48a0c}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!eventNotificationTimePairType@{eventNotificationTimePairType}}
+\index{eventNotificationTimePairType@{eventNotificationTimePairType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{eventNotificationTimePairType}{eventNotificationTimePairType}}
+{\footnotesize\ttfamily typedef pair$<$string, \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad5b1dd2561dc533cb37ffa28c36c42e4}{time\+Pair\+Type}}$>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a87b9935e2a92ea9266a4daa89de48a0c}{systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::event\+Notification\+Time\+Pair\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a5f78949942978b1e282d6240cb925280}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a5f78949942978b1e282d6240cb925280}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!instanceFunctionSautoMapType@{instanceFunctionSautoMapType}}
+\index{instanceFunctionSautoMapType@{instanceFunctionSautoMapType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{instanceFunctionSautoMapType}{instanceFunctionSautoMapType}}
+{\footnotesize\ttfamily typedef map$<$\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a12e17f95884cf65775acb1e05899a58a}{entry\+Function\+Instance\+Id\+Pair\+Type}}, \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a86977643d2ad2505b98f5fa2f412a1ed}{transition\+Vector\+Type}}$>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a5f78949942978b1e282d6240cb925280}{systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::instance\+Function\+Sauto\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a37c48830e073af6d4a513e6ce0762729}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a37c48830e073af6d4a513e6ce0762729}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!instanceFunctionSautoPairType@{instanceFunctionSautoPairType}}
+\index{instanceFunctionSautoPairType@{instanceFunctionSautoPairType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{instanceFunctionSautoPairType}{instanceFunctionSautoPairType}}
+{\footnotesize\ttfamily typedef pair$<$\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a12e17f95884cf65775acb1e05899a58a}{entry\+Function\+Instance\+Id\+Pair\+Type}}, \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a86977643d2ad2505b98f5fa2f412a1ed}{transition\+Vector\+Type}}$>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a37c48830e073af6d4a513e6ce0762729}{systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::instance\+Function\+Sauto\+Pair\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a878dca3e21d6fbd0d71240b2810b4621}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a878dca3e21d6fbd0d71240b2810b4621}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!stateTransitionsMapType@{stateTransitionsMapType}}
+\index{stateTransitionsMapType@{stateTransitionsMapType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{stateTransitionsMapType}{stateTransitionsMapType}}
+{\footnotesize\ttfamily typedef map$<$\mbox{\hyperlink{classsystemc__clang_1_1State}{State}} $\ast$, vector$<$\mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$$>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a878dca3e21d6fbd0d71240b2810b4621}{systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::state\+Transitions\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_aaee6cb4d3d4f63c2f860b0b83022bf78}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_aaee6cb4d3d4f63c2f860b0b83022bf78}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!stateTransitionsPairType@{stateTransitionsPairType}}
+\index{stateTransitionsPairType@{stateTransitionsPairType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{stateTransitionsPairType}{stateTransitionsPairType}}
+{\footnotesize\ttfamily typedef pair$<$\mbox{\hyperlink{classsystemc__clang_1_1State}{State}} $\ast$, vector$<$\mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$$>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_aaee6cb4d3d4f63c2f860b0b83022bf78}{systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::state\+Transitions\+Pair\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a7e094423fe02ec74ca351dc96080b727}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a7e094423fe02ec74ca351dc96080b727}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!susCFGBlockGPUMacroMapType@{susCFGBlockGPUMacroMapType}}
+\index{susCFGBlockGPUMacroMapType@{susCFGBlockGPUMacroMapType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{susCFGBlockGPUMacroMapType}{susCFGBlockGPUMacroMapType}}
+{\footnotesize\ttfamily typedef map$<$\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro}{GPUMacro}} $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a7e094423fe02ec74ca351dc96080b727}{systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::sus\+CFGBlock\+GPUMacro\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a56876eccc173ec3bb55c2f9fd44624e7}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a56876eccc173ec3bb55c2f9fd44624e7}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!susCFGBlockGPUMacroPairType@{susCFGBlockGPUMacroPairType}}
+\index{susCFGBlockGPUMacroPairType@{susCFGBlockGPUMacroPairType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{susCFGBlockGPUMacroPairType}{susCFGBlockGPUMacroPairType}}
+{\footnotesize\ttfamily typedef pair$<$\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro}{GPUMacro}} $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a56876eccc173ec3bb55c2f9fd44624e7}{systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::sus\+CFGBlock\+GPUMacro\+Pair\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_ad5b1dd2561dc533cb37ffa28c36c42e4}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_ad5b1dd2561dc533cb37ffa28c36c42e4}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!timePairType@{timePairType}}
+\index{timePairType@{timePairType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{timePairType}{timePairType}}
+{\footnotesize\ttfamily typedef pair$<$float, int$>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad5b1dd2561dc533cb37ffa28c36c42e4}{systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::time\+Pair\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a63401a9884f8e9615b695b1dc9555b26}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a63401a9884f8e9615b695b1dc9555b26}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!transitionTimeMapType@{transitionTimeMapType}}
+\index{transitionTimeMapType@{transitionTimeMapType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{transitionTimeMapType}{transitionTimeMapType}}
+{\footnotesize\ttfamily typedef map$<$\mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad5b1dd2561dc533cb37ffa28c36c42e4}{time\+Pair\+Type}}$>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a63401a9884f8e9615b695b1dc9555b26}{systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::transition\+Time\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_afc94bfa7f93a5a0fb01483dea38046c6}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_afc94bfa7f93a5a0fb01483dea38046c6}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!transitionTimePairType@{transitionTimePairType}}
+\index{transitionTimePairType@{transitionTimePairType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{transitionTimePairType}{transitionTimePairType}}
+{\footnotesize\ttfamily typedef pair$<$\mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad5b1dd2561dc533cb37ffa28c36c42e4}{time\+Pair\+Type}}$>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_afc94bfa7f93a5a0fb01483dea38046c6}{systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::transition\+Time\+Pair\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a86977643d2ad2505b98f5fa2f412a1ed}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a86977643d2ad2505b98f5fa2f412a1ed}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!transitionVectorType@{transitionVectorType}}
+\index{transitionVectorType@{transitionVectorType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{transitionVectorType}{transitionVectorType}}
+{\footnotesize\ttfamily typedef vector$<$\mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a86977643d2ad2505b98f5fa2f412a1ed}{systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::transition\+Vector\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_ad4740b081a0880d4735ec9e8c93354c7}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_ad4740b081a0880d4735ec9e8c93354c7}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!visitTransitionMapType@{visitTransitionMapType}}
+\index{visitTransitionMapType@{visitTransitionMapType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{visitTransitionMapType}{visitTransitionMapType}}
+{\footnotesize\ttfamily typedef map$<$\mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$, bool$>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad4740b081a0880d4735ec9e8c93354c7}{systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::visit\+Transition\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_aa98d9120219f6deb9d1c9f8bc2b03dc8}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_aa98d9120219f6deb9d1c9f8bc2b03dc8}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!visitTransitionPairType@{visitTransitionPairType}}
+\index{visitTransitionPairType@{visitTransitionPairType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{visitTransitionPairType}{visitTransitionPairType}}
+{\footnotesize\ttfamily typedef pair$<$\mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$, bool$>$ \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_aa98d9120219f6deb9d1c9f8bc2b03dc8}{systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::visit\+Transition\+Pair\+Type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_abb5f142fe7bd8216fd43ac3ba56c38e8}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_abb5f142fe7bd8216fd43ac3ba56c38e8}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!GlobalSuspensionAutomata@{GlobalSuspensionAutomata}}
+\index{GlobalSuspensionAutomata@{GlobalSuspensionAutomata}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{GlobalSuspensionAutomata()}{GlobalSuspensionAutomata()}}
+{\footnotesize\ttfamily Global\+Suspension\+Automata\+::\+Global\+Suspension\+Automata (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1Model}{Model}} $\ast$}]{system\+Cmodel,  }\item[{raw\+\_\+ostream \&}]{os,  }\item[{ASTContext $\ast$}]{a }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a6ec671b1adb921bf0e793ddc271ec4cc}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a6ec671b1adb921bf0e793ddc271ec4cc}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!````~GlobalSuspensionAutomata@{$\sim$GlobalSuspensionAutomata}}
+\index{````~GlobalSuspensionAutomata@{$\sim$GlobalSuspensionAutomata}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{$\sim$GlobalSuspensionAutomata()}{~GlobalSuspensionAutomata()}}
+{\footnotesize\ttfamily Global\+Suspension\+Automata\+::$\sim$\+Global\+Suspension\+Automata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a2e2a5da7293995d455107f520b7a91cf}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a2e2a5da7293995d455107f520b7a91cf}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!annotateTransitionsDPSeg@{annotateTransitionsDPSeg}}
+\index{annotateTransitionsDPSeg@{annotateTransitionsDPSeg}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{annotateTransitionsDPSeg()}{annotateTransitionsDPSeg()}}
+{\footnotesize\ttfamily void Global\+Suspension\+Automata\+::annotate\+Transitions\+DPSeg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$}]{t,  }\item[{int}]{instance\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_acad967eb6262a3354775642a5189b92c}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_acad967eb6262a3354775642a5189b92c}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!arrangeGPUSusCFGBlocks@{arrangeGPUSusCFGBlocks}}
+\index{arrangeGPUSusCFGBlocks@{arrangeGPUSusCFGBlocks}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{arrangeGPUSusCFGBlocks()}{arrangeGPUSusCFGBlocks()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ Global\+Suspension\+Automata\+::arrange\+GPUSus\+CFGBlocks (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$}]{gpu\+Fit\+Sus\+CFGVector }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a125522232acb8c31eb9bac5ba062a59d}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a125522232acb8c31eb9bac5ba062a59d}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!dump@{dump}}
+\index{dump@{dump}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void Global\+Suspension\+Automata\+::dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_af343d5bf1434341a724d44faf24cbd2e}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_af343d5bf1434341a724d44faf24cbd2e}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!genGSauto@{genGSauto}}
+\index{genGSauto@{genGSauto}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{genGSauto()}{genGSauto()}}
+{\footnotesize\ttfamily void Global\+Suspension\+Automata\+::gen\+GSauto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a6f133dd6587f8374c3f3cd54d4d7e881}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a6f133dd6587f8374c3f3cd54d4d7e881}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!getArgumentName@{getArgumentName}}
+\index{getArgumentName@{getArgumentName}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{getArgumentName()}{getArgumentName()}}
+{\footnotesize\ttfamily string Global\+Suspension\+Automata\+::get\+Argument\+Name (\begin{DoxyParamCaption}\item[{Expr $\ast$}]{arg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a5c29b2d9a82908fc99212b66a31dd385}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a5c29b2d9a82908fc99212b66a31dd385}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!getEntryFunctionMacroMap@{getEntryFunctionMacroMap}}
+\index{getEntryFunctionMacroMap@{getEntryFunctionMacroMap}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{getEntryFunctionMacroMap()}{getEntryFunctionMacroMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a1363a55892607c0e016d70e740a57f91}{Global\+Suspension\+Automata\+::entry\+Function\+Macro\+Map\+Type}} Global\+Suspension\+Automata\+::get\+Entry\+Function\+Macro\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_ae953d95b5a85a8b6593bbabea84066f6}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_ae953d95b5a85a8b6593bbabea84066f6}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!getGlobalSauto@{getGlobalSauto}}
+\index{getGlobalSauto@{getGlobalSauto}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{getGlobalSauto()}{getGlobalSauto()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$ $>$ Global\+Suspension\+Automata\+::get\+Global\+Sauto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a04b297442b832b6ac447b37301a351d5}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a04b297442b832b6ac447b37301a351d5}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!getIncomingTransitions@{getIncomingTransitions}}
+\index{getIncomingTransitions@{getIncomingTransitions}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{getIncomingTransitions()}{getIncomingTransitions()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$ $>$ Global\+Suspension\+Automata\+::get\+Incoming\+Transitions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1State}{State}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a8d0d88d3ae3c4ecd0c8b09d324b27b6c}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a8d0d88d3ae3c4ecd0c8b09d324b27b6c}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!getInstanceFunctionSautoMap@{getInstanceFunctionSautoMap}}
+\index{getInstanceFunctionSautoMap@{getInstanceFunctionSautoMap}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{getInstanceFunctionSautoMap()}{getInstanceFunctionSautoMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a5f78949942978b1e282d6240cb925280}{instance\+Function\+Sauto\+Map\+Type}} systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::get\+Instance\+Function\+Sauto\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a7961bf67e1bf59f3c41c8a52f3de8c66}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a7961bf67e1bf59f3c41c8a52f3de8c66}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!getNotifyEventName@{getNotifyEventName}}
+\index{getNotifyEventName@{getNotifyEventName}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{getNotifyEventName()}{getNotifyEventName()}}
+{\footnotesize\ttfamily string Global\+Suspension\+Automata\+::get\+Notify\+Event\+Name (\begin{DoxyParamCaption}\item[{const CFGStmt $\ast$}]{cs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a5f17d7f6c359ed983d9d7a4ef643f904}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a5f17d7f6c359ed983d9d7a4ef643f904}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!getOutgoingTransitions@{getOutgoingTransitions}}
+\index{getOutgoingTransitions@{getOutgoingTransitions}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{getOutgoingTransitions()}{getOutgoingTransitions()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$ $>$ Global\+Suspension\+Automata\+::get\+Outgoing\+Transitions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1State}{State}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_aa4036307db9207ba72c3ee12602bed21}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_aa4036307db9207ba72c3ee12602bed21}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!getSusCFGBlockGPUMacroMap@{getSusCFGBlockGPUMacroMap}}
+\index{getSusCFGBlockGPUMacroMap@{getSusCFGBlockGPUMacroMap}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{getSusCFGBlockGPUMacroMap()}{getSusCFGBlockGPUMacroMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a7e094423fe02ec74ca351dc96080b727}{Global\+Suspension\+Automata\+::sus\+CFGBlock\+GPUMacro\+Map\+Type}} Global\+Suspension\+Automata\+::get\+Sus\+CFGBlock\+GPUMacro\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a99c7a6927d270bdd1086cfba84a3c190}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a99c7a6927d270bdd1086cfba84a3c190}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!getTimeForTransition@{getTimeForTransition}}
+\index{getTimeForTransition@{getTimeForTransition}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{getTimeForTransition()}{getTimeForTransition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad5b1dd2561dc533cb37ffa28c36c42e4}{Global\+Suspension\+Automata\+::time\+Pair\+Type}} Global\+Suspension\+Automata\+::get\+Time\+For\+Transition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a9c9a58b29db12a757c11c94cd7ff09e0}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a9c9a58b29db12a757c11c94cd7ff09e0}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!getTransitionsAtTime@{getTransitionsAtTime}}
+\index{getTransitionsAtTime@{getTransitionsAtTime}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{getTransitionsAtTime()}{getTransitionsAtTime()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$ $>$ Global\+Suspension\+Automata\+::get\+Transitions\+At\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad5b1dd2561dc533cb37ffa28c36c42e4}{time\+Pair\+Type}}}]{tp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a5f28483e547807bbc4084904594e89cb}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a5f28483e547807bbc4084904594e89cb}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!getTransitionTimeMap@{getTransitionTimeMap}}
+\index{getTransitionTimeMap@{getTransitionTimeMap}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{getTransitionTimeMap()}{getTransitionTimeMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a63401a9884f8e9615b695b1dc9555b26}{Global\+Suspension\+Automata\+::transition\+Time\+Map\+Type}} Global\+Suspension\+Automata\+::get\+Transition\+Time\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_ad142848415fb20323f067f922baad102}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_ad142848415fb20323f067f922baad102}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!getTransportType@{getTransportType}}
+\index{getTransportType@{getTransportType}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{getTransportType()}{getTransportType()}}
+{\footnotesize\ttfamily void systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::get\+Transport\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a6cb4e29442e0d8d53e3c073873f63e4a}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a6cb4e29442e0d8d53e3c073873f63e4a}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!GPUMap@{GPUMap}}
+\index{GPUMap@{GPUMap}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{GPUMap()}{GPUMap()}}
+{\footnotesize\ttfamily bool Global\+Suspension\+Automata\+::\+GPUMap (\begin{DoxyParamCaption}\item[{float}]{c\+\_\+ideal,  }\item[{vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$}]{sus\+CFGBlock\+List,  }\item[{float \&}]{c\+\_\+actual }\end{DoxyParamCaption})}
+
+\+\_\+os $<$$<$\char`\"{}\textbackslash{}n done arranging block list ==$>$\char`\"{};\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_ac0312fbc7b36799105cc2f377a1a2c2b}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_ac0312fbc7b36799105cc2f377a1a2c2b}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!initialise@{initialise}}
+\index{initialise@{initialise}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{initialise()}{initialise()}}
+{\footnotesize\ttfamily void Global\+Suspension\+Automata\+::initialise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_aad741b181c5ecc30918fb7ba446c1cbc}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_aad741b181c5ecc30918fb7ba446c1cbc}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!initializeGpuMap@{initializeGpuMap}}
+\index{initializeGpuMap@{initializeGpuMap}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{initializeGpuMap()}{initializeGpuMap()}}
+{\footnotesize\ttfamily void Global\+Suspension\+Automata\+::initialize\+Gpu\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_abfd7ca3cb24ae7dcaa50b204c5a61066}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_abfd7ca3cb24ae7dcaa50b204c5a61066}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!isNotifyCall@{isNotifyCall}}
+\index{isNotifyCall@{isNotifyCall}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{isNotifyCall()}{isNotifyCall()}}
+{\footnotesize\ttfamily bool Global\+Suspension\+Automata\+::is\+Notify\+Call (\begin{DoxyParamCaption}\item[{const CFGStmt $\ast$}]{cs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_ab21b606214fb62130eb276f10a98740b}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_ab21b606214fb62130eb276f10a98740b}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!max@{max}}
+\index{max@{max}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{max()}{max()}}
+{\footnotesize\ttfamily float Global\+Suspension\+Automata\+::max (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a28a9fa1f175321b3c0d1701109d7734e}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a28a9fa1f175321b3c0d1701109d7734e}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!maxTime@{maxTime}}
+\index{maxTime@{maxTime}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{maxTime()}{maxTime()}}
+{\footnotesize\ttfamily float systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::max\+Time (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$}]{,  }\item[{unsigned int}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a541f7970f925e473ded30afc41d0ad0a}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a541f7970f925e473ded30afc41d0ad0a}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!merge\_sort@{merge\_sort}}
+\index{merge\_sort@{merge\_sort}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{merge\_sort()}{merge\_sort()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ Global\+Suspension\+Automata\+::merge\+\_\+sort (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$}]{left\+List,  }\item[{vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$}]{right\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_adc9c80eb078bb6e328e19c4a423c317a}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_adc9c80eb078bb6e328e19c4a423c317a}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!updateEventNotificationTime@{updateEventNotificationTime}}
+\index{updateEventNotificationTime@{updateEventNotificationTime}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{updateEventNotificationTime()}{updateEventNotificationTime()}}
+{\footnotesize\ttfamily void Global\+Suspension\+Automata\+::update\+Event\+Notification\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$}]{tr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_afb504ec049dce4f340d6ee44de5d096f}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_afb504ec049dce4f340d6ee44de5d096f}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!updateTransitionTime@{updateTransitionTime}}
+\index{updateTransitionTime@{updateTransitionTime}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{updateTransitionTime()}{updateTransitionTime()}}
+{\footnotesize\ttfamily bool Global\+Suspension\+Automata\+::update\+Transition\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$}]{tr }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a5e1103b8eb9d8c7db7ff8e1f26c753c8}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a5e1103b8eb9d8c7db7ff8e1f26c753c8}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!\_a@{\_a}}
+\index{\_a@{\_a}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_a}{\_a}}
+{\footnotesize\ttfamily ASTContext$\ast$ systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::\+\_\+a\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_ae81a2156319d9b225bb6ee85bee957b5}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_ae81a2156319d9b225bb6ee85bee957b5}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!\_commonTimeDPMap@{\_commonTimeDPMap}}
+\index{\_commonTimeDPMap@{\_commonTimeDPMap}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_commonTimeDPMap}{\_commonTimeDPMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a74a356cce004fe03c3bae5f854ef6e06}{common\+Time\+DPMap\+Type}} systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::\+\_\+common\+Time\+DPMap\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_ae47eb9e56122a81a612dd49c07b78d2c}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_ae47eb9e56122a81a612dd49c07b78d2c}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!\_entryFunctionGPUMacroMap@{\_entryFunctionGPUMacroMap}}
+\index{\_entryFunctionGPUMacroMap@{\_entryFunctionGPUMacroMap}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_entryFunctionGPUMacroMap}{\_entryFunctionGPUMacroMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a1363a55892607c0e016d70e740a57f91}{entry\+Function\+Macro\+Map\+Type}} systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::\+\_\+entry\+Function\+GPUMacro\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_ae3682ee2abc6d4ff164d1b6265807d75}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_ae3682ee2abc6d4ff164d1b6265807d75}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!\_eventNotificationTimeMap@{\_eventNotificationTimeMap}}
+\index{\_eventNotificationTimeMap@{\_eventNotificationTimeMap}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_eventNotificationTimeMap}{\_eventNotificationTimeMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_aa89f9ae41fc5343a33462912b8037667}{event\+Notification\+Time\+Map\+Type}} systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::\+\_\+event\+Notification\+Time\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_ae1a92362fa42f934fe5a8f23f5e11d16}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_ae1a92362fa42f934fe5a8f23f5e11d16}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!\_globalSauto@{\_globalSauto}}
+\index{\_globalSauto@{\_globalSauto}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_globalSauto}{\_globalSauto}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a86977643d2ad2505b98f5fa2f412a1ed}{transition\+Vector\+Type}} systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::\+\_\+global\+Sauto\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a14b11f0d94e08f0ecb4af0f7fb88b3e8}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a14b11f0d94e08f0ecb4af0f7fb88b3e8}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!\_incomingTransitionsMap@{\_incomingTransitionsMap}}
+\index{\_incomingTransitionsMap@{\_incomingTransitionsMap}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_incomingTransitionsMap}{\_incomingTransitionsMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a878dca3e21d6fbd0d71240b2810b4621}{state\+Transitions\+Map\+Type}} systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::\+\_\+incoming\+Transitions\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_aa88e19635275dcf98ca87f34a18cd776}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_aa88e19635275dcf98ca87f34a18cd776}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!\_instanceFunctionSautoMap@{\_instanceFunctionSautoMap}}
+\index{\_instanceFunctionSautoMap@{\_instanceFunctionSautoMap}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_instanceFunctionSautoMap}{\_instanceFunctionSautoMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a5f78949942978b1e282d6240cb925280}{instance\+Function\+Sauto\+Map\+Type}} systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::\+\_\+instance\+Function\+Sauto\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a02578ca27be242f0eaf48fbe37e36254}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a02578ca27be242f0eaf48fbe37e36254}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!\_moduleInstanceMap@{\_moduleInstanceMap}}
+\index{\_moduleInstanceMap@{\_moduleInstanceMap}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_moduleInstanceMap}{\_moduleInstanceMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1Model_adb14c5fc604752f5a1b5a26b58b3590b}{Model\+::module\+Instance\+Map\+Type}} systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::\+\_\+module\+Instance\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_ad02212ec8e0d4ae9c80d9f8beb47150e}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_ad02212ec8e0d4ae9c80d9f8beb47150e}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!\_notifyCalls@{\_notifyCalls}}
+\index{\_notifyCalls@{\_notifyCalls}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_notifyCalls}{\_notifyCalls}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindNotify_aebd5c90665011a52c5037b4953a6796f}{Find\+Notify\+::\+Notify\+Call\+List\+Type}} systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::\+\_\+notify\+Calls\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a07a0cdab13d25f006b411f16363f83dc}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a07a0cdab13d25f006b411f16363f83dc}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!\_os@{\_os}}
+\index{\_os@{\_os}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_os}{\_os}}
+{\footnotesize\ttfamily raw\+\_\+ostream\& systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::\+\_\+os\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_ab7727d723e440cce6492538fc4adbac3}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_ab7727d723e440cce6492538fc4adbac3}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!\_outgoingTransitionsMap@{\_outgoingTransitionsMap}}
+\index{\_outgoingTransitionsMap@{\_outgoingTransitionsMap}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_outgoingTransitionsMap}{\_outgoingTransitionsMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a878dca3e21d6fbd0d71240b2810b4621}{state\+Transitions\+Map\+Type}} systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::\+\_\+outgoing\+Transitions\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_afc72d8f6d8094cfa0076217c415f7ff3}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_afc72d8f6d8094cfa0076217c415f7ff3}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!\_susCFGBlockGPUMacroMap@{\_susCFGBlockGPUMacroMap}}
+\index{\_susCFGBlockGPUMacroMap@{\_susCFGBlockGPUMacroMap}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_susCFGBlockGPUMacroMap}{\_susCFGBlockGPUMacroMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a7e094423fe02ec74ca351dc96080b727}{sus\+CFGBlock\+GPUMacro\+Map\+Type}} systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::\+\_\+sus\+CFGBlock\+GPUMacro\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_af0896e0c2ac16d8ef73e97759235c09c}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_af0896e0c2ac16d8ef73e97759235c09c}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!\_systemcModel@{\_systemcModel}}
+\index{\_systemcModel@{\_systemcModel}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_systemcModel}{\_systemcModel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1Model}{Model}}$\ast$ systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::\+\_\+systemc\+Model\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_a75a3cb959657bf75967419d5bf9e7421}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_a75a3cb959657bf75967419d5bf9e7421}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!\_transitionTimeMap@{\_transitionTimeMap}}
+\index{\_transitionTimeMap@{\_transitionTimeMap}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_transitionTimeMap}{\_transitionTimeMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_a63401a9884f8e9615b695b1dc9555b26}{transition\+Time\+Map\+Type}} systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::\+\_\+transition\+Time\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GlobalSuspensionAutomata_ae1dd6e905aaeecd749e6f1258403e9dd}\label{classsystemc__clang_1_1GlobalSuspensionAutomata_ae1dd6e905aaeecd749e6f1258403e9dd}} 
+\index{systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}!\_visitTransitionMap@{\_visitTransitionMap}}
+\index{\_visitTransitionMap@{\_visitTransitionMap}!systemc\_clang::GlobalSuspensionAutomata@{systemc\_clang::GlobalSuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_visitTransitionMap}{\_visitTransitionMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1GlobalSuspensionAutomata_ad4740b081a0880d4735ec9e8c93354c7}{visit\+Transition\+Map\+Type}} systemc\+\_\+clang\+::\+Global\+Suspension\+Automata\+::\+\_\+visit\+Transition\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+SCuitable/\mbox{\hyperlink{GlobalSuspensionAutomata_8h}{Global\+Suspension\+Automata.\+h}}\item 
+src/\+SCuitable/\mbox{\hyperlink{GlobalSuspensionAutomata_8cpp}{Global\+Suspension\+Automata.\+cpp}}\end{DoxyCompactItemize}

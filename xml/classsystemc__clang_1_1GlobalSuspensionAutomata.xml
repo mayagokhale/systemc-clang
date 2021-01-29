@@ -1,0 +1,1035 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__clang_1_1GlobalSuspensionAutomata" kind="class" language="C++" prot="public">
+    <compoundname>systemc_clang::GlobalSuspensionAutomata</compoundname>
+    <basecompoundref refid="classsystemc__clang_1_1Utility" prot="public" virt="non-virtual">systemc_clang::Utility</basecompoundref>
+    <includes refid="GlobalSuspensionAutomata_8h" local="no">GlobalSuspensionAutomata.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1ad5b1dd2561dc533cb37ffa28c36c42e4" prot="public" static="no">
+        <type>pair&lt; float, int &gt;</type>
+        <definition>typedef pair&lt;float, int&gt; systemc_clang::GlobalSuspensionAutomata::timePairType</definition>
+        <argsstring></argsstring>
+        <name>timePairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="16" column="16" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a86977643d2ad2505b98f5fa2f412a1ed" prot="public" static="no">
+        <type>vector&lt; <ref refid="classsystemc__clang_1_1Transition" kindref="compound">Transition</ref> * &gt;</type>
+        <definition>typedef vector&lt;Transition *&gt; systemc_clang::GlobalSuspensionAutomata::transitionVectorType</definition>
+        <argsstring></argsstring>
+        <name>transitionVectorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="17" column="18" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a12e17f95884cf65775acb1e05899a58a" prot="public" static="no">
+        <type>pair&lt; <ref refid="classsystemc__clang_1_1EntryFunctionContainer" kindref="compound">EntryFunctionContainer</ref> *, int &gt;</type>
+        <definition>typedef pair&lt;EntryFunctionContainer *, int&gt; systemc_clang::GlobalSuspensionAutomata::entryFunctionInstanceIdPairType</definition>
+        <argsstring></argsstring>
+        <name>entryFunctionInstanceIdPairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="19" column="16" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1aff1b79ef75c622aabe9e2bd384f64305" prot="public" static="no">
+        <type>map&lt; <ref refid="classsystemc__clang_1_1EntryFunctionContainer" kindref="compound">EntryFunctionContainer</ref> *, int &gt;</type>
+        <definition>typedef map&lt;EntryFunctionContainer *, int&gt; systemc_clang::GlobalSuspensionAutomata::entryFunctionInstanceIdMapType</definition>
+        <argsstring></argsstring>
+        <name>entryFunctionInstanceIdMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="20" column="15" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a37c48830e073af6d4a513e6ce0762729" prot="public" static="no">
+        <type>pair&lt; <ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a12e17f95884cf65775acb1e05899a58a" kindref="member">entryFunctionInstanceIdPairType</ref>, <ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a86977643d2ad2505b98f5fa2f412a1ed" kindref="member">transitionVectorType</ref> &gt;</type>
+        <definition>typedef pair&lt;entryFunctionInstanceIdPairType, transitionVectorType&gt; systemc_clang::GlobalSuspensionAutomata::instanceFunctionSautoPairType</definition>
+        <argsstring></argsstring>
+        <name>instanceFunctionSautoPairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="23" column="7" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a5f78949942978b1e282d6240cb925280" prot="public" static="no">
+        <type>map&lt; <ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a12e17f95884cf65775acb1e05899a58a" kindref="member">entryFunctionInstanceIdPairType</ref>, <ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a86977643d2ad2505b98f5fa2f412a1ed" kindref="member">transitionVectorType</ref> &gt;</type>
+        <definition>typedef map&lt;entryFunctionInstanceIdPairType, transitionVectorType&gt; systemc_clang::GlobalSuspensionAutomata::instanceFunctionSautoMapType</definition>
+        <argsstring></argsstring>
+        <name>instanceFunctionSautoMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="25" column="7" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1afc94bfa7f93a5a0fb01483dea38046c6" prot="public" static="no">
+        <type>pair&lt; <ref refid="classsystemc__clang_1_1Transition" kindref="compound">Transition</ref> *, <ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ad5b1dd2561dc533cb37ffa28c36c42e4" kindref="member">timePairType</ref> &gt;</type>
+        <definition>typedef pair&lt;Transition *, timePairType&gt; systemc_clang::GlobalSuspensionAutomata::transitionTimePairType</definition>
+        <argsstring></argsstring>
+        <name>transitionTimePairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="27" column="16" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a63401a9884f8e9615b695b1dc9555b26" prot="public" static="no">
+        <type>map&lt; <ref refid="classsystemc__clang_1_1Transition" kindref="compound">Transition</ref> *, <ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ad5b1dd2561dc533cb37ffa28c36c42e4" kindref="member">timePairType</ref> &gt;</type>
+        <definition>typedef map&lt;Transition *, timePairType&gt; systemc_clang::GlobalSuspensionAutomata::transitionTimeMapType</definition>
+        <argsstring></argsstring>
+        <name>transitionTimeMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="28" column="15" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a87b9935e2a92ea9266a4daa89de48a0c" prot="public" static="no">
+        <type>pair&lt; string, <ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ad5b1dd2561dc533cb37ffa28c36c42e4" kindref="member">timePairType</ref> &gt;</type>
+        <definition>typedef pair&lt;string, timePairType&gt; systemc_clang::GlobalSuspensionAutomata::eventNotificationTimePairType</definition>
+        <argsstring></argsstring>
+        <name>eventNotificationTimePairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="30" column="16" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1aa89f9ae41fc5343a33462912b8037667" prot="public" static="no">
+        <type>map&lt; string, <ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ad5b1dd2561dc533cb37ffa28c36c42e4" kindref="member">timePairType</ref> &gt;</type>
+        <definition>typedef map&lt;string, timePairType&gt; systemc_clang::GlobalSuspensionAutomata::eventNotificationTimeMapType</definition>
+        <argsstring></argsstring>
+        <name>eventNotificationTimeMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="31" column="15" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1aaee6cb4d3d4f63c2f860b0b83022bf78" prot="public" static="no">
+        <type>pair&lt; <ref refid="classsystemc__clang_1_1State" kindref="compound">State</ref> *, vector&lt; <ref refid="classsystemc__clang_1_1Transition" kindref="compound">Transition</ref> * &gt; &gt;</type>
+        <definition>typedef pair&lt;State *, vector&lt;Transition *&gt; &gt; systemc_clang::GlobalSuspensionAutomata::stateTransitionsPairType</definition>
+        <argsstring></argsstring>
+        <name>stateTransitionsPairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="33" column="16" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a878dca3e21d6fbd0d71240b2810b4621" prot="public" static="no">
+        <type>map&lt; <ref refid="classsystemc__clang_1_1State" kindref="compound">State</ref> *, vector&lt; <ref refid="classsystemc__clang_1_1Transition" kindref="compound">Transition</ref> * &gt; &gt;</type>
+        <definition>typedef map&lt;State *, vector&lt;Transition *&gt; &gt; systemc_clang::GlobalSuspensionAutomata::stateTransitionsMapType</definition>
+        <argsstring></argsstring>
+        <name>stateTransitionsMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="34" column="15" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1aa98d9120219f6deb9d1c9f8bc2b03dc8" prot="public" static="no">
+        <type>pair&lt; <ref refid="classsystemc__clang_1_1Transition" kindref="compound">Transition</ref> *, bool &gt;</type>
+        <definition>typedef pair&lt;Transition *, bool&gt; systemc_clang::GlobalSuspensionAutomata::visitTransitionPairType</definition>
+        <argsstring></argsstring>
+        <name>visitTransitionPairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="36" column="16" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1ad4740b081a0880d4735ec9e8c93354c7" prot="public" static="no">
+        <type>map&lt; <ref refid="classsystemc__clang_1_1Transition" kindref="compound">Transition</ref> *, bool &gt;</type>
+        <definition>typedef map&lt;Transition *, bool&gt; systemc_clang::GlobalSuspensionAutomata::visitTransitionMapType</definition>
+        <argsstring></argsstring>
+        <name>visitTransitionMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="37" column="15" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1abcce2a03d05d57d4d9dbc786f7edf9d1" prot="public" static="no">
+        <type>pair&lt; <ref refid="classsystemc__clang_1_1EntryFunctionContainer" kindref="compound">EntryFunctionContainer</ref> *, <ref refid="classsystemc__clang_1_1FindGPUMacro_1a683dfecf001a3f455e3894ac825ca1bc" kindref="member">FindGPUMacro::forStmtGPUMacroMapType</ref> &gt;</type>
+        <definition>typedef pair&lt;EntryFunctionContainer *, FindGPUMacro::forStmtGPUMacroMapType&gt; systemc_clang::GlobalSuspensionAutomata::entryFunctionMacroPairType</definition>
+        <argsstring></argsstring>
+        <name>entryFunctionMacroPairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="40" column="7" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a1363a55892607c0e016d70e740a57f91" prot="public" static="no">
+        <type>map&lt; <ref refid="classsystemc__clang_1_1EntryFunctionContainer" kindref="compound">EntryFunctionContainer</ref> *, <ref refid="classsystemc__clang_1_1FindGPUMacro_1a683dfecf001a3f455e3894ac825ca1bc" kindref="member">FindGPUMacro::forStmtGPUMacroMapType</ref> &gt;</type>
+        <definition>typedef map&lt;EntryFunctionContainer *, FindGPUMacro::forStmtGPUMacroMapType&gt; systemc_clang::GlobalSuspensionAutomata::entryFunctionMacroMapType</definition>
+        <argsstring></argsstring>
+        <name>entryFunctionMacroMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="42" column="7" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a56876eccc173ec3bb55c2f9fd44624e7" prot="public" static="no">
+        <type>pair&lt; <ref refid="classsystemc__clang_1_1SusCFG" kindref="compound">SusCFG</ref> *, <ref refid="classsystemc__clang_1_1GPUMacro" kindref="compound">GPUMacro</ref> * &gt;</type>
+        <definition>typedef pair&lt;SusCFG *, GPUMacro *&gt; systemc_clang::GlobalSuspensionAutomata::susCFGBlockGPUMacroPairType</definition>
+        <argsstring></argsstring>
+        <name>susCFGBlockGPUMacroPairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="44" column="16" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a7e094423fe02ec74ca351dc96080b727" prot="public" static="no">
+        <type>map&lt; <ref refid="classsystemc__clang_1_1SusCFG" kindref="compound">SusCFG</ref> *, <ref refid="classsystemc__clang_1_1GPUMacro" kindref="compound">GPUMacro</ref> * &gt;</type>
+        <definition>typedef map&lt;SusCFG *, GPUMacro *&gt; systemc_clang::GlobalSuspensionAutomata::susCFGBlockGPUMacroMapType</definition>
+        <argsstring></argsstring>
+        <name>susCFGBlockGPUMacroMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="45" column="15" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a59af33b23c7eb23246f0d95c642cf414" prot="public" static="no">
+        <type>pair&lt; <ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ad5b1dd2561dc533cb37ffa28c36c42e4" kindref="member">timePairType</ref>, vector&lt; <ref refid="classsystemc__clang_1_1SusCFG" kindref="compound">SusCFG</ref> * &gt; &gt;</type>
+        <definition>typedef pair&lt;timePairType, vector&lt;SusCFG *&gt; &gt; systemc_clang::GlobalSuspensionAutomata::commonTimeDPPairType</definition>
+        <argsstring></argsstring>
+        <name>commonTimeDPPairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="47" column="16" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a74a356cce004fe03c3bae5f854ef6e06" prot="public" static="no">
+        <type>map&lt; <ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ad5b1dd2561dc533cb37ffa28c36c42e4" kindref="member">timePairType</ref>, vector&lt; <ref refid="classsystemc__clang_1_1SusCFG" kindref="compound">SusCFG</ref> * &gt; &gt;</type>
+        <definition>typedef map&lt;timePairType, vector&lt;SusCFG *&gt; &gt; systemc_clang::GlobalSuspensionAutomata::commonTimeDPMapType</definition>
+        <argsstring></argsstring>
+        <name>commonTimeDPMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="48" column="15" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a07a0cdab13d25f006b411f16363f83dc" prot="private" static="no" mutable="no">
+        <type>raw_ostream &amp;</type>
+        <definition>raw_ostream&amp; systemc_clang::GlobalSuspensionAutomata::_os</definition>
+        <argsstring></argsstring>
+        <name>_os</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="78" column="15" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a5e1103b8eb9d8c7db7ff8e1f26c753c8" prot="private" static="no" mutable="no">
+        <type>ASTContext *</type>
+        <definition>ASTContext* systemc_clang::GlobalSuspensionAutomata::_a</definition>
+        <argsstring></argsstring>
+        <name>_a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="79" column="14" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1ae1a92362fa42f934fe5a8f23f5e11d16" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a86977643d2ad2505b98f5fa2f412a1ed" kindref="member">transitionVectorType</ref></type>
+        <definition>transitionVectorType systemc_clang::GlobalSuspensionAutomata::_globalSauto</definition>
+        <argsstring></argsstring>
+        <name>_globalSauto</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="80" column="24" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1af0896e0c2ac16d8ef73e97759235c09c" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1Model" kindref="compound">Model</ref> *</type>
+        <definition>Model* systemc_clang::GlobalSuspensionAutomata::_systemcModel</definition>
+        <argsstring></argsstring>
+        <name>_systemcModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="81" column="9" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a02578ca27be242f0eaf48fbe37e36254" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1Model_1adb14c5fc604752f5a1b5a26b58b3590b" kindref="member">Model::moduleInstanceMapType</ref></type>
+        <definition>Model::moduleInstanceMapType systemc_clang::GlobalSuspensionAutomata::_moduleInstanceMap</definition>
+        <argsstring></argsstring>
+        <name>_moduleInstanceMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="82" column="32" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a14b11f0d94e08f0ecb4af0f7fb88b3e8" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a878dca3e21d6fbd0d71240b2810b4621" kindref="member">stateTransitionsMapType</ref></type>
+        <definition>stateTransitionsMapType systemc_clang::GlobalSuspensionAutomata::_incomingTransitionsMap</definition>
+        <argsstring></argsstring>
+        <name>_incomingTransitionsMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="83" column="27" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1ab7727d723e440cce6492538fc4adbac3" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a878dca3e21d6fbd0d71240b2810b4621" kindref="member">stateTransitionsMapType</ref></type>
+        <definition>stateTransitionsMapType systemc_clang::GlobalSuspensionAutomata::_outgoingTransitionsMap</definition>
+        <argsstring></argsstring>
+        <name>_outgoingTransitionsMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="84" column="27" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1aa88e19635275dcf98ca87f34a18cd776" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a5f78949942978b1e282d6240cb925280" kindref="member">instanceFunctionSautoMapType</ref></type>
+        <definition>instanceFunctionSautoMapType systemc_clang::GlobalSuspensionAutomata::_instanceFunctionSautoMap</definition>
+        <argsstring></argsstring>
+        <name>_instanceFunctionSautoMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="85" column="32" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1ae3682ee2abc6d4ff164d1b6265807d75" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1aa89f9ae41fc5343a33462912b8037667" kindref="member">eventNotificationTimeMapType</ref></type>
+        <definition>eventNotificationTimeMapType systemc_clang::GlobalSuspensionAutomata::_eventNotificationTimeMap</definition>
+        <argsstring></argsstring>
+        <name>_eventNotificationTimeMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="86" column="32" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a75a3cb959657bf75967419d5bf9e7421" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a63401a9884f8e9615b695b1dc9555b26" kindref="member">transitionTimeMapType</ref></type>
+        <definition>transitionTimeMapType systemc_clang::GlobalSuspensionAutomata::_transitionTimeMap</definition>
+        <argsstring></argsstring>
+        <name>_transitionTimeMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="87" column="25" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1ad02212ec8e0d4ae9c80d9f8beb47150e" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1FindNotify_1aebd5c90665011a52c5037b4953a6796f" kindref="member">FindNotify::NotifyCallListType</ref></type>
+        <definition>FindNotify::NotifyCallListType systemc_clang::GlobalSuspensionAutomata::_notifyCalls</definition>
+        <argsstring></argsstring>
+        <name>_notifyCalls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="88" column="34" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1ae1dd6e905aaeecd749e6f1258403e9dd" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ad4740b081a0880d4735ec9e8c93354c7" kindref="member">visitTransitionMapType</ref></type>
+        <definition>visitTransitionMapType systemc_clang::GlobalSuspensionAutomata::_visitTransitionMap</definition>
+        <argsstring></argsstring>
+        <name>_visitTransitionMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="89" column="26" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1ae47eb9e56122a81a612dd49c07b78d2c" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a1363a55892607c0e016d70e740a57f91" kindref="member">entryFunctionMacroMapType</ref></type>
+        <definition>entryFunctionMacroMapType systemc_clang::GlobalSuspensionAutomata::_entryFunctionGPUMacroMap</definition>
+        <argsstring></argsstring>
+        <name>_entryFunctionGPUMacroMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="90" column="29" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1afc72d8f6d8094cfa0076217c415f7ff3" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a7e094423fe02ec74ca351dc96080b727" kindref="member">susCFGBlockGPUMacroMapType</ref></type>
+        <definition>susCFGBlockGPUMacroMapType systemc_clang::GlobalSuspensionAutomata::_susCFGBlockGPUMacroMap</definition>
+        <argsstring></argsstring>
+        <name>_susCFGBlockGPUMacroMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="91" column="30" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1ae81a2156319d9b225bb6ee85bee957b5" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a74a356cce004fe03c3bae5f854ef6e06" kindref="member">commonTimeDPMapType</ref></type>
+        <definition>commonTimeDPMapType systemc_clang::GlobalSuspensionAutomata::_commonTimeDPMap</definition>
+        <argsstring></argsstring>
+        <name>_commonTimeDPMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="92" column="23" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1abb5f142fe7bd8216fd43ac3ba56c38e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GlobalSuspensionAutomata::GlobalSuspensionAutomata</definition>
+        <argsstring>(Model *, raw_ostream &amp;, ASTContext *)</argsstring>
+        <name>GlobalSuspensionAutomata</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Model" kindref="compound">Model</ref> *</type>
+          <defname>systemCmodel</defname>
+        </param>
+        <param>
+          <type>raw_ostream &amp;</type>
+          <defname>os</defname>
+        </param>
+        <param>
+          <type>ASTContext *</type>
+          <defname>a</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="13" column="3" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="4" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a6ec671b1adb921bf0e793ddc271ec4cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GlobalSuspensionAutomata::~GlobalSuspensionAutomata</definition>
+        <argsstring>()</argsstring>
+        <name>~GlobalSuspensionAutomata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="14" column="3" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1afb504ec049dce4f340d6ee44de5d096f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GlobalSuspensionAutomata::updateTransitionTime</definition>
+        <argsstring>(Transition *)</argsstring>
+        <name>updateTransitionTime</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Transition" kindref="compound">Transition</ref> *</type>
+          <defname>tr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="50" column="8" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="569" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1adc9c80eb078bb6e328e19c4a423c317a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GlobalSuspensionAutomata::updateEventNotificationTime</definition>
+        <argsstring>(Transition *)</argsstring>
+        <name>updateEventNotificationTime</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Transition" kindref="compound">Transition</ref> *</type>
+          <defname>tr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="51" column="8" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="537" bodyend="567"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1ad142848415fb20323f067f922baad102" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void systemc_clang::GlobalSuspensionAutomata::getTransportType</definition>
+        <argsstring>()</argsstring>
+        <name>getTransportType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="52" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a2e2a5da7293995d455107f520b7a91cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GlobalSuspensionAutomata::annotateTransitionsDPSeg</definition>
+        <argsstring>(Transition *, int)</argsstring>
+        <name>annotateTransitionsDPSeg</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Transition" kindref="compound">Transition</ref> *</type>
+          <defname>t</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>instanceId</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="53" column="8" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="302" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1aad741b181c5ecc30918fb7ba446c1cbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GlobalSuspensionAutomata::initializeGpuMap</definition>
+        <argsstring>()</argsstring>
+        <name>initializeGpuMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="54" column="8" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="11" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a6cb4e29442e0d8d53e3c073873f63e4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GlobalSuspensionAutomata::GPUMap</definition>
+        <argsstring>(float, vector&lt; SusCFG * &gt;, float &amp;)</argsstring>
+        <name>GPUMap</name>
+        <param>
+          <type>float</type>
+          <defname>c_ideal</defname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classsystemc__clang_1_1SusCFG" kindref="compound">SusCFG</ref> * &gt;</type>
+          <defname>susCFGBlockList</defname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <defname>c_actual</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>_os &lt;&lt;&quot;\n done arranging block list ==&gt;&quot;;</para>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="55" column="8" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="139" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1acad967eb6262a3354775642a5189b92c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="classsystemc__clang_1_1SusCFG" kindref="compound">SusCFG</ref> * &gt;</type>
+        <definition>vector&lt; SusCFG * &gt; GlobalSuspensionAutomata::arrangeGPUSusCFGBlocks</definition>
+        <argsstring>(vector&lt; SusCFG * &gt;)</argsstring>
+        <name>arrangeGPUSusCFGBlocks</name>
+        <param>
+          <type>vector&lt; <ref refid="classsystemc__clang_1_1SusCFG" kindref="compound">SusCFG</ref> * &gt;</type>
+          <defname>gpuFitSusCFGVector</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="56" column="10" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="237" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a28a9fa1f175321b3c0d1701109d7734e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float systemc_clang::GlobalSuspensionAutomata::maxTime</definition>
+        <argsstring>(vector&lt; SusCFG * &gt;, unsigned int)</argsstring>
+        <name>maxTime</name>
+        <param>
+          <type>vector&lt; <ref refid="classsystemc__clang_1_1SusCFG" kindref="compound">SusCFG</ref> * &gt;</type>
+        </param>
+        <param>
+          <type>unsigned int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="57" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1ab21b606214fb62130eb276f10a98740b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float GlobalSuspensionAutomata::max</definition>
+        <argsstring>(float, float)</argsstring>
+        <name>max</name>
+        <param>
+          <type>float</type>
+          <defname>a</defname>
+        </param>
+        <param>
+          <type>float</type>
+          <defname>b</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="58" column="9" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="293" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a541f7970f925e473ded30afc41d0ad0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="classsystemc__clang_1_1SusCFG" kindref="compound">SusCFG</ref> * &gt;</type>
+        <definition>vector&lt; SusCFG * &gt; GlobalSuspensionAutomata::merge_sort</definition>
+        <argsstring>(vector&lt; SusCFG * &gt;, vector&lt; SusCFG * &gt;)</argsstring>
+        <name>merge_sort</name>
+        <param>
+          <type>vector&lt; <ref refid="classsystemc__clang_1_1SusCFG" kindref="compound">SusCFG</ref> * &gt;</type>
+          <defname>leftList</defname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classsystemc__clang_1_1SusCFG" kindref="compound">SusCFG</ref> * &gt;</type>
+          <defname>rightList</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="59" column="10" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="261" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1ac0312fbc7b36799105cc2f377a1a2c2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GlobalSuspensionAutomata::initialise</definition>
+        <argsstring>()</argsstring>
+        <name>initialise</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="60" column="8" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="340" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a6f133dd6587f8374c3f3cd54d4d7e881" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string GlobalSuspensionAutomata::getArgumentName</definition>
+        <argsstring>(Expr *)</argsstring>
+        <name>getArgumentName</name>
+        <param>
+          <type>Expr *</type>
+          <defname>arg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="61" column="10" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="513" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1abfd7ca3cb24ae7dcaa50b204c5a61066" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GlobalSuspensionAutomata::isNotifyCall</definition>
+        <argsstring>(const CFGStmt *)</argsstring>
+        <name>isNotifyCall</name>
+        <param>
+          <type>const CFGStmt *</type>
+          <defname>cs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="62" column="8" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="496" bodyend="511"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1af343d5bf1434341a724d44faf24cbd2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GlobalSuspensionAutomata::genGSauto</definition>
+        <argsstring>()</argsstring>
+        <name>genGSauto</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="63" column="8" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="635" bodyend="685"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a7961bf67e1bf59f3c41c8a52f3de8c66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string GlobalSuspensionAutomata::getNotifyEventName</definition>
+        <argsstring>(const CFGStmt *)</argsstring>
+        <name>getNotifyEventName</name>
+        <param>
+          <type>const CFGStmt *</type>
+          <defname>cs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="64" column="10" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="526" bodyend="535"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a125522232acb8c31eb9bac5ba062a59d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GlobalSuspensionAutomata::dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="65" column="8" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="687" bodyend="732"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1ae953d95b5a85a8b6593bbabea84066f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a86977643d2ad2505b98f5fa2f412a1ed" kindref="member">transitionVectorType</ref></type>
+        <definition>vector&lt; Transition * &gt; GlobalSuspensionAutomata::getGlobalSauto</definition>
+        <argsstring>()</argsstring>
+        <name>getGlobalSauto</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="67" column="24" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="445" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a9c9a58b29db12a757c11c94cd7ff09e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a86977643d2ad2505b98f5fa2f412a1ed" kindref="member">transitionVectorType</ref></type>
+        <definition>vector&lt; Transition * &gt; GlobalSuspensionAutomata::getTransitionsAtTime</definition>
+        <argsstring>(timePairType)</argsstring>
+        <name>getTransitionsAtTime</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ad5b1dd2561dc533cb37ffa28c36c42e4" kindref="member">timePairType</ref></type>
+          <defname>tp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="68" column="24" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="455" bodyend="466"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a5f17d7f6c359ed983d9d7a4ef643f904" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a86977643d2ad2505b98f5fa2f412a1ed" kindref="member">transitionVectorType</ref></type>
+        <definition>vector&lt; Transition * &gt; GlobalSuspensionAutomata::getOutgoingTransitions</definition>
+        <argsstring>(State *)</argsstring>
+        <name>getOutgoingTransitions</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1State" kindref="compound">State</ref> *</type>
+          <defname>state</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="69" column="24" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="429" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a04b297442b832b6ac447b37301a351d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a86977643d2ad2505b98f5fa2f412a1ed" kindref="member">transitionVectorType</ref></type>
+        <definition>vector&lt; Transition * &gt; GlobalSuspensionAutomata::getIncomingTransitions</definition>
+        <argsstring>(State *)</argsstring>
+        <name>getIncomingTransitions</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1State" kindref="compound">State</ref> *</type>
+          <defname>state</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="70" column="24" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="485" bodyend="494"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a99c7a6927d270bdd1086cfba84a3c190" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ad5b1dd2561dc533cb37ffa28c36c42e4" kindref="member">timePairType</ref></type>
+        <definition>GlobalSuspensionAutomata::timePairType GlobalSuspensionAutomata::getTimeForTransition</definition>
+        <argsstring>(Transition *)</argsstring>
+        <name>getTimeForTransition</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Transition" kindref="compound">Transition</ref> *</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="71" column="16" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="474" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a8d0d88d3ae3c4ecd0c8b09d324b27b6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a5f78949942978b1e282d6240cb925280" kindref="member">instanceFunctionSautoMapType</ref></type>
+        <definition>instanceFunctionSautoMapType systemc_clang::GlobalSuspensionAutomata::getInstanceFunctionSautoMap</definition>
+        <argsstring>()</argsstring>
+        <name>getInstanceFunctionSautoMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="72" column="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a5f28483e547807bbc4084904594e89cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a63401a9884f8e9615b695b1dc9555b26" kindref="member">transitionTimeMapType</ref></type>
+        <definition>GlobalSuspensionAutomata::transitionTimeMapType GlobalSuspensionAutomata::getTransitionTimeMap</definition>
+        <argsstring>()</argsstring>
+        <name>getTransitionTimeMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="73" column="25" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="469" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1aa4036307db9207ba72c3ee12602bed21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a7e094423fe02ec74ca351dc96080b727" kindref="member">susCFGBlockGPUMacroMapType</ref></type>
+        <definition>GlobalSuspensionAutomata::susCFGBlockGPUMacroMapType GlobalSuspensionAutomata::getSusCFGBlockGPUMacroMap</definition>
+        <argsstring>()</argsstring>
+        <name>getSusCFGBlockGPUMacroMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="74" column="30" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="441" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1GlobalSuspensionAutomata_1a5c29b2d9a82908fc99212b66a31dd385" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a1363a55892607c0e016d70e740a57f91" kindref="member">entryFunctionMacroMapType</ref></type>
+        <definition>GlobalSuspensionAutomata::entryFunctionMacroMapType GlobalSuspensionAutomata::getEntryFunctionMacroMap</definition>
+        <argsstring>()</argsstring>
+        <name>getEntryFunctionMacroMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="75" column="29" bodyfile="src/SCuitable/GlobalSuspensionAutomata.cpp" bodystart="450" bodyend="452"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>systemc_clang::Utility</label>
+        <link refid="classsystemc__clang_1_1Utility"/>
+      </node>
+      <node id="1">
+        <label>systemc_clang::GlobalSuspensionAutomata</label>
+        <link refid="classsystemc__clang_1_1GlobalSuspensionAutomata"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>systemc_clang::ModuleInstance</label>
+        <link refid="classsystemc__clang_1_1ModuleInstance"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>instance_info_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>systemc_clang::Model</label>
+        <link refid="classsystemc__clang_1_1Model"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>root_module_inst_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>systemc_clang::Utility</label>
+        <link refid="classsystemc__clang_1_1Utility"/>
+      </node>
+      <node id="5">
+        <label>sc_ast_matchers::ModuleInstanceType</label>
+        <link refid="structsc__ast__matchers_1_1ModuleInstanceType"/>
+      </node>
+      <node id="1">
+        <label>systemc_clang::GlobalSuspensionAutomata</label>
+        <link refid="classsystemc__clang_1_1GlobalSuspensionAutomata"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_systemcModel</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/SCuitable/GlobalSuspensionAutomata.h" line="11" column="1" bodyfile="src/SCuitable/GlobalSuspensionAutomata.h" bodystart="11" bodyend="93"/>
+    <listofallmembers>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a5e1103b8eb9d8c7db7ff8e1f26c753c8" prot="private" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>_a</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ae81a2156319d9b225bb6ee85bee957b5" prot="private" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>_commonTimeDPMap</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ae47eb9e56122a81a612dd49c07b78d2c" prot="private" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>_entryFunctionGPUMacroMap</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ae3682ee2abc6d4ff164d1b6265807d75" prot="private" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>_eventNotificationTimeMap</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ae1a92362fa42f934fe5a8f23f5e11d16" prot="private" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>_globalSauto</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a14b11f0d94e08f0ecb4af0f7fb88b3e8" prot="private" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>_incomingTransitionsMap</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1aa88e19635275dcf98ca87f34a18cd776" prot="private" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>_instanceFunctionSautoMap</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a02578ca27be242f0eaf48fbe37e36254" prot="private" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>_moduleInstanceMap</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ad02212ec8e0d4ae9c80d9f8beb47150e" prot="private" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>_notifyCalls</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a07a0cdab13d25f006b411f16363f83dc" prot="private" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>_os</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ab7727d723e440cce6492538fc4adbac3" prot="private" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>_outgoingTransitionsMap</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1afc72d8f6d8094cfa0076217c415f7ff3" prot="private" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>_susCFGBlockGPUMacroMap</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1af0896e0c2ac16d8ef73e97759235c09c" prot="private" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>_systemcModel</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a75a3cb959657bf75967419d5bf9e7421" prot="private" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>_transitionTimeMap</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ae1dd6e905aaeecd749e6f1258403e9dd" prot="private" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>_visitTransitionMap</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a2e2a5da7293995d455107f520b7a91cf" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>annotateTransitionsDPSeg</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1acad967eb6262a3354775642a5189b92c" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>arrangeGPUSusCFGBlocks</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a74a356cce004fe03c3bae5f854ef6e06" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>commonTimeDPMapType</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a59af33b23c7eb23246f0d95c642cf414" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>commonTimeDPPairType</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a125522232acb8c31eb9bac5ba062a59d" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>dump</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1aff1b79ef75c622aabe9e2bd384f64305" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>entryFunctionInstanceIdMapType</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a12e17f95884cf65775acb1e05899a58a" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>entryFunctionInstanceIdPairType</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a1363a55892607c0e016d70e740a57f91" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>entryFunctionMacroMapType</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1abcce2a03d05d57d4d9dbc786f7edf9d1" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>entryFunctionMacroPairType</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1aa89f9ae41fc5343a33462912b8037667" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>eventNotificationTimeMapType</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a87b9935e2a92ea9266a4daa89de48a0c" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>eventNotificationTimePairType</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1af343d5bf1434341a724d44faf24cbd2e" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>genGSauto</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a6f133dd6587f8374c3f3cd54d4d7e881" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>getArgumentName</name></member>
+      <member refid="classsystemc__clang_1_1Utility_1a2b89b2bd4d7a3f10974b8904c1798921" prot="public" virt="non-virtual" ambiguityscope="systemc_clang::Utility::"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>getArgumentName</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a5c29b2d9a82908fc99212b66a31dd385" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>getEntryFunctionMacroMap</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ae953d95b5a85a8b6593bbabea84066f6" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>getGlobalSauto</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a04b297442b832b6ac447b37301a351d5" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>getIncomingTransitions</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a8d0d88d3ae3c4ecd0c8b09d324b27b6c" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>getInstanceFunctionSautoMap</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a7961bf67e1bf59f3c41c8a52f3de8c66" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>getNotifyEventName</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a5f17d7f6c359ed983d9d7a4ef643f904" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>getOutgoingTransitions</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1aa4036307db9207ba72c3ee12602bed21" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>getSusCFGBlockGPUMacroMap</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a99c7a6927d270bdd1086cfba84a3c190" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>getTimeForTransition</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a9c9a58b29db12a757c11c94cd7ff09e0" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>getTransitionsAtTime</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a5f28483e547807bbc4084904594e89cb" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>getTransitionTimeMap</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ad142848415fb20323f067f922baad102" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>getTransportType</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1abb5f142fe7bd8216fd43ac3ba56c38e8" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>GlobalSuspensionAutomata</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a6cb4e29442e0d8d53e3c073873f63e4a" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>GPUMap</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ac0312fbc7b36799105cc2f377a1a2c2b" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>initialise</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1aad741b181c5ecc30918fb7ba446c1cbc" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>initializeGpuMap</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a5f78949942978b1e282d6240cb925280" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>instanceFunctionSautoMapType</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a37c48830e073af6d4a513e6ce0762729" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>instanceFunctionSautoPairType</name></member>
+      <member refid="classsystemc__clang_1_1Utility_1a807a4944329acdc8c6b8b4bbf36a59a4" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>isElementPresent</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1abfd7ca3cb24ae7dcaa50b204c5a61066" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>isNotifyCall</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ab21b606214fb62130eb276f10a98740b" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>max</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a28a9fa1f175321b3c0d1701109d7734e" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>maxTime</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a541f7970f925e473ded30afc41d0ad0a" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>merge_sort</name></member>
+      <member refid="classsystemc__clang_1_1Utility_1a1bfeb0d4469d75f5143c70bc2bae8e1a" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>removeDuplicate</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a878dca3e21d6fbd0d71240b2810b4621" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>stateTransitionsMapType</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1aaee6cb4d3d4f63c2f860b0b83022bf78" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>stateTransitionsPairType</name></member>
+      <member refid="classsystemc__clang_1_1Utility_1a2a23cd95dfe9b197856e28f1f2f70d0d" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>strip</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a7e094423fe02ec74ca351dc96080b727" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>susCFGBlockGPUMacroMapType</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a56876eccc173ec3bb55c2f9fd44624e7" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>susCFGBlockGPUMacroPairType</name></member>
+      <member refid="classsystemc__clang_1_1Utility_1afee859008a964bba751d6c914c4b04b0" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>tabit</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ad5b1dd2561dc533cb37ffa28c36c42e4" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>timePairType</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a63401a9884f8e9615b695b1dc9555b26" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>transitionTimeMapType</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1afc94bfa7f93a5a0fb01483dea38046c6" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>transitionTimePairType</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a86977643d2ad2505b98f5fa2f412a1ed" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>transitionVectorType</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1adc9c80eb078bb6e328e19c4a423c317a" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>updateEventNotificationTime</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1afb504ec049dce4f340d6ee44de5d096f" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>updateTransitionTime</name></member>
+      <member refid="classsystemc__clang_1_1Utility_1a28bedc1e035e19b9d24726c57d224eb9" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>Utility</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1ad4740b081a0880d4735ec9e8c93354c7" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>visitTransitionMapType</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1aa98d9120219f6deb9d1c9f8bc2b03dc8" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>visitTransitionPairType</name></member>
+      <member refid="classsystemc__clang_1_1GlobalSuspensionAutomata_1a6ec671b1adb921bf0e793ddc271ec4cc" prot="public" virt="non-virtual"><scope>systemc_clang::GlobalSuspensionAutomata</scope><name>~GlobalSuspensionAutomata</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

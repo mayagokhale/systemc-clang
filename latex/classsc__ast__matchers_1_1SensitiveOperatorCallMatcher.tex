@@ -1,0 +1,124 @@
+\hypertarget{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher}{}\doxysection{sc\+\_\+ast\+\_\+matchers\+::Sensitive\+Operator\+Call\+Matcher Class Reference}
+\label{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher}\index{sc\_ast\_matchers::SensitiveOperatorCallMatcher@{sc\_ast\_matchers::SensitiveOperatorCallMatcher}}
+
+
+{\ttfamily \#include $<$Sensitivity\+Matcher.\+h$>$}
+
+
+
+Inheritance diagram for sc\+\_\+ast\+\_\+matchers\+::Sensitive\+Operator\+Call\+Matcher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sc\+\_\+ast\+\_\+matchers\+::Sensitive\+Operator\+Call\+Matcher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+clang\+::\+CXXMember\+Call\+Expr $\ast$ \mbox{\hyperlink{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_aa5e80322db3d2b79f8091ee154c5ee2a}{get\+Member\+Expr\+Call\+Expr}} ()
+\item 
+clang\+::\+Member\+Expr $\ast$ \mbox{\hyperlink{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_a8b346cc7f658102b8058ab04a0d140e5}{get\+Member\+Expr\+Without\+Call}} ()
+\item 
+const clang\+::\+Array\+Subscript\+Expr $\ast$ \mbox{\hyperlink{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_a28efe6a6fc2dce756d75d15bda1cadd2}{get\+Member\+Array\+Subscript\+Expr}} ()
+\item 
+void \mbox{\hyperlink{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_ae5608408a7e875644df406ca043a5f53}{register\+Matchers}} (Match\+Finder \&finder)
+\item 
+virtual void \mbox{\hyperlink{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_a0eb9b60064a4df2eff0d7fb95ce4973b}{run}} (const Match\+Finder\+::\+Match\+Result \&result)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+clang\+::\+CXXMember\+Call\+Expr $\ast$ \mbox{\hyperlink{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_afa0b896b5167844ee2a6cecea32658d0}{cxx\+\_\+mcall\+\_\+}}
+\item 
+clang\+::\+Member\+Expr $\ast$ \mbox{\hyperlink{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_ab2e7f54f3b9afa16e05b22b342844449}{me\+\_\+wo\+\_\+mcall\+\_\+}}
+\item 
+const clang\+::\+Array\+Subscript\+Expr $\ast$ \mbox{\hyperlink{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_a75aaa41d4faeaeba47765a85e51ca2a9}{array\+\_\+fd\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class \mbox{\hyperlink{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher}{Sensitive\+Operator\+Call\+Matcher}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_a28efe6a6fc2dce756d75d15bda1cadd2}\label{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_a28efe6a6fc2dce756d75d15bda1cadd2}} 
+\index{sc\_ast\_matchers::SensitiveOperatorCallMatcher@{sc\_ast\_matchers::SensitiveOperatorCallMatcher}!getMemberArraySubscriptExpr@{getMemberArraySubscriptExpr}}
+\index{getMemberArraySubscriptExpr@{getMemberArraySubscriptExpr}!sc\_ast\_matchers::SensitiveOperatorCallMatcher@{sc\_ast\_matchers::SensitiveOperatorCallMatcher}}
+\doxysubsubsection{\texorpdfstring{getMemberArraySubscriptExpr()}{getMemberArraySubscriptExpr()}}
+{\footnotesize\ttfamily const clang\+::\+Array\+Subscript\+Expr$\ast$ sc\+\_\+ast\+\_\+matchers\+::\+Sensitive\+Operator\+Call\+Matcher\+::get\+Member\+Array\+Subscript\+Expr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_aa5e80322db3d2b79f8091ee154c5ee2a}\label{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_aa5e80322db3d2b79f8091ee154c5ee2a}} 
+\index{sc\_ast\_matchers::SensitiveOperatorCallMatcher@{sc\_ast\_matchers::SensitiveOperatorCallMatcher}!getMemberExprCallExpr@{getMemberExprCallExpr}}
+\index{getMemberExprCallExpr@{getMemberExprCallExpr}!sc\_ast\_matchers::SensitiveOperatorCallMatcher@{sc\_ast\_matchers::SensitiveOperatorCallMatcher}}
+\doxysubsubsection{\texorpdfstring{getMemberExprCallExpr()}{getMemberExprCallExpr()}}
+{\footnotesize\ttfamily clang\+::\+CXXMember\+Call\+Expr$\ast$ sc\+\_\+ast\+\_\+matchers\+::\+Sensitive\+Operator\+Call\+Matcher\+::get\+Member\+Expr\+Call\+Expr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_a8b346cc7f658102b8058ab04a0d140e5}\label{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_a8b346cc7f658102b8058ab04a0d140e5}} 
+\index{sc\_ast\_matchers::SensitiveOperatorCallMatcher@{sc\_ast\_matchers::SensitiveOperatorCallMatcher}!getMemberExprWithoutCall@{getMemberExprWithoutCall}}
+\index{getMemberExprWithoutCall@{getMemberExprWithoutCall}!sc\_ast\_matchers::SensitiveOperatorCallMatcher@{sc\_ast\_matchers::SensitiveOperatorCallMatcher}}
+\doxysubsubsection{\texorpdfstring{getMemberExprWithoutCall()}{getMemberExprWithoutCall()}}
+{\footnotesize\ttfamily clang\+::\+Member\+Expr$\ast$ sc\+\_\+ast\+\_\+matchers\+::\+Sensitive\+Operator\+Call\+Matcher\+::get\+Member\+Expr\+Without\+Call (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_ae5608408a7e875644df406ca043a5f53}\label{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_ae5608408a7e875644df406ca043a5f53}} 
+\index{sc\_ast\_matchers::SensitiveOperatorCallMatcher@{sc\_ast\_matchers::SensitiveOperatorCallMatcher}!registerMatchers@{registerMatchers}}
+\index{registerMatchers@{registerMatchers}!sc\_ast\_matchers::SensitiveOperatorCallMatcher@{sc\_ast\_matchers::SensitiveOperatorCallMatcher}}
+\doxysubsubsection{\texorpdfstring{registerMatchers()}{registerMatchers()}}
+{\footnotesize\ttfamily void sc\+\_\+ast\+\_\+matchers\+::\+Sensitive\+Operator\+Call\+Matcher\+::register\+Matchers (\begin{DoxyParamCaption}\item[{Match\+Finder \&}]{finder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is the main matcher for identifying sensitivity lists.
+
+The matcher starts in the constructor of a SystemC module.
+\begin{DoxyEnumerate}
+\item Within the constructor, we need to identify operator$<$$<$ since that is the overloaded member used to add sensitivity parameters.
+\item We want to find every operator$<$$<$ call with an argument, and those that have the Field\+Decl used to be of a certain type (sc\+\_\+event, sc\+\_\+interface, ...). This is done because those are the parameters that are allowed for the operator$<$$<$.
+\end{DoxyEnumerate}
+
+2a. For the argument, we identify a call expression (cxx\+Member\+Call\+Expr), or just a Member\+Expr that has a declaration of a Field\+Decl. 2b. The parameters that are allowed in operator$<$$<$ are the following.
+\begin{DoxyItemize}
+\item sc\+\_\+event
+\item sc\+\_\+interface
+\item sc\+\_\+event\+\_\+finder
+\item sc\+\_\+port\+\_\+base 
+\end{DoxyItemize}clang-\/format on\mbox{\Hypertarget{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_a0eb9b60064a4df2eff0d7fb95ce4973b}\label{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_a0eb9b60064a4df2eff0d7fb95ce4973b}} 
+\index{sc\_ast\_matchers::SensitiveOperatorCallMatcher@{sc\_ast\_matchers::SensitiveOperatorCallMatcher}!run@{run}}
+\index{run@{run}!sc\_ast\_matchers::SensitiveOperatorCallMatcher@{sc\_ast\_matchers::SensitiveOperatorCallMatcher}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily virtual void sc\+\_\+ast\+\_\+matchers\+::\+Sensitive\+Operator\+Call\+Matcher\+::run (\begin{DoxyParamCaption}\item[{const Match\+Finder\+::\+Match\+Result \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_a75aaa41d4faeaeba47765a85e51ca2a9}\label{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_a75aaa41d4faeaeba47765a85e51ca2a9}} 
+\index{sc\_ast\_matchers::SensitiveOperatorCallMatcher@{sc\_ast\_matchers::SensitiveOperatorCallMatcher}!array\_fd\_@{array\_fd\_}}
+\index{array\_fd\_@{array\_fd\_}!sc\_ast\_matchers::SensitiveOperatorCallMatcher@{sc\_ast\_matchers::SensitiveOperatorCallMatcher}}
+\doxysubsubsection{\texorpdfstring{array\_fd\_}{array\_fd\_}}
+{\footnotesize\ttfamily const clang\+::\+Array\+Subscript\+Expr$\ast$ sc\+\_\+ast\+\_\+matchers\+::\+Sensitive\+Operator\+Call\+Matcher\+::array\+\_\+fd\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_afa0b896b5167844ee2a6cecea32658d0}\label{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_afa0b896b5167844ee2a6cecea32658d0}} 
+\index{sc\_ast\_matchers::SensitiveOperatorCallMatcher@{sc\_ast\_matchers::SensitiveOperatorCallMatcher}!cxx\_mcall\_@{cxx\_mcall\_}}
+\index{cxx\_mcall\_@{cxx\_mcall\_}!sc\_ast\_matchers::SensitiveOperatorCallMatcher@{sc\_ast\_matchers::SensitiveOperatorCallMatcher}}
+\doxysubsubsection{\texorpdfstring{cxx\_mcall\_}{cxx\_mcall\_}}
+{\footnotesize\ttfamily clang\+::\+CXXMember\+Call\+Expr$\ast$ sc\+\_\+ast\+\_\+matchers\+::\+Sensitive\+Operator\+Call\+Matcher\+::cxx\+\_\+mcall\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_ab2e7f54f3b9afa16e05b22b342844449}\label{classsc__ast__matchers_1_1SensitiveOperatorCallMatcher_ab2e7f54f3b9afa16e05b22b342844449}} 
+\index{sc\_ast\_matchers::SensitiveOperatorCallMatcher@{sc\_ast\_matchers::SensitiveOperatorCallMatcher}!me\_wo\_mcall\_@{me\_wo\_mcall\_}}
+\index{me\_wo\_mcall\_@{me\_wo\_mcall\_}!sc\_ast\_matchers::SensitiveOperatorCallMatcher@{sc\_ast\_matchers::SensitiveOperatorCallMatcher}}
+\doxysubsubsection{\texorpdfstring{me\_wo\_mcall\_}{me\_wo\_mcall\_}}
+{\footnotesize\ttfamily clang\+::\+Member\+Expr$\ast$ sc\+\_\+ast\+\_\+matchers\+::\+Sensitive\+Operator\+Call\+Matcher\+::me\+\_\+wo\+\_\+mcall\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/matchers/\mbox{\hyperlink{SensitivityMatcher_8h}{Sensitivity\+Matcher.\+h}}\end{DoxyCompactItemize}

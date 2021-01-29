@@ -1,0 +1,658 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__clang_1_1EntryFunctionContainer" kind="class" language="C++" prot="public">
+    <compoundname>systemc_clang::EntryFunctionContainer</compoundname>
+    <includes refid="EntryFunctionContainer_8h" local="no">EntryFunctionContainer.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classsystemc__clang_1_1EntryFunctionContainer_1aa80ecadee6b1a265d04e13eccb480aab" prot="public" static="no">
+        <type>vector&lt; <ref refid="classsystemc__clang_1_1WaitContainer" kindref="compound">WaitContainer</ref> * &gt;</type>
+        <definition>typedef vector&lt;WaitContainer *&gt; systemc_clang::EntryFunctionContainer::waitContainerListType</definition>
+        <argsstring></argsstring>
+        <name>waitContainerListType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="38" column="18" bodyfile="src/model/EntryFunctionContainer.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1EntryFunctionContainer_1a5d0558aaa965c4cf7f062f32ca4fc3d2" prot="public" static="no">
+        <type>vector&lt; <ref refid="classsystemc__clang_1_1NotifyContainer" kindref="compound">NotifyContainer</ref> * &gt;</type>
+        <definition>typedef vector&lt;NotifyContainer *&gt; systemc_clang::EntryFunctionContainer::notifyContainerListType</definition>
+        <argsstring></argsstring>
+        <name>notifyContainerListType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="39" column="18" bodyfile="src/model/EntryFunctionContainer.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1EntryFunctionContainer_1a8f469f03c8eab3aeb14e5da882bc2a58" prot="public" static="no">
+        <type>pair&lt; int, <ref refid="classsystemc__clang_1_1SuspensionAutomata_1a37823cbaa98336114b95ee6f8258979f" kindref="member">SuspensionAutomata::transitionVectorType</ref> &gt;</type>
+        <definition>typedef pair&lt;int, SuspensionAutomata::transitionVectorType&gt; systemc_clang::EntryFunctionContainer::instanceSautoPairType</definition>
+        <argsstring></argsstring>
+        <name>instanceSautoPairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="42" column="7" bodyfile="src/model/EntryFunctionContainer.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1EntryFunctionContainer_1afb95c069ffb40e5533df2b436c43c236" prot="public" static="no">
+        <type>map&lt; int, <ref refid="classsystemc__clang_1_1SuspensionAutomata_1a37823cbaa98336114b95ee6f8258979f" kindref="member">SuspensionAutomata::transitionVectorType</ref> &gt;</type>
+        <definition>typedef map&lt;int, SuspensionAutomata::transitionVectorType&gt; systemc_clang::EntryFunctionContainer::instanceSautoMapType</definition>
+        <argsstring></argsstring>
+        <name>instanceSautoMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="44" column="7" bodyfile="src/model/EntryFunctionContainer.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1EntryFunctionContainer_1a55121aeec4f633a43d0a6e2abbc30aaf" prot="public" static="no">
+        <type>pair&lt; int, <ref refid="classsystemc__clang_1_1SuspensionAutomata_1a28e552a993a2ea6ba41eec08e2e903b2" kindref="member">SuspensionAutomata::susCFGVectorType</ref> &gt;</type>
+        <definition>typedef pair&lt;int, SuspensionAutomata::susCFGVectorType&gt; systemc_clang::EntryFunctionContainer::instanceSusCFGPairType</definition>
+        <argsstring></argsstring>
+        <name>instanceSusCFGPairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="47" column="7" bodyfile="src/model/EntryFunctionContainer.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1EntryFunctionContainer_1a0b8913e27d493a4b70b84aad7c2757e2" prot="public" static="no">
+        <type>map&lt; int, <ref refid="classsystemc__clang_1_1SuspensionAutomata_1a28e552a993a2ea6ba41eec08e2e903b2" kindref="member">SuspensionAutomata::susCFGVectorType</ref> &gt;</type>
+        <definition>typedef map&lt;int, SuspensionAutomata::susCFGVectorType&gt; systemc_clang::EntryFunctionContainer::instanceSusCFGMapType</definition>
+        <argsstring></argsstring>
+        <name>instanceSusCFGMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="48" column="15" bodyfile="src/model/EntryFunctionContainer.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1EntryFunctionContainer_1a9c37085137095b5102a25bfc8716ed3d" prot="public" static="no">
+        <type>std::tuple&lt; std::string, clang::ValueDecl *, clang::MemberExpr *, clang::DeclRefExpr *, clang::ArraySubscriptExpr * &gt;</type>
+        <definition>typedef std::tuple&lt;std::string, clang::ValueDecl*, clang::MemberExpr*, clang::DeclRefExpr*, clang::ArraySubscriptExpr*&gt; systemc_clang::EntryFunctionContainer::SensitivityTupleType</definition>
+        <argsstring></argsstring>
+        <name>SensitivityTupleType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="52" column="7" bodyfile="src/model/EntryFunctionContainer.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1EntryFunctionContainer_1ae93e3b03da5f801347140c88ce04ab1a" prot="public" static="no">
+        <type>std::pair&lt; std::string, std::vector&lt; <ref refid="classsystemc__clang_1_1EntryFunctionContainer_1a9c37085137095b5102a25bfc8716ed3d" kindref="member">SensitivityTupleType</ref> &gt; &gt;</type>
+        <definition>typedef std::pair&lt;std::string, std::vector&lt;SensitivityTupleType&gt; &gt; systemc_clang::EntryFunctionContainer::SensitivityPairType</definition>
+        <argsstring></argsstring>
+        <name>SensitivityPairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="54" column="7" bodyfile="src/model/EntryFunctionContainer.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1EntryFunctionContainer_1a4d69296f0e62e5aea47b39f1d8f96df8" prot="public" static="no">
+        <type>std::map&lt; std::string, std::vector&lt; <ref refid="classsystemc__clang_1_1EntryFunctionContainer_1a9c37085137095b5102a25bfc8716ed3d" kindref="member">SensitivityTupleType</ref> &gt; &gt;</type>
+        <definition>typedef std::map&lt;std::string, std::vector&lt;SensitivityTupleType&gt; &gt; systemc_clang::EntryFunctionContainer::SenseMapType</definition>
+        <argsstring></argsstring>
+        <name>SenseMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="56" column="20" bodyfile="src/model/EntryFunctionContainer.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsystemc__clang_1_1EntryFunctionContainer_1a23c3b6712031530f7de7f91494bb5cea" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string systemc_clang::EntryFunctionContainer::_entryName</definition>
+        <argsstring></argsstring>
+        <name>_entryName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="92" column="10" bodyfile="src/model/EntryFunctionContainer.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1EntryFunctionContainer_1acf6ec929f47347ac96b61113c3807e9e" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacesystemc__clang_1aee628e0c13dbaaeb824bd830dc47a138" kindref="member">PROCESS_TYPE</ref></type>
+        <definition>PROCESS_TYPE systemc_clang::EntryFunctionContainer::_procType</definition>
+        <argsstring></argsstring>
+        <name>_procType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="93" column="16" bodyfile="src/model/EntryFunctionContainer.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1EntryFunctionContainer_1aa94065746a1b759ad618672d1bcc530f" prot="public" static="no" mutable="no">
+        <type>CXXMethodDecl *</type>
+        <definition>CXXMethodDecl* systemc_clang::EntryFunctionContainer::_entryMethodDecl</definition>
+        <argsstring></argsstring>
+        <name>_entryMethodDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="94" column="17" bodyfile="src/model/EntryFunctionContainer.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1EntryFunctionContainer_1a74bebabfa45c0882208ddd53289e942d" prot="public" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1EntryFunctionContainer_1aa80ecadee6b1a265d04e13eccb480aab" kindref="member">waitContainerListType</ref></type>
+        <definition>waitContainerListType systemc_clang::EntryFunctionContainer::_waitCalls</definition>
+        <argsstring></argsstring>
+        <name>_waitCalls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="97" column="25" bodyfile="src/model/EntryFunctionContainer.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1EntryFunctionContainer_1a30b698f732bc7c49b54294d479e3b637" prot="public" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1EntryFunctionContainer_1a5d0558aaa965c4cf7f062f32ca4fc3d2" kindref="member">notifyContainerListType</ref></type>
+        <definition>notifyContainerListType systemc_clang::EntryFunctionContainer::_notifyCalls</definition>
+        <argsstring></argsstring>
+        <name>_notifyCalls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="98" column="27" bodyfile="src/model/EntryFunctionContainer.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1EntryFunctionContainer_1a5bff0871f39f8278dc7d3d1aabff1fa7" prot="public" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1EntryFunctionContainer_1a4d69296f0e62e5aea47b39f1d8f96df8" kindref="member">SenseMapType</ref></type>
+        <definition>SenseMapType systemc_clang::EntryFunctionContainer::senseMap_</definition>
+        <argsstring></argsstring>
+        <name>senseMap_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="102" column="16" bodyfile="src/model/EntryFunctionContainer.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1EntryFunctionContainer_1a87298677e5d5c5a12dada5c485e6ff95" prot="public" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classsystemc__clang_1_1Transition" kindref="compound">Transition</ref> * &gt;</type>
+        <definition>vector&lt;Transition *&gt; systemc_clang::EntryFunctionContainer::_susAuto</definition>
+        <argsstring></argsstring>
+        <name>_susAuto</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="104" column="10" bodyfile="src/model/EntryFunctionContainer.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1EntryFunctionContainer_1afec0999cfbb34edb368ab2755e21cd7b" prot="public" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classsystemc__clang_1_1SusCFG" kindref="compound">SusCFG</ref> * &gt;</type>
+        <definition>vector&lt;SusCFG *&gt; systemc_clang::EntryFunctionContainer::_susCFG</definition>
+        <argsstring></argsstring>
+        <name>_susCFG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="105" column="10" bodyfile="src/model/EntryFunctionContainer.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1ad6c5cef09b71839a7f427be3f73a5dc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EntryFunctionContainer::EntryFunctionContainer</definition>
+        <argsstring>()</argsstring>
+        <name>EntryFunctionContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="58" column="3" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1a973a565563cb6d9c3d7b219d7f749ef5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EntryFunctionContainer::EntryFunctionContainer</definition>
+        <argsstring>(string, PROCESS_TYPE, CXXMethodDecl *, Stmt *)</argsstring>
+        <name>EntryFunctionContainer</name>
+        <param>
+          <type>string</type>
+          <defname>n</defname>
+        </param>
+        <param>
+          <type><ref refid="namespacesystemc__clang_1aee628e0c13dbaaeb824bd830dc47a138" kindref="member">PROCESS_TYPE</ref></type>
+          <defname>p</defname>
+        </param>
+        <param>
+          <type>CXXMethodDecl *</type>
+          <defname>d</defname>
+        </param>
+        <param>
+          <type>Stmt *</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="59" column="3" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1ae6ffef3388e405c5eb8aa13ee794c2e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EntryFunctionContainer::EntryFunctionContainer</definition>
+        <argsstring>(const EntryFunctionContainer &amp;)</argsstring>
+        <name>EntryFunctionContainer</name>
+        <param>
+          <type>const <ref refid="classsystemc__clang_1_1EntryFunctionContainer" kindref="compound">EntryFunctionContainer</ref> &amp;</type>
+          <defname>from</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="60" column="3" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="19" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1a352f48dbf3f5c9dc231ecac2563c8308" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EntryFunctionContainer::~EntryFunctionContainer</definition>
+        <argsstring>()</argsstring>
+        <name>~EntryFunctionContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="61" column="3" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="6" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1a8c4e6135b1fc18475ffd1ed6351925ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string EntryFunctionContainer::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="64" column="10" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1a956d0b7c6e78ddb05b020323097d6ed7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CXXMethodDecl *</type>
+        <definition>CXXMethodDecl * EntryFunctionContainer::getEntryMethod</definition>
+        <argsstring>()</argsstring>
+        <name>getEntryMethod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="65" column="17" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1ad8229147a1e4fa479126e3761da2f202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacesystemc__clang_1aee628e0c13dbaaeb824bd830dc47a138" kindref="member">PROCESS_TYPE</ref></type>
+        <definition>PROCESS_TYPE EntryFunctionContainer::getProcessType</definition>
+        <argsstring>()</argsstring>
+        <name>getProcessType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="67" column="16" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1a47c3469ecff9e10080f70459cbec7331" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1EntryFunctionContainer_1aa80ecadee6b1a265d04e13eccb480aab" kindref="member">waitContainerListType</ref></type>
+        <definition>EntryFunctionContainer::waitContainerListType EntryFunctionContainer::getWaitCalls</definition>
+        <argsstring>()</argsstring>
+        <name>getWaitCalls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="69" column="25" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1a9936135c483e438c70202bbd7e8371de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1EntryFunctionContainer_1a5d0558aaa965c4cf7f062f32ca4fc3d2" kindref="member">notifyContainerListType</ref></type>
+        <definition>EntryFunctionContainer::notifyContainerListType EntryFunctionContainer::getNotifyCalls</definition>
+        <argsstring>()</argsstring>
+        <name>getNotifyCalls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="70" column="27" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1a343064ab06a578f0f0d855aad1d409e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1EntryFunctionContainer_1a4d69296f0e62e5aea47b39f1d8f96df8" kindref="member">SenseMapType</ref></type>
+        <definition>EntryFunctionContainer::SenseMapType EntryFunctionContainer::getSenseMap</definition>
+        <argsstring>()</argsstring>
+        <name>getSenseMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="71" column="16" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1af746bf192e581ad16eec6883ef1b1474" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1SuspensionAutomata_1a28e552a993a2ea6ba41eec08e2e903b2" kindref="member">SuspensionAutomata::susCFGVectorType</ref></type>
+        <definition>SuspensionAutomata::susCFGVectorType EntryFunctionContainer::getSusCFG</definition>
+        <argsstring>()</argsstring>
+        <name>getSusCFG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="72" column="40" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1a9d3d27700a2458a309caf51814374d2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1SuspensionAutomata_1a37823cbaa98336114b95ee6f8258979f" kindref="member">SuspensionAutomata::transitionVectorType</ref></type>
+        <definition>SuspensionAutomata::transitionVectorType EntryFunctionContainer::getSusAuto</definition>
+        <argsstring>()</argsstring>
+        <name>getSusAuto</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="73" column="44" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1a53cf16189b7e335b1a6fc63eb3ea5bac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1EntryFunctionContainer_1afb95c069ffb40e5533df2b436c43c236" kindref="member">instanceSautoMapType</ref></type>
+        <definition>instanceSautoMapType systemc_clang::EntryFunctionContainer::getInstanceSautoMap</definition>
+        <argsstring>()</argsstring>
+        <name>getInstanceSautoMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="74" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1a6658d0969d8077a72f3fa061910abf39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1EntryFunctionContainer_1a0b8913e27d493a4b70b84aad7c2757e2" kindref="member">instanceSusCFGMapType</ref></type>
+        <definition>instanceSusCFGMapType systemc_clang::EntryFunctionContainer::getInstanceSusCFGMap</definition>
+        <argsstring>()</argsstring>
+        <name>getInstanceSusCFGMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="75" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1a967beb0f9aeb78f0d8587917a9668344" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntryFunctionContainer::addSensitivityInfo</definition>
+        <argsstring>(SenseMapType &amp;)</argsstring>
+        <name>addSensitivityInfo</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1EntryFunctionContainer_1a4d69296f0e62e5aea47b39f1d8f96df8" kindref="member">SenseMapType</ref> &amp;</type>
+          <defname>sm</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="79" column="8" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1abe6b67fd8b0c7f5391afe4d323e074e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntryFunctionContainer::addWaits</definition>
+        <argsstring>(FindWait &amp;)</argsstring>
+        <name>addWaits</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1FindWait" kindref="compound">FindWait</ref> &amp;</type>
+          <defname>f</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="80" column="8" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="75" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1a78ecb16fc0215807a09edc69736feae7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntryFunctionContainer::addNotifys</definition>
+        <argsstring>(FindNotify &amp;)</argsstring>
+        <name>addNotifys</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1FindNotify" kindref="compound">FindNotify</ref> &amp;</type>
+          <defname>f</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="81" column="8" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="104" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1a928b1766e8858139ee1ff249918f6f6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntryFunctionContainer::addSusCFGAuto</definition>
+        <argsstring>(SuspensionAutomata &amp;)</argsstring>
+        <name>addSusCFGAuto</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1SuspensionAutomata" kindref="compound">SuspensionAutomata</ref> &amp;</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="82" column="8" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="87" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1a1091160a0433997fecb18f7d429fbc55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntryFunctionContainer::setName</definition>
+        <argsstring>(string)</argsstring>
+        <name>setName</name>
+        <param>
+          <type>string</type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="84" column="8" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1ae6e38aced6b2eb7ea7ba5d5e7096977b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntryFunctionContainer::setProcessType</definition>
+        <argsstring>(PROCESS_TYPE)</argsstring>
+        <name>setProcessType</name>
+        <param>
+          <type><ref refid="namespacesystemc__clang_1aee628e0c13dbaaeb824bd830dc47a138" kindref="member">PROCESS_TYPE</ref></type>
+          <defname>p</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="85" column="8" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1a11047b177291702666237980e4631a0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntryFunctionContainer::setEntryMethod</definition>
+        <argsstring>(CXXMethodDecl *)</argsstring>
+        <name>setEntryMethod</name>
+        <param>
+          <type>CXXMethodDecl *</type>
+          <defname>d</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="86" column="8" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1a53fefda8580aa0f04e1254b86eded01b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntryFunctionContainer::dumpSusCFG</definition>
+        <argsstring>(raw_ostream &amp;)</argsstring>
+        <name>dumpSusCFG</name>
+        <param>
+          <type>raw_ostream &amp;</type>
+          <defname>os</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="87" column="8" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="117" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1afb3bc4c5e1fe3cd21def8771184c3f04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntryFunctionContainer::dumpSauto</definition>
+        <argsstring>(raw_ostream &amp;)</argsstring>
+        <name>dumpSauto</name>
+        <param>
+          <type>raw_ostream &amp;</type>
+          <defname>os</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="88" column="8" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="150" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EntryFunctionContainer_1a209e5491e0cb38a8a0a4fd0cbf47f298" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EntryFunctionContainer::dump</definition>
+        <argsstring>(raw_ostream &amp;, int)</argsstring>
+        <name>dump</name>
+        <param>
+          <type>raw_ostream &amp;</type>
+          <defname>os</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>tabn</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EntryFunctionContainer.h" line="89" column="8" bodyfile="src/model/EntryFunctionContainer.cpp" bodystart="161" bodyend="215"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/model/EntryFunctionContainer.h" line="35" column="1" bodyfile="src/model/EntryFunctionContainer.h" bodystart="35" bodyend="106"/>
+    <listofallmembers>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1aa94065746a1b759ad618672d1bcc530f" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>_entryMethodDecl</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a23c3b6712031530f7de7f91494bb5cea" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>_entryName</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a30b698f732bc7c49b54294d479e3b637" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>_notifyCalls</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1acf6ec929f47347ac96b61113c3807e9e" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>_procType</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a87298677e5d5c5a12dada5c485e6ff95" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>_susAuto</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1afec0999cfbb34edb368ab2755e21cd7b" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>_susCFG</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a74bebabfa45c0882208ddd53289e942d" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>_waitCalls</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a78ecb16fc0215807a09edc69736feae7" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>addNotifys</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a967beb0f9aeb78f0d8587917a9668344" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>addSensitivityInfo</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a928b1766e8858139ee1ff249918f6f6b" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>addSusCFGAuto</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1abe6b67fd8b0c7f5391afe4d323e074e8" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>addWaits</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a209e5491e0cb38a8a0a4fd0cbf47f298" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>dump</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1afb3bc4c5e1fe3cd21def8771184c3f04" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>dumpSauto</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a53fefda8580aa0f04e1254b86eded01b" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>dumpSusCFG</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1ad6c5cef09b71839a7f427be3f73a5dc8" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>EntryFunctionContainer</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a973a565563cb6d9c3d7b219d7f749ef5" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>EntryFunctionContainer</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1ae6ffef3388e405c5eb8aa13ee794c2e2" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>EntryFunctionContainer</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a956d0b7c6e78ddb05b020323097d6ed7" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>getEntryMethod</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a53cf16189b7e335b1a6fc63eb3ea5bac" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>getInstanceSautoMap</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a6658d0969d8077a72f3fa061910abf39" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>getInstanceSusCFGMap</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a8c4e6135b1fc18475ffd1ed6351925ea" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>getName</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a9936135c483e438c70202bbd7e8371de" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>getNotifyCalls</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1ad8229147a1e4fa479126e3761da2f202" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>getProcessType</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a343064ab06a578f0f0d855aad1d409e4" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>getSenseMap</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a9d3d27700a2458a309caf51814374d2e" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>getSusAuto</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1af746bf192e581ad16eec6883ef1b1474" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>getSusCFG</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a47c3469ecff9e10080f70459cbec7331" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>getWaitCalls</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1afb95c069ffb40e5533df2b436c43c236" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>instanceSautoMapType</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a8f469f03c8eab3aeb14e5da882bc2a58" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>instanceSautoPairType</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a0b8913e27d493a4b70b84aad7c2757e2" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>instanceSusCFGMapType</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a55121aeec4f633a43d0a6e2abbc30aaf" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>instanceSusCFGPairType</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a5d0558aaa965c4cf7f062f32ca4fc3d2" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>notifyContainerListType</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a5bff0871f39f8278dc7d3d1aabff1fa7" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>senseMap_</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a4d69296f0e62e5aea47b39f1d8f96df8" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>SenseMapType</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1ae93e3b03da5f801347140c88ce04ab1a" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>SensitivityPairType</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a9c37085137095b5102a25bfc8716ed3d" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>SensitivityTupleType</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a11047b177291702666237980e4631a0f" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>setEntryMethod</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a1091160a0433997fecb18f7d429fbc55" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>setName</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1ae6e38aced6b2eb7ea7ba5d5e7096977b" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>setProcessType</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1aa80ecadee6b1a265d04e13eccb480aab" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>waitContainerListType</name></member>
+      <member refid="classsystemc__clang_1_1EntryFunctionContainer_1a352f48dbf3f5c9dc231ecac2563c8308" prot="public" virt="non-virtual"><scope>systemc_clang::EntryFunctionContainer</scope><name>~EntryFunctionContainer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

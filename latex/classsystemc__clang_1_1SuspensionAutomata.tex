@@ -1,0 +1,381 @@
+\hypertarget{classsystemc__clang_1_1SuspensionAutomata}{}\doxysection{systemc\+\_\+clang\+::Suspension\+Automata Class Reference}
+\label{classsystemc__clang_1_1SuspensionAutomata}\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+
+
+{\ttfamily \#include $<$Suspension\+Automata.\+h$>$}
+
+
+
+Inheritance diagram for systemc\+\_\+clang\+::Suspension\+Automata\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classsystemc__clang_1_1SuspensionAutomata__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for systemc\+\_\+clang\+::Suspension\+Automata\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classsystemc__clang_1_1SuspensionAutomata__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a28e552a993a2ea6ba41eec08e2e903b2}{sus\+CFGVector\+Type}}
+\item 
+typedef vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a37823cbaa98336114b95ee6f8258979f}{transition\+Vector\+Type}}
+\item 
+typedef pair$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$, int $>$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a17b2c1b494ee49c87c2356af922c4457}{sus\+CFGSucc\+IDPair\+Type}}
+\item 
+typedef map$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$, int $>$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a875e6dbf8445290e70d50ba0127b6e58}{sus\+CFGSucc\+IDMap\+Type}}
+\item 
+typedef pair$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1State}{State}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a2cd80713088bf072fc588d70f07b36f0}{sus\+CFGState\+Pair\+Type}}
+\item 
+typedef map$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1State}{State}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_af04f9c5b80049692098b3be1bc279797}{sus\+CFGState\+Map\+Type}}
+\item 
+typedef pair$<$ \mbox{\hyperlink{classsystemc__clang_1_1State}{State}} $\ast$, vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a2a99d042221a40e8516a9dfe8db991b0}{state\+Common\+Code\+Block\+Pair\+Type}}
+\item 
+typedef map$<$ \mbox{\hyperlink{classsystemc__clang_1_1State}{State}} $\ast$, vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_aae6a731fdb21d67d95137f94512a5405}{state\+Common\+Code\+Block\+Map\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a111035acf37a142a8b80d6c0294d3df7}{Suspension\+Automata}} (vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1WaitContainer}{Wait\+Container}} $\ast$ $>$, CXXMethod\+Decl $\ast$, ASTContext $\ast$, llvm\+::raw\+\_\+ostream \&)
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a231b4279479f55cefc546a25ac65a9b4}{$\sim$\+Suspension\+Automata}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a50086b57479af946fbd1d21a7ef18093}{add\+Remaining\+Blocks}} (\mbox{\hyperlink{classsystemc__clang_1_1State}{State}} $\ast$, vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ \&)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_ad7ddf42fe31156dc7e77cf4183e2555d}{check\+Insert}} (vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$, vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ \&)
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a9d159ea7b6661f0b73a8eb0d6feaa243}{is\+Found}} (vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$, \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$)
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a6449700bf45d287c4f9d3089a88a5c12}{is\+Found}} (vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$ $>$, \mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$)
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a0f908649045abfaec56609f7980ac530}{initialize}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_ad40e6ca40061230817d49243b637be46}{gen\+Sus\+CFG}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a2cd224dcca716d2c10200b3c5be2ca42}{gen\+Sauto}} ()
+\item 
+vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a63d5c4afef3eb581891938f4348765ed}{modif\+DFS}} (\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1State}{State}} $\ast$)
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_af045e731c974b5b321f0c808d2fa5773}{is\+Wait\+Call}} (const CFGStmt $\ast$cs)
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a131b474cba796a5d5e13fb7574c236da}{is\+Timed\+Wait}} (Stmt $\ast$stmt)
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_af7df2014268b399d1c12383b4aeffd49}{is\+Delta\+Wait}} (Stmt $\ast$stmt)
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_abd8c75ab0e59dd6d7a02b96ce46e2845}{is\+Event\+Wait}} (Stmt $\ast$stmt)
+\item 
+float \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_ae1396c0d87d664b56ea77d0ff2daf89c}{get\+Time}} (Stmt $\ast$stmt)
+\item 
+string \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_adf39018ee2f86a522a3e81f12fbb429e}{get\+Event}} (Stmt $\ast$stmt)
+\item 
+string \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a20267391120384f5f3473a224716c468}{get\+Argument\+Name}} (Expr $\ast$arg)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a1649933141afdd5c0432dc57c7f71f46}{add\+Event}} (string)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a7bc2360723555a37bbb51c2d0724ce81}{add\+Sim\+Time}} (float)
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a28e552a993a2ea6ba41eec08e2e903b2}{sus\+CFGVector\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a4da78a5159402bb5380b8a427396ef65}{get\+Sus\+CFG}} ()
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a37823cbaa98336114b95ee6f8258979f}{transition\+Vector\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a295186ac19f69fe8bf49b502e70a25bd}{get\+Sauto}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a1f298debb460163f644b56f8aea50a66}{dump\+Sus\+CFG}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a916c16c1c0f00a2862aa02dd8c4f4c11}{dump\+Sauto}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+CXXMethod\+Decl $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a0b6737f9e665f2a3fb34612c226646c4}{\+\_\+d}}
+\item 
+vector$<$ Call\+Expr $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a6ca89c18a35d5437eb9dc4f086d0dd59}{\+\_\+wait\+Calls}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a875e6dbf8445290e70d50ba0127b6e58}{sus\+CFGSucc\+IDMap\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_ad9ba3ec9309524453b635103a7719615}{sus\+CFGSucc\+IDMap}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_af04f9c5b80049692098b3be1bc279797}{sus\+CFGState\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a6867fb869f7dc5ff46912696f2a7c64a}{sus\+CFGState\+Map}}
+\item 
+unique\+\_\+ptr$<$ CFG $>$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_acaa091c3f5a5da97317e72edf6a9c3b9}{\+\_\+cfg}}
+\item 
+ASTContext $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a663f244694c191ba60886a1d7ff1d69e}{\+\_\+a}}
+\item 
+raw\+\_\+ostream \& \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a194e22c3a542e7068dbc2e1e9def1283}{\+\_\+os}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a28e552a993a2ea6ba41eec08e2e903b2}{sus\+CFGVector\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a27275596fa8f06631c49ee5bb7b6451b}{\+\_\+sus\+CFGVector}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a37823cbaa98336114b95ee6f8258979f}{transition\+Vector\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_ade6ac88ba947cd76de77e64120f71acf}{\+\_\+transition\+Vector}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_aae6a731fdb21d67d95137f94512a5405}{state\+Common\+Code\+Block\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a2dc51afaae37f0bc70d7bd9555a14cd0}{\+\_\+state\+Common\+Code\+Block\+Map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_aae6a731fdb21d67d95137f94512a5405}\label{classsystemc__clang_1_1SuspensionAutomata_aae6a731fdb21d67d95137f94512a5405}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!stateCommonCodeBlockMapType@{stateCommonCodeBlockMapType}}
+\index{stateCommonCodeBlockMapType@{stateCommonCodeBlockMapType}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{stateCommonCodeBlockMapType}{stateCommonCodeBlockMapType}}
+{\footnotesize\ttfamily typedef map$<$\mbox{\hyperlink{classsystemc__clang_1_1State}{State}} $\ast$, vector$<$\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$$>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_aae6a731fdb21d67d95137f94512a5405}{systemc\+\_\+clang\+::\+Suspension\+Automata\+::state\+Common\+Code\+Block\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a2a99d042221a40e8516a9dfe8db991b0}\label{classsystemc__clang_1_1SuspensionAutomata_a2a99d042221a40e8516a9dfe8db991b0}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!stateCommonCodeBlockPairType@{stateCommonCodeBlockPairType}}
+\index{stateCommonCodeBlockPairType@{stateCommonCodeBlockPairType}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{stateCommonCodeBlockPairType}{stateCommonCodeBlockPairType}}
+{\footnotesize\ttfamily typedef pair$<$\mbox{\hyperlink{classsystemc__clang_1_1State}{State}} $\ast$, vector$<$\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$$>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a2a99d042221a40e8516a9dfe8db991b0}{systemc\+\_\+clang\+::\+Suspension\+Automata\+::state\+Common\+Code\+Block\+Pair\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_af04f9c5b80049692098b3be1bc279797}\label{classsystemc__clang_1_1SuspensionAutomata_af04f9c5b80049692098b3be1bc279797}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!susCFGStateMapType@{susCFGStateMapType}}
+\index{susCFGStateMapType@{susCFGStateMapType}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{susCFGStateMapType}{susCFGStateMapType}}
+{\footnotesize\ttfamily typedef map$<$\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1State}{State}} $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_af04f9c5b80049692098b3be1bc279797}{systemc\+\_\+clang\+::\+Suspension\+Automata\+::sus\+CFGState\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a2cd80713088bf072fc588d70f07b36f0}\label{classsystemc__clang_1_1SuspensionAutomata_a2cd80713088bf072fc588d70f07b36f0}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!susCFGStatePairType@{susCFGStatePairType}}
+\index{susCFGStatePairType@{susCFGStatePairType}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{susCFGStatePairType}{susCFGStatePairType}}
+{\footnotesize\ttfamily typedef pair$<$\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1State}{State}} $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a2cd80713088bf072fc588d70f07b36f0}{systemc\+\_\+clang\+::\+Suspension\+Automata\+::sus\+CFGState\+Pair\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a875e6dbf8445290e70d50ba0127b6e58}\label{classsystemc__clang_1_1SuspensionAutomata_a875e6dbf8445290e70d50ba0127b6e58}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!susCFGSuccIDMapType@{susCFGSuccIDMapType}}
+\index{susCFGSuccIDMapType@{susCFGSuccIDMapType}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{susCFGSuccIDMapType}{susCFGSuccIDMapType}}
+{\footnotesize\ttfamily typedef map$<$\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$, int$>$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a875e6dbf8445290e70d50ba0127b6e58}{systemc\+\_\+clang\+::\+Suspension\+Automata\+::sus\+CFGSucc\+IDMap\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a17b2c1b494ee49c87c2356af922c4457}\label{classsystemc__clang_1_1SuspensionAutomata_a17b2c1b494ee49c87c2356af922c4457}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!susCFGSuccIDPairType@{susCFGSuccIDPairType}}
+\index{susCFGSuccIDPairType@{susCFGSuccIDPairType}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{susCFGSuccIDPairType}{susCFGSuccIDPairType}}
+{\footnotesize\ttfamily typedef pair$<$\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$, int$>$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a17b2c1b494ee49c87c2356af922c4457}{systemc\+\_\+clang\+::\+Suspension\+Automata\+::sus\+CFGSucc\+IDPair\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a28e552a993a2ea6ba41eec08e2e903b2}\label{classsystemc__clang_1_1SuspensionAutomata_a28e552a993a2ea6ba41eec08e2e903b2}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!susCFGVectorType@{susCFGVectorType}}
+\index{susCFGVectorType@{susCFGVectorType}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{susCFGVectorType}{susCFGVectorType}}
+{\footnotesize\ttfamily typedef vector$<$\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a28e552a993a2ea6ba41eec08e2e903b2}{systemc\+\_\+clang\+::\+Suspension\+Automata\+::sus\+CFGVector\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a37823cbaa98336114b95ee6f8258979f}\label{classsystemc__clang_1_1SuspensionAutomata_a37823cbaa98336114b95ee6f8258979f}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!transitionVectorType@{transitionVectorType}}
+\index{transitionVectorType@{transitionVectorType}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{transitionVectorType}{transitionVectorType}}
+{\footnotesize\ttfamily typedef vector$<$\mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a37823cbaa98336114b95ee6f8258979f}{systemc\+\_\+clang\+::\+Suspension\+Automata\+::transition\+Vector\+Type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a111035acf37a142a8b80d6c0294d3df7}\label{classsystemc__clang_1_1SuspensionAutomata_a111035acf37a142a8b80d6c0294d3df7}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!SuspensionAutomata@{SuspensionAutomata}}
+\index{SuspensionAutomata@{SuspensionAutomata}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{SuspensionAutomata()}{SuspensionAutomata()}}
+{\footnotesize\ttfamily Suspension\+Automata\+::\+Suspension\+Automata (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1WaitContainer}{Wait\+Container}} $\ast$ $>$}]{,  }\item[{CXXMethod\+Decl $\ast$}]{,  }\item[{ASTContext $\ast$}]{,  }\item[{llvm\+::raw\+\_\+ostream \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a231b4279479f55cefc546a25ac65a9b4}\label{classsystemc__clang_1_1SuspensionAutomata_a231b4279479f55cefc546a25ac65a9b4}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!````~SuspensionAutomata@{$\sim$SuspensionAutomata}}
+\index{````~SuspensionAutomata@{$\sim$SuspensionAutomata}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{$\sim$SuspensionAutomata()}{~SuspensionAutomata()}}
+{\footnotesize\ttfamily Suspension\+Automata\+::$\sim$\+Suspension\+Automata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a1649933141afdd5c0432dc57c7f71f46}\label{classsystemc__clang_1_1SuspensionAutomata_a1649933141afdd5c0432dc57c7f71f46}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!addEvent@{addEvent}}
+\index{addEvent@{addEvent}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{addEvent()}{addEvent()}}
+{\footnotesize\ttfamily void systemc\+\_\+clang\+::\+Suspension\+Automata\+::add\+Event (\begin{DoxyParamCaption}\item[{string}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a50086b57479af946fbd1d21a7ef18093}\label{classsystemc__clang_1_1SuspensionAutomata_a50086b57479af946fbd1d21a7ef18093}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!addRemainingBlocks@{addRemainingBlocks}}
+\index{addRemainingBlocks@{addRemainingBlocks}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{addRemainingBlocks()}{addRemainingBlocks()}}
+{\footnotesize\ttfamily void Suspension\+Automata\+::add\+Remaining\+Blocks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1State}{State}} $\ast$}]{initial\+State,  }\item[{vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ \&}]{transition\+Blocks }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a7bc2360723555a37bbb51c2d0724ce81}\label{classsystemc__clang_1_1SuspensionAutomata_a7bc2360723555a37bbb51c2d0724ce81}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!addSimTime@{addSimTime}}
+\index{addSimTime@{addSimTime}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{addSimTime()}{addSimTime()}}
+{\footnotesize\ttfamily void systemc\+\_\+clang\+::\+Suspension\+Automata\+::add\+Sim\+Time (\begin{DoxyParamCaption}\item[{float}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_ad7ddf42fe31156dc7e77cf4183e2555d}\label{classsystemc__clang_1_1SuspensionAutomata_ad7ddf42fe31156dc7e77cf4183e2555d}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!checkInsert@{checkInsert}}
+\index{checkInsert@{checkInsert}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{checkInsert()}{checkInsert()}}
+{\footnotesize\ttfamily void Suspension\+Automata\+::check\+Insert (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$}]{source,  }\item[{vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ \&}]{target }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a916c16c1c0f00a2862aa02dd8c4f4c11}\label{classsystemc__clang_1_1SuspensionAutomata_a916c16c1c0f00a2862aa02dd8c4f4c11}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!dumpSauto@{dumpSauto}}
+\index{dumpSauto@{dumpSauto}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{dumpSauto()}{dumpSauto()}}
+{\footnotesize\ttfamily void Suspension\+Automata\+::dump\+Sauto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a1f298debb460163f644b56f8aea50a66}\label{classsystemc__clang_1_1SuspensionAutomata_a1f298debb460163f644b56f8aea50a66}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!dumpSusCFG@{dumpSusCFG}}
+\index{dumpSusCFG@{dumpSusCFG}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{dumpSusCFG()}{dumpSusCFG()}}
+{\footnotesize\ttfamily void Suspension\+Automata\+::dump\+Sus\+CFG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a2cd224dcca716d2c10200b3c5be2ca42}\label{classsystemc__clang_1_1SuspensionAutomata_a2cd224dcca716d2c10200b3c5be2ca42}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!genSauto@{genSauto}}
+\index{genSauto@{genSauto}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{genSauto()}{genSauto()}}
+{\footnotesize\ttfamily void Suspension\+Automata\+::gen\+Sauto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_ad40e6ca40061230817d49243b637be46}\label{classsystemc__clang_1_1SuspensionAutomata_ad40e6ca40061230817d49243b637be46}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!genSusCFG@{genSusCFG}}
+\index{genSusCFG@{genSusCFG}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{genSusCFG()}{genSusCFG()}}
+{\footnotesize\ttfamily void Suspension\+Automata\+::gen\+Sus\+CFG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a20267391120384f5f3473a224716c468}\label{classsystemc__clang_1_1SuspensionAutomata_a20267391120384f5f3473a224716c468}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!getArgumentName@{getArgumentName}}
+\index{getArgumentName@{getArgumentName}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{getArgumentName()}{getArgumentName()}}
+{\footnotesize\ttfamily string Suspension\+Automata\+::get\+Argument\+Name (\begin{DoxyParamCaption}\item[{Expr $\ast$}]{arg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_adf39018ee2f86a522a3e81f12fbb429e}\label{classsystemc__clang_1_1SuspensionAutomata_adf39018ee2f86a522a3e81f12fbb429e}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!getEvent@{getEvent}}
+\index{getEvent@{getEvent}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{getEvent()}{getEvent()}}
+{\footnotesize\ttfamily string Suspension\+Automata\+::get\+Event (\begin{DoxyParamCaption}\item[{Stmt $\ast$}]{stmt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a295186ac19f69fe8bf49b502e70a25bd}\label{classsystemc__clang_1_1SuspensionAutomata_a295186ac19f69fe8bf49b502e70a25bd}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!getSauto@{getSauto}}
+\index{getSauto@{getSauto}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{getSauto()}{getSauto()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a37823cbaa98336114b95ee6f8258979f}{Suspension\+Automata\+::transition\+Vector\+Type}} Suspension\+Automata\+::get\+Sauto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a4da78a5159402bb5380b8a427396ef65}\label{classsystemc__clang_1_1SuspensionAutomata_a4da78a5159402bb5380b8a427396ef65}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!getSusCFG@{getSusCFG}}
+\index{getSusCFG@{getSusCFG}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{getSusCFG()}{getSusCFG()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a28e552a993a2ea6ba41eec08e2e903b2}{Suspension\+Automata\+::sus\+CFGVector\+Type}} Suspension\+Automata\+::get\+Sus\+CFG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_ae1396c0d87d664b56ea77d0ff2daf89c}\label{classsystemc__clang_1_1SuspensionAutomata_ae1396c0d87d664b56ea77d0ff2daf89c}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!getTime@{getTime}}
+\index{getTime@{getTime}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily float Suspension\+Automata\+::get\+Time (\begin{DoxyParamCaption}\item[{Stmt $\ast$}]{stmt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a0f908649045abfaec56609f7980ac530}\label{classsystemc__clang_1_1SuspensionAutomata_a0f908649045abfaec56609f7980ac530}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!initialize@{initialize}}
+\index{initialize@{initialize}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily bool Suspension\+Automata\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_af7df2014268b399d1c12383b4aeffd49}\label{classsystemc__clang_1_1SuspensionAutomata_af7df2014268b399d1c12383b4aeffd49}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!isDeltaWait@{isDeltaWait}}
+\index{isDeltaWait@{isDeltaWait}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{isDeltaWait()}{isDeltaWait()}}
+{\footnotesize\ttfamily bool Suspension\+Automata\+::is\+Delta\+Wait (\begin{DoxyParamCaption}\item[{Stmt $\ast$}]{stmt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_abd8c75ab0e59dd6d7a02b96ce46e2845}\label{classsystemc__clang_1_1SuspensionAutomata_abd8c75ab0e59dd6d7a02b96ce46e2845}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!isEventWait@{isEventWait}}
+\index{isEventWait@{isEventWait}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{isEventWait()}{isEventWait()}}
+{\footnotesize\ttfamily bool Suspension\+Automata\+::is\+Event\+Wait (\begin{DoxyParamCaption}\item[{Stmt $\ast$}]{stmt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a9d159ea7b6661f0b73a8eb0d6feaa243}\label{classsystemc__clang_1_1SuspensionAutomata_a9d159ea7b6661f0b73a8eb0d6feaa243}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!isFound@{isFound}}
+\index{isFound@{isFound}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{isFound()}{isFound()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Suspension\+Automata\+::is\+Found (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$}]{visited\+State,  }\item[{\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$}]{block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a6449700bf45d287c4f9d3089a88a5c12}\label{classsystemc__clang_1_1SuspensionAutomata_a6449700bf45d287c4f9d3089a88a5c12}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!isFound@{isFound}}
+\index{isFound@{isFound}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{isFound()}{isFound()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Suspension\+Automata\+::is\+Found (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$ $>$}]{visited\+State,  }\item[{\mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$}]{block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a131b474cba796a5d5e13fb7574c236da}\label{classsystemc__clang_1_1SuspensionAutomata_a131b474cba796a5d5e13fb7574c236da}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!isTimedWait@{isTimedWait}}
+\index{isTimedWait@{isTimedWait}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{isTimedWait()}{isTimedWait()}}
+{\footnotesize\ttfamily bool Suspension\+Automata\+::is\+Timed\+Wait (\begin{DoxyParamCaption}\item[{Stmt $\ast$}]{stmt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_af045e731c974b5b321f0c808d2fa5773}\label{classsystemc__clang_1_1SuspensionAutomata_af045e731c974b5b321f0c808d2fa5773}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!isWaitCall@{isWaitCall}}
+\index{isWaitCall@{isWaitCall}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{isWaitCall()}{isWaitCall()}}
+{\footnotesize\ttfamily bool Suspension\+Automata\+::is\+Wait\+Call (\begin{DoxyParamCaption}\item[{const CFGStmt $\ast$}]{cs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a63d5c4afef3eb581891938f4348765ed}\label{classsystemc__clang_1_1SuspensionAutomata_a63d5c4afef3eb581891938f4348765ed}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!modifDFS@{modifDFS}}
+\index{modifDFS@{modifDFS}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{modifDFS()}{modifDFS()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ Suspension\+Automata\+::modif\+DFS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$}]{block,  }\item[{\mbox{\hyperlink{classsystemc__clang_1_1State}{State}} $\ast$}]{initial\+State }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a663f244694c191ba60886a1d7ff1d69e}\label{classsystemc__clang_1_1SuspensionAutomata_a663f244694c191ba60886a1d7ff1d69e}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!\_a@{\_a}}
+\index{\_a@{\_a}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_a}{\_a}}
+{\footnotesize\ttfamily ASTContext$\ast$ systemc\+\_\+clang\+::\+Suspension\+Automata\+::\+\_\+a\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_acaa091c3f5a5da97317e72edf6a9c3b9}\label{classsystemc__clang_1_1SuspensionAutomata_acaa091c3f5a5da97317e72edf6a9c3b9}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!\_cfg@{\_cfg}}
+\index{\_cfg@{\_cfg}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_cfg}{\_cfg}}
+{\footnotesize\ttfamily unique\+\_\+ptr$<$CFG$>$ systemc\+\_\+clang\+::\+Suspension\+Automata\+::\+\_\+cfg\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a0b6737f9e665f2a3fb34612c226646c4}\label{classsystemc__clang_1_1SuspensionAutomata_a0b6737f9e665f2a3fb34612c226646c4}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!\_d@{\_d}}
+\index{\_d@{\_d}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_d}{\_d}}
+{\footnotesize\ttfamily CXXMethod\+Decl$\ast$ systemc\+\_\+clang\+::\+Suspension\+Automata\+::\+\_\+d\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a194e22c3a542e7068dbc2e1e9def1283}\label{classsystemc__clang_1_1SuspensionAutomata_a194e22c3a542e7068dbc2e1e9def1283}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!\_os@{\_os}}
+\index{\_os@{\_os}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_os}{\_os}}
+{\footnotesize\ttfamily raw\+\_\+ostream\& systemc\+\_\+clang\+::\+Suspension\+Automata\+::\+\_\+os\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a2dc51afaae37f0bc70d7bd9555a14cd0}\label{classsystemc__clang_1_1SuspensionAutomata_a2dc51afaae37f0bc70d7bd9555a14cd0}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!\_stateCommonCodeBlockMap@{\_stateCommonCodeBlockMap}}
+\index{\_stateCommonCodeBlockMap@{\_stateCommonCodeBlockMap}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_stateCommonCodeBlockMap}{\_stateCommonCodeBlockMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_aae6a731fdb21d67d95137f94512a5405}{state\+Common\+Code\+Block\+Map\+Type}} systemc\+\_\+clang\+::\+Suspension\+Automata\+::\+\_\+state\+Common\+Code\+Block\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a27275596fa8f06631c49ee5bb7b6451b}\label{classsystemc__clang_1_1SuspensionAutomata_a27275596fa8f06631c49ee5bb7b6451b}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!\_susCFGVector@{\_susCFGVector}}
+\index{\_susCFGVector@{\_susCFGVector}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_susCFGVector}{\_susCFGVector}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a28e552a993a2ea6ba41eec08e2e903b2}{sus\+CFGVector\+Type}} systemc\+\_\+clang\+::\+Suspension\+Automata\+::\+\_\+sus\+CFGVector\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_ade6ac88ba947cd76de77e64120f71acf}\label{classsystemc__clang_1_1SuspensionAutomata_ade6ac88ba947cd76de77e64120f71acf}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!\_transitionVector@{\_transitionVector}}
+\index{\_transitionVector@{\_transitionVector}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_transitionVector}{\_transitionVector}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a37823cbaa98336114b95ee6f8258979f}{transition\+Vector\+Type}} systemc\+\_\+clang\+::\+Suspension\+Automata\+::\+\_\+transition\+Vector\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a6ca89c18a35d5437eb9dc4f086d0dd59}\label{classsystemc__clang_1_1SuspensionAutomata_a6ca89c18a35d5437eb9dc4f086d0dd59}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!\_waitCalls@{\_waitCalls}}
+\index{\_waitCalls@{\_waitCalls}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{\_waitCalls}{\_waitCalls}}
+{\footnotesize\ttfamily vector$<$Call\+Expr $\ast$$>$ systemc\+\_\+clang\+::\+Suspension\+Automata\+::\+\_\+wait\+Calls\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_a6867fb869f7dc5ff46912696f2a7c64a}\label{classsystemc__clang_1_1SuspensionAutomata_a6867fb869f7dc5ff46912696f2a7c64a}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!susCFGStateMap@{susCFGStateMap}}
+\index{susCFGStateMap@{susCFGStateMap}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{susCFGStateMap}{susCFGStateMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_af04f9c5b80049692098b3be1bc279797}{sus\+CFGState\+Map\+Type}} systemc\+\_\+clang\+::\+Suspension\+Automata\+::sus\+CFGState\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SuspensionAutomata_ad9ba3ec9309524453b635103a7719615}\label{classsystemc__clang_1_1SuspensionAutomata_ad9ba3ec9309524453b635103a7719615}} 
+\index{systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}!susCFGSuccIDMap@{susCFGSuccIDMap}}
+\index{susCFGSuccIDMap@{susCFGSuccIDMap}!systemc\_clang::SuspensionAutomata@{systemc\_clang::SuspensionAutomata}}
+\doxysubsubsection{\texorpdfstring{susCFGSuccIDMap}{susCFGSuccIDMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1SuspensionAutomata_a875e6dbf8445290e70d50ba0127b6e58}{sus\+CFGSucc\+IDMap\+Type}} systemc\+\_\+clang\+::\+Suspension\+Automata\+::sus\+CFGSucc\+IDMap\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+SCuitable/\mbox{\hyperlink{SuspensionAutomata_8h}{Suspension\+Automata.\+h}}\item 
+src/\+SCuitable/\mbox{\hyperlink{SuspensionAutomata_8cpp}{Suspension\+Automata.\+cpp}}\end{DoxyCompactItemize}

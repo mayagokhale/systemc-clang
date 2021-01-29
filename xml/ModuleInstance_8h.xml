@@ -1,0 +1,766 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ModuleInstance_8h" kind="file" language="C++">
+    <compoundname>ModuleInstance.h</compoundname>
+    <includes local="no">map</includes>
+    <includes local="no">string</includes>
+    <includes refid="FindConstructor_8h" local="yes">FindConstructor.h</includes>
+    <includes refid="FindEntryFunctions_8h" local="yes">FindEntryFunctions.h</includes>
+    <includes refid="FindTLMInterfaces_8h" local="yes">FindTLMInterfaces.h</includes>
+    <includes refid="InterfaceDecl_8h" local="yes">InterfaceDecl.h</includes>
+    <includes refid="PortBinding_8h" local="yes">PortBinding.h</includes>
+    <includes refid="PortDecl_8h" local="yes">PortDecl.h</includes>
+    <includes refid="ProcessDecl_8h" local="yes">ProcessDecl.h</includes>
+    <includes refid="SignalDecl_8h" local="yes">SignalDecl.h</includes>
+    <includes local="yes">clang/AST/DeclCXX.h</includes>
+    <includes refid="ModuleInstanceType_8h" local="yes">ModuleInstanceType.h</includes>
+    <includedby refid="Matchers_8h" local="yes">src/matchers/Matchers.h</includedby>
+    <includedby refid="PortMatcher_8h" local="yes">src/matchers/PortMatcher.h</includedby>
+    <includedby refid="Model_8h" local="yes">src/model/Model.h</includedby>
+    <includedby refid="ModuleInstance_8cpp" local="yes">src/model/ModuleInstance.cpp</includedby>
+    <incdepgraph>
+      <node id="40">
+        <label>InterfaceDecl.h</label>
+        <link refid="InterfaceDecl_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>queue</label>
+      </node>
+      <node id="31">
+        <label>clang/Basic/SourceManager.h</label>
+      </node>
+      <node id="26">
+        <label>clang/Analysis/CFG.h</label>
+      </node>
+      <node id="9">
+        <label>llvm/Support/raw_ostream.h</label>
+      </node>
+      <node id="25">
+        <label>clang/AST/ParentMap.h</label>
+      </node>
+      <node id="27">
+        <label>clang/Analysis/CFGStmtMap.h</label>
+      </node>
+      <node id="20">
+        <label>clang/AST/PrettyPrinter.h</label>
+      </node>
+      <node id="8">
+        <label>clang/AST/RecursiveASTVisitor.h</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>map</label>
+      </node>
+      <node id="37">
+        <label>json.hpp</label>
+      </node>
+      <node id="33">
+        <label>FindEntryFunctions.h</label>
+        <link refid="FindEntryFunctions_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>FindTemplateTypes.h</label>
+        <link refid="FindTemplateTypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>WaitContainer.h</label>
+        <link refid="WaitContainer_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>NotifyContainer.h</label>
+        <link refid="NotifyContainer_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>clang/ASTMatchers/ASTMatchers.h</label>
+      </node>
+      <node id="24">
+        <label>clang/AST/Expr.h</label>
+      </node>
+      <node id="23">
+        <label>Automata.h</label>
+        <link refid="Automata_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>clang/AST/Type.h</label>
+      </node>
+      <node id="43">
+        <label>ProcessDecl.h</label>
+        <link refid="ProcessDecl_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>systemc-clang.h</label>
+        <link refid="systemc-clang_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>Tree.h</label>
+        <link refid="Tree_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>stack</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+      <node id="42">
+        <label>PortDecl.h</label>
+        <link refid="PortDecl_8h"/>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>sstream</label>
+      </node>
+      <node id="1">
+        <label>src/model/ModuleInstance.h</label>
+        <link refid="ModuleInstance_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>SuspensionAutomata.h</label>
+        <link refid="SuspensionAutomata_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>FindNotify.h</label>
+        <link refid="FindNotify_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>clang/AST/ExprCXX.h</label>
+      </node>
+      <node id="41">
+        <label>PortBinding.h</label>
+        <link refid="PortBinding_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>deque</label>
+      </node>
+      <node id="18">
+        <label>FindWait.h</label>
+        <link refid="FindWait_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>FindConstructor.h</label>
+        <link refid="FindConstructor_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>llvm/Support/Debug.h</label>
+      </node>
+      <node id="30">
+        <label>Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>ModuleInstanceType.h</label>
+        <link refid="ModuleInstanceType_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>SensitivityMatcher.h</label>
+        <link refid="SensitivityMatcher_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>EntryFunctionContainer.h</label>
+        <link refid="EntryFunctionContainer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>clang/AST/DeclCXX.h</label>
+      </node>
+      <node id="32">
+        <label>enums.h</label>
+        <link refid="enums_8h"/>
+      </node>
+      <node id="46">
+        <label>SignalDecl.h</label>
+        <link refid="SignalDecl_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>clang/ASTMatchers/ASTMatchFinder.h</label>
+      </node>
+      <node id="34">
+        <label>FindTLMInterfaces.h</label>
+        <link refid="FindTLMInterfaces_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>stdio.h</label>
+      </node>
+      <node id="15">
+        <label>ArrayTypeUtils.h</label>
+        <link refid="ArrayTypeUtils_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="10">
+        <label>src/PluginAction.h</label>
+        <link refid="PluginAction_8h"/>
+      </node>
+      <node id="14">
+        <label>plugins/hdl/HDLBody.h</label>
+        <link refid="HDLBody_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>src/SystemCClang.h</label>
+        <link refid="SystemCClang_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>src/SCuitable/GlobalSuspensionAutomata.cpp</label>
+        <link refid="GlobalSuspensionAutomata_8cpp"/>
+      </node>
+      <node id="13">
+        <label>plugins/hdl/HDLBody.cpp</label>
+        <link refid="HDLBody_8cpp"/>
+      </node>
+      <node id="6">
+        <label>src/model/Model.cpp</label>
+        <link refid="Model_8cpp"/>
+      </node>
+      <node id="19">
+        <label>plugins/hdl/HDLType.cpp</label>
+        <link refid="HDLType_8cpp"/>
+      </node>
+      <node id="21">
+        <label>src/matchers/PortMatcher.h</label>
+        <link refid="PortMatcher_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/SCuitable/GlobalSuspensionAutomata.h</label>
+        <link refid="GlobalSuspensionAutomata_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/model/Model.h</label>
+        <link refid="Model_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>plugins/hdl/HDLHnode.cpp</label>
+        <link refid="HDLHnode_8cpp"/>
+      </node>
+      <node id="15">
+        <label>plugins/hdl/HDLMain.h</label>
+        <link refid="HDLMain_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/matchers/Matchers.h</label>
+        <link refid="Matchers_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>plugins/hdl/HDLMain.cpp</label>
+        <link refid="HDLMain_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/model/ModuleInstance.h</label>
+        <link refid="ModuleInstance_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/SystemCClang.cpp</label>
+        <link refid="SystemCClang_8cpp"/>
+      </node>
+      <node id="17">
+        <label>plugins/hdl/HDLHnode.h</label>
+        <link refid="HDLHnode_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/matchers/NetlistMatcher.h</label>
+        <link refid="NetlistMatcher_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>src/SAPlugin.h</label>
+        <link refid="SAPlugin_8h"/>
+      </node>
+      <node id="20">
+        <label>plugins/hdl/HDLType.h</label>
+        <link refid="HDLType_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>src/SCuitable/TimeAnalysis.h</label>
+        <link refid="TimeAnalysis_8h"/>
+      </node>
+      <node id="22">
+        <label>src/model/ModuleInstance.cpp</label>
+        <link refid="ModuleInstance_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsystemc__clang_1_1ModuleInstance" prot="public">systemc_clang::ModuleInstance</innerclass>
+    <innernamespace refid="namespacesystemc__clang">systemc_clang</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_MODULE_INSTANCE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_MODULE_INSTANCE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>clang-format<sp/>off<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>clang-format<sp/>on<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="FindConstructor_8h" kindref="compound">FindConstructor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="FindEntryFunctions_8h" kindref="compound">FindEntryFunctions.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="FindTLMInterfaces_8h" kindref="compound">FindTLMInterfaces.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="InterfaceDecl_8h" kindref="compound">InterfaceDecl.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="PortBinding_8h" kindref="compound">PortBinding.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="PortDecl_8h" kindref="compound">PortDecl.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ProcessDecl_8h" kindref="compound">ProcessDecl.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="SignalDecl_8h" kindref="compound">SignalDecl.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;clang/AST/DeclCXX.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ModuleInstanceType_8h" kindref="compound">ModuleInstanceType.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesystemc__clang" kindref="compound">systemc_clang</ref><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceclang" kindref="compound">clang</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesc__ast__matchers" kindref="compound">sc_ast_matchers</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classsystemc__clang_1_1ModuleInstance" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31" refid="classsystemc__clang_1_1ModuleInstance_1a10db7a1b668cf6e6d295ecd7c1b680bd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::pair&lt;std::string,<sp/>SignalDecl<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a10db7a1b668cf6e6d295ecd7c1b680bd" kindref="member">signalPairType</ref>;</highlight></codeline>
+<codeline lineno="32" refid="classsystemc__clang_1_1ModuleInstance_1adad65a1c03e742c7c8eb6d0bd1a57271" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;std::string,<sp/>SignalDecl<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1adad65a1c03e742c7c8eb6d0bd1a57271" kindref="member">signalMapType</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classsystemc__clang_1_1ModuleInstance_1a89a030fbffc20e47a275dcec04fd80a7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::pair&lt;std::string,<sp/>InterfaceDecl<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a89a030fbffc20e47a275dcec04fd80a7" kindref="member">interfacePairType</ref>;</highlight></codeline>
+<codeline lineno="35" refid="classsystemc__clang_1_1ModuleInstance_1a846e080d4532320ccc15fa375c1ca0b4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;std::string,<sp/>InterfaceDecl<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a846e080d4532320ccc15fa375c1ca0b4" kindref="member">interfaceMapType</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Maps<sp/>the<sp/>name<sp/>of<sp/>the<sp/>process<sp/>with<sp/>a<sp/>pointer<sp/>to<sp/>a<sp/>structure<sp/>that<sp/>holds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>information<sp/>about<sp/>the<sp/>process.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classsystemc__clang_1_1ModuleInstance_1a4674bdaba29e097bef92dccd45888fdd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::pair&lt;std::string,<sp/>ProcessDecl<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a4674bdaba29e097bef92dccd45888fdd" kindref="member">processPairType</ref>;</highlight></codeline>
+<codeline lineno="40" refid="classsystemc__clang_1_1ModuleInstance_1aa971eba18c75ee5a38fcfc9739bbf9a5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;std::string,<sp/>ProcessDecl<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1aa971eba18c75ee5a38fcfc9739bbf9a5" kindref="member">processMapType</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classsystemc__clang_1_1ModuleInstance_1ae42d7c7159e4d1dff2496fc46799d540" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::pair&lt;std::string,<sp/>std::string&gt;<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1ae42d7c7159e4d1dff2496fc46799d540" kindref="member">moduleProcessPairType</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classsystemc__clang_1_1ModuleInstance_1a225eb7d03ade18036aa5700538476541" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::pair&lt;std::string,<sp/>std::string&gt;<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a225eb7d03ade18036aa5700538476541" kindref="member">portSignalPairType</ref>;</highlight></codeline>
+<codeline lineno="45" refid="classsystemc__clang_1_1ModuleInstance_1ab9826602b77bf4d1b56a2f9dac9fff52" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;std::string,<sp/>std::string&gt;<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1ab9826602b77bf4d1b56a2f9dac9fff52" kindref="member">portSignalMapType</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Why<sp/>is<sp/>this<sp/>a<sp/>not<sp/>a<sp/>Type?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classsystemc__clang_1_1ModuleInstance_1a0c321f2d59affb19a09b5649c7522126" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a0c321f2d59affb19a09b5649c7522126" kindref="member">instanceName</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>string:<sp/>name<sp/>of<sp/>bound<sp/>port,<sp/>PortBinding*:<sp/>structure<sp/>with<sp/>more<sp/>info.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classsystemc__clang_1_1ModuleInstance_1a5c80f5683875180d6854faa1c7c958da" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::pair&lt;std::string,<sp/>PortBinding<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a5c80f5683875180d6854faa1c7c958da" kindref="member">portBindingPairType</ref>;</highlight></codeline>
+<codeline lineno="52" refid="classsystemc__clang_1_1ModuleInstance_1a8fc3d86b879f530c74b1de52d7fe1e65" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;std::string,<sp/>PortBinding<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a8fc3d86b879f530c74b1de52d7fe1e65" kindref="member">portBindingMapType</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>PortType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classsystemc__clang_1_1ModuleInstance_1a2c28ab5fe658b9833300e3d979912f42" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;std::tuple&lt;std::string,<sp/>PortDecl<sp/>*&gt;<sp/>&gt;<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a2c28ab5fe658b9833300e3d979912f42" kindref="member">PortType</ref>;</highlight></codeline>
+<codeline lineno="56" refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;std::tuple&lt;std::string,<sp/>PortDecl<sp/>*&gt;<sp/>&gt;<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;,<sp/>clang::CXXRecordDecl<sp/>*);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::tuple&lt;const<sp/>std::string<sp/>&amp;,<sp/>clang::CXXRecordDecl<sp/>*&gt;<sp/>&amp;);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Copy<sp/>constructor.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref><sp/>&amp;from);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Assignment<sp/>operator.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref><sp/>&amp;operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref><sp/>&amp;from);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>~<ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addPorts(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a2c28ab5fe658b9833300e3d979912f42" kindref="member">PortType</ref><sp/>&amp;found_ports,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;port_type);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addConstructor(<ref refid="classsystemc__clang_1_1FindConstructor" kindref="compound">FindConstructor</ref><sp/>*);</highlight></codeline>
+<codeline lineno="73" refid="classsystemc__clang_1_1ModuleInstance_1a23722e54e716cd091596e32d1bbd518e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a23722e54e716cd091596e32d1bbd518e" kindref="member">addConstructor</ref>(clang::Stmt<sp/>*);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addInputInterfaces(<ref refid="classsystemc__clang_1_1FindTLMInterfaces_1a7ec171b2fc273ec1012eb9b9d3a5d3a8" kindref="member">FindTLMInterfaces::interfaceType</ref>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addOutputInterfaces(<ref refid="classsystemc__clang_1_1FindTLMInterfaces_1a7ec171b2fc273ec1012eb9b9d3a5d3a8" kindref="member">FindTLMInterfaces::interfaceType</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addInputOutputInterfaces(<ref refid="classsystemc__clang_1_1FindTLMInterfaces_1a7ec171b2fc273ec1012eb9b9d3a5d3a8" kindref="member">FindTLMInterfaces::interfaceType</ref>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addProcess(<ref refid="classsystemc__clang_1_1FindEntryFunctions_1a7414ce6160d09ea8539f4513bc204338" kindref="member">FindEntryFunctions::entryFunctionVectorType</ref><sp/>*);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addInstances(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>&amp;);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addPortBinding(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;port_name,<sp/><ref refid="classsystemc__clang_1_1PortBinding" kindref="compound">PortBinding</ref><sp/>*pb);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addSignalBinding(std::map&lt;std::string,<sp/>std::string&gt;);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addNestedModule(<ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref><sp/>*submodule);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setInstanceInfo(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType" kindref="compound">sc_ast_matchers::ModuleInstanceType</ref><sp/>&amp;info);</highlight></codeline>
+<codeline lineno="86" refid="classsystemc__clang_1_1ModuleInstance_1a1fba1898ad43cf99cbfdae34abb7b0ce" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a1fba1898ad43cf99cbfdae34abb7b0ce" kindref="member">setInstanceName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;);</highlight></codeline>
+<codeline lineno="87" refid="classsystemc__clang_1_1ModuleInstance_1a6db62b5ff1304966418a18b69f7693b5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a6db62b5ff1304966418a18b69f7693b5" kindref="member">setInstanceDecl</ref>(Decl<sp/>*);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setModuleName(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setTemplateParameters(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;std::string&gt;<sp/>&amp;);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setTemplateArgs(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;std::string&gt;<sp/>&amp;);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/>getTemplateParameters()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92" refid="classsystemc__clang_1_1ModuleInstance_1aa1f7aeea01276a3dacabf69f39693427" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1aa1f7aeea01276a3dacabf69f39693427" kindref="member">getTemplateArgs</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>std::string<sp/>getName()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>std::string<sp/>getInstanceName()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>clang::CXXRecordDecl<sp/>*getModuleClassDecl();</highlight></codeline>
+<codeline lineno="98" refid="classsystemc__clang_1_1ModuleInstance_1af72eb1eddf86916db549231f75cbf024" refkind="member"><highlight class="normal"><sp/><sp/>clang::FieldDecl<sp/>*<ref refid="classsystemc__clang_1_1ModuleInstance_1af72eb1eddf86916db549231f75cbf024" kindref="member">getInstanceFieldDecl</ref>();</highlight></codeline>
+<codeline lineno="99" refid="classsystemc__clang_1_1ModuleInstance_1a93c4ae2eeb23f925e1c801c6d5884959" refkind="member"><highlight class="normal"><sp/><sp/>clang::VarDecl<sp/>*<ref refid="classsystemc__clang_1_1ModuleInstance_1a93c4ae2eeb23f925e1c801c6d5884959" kindref="member">getInstanceVarDecl</ref>();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>clang::Decl<sp/>*getInstanceDecl();</highlight></codeline>
+<codeline lineno="101" refid="classsystemc__clang_1_1ModuleInstance_1a818b944b81001e7f539752c129fcce00" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a818b944b81001e7f539752c129fcce00" kindref="member">isInstanceFieldDecl</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType" kindref="compound">ModuleInstanceType</ref><sp/>getInstanceInfo();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isModuleClassDeclNull();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref><sp/>getOPorts();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref><sp/>getIPorts();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref><sp/>getIOPorts();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref><sp/>getOtherVars();</highlight></codeline>
+<codeline lineno="110" refid="classsystemc__clang_1_1ModuleInstance_1a987809214c970e395157c245d69bd293" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a987809214c970e395157c245d69bd293" kindref="member">getSubmodules</ref>();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref><sp/>getInputStreamPorts();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref><sp/>getOutputStreamPorts();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a8fc3d86b879f530c74b1de52d7fe1e65" kindref="member">portBindingMapType</ref><sp/>getPortBindings();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1aa971eba18c75ee5a38fcfc9739bbf9a5" kindref="member">processMapType</ref><sp/>getProcessMap();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>clang::Stmt<sp/>*getConstructorStmt()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>clang::CXXConstructorDecl<sp/>*getConstructorDecl()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a846e080d4532320ccc15fa375c1ca0b4" kindref="member">interfaceMapType</ref><sp/>getIInterfaces();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a846e080d4532320ccc15fa375c1ca0b4" kindref="member">interfaceMapType</ref><sp/>getOInterfaces();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a846e080d4532320ccc15fa375c1ca0b4" kindref="member">interfaceMapType</ref><sp/>getIOInterfaces();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/>getInstanceList();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>std::vector&lt;EntryFunctionContainer<sp/>*&gt;<sp/>getEntryFunctionContainer();</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getNumInstances();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1adad65a1c03e742c7c8eb6d0bd1a57271" kindref="member">signalMapType</ref><sp/>&amp;getSignals()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;ModuleInstance<sp/>*&gt;<sp/>&amp;getNestedModuleInstances()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dumpPorts(llvm::raw_ostream<sp/>&amp;,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dumpPortBinding();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dumpInterfaces(llvm::raw_ostream<sp/>&amp;,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dumpProcesses(llvm::raw_ostream<sp/>&amp;,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dumpSignals(llvm::raw_ostream<sp/>&amp;,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dump(llvm::raw_ostream<sp/>&amp;);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dumpInstances(llvm::raw_ostream<sp/>&amp;,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dumpSignalBinding(llvm::raw_ostream<sp/>&amp;,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>clearOnlyGlobal();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><ref refid="namespacesystemc__clang_1ab232545035b571c3f3cd13a4459f2d9e" kindref="member">json</ref><sp/>dump_json();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="145" refid="classsystemc__clang_1_1ModuleInstance_1a4ad8d0b6eaae49ffb0de670a8941890e" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a4ad8d0b6eaae49ffb0de670a8941890e" kindref="member">module_name_</ref>;</highlight></codeline>
+<codeline lineno="146" refid="classsystemc__clang_1_1ModuleInstance_1a0bebd9c3b1272b8cf32b04421953ba63" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a0bebd9c3b1272b8cf32b04421953ba63" kindref="member">instance_name_</ref>;</highlight></codeline>
+<codeline lineno="147" refid="classsystemc__clang_1_1ModuleInstance_1ae87066c2ad1a38280c12059fec7cf51d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType" kindref="compound">ModuleInstanceType</ref><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1ae87066c2ad1a38280c12059fec7cf51d" kindref="member">instance_info_</ref>;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Declaration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="classsystemc__clang_1_1ModuleInstance_1a52193bb56d74ae42b832932a71be909d" refkind="member"><highlight class="normal"><sp/><sp/>clang::CXXRecordDecl<sp/>*<ref refid="classsystemc__clang_1_1ModuleInstance_1a52193bb56d74ae42b832932a71be909d" kindref="member">class_decl_</ref>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Constructor<sp/>statement</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="classsystemc__clang_1_1ModuleInstance_1a8c0d420aa73f7ea7fd619494cd3d7dcc" refkind="member"><highlight class="normal"><sp/><sp/>clang::Stmt<sp/>*<ref refid="classsystemc__clang_1_1ModuleInstance_1a8c0d420aa73f7ea7fd619494cd3d7dcc" kindref="member">constructor_stmt_</ref>;</highlight></codeline>
+<codeline lineno="153" refid="classsystemc__clang_1_1ModuleInstance_1ac10d27c2d4949dfd29760d75d59abdbc" refkind="member"><highlight class="normal"><sp/><sp/>clang::CXXConstructorDecl<sp/>*<ref refid="classsystemc__clang_1_1ModuleInstance_1ac10d27c2d4949dfd29760d75d59abdbc" kindref="member">constructor_decl_</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Instance<sp/>fieldDecl<sp/>or<sp/>varDecl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="classsystemc__clang_1_1ModuleInstance_1a352b553a23314c7dbcb71fe2c02f860b" refkind="member"><highlight class="normal"><sp/><sp/>clang::Decl<sp/>*<ref refid="classsystemc__clang_1_1ModuleInstance_1a352b553a23314c7dbcb71fe2c02f860b" kindref="member">instance_decl_</ref>;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="classsystemc__clang_1_1ModuleInstance_1aa99400067cfaa6d38bb63f62bf785e1d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1aa971eba18c75ee5a38fcfc9739bbf9a5" kindref="member">processMapType</ref><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1aa99400067cfaa6d38bb63f62bf785e1d" kindref="member">process_map_</ref>;</highlight></codeline>
+<codeline lineno="158" refid="classsystemc__clang_1_1ModuleInstance_1aa00bfa3f29b80ff35a14d452e8eb3a02" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1aa00bfa3f29b80ff35a14d452e8eb3a02" kindref="member">in_ports_</ref>;</highlight></codeline>
+<codeline lineno="159" refid="classsystemc__clang_1_1ModuleInstance_1a461e9a2551826cec1646a13a94caa2d1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a461e9a2551826cec1646a13a94caa2d1" kindref="member">out_ports_</ref>;</highlight></codeline>
+<codeline lineno="160" refid="classsystemc__clang_1_1ModuleInstance_1a6466dfefe24da3ac00e228cb972957b8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a6466dfefe24da3ac00e228cb972957b8" kindref="member">inout_ports_</ref>;</highlight></codeline>
+<codeline lineno="161" refid="classsystemc__clang_1_1ModuleInstance_1a4e5b5f3ae512db4da7e512eb4c8d88bb" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a4e5b5f3ae512db4da7e512eb4c8d88bb" kindref="member">other_fields_</ref>;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="classsystemc__clang_1_1ModuleInstance_1a8c5265bd212698e526e5a8194d75d7d0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a8c5265bd212698e526e5a8194d75d7d0" kindref="member">istreamports_</ref>;</highlight></codeline>
+<codeline lineno="164" refid="classsystemc__clang_1_1ModuleInstance_1a15889d9dba330ccc10abdfa316fffa93" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a15889d9dba330ccc10abdfa316fffa93" kindref="member">ostreamports_</ref>;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="classsystemc__clang_1_1ModuleInstance_1a6ed65413c2d02d22276cdc23688f4134" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a8fc3d86b879f530c74b1de52d7fe1e65" kindref="member">portBindingMapType</ref><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a6ed65413c2d02d22276cdc23688f4134" kindref="member">port_bindings_</ref>;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="classsystemc__clang_1_1ModuleInstance_1aa512f72d3c57fac67933beb78526e4a1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a846e080d4532320ccc15fa375c1ca0b4" kindref="member">interfaceMapType</ref><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1aa512f72d3c57fac67933beb78526e4a1" kindref="member">iinterfaces_</ref>;</highlight></codeline>
+<codeline lineno="169" refid="classsystemc__clang_1_1ModuleInstance_1a36c21b835e95ca575f51daab77941f5d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a846e080d4532320ccc15fa375c1ca0b4" kindref="member">interfaceMapType</ref><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a36c21b835e95ca575f51daab77941f5d" kindref="member">ointerfaces_</ref>;</highlight></codeline>
+<codeline lineno="170" refid="classsystemc__clang_1_1ModuleInstance_1a8c6e8f2294684f47209fbd93da6f3000" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a846e080d4532320ccc15fa375c1ca0b4" kindref="member">interfaceMapType</ref><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a8c6e8f2294684f47209fbd93da6f3000" kindref="member">iointerfaces_</ref>;</highlight></codeline>
+<codeline lineno="171" refid="classsystemc__clang_1_1ModuleInstance_1ac1a7f1df5c43344d90f00fbb62671fc5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1adad65a1c03e742c7c8eb6d0bd1a57271" kindref="member">signalMapType</ref><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1ac1a7f1df5c43344d90f00fbb62671fc5" kindref="member">signals_</ref>;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="classsystemc__clang_1_1ModuleInstance_1abbbf86afd09113e92c647eb1897dc084" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1abbbf86afd09113e92c647eb1897dc084" kindref="member">instance_list_</ref>;</highlight></codeline>
+<codeline lineno="174" refid="classsystemc__clang_1_1ModuleInstance_1a2a3ca1b37000d95cc23895f58a154a6a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1ab9826602b77bf4d1b56a2f9dac9fff52" kindref="member">portSignalMapType</ref><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a2a3ca1b37000d95cc23895f58a154a6a" kindref="member">port_signal_map_</ref>;</highlight></codeline>
+<codeline lineno="175" refid="classsystemc__clang_1_1ModuleInstance_1ac754077d1131eaeb68a799746788cb41" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;EntryFunctionContainer<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1ac754077d1131eaeb68a799746788cb41" kindref="member">vef_</ref>;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="classsystemc__clang_1_1ModuleInstance_1a714bc3fd388def5531747edd6ab4d825" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;ModuleInstance<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a714bc3fd388def5531747edd6ab4d825" kindref="member">nested_modules_</ref>;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="classsystemc__clang_1_1ModuleInstance_1a0b0da3d0417bb5c182d74acbfd53906e" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a0b0da3d0417bb5c182d74acbfd53906e" kindref="member">template_parameters_</ref>;</highlight></codeline>
+<codeline lineno="182" refid="classsystemc__clang_1_1ModuleInstance_1abfae715d5503eb38f661bbc6370a90fc" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1abfae715d5503eb38f661bbc6370a90fc" kindref="member">template_args_</ref>;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>systemc_clang</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/model/ModuleInstance.h"/>
+  </compounddef>
+</doxygen>

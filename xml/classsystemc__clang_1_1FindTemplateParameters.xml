@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__clang_1_1FindTemplateParameters" kind="class" language="C++" prot="public">
+    <compoundname>systemc_clang::FindTemplateParameters</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">clang::RecursiveASTVisitor&lt; FindTemplateParameters &gt;</basecompoundref>
+    <includes refid="FindTemplateParameters_8h" local="no">FindTemplateParameters.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindTemplateParameters_1a8bd39c2ecedcfcd7072189e471a05c4e" prot="private" static="no" mutable="no">
+        <type>clang::CXXRecordDecl *</type>
+        <definition>clang::CXXRecordDecl* systemc_clang::FindTemplateParameters::declaration_</definition>
+        <argsstring></argsstring>
+        <name>declaration_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateParameters.h" line="32" column="24" bodyfile="src/matchers/FindTemplateParameters.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindTemplateParameters_1af97d8aec896f3f8811b834fe7e51b5b6" prot="private" static="no" mutable="no">
+        <type>clang::TemplateParameterList *</type>
+        <definition>clang::TemplateParameterList* systemc_clang::FindTemplateParameters::template_parameters_</definition>
+        <argsstring></argsstring>
+        <name>template_parameters_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateParameters.h" line="33" column="32" bodyfile="src/matchers/FindTemplateParameters.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindTemplateParameters_1aa52770375f41a0b84707b83d2802b0fb" prot="private" static="no" mutable="no">
+        <type>const clang::TemplateArgumentList *</type>
+        <definition>const clang::TemplateArgumentList* systemc_clang::FindTemplateParameters::template_args_</definition>
+        <argsstring></argsstring>
+        <name>template_args_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateParameters.h" line="34" column="37" bodyfile="src/matchers/FindTemplateParameters.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateParameters_1a4a14851abfbbc857b34030354a08d886" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FindTemplateParameters::FindTemplateParameters</definition>
+        <argsstring>(clang::CXXRecordDecl *)</argsstring>
+        <name>FindTemplateParameters</name>
+        <param>
+          <type>clang::CXXRecordDecl *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateParameters.h" line="21" column="3" bodyfile="src/matchers/FindTemplateParameters.cpp" bodystart="8" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateParameters_1a29011376b0e676e7cd63ff8a05372970" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool FindTemplateParameters::VisitCXXRecordDecl</definition>
+        <argsstring>(clang::CXXRecordDecl *decl)</argsstring>
+        <name>VisitCXXRecordDecl</name>
+        <param>
+          <type>clang::CXXRecordDecl *</type>
+          <declname>decl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateParameters.h" line="22" column="16" bodyfile="src/matchers/FindTemplateParameters.cpp" bodystart="17" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateParameters_1ac3afe9cb44b350848418510f2d1822d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>FindTemplateParameters::~FindTemplateParameters</definition>
+        <argsstring>()</argsstring>
+        <name>~FindTemplateParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateParameters.h" line="24" column="11" bodyfile="src/matchers/FindTemplateParameters.cpp" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateParameters_1af993cd8c8c54ed5873d73d1bf6b1bb2a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; std::string &gt;</type>
+        <definition>const std::vector&lt; std::string &gt; FindTemplateParameters::getTemplateParameters</definition>
+        <argsstring>() const</argsstring>
+        <name>getTemplateParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateParameters.h" line="26" column="21" bodyfile="src/matchers/FindTemplateParameters.cpp" bodystart="65" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateParameters_1a39e2a33dbb7a8446e4a51847e3d07896" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; std::string &gt;</type>
+        <definition>const std::vector&lt; std::string &gt; FindTemplateParameters::getTemplateArgs</definition>
+        <argsstring>() const</argsstring>
+        <name>getTemplateArgs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateParameters.h" line="27" column="21" bodyfile="src/matchers/FindTemplateParameters.cpp" bodystart="80" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateParameters_1ab4d79a10ad3b714554ee7278a2219d49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FindTemplateParameters::dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateParameters.h" line="29" column="8" bodyfile="src/matchers/FindTemplateParameters.cpp" bodystart="112" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>clang::RecursiveASTVisitor&lt; FindTemplateParameters &gt;</label>
+      </node>
+      <node id="1">
+        <label>systemc_clang::FindTemplateParameters</label>
+        <link refid="classsystemc__clang_1_1FindTemplateParameters"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>clang::RecursiveASTVisitor&lt; FindTemplateParameters &gt;</label>
+      </node>
+      <node id="1">
+        <label>systemc_clang::FindTemplateParameters</label>
+        <link refid="classsystemc__clang_1_1FindTemplateParameters"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/matchers/FindTemplateParameters.h" line="18" column="1" bodyfile="src/matchers/FindTemplateParameters.h" bodystart="19" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classsystemc__clang_1_1FindTemplateParameters_1a8bd39c2ecedcfcd7072189e471a05c4e" prot="private" virt="non-virtual"><scope>systemc_clang::FindTemplateParameters</scope><name>declaration_</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateParameters_1ab4d79a10ad3b714554ee7278a2219d49" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateParameters</scope><name>dump</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateParameters_1a4a14851abfbbc857b34030354a08d886" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateParameters</scope><name>FindTemplateParameters</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateParameters_1a39e2a33dbb7a8446e4a51847e3d07896" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateParameters</scope><name>getTemplateArgs</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateParameters_1af993cd8c8c54ed5873d73d1bf6b1bb2a" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateParameters</scope><name>getTemplateParameters</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateParameters_1aa52770375f41a0b84707b83d2802b0fb" prot="private" virt="non-virtual"><scope>systemc_clang::FindTemplateParameters</scope><name>template_args_</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateParameters_1af97d8aec896f3f8811b834fe7e51b5b6" prot="private" virt="non-virtual"><scope>systemc_clang::FindTemplateParameters</scope><name>template_parameters_</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateParameters_1a29011376b0e676e7cd63ff8a05372970" prot="public" virt="virtual"><scope>systemc_clang::FindTemplateParameters</scope><name>VisitCXXRecordDecl</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateParameters_1ac3afe9cb44b350848418510f2d1822d8" prot="public" virt="virtual"><scope>systemc_clang::FindTemplateParameters</scope><name>~FindTemplateParameters</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

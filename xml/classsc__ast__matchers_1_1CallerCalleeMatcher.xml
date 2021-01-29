@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsc__ast__matchers_1_1CallerCalleeMatcher" kind="class" language="C++" prot="public">
+    <compoundname>sc_ast_matchers::CallerCalleeMatcher</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MatchFinder::MatchCallback</basecompoundref>
+    <includes refid="SensitivityMatcher_8h" local="no">SensitivityMatcher.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classsc__ast__matchers_1_1CallerCalleeMatcher_1a0639e2ec62660649e0ca40a86d245733" prot="private" static="no">
+        <type>std::vector&lt; std::tuple&lt; std::string, clang::ValueDecl *, clang::MemberExpr *, clang::DeclRefExpr *, clang::ArraySubscriptExpr * &gt; &gt;</type>
+        <definition>typedef std::vector&lt; std::tuple&lt;std::string, clang::ValueDecl *, clang::MemberExpr *, clang::DeclRefExpr *, clang::ArraySubscriptExpr *&gt; &gt; sc_ast_matchers::CallerCalleeMatcher::CallerCalleeType</definition>
+        <argsstring></argsstring>
+        <name>CallerCalleeType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><orderedlist>
+<listitem><para>name</para>
+</listitem><listitem><para>FieldDecl/VarDecl = ValueDecl. Pointer to field declaration.</para>
+</listitem><listitem><para>The MemberExpr from where I got this information. </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/SensitivityMatcher.h" line="50" column="7" bodyfile="src/matchers/SensitivityMatcher.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsc__ast__matchers_1_1CallerCalleeMatcher_1ab7914e2a434a605a8cc204bdf4a6653e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::tuple&lt; std::string, clang::ValueDecl *, clang::MemberExpr *, clang::DeclRefExpr *, clang::ArraySubscriptExpr * &gt; &gt;</type>
+        <definition>std::vector&lt;std::tuple&lt;std::string, clang::ValueDecl *, clang::MemberExpr *, clang::DeclRefExpr *, clang::ArraySubscriptExpr *&gt; &gt; sc_ast_matchers::CallerCalleeMatcher::calls_</definition>
+        <argsstring></argsstring>
+        <name>calls_</name>
+        <briefdescription>
+<para>Store the information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/SensitivityMatcher.h" line="55" column="7" bodyfile="src/matchers/SensitivityMatcher.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsc__ast__matchers_1_1CallerCalleeMatcher_1a394b9839eecdbb505983451eff3e6642" prot="private" static="no" mutable="no">
+        <type>clang::DeclRefExpr *</type>
+        <definition>clang::DeclRefExpr* sc_ast_matchers::CallerCalleeMatcher::vd_</definition>
+        <argsstring></argsstring>
+        <name>vd_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/SensitivityMatcher.h" line="57" column="22" bodyfile="src/matchers/SensitivityMatcher.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsc__ast__matchers_1_1CallerCalleeMatcher_1a8ada1a118d02f99757cd6d4919d4a165" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsc__ast__matchers_1_1CallerCalleeMatcher_1a0639e2ec62660649e0ca40a86d245733" kindref="member">CallerCalleeType</ref></type>
+        <definition>CallerCalleeType sc_ast_matchers::CallerCalleeMatcher::getCallerCallee</definition>
+        <argsstring>() const</argsstring>
+        <name>getCallerCallee</name>
+        <briefdescription>
+<para>This returns a list of all the caller and callees that are identified. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/SensitivityMatcher.h" line="61" column="20" bodyfile="src/matchers/SensitivityMatcher.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classsc__ast__matchers_1_1CallerCalleeMatcher_1a82b732dd8faee0376d4fb191016ed709" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sc_ast_matchers::CallerCalleeMatcher::registerMatchers</definition>
+        <argsstring>(MatchFinder &amp;finder, clang::DeclRefExpr *vd)</argsstring>
+        <name>registerMatchers</name>
+        <param>
+          <type>MatchFinder &amp;</type>
+          <declname>finder</declname>
+        </param>
+        <param>
+          <type>clang::DeclRefExpr *</type>
+          <declname>vd</declname>
+        </param>
+        <briefdescription>
+<para>Register the matchers to identify caller and callees. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>This is the matcher that finds all the member expressions.. <linebreak/>
+</para>
+        </inbodydescription>
+        <location file="src/matchers/SensitivityMatcher.h" line="64" column="8" bodyfile="src/matchers/SensitivityMatcher.h" bodystart="64" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classsc__ast__matchers_1_1CallerCalleeMatcher_1aae2116f803d9533ea7d40ea93d5ff91d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sc_ast_matchers::CallerCalleeMatcher::run</definition>
+        <argsstring>(const MatchFinder::MatchResult &amp;result)</argsstring>
+        <name>run</name>
+        <param>
+          <type>const MatchFinder::MatchResult &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>This is the callback function when there is a match. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/SensitivityMatcher.h" line="77" column="16" bodyfile="src/matchers/SensitivityMatcher.h" bodystart="77" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classsc__ast__matchers_1_1CallerCalleeMatcher_1a26c61446a948700d2be4251dc369c671" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sc_ast_matchers::CallerCalleeMatcher::dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <briefdescription>
+<para>Dump out the caller and callee found in the sensitivity list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/SensitivityMatcher.h" line="89" column="8" bodyfile="src/matchers/SensitivityMatcher.h" bodystart="89" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class CallerCaleeMatcher</para>
+<para>This class identifies for a method call, who is the caller, and who is the callee. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MatchFinder::MatchCallback</label>
+      </node>
+      <node id="1">
+        <label>sc_ast_matchers::CallerCalleeMatcher</label>
+        <link refid="classsc__ast__matchers_1_1CallerCalleeMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MatchFinder::MatchCallback</label>
+      </node>
+      <node id="1">
+        <label>sc_ast_matchers::CallerCalleeMatcher</label>
+        <link refid="classsc__ast__matchers_1_1CallerCalleeMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/matchers/SensitivityMatcher.h" line="42" column="1" bodyfile="src/matchers/SensitivityMatcher.h" bodystart="42" bodyend="95"/>
+    <listofallmembers>
+      <member refid="classsc__ast__matchers_1_1CallerCalleeMatcher_1a0639e2ec62660649e0ca40a86d245733" prot="private" virt="non-virtual"><scope>sc_ast_matchers::CallerCalleeMatcher</scope><name>CallerCalleeType</name></member>
+      <member refid="classsc__ast__matchers_1_1CallerCalleeMatcher_1ab7914e2a434a605a8cc204bdf4a6653e" prot="private" virt="non-virtual"><scope>sc_ast_matchers::CallerCalleeMatcher</scope><name>calls_</name></member>
+      <member refid="classsc__ast__matchers_1_1CallerCalleeMatcher_1a26c61446a948700d2be4251dc369c671" prot="public" virt="non-virtual"><scope>sc_ast_matchers::CallerCalleeMatcher</scope><name>dump</name></member>
+      <member refid="classsc__ast__matchers_1_1CallerCalleeMatcher_1a8ada1a118d02f99757cd6d4919d4a165" prot="public" virt="non-virtual"><scope>sc_ast_matchers::CallerCalleeMatcher</scope><name>getCallerCallee</name></member>
+      <member refid="classsc__ast__matchers_1_1CallerCalleeMatcher_1a82b732dd8faee0376d4fb191016ed709" prot="public" virt="non-virtual"><scope>sc_ast_matchers::CallerCalleeMatcher</scope><name>registerMatchers</name></member>
+      <member refid="classsc__ast__matchers_1_1CallerCalleeMatcher_1aae2116f803d9533ea7d40ea93d5ff91d" prot="public" virt="virtual"><scope>sc_ast_matchers::CallerCalleeMatcher</scope><name>run</name></member>
+      <member refid="classsc__ast__matchers_1_1CallerCalleeMatcher_1a394b9839eecdbb505983451eff3e6642" prot="private" virt="non-virtual"><scope>sc_ast_matchers::CallerCalleeMatcher</scope><name>vd_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

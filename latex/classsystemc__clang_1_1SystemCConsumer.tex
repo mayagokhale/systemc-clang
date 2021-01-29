@@ -1,0 +1,206 @@
+\hypertarget{classsystemc__clang_1_1SystemCConsumer}{}\doxysection{systemc\+\_\+clang\+::System\+CConsumer Class Reference}
+\label{classsystemc__clang_1_1SystemCConsumer}\index{systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}}
+
+
+This is the main consumer class that beings the parsing of SystemC.  
+
+
+
+
+{\ttfamily \#include $<$System\+CClang.\+h$>$}
+
+
+
+Inheritance diagram for systemc\+\_\+clang\+::System\+CConsumer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsystemc__clang_1_1SystemCConsumer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for systemc\+\_\+clang\+::System\+CConsumer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsystemc__clang_1_1SystemCConsumer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1SystemCConsumer_a7329006e29dd8aaade834857342ca945}{System\+CConsumer}} (clang\+::\+Compiler\+Instance \&, std\+::string top=\char`\"{}!none\char`\"{})
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1SystemCConsumer_a8144d02a15221bb1e3809835c566e73d}{System\+CConsumer}} (clang\+::\+ASTUnit $\ast$from\+\_\+ast, std\+::string top=\char`\"{}!none\char`\"{})
+\item 
+virtual \mbox{\hyperlink{classsystemc__clang_1_1SystemCConsumer_a87c3945a47ef25c30a372898789251cf}{$\sim$\+System\+CConsumer}} ()
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1Model}{Model}} $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1SystemCConsumer_ae1eda508d3a15cb37f332205f8127e04}{get\+System\+CModel}} ()
+\item 
+const std\+::string \& \mbox{\hyperlink{classsystemc__clang_1_1SystemCConsumer_a1a302f2c0ce93bacfe2287d4e76a537e}{get\+Top\+Module}} () const
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1SystemCConsumer_a9f951a7b3b7159cc52768dc5df775279}{set\+Top\+Module}} (const std\+::string \&top\+\_\+module\+\_\+decl)
+\item 
+clang\+::\+ASTContext \& \mbox{\hyperlink{classsystemc__clang_1_1SystemCConsumer_ad83b670a41e54b55954ec9fa305dce99}{get\+Context}} () const
+\item 
+clang\+::\+Source\+Manager \& \mbox{\hyperlink{classsystemc__clang_1_1SystemCConsumer_a4272ad2c5a6239127aa4cbe6cd27c1a8}{get\+Source\+Manager}} () const
+\item 
+virtual bool \mbox{\hyperlink{classsystemc__clang_1_1SystemCConsumer_a3c77d4b6256d0cae17688fdf10fdfd4c}{fire}} ()
+\item 
+virtual bool \mbox{\hyperlink{classsystemc__clang_1_1SystemCConsumer_a7ecea0031ec9e348f9054123bb84a0e8}{pre\+Fire}} ()
+\item 
+virtual bool \mbox{\hyperlink{classsystemc__clang_1_1SystemCConsumer_a5abaaf14db3be571b79714eac76737bc}{post\+Fire}} ()
+\item 
+virtual void \mbox{\hyperlink{classsystemc__clang_1_1SystemCConsumer_a905aa1175d3b875a286ce3104f397ab3}{Handle\+Translation\+Unit}} (clang\+::\+ASTContext \&context)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+llvm\+::raw\+\_\+ostream \& \mbox{\hyperlink{classsystemc__clang_1_1SystemCConsumer_a4f19cdcdc826eced7e9bdcd8890b4b85}{os\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classsystemc__clang_1_1SystemCConsumer_a75c11443ed0a5ae9924fbd00f84d115a}{top\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1Model}{Model}} $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1SystemCConsumer_a9b479529e66790c1ff22460dfcff871f}{systemc\+\_\+model\+\_\+}}
+\item 
+clang\+::\+ASTContext \& \mbox{\hyperlink{classsystemc__clang_1_1SystemCConsumer_a53d03841ed71ecf0ca5cd056e5e8a69a}{context\+\_\+}}
+\item 
+clang\+::\+Source\+Manager \& \mbox{\hyperlink{classsystemc__clang_1_1SystemCConsumer_a22da7bc944c40b4a978f3a62c1b64df6}{sm\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the main consumer class that beings the parsing of SystemC. 
+
+This class drives the AST consumer for parsing SystemC constructs. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1SystemCConsumer_a7329006e29dd8aaade834857342ca945}\label{classsystemc__clang_1_1SystemCConsumer_a7329006e29dd8aaade834857342ca945}} 
+\index{systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}!SystemCConsumer@{SystemCConsumer}}
+\index{SystemCConsumer@{SystemCConsumer}!systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}}
+\doxysubsubsection{\texorpdfstring{SystemCConsumer()}{SystemCConsumer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily System\+CConsumer\+::\+System\+CConsumer (\begin{DoxyParamCaption}\item[{clang\+::\+Compiler\+Instance \&}]{ci,  }\item[{std\+::string}]{top = {\ttfamily \char`\"{}!none\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SystemCConsumer_a8144d02a15221bb1e3809835c566e73d}\label{classsystemc__clang_1_1SystemCConsumer_a8144d02a15221bb1e3809835c566e73d}} 
+\index{systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}!SystemCConsumer@{SystemCConsumer}}
+\index{SystemCConsumer@{SystemCConsumer}!systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}}
+\doxysubsubsection{\texorpdfstring{SystemCConsumer()}{SystemCConsumer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily System\+CConsumer\+::\+System\+CConsumer (\begin{DoxyParamCaption}\item[{clang\+::\+ASTUnit $\ast$}]{from\+\_\+ast,  }\item[{std\+::string}]{top = {\ttfamily \char`\"{}!none\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SystemCConsumer_a87c3945a47ef25c30a372898789251cf}\label{classsystemc__clang_1_1SystemCConsumer_a87c3945a47ef25c30a372898789251cf}} 
+\index{systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}!````~SystemCConsumer@{$\sim$SystemCConsumer}}
+\index{````~SystemCConsumer@{$\sim$SystemCConsumer}!systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}}
+\doxysubsubsection{\texorpdfstring{$\sim$SystemCConsumer()}{~SystemCConsumer()}}
+{\footnotesize\ttfamily System\+CConsumer\+::$\sim$\+System\+CConsumer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1SystemCConsumer_a3c77d4b6256d0cae17688fdf10fdfd4c}\label{classsystemc__clang_1_1SystemCConsumer_a3c77d4b6256d0cae17688fdf10fdfd4c}} 
+\index{systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}!fire@{fire}}
+\index{fire@{fire}!systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}}
+\doxysubsubsection{\texorpdfstring{fire()}{fire()}}
+{\footnotesize\ttfamily bool System\+CConsumer\+::fire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyEnumerate}
+\item Find constructor
+\item Find ports This is done for the declaration.
+\end{DoxyEnumerate}
+
+Add the sensitivity information to each of the entry functions.\mbox{\Hypertarget{classsystemc__clang_1_1SystemCConsumer_ad83b670a41e54b55954ec9fa305dce99}\label{classsystemc__clang_1_1SystemCConsumer_ad83b670a41e54b55954ec9fa305dce99}} 
+\index{systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}!getContext@{getContext}}
+\index{getContext@{getContext}!systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}}
+\doxysubsubsection{\texorpdfstring{getContext()}{getContext()}}
+{\footnotesize\ttfamily clang\+::\+ASTContext \& System\+CConsumer\+::get\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SystemCConsumer_a4272ad2c5a6239127aa4cbe6cd27c1a8}\label{classsystemc__clang_1_1SystemCConsumer_a4272ad2c5a6239127aa4cbe6cd27c1a8}} 
+\index{systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}!getSourceManager@{getSourceManager}}
+\index{getSourceManager@{getSourceManager}!systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}}
+\doxysubsubsection{\texorpdfstring{getSourceManager()}{getSourceManager()}}
+{\footnotesize\ttfamily clang\+::\+Source\+Manager \& System\+CConsumer\+::get\+Source\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SystemCConsumer_ae1eda508d3a15cb37f332205f8127e04}\label{classsystemc__clang_1_1SystemCConsumer_ae1eda508d3a15cb37f332205f8127e04}} 
+\index{systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}!getSystemCModel@{getSystemCModel}}
+\index{getSystemCModel@{getSystemCModel}!systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}}
+\doxysubsubsection{\texorpdfstring{getSystemCModel()}{getSystemCModel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1Model}{Model}} $\ast$ System\+CConsumer\+::get\+System\+CModel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SystemCConsumer_a1a302f2c0ce93bacfe2287d4e76a537e}\label{classsystemc__clang_1_1SystemCConsumer_a1a302f2c0ce93bacfe2287d4e76a537e}} 
+\index{systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}!getTopModule@{getTopModule}}
+\index{getTopModule@{getTopModule}!systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}}
+\doxysubsubsection{\texorpdfstring{getTopModule()}{getTopModule()}}
+{\footnotesize\ttfamily const std\+::string \& System\+CConsumer\+::get\+Top\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SystemCConsumer_a905aa1175d3b875a286ce3104f397ab3}\label{classsystemc__clang_1_1SystemCConsumer_a905aa1175d3b875a286ce3104f397ab3}} 
+\index{systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}!HandleTranslationUnit@{HandleTranslationUnit}}
+\index{HandleTranslationUnit@{HandleTranslationUnit}!systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}}
+\doxysubsubsection{\texorpdfstring{HandleTranslationUnit()}{HandleTranslationUnit()}}
+{\footnotesize\ttfamily void System\+CConsumer\+::\+Handle\+Translation\+Unit (\begin{DoxyParamCaption}\item[{clang\+::\+ASTContext \&}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SystemCConsumer_a5abaaf14db3be571b79714eac76737bc}\label{classsystemc__clang_1_1SystemCConsumer_a5abaaf14db3be571b79714eac76737bc}} 
+\index{systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}!postFire@{postFire}}
+\index{postFire@{postFire}!systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}}
+\doxysubsubsection{\texorpdfstring{postFire()}{postFire()}}
+{\footnotesize\ttfamily bool System\+CConsumer\+::post\+Fire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classTimeAnalysis_adc50a7dbdbd75742d6da224d6e9c3596}{Time\+Analysis}}, \mbox{\hyperlink{classSAPlugin_a0b06d21eea788c4434ce912662d4c1e6}{SAPlugin}}, and \mbox{\hyperlink{classsystemc__hdl_1_1HDLMain_a9ffb914cdea1fd4e797001a34ba8e2e4}{systemc\+\_\+hdl\+::\+HDLMain}}.
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SystemCConsumer_a7ecea0031ec9e348f9054123bb84a0e8}\label{classsystemc__clang_1_1SystemCConsumer_a7ecea0031ec9e348f9054123bb84a0e8}} 
+\index{systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}!preFire@{preFire}}
+\index{preFire@{preFire}!systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}}
+\doxysubsubsection{\texorpdfstring{preFire()}{preFire()}}
+{\footnotesize\ttfamily bool System\+CConsumer\+::pre\+Fire (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SystemCConsumer_a9f951a7b3b7159cc52768dc5df775279}\label{classsystemc__clang_1_1SystemCConsumer_a9f951a7b3b7159cc52768dc5df775279}} 
+\index{systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}!setTopModule@{setTopModule}}
+\index{setTopModule@{setTopModule}!systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}}
+\doxysubsubsection{\texorpdfstring{setTopModule()}{setTopModule()}}
+{\footnotesize\ttfamily void System\+CConsumer\+::set\+Top\+Module (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{top\+\_\+module\+\_\+decl }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1SystemCConsumer_a53d03841ed71ecf0ca5cd056e5e8a69a}\label{classsystemc__clang_1_1SystemCConsumer_a53d03841ed71ecf0ca5cd056e5e8a69a}} 
+\index{systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}!context\_@{context\_}}
+\index{context\_@{context\_}!systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}}
+\doxysubsubsection{\texorpdfstring{context\_}{context\_}}
+{\footnotesize\ttfamily clang\+::\+ASTContext\& systemc\+\_\+clang\+::\+System\+CConsumer\+::context\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SystemCConsumer_a4f19cdcdc826eced7e9bdcd8890b4b85}\label{classsystemc__clang_1_1SystemCConsumer_a4f19cdcdc826eced7e9bdcd8890b4b85}} 
+\index{systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}!os\_@{os\_}}
+\index{os\_@{os\_}!systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}}
+\doxysubsubsection{\texorpdfstring{os\_}{os\_}}
+{\footnotesize\ttfamily llvm\+::raw\+\_\+ostream\& systemc\+\_\+clang\+::\+System\+CConsumer\+::os\+\_\+}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SystemCConsumer_a22da7bc944c40b4a978f3a62c1b64df6}\label{classsystemc__clang_1_1SystemCConsumer_a22da7bc944c40b4a978f3a62c1b64df6}} 
+\index{systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}!sm\_@{sm\_}}
+\index{sm\_@{sm\_}!systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}}
+\doxysubsubsection{\texorpdfstring{sm\_}{sm\_}}
+{\footnotesize\ttfamily clang\+::\+Source\+Manager\& systemc\+\_\+clang\+::\+System\+CConsumer\+::sm\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SystemCConsumer_a9b479529e66790c1ff22460dfcff871f}\label{classsystemc__clang_1_1SystemCConsumer_a9b479529e66790c1ff22460dfcff871f}} 
+\index{systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}!systemc\_model\_@{systemc\_model\_}}
+\index{systemc\_model\_@{systemc\_model\_}!systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}}
+\doxysubsubsection{\texorpdfstring{systemc\_model\_}{systemc\_model\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1Model}{Model}}$\ast$ systemc\+\_\+clang\+::\+System\+CConsumer\+::systemc\+\_\+model\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SystemCConsumer_a75c11443ed0a5ae9924fbd00f84d115a}\label{classsystemc__clang_1_1SystemCConsumer_a75c11443ed0a5ae9924fbd00f84d115a}} 
+\index{systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}!top\_@{top\_}}
+\index{top\_@{top\_}!systemc\_clang::SystemCConsumer@{systemc\_clang::SystemCConsumer}}
+\doxysubsubsection{\texorpdfstring{top\_}{top\_}}
+{\footnotesize\ttfamily std\+::string systemc\+\_\+clang\+::\+System\+CConsumer\+::top\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{SystemCClang_8h}{System\+CClang.\+h}}\item 
+src/\mbox{\hyperlink{SystemCClang_8cpp}{System\+CClang.\+cpp}}\end{DoxyCompactItemize}

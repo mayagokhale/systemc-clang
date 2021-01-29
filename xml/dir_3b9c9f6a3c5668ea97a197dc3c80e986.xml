@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_3b9c9f6a3c5668ea97a197dc3c80e986" kind="dir">
+    <compoundname>plugins/hdl/parselib/transforms</compoundname>
+    <innerfile refid="transforms_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="alias__translation_8py">alias_translation.py</innerfile>
+    <innerfile refid="function__param__marker_8py">function_param_marker.py</innerfile>
+    <innerfile refid="literal__expansion_8py">literal_expansion.py</innerfile>
+    <innerfile refid="node_8py">node.py</innerfile>
+    <innerfile refid="node__merge_8py">node_merge.py</innerfile>
+    <innerfile refid="node__movement_8py">node_movement.py</innerfile>
+    <innerfile refid="passes_8py">passes.py</innerfile>
+    <innerfile refid="port__expansion_8py">port_expansion.py</innerfile>
+    <innerfile refid="reorder__mod__init__block_8py">reorder_mod_init_block.py</innerfile>
+    <innerfile refid="slice__merge_8py">slice_merge.py</innerfile>
+    <innerfile refid="sort__var__decl_8py">sort_var_decl.py</innerfile>
+    <innerfile refid="top__down_8py">top_down.py</innerfile>
+    <innerfile refid="type__collector_8py">type_collector.py</innerfile>
+    <innerfile refid="type__node_8py">type_node.py</innerfile>
+    <innerfile refid="typedef__expansion_8py">typedef_expansion.py</innerfile>
+    <innerfile refid="typedef__filter_8py">typedef_filter.py</innerfile>
+    <innerfile refid="verilog__tranlation_8py">verilog_tranlation.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="plugins/hdl/parselib/transforms/"/>
+  </compounddef>
+</doxygen>

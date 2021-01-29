@@ -1,0 +1,141 @@
+\hypertarget{classsystemc__clang_1_1FindGlobalEvents}{}\doxysection{systemc\+\_\+clang\+::Find\+Global\+Events Class Reference}
+\label{classsystemc__clang_1_1FindGlobalEvents}\index{systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}}
+
+
+{\ttfamily \#include $<$Find\+Global\+Events.\+h$>$}
+
+
+
+Inheritance diagram for systemc\+\_\+clang\+::Find\+Global\+Events\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classsystemc__clang_1_1FindGlobalEvents__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for systemc\+\_\+clang\+::Find\+Global\+Events\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classsystemc__clang_1_1FindGlobalEvents__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef map$<$ string, Var\+Decl $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindGlobalEvents_a07d8ada4c3bf82ddeaf241c30cdd257a}{global\+Event\+Map\+Type}}
+\item 
+typedef pair$<$ string, Var\+Decl $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindGlobalEvents_a4236ad7b03182c36006b2f37ae1a7d0d}{kv\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindGlobalEvents_ad8cbc58ae375ae3ef3fe966c4d5e7bbf}{Find\+Global\+Events}} (Translation\+Unit\+Decl $\ast$, llvm\+::raw\+\_\+ostream \&)
+\item 
+virtual \mbox{\hyperlink{classsystemc__clang_1_1FindGlobalEvents_a945b2632b4c9c290774c66c2794f4b86}{$\sim$\+Find\+Global\+Events}} ()
+\item 
+virtual bool \mbox{\hyperlink{classsystemc__clang_1_1FindGlobalEvents_aec04bcf2707035d2a45869439cd5fe62}{Visit\+Var\+Decl}} (Var\+Decl $\ast$)
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindGlobalEvents_a07d8ada4c3bf82ddeaf241c30cdd257a}{global\+Event\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindGlobalEvents_a281cab7140c2ede50bfc886adabf240e}{get\+Event\+Map}} ()
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindGlobalEvents_af17d5125892b5e5f8425d0806d557279}{get\+Event\+Names}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1FindGlobalEvents_aef90064391d8306499263a2c78913847}{dump}} ()
+\item 
+\mbox{\hyperlink{namespacesystemc__clang_ab232545035b571c3f3cd13a4459f2d9e}{json}} \mbox{\hyperlink{classsystemc__clang_1_1FindGlobalEvents_a03a9fde1d23601d526e098f1db450382}{dump\+\_\+json}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+llvm\+::raw\+\_\+ostream \& \mbox{\hyperlink{classsystemc__clang_1_1FindGlobalEvents_a4a33d4ffeb02939957b01f4a051db3b2}{\+\_\+os}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindGlobalEvents_a07d8ada4c3bf82ddeaf241c30cdd257a}{global\+Event\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindGlobalEvents_af3ef958e39f096aa676e438c2141f099}{\+\_\+global\+Events}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGlobalEvents_a07d8ada4c3bf82ddeaf241c30cdd257a}\label{classsystemc__clang_1_1FindGlobalEvents_a07d8ada4c3bf82ddeaf241c30cdd257a}} 
+\index{systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}!globalEventMapType@{globalEventMapType}}
+\index{globalEventMapType@{globalEventMapType}!systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}}
+\doxysubsubsection{\texorpdfstring{globalEventMapType}{globalEventMapType}}
+{\footnotesize\ttfamily typedef map$<$string, Var\+Decl $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1FindGlobalEvents_a07d8ada4c3bf82ddeaf241c30cdd257a}{systemc\+\_\+clang\+::\+Find\+Global\+Events\+::global\+Event\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGlobalEvents_a4236ad7b03182c36006b2f37ae1a7d0d}\label{classsystemc__clang_1_1FindGlobalEvents_a4236ad7b03182c36006b2f37ae1a7d0d}} 
+\index{systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}!kvType@{kvType}}
+\index{kvType@{kvType}!systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}}
+\doxysubsubsection{\texorpdfstring{kvType}{kvType}}
+{\footnotesize\ttfamily typedef pair$<$string, Var\+Decl $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1FindGlobalEvents_a4236ad7b03182c36006b2f37ae1a7d0d}{systemc\+\_\+clang\+::\+Find\+Global\+Events\+::kv\+Type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGlobalEvents_ad8cbc58ae375ae3ef3fe966c4d5e7bbf}\label{classsystemc__clang_1_1FindGlobalEvents_ad8cbc58ae375ae3ef3fe966c4d5e7bbf}} 
+\index{systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}!FindGlobalEvents@{FindGlobalEvents}}
+\index{FindGlobalEvents@{FindGlobalEvents}!systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}}
+\doxysubsubsection{\texorpdfstring{FindGlobalEvents()}{FindGlobalEvents()}}
+{\footnotesize\ttfamily Find\+Global\+Events\+::\+Find\+Global\+Events (\begin{DoxyParamCaption}\item[{Translation\+Unit\+Decl $\ast$}]{declaration,  }\item[{llvm\+::raw\+\_\+ostream \&}]{os }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGlobalEvents_a945b2632b4c9c290774c66c2794f4b86}\label{classsystemc__clang_1_1FindGlobalEvents_a945b2632b4c9c290774c66c2794f4b86}} 
+\index{systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}!````~FindGlobalEvents@{$\sim$FindGlobalEvents}}
+\index{````~FindGlobalEvents@{$\sim$FindGlobalEvents}!systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}}
+\doxysubsubsection{\texorpdfstring{$\sim$FindGlobalEvents()}{~FindGlobalEvents()}}
+{\footnotesize\ttfamily Find\+Global\+Events\+::$\sim$\+Find\+Global\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGlobalEvents_aef90064391d8306499263a2c78913847}\label{classsystemc__clang_1_1FindGlobalEvents_aef90064391d8306499263a2c78913847}} 
+\index{systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}!dump@{dump}}
+\index{dump@{dump}!systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void Find\+Global\+Events\+::dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGlobalEvents_a03a9fde1d23601d526e098f1db450382}\label{classsystemc__clang_1_1FindGlobalEvents_a03a9fde1d23601d526e098f1db450382}} 
+\index{systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}!dump\_json@{dump\_json}}
+\index{dump\_json@{dump\_json}!systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}}
+\doxysubsubsection{\texorpdfstring{dump\_json()}{dump\_json()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacesystemc__clang_ab232545035b571c3f3cd13a4459f2d9e}{json}} Find\+Global\+Events\+::dump\+\_\+json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGlobalEvents_a281cab7140c2ede50bfc886adabf240e}\label{classsystemc__clang_1_1FindGlobalEvents_a281cab7140c2ede50bfc886adabf240e}} 
+\index{systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}!getEventMap@{getEventMap}}
+\index{getEventMap@{getEventMap}!systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}}
+\doxysubsubsection{\texorpdfstring{getEventMap()}{getEventMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindGlobalEvents_a07d8ada4c3bf82ddeaf241c30cdd257a}{Find\+Global\+Events\+::global\+Event\+Map\+Type}} Find\+Global\+Events\+::get\+Event\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGlobalEvents_af17d5125892b5e5f8425d0806d557279}\label{classsystemc__clang_1_1FindGlobalEvents_af17d5125892b5e5f8425d0806d557279}} 
+\index{systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}!getEventNames@{getEventNames}}
+\index{getEventNames@{getEventNames}!systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}}
+\doxysubsubsection{\texorpdfstring{getEventNames()}{getEventNames()}}
+{\footnotesize\ttfamily vector$<$string$>$ systemc\+\_\+clang\+::\+Find\+Global\+Events\+::get\+Event\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGlobalEvents_aec04bcf2707035d2a45869439cd5fe62}\label{classsystemc__clang_1_1FindGlobalEvents_aec04bcf2707035d2a45869439cd5fe62}} 
+\index{systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}!VisitVarDecl@{VisitVarDecl}}
+\index{VisitVarDecl@{VisitVarDecl}!systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}}
+\doxysubsubsection{\texorpdfstring{VisitVarDecl()}{VisitVarDecl()}}
+{\footnotesize\ttfamily bool Find\+Global\+Events\+::\+Visit\+Var\+Decl (\begin{DoxyParamCaption}\item[{Var\+Decl $\ast$}]{variable\+\_\+declaration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGlobalEvents_af3ef958e39f096aa676e438c2141f099}\label{classsystemc__clang_1_1FindGlobalEvents_af3ef958e39f096aa676e438c2141f099}} 
+\index{systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}!\_globalEvents@{\_globalEvents}}
+\index{\_globalEvents@{\_globalEvents}!systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}}
+\doxysubsubsection{\texorpdfstring{\_globalEvents}{\_globalEvents}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindGlobalEvents_a07d8ada4c3bf82ddeaf241c30cdd257a}{global\+Event\+Map\+Type}} systemc\+\_\+clang\+::\+Find\+Global\+Events\+::\+\_\+global\+Events\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGlobalEvents_a4a33d4ffeb02939957b01f4a051db3b2}\label{classsystemc__clang_1_1FindGlobalEvents_a4a33d4ffeb02939957b01f4a051db3b2}} 
+\index{systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}!\_os@{\_os}}
+\index{\_os@{\_os}!systemc\_clang::FindGlobalEvents@{systemc\_clang::FindGlobalEvents}}
+\doxysubsubsection{\texorpdfstring{\_os}{\_os}}
+{\footnotesize\ttfamily llvm\+::raw\+\_\+ostream\& systemc\+\_\+clang\+::\+Find\+Global\+Events\+::\+\_\+os\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/matchers/\mbox{\hyperlink{FindGlobalEvents_8h}{Find\+Global\+Events.\+h}}\item 
+src/matchers/\mbox{\hyperlink{FindGlobalEvents_8cpp}{Find\+Global\+Events.\+cpp}}\end{DoxyCompactItemize}

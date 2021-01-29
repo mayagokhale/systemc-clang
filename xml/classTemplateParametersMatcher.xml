@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classTemplateParametersMatcher" kind="class" language="C++" prot="public">
+    <compoundname>TemplateParametersMatcher</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MatchFinder::MatchCallback</basecompoundref>
+    <includes refid="TemplateParametersMatcher_8h" local="no">TemplateParametersMatcher.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTemplateParametersMatcher_1a4613db05892de0f2b4d8376bb120bed5" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; const FieldDecl * &gt;</type>
+        <definition>std::vector&lt;const FieldDecl *&gt; TemplateParametersMatcher::found_fields</definition>
+        <argsstring></argsstring>
+        <name>found_fields</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/TemplateParametersMatcher.h" line="20" column="15" bodyfile="plugins/hdl/TemplateParametersMatcher.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTemplateParametersMatcher_1ad34002dc6999c71092062e4aeba31929" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TemplateParametersMatcher::registerMatchers</definition>
+        <argsstring>(MatchFinder &amp;finder)</argsstring>
+        <name>registerMatchers</name>
+        <param>
+          <type>MatchFinder &amp;</type>
+          <declname>finder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/TemplateParametersMatcher.h" line="23" column="8" bodyfile="plugins/hdl/TemplateParametersMatcher.h" bodystart="23" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateParametersMatcher_1a3006709170adfd3c69c35ebba7386aff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void TemplateParametersMatcher::run</definition>
+        <argsstring>(const MatchFinder::MatchResult &amp;result)</argsstring>
+        <name>run</name>
+        <param>
+          <type>const MatchFinder::MatchResult &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/TemplateParametersMatcher.h" line="67" column="16" bodyfile="plugins/hdl/TemplateParametersMatcher.h" bodystart="67" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateParametersMatcher_1a5bb903963b078fea484bdb03115e8cc9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TemplateParametersMatcher::dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/TemplateParametersMatcher.h" line="134" column="8" bodyfile="plugins/hdl/TemplateParametersMatcher.h" bodystart="134" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classTemplateParametersMatcher_1a4ae346305db4ff1dde8a5bf873daca48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TemplateParametersMatcher::getFields</definition>
+        <argsstring>(std::vector&lt; const FieldDecl * &gt; &amp;flds)</argsstring>
+        <name>getFields</name>
+        <param>
+          <type>std::vector&lt; const FieldDecl * &gt; &amp;</type>
+          <declname>flds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/TemplateParametersMatcher.h" line="135" column="8" bodyfile="plugins/hdl/TemplateParametersMatcher.h" bodystart="135" bodyend="135"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>TemplateParametersMatcher</label>
+        <link refid="classTemplateParametersMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MatchFinder::MatchCallback</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>TemplateParametersMatcher</label>
+        <link refid="classTemplateParametersMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MatchFinder::MatchCallback</label>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/TemplateParametersMatcher.h" line="18" column="1" bodyfile="plugins/hdl/TemplateParametersMatcher.h" bodystart="18" bodyend="136"/>
+    <listofallmembers>
+      <member refid="classTemplateParametersMatcher_1a5bb903963b078fea484bdb03115e8cc9" prot="public" virt="non-virtual"><scope>TemplateParametersMatcher</scope><name>dump</name></member>
+      <member refid="classTemplateParametersMatcher_1a4613db05892de0f2b4d8376bb120bed5" prot="private" virt="non-virtual"><scope>TemplateParametersMatcher</scope><name>found_fields</name></member>
+      <member refid="classTemplateParametersMatcher_1a4ae346305db4ff1dde8a5bf873daca48" prot="public" virt="non-virtual"><scope>TemplateParametersMatcher</scope><name>getFields</name></member>
+      <member refid="classTemplateParametersMatcher_1ad34002dc6999c71092062e4aeba31929" prot="public" virt="non-virtual"><scope>TemplateParametersMatcher</scope><name>registerMatchers</name></member>
+      <member refid="classTemplateParametersMatcher_1a3006709170adfd3c69c35ebba7386aff" prot="public" virt="virtual"><scope>TemplateParametersMatcher</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

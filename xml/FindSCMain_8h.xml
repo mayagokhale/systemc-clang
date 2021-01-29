@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="FindSCMain_8h" kind="file" language="C++">
+    <compoundname>FindSCMain.h</compoundname>
+    <includes local="yes">clang/AST/DeclCXX.h</includes>
+    <includes local="yes">clang/AST/RecursiveASTVisitor.h</includes>
+    <includes local="yes">llvm/Support/raw_ostream.h</includes>
+    <includedby refid="FindSCMain_8cpp" local="yes">src/matchers/FindSCMain.cpp</includedby>
+    <includedby refid="SystemCClang_8cpp" local="yes">src/SystemCClang.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>llvm/Support/raw_ostream.h</label>
+      </node>
+      <node id="1">
+        <label>src/matchers/FindSCMain.h</label>
+        <link refid="FindSCMain_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>clang/AST/RecursiveASTVisitor.h</label>
+      </node>
+      <node id="2">
+        <label>clang/AST/DeclCXX.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>src/matchers/FindSCMain.h</label>
+        <link refid="FindSCMain_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/matchers/FindSCMain.cpp</label>
+        <link refid="FindSCMain_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/SystemCClang.cpp</label>
+        <link refid="SystemCClang_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsystemc__clang_1_1FindSCMain" prot="public">systemc_clang::FindSCMain</innerclass>
+    <innernamespace refid="namespacesystemc__clang">systemc_clang</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_FIND_SCMAIN_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FIND_SCMAIN_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;clang/AST/DeclCXX.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;clang/AST/RecursiveASTVisitor.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;llvm/Support/raw_ostream.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesystemc__clang" kindref="compound">systemc_clang</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceclang" kindref="compound">clang</ref>;</highlight></codeline>
+<codeline lineno="11" refid="classsystemc__clang_1_1FindSCMain" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsystemc__clang_1_1FindSCMain" kindref="compound">FindSCMain</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>RecursiveASTVisitor&lt;FindSCMain&gt;<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindSCMain" kindref="compound">FindSCMain</ref>(TranslationUnitDecl<sp/>*,<sp/>llvm::raw_ostream<sp/>&amp;);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classsystemc__clang_1_1FindSCMain" kindref="compound">FindSCMain</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>VisitFunctionDecl(FunctionDecl<sp/>*decl);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/>FunctionDecl<sp/>*getSCMainFunctionDecl()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isSCMainFound()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21" refid="classsystemc__clang_1_1FindSCMain_1a0b38e2c16d8375b57a81d3e598249226" refkind="member"><highlight class="normal"><sp/><sp/>llvm::raw_ostream<sp/>&amp;<ref refid="classsystemc__clang_1_1FindSCMain_1a0b38e2c16d8375b57a81d3e598249226" kindref="member">os_</ref>;</highlight></codeline>
+<codeline lineno="22" refid="classsystemc__clang_1_1FindSCMain_1af2712f3a9c2c6def8dd47c2b82b73d19" refkind="member"><highlight class="normal"><sp/><sp/>FunctionDecl<sp/>*<ref refid="classsystemc__clang_1_1FindSCMain_1af2712f3a9c2c6def8dd47c2b82b73d19" kindref="member">sc_main_function_declaration_</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>systemc_clang</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/matchers/FindSCMain.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1596 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__clang_1_1ModuleInstance" kind="class" language="C++" prot="public">
+    <compoundname>systemc_clang::ModuleInstance</compoundname>
+    <includes refid="ModuleInstance_8h" local="no">ModuleInstance.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classsystemc__clang_1_1ModuleInstance_1a10db7a1b668cf6e6d295ecd7c1b680bd" prot="public" static="no">
+        <type>std::pair&lt; std::string, <ref refid="classsystemc__clang_1_1SignalDecl" kindref="compound">SignalDecl</ref> * &gt;</type>
+        <definition>typedef std::pair&lt;std::string, SignalDecl *&gt; systemc_clang::ModuleInstance::signalPairType</definition>
+        <argsstring></argsstring>
+        <name>signalPairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="31" column="21" bodyfile="src/model/ModuleInstance.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1ModuleInstance_1adad65a1c03e742c7c8eb6d0bd1a57271" prot="public" static="no">
+        <type>std::map&lt; std::string, <ref refid="classsystemc__clang_1_1SignalDecl" kindref="compound">SignalDecl</ref> * &gt;</type>
+        <definition>typedef std::map&lt;std::string, SignalDecl *&gt; systemc_clang::ModuleInstance::signalMapType</definition>
+        <argsstring></argsstring>
+        <name>signalMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="32" column="20" bodyfile="src/model/ModuleInstance.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1ModuleInstance_1a89a030fbffc20e47a275dcec04fd80a7" prot="public" static="no">
+        <type>std::pair&lt; std::string, <ref refid="classsystemc__clang_1_1InterfaceDecl" kindref="compound">InterfaceDecl</ref> * &gt;</type>
+        <definition>typedef std::pair&lt;std::string, InterfaceDecl *&gt; systemc_clang::ModuleInstance::interfacePairType</definition>
+        <argsstring></argsstring>
+        <name>interfacePairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="34" column="21" bodyfile="src/model/ModuleInstance.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1ModuleInstance_1a846e080d4532320ccc15fa375c1ca0b4" prot="public" static="no">
+        <type>std::map&lt; std::string, <ref refid="classsystemc__clang_1_1InterfaceDecl" kindref="compound">InterfaceDecl</ref> * &gt;</type>
+        <definition>typedef std::map&lt;std::string, InterfaceDecl *&gt; systemc_clang::ModuleInstance::interfaceMapType</definition>
+        <argsstring></argsstring>
+        <name>interfaceMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="35" column="20" bodyfile="src/model/ModuleInstance.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1ModuleInstance_1a4674bdaba29e097bef92dccd45888fdd" prot="public" static="no">
+        <type>std::pair&lt; std::string, <ref refid="classsystemc__clang_1_1ProcessDecl" kindref="compound">ProcessDecl</ref> * &gt;</type>
+        <definition>typedef std::pair&lt;std::string, ProcessDecl *&gt; systemc_clang::ModuleInstance::processPairType</definition>
+        <argsstring></argsstring>
+        <name>processPairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="39" column="21" bodyfile="src/model/ModuleInstance.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1ModuleInstance_1aa971eba18c75ee5a38fcfc9739bbf9a5" prot="public" static="no">
+        <type>std::map&lt; std::string, <ref refid="classsystemc__clang_1_1ProcessDecl" kindref="compound">ProcessDecl</ref> * &gt;</type>
+        <definition>typedef std::map&lt;std::string, ProcessDecl *&gt; systemc_clang::ModuleInstance::processMapType</definition>
+        <argsstring></argsstring>
+        <name>processMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="40" column="20" bodyfile="src/model/ModuleInstance.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1ModuleInstance_1ae42d7c7159e4d1dff2496fc46799d540" prot="public" static="no">
+        <type>std::pair&lt; std::string, std::string &gt;</type>
+        <definition>typedef std::pair&lt;std::string, std::string&gt; systemc_clang::ModuleInstance::moduleProcessPairType</definition>
+        <argsstring></argsstring>
+        <name>moduleProcessPairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="42" column="21" bodyfile="src/model/ModuleInstance.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1ModuleInstance_1a225eb7d03ade18036aa5700538476541" prot="public" static="no">
+        <type>std::pair&lt; std::string, std::string &gt;</type>
+        <definition>typedef std::pair&lt;std::string, std::string&gt; systemc_clang::ModuleInstance::portSignalPairType</definition>
+        <argsstring></argsstring>
+        <name>portSignalPairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="44" column="21" bodyfile="src/model/ModuleInstance.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1ModuleInstance_1ab9826602b77bf4d1b56a2f9dac9fff52" prot="public" static="no">
+        <type>std::map&lt; std::string, std::string &gt;</type>
+        <definition>typedef std::map&lt;std::string, std::string&gt; systemc_clang::ModuleInstance::portSignalMapType</definition>
+        <argsstring></argsstring>
+        <name>portSignalMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="45" column="20" bodyfile="src/model/ModuleInstance.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1ModuleInstance_1a0c321f2d59affb19a09b5649c7522126" prot="public" static="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>typedef std::vector&lt;std::string&gt; systemc_clang::ModuleInstance::instanceName</definition>
+        <argsstring></argsstring>
+        <name>instanceName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="48" column="23" bodyfile="src/model/ModuleInstance.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1ModuleInstance_1a5c80f5683875180d6854faa1c7c958da" prot="public" static="no">
+        <type>std::pair&lt; std::string, <ref refid="classsystemc__clang_1_1PortBinding" kindref="compound">PortBinding</ref> * &gt;</type>
+        <definition>typedef std::pair&lt;std::string, PortBinding *&gt; systemc_clang::ModuleInstance::portBindingPairType</definition>
+        <argsstring></argsstring>
+        <name>portBindingPairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="51" column="21" bodyfile="src/model/ModuleInstance.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1ModuleInstance_1a8fc3d86b879f530c74b1de52d7fe1e65" prot="public" static="no">
+        <type>std::map&lt; std::string, <ref refid="classsystemc__clang_1_1PortBinding" kindref="compound">PortBinding</ref> * &gt;</type>
+        <definition>typedef std::map&lt;std::string, PortBinding *&gt; systemc_clang::ModuleInstance::portBindingMapType</definition>
+        <argsstring></argsstring>
+        <name>portBindingMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="52" column="20" bodyfile="src/model/ModuleInstance.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1ModuleInstance_1a2c28ab5fe658b9833300e3d979912f42" prot="public" static="no">
+        <type>std::vector&lt; std::tuple&lt; std::string, <ref refid="classsystemc__clang_1_1PortDecl" kindref="compound">PortDecl</ref> * &gt; &gt;</type>
+        <definition>typedef std::vector&lt;std::tuple&lt;std::string, PortDecl *&gt; &gt; systemc_clang::ModuleInstance::PortType</definition>
+        <argsstring></argsstring>
+        <name>PortType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="55" column="23" bodyfile="src/model/ModuleInstance.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" prot="public" static="no">
+        <type>std::vector&lt; std::tuple&lt; std::string, <ref refid="classsystemc__clang_1_1PortDecl" kindref="compound">PortDecl</ref> * &gt; &gt;</type>
+        <definition>typedef std::vector&lt;std::tuple&lt;std::string, PortDecl *&gt; &gt; systemc_clang::ModuleInstance::portMapType</definition>
+        <argsstring></argsstring>
+        <name>portMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="56" column="23" bodyfile="src/model/ModuleInstance.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1a4ad8d0b6eaae49ffb0de670a8941890e" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string systemc_clang::ModuleInstance::module_name_</definition>
+        <argsstring></argsstring>
+        <name>module_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="145" column="15" bodyfile="src/model/ModuleInstance.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1a0bebd9c3b1272b8cf32b04421953ba63" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string systemc_clang::ModuleInstance::instance_name_</definition>
+        <argsstring></argsstring>
+        <name>instance_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="146" column="15" bodyfile="src/model/ModuleInstance.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1ae87066c2ad1a38280c12059fec7cf51d" prot="private" static="no" mutable="no">
+        <type><ref refid="structsc__ast__matchers_1_1ModuleInstanceType" kindref="compound">ModuleInstanceType</ref></type>
+        <definition>ModuleInstanceType systemc_clang::ModuleInstance::instance_info_</definition>
+        <argsstring></argsstring>
+        <name>instance_info_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="147" column="22" bodyfile="src/model/ModuleInstance.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1a52193bb56d74ae42b832932a71be909d" prot="private" static="no" mutable="no">
+        <type>clang::CXXRecordDecl *</type>
+        <definition>clang::CXXRecordDecl* systemc_clang::ModuleInstance::class_decl_</definition>
+        <argsstring></argsstring>
+        <name>class_decl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="150" column="24" bodyfile="src/model/ModuleInstance.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1a8c0d420aa73f7ea7fd619494cd3d7dcc" prot="private" static="no" mutable="no">
+        <type>clang::Stmt *</type>
+        <definition>clang::Stmt* systemc_clang::ModuleInstance::constructor_stmt_</definition>
+        <argsstring></argsstring>
+        <name>constructor_stmt_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="152" column="15" bodyfile="src/model/ModuleInstance.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1ac10d27c2d4949dfd29760d75d59abdbc" prot="private" static="no" mutable="no">
+        <type>clang::CXXConstructorDecl *</type>
+        <definition>clang::CXXConstructorDecl* systemc_clang::ModuleInstance::constructor_decl_</definition>
+        <argsstring></argsstring>
+        <name>constructor_decl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="153" column="29" bodyfile="src/model/ModuleInstance.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1a352b553a23314c7dbcb71fe2c02f860b" prot="private" static="no" mutable="no">
+        <type>clang::Decl *</type>
+        <definition>clang::Decl* systemc_clang::ModuleInstance::instance_decl_</definition>
+        <argsstring></argsstring>
+        <name>instance_decl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="155" column="15" bodyfile="src/model/ModuleInstance.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1aa99400067cfaa6d38bb63f62bf785e1d" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1aa971eba18c75ee5a38fcfc9739bbf9a5" kindref="member">processMapType</ref></type>
+        <definition>processMapType systemc_clang::ModuleInstance::process_map_</definition>
+        <argsstring></argsstring>
+        <name>process_map_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="157" column="18" bodyfile="src/model/ModuleInstance.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1aa00bfa3f29b80ff35a14d452e8eb3a02" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref></type>
+        <definition>portMapType systemc_clang::ModuleInstance::in_ports_</definition>
+        <argsstring></argsstring>
+        <name>in_ports_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="158" column="15" bodyfile="src/model/ModuleInstance.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1a461e9a2551826cec1646a13a94caa2d1" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref></type>
+        <definition>portMapType systemc_clang::ModuleInstance::out_ports_</definition>
+        <argsstring></argsstring>
+        <name>out_ports_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="159" column="15" bodyfile="src/model/ModuleInstance.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1a6466dfefe24da3ac00e228cb972957b8" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref></type>
+        <definition>portMapType systemc_clang::ModuleInstance::inout_ports_</definition>
+        <argsstring></argsstring>
+        <name>inout_ports_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="160" column="15" bodyfile="src/model/ModuleInstance.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1a4e5b5f3ae512db4da7e512eb4c8d88bb" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref></type>
+        <definition>portMapType systemc_clang::ModuleInstance::other_fields_</definition>
+        <argsstring></argsstring>
+        <name>other_fields_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="161" column="15" bodyfile="src/model/ModuleInstance.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1a8c5265bd212698e526e5a8194d75d7d0" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref></type>
+        <definition>portMapType systemc_clang::ModuleInstance::istreamports_</definition>
+        <argsstring></argsstring>
+        <name>istreamports_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="163" column="15" bodyfile="src/model/ModuleInstance.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1a15889d9dba330ccc10abdfa316fffa93" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref></type>
+        <definition>portMapType systemc_clang::ModuleInstance::ostreamports_</definition>
+        <argsstring></argsstring>
+        <name>ostreamports_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="164" column="15" bodyfile="src/model/ModuleInstance.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1a6ed65413c2d02d22276cdc23688f4134" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1a8fc3d86b879f530c74b1de52d7fe1e65" kindref="member">portBindingMapType</ref></type>
+        <definition>portBindingMapType systemc_clang::ModuleInstance::port_bindings_</definition>
+        <argsstring></argsstring>
+        <name>port_bindings_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="166" column="22" bodyfile="src/model/ModuleInstance.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1aa512f72d3c57fac67933beb78526e4a1" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1a846e080d4532320ccc15fa375c1ca0b4" kindref="member">interfaceMapType</ref></type>
+        <definition>interfaceMapType systemc_clang::ModuleInstance::iinterfaces_</definition>
+        <argsstring></argsstring>
+        <name>iinterfaces_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="168" column="20" bodyfile="src/model/ModuleInstance.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1a36c21b835e95ca575f51daab77941f5d" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1a846e080d4532320ccc15fa375c1ca0b4" kindref="member">interfaceMapType</ref></type>
+        <definition>interfaceMapType systemc_clang::ModuleInstance::ointerfaces_</definition>
+        <argsstring></argsstring>
+        <name>ointerfaces_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="169" column="20" bodyfile="src/model/ModuleInstance.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1a8c6e8f2294684f47209fbd93da6f3000" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1a846e080d4532320ccc15fa375c1ca0b4" kindref="member">interfaceMapType</ref></type>
+        <definition>interfaceMapType systemc_clang::ModuleInstance::iointerfaces_</definition>
+        <argsstring></argsstring>
+        <name>iointerfaces_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="170" column="20" bodyfile="src/model/ModuleInstance.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1ac1a7f1df5c43344d90f00fbb62671fc5" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1adad65a1c03e742c7c8eb6d0bd1a57271" kindref="member">signalMapType</ref></type>
+        <definition>signalMapType systemc_clang::ModuleInstance::signals_</definition>
+        <argsstring></argsstring>
+        <name>signals_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="171" column="17" bodyfile="src/model/ModuleInstance.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1abbbf86afd09113e92c647eb1897dc084" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; systemc_clang::ModuleInstance::instance_list_</definition>
+        <argsstring></argsstring>
+        <name>instance_list_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="173" column="15" bodyfile="src/model/ModuleInstance.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1a2a3ca1b37000d95cc23895f58a154a6a" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1ab9826602b77bf4d1b56a2f9dac9fff52" kindref="member">portSignalMapType</ref></type>
+        <definition>portSignalMapType systemc_clang::ModuleInstance::port_signal_map_</definition>
+        <argsstring></argsstring>
+        <name>port_signal_map_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="174" column="21" bodyfile="src/model/ModuleInstance.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1ac754077d1131eaeb68a799746788cb41" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classsystemc__clang_1_1EntryFunctionContainer" kindref="compound">EntryFunctionContainer</ref> * &gt;</type>
+        <definition>std::vector&lt;EntryFunctionContainer *&gt; systemc_clang::ModuleInstance::vef_</definition>
+        <argsstring></argsstring>
+        <name>vef_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="175" column="15" bodyfile="src/model/ModuleInstance.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1a714bc3fd388def5531747edd6ab4d825" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref> * &gt;</type>
+        <definition>std::vector&lt;ModuleInstance *&gt; systemc_clang::ModuleInstance::nested_modules_</definition>
+        <argsstring></argsstring>
+        <name>nested_modules_</name>
+        <briefdescription>
+<para>Nested modules. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="178" column="15" bodyfile="src/model/ModuleInstance.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1a0b0da3d0417bb5c182d74acbfd53906e" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; systemc_clang::ModuleInstance::template_parameters_</definition>
+        <argsstring></argsstring>
+        <name>template_parameters_</name>
+        <briefdescription>
+<para>Class template parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="181" column="15" bodyfile="src/model/ModuleInstance.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ModuleInstance_1abfae715d5503eb38f661bbc6370a90fc" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; systemc_clang::ModuleInstance::template_args_</definition>
+        <argsstring></argsstring>
+        <name>template_args_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="182" column="15" bodyfile="src/model/ModuleInstance.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1ad20799642139128415f4cd86083199bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ModuleInstance::ModuleInstance</definition>
+        <argsstring>()</argsstring>
+        <name>ModuleInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="59" column="3" bodyfile="src/model/ModuleInstance.cpp" bodystart="9" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a61eaaefaf7f150a0b886d12250dd1016" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ModuleInstance::ModuleInstance</definition>
+        <argsstring>(const std::string &amp;, clang::CXXRecordDecl *)</argsstring>
+        <name>ModuleInstance</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>clang::CXXRecordDecl *</type>
+          <defname>decl</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="60" column="3" bodyfile="src/model/ModuleInstance.cpp" bodystart="17" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a0d1ab890a473eb752e0787a0478f6eb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ModuleInstance::ModuleInstance</definition>
+        <argsstring>(const std::tuple&lt; const std::string &amp;, clang::CXXRecordDecl * &gt; &amp;)</argsstring>
+        <name>ModuleInstance</name>
+        <param>
+          <type>const std::tuple&lt; const std::string &amp;, clang::CXXRecordDecl * &gt; &amp;</type>
+          <defname>element</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="61" column="3" bodyfile="src/model/ModuleInstance.cpp" bodystart="23" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a7b553895e8400696d3a385da7852ec59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ModuleInstance::ModuleInstance</definition>
+        <argsstring>(const ModuleInstance &amp;from)</argsstring>
+        <name>ModuleInstance</name>
+        <param>
+          <type>const <ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref> &amp;</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="64" column="3" bodyfile="src/model/ModuleInstance.cpp" bodystart="27" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a2458362880d4d58a23ec115ed736e73c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref> &amp;</type>
+        <definition>ModuleInstance &amp; ModuleInstance::operator=</definition>
+        <argsstring>(const ModuleInstance &amp;from)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref> &amp;</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="67" column="18" bodyfile="src/model/ModuleInstance.cpp" bodystart="64" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a6b2361564c8c0601e2c4a3eea522c2b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ModuleInstance::~ModuleInstance</definition>
+        <argsstring>()</argsstring>
+        <name>~ModuleInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="68" column="3" bodyfile="src/model/ModuleInstance.cpp" bodystart="123" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1af3573478433d9fa95957b30ee76a0238" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::addPorts</definition>
+        <argsstring>(const PortType &amp;found_ports, const std::string &amp;port_type)</argsstring>
+        <name>addPorts</name>
+        <param>
+          <type>const <ref refid="classsystemc__clang_1_1ModuleInstance_1a2c28ab5fe658b9833300e3d979912f42" kindref="member">PortType</ref> &amp;</type>
+          <declname>found_ports</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>port_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para><ref refid="classsystemc__clang_1_1SignalDecl" kindref="compound">SignalDecl</ref> derived from <ref refid="classsystemc__clang_1_1PortDecl" kindref="compound">PortDecl</ref></para>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="70" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="214" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a02f245803d12e2bdca43b88d5460bcbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::addConstructor</definition>
+        <argsstring>(FindConstructor *)</argsstring>
+        <name>addConstructor</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1FindConstructor" kindref="compound">FindConstructor</ref> *</type>
+          <defname>ctor</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="72" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="280" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a23722e54e716cd091596e32d1bbd518e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void systemc_clang::ModuleInstance::addConstructor</definition>
+        <argsstring>(clang::Stmt *)</argsstring>
+        <name>addConstructor</name>
+        <param>
+          <type>clang::Stmt *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="73" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a1153f5da8c7c02fc848f60af76827c36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::addInputInterfaces</definition>
+        <argsstring>(FindTLMInterfaces::interfaceType)</argsstring>
+        <name>addInputInterfaces</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1FindTLMInterfaces_1a7ec171b2fc273ec1012eb9b9d3a5d3a8" kindref="member">FindTLMInterfaces::interfaceType</ref></type>
+          <defname>p</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="74" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="253" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a6afc511b5fe04a0a472a629fc7a7c1f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::addOutputInterfaces</definition>
+        <argsstring>(FindTLMInterfaces::interfaceType)</argsstring>
+        <name>addOutputInterfaces</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1FindTLMInterfaces_1a7ec171b2fc273ec1012eb9b9d3a5d3a8" kindref="member">FindTLMInterfaces::interfaceType</ref></type>
+          <defname>p</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="75" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="263" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a60f0b441ce471f92c2c6eb5fad634670" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::addInputOutputInterfaces</definition>
+        <argsstring>(FindTLMInterfaces::interfaceType)</argsstring>
+        <name>addInputOutputInterfaces</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1FindTLMInterfaces_1a7ec171b2fc273ec1012eb9b9d3a5d3a8" kindref="member">FindTLMInterfaces::interfaceType</ref></type>
+          <defname>p</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="76" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="273" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a5b054e744ac2e3c832249d5a3a16f224" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::addProcess</definition>
+        <argsstring>(FindEntryFunctions::entryFunctionVectorType *)</argsstring>
+        <name>addProcess</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a7414ce6160d09ea8539f4513bc204338" kindref="member">FindEntryFunctions::entryFunctionVectorType</ref> *</type>
+          <defname>efv</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="77" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="295" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a1bd3bec837291b5a27ae37fec86c956c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::addInstances</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;)</argsstring>
+        <name>addInstances</name>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <defname>instanceList</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="78" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="201" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a46bc1df14b8da69b29d4bb380fca7e1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::addPortBinding</definition>
+        <argsstring>(const std::string &amp;port_name, PortBinding *pb)</argsstring>
+        <name>addPortBinding</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>port_name</declname>
+        </param>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1PortBinding" kindref="compound">PortBinding</ref> *</type>
+          <declname>pb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="80" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="205" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1abe547c4e1d92eefaa78bbcfda50198b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::addSignalBinding</definition>
+        <argsstring>(std::map&lt; std::string, std::string &gt;)</argsstring>
+        <name>addSignalBinding</name>
+        <param>
+          <type>std::map&lt; std::string, std::string &gt;</type>
+          <defname>portSignalMap</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="81" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="209" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a17a42d855d884812c66b3041c7ef6487" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::addNestedModule</definition>
+        <argsstring>(ModuleInstance *submodule)</argsstring>
+        <name>addNestedModule</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref> *</type>
+          <declname>submodule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="83" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="329" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1abc740918c2e997127ed087312badb1bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::setInstanceInfo</definition>
+        <argsstring>(const sc_ast_matchers::ModuleInstanceType &amp;info)</argsstring>
+        <name>setInstanceInfo</name>
+        <param>
+          <type>const <ref refid="structsc__ast__matchers_1_1ModuleInstanceType" kindref="compound">sc_ast_matchers::ModuleInstanceType</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="85" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="179" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a1fba1898ad43cf99cbfdae34abb7b0ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void systemc_clang::ModuleInstance::setInstanceName</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>setInstanceName</name>
+        <param>
+          <type>const std::string &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="86" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a6db62b5ff1304966418a18b69f7693b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void systemc_clang::ModuleInstance::setInstanceDecl</definition>
+        <argsstring>(Decl *)</argsstring>
+        <name>setInstanceDecl</name>
+        <param>
+          <type>Decl *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="87" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a7b402d99a2d59c224e8054680d876690" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::setModuleName</definition>
+        <argsstring>(const std::string &amp;)</argsstring>
+        <name>setModuleName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="88" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="199" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a59c8f4c1702401d02279e3246f1b6066" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::setTemplateParameters</definition>
+        <argsstring>(const vector&lt; std::string &gt; &amp;)</argsstring>
+        <name>setTemplateParameters</name>
+        <param>
+          <type>const vector&lt; std::string &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="89" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="186" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a37212075649e484c08f914f7462c0a7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::setTemplateArgs</definition>
+        <argsstring>(const vector&lt; std::string &gt; &amp;)</argsstring>
+        <name>setTemplateArgs</name>
+        <param>
+          <type>const vector&lt; std::string &gt; &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="90" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="191" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a6fd0f98544d3bf1982d87379b44d3d8f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; ModuleInstance::getTemplateParameters</definition>
+        <argsstring>() const</argsstring>
+        <name>getTemplateParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="91" column="15" bodyfile="src/model/ModuleInstance.cpp" bodystart="195" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1aa1f7aeea01276a3dacabf69f39693427" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; systemc_clang::ModuleInstance::getTemplateArgs</definition>
+        <argsstring>() const</argsstring>
+        <name>getTemplateArgs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="92" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a6f7bac0c669433c2cf4ea2846b43606c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string ModuleInstance::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="94" column="15" bodyfile="src/model/ModuleInstance.cpp" bodystart="386" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a8c053ec6f0756cef1f68102ef1d9f145" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string ModuleInstance::getInstanceName</definition>
+        <argsstring>() const</argsstring>
+        <name>getInstanceName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="95" column="15" bodyfile="src/model/ModuleInstance.cpp" bodystart="388" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1ad3f030d3e7f036ed263ef5a8df944de4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>clang::CXXRecordDecl *</type>
+        <definition>clang::CXXRecordDecl * ModuleInstance::getModuleClassDecl</definition>
+        <argsstring>()</argsstring>
+        <name>getModuleClassDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="97" column="24" bodyfile="src/model/ModuleInstance.cpp" bodystart="394" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1af72eb1eddf86916db549231f75cbf024" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>clang::FieldDecl *</type>
+        <definition>clang::FieldDecl* systemc_clang::ModuleInstance::getInstanceFieldDecl</definition>
+        <argsstring>()</argsstring>
+        <name>getInstanceFieldDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="98" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a93c4ae2eeb23f925e1c801c6d5884959" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>clang::VarDecl *</type>
+        <definition>clang::VarDecl* systemc_clang::ModuleInstance::getInstanceVarDecl</definition>
+        <argsstring>()</argsstring>
+        <name>getInstanceVarDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="99" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a7c741c9d827ddf9695ec29a3a6748a1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>clang::Decl *</type>
+        <definition>Decl * ModuleInstance::getInstanceDecl</definition>
+        <argsstring>()</argsstring>
+        <name>getInstanceDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="100" column="15" bodyfile="src/model/ModuleInstance.cpp" bodystart="400" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a818b944b81001e7f539752c129fcce00" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_clang::ModuleInstance::isInstanceFieldDecl</definition>
+        <argsstring>() const</argsstring>
+        <name>isInstanceFieldDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="101" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a8b088227c84f35c712c7776a0d281dfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structsc__ast__matchers_1_1ModuleInstanceType" kindref="compound">ModuleInstanceType</ref></type>
+        <definition>ModuleInstanceType ModuleInstance::getInstanceInfo</definition>
+        <argsstring>()</argsstring>
+        <name>getInstanceInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="103" column="22" bodyfile="src/model/ModuleInstance.cpp" bodystart="184" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a11105db597dade49f96e63917d8cc7ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ModuleInstance::isModuleClassDeclNull</definition>
+        <argsstring>()</argsstring>
+        <name>isModuleClassDeclNull</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="105" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="392" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a5693ea0597d4a8b1192bd71b4ce234a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref></type>
+        <definition>ModuleInstance::portMapType ModuleInstance::getOPorts</definition>
+        <argsstring>()</argsstring>
+        <name>getOPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="106" column="15" bodyfile="src/model/ModuleInstance.cpp" bodystart="353" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a6ec969b2c238524cd54ae9e939be3f25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref></type>
+        <definition>ModuleInstance::portMapType ModuleInstance::getIPorts</definition>
+        <argsstring>()</argsstring>
+        <name>getIPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="107" column="15" bodyfile="src/model/ModuleInstance.cpp" bodystart="355" bodyend="355"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a21f0e70daa7aa40a8c47abecbd7624ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref></type>
+        <definition>ModuleInstance::portMapType ModuleInstance::getIOPorts</definition>
+        <argsstring>()</argsstring>
+        <name>getIOPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="108" column="15" bodyfile="src/model/ModuleInstance.cpp" bodystart="357" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1accaefca4030f64825d3ef85379feecfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref></type>
+        <definition>ModuleInstance::portMapType ModuleInstance::getOtherVars</definition>
+        <argsstring>()</argsstring>
+        <name>getOtherVars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="109" column="15" bodyfile="src/model/ModuleInstance.cpp" bodystart="359" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a987809214c970e395157c245d69bd293" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref></type>
+        <definition>portMapType systemc_clang::ModuleInstance::getSubmodules</definition>
+        <argsstring>()</argsstring>
+        <name>getSubmodules</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="110" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a2ee12c7ff9afe500c9164afe2c5288fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref></type>
+        <definition>ModuleInstance::portMapType ModuleInstance::getInputStreamPorts</definition>
+        <argsstring>()</argsstring>
+        <name>getInputStreamPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="111" column="15" bodyfile="src/model/ModuleInstance.cpp" bodystart="362" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a10f67b9c01dad4bda17c2ee3a8a5c37f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">portMapType</ref></type>
+        <definition>ModuleInstance::portMapType ModuleInstance::getOutputStreamPorts</definition>
+        <argsstring>()</argsstring>
+        <name>getOutputStreamPorts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="112" column="15" bodyfile="src/model/ModuleInstance.cpp" bodystart="366" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a246e0b1f1f5704042f2a0f9dcc19f605" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1a8fc3d86b879f530c74b1de52d7fe1e65" kindref="member">portBindingMapType</ref></type>
+        <definition>ModuleInstance::portBindingMapType ModuleInstance::getPortBindings</definition>
+        <argsstring>()</argsstring>
+        <name>getPortBindings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="114" column="22" bodyfile="src/model/ModuleInstance.cpp" bodystart="382" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1aec22a3bf8796f20950258d7353fa9e62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1aa971eba18c75ee5a38fcfc9739bbf9a5" kindref="member">processMapType</ref></type>
+        <definition>ModuleInstance::processMapType ModuleInstance::getProcessMap</definition>
+        <argsstring>()</argsstring>
+        <name>getProcessMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="116" column="18" bodyfile="src/model/ModuleInstance.cpp" bodystart="351" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1acd4c2757778b29dc5e367b989c074b37" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>clang::Stmt *</type>
+        <definition>clang::Stmt * ModuleInstance::getConstructorStmt</definition>
+        <argsstring>() const</argsstring>
+        <name>getConstructorStmt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="118" column="15" bodyfile="src/model/ModuleInstance.cpp" bodystart="289" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1ae8e899d81a715836b322079d1140d480" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>clang::CXXConstructorDecl *</type>
+        <definition>clang::CXXConstructorDecl * ModuleInstance::getConstructorDecl</definition>
+        <argsstring>() const</argsstring>
+        <name>getConstructorDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="119" column="29" bodyfile="src/model/ModuleInstance.cpp" bodystart="291" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a9a5ccedcd48e70b0816027f990e48170" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1a846e080d4532320ccc15fa375c1ca0b4" kindref="member">interfaceMapType</ref></type>
+        <definition>ModuleInstance::interfaceMapType ModuleInstance::getIInterfaces</definition>
+        <argsstring>()</argsstring>
+        <name>getIInterfaces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="121" column="20" bodyfile="src/model/ModuleInstance.cpp" bodystart="374" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a116399ebf4937ef9a7a00ec90e96c03c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1a846e080d4532320ccc15fa375c1ca0b4" kindref="member">interfaceMapType</ref></type>
+        <definition>ModuleInstance::interfaceMapType ModuleInstance::getOInterfaces</definition>
+        <argsstring>()</argsstring>
+        <name>getOInterfaces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="122" column="20" bodyfile="src/model/ModuleInstance.cpp" bodystart="370" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1aafbcf185af0a7a520966ceb507c27dd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance_1a846e080d4532320ccc15fa375c1ca0b4" kindref="member">interfaceMapType</ref></type>
+        <definition>ModuleInstance::interfaceMapType ModuleInstance::getIOInterfaces</definition>
+        <argsstring>()</argsstring>
+        <name>getIOInterfaces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="123" column="20" bodyfile="src/model/ModuleInstance.cpp" bodystart="378" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1ae69e21956c0f29b766b8185163234a6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; ModuleInstance::getInstanceList</definition>
+        <argsstring>()</argsstring>
+        <name>getInstanceList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="124" column="15" bodyfile="src/model/ModuleInstance.cpp" bodystart="333" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1aee1854d5324a7c2a8fc9ec8b5d7ab6e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classsystemc__clang_1_1EntryFunctionContainer" kindref="compound">EntryFunctionContainer</ref> * &gt;</type>
+        <definition>std::vector&lt; EntryFunctionContainer * &gt; ModuleInstance::getEntryFunctionContainer</definition>
+        <argsstring>()</argsstring>
+        <name>getEntryFunctionContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="125" column="15" bodyfile="src/model/ModuleInstance.cpp" bodystart="337" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a83554c24f9f0d258eee82bdaf5b42fd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ModuleInstance::getNumInstances</definition>
+        <argsstring>()</argsstring>
+        <name>getNumInstances</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="126" column="7" bodyfile="src/model/ModuleInstance.cpp" bodystart="341" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1af851f06fc902cd0a3a90b78e2804a16e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classsystemc__clang_1_1ModuleInstance_1adad65a1c03e742c7c8eb6d0bd1a57271" kindref="member">signalMapType</ref> &amp;</type>
+        <definition>const ModuleInstance::signalMapType &amp; ModuleInstance::getSignals</definition>
+        <argsstring>() const</argsstring>
+        <name>getSignals</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="127" column="23" bodyfile="src/model/ModuleInstance.cpp" bodystart="343" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a58b6305e7ca18d172ddbb9887b06d572" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref> * &gt; &amp;</type>
+        <definition>const std::vector&lt; ModuleInstance * &gt; &amp; ModuleInstance::getNestedModuleInstances</definition>
+        <argsstring>() const</argsstring>
+        <name>getNestedModuleInstances</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="129" column="21" bodyfile="src/model/ModuleInstance.cpp" bodystart="347" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a2d780651d4415defdb14c95d7fa58e78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::dumpPorts</definition>
+        <argsstring>(llvm::raw_ostream &amp;, int)</argsstring>
+        <name>dumpPorts</name>
+        <param>
+          <type>llvm::raw_ostream &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="131" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="555" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a02e6b7ffee87e8b825a27304952cd9a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::dumpPortBinding</definition>
+        <argsstring>()</argsstring>
+        <name>dumpPortBinding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="132" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="427" bodyend="494"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a5674e79b59cc669be8d1ca338b903fea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::dumpInterfaces</definition>
+        <argsstring>(llvm::raw_ostream &amp;, int)</argsstring>
+        <name>dumpInterfaces</name>
+        <param>
+          <type>llvm::raw_ostream &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="133" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="519" bodyend="553"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1aa456017705d985d5818e0c729b549ba2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::dumpProcesses</definition>
+        <argsstring>(llvm::raw_ostream &amp;, int)</argsstring>
+        <name>dumpProcesses</name>
+        <param>
+          <type>llvm::raw_ostream &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="134" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="507" bodyend="517"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a2cf65f222236e6c62af42c53346cb4e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::dumpSignals</definition>
+        <argsstring>(llvm::raw_ostream &amp;, int)</argsstring>
+        <name>dumpSignals</name>
+        <param>
+          <type>llvm::raw_ostream &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="135" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="630" bodyend="640"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a745e78972426900962829a67266dc5ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::dump</definition>
+        <argsstring>(llvm::raw_ostream &amp;)</argsstring>
+        <name>dump</name>
+        <param>
+          <type>llvm::raw_ostream &amp;</type>
+          <defname>os</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="136" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="642" bodyend="659"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1adffa42f776d3059edf85b78afa7b3c6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::dumpInstances</definition>
+        <argsstring>(llvm::raw_ostream &amp;, int)</argsstring>
+        <name>dumpInstances</name>
+        <param>
+          <type>llvm::raw_ostream &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="137" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="402" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a9421b2281821afa23a06241309075ba2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::dumpSignalBinding</definition>
+        <argsstring>(llvm::raw_ostream &amp;, int)</argsstring>
+        <name>dumpSignalBinding</name>
+        <param>
+          <type>llvm::raw_ostream &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="138" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="496" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a86b734f2fda5c1ea1efc774e90282b68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ModuleInstance::clearOnlyGlobal</definition>
+        <argsstring>()</argsstring>
+        <name>clearOnlyGlobal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="140" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="104" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ModuleInstance_1a3f058a6db1e6dcb31ee40baa1bbdef24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacesystemc__clang_1ab232545035b571c3f3cd13a4459f2d9e" kindref="member">json</ref></type>
+        <definition>json ModuleInstance::dump_json</definition>
+        <argsstring>()</argsstring>
+        <name>dump_json</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstance.h" line="142" column="8" bodyfile="src/model/ModuleInstance.cpp" bodystart="661" bodyend="691"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Forward declarations. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>systemc_clang::ModuleInstance</label>
+        <link refid="classsystemc__clang_1_1ModuleInstance"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>instance_info_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sc_ast_matchers::ModuleInstanceType</label>
+        <link refid="structsc__ast__matchers_1_1ModuleInstanceType"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/model/ModuleInstance.h" line="29" column="1" bodyfile="src/model/ModuleInstance.h" bodystart="29" bodyend="183"/>
+    <listofallmembers>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a02f245803d12e2bdca43b88d5460bcbb" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>addConstructor</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a23722e54e716cd091596e32d1bbd518e" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>addConstructor</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a1153f5da8c7c02fc848f60af76827c36" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>addInputInterfaces</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a60f0b441ce471f92c2c6eb5fad634670" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>addInputOutputInterfaces</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a1bd3bec837291b5a27ae37fec86c956c" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>addInstances</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a17a42d855d884812c66b3041c7ef6487" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>addNestedModule</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a6afc511b5fe04a0a472a629fc7a7c1f9" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>addOutputInterfaces</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a46bc1df14b8da69b29d4bb380fca7e1d" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>addPortBinding</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1af3573478433d9fa95957b30ee76a0238" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>addPorts</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a5b054e744ac2e3c832249d5a3a16f224" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>addProcess</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1abe547c4e1d92eefaa78bbcfda50198b4" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>addSignalBinding</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a52193bb56d74ae42b832932a71be909d" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>class_decl_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a86b734f2fda5c1ea1efc774e90282b68" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>clearOnlyGlobal</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1ac10d27c2d4949dfd29760d75d59abdbc" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>constructor_decl_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a8c0d420aa73f7ea7fd619494cd3d7dcc" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>constructor_stmt_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a745e78972426900962829a67266dc5ef" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>dump</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a3f058a6db1e6dcb31ee40baa1bbdef24" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>dump_json</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1adffa42f776d3059edf85b78afa7b3c6d" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>dumpInstances</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a5674e79b59cc669be8d1ca338b903fea" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>dumpInterfaces</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a02e6b7ffee87e8b825a27304952cd9a2" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>dumpPortBinding</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a2d780651d4415defdb14c95d7fa58e78" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>dumpPorts</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1aa456017705d985d5818e0c729b549ba2" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>dumpProcesses</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a9421b2281821afa23a06241309075ba2" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>dumpSignalBinding</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a2cf65f222236e6c62af42c53346cb4e8" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>dumpSignals</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1ae8e899d81a715836b322079d1140d480" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getConstructorDecl</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1acd4c2757778b29dc5e367b989c074b37" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getConstructorStmt</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1aee1854d5324a7c2a8fc9ec8b5d7ab6e0" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getEntryFunctionContainer</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a9a5ccedcd48e70b0816027f990e48170" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getIInterfaces</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a2ee12c7ff9afe500c9164afe2c5288fc" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getInputStreamPorts</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a7c741c9d827ddf9695ec29a3a6748a1f" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getInstanceDecl</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1af72eb1eddf86916db549231f75cbf024" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getInstanceFieldDecl</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a8b088227c84f35c712c7776a0d281dfb" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getInstanceInfo</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1ae69e21956c0f29b766b8185163234a6a" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getInstanceList</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a8c053ec6f0756cef1f68102ef1d9f145" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getInstanceName</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a93c4ae2eeb23f925e1c801c6d5884959" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getInstanceVarDecl</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1aafbcf185af0a7a520966ceb507c27dd7" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getIOInterfaces</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a21f0e70daa7aa40a8c47abecbd7624ea" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getIOPorts</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a6ec969b2c238524cd54ae9e939be3f25" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getIPorts</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1ad3f030d3e7f036ed263ef5a8df944de4" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getModuleClassDecl</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a6f7bac0c669433c2cf4ea2846b43606c" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getName</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a58b6305e7ca18d172ddbb9887b06d572" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getNestedModuleInstances</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a83554c24f9f0d258eee82bdaf5b42fd4" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getNumInstances</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a116399ebf4937ef9a7a00ec90e96c03c" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getOInterfaces</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a5693ea0597d4a8b1192bd71b4ce234a3" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getOPorts</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1accaefca4030f64825d3ef85379feecfb" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getOtherVars</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a10f67b9c01dad4bda17c2ee3a8a5c37f" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getOutputStreamPorts</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a246e0b1f1f5704042f2a0f9dcc19f605" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getPortBindings</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1aec22a3bf8796f20950258d7353fa9e62" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getProcessMap</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1af851f06fc902cd0a3a90b78e2804a16e" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getSignals</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a987809214c970e395157c245d69bd293" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getSubmodules</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1aa1f7aeea01276a3dacabf69f39693427" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getTemplateArgs</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a6fd0f98544d3bf1982d87379b44d3d8f" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>getTemplateParameters</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1aa512f72d3c57fac67933beb78526e4a1" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>iinterfaces_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1aa00bfa3f29b80ff35a14d452e8eb3a02" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>in_ports_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a6466dfefe24da3ac00e228cb972957b8" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>inout_ports_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a352b553a23314c7dbcb71fe2c02f860b" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>instance_decl_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1ae87066c2ad1a38280c12059fec7cf51d" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>instance_info_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1abbbf86afd09113e92c647eb1897dc084" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>instance_list_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a0bebd9c3b1272b8cf32b04421953ba63" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>instance_name_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a0c321f2d59affb19a09b5649c7522126" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>instanceName</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a846e080d4532320ccc15fa375c1ca0b4" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>interfaceMapType</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a89a030fbffc20e47a275dcec04fd80a7" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>interfacePairType</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a8c6e8f2294684f47209fbd93da6f3000" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>iointerfaces_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a818b944b81001e7f539752c129fcce00" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>isInstanceFieldDecl</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a11105db597dade49f96e63917d8cc7ca" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>isModuleClassDeclNull</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a8c5265bd212698e526e5a8194d75d7d0" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>istreamports_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a4ad8d0b6eaae49ffb0de670a8941890e" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>module_name_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1ad20799642139128415f4cd86083199bf" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>ModuleInstance</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a61eaaefaf7f150a0b886d12250dd1016" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>ModuleInstance</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a0d1ab890a473eb752e0787a0478f6eb6" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>ModuleInstance</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a7b553895e8400696d3a385da7852ec59" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>ModuleInstance</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1ae42d7c7159e4d1dff2496fc46799d540" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>moduleProcessPairType</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a714bc3fd388def5531747edd6ab4d825" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>nested_modules_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a36c21b835e95ca575f51daab77941f5d" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>ointerfaces_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a2458362880d4d58a23ec115ed736e73c" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>operator=</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a15889d9dba330ccc10abdfa316fffa93" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>ostreamports_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a4e5b5f3ae512db4da7e512eb4c8d88bb" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>other_fields_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a461e9a2551826cec1646a13a94caa2d1" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>out_ports_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a6ed65413c2d02d22276cdc23688f4134" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>port_bindings_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a2a3ca1b37000d95cc23895f58a154a6a" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>port_signal_map_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a8fc3d86b879f530c74b1de52d7fe1e65" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>portBindingMapType</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a5c80f5683875180d6854faa1c7c958da" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>portBindingPairType</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>portMapType</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1ab9826602b77bf4d1b56a2f9dac9fff52" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>portSignalMapType</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a225eb7d03ade18036aa5700538476541" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>portSignalPairType</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a2c28ab5fe658b9833300e3d979912f42" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>PortType</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1aa99400067cfaa6d38bb63f62bf785e1d" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>process_map_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1aa971eba18c75ee5a38fcfc9739bbf9a5" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>processMapType</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a4674bdaba29e097bef92dccd45888fdd" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>processPairType</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a6db62b5ff1304966418a18b69f7693b5" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>setInstanceDecl</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1abc740918c2e997127ed087312badb1bc" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>setInstanceInfo</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a1fba1898ad43cf99cbfdae34abb7b0ce" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>setInstanceName</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a7b402d99a2d59c224e8054680d876690" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>setModuleName</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a37212075649e484c08f914f7462c0a7a" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>setTemplateArgs</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a59c8f4c1702401d02279e3246f1b6066" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>setTemplateParameters</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1adad65a1c03e742c7c8eb6d0bd1a57271" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>signalMapType</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a10db7a1b668cf6e6d295ecd7c1b680bd" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>signalPairType</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1ac1a7f1df5c43344d90f00fbb62671fc5" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>signals_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1abfae715d5503eb38f661bbc6370a90fc" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>template_args_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a0b0da3d0417bb5c182d74acbfd53906e" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>template_parameters_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1ac754077d1131eaeb68a799746788cb41" prot="private" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>vef_</name></member>
+      <member refid="classsystemc__clang_1_1ModuleInstance_1a6b2361564c8c0601e2c4a3eea522c2b1" prot="public" virt="non-virtual"><scope>systemc_clang::ModuleInstance</scope><name>~ModuleInstance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

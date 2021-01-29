@@ -1,0 +1,216 @@
+\hypertarget{classsystemc__clang_1_1FindPorts}{}\doxysection{systemc\+\_\+clang\+::Find\+Ports Class Reference}
+\label{classsystemc__clang_1_1FindPorts}\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+
+
+{\ttfamily \#include $<$Find\+Ports.\+h$>$}
+
+
+
+Inheritance diagram for systemc\+\_\+clang\+::Find\+Ports\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classsystemc__clang_1_1FindPorts__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for systemc\+\_\+clang\+::Find\+Ports\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classsystemc__clang_1_1FindPorts__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef map$<$ string, \mbox{\hyperlink{classsystemc__clang_1_1FindTemplateTypes}{Find\+Template\+Types}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}}
+\begin{DoxyCompactList}\small\item\em typedefs \end{DoxyCompactList}\item 
+typedef pair$<$ string, \mbox{\hyperlink{classsystemc__clang_1_1FindTemplateTypes}{Find\+Template\+Types}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_af3398eb7795c7c20af023b635a1412c2}{kv\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindPorts_aa68e8125a23a15e459b4e95322df8bf3}{Find\+Ports}} (CXXRecord\+Decl $\ast$, llvm\+::raw\+\_\+ostream \&)
+\item 
+virtual \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a6133f075cddbbc4a0a40156206dbc59d}{$\sim$\+Find\+Ports}} ()
+\item 
+virtual bool \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a5230d7914b42af403d70d8986187c143}{Visit\+Field\+Decl}} (Field\+Decl $\ast$)
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_aed84545eb6edb710a26a6652de9bc5f7}{should\+Visit\+Template\+Instantiations}} ()
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_ac91ea73bdb8d7444f4db2a8aaf5995a5}{get\+Input\+Ports}} () const
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a829ca7ba317556d4966abb775d07bf0f}{get\+Output\+Ports}} () const
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a923417044b7755c09ea64e44c43270d4}{get\+Input\+Output\+Ports}} () const
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_acc567eb5213078881bc68b8e373d11ab}{get\+In\+Stream\+Ports}} () const
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a3dcc803004886d4b0d11161476c688bb}{get\+Out\+Stream\+Ports}} () const
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_ae6eb631a72c8032659576b67b0b734e7}{get\+Other\+Vars}} () const
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a36d13e04539edc4ce60a2ad62ebd1fa7}{dump}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+llvm\+::raw\+\_\+ostream \& \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a51f78341e2d608e68a716f8a11d1975c}{os\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a0743e6ae47b7e885c8312cb1af3bb095}{in\+Ports\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a95527d690e61aa765f6e6cfcadd705bc}{out\+Ports\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a56a8aa5a4fa67ed5f2b22f8b80f049d3}{in\+Stream\+Ports\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_aaadc51c49ec3263c8fd202969989150e}{out\+Stream\+Ports\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a0d2c33dd0d67222d40c9c9ed04516120}{inout\+Ports\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a7e8ddaae5a04a25793ce94b914af809e}{other\+Vars\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindPorts_af3398eb7795c7c20af023b635a1412c2}\label{classsystemc__clang_1_1FindPorts_af3398eb7795c7c20af023b635a1412c2}} 
+\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}!kvType@{kvType}}
+\index{kvType@{kvType}!systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+\doxysubsubsection{\texorpdfstring{kvType}{kvType}}
+{\footnotesize\ttfamily typedef pair$<$string, \mbox{\hyperlink{classsystemc__clang_1_1FindTemplateTypes}{Find\+Template\+Types}} $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_af3398eb7795c7c20af023b635a1412c2}{systemc\+\_\+clang\+::\+Find\+Ports\+::kv\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}\label{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}} 
+\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}!PortType@{PortType}}
+\index{PortType@{PortType}!systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+\doxysubsubsection{\texorpdfstring{PortType}{PortType}}
+{\footnotesize\ttfamily typedef map$<$string, \mbox{\hyperlink{classsystemc__clang_1_1FindTemplateTypes}{Find\+Template\+Types}} $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{systemc\+\_\+clang\+::\+Find\+Ports\+::\+Port\+Type}}}
+
+
+
+typedefs 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindPorts_aa68e8125a23a15e459b4e95322df8bf3}\label{classsystemc__clang_1_1FindPorts_aa68e8125a23a15e459b4e95322df8bf3}} 
+\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}!FindPorts@{FindPorts}}
+\index{FindPorts@{FindPorts}!systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+\doxysubsubsection{\texorpdfstring{FindPorts()}{FindPorts()}}
+{\footnotesize\ttfamily systemc\+\_\+clang\+::\+Find\+Ports\+::\+Find\+Ports (\begin{DoxyParamCaption}\item[{CXXRecord\+Decl $\ast$}]{,  }\item[{llvm\+::raw\+\_\+ostream \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindPorts_a6133f075cddbbc4a0a40156206dbc59d}\label{classsystemc__clang_1_1FindPorts_a6133f075cddbbc4a0a40156206dbc59d}} 
+\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}!````~FindPorts@{$\sim$FindPorts}}
+\index{````~FindPorts@{$\sim$FindPorts}!systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+\doxysubsubsection{\texorpdfstring{$\sim$FindPorts()}{~FindPorts()}}
+{\footnotesize\ttfamily virtual systemc\+\_\+clang\+::\+Find\+Ports\+::$\sim$\+Find\+Ports (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindPorts_a36d13e04539edc4ce60a2ad62ebd1fa7}\label{classsystemc__clang_1_1FindPorts_a36d13e04539edc4ce60a2ad62ebd1fa7}} 
+\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}!dump@{dump}}
+\index{dump@{dump}!systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void systemc\+\_\+clang\+::\+Find\+Ports\+::dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindPorts_a923417044b7755c09ea64e44c43270d4}\label{classsystemc__clang_1_1FindPorts_a923417044b7755c09ea64e44c43270d4}} 
+\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}!getInputOutputPorts@{getInputOutputPorts}}
+\index{getInputOutputPorts@{getInputOutputPorts}!systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+\doxysubsubsection{\texorpdfstring{getInputOutputPorts()}{getInputOutputPorts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} systemc\+\_\+clang\+::\+Find\+Ports\+::get\+Input\+Output\+Ports (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindPorts_ac91ea73bdb8d7444f4db2a8aaf5995a5}\label{classsystemc__clang_1_1FindPorts_ac91ea73bdb8d7444f4db2a8aaf5995a5}} 
+\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}!getInputPorts@{getInputPorts}}
+\index{getInputPorts@{getInputPorts}!systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+\doxysubsubsection{\texorpdfstring{getInputPorts()}{getInputPorts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} systemc\+\_\+clang\+::\+Find\+Ports\+::get\+Input\+Ports (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindPorts_acc567eb5213078881bc68b8e373d11ab}\label{classsystemc__clang_1_1FindPorts_acc567eb5213078881bc68b8e373d11ab}} 
+\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}!getInStreamPorts@{getInStreamPorts}}
+\index{getInStreamPorts@{getInStreamPorts}!systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+\doxysubsubsection{\texorpdfstring{getInStreamPorts()}{getInStreamPorts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} systemc\+\_\+clang\+::\+Find\+Ports\+::get\+In\+Stream\+Ports (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindPorts_ae6eb631a72c8032659576b67b0b734e7}\label{classsystemc__clang_1_1FindPorts_ae6eb631a72c8032659576b67b0b734e7}} 
+\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}!getOtherVars@{getOtherVars}}
+\index{getOtherVars@{getOtherVars}!systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+\doxysubsubsection{\texorpdfstring{getOtherVars()}{getOtherVars()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} systemc\+\_\+clang\+::\+Find\+Ports\+::get\+Other\+Vars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindPorts_a829ca7ba317556d4966abb775d07bf0f}\label{classsystemc__clang_1_1FindPorts_a829ca7ba317556d4966abb775d07bf0f}} 
+\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}!getOutputPorts@{getOutputPorts}}
+\index{getOutputPorts@{getOutputPorts}!systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+\doxysubsubsection{\texorpdfstring{getOutputPorts()}{getOutputPorts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} systemc\+\_\+clang\+::\+Find\+Ports\+::get\+Output\+Ports (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindPorts_a3dcc803004886d4b0d11161476c688bb}\label{classsystemc__clang_1_1FindPorts_a3dcc803004886d4b0d11161476c688bb}} 
+\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}!getOutStreamPorts@{getOutStreamPorts}}
+\index{getOutStreamPorts@{getOutStreamPorts}!systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+\doxysubsubsection{\texorpdfstring{getOutStreamPorts()}{getOutStreamPorts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} systemc\+\_\+clang\+::\+Find\+Ports\+::get\+Out\+Stream\+Ports (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindPorts_aed84545eb6edb710a26a6652de9bc5f7}\label{classsystemc__clang_1_1FindPorts_aed84545eb6edb710a26a6652de9bc5f7}} 
+\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}!shouldVisitTemplateInstantiations@{shouldVisitTemplateInstantiations}}
+\index{shouldVisitTemplateInstantiations@{shouldVisitTemplateInstantiations}!systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+\doxysubsubsection{\texorpdfstring{shouldVisitTemplateInstantiations()}{shouldVisitTemplateInstantiations()}}
+{\footnotesize\ttfamily bool systemc\+\_\+clang\+::\+Find\+Ports\+::should\+Visit\+Template\+Instantiations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindPorts_a5230d7914b42af403d70d8986187c143}\label{classsystemc__clang_1_1FindPorts_a5230d7914b42af403d70d8986187c143}} 
+\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}!VisitFieldDecl@{VisitFieldDecl}}
+\index{VisitFieldDecl@{VisitFieldDecl}!systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+\doxysubsubsection{\texorpdfstring{VisitFieldDecl()}{VisitFieldDecl()}}
+{\footnotesize\ttfamily virtual bool systemc\+\_\+clang\+::\+Find\+Ports\+::\+Visit\+Field\+Decl (\begin{DoxyParamCaption}\item[{Field\+Decl $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindPorts_a0d2c33dd0d67222d40c9c9ed04516120}\label{classsystemc__clang_1_1FindPorts_a0d2c33dd0d67222d40c9c9ed04516120}} 
+\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}!inoutPorts\_@{inoutPorts\_}}
+\index{inoutPorts\_@{inoutPorts\_}!systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+\doxysubsubsection{\texorpdfstring{inoutPorts\_}{inoutPorts\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} systemc\+\_\+clang\+::\+Find\+Ports\+::inout\+Ports\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindPorts_a0743e6ae47b7e885c8312cb1af3bb095}\label{classsystemc__clang_1_1FindPorts_a0743e6ae47b7e885c8312cb1af3bb095}} 
+\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}!inPorts\_@{inPorts\_}}
+\index{inPorts\_@{inPorts\_}!systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+\doxysubsubsection{\texorpdfstring{inPorts\_}{inPorts\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} systemc\+\_\+clang\+::\+Find\+Ports\+::in\+Ports\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindPorts_a56a8aa5a4fa67ed5f2b22f8b80f049d3}\label{classsystemc__clang_1_1FindPorts_a56a8aa5a4fa67ed5f2b22f8b80f049d3}} 
+\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}!inStreamPorts\_@{inStreamPorts\_}}
+\index{inStreamPorts\_@{inStreamPorts\_}!systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+\doxysubsubsection{\texorpdfstring{inStreamPorts\_}{inStreamPorts\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} systemc\+\_\+clang\+::\+Find\+Ports\+::in\+Stream\+Ports\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindPorts_a51f78341e2d608e68a716f8a11d1975c}\label{classsystemc__clang_1_1FindPorts_a51f78341e2d608e68a716f8a11d1975c}} 
+\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}!os\_@{os\_}}
+\index{os\_@{os\_}!systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+\doxysubsubsection{\texorpdfstring{os\_}{os\_}}
+{\footnotesize\ttfamily llvm\+::raw\+\_\+ostream\& systemc\+\_\+clang\+::\+Find\+Ports\+::os\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindPorts_a7e8ddaae5a04a25793ce94b914af809e}\label{classsystemc__clang_1_1FindPorts_a7e8ddaae5a04a25793ce94b914af809e}} 
+\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}!otherVars\_@{otherVars\_}}
+\index{otherVars\_@{otherVars\_}!systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+\doxysubsubsection{\texorpdfstring{otherVars\_}{otherVars\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} systemc\+\_\+clang\+::\+Find\+Ports\+::other\+Vars\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindPorts_a95527d690e61aa765f6e6cfcadd705bc}\label{classsystemc__clang_1_1FindPorts_a95527d690e61aa765f6e6cfcadd705bc}} 
+\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}!outPorts\_@{outPorts\_}}
+\index{outPorts\_@{outPorts\_}!systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+\doxysubsubsection{\texorpdfstring{outPorts\_}{outPorts\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} systemc\+\_\+clang\+::\+Find\+Ports\+::out\+Ports\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindPorts_aaadc51c49ec3263c8fd202969989150e}\label{classsystemc__clang_1_1FindPorts_aaadc51c49ec3263c8fd202969989150e}} 
+\index{systemc\_clang::FindPorts@{systemc\_clang::FindPorts}!outStreamPorts\_@{outStreamPorts\_}}
+\index{outStreamPorts\_@{outStreamPorts\_}!systemc\_clang::FindPorts@{systemc\_clang::FindPorts}}
+\doxysubsubsection{\texorpdfstring{outStreamPorts\_}{outStreamPorts\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindPorts_a1989d200f0df2b414b1b5a57259533e3}{Port\+Type}} systemc\+\_\+clang\+::\+Find\+Ports\+::out\+Stream\+Ports\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/matchers/\mbox{\hyperlink{FindPorts_8h}{Find\+Ports.\+h}}\end{DoxyCompactItemize}

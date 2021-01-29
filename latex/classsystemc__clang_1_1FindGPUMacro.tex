@@ -1,0 +1,221 @@
+\hypertarget{classsystemc__clang_1_1FindGPUMacro}{}\doxysection{systemc\+\_\+clang\+::Find\+GPUMacro Class Reference}
+\label{classsystemc__clang_1_1FindGPUMacro}\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+
+
+{\ttfamily \#include $<$Find\+GPUMacro.\+h$>$}
+
+
+
+Inheritance diagram for systemc\+\_\+clang\+::Find\+GPUMacro\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classsystemc__clang_1_1FindGPUMacro__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for systemc\+\_\+clang\+::Find\+GPUMacro\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classsystemc__clang_1_1FindGPUMacro__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef pair$<$ int, For\+Stmt $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a9bed9afe2922108381ef0ac5bb3505de}{for\+Stmt\+Instance\+Id\+Pair\+Type}}
+\item 
+typedef map$<$ int, For\+Stmt $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_ab7896ae9188debbbaa54744048bb467a}{for\+Stmt\+Instance\+Id\+Map\+Type}}
+\item 
+typedef pair$<$ \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a9bed9afe2922108381ef0ac5bb3505de}{for\+Stmt\+Instance\+Id\+Pair\+Type}}, \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro}{GPUMacro}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a86a326f526c790d043be6ec3df04ca64}{for\+Stmt\+GPUMacro\+Pair\+Type}}
+\item 
+typedef map$<$ \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a9bed9afe2922108381ef0ac5bb3505de}{for\+Stmt\+Instance\+Id\+Pair\+Type}}, \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro}{GPUMacro}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a683dfecf001a3f455e3894ac825ca1bc}{for\+Stmt\+GPUMacro\+Map\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_aea431d5876e7516bc625cba21c76b64a}{Find\+GPUMacro}} (CXXMethod\+Decl $\ast$, int, raw\+\_\+ostream \&)
+\item 
+virtual \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a50ab68580fec80936bf8496e10ef01b6}{$\sim$\+Find\+GPUMacro}} ()
+\item 
+virtual bool \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_abd57d2e4a9f5506173809f3d73f94ca7}{Visit\+For\+Stmt}} (For\+Stmt $\ast$)
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a683dfecf001a3f455e3894ac825ca1bc}{for\+Stmt\+GPUMacro\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a3f0922dcab5a57b789e4775040a6eb09}{get\+For\+Stmt\+GPUMacro\+Map}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_acaedef9bd33bbe2f5089ea7033dca696}{dump}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a13d5c9fb1fc5ce6b5e01c5aad15dbe68}{analyze\+\_\+data\+\_\+struct}} (Stmt $\ast$stmt\+List)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a2d7490f57f7352b4215b4e4c5c10b83f}{analyze\+\_\+expr}} (Expr $\ast$expr)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a7751077a1b308787ac2e86329111e3ff}{analyze\+\_\+lhs}} (Expr $\ast$expr)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a54308a9bfed0ec7d5c56f21d2358574d}{analyze\+\_\+rhs}} (Expr $\ast$expr)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_aaae5bfdcf88c055011d0a594d4aed2e8}{analyze\+\_\+array\+\_\+base}} (Expr $\ast$base, bool is\+LHS)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a4b22fcf68700ffc2f5248b9ab6320eb8}{analyze\+\_\+value\+\_\+decl}} (Value\+Decl $\ast$val)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a683dfecf001a3f455e3894ac825ca1bc}{for\+Stmt\+GPUMacro\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a0a3753815bf244ca9118488308efc72f}{\+\_\+for\+Stmt\+GPUMacro\+Map}}
+\item 
+CXXMethod\+Decl $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a585f8511e9f89e8a2040b4fc3822e085}{\+\_\+entry\+Function}}
+\item 
+int \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_aa10739a2026c42b81edccb90f8387ce4}{\+\_\+instance\+Num}}
+\item 
+raw\+\_\+ostream \& \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_af80cd73149352603f357c75377e93c5f}{\+\_\+os}}
+\item 
+std\+::set$<$ Value\+Decl $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_aa73c9642fd8f219f60ec0311e06146a4}{lhs\+\_\+decls}}
+\item 
+std\+::set$<$ Value\+Decl $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a39fec397d1fe11c9268ffc79aa440c9b}{rhs\+\_\+decls}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_a683dfecf001a3f455e3894ac825ca1bc}\label{classsystemc__clang_1_1FindGPUMacro_a683dfecf001a3f455e3894ac825ca1bc}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!forStmtGPUMacroMapType@{forStmtGPUMacroMapType}}
+\index{forStmtGPUMacroMapType@{forStmtGPUMacroMapType}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{forStmtGPUMacroMapType}{forStmtGPUMacroMapType}}
+{\footnotesize\ttfamily typedef map$<$\mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a9bed9afe2922108381ef0ac5bb3505de}{for\+Stmt\+Instance\+Id\+Pair\+Type}}, \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro}{GPUMacro}} $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a683dfecf001a3f455e3894ac825ca1bc}{systemc\+\_\+clang\+::\+Find\+GPUMacro\+::for\+Stmt\+GPUMacro\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_a86a326f526c790d043be6ec3df04ca64}\label{classsystemc__clang_1_1FindGPUMacro_a86a326f526c790d043be6ec3df04ca64}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!forStmtGPUMacroPairType@{forStmtGPUMacroPairType}}
+\index{forStmtGPUMacroPairType@{forStmtGPUMacroPairType}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{forStmtGPUMacroPairType}{forStmtGPUMacroPairType}}
+{\footnotesize\ttfamily typedef pair$<$\mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a9bed9afe2922108381ef0ac5bb3505de}{for\+Stmt\+Instance\+Id\+Pair\+Type}}, \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro}{GPUMacro}} $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a86a326f526c790d043be6ec3df04ca64}{systemc\+\_\+clang\+::\+Find\+GPUMacro\+::for\+Stmt\+GPUMacro\+Pair\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_ab7896ae9188debbbaa54744048bb467a}\label{classsystemc__clang_1_1FindGPUMacro_ab7896ae9188debbbaa54744048bb467a}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!forStmtInstanceIdMapType@{forStmtInstanceIdMapType}}
+\index{forStmtInstanceIdMapType@{forStmtInstanceIdMapType}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{forStmtInstanceIdMapType}{forStmtInstanceIdMapType}}
+{\footnotesize\ttfamily typedef map$<$int, For\+Stmt $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_ab7896ae9188debbbaa54744048bb467a}{systemc\+\_\+clang\+::\+Find\+GPUMacro\+::for\+Stmt\+Instance\+Id\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_a9bed9afe2922108381ef0ac5bb3505de}\label{classsystemc__clang_1_1FindGPUMacro_a9bed9afe2922108381ef0ac5bb3505de}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!forStmtInstanceIdPairType@{forStmtInstanceIdPairType}}
+\index{forStmtInstanceIdPairType@{forStmtInstanceIdPairType}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{forStmtInstanceIdPairType}{forStmtInstanceIdPairType}}
+{\footnotesize\ttfamily typedef pair$<$int, For\+Stmt $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a9bed9afe2922108381ef0ac5bb3505de}{systemc\+\_\+clang\+::\+Find\+GPUMacro\+::for\+Stmt\+Instance\+Id\+Pair\+Type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_aea431d5876e7516bc625cba21c76b64a}\label{classsystemc__clang_1_1FindGPUMacro_aea431d5876e7516bc625cba21c76b64a}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!FindGPUMacro@{FindGPUMacro}}
+\index{FindGPUMacro@{FindGPUMacro}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{FindGPUMacro()}{FindGPUMacro()}}
+{\footnotesize\ttfamily Find\+GPUMacro\+::\+Find\+GPUMacro (\begin{DoxyParamCaption}\item[{CXXMethod\+Decl $\ast$}]{,  }\item[{int}]{,  }\item[{raw\+\_\+ostream \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_a50ab68580fec80936bf8496e10ef01b6}\label{classsystemc__clang_1_1FindGPUMacro_a50ab68580fec80936bf8496e10ef01b6}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!````~FindGPUMacro@{$\sim$FindGPUMacro}}
+\index{````~FindGPUMacro@{$\sim$FindGPUMacro}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{$\sim$FindGPUMacro()}{~FindGPUMacro()}}
+{\footnotesize\ttfamily Find\+GPUMacro\+::$\sim$\+Find\+GPUMacro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_aaae5bfdcf88c055011d0a594d4aed2e8}\label{classsystemc__clang_1_1FindGPUMacro_aaae5bfdcf88c055011d0a594d4aed2e8}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!analyze\_array\_base@{analyze\_array\_base}}
+\index{analyze\_array\_base@{analyze\_array\_base}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{analyze\_array\_base()}{analyze\_array\_base()}}
+{\footnotesize\ttfamily void Find\+GPUMacro\+::analyze\+\_\+array\+\_\+base (\begin{DoxyParamCaption}\item[{Expr $\ast$}]{base,  }\item[{bool}]{is\+LHS }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_a13d5c9fb1fc5ce6b5e01c5aad15dbe68}\label{classsystemc__clang_1_1FindGPUMacro_a13d5c9fb1fc5ce6b5e01c5aad15dbe68}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!analyze\_data\_struct@{analyze\_data\_struct}}
+\index{analyze\_data\_struct@{analyze\_data\_struct}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{analyze\_data\_struct()}{analyze\_data\_struct()}}
+{\footnotesize\ttfamily void Find\+GPUMacro\+::analyze\+\_\+data\+\_\+struct (\begin{DoxyParamCaption}\item[{Stmt $\ast$}]{stmt\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_a2d7490f57f7352b4215b4e4c5c10b83f}\label{classsystemc__clang_1_1FindGPUMacro_a2d7490f57f7352b4215b4e4c5c10b83f}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!analyze\_expr@{analyze\_expr}}
+\index{analyze\_expr@{analyze\_expr}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{analyze\_expr()}{analyze\_expr()}}
+{\footnotesize\ttfamily void Find\+GPUMacro\+::analyze\+\_\+expr (\begin{DoxyParamCaption}\item[{Expr $\ast$}]{expr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_a7751077a1b308787ac2e86329111e3ff}\label{classsystemc__clang_1_1FindGPUMacro_a7751077a1b308787ac2e86329111e3ff}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!analyze\_lhs@{analyze\_lhs}}
+\index{analyze\_lhs@{analyze\_lhs}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{analyze\_lhs()}{analyze\_lhs()}}
+{\footnotesize\ttfamily void Find\+GPUMacro\+::analyze\+\_\+lhs (\begin{DoxyParamCaption}\item[{Expr $\ast$}]{expr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_a54308a9bfed0ec7d5c56f21d2358574d}\label{classsystemc__clang_1_1FindGPUMacro_a54308a9bfed0ec7d5c56f21d2358574d}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!analyze\_rhs@{analyze\_rhs}}
+\index{analyze\_rhs@{analyze\_rhs}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{analyze\_rhs()}{analyze\_rhs()}}
+{\footnotesize\ttfamily void Find\+GPUMacro\+::analyze\+\_\+rhs (\begin{DoxyParamCaption}\item[{Expr $\ast$}]{expr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_a4b22fcf68700ffc2f5248b9ab6320eb8}\label{classsystemc__clang_1_1FindGPUMacro_a4b22fcf68700ffc2f5248b9ab6320eb8}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!analyze\_value\_decl@{analyze\_value\_decl}}
+\index{analyze\_value\_decl@{analyze\_value\_decl}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{analyze\_value\_decl()}{analyze\_value\_decl()}}
+{\footnotesize\ttfamily void Find\+GPUMacro\+::analyze\+\_\+value\+\_\+decl (\begin{DoxyParamCaption}\item[{Value\+Decl $\ast$}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_acaedef9bd33bbe2f5089ea7033dca696}\label{classsystemc__clang_1_1FindGPUMacro_acaedef9bd33bbe2f5089ea7033dca696}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!dump@{dump}}
+\index{dump@{dump}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void Find\+GPUMacro\+::dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_a3f0922dcab5a57b789e4775040a6eb09}\label{classsystemc__clang_1_1FindGPUMacro_a3f0922dcab5a57b789e4775040a6eb09}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!getForStmtGPUMacroMap@{getForStmtGPUMacroMap}}
+\index{getForStmtGPUMacroMap@{getForStmtGPUMacroMap}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{getForStmtGPUMacroMap()}{getForStmtGPUMacroMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a683dfecf001a3f455e3894ac825ca1bc}{Find\+GPUMacro\+::for\+Stmt\+GPUMacro\+Map\+Type}} Find\+GPUMacro\+::get\+For\+Stmt\+GPUMacro\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_abd57d2e4a9f5506173809f3d73f94ca7}\label{classsystemc__clang_1_1FindGPUMacro_abd57d2e4a9f5506173809f3d73f94ca7}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!VisitForStmt@{VisitForStmt}}
+\index{VisitForStmt@{VisitForStmt}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{VisitForStmt()}{VisitForStmt()}}
+{\footnotesize\ttfamily bool Find\+GPUMacro\+::\+Visit\+For\+Stmt (\begin{DoxyParamCaption}\item[{For\+Stmt $\ast$}]{fstmt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_a585f8511e9f89e8a2040b4fc3822e085}\label{classsystemc__clang_1_1FindGPUMacro_a585f8511e9f89e8a2040b4fc3822e085}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!\_entryFunction@{\_entryFunction}}
+\index{\_entryFunction@{\_entryFunction}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{\_entryFunction}{\_entryFunction}}
+{\footnotesize\ttfamily CXXMethod\+Decl$\ast$ systemc\+\_\+clang\+::\+Find\+GPUMacro\+::\+\_\+entry\+Function\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_a0a3753815bf244ca9118488308efc72f}\label{classsystemc__clang_1_1FindGPUMacro_a0a3753815bf244ca9118488308efc72f}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!\_forStmtGPUMacroMap@{\_forStmtGPUMacroMap}}
+\index{\_forStmtGPUMacroMap@{\_forStmtGPUMacroMap}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{\_forStmtGPUMacroMap}{\_forStmtGPUMacroMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a683dfecf001a3f455e3894ac825ca1bc}{for\+Stmt\+GPUMacro\+Map\+Type}} systemc\+\_\+clang\+::\+Find\+GPUMacro\+::\+\_\+for\+Stmt\+GPUMacro\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_aa10739a2026c42b81edccb90f8387ce4}\label{classsystemc__clang_1_1FindGPUMacro_aa10739a2026c42b81edccb90f8387ce4}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!\_instanceNum@{\_instanceNum}}
+\index{\_instanceNum@{\_instanceNum}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{\_instanceNum}{\_instanceNum}}
+{\footnotesize\ttfamily int systemc\+\_\+clang\+::\+Find\+GPUMacro\+::\+\_\+instance\+Num\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_af80cd73149352603f357c75377e93c5f}\label{classsystemc__clang_1_1FindGPUMacro_af80cd73149352603f357c75377e93c5f}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!\_os@{\_os}}
+\index{\_os@{\_os}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{\_os}{\_os}}
+{\footnotesize\ttfamily raw\+\_\+ostream\& systemc\+\_\+clang\+::\+Find\+GPUMacro\+::\+\_\+os\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_aa73c9642fd8f219f60ec0311e06146a4}\label{classsystemc__clang_1_1FindGPUMacro_aa73c9642fd8f219f60ec0311e06146a4}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!lhs\_decls@{lhs\_decls}}
+\index{lhs\_decls@{lhs\_decls}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{lhs\_decls}{lhs\_decls}}
+{\footnotesize\ttfamily std\+::set$<$Value\+Decl $\ast$$>$ systemc\+\_\+clang\+::\+Find\+GPUMacro\+::lhs\+\_\+decls\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindGPUMacro_a39fec397d1fe11c9268ffc79aa440c9b}\label{classsystemc__clang_1_1FindGPUMacro_a39fec397d1fe11c9268ffc79aa440c9b}} 
+\index{systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}!rhs\_decls@{rhs\_decls}}
+\index{rhs\_decls@{rhs\_decls}!systemc\_clang::FindGPUMacro@{systemc\_clang::FindGPUMacro}}
+\doxysubsubsection{\texorpdfstring{rhs\_decls}{rhs\_decls}}
+{\footnotesize\ttfamily std\+::set$<$Value\+Decl $\ast$$>$ systemc\+\_\+clang\+::\+Find\+GPUMacro\+::rhs\+\_\+decls\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+SCuitable/\mbox{\hyperlink{FindGPUMacro_8h}{Find\+GPUMacro.\+h}}\item 
+src/\+SCuitable/\mbox{\hyperlink{FindGPUMacro_8cpp}{Find\+GPUMacro.\+cpp}}\end{DoxyCompactItemize}

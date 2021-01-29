@@ -1,0 +1,119 @@
+\hypertarget{classsystemc__clang_1_1FindTemplateParameters}{}\doxysection{systemc\+\_\+clang\+::Find\+Template\+Parameters Class Reference}
+\label{classsystemc__clang_1_1FindTemplateParameters}\index{systemc\_clang::FindTemplateParameters@{systemc\_clang::FindTemplateParameters}}
+
+
+{\ttfamily \#include $<$Find\+Template\+Parameters.\+h$>$}
+
+
+
+Inheritance diagram for systemc\+\_\+clang\+::Find\+Template\+Parameters\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classsystemc__clang_1_1FindTemplateParameters__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for systemc\+\_\+clang\+::Find\+Template\+Parameters\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classsystemc__clang_1_1FindTemplateParameters__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindTemplateParameters_a4a14851abfbbc857b34030354a08d886}{Find\+Template\+Parameters}} (clang\+::\+CXXRecord\+Decl $\ast$)
+\item 
+virtual bool \mbox{\hyperlink{classsystemc__clang_1_1FindTemplateParameters_a29011376b0e676e7cd63ff8a05372970}{Visit\+CXXRecord\+Decl}} (clang\+::\+CXXRecord\+Decl $\ast$decl)
+\item 
+virtual \mbox{\hyperlink{classsystemc__clang_1_1FindTemplateParameters_ac3afe9cb44b350848418510f2d1822d8}{$\sim$\+Find\+Template\+Parameters}} ()
+\item 
+const std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindTemplateParameters_af993cd8c8c54ed5873d73d1bf6b1bb2a}{get\+Template\+Parameters}} () const
+\item 
+const std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindTemplateParameters_a39e2a33dbb7a8446e4a51847e3d07896}{get\+Template\+Args}} () const
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1FindTemplateParameters_ab4d79a10ad3b714554ee7278a2219d49}{dump}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+clang\+::\+CXXRecord\+Decl $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1FindTemplateParameters_a8bd39c2ecedcfcd7072189e471a05c4e}{declaration\+\_\+}}
+\item 
+clang\+::\+Template\+Parameter\+List $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1FindTemplateParameters_af97d8aec896f3f8811b834fe7e51b5b6}{template\+\_\+parameters\+\_\+}}
+\item 
+const clang\+::\+Template\+Argument\+List $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1FindTemplateParameters_aa52770375f41a0b84707b83d2802b0fb}{template\+\_\+args\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTemplateParameters_a4a14851abfbbc857b34030354a08d886}\label{classsystemc__clang_1_1FindTemplateParameters_a4a14851abfbbc857b34030354a08d886}} 
+\index{systemc\_clang::FindTemplateParameters@{systemc\_clang::FindTemplateParameters}!FindTemplateParameters@{FindTemplateParameters}}
+\index{FindTemplateParameters@{FindTemplateParameters}!systemc\_clang::FindTemplateParameters@{systemc\_clang::FindTemplateParameters}}
+\doxysubsubsection{\texorpdfstring{FindTemplateParameters()}{FindTemplateParameters()}}
+{\footnotesize\ttfamily Find\+Template\+Parameters\+::\+Find\+Template\+Parameters (\begin{DoxyParamCaption}\item[{clang\+::\+CXXRecord\+Decl $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTemplateParameters_ac3afe9cb44b350848418510f2d1822d8}\label{classsystemc__clang_1_1FindTemplateParameters_ac3afe9cb44b350848418510f2d1822d8}} 
+\index{systemc\_clang::FindTemplateParameters@{systemc\_clang::FindTemplateParameters}!````~FindTemplateParameters@{$\sim$FindTemplateParameters}}
+\index{````~FindTemplateParameters@{$\sim$FindTemplateParameters}!systemc\_clang::FindTemplateParameters@{systemc\_clang::FindTemplateParameters}}
+\doxysubsubsection{\texorpdfstring{$\sim$FindTemplateParameters()}{~FindTemplateParameters()}}
+{\footnotesize\ttfamily Find\+Template\+Parameters\+::$\sim$\+Find\+Template\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTemplateParameters_ab4d79a10ad3b714554ee7278a2219d49}\label{classsystemc__clang_1_1FindTemplateParameters_ab4d79a10ad3b714554ee7278a2219d49}} 
+\index{systemc\_clang::FindTemplateParameters@{systemc\_clang::FindTemplateParameters}!dump@{dump}}
+\index{dump@{dump}!systemc\_clang::FindTemplateParameters@{systemc\_clang::FindTemplateParameters}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void Find\+Template\+Parameters\+::dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTemplateParameters_a39e2a33dbb7a8446e4a51847e3d07896}\label{classsystemc__clang_1_1FindTemplateParameters_a39e2a33dbb7a8446e4a51847e3d07896}} 
+\index{systemc\_clang::FindTemplateParameters@{systemc\_clang::FindTemplateParameters}!getTemplateArgs@{getTemplateArgs}}
+\index{getTemplateArgs@{getTemplateArgs}!systemc\_clang::FindTemplateParameters@{systemc\_clang::FindTemplateParameters}}
+\doxysubsubsection{\texorpdfstring{getTemplateArgs()}{getTemplateArgs()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ Find\+Template\+Parameters\+::get\+Template\+Args (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTemplateParameters_af993cd8c8c54ed5873d73d1bf6b1bb2a}\label{classsystemc__clang_1_1FindTemplateParameters_af993cd8c8c54ed5873d73d1bf6b1bb2a}} 
+\index{systemc\_clang::FindTemplateParameters@{systemc\_clang::FindTemplateParameters}!getTemplateParameters@{getTemplateParameters}}
+\index{getTemplateParameters@{getTemplateParameters}!systemc\_clang::FindTemplateParameters@{systemc\_clang::FindTemplateParameters}}
+\doxysubsubsection{\texorpdfstring{getTemplateParameters()}{getTemplateParameters()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ Find\+Template\+Parameters\+::get\+Template\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTemplateParameters_a29011376b0e676e7cd63ff8a05372970}\label{classsystemc__clang_1_1FindTemplateParameters_a29011376b0e676e7cd63ff8a05372970}} 
+\index{systemc\_clang::FindTemplateParameters@{systemc\_clang::FindTemplateParameters}!VisitCXXRecordDecl@{VisitCXXRecordDecl}}
+\index{VisitCXXRecordDecl@{VisitCXXRecordDecl}!systemc\_clang::FindTemplateParameters@{systemc\_clang::FindTemplateParameters}}
+\doxysubsubsection{\texorpdfstring{VisitCXXRecordDecl()}{VisitCXXRecordDecl()}}
+{\footnotesize\ttfamily bool Find\+Template\+Parameters\+::\+Visit\+CXXRecord\+Decl (\begin{DoxyParamCaption}\item[{clang\+::\+CXXRecord\+Decl $\ast$}]{decl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTemplateParameters_a8bd39c2ecedcfcd7072189e471a05c4e}\label{classsystemc__clang_1_1FindTemplateParameters_a8bd39c2ecedcfcd7072189e471a05c4e}} 
+\index{systemc\_clang::FindTemplateParameters@{systemc\_clang::FindTemplateParameters}!declaration\_@{declaration\_}}
+\index{declaration\_@{declaration\_}!systemc\_clang::FindTemplateParameters@{systemc\_clang::FindTemplateParameters}}
+\doxysubsubsection{\texorpdfstring{declaration\_}{declaration\_}}
+{\footnotesize\ttfamily clang\+::\+CXXRecord\+Decl$\ast$ systemc\+\_\+clang\+::\+Find\+Template\+Parameters\+::declaration\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTemplateParameters_aa52770375f41a0b84707b83d2802b0fb}\label{classsystemc__clang_1_1FindTemplateParameters_aa52770375f41a0b84707b83d2802b0fb}} 
+\index{systemc\_clang::FindTemplateParameters@{systemc\_clang::FindTemplateParameters}!template\_args\_@{template\_args\_}}
+\index{template\_args\_@{template\_args\_}!systemc\_clang::FindTemplateParameters@{systemc\_clang::FindTemplateParameters}}
+\doxysubsubsection{\texorpdfstring{template\_args\_}{template\_args\_}}
+{\footnotesize\ttfamily const clang\+::\+Template\+Argument\+List$\ast$ systemc\+\_\+clang\+::\+Find\+Template\+Parameters\+::template\+\_\+args\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTemplateParameters_af97d8aec896f3f8811b834fe7e51b5b6}\label{classsystemc__clang_1_1FindTemplateParameters_af97d8aec896f3f8811b834fe7e51b5b6}} 
+\index{systemc\_clang::FindTemplateParameters@{systemc\_clang::FindTemplateParameters}!template\_parameters\_@{template\_parameters\_}}
+\index{template\_parameters\_@{template\_parameters\_}!systemc\_clang::FindTemplateParameters@{systemc\_clang::FindTemplateParameters}}
+\doxysubsubsection{\texorpdfstring{template\_parameters\_}{template\_parameters\_}}
+{\footnotesize\ttfamily clang\+::\+Template\+Parameter\+List$\ast$ systemc\+\_\+clang\+::\+Find\+Template\+Parameters\+::template\+\_\+parameters\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/matchers/\mbox{\hyperlink{FindTemplateParameters_8h}{Find\+Template\+Parameters.\+h}}\item 
+src/matchers/\mbox{\hyperlink{FindTemplateParameters_8cpp}{Find\+Template\+Parameters.\+cpp}}\end{DoxyCompactItemize}

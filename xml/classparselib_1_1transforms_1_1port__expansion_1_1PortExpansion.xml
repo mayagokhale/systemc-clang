@@ -1,0 +1,455 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion" kind="class" language="Python" prot="public">
+    <compoundname>parselib::transforms::port_expansion::PortExpansion</compoundname>
+    <basecompoundref refid="classparselib_1_1transforms_1_1top__down_1_1TopDown" prot="public" virt="non-virtual">parselib.transforms.top_down.TopDown</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1a4e8cbcefdb6572ad544fc0e68e90ef77" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.transforms.port_expansion.PortExpansion::expanded</definition>
+        <argsstring></argsstring>
+        <name>expanded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/port_expansion.py" line="16" column="1" bodyfile="plugins/hdl/parselib/transforms/port_expansion.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1acf33105cf50c728fdbddc4423e8b799a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.port_expansion.PortExpansion.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <reimplements refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1aba7572132ec76ea47811c9d077763441">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Expands mixed port objects such as sc_rvd into in-port and out-port
+This pass should come **before** typedef expansion
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/port_expansion.py" line="10" column="1" bodyfile="plugins/hdl/parselib/transforms/port_expansion.py" bodystart="10" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1ab7ef7f98e036309750fc495f37315bc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.port_expansion.PortExpansion.create_inport</definition>
+        <argsstring>(self, t, meta)</argsstring>
+        <name>create_inport</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>t</type>
+          <defname>t</defname>
+        </param>
+        <param>
+          <type>meta</type>
+          <defname>meta</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/port_expansion.py" line="19" column="1" bodyfile="plugins/hdl/parselib/transforms/port_expansion.py" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1a45d1d4614726b7bc99da56de3937ed42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.port_expansion.PortExpansion.create_outport</definition>
+        <argsstring>(self, t, meta)</argsstring>
+        <name>create_outport</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>t</type>
+          <defname>t</defname>
+        </param>
+        <param>
+          <type>meta</type>
+          <defname>meta</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/port_expansion.py" line="22" column="1" bodyfile="plugins/hdl/parselib/transforms/port_expansion.py" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1a8922618f3f36f3a85cba853b260795bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.port_expansion.PortExpansion.create_channel</definition>
+        <argsstring>(self, t, meta)</argsstring>
+        <name>create_channel</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>t</type>
+          <defname>t</defname>
+        </param>
+        <param>
+          <type>meta</type>
+          <defname>meta</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/port_expansion.py" line="25" column="1" bodyfile="plugins/hdl/parselib/transforms/port_expansion.py" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1aa403820b92a6fff714fce736afc619ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.port_expansion.PortExpansion.create_inport_decl</definition>
+        <argsstring>(self, name, meta)</argsstring>
+        <name>create_inport_decl</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>meta</type>
+          <defname>meta</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/port_expansion.py" line="28" column="1" bodyfile="plugins/hdl/parselib/transforms/port_expansion.py" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1abf85f624d0fc3cf019602e6e8a22019f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.port_expansion.PortExpansion.create_outport_decl</definition>
+        <argsstring>(self, name, meta)</argsstring>
+        <name>create_outport_decl</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>meta</type>
+          <defname>meta</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/port_expansion.py" line="31" column="1" bodyfile="plugins/hdl/parselib/transforms/port_expansion.py" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1af232e30a25b418e3d30b9662162d9281" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.port_expansion.PortExpansion.create_channel_decl</definition>
+        <argsstring>(self, name, meta)</argsstring>
+        <name>create_channel_decl</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>meta</type>
+          <defname>meta</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/port_expansion.py" line="34" column="1" bodyfile="plugins/hdl/parselib/transforms/port_expansion.py" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1a92158d8495fe1c50a5550ea381c50dd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.port_expansion.PortExpansion.modportsiglist</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>modportsiglist</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/port_expansion.py" line="144" column="1" bodyfile="plugins/hdl/parselib/transforms/port_expansion.py" bodystart="144" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1a60f8ae3022c8f969f7c8d5c29469206d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.port_expansion.PortExpansion.portbindinglist</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>portbindinglist</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/port_expansion.py" line="160" column="1" bodyfile="plugins/hdl/parselib/transforms/port_expansion.py" bodystart="160" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1a4d63c19341fd5691f9780dbfe4957e45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.port_expansion.PortExpansion.hmodule</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hmodule</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/port_expansion.py" line="169" column="1" bodyfile="plugins/hdl/parselib/transforms/port_expansion.py" bodystart="169" bodyend="174"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1af2a8870b70e82eb0e20210ceb3fc6794" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.port_expansion.PortExpansion.__expand_sc_rvd</definition>
+        <argsstring>(self, tree, inout=None)</argsstring>
+        <name>__expand_sc_rvd</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <param>
+          <type>inout</type>
+          <defname>inout</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/port_expansion.py" line="37" column="1" bodyfile="plugins/hdl/parselib/transforms/port_expansion.py" bodystart="37" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1a84021c302bf8ccd5a790535de38ff9c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.port_expansion.PortExpansion.__expand_sc_rvd_binding_pair</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>__expand_sc_rvd_binding_pair</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/port_expansion.py" line="85" column="1" bodyfile="plugins/hdl/parselib/transforms/port_expansion.py" bodystart="85" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1abaeccafd1ec5b0aeaa025113e1a801b0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.port_expansion.PortExpansion.__expand_port</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>__expand_port</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/port_expansion.py" line="104" column="1" bodyfile="plugins/hdl/parselib/transforms/port_expansion.py" bodystart="104" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1a6d6231e5eabcb36ecf25614b56519fda" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.port_expansion.PortExpansion.__expand_vardecl</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>__expand_vardecl</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/port_expansion.py" line="119" column="1" bodyfile="plugins/hdl/parselib/transforms/port_expansion.py" bodystart="119" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1a6499968586e3b37fb9f0c17d056b8d6a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.port_expansion.PortExpansion.__set_expanded</definition>
+        <argsstring>(self, var_name, bundle_type_name)</argsstring>
+        <name>__set_expanded</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>var_name</type>
+          <defname>var_name</defname>
+        </param>
+        <param>
+          <type>bundle_type_name</type>
+          <defname>bundle_type_name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/port_expansion.py" line="132" column="1" bodyfile="plugins/hdl/parselib/transforms/port_expansion.py" bodystart="132" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1adb34c96fd2593ddc8f5350946a4d2082" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.port_expansion.PortExpansion.__get_expanded</definition>
+        <argsstring>(self, var_name)</argsstring>
+        <name>__get_expanded</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>var_name</type>
+          <defname>var_name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/port_expansion.py" line="137" column="1" bodyfile="plugins/hdl/parselib/transforms/port_expansion.py" bodystart="137" bodyend="143"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>parselib.transforms.port_expansion.PortExpansion</label>
+        <link refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>parselib.transforms.top_down.TopDown</label>
+        <link refid="classparselib_1_1transforms_1_1top__down_1_1TopDown"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Interpreter</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>parselib.transforms.port_expansion.PortExpansion</label>
+        <link refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>parselib.transforms.top_down.TopDown</label>
+        <link refid="classparselib_1_1transforms_1_1top__down_1_1TopDown"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Interpreter</label>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/parselib/transforms/port_expansion.py" line="9" column="1" bodyfile="plugins/hdl/parselib/transforms/port_expansion.py" bodystart="9" bodyend="174"/>
+    <listofallmembers>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1a2738f9bf2467d410d3990343dcaf88ff" prot="public" virt="non-virtual"><scope>parselib::transforms::port_expansion::PortExpansion</scope><name>__default__</name></member>
+      <member refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1abaeccafd1ec5b0aeaa025113e1a801b0" prot="private" virt="non-virtual"><scope>parselib::transforms::port_expansion::PortExpansion</scope><name>__expand_port</name></member>
+      <member refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1af2a8870b70e82eb0e20210ceb3fc6794" prot="private" virt="non-virtual"><scope>parselib::transforms::port_expansion::PortExpansion</scope><name>__expand_sc_rvd</name></member>
+      <member refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1a84021c302bf8ccd5a790535de38ff9c8" prot="private" virt="non-virtual"><scope>parselib::transforms::port_expansion::PortExpansion</scope><name>__expand_sc_rvd_binding_pair</name></member>
+      <member refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1a6d6231e5eabcb36ecf25614b56519fda" prot="private" virt="non-virtual"><scope>parselib::transforms::port_expansion::PortExpansion</scope><name>__expand_vardecl</name></member>
+      <member refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1adb34c96fd2593ddc8f5350946a4d2082" prot="private" virt="non-virtual"><scope>parselib::transforms::port_expansion::PortExpansion</scope><name>__get_expanded</name></member>
+      <member refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1acf33105cf50c728fdbddc4423e8b799a" prot="public" virt="non-virtual"><scope>parselib::transforms::port_expansion::PortExpansion</scope><name>__init__</name></member>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1a7064a163977352a2b47acbf7e388116c" prot="private" virt="non-virtual"><scope>parselib::transforms::port_expansion::PortExpansion</scope><name>__push_up</name></member>
+      <member refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1a6499968586e3b37fb9f0c17d056b8d6a" prot="private" virt="non-virtual"><scope>parselib::transforms::port_expansion::PortExpansion</scope><name>__set_expanded</name></member>
+      <member refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1a8922618f3f36f3a85cba853b260795bc" prot="public" virt="non-virtual"><scope>parselib::transforms::port_expansion::PortExpansion</scope><name>create_channel</name></member>
+      <member refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1af232e30a25b418e3d30b9662162d9281" prot="public" virt="non-virtual"><scope>parselib::transforms::port_expansion::PortExpansion</scope><name>create_channel_decl</name></member>
+      <member refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1ab7ef7f98e036309750fc495f37315bc3" prot="public" virt="non-virtual"><scope>parselib::transforms::port_expansion::PortExpansion</scope><name>create_inport</name></member>
+      <member refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1aa403820b92a6fff714fce736afc619ca" prot="public" virt="non-virtual"><scope>parselib::transforms::port_expansion::PortExpansion</scope><name>create_inport_decl</name></member>
+      <member refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1a45d1d4614726b7bc99da56de3937ed42" prot="public" virt="non-virtual"><scope>parselib::transforms::port_expansion::PortExpansion</scope><name>create_outport</name></member>
+      <member refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1abf85f624d0fc3cf019602e6e8a22019f" prot="public" virt="non-virtual"><scope>parselib::transforms::port_expansion::PortExpansion</scope><name>create_outport_decl</name></member>
+      <member refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1a4e8cbcefdb6572ad544fc0e68e90ef77" prot="public" virt="non-virtual"><scope>parselib::transforms::port_expansion::PortExpansion</scope><name>expanded</name></member>
+      <member refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1a4d63c19341fd5691f9780dbfe4957e45" prot="public" virt="non-virtual"><scope>parselib::transforms::port_expansion::PortExpansion</scope><name>hmodule</name></member>
+      <member refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1a92158d8495fe1c50a5550ea381c50dd5" prot="public" virt="non-virtual"><scope>parselib::transforms::port_expansion::PortExpansion</scope><name>modportsiglist</name></member>
+      <member refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1a60f8ae3022c8f969f7c8d5c29469206d" prot="public" virt="non-virtual"><scope>parselib::transforms::port_expansion::PortExpansion</scope><name>portbindinglist</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Utility_8h" kind="file" language="C++">
+    <compoundname>Utility.h</compoundname>
+    <includes local="yes">clang/AST/DeclCXX.h</includes>
+    <includes local="yes">clang/AST/PrettyPrinter.h</includes>
+    <includes local="yes">clang/Basic/SourceManager.h</includes>
+    <includes local="yes">llvm/Support/raw_ostream.h</includes>
+    <includes local="no">string</includes>
+    <includedby refid="FindSimTime_8h" local="yes">src/matchers/FindSimTime.h</includedby>
+    <includedby refid="EntryFunctionContainer_8h" local="yes">src/model/EntryFunctionContainer.h</includedby>
+    <includedby refid="EventDecl_8h" local="yes">src/model/EventDecl.h</includedby>
+    <includedby refid="NotifyCalls_8h" local="yes">src/model/NotifyCalls.h</includedby>
+    <includedby refid="WaitCalls_8h" local="yes">src/model/WaitCalls.h</includedby>
+    <includedby refid="GlobalSuspensionAutomata_8h" local="yes">src/SCuitable/GlobalSuspensionAutomata.h</includedby>
+    <includedby refid="SuspensionAutomata_8h" local="yes">src/SCuitable/SuspensionAutomata.h</includedby>
+    <includedby refid="Utility_8cpp" local="yes">src/SCuitable/Utility.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>clang/Basic/SourceManager.h</label>
+      </node>
+      <node id="5">
+        <label>llvm/Support/raw_ostream.h</label>
+      </node>
+      <node id="3">
+        <label>clang/AST/PrettyPrinter.h</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>src/SCuitable/Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>clang/AST/DeclCXX.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>src/PluginAction.h</label>
+        <link refid="PluginAction_8h"/>
+      </node>
+      <node id="14">
+        <label>plugins/hdl/HDLBody.h</label>
+        <link refid="HDLBody_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>src/SystemCClang.h</label>
+        <link refid="SystemCClang_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/SCuitable/GlobalSuspensionAutomata.cpp</label>
+        <link refid="GlobalSuspensionAutomata_8cpp"/>
+      </node>
+      <node id="13">
+        <label>plugins/hdl/HDLBody.cpp</label>
+        <link refid="HDLBody_8cpp"/>
+      </node>
+      <node id="34">
+        <label>src/model/EventDecl.cpp</label>
+        <link refid="EventDecl_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/matchers/FindSimTime.h</label>
+        <link refid="FindSimTime_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>src/model/EventDecl.h</label>
+        <link refid="EventDecl_8h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/model/Model.cpp</label>
+        <link refid="Model_8cpp"/>
+      </node>
+      <node id="29">
+        <label>src/matchers/FindEntryFunctions.h</label>
+        <link refid="FindEntryFunctions_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>plugins/hdl/HDLType.cpp</label>
+        <link refid="HDLType_8cpp"/>
+      </node>
+      <node id="27">
+        <label>src/matchers/PortMatcher.h</label>
+        <link refid="PortMatcher_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/SCuitable/GlobalSuspensionAutomata.h</label>
+        <link refid="GlobalSuspensionAutomata_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/model/Model.h</label>
+        <link refid="Model_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>plugins/hdl/HDLHnode.cpp</label>
+        <link refid="HDLHnode_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/matchers/FindSimTime.cpp</label>
+        <link refid="FindSimTime_8cpp"/>
+      </node>
+      <node id="31">
+        <label>src/model/EntryFunctionContainer.cpp</label>
+        <link refid="EntryFunctionContainer_8cpp"/>
+      </node>
+      <node id="30">
+        <label>src/matchers/FindEntryFunctions.cpp</label>
+        <link refid="FindEntryFunctions_8cpp"/>
+      </node>
+      <node id="15">
+        <label>plugins/hdl/HDLMain.h</label>
+        <link refid="HDLMain_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>src/matchers/Matchers.h</label>
+        <link refid="Matchers_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>src/model/ProcessDecl.cpp</label>
+        <link refid="ProcessDecl_8cpp"/>
+      </node>
+      <node id="16">
+        <label>plugins/hdl/HDLMain.cpp</label>
+        <link refid="HDLMain_8cpp"/>
+      </node>
+      <node id="23">
+        <label>src/matchers/FindConstructor.cpp</label>
+        <link refid="FindConstructor_8cpp"/>
+      </node>
+      <node id="24">
+        <label>src/model/ModuleInstance.h</label>
+        <link refid="ModuleInstance_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>src/SystemCClang.cpp</label>
+        <link refid="SystemCClang_8cpp"/>
+      </node>
+      <node id="39">
+        <label>src/SCuitable/SuspensionAutomata.h</label>
+        <link refid="SuspensionAutomata_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>plugins/hdl/HDLHnode.h</label>
+        <link refid="HDLHnode_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>src/matchers/NetlistMatcher.h</label>
+        <link refid="NetlistMatcher_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>src/matchers/FindConstructor.h</label>
+        <link refid="FindConstructor_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>src/SAPlugin.h</label>
+        <link refid="SAPlugin_8h"/>
+      </node>
+      <node id="1">
+        <label>src/SCuitable/Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>plugins/hdl/HDLType.h</label>
+        <link refid="HDLType_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>src/model/EntryFunctionContainer.h</label>
+        <link refid="EntryFunctionContainer_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>src/model/WaitCalls.h</label>
+        <link refid="WaitCalls_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>src/model/NotifyCalls.h</label>
+        <link refid="NotifyCalls_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>src/model/WaitCalls.cpp</label>
+        <link refid="WaitCalls_8cpp"/>
+      </node>
+      <node id="36">
+        <label>src/model/NotifyCalls.cpp</label>
+        <link refid="NotifyCalls_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/SCuitable/TimeAnalysis.h</label>
+        <link refid="TimeAnalysis_8h"/>
+      </node>
+      <node id="28">
+        <label>src/model/ModuleInstance.cpp</label>
+        <link refid="ModuleInstance_8cpp"/>
+      </node>
+      <node id="41">
+        <label>src/SCuitable/Utility.cpp</label>
+        <link refid="Utility_8cpp"/>
+      </node>
+      <node id="40">
+        <label>src/SCuitable/SuspensionAutomata.cpp</label>
+        <link refid="SuspensionAutomata_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsystemc__clang_1_1Utility" prot="public">systemc_clang::Utility</innerclass>
+    <innernamespace refid="namespacesystemc__clang">systemc_clang</innernamespace>
+    <briefdescription>
+<para>A set of utility functions in the Utility class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//===--<sp/>src/Utility.h<sp/>-<sp/>systec-clang<sp/>class<sp/>definition<sp/>-------*-<sp/>C++<sp/>-*-===//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>systemc-clang:<sp/>SystemC<sp/>Parser</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>distributed<sp/>under<sp/>the<sp/>University<sp/>of<sp/>Illinois<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>See<sp/>LICENSE.mkd<sp/>for<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//===----------------------------------------------------------------------===//</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight><highlight class="comment">//===----------------------------------------------------------------------===//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_UTILITY_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_UTILITY_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;clang/AST/DeclCXX.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;clang/AST/PrettyPrinter.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;clang/Basic/SourceManager.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;llvm/Support/raw_ostream.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesystemc__clang" kindref="compound">systemc_clang</ref><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceclang" kindref="compound">clang</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="26" refid="classsystemc__clang_1_1Utility" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsystemc__clang_1_1Utility" kindref="compound">Utility</ref><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28" refid="classsystemc__clang_1_1Utility_1a28bedc1e035e19b9d24726c57d224eb9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1Utility_1a28bedc1e035e19b9d24726c57d224eb9" kindref="member">Utility</ref>(){};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/>void<sp/>tabit<sp/>(llvm::raw_ostream<sp/>&amp;,<sp/>int<sp/>tabn);</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>string<sp/>strip<sp/>(string,<sp/>string);</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"></highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/>template<sp/>&lt;<sp/>typename<sp/>vec<sp/>&gt;<sp/>vec<sp/>removeDuplicate<sp/>(vec);</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/>template<sp/>&lt;<sp/>typename<sp/>vec,<sp/>typename<sp/>element<sp/>&gt;<sp/>bool<sp/>isElementPresent<sp/>(vec,</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/>element);<sp/>template<sp/>&lt;<sp/>typename<sp/>element<sp/>&gt;<sp/>string<sp/>getArgumentName<sp/>(element<sp/>*);</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="classsystemc__clang_1_1Utility_1afee859008a964bba751d6c914c4b04b0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1Utility_1afee859008a964bba751d6c914c4b04b0" kindref="member">tabit</ref>(raw_ostream<sp/>&amp;os,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tabn)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>tabn;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classsystemc__clang_1_1Utility_1a2a23cd95dfe9b197856e28f1f2f70d0d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1Utility_1a2a23cd95dfe9b197856e28f1f2f70d0d" kindref="member">strip</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>s,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>sub)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>sub<sp/>has<sp/>&quot;struct<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>pos<sp/>=<sp/>s.find(sub);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pos<sp/>==<sp/>string::npos)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s.erase(pos,<sp/>sub.length());</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classsystemc__clang_1_1Utility_1a1bfeb0d4469d75f5143c70bc2bae8e1a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>vec&gt;<sp/>vec<sp/><ref refid="classsystemc__clang_1_1Utility_1a1bfeb0d4469d75f5143c70bc2bae8e1a" kindref="member">removeDuplicate</ref>(vec<sp/>vecInput)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>vecInput.size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>vecInput.size();<sp/>j++)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>!=<sp/>j<sp/>&amp;&amp;<sp/>vecInput.at(i)<sp/>==<sp/>vecInput.at(j))<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vecInput.erase(vecInput.begin()<sp/>+<sp/>j);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vecInput;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>vec,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>element&gt;</highlight></codeline>
+<codeline lineno="66" refid="classsystemc__clang_1_1Utility_1a807a4944329acdc8c6b8b4bbf36a59a4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1Utility_1a807a4944329acdc8c6b8b4bbf36a59a4" kindref="member">isElementPresent</ref>(vec<sp/>vecInput,<sp/>element<sp/>elemInput)<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>vecInput.size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(elemInput<sp/>==<sp/>vecInput.at(i))<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="classsystemc__clang_1_1Utility_1a2b89b2bd4d7a3f10974b8904c1798921" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>expressionArg&gt;<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1Utility_1a2b89b2bd4d7a3f10974b8904c1798921" kindref="member">getArgumentName</ref>(expressionArg<sp/>*exp)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(exp<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>string(</highlight><highlight class="stringliteral">&quot;NULL&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>clang::LangOptions<sp/>LangOpts;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>LangOpts.CPlusPlus<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>clang::PrintingPolicy<sp/>Policy(LangOpts);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>TypeS;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>llvm::raw_string_ostream<sp/>s(TypeS);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>exp-&gt;printPretty(s,<sp/>0,<sp/>Policy);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s.str();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>systemc_clang</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/SCuitable/Utility.h"/>
+  </compounddef>
+</doxygen>

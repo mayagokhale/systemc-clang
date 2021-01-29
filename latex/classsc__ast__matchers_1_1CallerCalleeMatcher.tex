@@ -1,0 +1,136 @@
+\hypertarget{classsc__ast__matchers_1_1CallerCalleeMatcher}{}\doxysection{sc\+\_\+ast\+\_\+matchers\+::Caller\+Callee\+Matcher Class Reference}
+\label{classsc__ast__matchers_1_1CallerCalleeMatcher}\index{sc\_ast\_matchers::CallerCalleeMatcher@{sc\_ast\_matchers::CallerCalleeMatcher}}
+
+
+{\ttfamily \#include $<$Sensitivity\+Matcher.\+h$>$}
+
+
+
+Inheritance diagram for sc\+\_\+ast\+\_\+matchers\+::Caller\+Callee\+Matcher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classsc__ast__matchers_1_1CallerCalleeMatcher__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sc\+\_\+ast\+\_\+matchers\+::Caller\+Callee\+Matcher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classsc__ast__matchers_1_1CallerCalleeMatcher__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsc__ast__matchers_1_1CallerCalleeMatcher_a0639e2ec62660649e0ca40a86d245733}{Caller\+Callee\+Type}} \mbox{\hyperlink{classsc__ast__matchers_1_1CallerCalleeMatcher_a8ada1a118d02f99757cd6d4919d4a165}{get\+Caller\+Callee}} () const
+\begin{DoxyCompactList}\small\item\em This returns a list of all the caller and callees that are identified. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsc__ast__matchers_1_1CallerCalleeMatcher_a82b732dd8faee0376d4fb191016ed709}{register\+Matchers}} (Match\+Finder \&finder, clang\+::\+Decl\+Ref\+Expr $\ast$vd)
+\begin{DoxyCompactList}\small\item\em Register the matchers to identify caller and callees. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classsc__ast__matchers_1_1CallerCalleeMatcher_aae2116f803d9533ea7d40ea93d5ff91d}{run}} (const Match\+Finder\+::\+Match\+Result \&result)
+\begin{DoxyCompactList}\small\item\em This is the callback function when there is a match. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsc__ast__matchers_1_1CallerCalleeMatcher_a26c61446a948700d2be4251dc369c671}{dump}} ()
+\begin{DoxyCompactList}\small\item\em Dump out the caller and callee found in the sensitivity list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ std\+::tuple$<$ std\+::string, clang\+::\+Value\+Decl $\ast$, clang\+::\+Member\+Expr $\ast$, clang\+::\+Decl\+Ref\+Expr $\ast$, clang\+::\+Array\+Subscript\+Expr $\ast$ $>$ $>$ \mbox{\hyperlink{classsc__ast__matchers_1_1CallerCalleeMatcher_a0639e2ec62660649e0ca40a86d245733}{Caller\+Callee\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::tuple$<$ std\+::string, clang\+::\+Value\+Decl $\ast$, clang\+::\+Member\+Expr $\ast$, clang\+::\+Decl\+Ref\+Expr $\ast$, clang\+::\+Array\+Subscript\+Expr $\ast$ $>$ $>$ \mbox{\hyperlink{classsc__ast__matchers_1_1CallerCalleeMatcher_ab7914e2a434a605a8cc204bdf4a6653e}{calls\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Store the information. \end{DoxyCompactList}\item 
+clang\+::\+Decl\+Ref\+Expr $\ast$ \mbox{\hyperlink{classsc__ast__matchers_1_1CallerCalleeMatcher_a394b9839eecdbb505983451eff3e6642}{vd\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class Caller\+Calee\+Matcher
+
+This class identifies for a method call, who is the caller, and who is the callee. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classsc__ast__matchers_1_1CallerCalleeMatcher_a0639e2ec62660649e0ca40a86d245733}\label{classsc__ast__matchers_1_1CallerCalleeMatcher_a0639e2ec62660649e0ca40a86d245733}} 
+\index{sc\_ast\_matchers::CallerCalleeMatcher@{sc\_ast\_matchers::CallerCalleeMatcher}!CallerCalleeType@{CallerCalleeType}}
+\index{CallerCalleeType@{CallerCalleeType}!sc\_ast\_matchers::CallerCalleeMatcher@{sc\_ast\_matchers::CallerCalleeMatcher}}
+\doxysubsubsection{\texorpdfstring{CallerCalleeType}{CallerCalleeType}}
+{\footnotesize\ttfamily typedef std\+::vector$<$ std\+::tuple$<$std\+::string, clang\+::\+Value\+Decl $\ast$, clang\+::\+Member\+Expr $\ast$, clang\+::\+Decl\+Ref\+Expr $\ast$, clang\+::\+Array\+Subscript\+Expr $\ast$$>$ $>$ \mbox{\hyperlink{classsc__ast__matchers_1_1CallerCalleeMatcher_a0639e2ec62660649e0ca40a86d245733}{sc\+\_\+ast\+\_\+matchers\+::\+Caller\+Callee\+Matcher\+::\+Caller\+Callee\+Type}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyEnumerate}
+\item name
+\item Field\+Decl/\+Var\+Decl = Value\+Decl. Pointer to field declaration.
+\item The Member\+Expr from where I got this information. 
+\end{DoxyEnumerate}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsc__ast__matchers_1_1CallerCalleeMatcher_a26c61446a948700d2be4251dc369c671}\label{classsc__ast__matchers_1_1CallerCalleeMatcher_a26c61446a948700d2be4251dc369c671}} 
+\index{sc\_ast\_matchers::CallerCalleeMatcher@{sc\_ast\_matchers::CallerCalleeMatcher}!dump@{dump}}
+\index{dump@{dump}!sc\_ast\_matchers::CallerCalleeMatcher@{sc\_ast\_matchers::CallerCalleeMatcher}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void sc\+\_\+ast\+\_\+matchers\+::\+Caller\+Callee\+Matcher\+::dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dump out the caller and callee found in the sensitivity list. 
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1CallerCalleeMatcher_a8ada1a118d02f99757cd6d4919d4a165}\label{classsc__ast__matchers_1_1CallerCalleeMatcher_a8ada1a118d02f99757cd6d4919d4a165}} 
+\index{sc\_ast\_matchers::CallerCalleeMatcher@{sc\_ast\_matchers::CallerCalleeMatcher}!getCallerCallee@{getCallerCallee}}
+\index{getCallerCallee@{getCallerCallee}!sc\_ast\_matchers::CallerCalleeMatcher@{sc\_ast\_matchers::CallerCalleeMatcher}}
+\doxysubsubsection{\texorpdfstring{getCallerCallee()}{getCallerCallee()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc__ast__matchers_1_1CallerCalleeMatcher_a0639e2ec62660649e0ca40a86d245733}{Caller\+Callee\+Type}} sc\+\_\+ast\+\_\+matchers\+::\+Caller\+Callee\+Matcher\+::get\+Caller\+Callee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This returns a list of all the caller and callees that are identified. 
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1CallerCalleeMatcher_a82b732dd8faee0376d4fb191016ed709}\label{classsc__ast__matchers_1_1CallerCalleeMatcher_a82b732dd8faee0376d4fb191016ed709}} 
+\index{sc\_ast\_matchers::CallerCalleeMatcher@{sc\_ast\_matchers::CallerCalleeMatcher}!registerMatchers@{registerMatchers}}
+\index{registerMatchers@{registerMatchers}!sc\_ast\_matchers::CallerCalleeMatcher@{sc\_ast\_matchers::CallerCalleeMatcher}}
+\doxysubsubsection{\texorpdfstring{registerMatchers()}{registerMatchers()}}
+{\footnotesize\ttfamily void sc\+\_\+ast\+\_\+matchers\+::\+Caller\+Callee\+Matcher\+::register\+Matchers (\begin{DoxyParamCaption}\item[{Match\+Finder \&}]{finder,  }\item[{clang\+::\+Decl\+Ref\+Expr $\ast$}]{vd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Register the matchers to identify caller and callees. 
+
+This is the matcher that finds all the member expressions.. ~\newline
+\mbox{\Hypertarget{classsc__ast__matchers_1_1CallerCalleeMatcher_aae2116f803d9533ea7d40ea93d5ff91d}\label{classsc__ast__matchers_1_1CallerCalleeMatcher_aae2116f803d9533ea7d40ea93d5ff91d}} 
+\index{sc\_ast\_matchers::CallerCalleeMatcher@{sc\_ast\_matchers::CallerCalleeMatcher}!run@{run}}
+\index{run@{run}!sc\_ast\_matchers::CallerCalleeMatcher@{sc\_ast\_matchers::CallerCalleeMatcher}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily virtual void sc\+\_\+ast\+\_\+matchers\+::\+Caller\+Callee\+Matcher\+::run (\begin{DoxyParamCaption}\item[{const Match\+Finder\+::\+Match\+Result \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+This is the callback function when there is a match. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsc__ast__matchers_1_1CallerCalleeMatcher_ab7914e2a434a605a8cc204bdf4a6653e}\label{classsc__ast__matchers_1_1CallerCalleeMatcher_ab7914e2a434a605a8cc204bdf4a6653e}} 
+\index{sc\_ast\_matchers::CallerCalleeMatcher@{sc\_ast\_matchers::CallerCalleeMatcher}!calls\_@{calls\_}}
+\index{calls\_@{calls\_}!sc\_ast\_matchers::CallerCalleeMatcher@{sc\_ast\_matchers::CallerCalleeMatcher}}
+\doxysubsubsection{\texorpdfstring{calls\_}{calls\_}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::tuple$<$std\+::string, clang\+::\+Value\+Decl $\ast$, clang\+::\+Member\+Expr $\ast$, clang\+::\+Decl\+Ref\+Expr $\ast$, clang\+::\+Array\+Subscript\+Expr $\ast$$>$ $>$ sc\+\_\+ast\+\_\+matchers\+::\+Caller\+Callee\+Matcher\+::calls\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Store the information. 
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1CallerCalleeMatcher_a394b9839eecdbb505983451eff3e6642}\label{classsc__ast__matchers_1_1CallerCalleeMatcher_a394b9839eecdbb505983451eff3e6642}} 
+\index{sc\_ast\_matchers::CallerCalleeMatcher@{sc\_ast\_matchers::CallerCalleeMatcher}!vd\_@{vd\_}}
+\index{vd\_@{vd\_}!sc\_ast\_matchers::CallerCalleeMatcher@{sc\_ast\_matchers::CallerCalleeMatcher}}
+\doxysubsubsection{\texorpdfstring{vd\_}{vd\_}}
+{\footnotesize\ttfamily clang\+::\+Decl\+Ref\+Expr$\ast$ sc\+\_\+ast\+\_\+matchers\+::\+Caller\+Callee\+Matcher\+::vd\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/matchers/\mbox{\hyperlink{SensitivityMatcher_8h}{Sensitivity\+Matcher.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceparselib" kind="namespace" language="Python">
+    <compoundname>parselib</compoundname>
+    <innernamespace refid="namespaceparselib_1_1compound">parselib::compound</innernamespace>
+    <innernamespace refid="namespaceparselib_1_1grammar">parselib::grammar</innernamespace>
+    <innernamespace refid="namespaceparselib_1_1primitives">parselib::primitives</innernamespace>
+    <innernamespace refid="namespaceparselib_1_1transforms">parselib::transforms</innernamespace>
+    <innernamespace refid="namespaceparselib_1_1utils">parselib::utils</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="plugins/hdl/parselib/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

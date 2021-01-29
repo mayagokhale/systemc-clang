@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__clang_1_1SystemCClangAXN" kind="class" language="C++" prot="public">
+    <compoundname>systemc_clang::SystemCClangAXN</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ASTFrontendAction</basecompoundref>
+    <includes refid="PluginAction_8h" local="no">PluginAction.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsystemc__clang_1_1SystemCClangAXN_1a1ea04d6008f0e86535619a6c2967f042" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string systemc_clang::SystemCClangAXN::top_</definition>
+        <argsstring></argsstring>
+        <name>top_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/PluginAction.h" line="47" column="15" bodyfile="src/PluginAction.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1SystemCClangAXN_1ac69766a7761fbfef6fc497ac7e0b2643" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>systemc_clang::SystemCClangAXN::SystemCClangAXN</definition>
+        <argsstring>()</argsstring>
+        <name>SystemCClangAXN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/PluginAction.h" line="44" column="3" bodyfile="src/PluginAction.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1SystemCClangAXN_1a8c22aff311737d9e6b20a744b01c2fc6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::unique_ptr&lt; ASTConsumer &gt;</type>
+        <definition>virtual std::unique_ptr&lt;ASTConsumer&gt; systemc_clang::SystemCClangAXN::CreateASTConsumer</definition>
+        <argsstring>(clang::CompilerInstance &amp;Compiler, llvm::StringRef inFile)</argsstring>
+        <name>CreateASTConsumer</name>
+        <param>
+          <type>clang::CompilerInstance &amp;</type>
+          <declname>Compiler</declname>
+        </param>
+        <param>
+          <type>llvm::StringRef</type>
+          <declname>inFile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/PluginAction.h" line="50" column="27" bodyfile="src/PluginAction.h" bodystart="50" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>systemc_clang::SystemCClangAXN</label>
+        <link refid="classsystemc__clang_1_1SystemCClangAXN"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ASTFrontendAction</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>systemc_clang::SystemCClangAXN</label>
+        <link refid="classsystemc__clang_1_1SystemCClangAXN"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ASTFrontendAction</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/PluginAction.h" line="42" column="1" bodyfile="src/PluginAction.h" bodystart="42" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classsystemc__clang_1_1SystemCClangAXN_1a8c22aff311737d9e6b20a744b01c2fc6" prot="public" virt="virtual"><scope>systemc_clang::SystemCClangAXN</scope><name>CreateASTConsumer</name></member>
+      <member refid="classsystemc__clang_1_1SystemCClangAXN_1ac69766a7761fbfef6fc497ac7e0b2643" prot="public" virt="non-virtual"><scope>systemc_clang::SystemCClangAXN</scope><name>SystemCClangAXN</name></member>
+      <member refid="classsystemc__clang_1_1SystemCClangAXN_1a1ea04d6008f0e86535619a6c2967f042" prot="private" virt="non-virtual"><scope>systemc_clang::SystemCClangAXN</scope><name>top_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

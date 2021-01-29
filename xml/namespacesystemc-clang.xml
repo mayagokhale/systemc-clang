@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacesystemc-clang" kind="namespace" language="Python">
+    <compoundname>systemc-clang</compoundname>
+    <innerclass refid="classsystemc-clang_1_1UnconfiguredEnvironment" prot="public">systemc-clang::UnconfiguredEnvironment</innerclass>
+    <innerclass refid="classsystemc-clang_1_1MissingSystemCClang" prot="public">systemc-clang::MissingSystemCClang</innerclass>
+    <innerclass refid="classsystemc-clang_1_1InvalidCommandlineFormat" prot="public">systemc-clang::InvalidCommandlineFormat</innerclass>
+    <innerclass refid="classsystemc-clang_1_1SystemCClangFatalError" prot="public">systemc-clang::SystemCClangFatalError</innerclass>
+    <innerclass refid="classsystemc-clang_1_1SystemCClang" prot="public">systemc-clang::SystemCClang</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacesystemc-clang_1ab2bb47e81abd0921c92a259e649f3bdb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>systemc-clang.parser</definition>
+        <argsstring></argsstring>
+        <name>parser</name>
+        <initializer>=  ArgumentParser()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="25" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesystemc-clang_1acb2b2f8703d0901d9680cf916ee6ae7b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>systemc-clang.help</definition>
+        <argsstring></argsstring>
+        <name>help</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="26" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesystemc-clang_1a88367ccbfd5724e2d5323b3be6148c88" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>systemc-clang.action</definition>
+        <argsstring></argsstring>
+        <name>action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="30" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacesystemc-clang_1a4d5480420788fc57a3f59aeb990d3c50" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>systemc-clang.default</definition>
+        <argsstring></argsstring>
+        <name>default</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="31" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacesystemc-clang_1a86ec9806f136221d0918532dd00faa48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def systemc-clang.environment_check</definition>
+        <argsstring>()</argsstring>
+        <name>environment_check</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="179" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="179" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesystemc-clang_1a762a638d975f6d6cd49b5f0d77c0fee7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def systemc-clang.get_argv</definition>
+        <argsstring>()</argsstring>
+        <name>get_argv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>returns the source file paths to translate, arguments for systemc-clang and argument for this script
+returns: sources, argv_sysc, argv_python
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="191" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="191" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesystemc-clang_1a52c5c8d14030fad0d8f81dbc8609f6a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def systemc-clang.invoke_sysc</definition>
+        <argsstring>(argv_sysc)</argsstring>
+        <name>invoke_sysc</name>
+        <param>
+          <type>argv_sysc</type>
+          <defname>argv_sysc</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="210" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="210" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesystemc-clang_1a5ec25c0912e6fcb18576de3a5a874a30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def systemc-clang.invoke_translation</definition>
+        <argsstring>(target, argv_python)</argsstring>
+        <name>invoke_translation</name>
+        <param>
+          <type>target</type>
+          <defname>target</defname>
+        </param>
+        <param>
+          <type>argv_python</type>
+          <defname>argv_python</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="219" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="219" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesystemc-clang_1a30b9d13419071dcd87196e3d65dd8723" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def systemc-clang.main</definition>
+        <argsstring>(argv_sysc, argv_python)</argsstring>
+        <name>main</name>
+        <param>
+          <type>argv_sysc</type>
+          <defname>argv_sysc</defname>
+        </param>
+        <param>
+          <type>argv_python</type>
+          <defname>argv_python</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="231" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="231" bodyend="235"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="plugins/hdl/systemc-clang.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

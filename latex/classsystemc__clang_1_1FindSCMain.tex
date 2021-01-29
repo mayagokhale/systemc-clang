@@ -1,0 +1,108 @@
+\hypertarget{classsystemc__clang_1_1FindSCMain}{}\doxysection{systemc\+\_\+clang\+::Find\+SCMain Class Reference}
+\label{classsystemc__clang_1_1FindSCMain}\index{systemc\_clang::FindSCMain@{systemc\_clang::FindSCMain}}
+
+
+{\ttfamily \#include $<$Find\+SCMain.\+h$>$}
+
+
+
+Inheritance diagram for systemc\+\_\+clang\+::Find\+SCMain\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classsystemc__clang_1_1FindSCMain__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for systemc\+\_\+clang\+::Find\+SCMain\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classsystemc__clang_1_1FindSCMain__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindSCMain_a7a9515470bb6c39098e143dcc3a23f4b}{Find\+SCMain}} (Translation\+Unit\+Decl $\ast$, llvm\+::raw\+\_\+ostream \&)
+\item 
+virtual \mbox{\hyperlink{classsystemc__clang_1_1FindSCMain_a54baaccdfc03deeaec9185b118f5a8df}{$\sim$\+Find\+SCMain}} ()
+\item 
+virtual bool \mbox{\hyperlink{classsystemc__clang_1_1FindSCMain_af5268ccf3e2a395a2d1928565a95048e}{Visit\+Function\+Decl}} (Function\+Decl $\ast$decl)
+\item 
+Function\+Decl $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1FindSCMain_a7e50abfad4c7f5c19bb0aefd16837dde}{get\+SCMain\+Function\+Decl}} () const
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1FindSCMain_a1861400b10d1338b0c4cfaebe2881cf6}{is\+SCMain\+Found}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+llvm\+::raw\+\_\+ostream \& \mbox{\hyperlink{classsystemc__clang_1_1FindSCMain_a0b38e2c16d8375b57a81d3e598249226}{os\+\_\+}}
+\item 
+Function\+Decl $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1FindSCMain_af2712f3a9c2c6def8dd47c2b82b73d19}{sc\+\_\+main\+\_\+function\+\_\+declaration\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindSCMain_a7a9515470bb6c39098e143dcc3a23f4b}\label{classsystemc__clang_1_1FindSCMain_a7a9515470bb6c39098e143dcc3a23f4b}} 
+\index{systemc\_clang::FindSCMain@{systemc\_clang::FindSCMain}!FindSCMain@{FindSCMain}}
+\index{FindSCMain@{FindSCMain}!systemc\_clang::FindSCMain@{systemc\_clang::FindSCMain}}
+\doxysubsubsection{\texorpdfstring{FindSCMain()}{FindSCMain()}}
+{\footnotesize\ttfamily Find\+SCMain\+::\+Find\+SCMain (\begin{DoxyParamCaption}\item[{Translation\+Unit\+Decl $\ast$}]{tu\+Decl,  }\item[{llvm\+::raw\+\_\+ostream \&}]{os }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindSCMain_a54baaccdfc03deeaec9185b118f5a8df}\label{classsystemc__clang_1_1FindSCMain_a54baaccdfc03deeaec9185b118f5a8df}} 
+\index{systemc\_clang::FindSCMain@{systemc\_clang::FindSCMain}!````~FindSCMain@{$\sim$FindSCMain}}
+\index{````~FindSCMain@{$\sim$FindSCMain}!systemc\_clang::FindSCMain@{systemc\_clang::FindSCMain}}
+\doxysubsubsection{\texorpdfstring{$\sim$FindSCMain()}{~FindSCMain()}}
+{\footnotesize\ttfamily Find\+SCMain\+::$\sim$\+Find\+SCMain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindSCMain_a7e50abfad4c7f5c19bb0aefd16837dde}\label{classsystemc__clang_1_1FindSCMain_a7e50abfad4c7f5c19bb0aefd16837dde}} 
+\index{systemc\_clang::FindSCMain@{systemc\_clang::FindSCMain}!getSCMainFunctionDecl@{getSCMainFunctionDecl}}
+\index{getSCMainFunctionDecl@{getSCMainFunctionDecl}!systemc\_clang::FindSCMain@{systemc\_clang::FindSCMain}}
+\doxysubsubsection{\texorpdfstring{getSCMainFunctionDecl()}{getSCMainFunctionDecl()}}
+{\footnotesize\ttfamily Function\+Decl $\ast$ Find\+SCMain\+::get\+SCMain\+Function\+Decl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindSCMain_a1861400b10d1338b0c4cfaebe2881cf6}\label{classsystemc__clang_1_1FindSCMain_a1861400b10d1338b0c4cfaebe2881cf6}} 
+\index{systemc\_clang::FindSCMain@{systemc\_clang::FindSCMain}!isSCMainFound@{isSCMainFound}}
+\index{isSCMainFound@{isSCMainFound}!systemc\_clang::FindSCMain@{systemc\_clang::FindSCMain}}
+\doxysubsubsection{\texorpdfstring{isSCMainFound()}{isSCMainFound()}}
+{\footnotesize\ttfamily bool Find\+SCMain\+::is\+SCMain\+Found (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindSCMain_af5268ccf3e2a395a2d1928565a95048e}\label{classsystemc__clang_1_1FindSCMain_af5268ccf3e2a395a2d1928565a95048e}} 
+\index{systemc\_clang::FindSCMain@{systemc\_clang::FindSCMain}!VisitFunctionDecl@{VisitFunctionDecl}}
+\index{VisitFunctionDecl@{VisitFunctionDecl}!systemc\_clang::FindSCMain@{systemc\_clang::FindSCMain}}
+\doxysubsubsection{\texorpdfstring{VisitFunctionDecl()}{VisitFunctionDecl()}}
+{\footnotesize\ttfamily bool Find\+SCMain\+::\+Visit\+Function\+Decl (\begin{DoxyParamCaption}\item[{Function\+Decl $\ast$}]{decl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Find sc\+\_\+main. There are three conditions to satisfy this\+:
+\begin{DoxyEnumerate}
+\item Must have sc\+\_\+main in its name.
+\item Must have a body
+\item Must {\itshape not} be a first declaration. (This is becuase systemc.\+h includes a null definition of sc\+\_\+main.
+\end{DoxyEnumerate}
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindSCMain_a0b38e2c16d8375b57a81d3e598249226}\label{classsystemc__clang_1_1FindSCMain_a0b38e2c16d8375b57a81d3e598249226}} 
+\index{systemc\_clang::FindSCMain@{systemc\_clang::FindSCMain}!os\_@{os\_}}
+\index{os\_@{os\_}!systemc\_clang::FindSCMain@{systemc\_clang::FindSCMain}}
+\doxysubsubsection{\texorpdfstring{os\_}{os\_}}
+{\footnotesize\ttfamily llvm\+::raw\+\_\+ostream\& systemc\+\_\+clang\+::\+Find\+SCMain\+::os\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindSCMain_af2712f3a9c2c6def8dd47c2b82b73d19}\label{classsystemc__clang_1_1FindSCMain_af2712f3a9c2c6def8dd47c2b82b73d19}} 
+\index{systemc\_clang::FindSCMain@{systemc\_clang::FindSCMain}!sc\_main\_function\_declaration\_@{sc\_main\_function\_declaration\_}}
+\index{sc\_main\_function\_declaration\_@{sc\_main\_function\_declaration\_}!systemc\_clang::FindSCMain@{systemc\_clang::FindSCMain}}
+\doxysubsubsection{\texorpdfstring{sc\_main\_function\_declaration\_}{sc\_main\_function\_declaration\_}}
+{\footnotesize\ttfamily Function\+Decl$\ast$ systemc\+\_\+clang\+::\+Find\+SCMain\+::sc\+\_\+main\+\_\+function\+\_\+declaration\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/matchers/\mbox{\hyperlink{FindSCMain_8h}{Find\+SCMain.\+h}}\item 
+src/matchers/\mbox{\hyperlink{FindSCMain_8cpp}{Find\+SCMain.\+cpp}}\end{DoxyCompactItemize}

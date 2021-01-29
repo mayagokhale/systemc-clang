@@ -1,0 +1,113 @@
+\hypertarget{classparselib_1_1transforms_1_1type__node_1_1TypeNode}{}\doxysection{parselib.\+transforms.\+type\+\_\+node.\+Type\+Node Class Reference}
+\label{classparselib_1_1transforms_1_1type__node_1_1TypeNode}\index{parselib.transforms.type\_node.TypeNode@{parselib.transforms.type\_node.TypeNode}}
+
+
+Inheritance diagram for parselib.\+transforms.\+type\+\_\+node.\+Type\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classparselib_1_1transforms_1_1type__node_1_1TypeNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for parselib.\+transforms.\+type\+\_\+node.\+Type\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classparselib_1_1transforms_1_1type__node_1_1TypeNode__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a3d00f6f72fc3be9740e1f0a4f61a942c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a1e3e7c439ede68d2de0bfcd4ecf64b76}{name}}, \mbox{\hyperlink{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a8451200beb458ed088e1eec9a6c5c10f}{params}}, \mbox{\hyperlink{classparselib_1_1transforms_1_1type__node_1_1TypeNode_acab32d8a6a5044e22bad883d0b43e39f}{fields}})
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a4e750c9fb1fe18fc76d9d133395297fc}{build\+\_\+param\+\_\+dict}} (self, \mbox{\hyperlink{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a8451200beb458ed088e1eec9a6c5c10f}{params}})
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a3d40775eb53865cbef714addced16a57}{bind}} (self, param\+\_\+list, param\+\_\+dict=None)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a32ad5cedc60686e3ad2550ae94feca78}{instantiate}} (self, \mbox{\hyperlink{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a8451200beb458ed088e1eec9a6c5c10f}{params}}=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a1e3e7c439ede68d2de0bfcd4ecf64b76}{name}}
+\item 
+\mbox{\hyperlink{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a8451200beb458ed088e1eec9a6c5c10f}{params}}
+\item 
+\mbox{\hyperlink{classparselib_1_1transforms_1_1type__node_1_1TypeNode_acab32d8a6a5044e22bad883d0b43e39f}{fields}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This class represents any type that is present in the _hdl.txt
+Note: this type is used in two places:
+    1. representing the nested type itself, with typedef, in which it is a tree like structure
+    2. representing the type instantiation, which is only provided with concrete value of type params
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a3d00f6f72fc3be9740e1f0a4f61a942c}\label{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a3d00f6f72fc3be9740e1f0a4f61a942c}} 
+\index{parselib.transforms.type\_node.TypeNode@{parselib.transforms.type\_node.TypeNode}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!parselib.transforms.type\_node.TypeNode@{parselib.transforms.type\_node.TypeNode}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+type\+\_\+node.\+Type\+Node.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{params,  }\item[{}]{fields }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}name: type name
+params: type parameteres, a list of string, in fp_t, this would be E, F
+fields: a list of (string, TypeNode) tuple, representing the fields, a primitive type should keep this as empty. In fp_t, this would be (frac, ... ), (expo, ... ), (sign, ... )
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a3d40775eb53865cbef714addced16a57}\label{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a3d40775eb53865cbef714addced16a57}} 
+\index{parselib.transforms.type\_node.TypeNode@{parselib.transforms.type\_node.TypeNode}!bind@{bind}}
+\index{bind@{bind}!parselib.transforms.type\_node.TypeNode@{parselib.transforms.type\_node.TypeNode}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+type\+\_\+node.\+Type\+Node.\+bind (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{param\+\_\+list,  }\item[{}]{param\+\_\+dict = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}if params_dict is not empty, use params_dict, otherwise, first build param dict
+currently, things like template<E, sc_in<E> > is not supported
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a4e750c9fb1fe18fc76d9d133395297fc}\label{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a4e750c9fb1fe18fc76d9d133395297fc}} 
+\index{parselib.transforms.type\_node.TypeNode@{parselib.transforms.type\_node.TypeNode}!build\_param\_dict@{build\_param\_dict}}
+\index{build\_param\_dict@{build\_param\_dict}!parselib.transforms.type\_node.TypeNode@{parselib.transforms.type\_node.TypeNode}}
+\doxysubsubsection{\texorpdfstring{build\_param\_dict()}{build\_param\_dict()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+type\+\_\+node.\+Type\+Node.\+build\+\_\+param\+\_\+dict (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{params }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a32ad5cedc60686e3ad2550ae94feca78}\label{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a32ad5cedc60686e3ad2550ae94feca78}} 
+\index{parselib.transforms.type\_node.TypeNode@{parselib.transforms.type\_node.TypeNode}!instantiate@{instantiate}}
+\index{instantiate@{instantiate}!parselib.transforms.type\_node.TypeNode@{parselib.transforms.type\_node.TypeNode}}
+\doxysubsubsection{\texorpdfstring{instantiate()}{instantiate()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+type\+\_\+node.\+Type\+Node.\+instantiate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{params = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__node_1_1TypeNode_acab32d8a6a5044e22bad883d0b43e39f}\label{classparselib_1_1transforms_1_1type__node_1_1TypeNode_acab32d8a6a5044e22bad883d0b43e39f}} 
+\index{parselib.transforms.type\_node.TypeNode@{parselib.transforms.type\_node.TypeNode}!fields@{fields}}
+\index{fields@{fields}!parselib.transforms.type\_node.TypeNode@{parselib.transforms.type\_node.TypeNode}}
+\doxysubsubsection{\texorpdfstring{fields}{fields}}
+{\footnotesize\ttfamily parselib.\+transforms.\+type\+\_\+node.\+Type\+Node.\+fields}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a1e3e7c439ede68d2de0bfcd4ecf64b76}\label{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a1e3e7c439ede68d2de0bfcd4ecf64b76}} 
+\index{parselib.transforms.type\_node.TypeNode@{parselib.transforms.type\_node.TypeNode}!name@{name}}
+\index{name@{name}!parselib.transforms.type\_node.TypeNode@{parselib.transforms.type\_node.TypeNode}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily parselib.\+transforms.\+type\+\_\+node.\+Type\+Node.\+name}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a8451200beb458ed088e1eec9a6c5c10f}\label{classparselib_1_1transforms_1_1type__node_1_1TypeNode_a8451200beb458ed088e1eec9a6c5c10f}} 
+\index{parselib.transforms.type\_node.TypeNode@{parselib.transforms.type\_node.TypeNode}!params@{params}}
+\index{params@{params}!parselib.transforms.type\_node.TypeNode@{parselib.transforms.type\_node.TypeNode}}
+\doxysubsubsection{\texorpdfstring{params}{params}}
+{\footnotesize\ttfamily parselib.\+transforms.\+type\+\_\+node.\+Type\+Node.\+params}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+plugins/hdl/parselib/transforms/\mbox{\hyperlink{type__node_8py}{type\+\_\+node.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,333 @@
+\hypertarget{classsystemc__hdl_1_1HDLBody}{}\doxysection{systemc\+\_\+hdl\+::HDLBody Class Reference}
+\label{classsystemc__hdl_1_1HDLBody}\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+
+
+{\ttfamily \#include $<$HDLBody.\+h$>$}
+
+
+
+Inheritance diagram for systemc\+\_\+hdl\+::HDLBody\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classsystemc__hdl_1_1HDLBody__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for systemc\+\_\+hdl\+::HDLBody\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsystemc__hdl_1_1HDLBody__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_a734cef75cd9a13b06f57f2e0ec778cf2}{HDLBody}} (CXXMethod\+Decl $\ast$emd, \mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}} \&h\+\_\+top, clang\+::\+Diagnostics\+Engine \&diag\+\_\+engine, const ASTContext \&ast\+\_\+context)
+\item 
+\mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_ad691bfbc389673287e37513fa514affb}{HDLBody}} (Stmt $\ast$stmt, \mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}} \&h\+\_\+top, clang\+::\+Diagnostics\+Engine \&diag\+\_\+engine, const ASTContext \&ast\+\_\+context, bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_a1384bcc5e7228663ec7cb0ccc6eef41e}{add\+\_\+info}}=true)
+\item 
+virtual \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_ad5ca9f42bdfcd0663d41aba6c57800c9}{$\sim$\+HDLBody}} ()
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_aafad671a20a179ef463167b25485e8fd}{Traverse\+Compound\+Stmt}} (Compound\+Stmt $\ast$compound\+Stmt)
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_a74516f472ce4e35722be7643c053b7b6}{Traverse\+Stmt}} (Stmt $\ast$stmt)
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_aca201d3841cae13a158ad56804b39702}{Traverse\+Decl\+Stmt}} (Decl\+Stmt $\ast$declstmt)
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_a55042a90189466a86766cfb296246ae3}{Process\+Var\+Decl}} (Var\+Decl $\ast$vardecl)
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_acc81f61d10ee061d86ccc73dd5f9de01}{Traverse\+Binary\+Operator}} (Binary\+Operator $\ast$expr)
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_aea5adec11845becc800e3d0e10c58008}{Traverse\+Unary\+Operator}} (Unary\+Operator $\ast$expr)
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_adb7a15568d3f6a9f4a45248a2793fcc0}{Traverse\+Conditional\+Operator}} (Conditional\+Operator $\ast$expr)
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_a5927cd7ddc838f65bf54e11893e84df3}{Traverse\+Integer\+Literal}} (Integer\+Literal $\ast$lit)
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_a458fceb18a00fa69d63b9e8a83ea798a}{Traverse\+CXXBool\+Literal\+Expr}} (CXXBool\+Literal\+Expr $\ast$b)
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_a0c8d6b9029cf7bba2982d7253d610412}{Traverse\+Decl\+Ref\+Expr}} (Decl\+Ref\+Expr $\ast$expr)
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_a8406d03c977f43a3b31ed07962ea9845}{Traverse\+Array\+Subscript\+Expr}} (Array\+Subscript\+Expr $\ast$expr)
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_a0eb4f05f7689a354ebc629757f607d5c}{Traverse\+CXXMember\+Call\+Expr}} (CXXMember\+Call\+Expr $\ast$callexpr)
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_a0dc3dfd50bf589fc7c69981eea7ac1c2}{Traverse\+CXXOperator\+Call\+Expr}} (CXXOperator\+Call\+Expr $\ast$opcall)
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_ab511f4ac8481cf7c2484a66a6126d513}{Traverse\+Call\+Expr}} (Call\+Expr $\ast$callexpr)
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_a3ca3d90287f200a28ed63964f597dd56}{Traverse\+Member\+Expr}} (Member\+Expr $\ast$memberexpr)
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_aebb8def7816135ee91e7bafafb156ddf}{Traverse\+If\+Stmt}} (If\+Stmt $\ast$ifs)
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_ac93015ba58e789a3b7cf6811bd4ed31d}{Traverse\+For\+Stmt}} (For\+Stmt $\ast$fors)
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_ac7fd58793093f1b4a92b15c82fb1f931}{Traverse\+Switch\+Stmt}} (Switch\+Stmt $\ast$switchs)
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_abc6014214ed2dc52d3e7d28188387112}{Process\+Switch\+Case}} (Switch\+Case $\ast$cases)
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_aee15dc90242038d2cca3beef78cfac45}{Traverse\+While\+Stmt}} (While\+Stmt $\ast$whiles)
+\item 
+void \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_a6b7efd524dc48ad45e362c6abe3b6c50}{Add\+Vnames}} (\mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}} \&hvns)
+\item 
+\mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}} \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_ab94ba57fe3e7aed9d56f89604a94a4ac}{Normalize\+Hcode}} (\mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}} hinp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ string, Function\+Decl $\ast$ $>$ \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_aa2c5f0157aecad60a58a600bb315dc87}{methodecls}}
+\item 
+clang\+::\+Diagnostics\+Engine \& \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_aa78bf9a85717918296b930aa0ae93e25}{diag\+\_\+e}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_a213d15671a95dcc8cb46eb663dc6a159}{is\+Logical\+Op}} (clang\+::\+Overloaded\+Operator\+Kind opc)
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_a87368c8c56e554352e112391d4fe2b3f}{is\+Assign\+Op}} (\mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}} hp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}} \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_a63909266f79a4ac9c8ed9264a6b675a7}{h\+\_\+ret}}
+\item 
+\mbox{\hyperlink{namespacehnode_a3f10aaef8411f7c053be70eac6c4b52a}{hdecl\+\_\+name\+\_\+map\+\_\+t}} \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_a3378aca791068509cfa933cade96eb2d}{vname\+\_\+map}}
+\item 
+\mbox{\hyperlink{classhnode_1_1name__serve}{name\+\_\+serve}} \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_a966103c3321be502a9ad764d5be76d4e}{lname}}
+\item 
+bool \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_a1384bcc5e7228663ec7cb0ccc6eef41e}{add\+\_\+info}}
+\item 
+\mbox{\hyperlink{classhnode_1_1util}{util}} \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_a31853db61435860151cb1d805d47251a}{lutil}}
+\item 
+const ASTContext \& \mbox{\hyperlink{classsystemc__hdl_1_1HDLBody_a09991f11eb7e41766147a1ac9ee1f4ba}{ast\+\_\+context\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_a734cef75cd9a13b06f57f2e0ec778cf2}\label{classsystemc__hdl_1_1HDLBody_a734cef75cd9a13b06f57f2e0ec778cf2}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!HDLBody@{HDLBody}}
+\index{HDLBody@{HDLBody}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{HDLBody()}{HDLBody()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily systemc\+\_\+hdl\+::\+HDLBody\+::\+HDLBody (\begin{DoxyParamCaption}\item[{CXXMethod\+Decl $\ast$}]{emd,  }\item[{\mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}} \&}]{h\+\_\+top,  }\item[{clang\+::\+Diagnostics\+Engine \&}]{diag\+\_\+engine,  }\item[{const ASTContext \&}]{ast\+\_\+context }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_ad691bfbc389673287e37513fa514affb}\label{classsystemc__hdl_1_1HDLBody_ad691bfbc389673287e37513fa514affb}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!HDLBody@{HDLBody}}
+\index{HDLBody@{HDLBody}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{HDLBody()}{HDLBody()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily systemc\+\_\+hdl\+::\+HDLBody\+::\+HDLBody (\begin{DoxyParamCaption}\item[{Stmt $\ast$}]{stmt,  }\item[{\mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}} \&}]{h\+\_\+top,  }\item[{clang\+::\+Diagnostics\+Engine \&}]{diag\+\_\+engine,  }\item[{const ASTContext \&}]{ast\+\_\+context,  }\item[{bool}]{add\+\_\+info = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_ad5ca9f42bdfcd0663d41aba6c57800c9}\label{classsystemc__hdl_1_1HDLBody_ad5ca9f42bdfcd0663d41aba6c57800c9}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!````~HDLBody@{$\sim$HDLBody}}
+\index{````~HDLBody@{$\sim$HDLBody}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{$\sim$HDLBody()}{~HDLBody()}}
+{\footnotesize\ttfamily systemc\+\_\+hdl\+::\+HDLBody\+::$\sim$\+HDLBody (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_a6b7efd524dc48ad45e362c6abe3b6c50}\label{classsystemc__hdl_1_1HDLBody_a6b7efd524dc48ad45e362c6abe3b6c50}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!AddVnames@{AddVnames}}
+\index{AddVnames@{AddVnames}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{AddVnames()}{AddVnames()}}
+{\footnotesize\ttfamily void systemc\+\_\+hdl\+::\+HDLBody\+::\+Add\+Vnames (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}} \&}]{hvns }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_a87368c8c56e554352e112391d4fe2b3f}\label{classsystemc__hdl_1_1HDLBody_a87368c8c56e554352e112391d4fe2b3f}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!isAssignOp@{isAssignOp}}
+\index{isAssignOp@{isAssignOp}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{isAssignOp()}{isAssignOp()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::is\+Assign\+Op (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}}}]{hp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_a213d15671a95dcc8cb46eb663dc6a159}\label{classsystemc__hdl_1_1HDLBody_a213d15671a95dcc8cb46eb663dc6a159}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!isLogicalOp@{isLogicalOp}}
+\index{isLogicalOp@{isLogicalOp}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{isLogicalOp()}{isLogicalOp()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::is\+Logical\+Op (\begin{DoxyParamCaption}\item[{clang\+::\+Overloaded\+Operator\+Kind}]{opc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_ab94ba57fe3e7aed9d56f89604a94a4ac}\label{classsystemc__hdl_1_1HDLBody_ab94ba57fe3e7aed9d56f89604a94a4ac}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!NormalizeHcode@{NormalizeHcode}}
+\index{NormalizeHcode@{NormalizeHcode}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{NormalizeHcode()}{NormalizeHcode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}} systemc\+\_\+hdl\+::\+HDLBody\+::\+Normalize\+Hcode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}}}]{hinp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_abc6014214ed2dc52d3e7d28188387112}\label{classsystemc__hdl_1_1HDLBody_abc6014214ed2dc52d3e7d28188387112}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!ProcessSwitchCase@{ProcessSwitchCase}}
+\index{ProcessSwitchCase@{ProcessSwitchCase}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{ProcessSwitchCase()}{ProcessSwitchCase()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::\+Process\+Switch\+Case (\begin{DoxyParamCaption}\item[{Switch\+Case $\ast$}]{cases }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_a55042a90189466a86766cfb296246ae3}\label{classsystemc__hdl_1_1HDLBody_a55042a90189466a86766cfb296246ae3}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!ProcessVarDecl@{ProcessVarDecl}}
+\index{ProcessVarDecl@{ProcessVarDecl}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{ProcessVarDecl()}{ProcessVarDecl()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::\+Process\+Var\+Decl (\begin{DoxyParamCaption}\item[{Var\+Decl $\ast$}]{vardecl }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_a8406d03c977f43a3b31ed07962ea9845}\label{classsystemc__hdl_1_1HDLBody_a8406d03c977f43a3b31ed07962ea9845}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!TraverseArraySubscriptExpr@{TraverseArraySubscriptExpr}}
+\index{TraverseArraySubscriptExpr@{TraverseArraySubscriptExpr}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{TraverseArraySubscriptExpr()}{TraverseArraySubscriptExpr()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::\+Traverse\+Array\+Subscript\+Expr (\begin{DoxyParamCaption}\item[{Array\+Subscript\+Expr $\ast$}]{expr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_acc81f61d10ee061d86ccc73dd5f9de01}\label{classsystemc__hdl_1_1HDLBody_acc81f61d10ee061d86ccc73dd5f9de01}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!TraverseBinaryOperator@{TraverseBinaryOperator}}
+\index{TraverseBinaryOperator@{TraverseBinaryOperator}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{TraverseBinaryOperator()}{TraverseBinaryOperator()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::\+Traverse\+Binary\+Operator (\begin{DoxyParamCaption}\item[{Binary\+Operator $\ast$}]{expr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_ab511f4ac8481cf7c2484a66a6126d513}\label{classsystemc__hdl_1_1HDLBody_ab511f4ac8481cf7c2484a66a6126d513}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!TraverseCallExpr@{TraverseCallExpr}}
+\index{TraverseCallExpr@{TraverseCallExpr}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{TraverseCallExpr()}{TraverseCallExpr()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::\+Traverse\+Call\+Expr (\begin{DoxyParamCaption}\item[{Call\+Expr $\ast$}]{callexpr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_aafad671a20a179ef463167b25485e8fd}\label{classsystemc__hdl_1_1HDLBody_aafad671a20a179ef463167b25485e8fd}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!TraverseCompoundStmt@{TraverseCompoundStmt}}
+\index{TraverseCompoundStmt@{TraverseCompoundStmt}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{TraverseCompoundStmt()}{TraverseCompoundStmt()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::\+Traverse\+Compound\+Stmt (\begin{DoxyParamCaption}\item[{Compound\+Stmt $\ast$}]{compound\+Stmt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_adb7a15568d3f6a9f4a45248a2793fcc0}\label{classsystemc__hdl_1_1HDLBody_adb7a15568d3f6a9f4a45248a2793fcc0}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!TraverseConditionalOperator@{TraverseConditionalOperator}}
+\index{TraverseConditionalOperator@{TraverseConditionalOperator}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{TraverseConditionalOperator()}{TraverseConditionalOperator()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::\+Traverse\+Conditional\+Operator (\begin{DoxyParamCaption}\item[{Conditional\+Operator $\ast$}]{expr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_a458fceb18a00fa69d63b9e8a83ea798a}\label{classsystemc__hdl_1_1HDLBody_a458fceb18a00fa69d63b9e8a83ea798a}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!TraverseCXXBoolLiteralExpr@{TraverseCXXBoolLiteralExpr}}
+\index{TraverseCXXBoolLiteralExpr@{TraverseCXXBoolLiteralExpr}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{TraverseCXXBoolLiteralExpr()}{TraverseCXXBoolLiteralExpr()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::\+Traverse\+CXXBool\+Literal\+Expr (\begin{DoxyParamCaption}\item[{CXXBool\+Literal\+Expr $\ast$}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_a0eb4f05f7689a354ebc629757f607d5c}\label{classsystemc__hdl_1_1HDLBody_a0eb4f05f7689a354ebc629757f607d5c}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!TraverseCXXMemberCallExpr@{TraverseCXXMemberCallExpr}}
+\index{TraverseCXXMemberCallExpr@{TraverseCXXMemberCallExpr}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{TraverseCXXMemberCallExpr()}{TraverseCXXMemberCallExpr()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::\+Traverse\+CXXMember\+Call\+Expr (\begin{DoxyParamCaption}\item[{CXXMember\+Call\+Expr $\ast$}]{callexpr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_a0dc3dfd50bf589fc7c69981eea7ac1c2}\label{classsystemc__hdl_1_1HDLBody_a0dc3dfd50bf589fc7c69981eea7ac1c2}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!TraverseCXXOperatorCallExpr@{TraverseCXXOperatorCallExpr}}
+\index{TraverseCXXOperatorCallExpr@{TraverseCXXOperatorCallExpr}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{TraverseCXXOperatorCallExpr()}{TraverseCXXOperatorCallExpr()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::\+Traverse\+CXXOperator\+Call\+Expr (\begin{DoxyParamCaption}\item[{CXXOperator\+Call\+Expr $\ast$}]{opcall }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_a0c8d6b9029cf7bba2982d7253d610412}\label{classsystemc__hdl_1_1HDLBody_a0c8d6b9029cf7bba2982d7253d610412}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!TraverseDeclRefExpr@{TraverseDeclRefExpr}}
+\index{TraverseDeclRefExpr@{TraverseDeclRefExpr}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{TraverseDeclRefExpr()}{TraverseDeclRefExpr()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::\+Traverse\+Decl\+Ref\+Expr (\begin{DoxyParamCaption}\item[{Decl\+Ref\+Expr $\ast$}]{expr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_aca201d3841cae13a158ad56804b39702}\label{classsystemc__hdl_1_1HDLBody_aca201d3841cae13a158ad56804b39702}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!TraverseDeclStmt@{TraverseDeclStmt}}
+\index{TraverseDeclStmt@{TraverseDeclStmt}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{TraverseDeclStmt()}{TraverseDeclStmt()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::\+Traverse\+Decl\+Stmt (\begin{DoxyParamCaption}\item[{Decl\+Stmt $\ast$}]{declstmt }\end{DoxyParamCaption})}
+
+Process local variable and signal declarations, promoting to module level with unique names \mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_ac93015ba58e789a3b7cf6811bd4ed31d}\label{classsystemc__hdl_1_1HDLBody_ac93015ba58e789a3b7cf6811bd4ed31d}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!TraverseForStmt@{TraverseForStmt}}
+\index{TraverseForStmt@{TraverseForStmt}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{TraverseForStmt()}{TraverseForStmt()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::\+Traverse\+For\+Stmt (\begin{DoxyParamCaption}\item[{For\+Stmt $\ast$}]{fors }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_aebb8def7816135ee91e7bafafb156ddf}\label{classsystemc__hdl_1_1HDLBody_aebb8def7816135ee91e7bafafb156ddf}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!TraverseIfStmt@{TraverseIfStmt}}
+\index{TraverseIfStmt@{TraverseIfStmt}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{TraverseIfStmt()}{TraverseIfStmt()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::\+Traverse\+If\+Stmt (\begin{DoxyParamCaption}\item[{If\+Stmt $\ast$}]{ifs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_a5927cd7ddc838f65bf54e11893e84df3}\label{classsystemc__hdl_1_1HDLBody_a5927cd7ddc838f65bf54e11893e84df3}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!TraverseIntegerLiteral@{TraverseIntegerLiteral}}
+\index{TraverseIntegerLiteral@{TraverseIntegerLiteral}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{TraverseIntegerLiteral()}{TraverseIntegerLiteral()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::\+Traverse\+Integer\+Literal (\begin{DoxyParamCaption}\item[{Integer\+Literal $\ast$}]{lit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_a3ca3d90287f200a28ed63964f597dd56}\label{classsystemc__hdl_1_1HDLBody_a3ca3d90287f200a28ed63964f597dd56}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!TraverseMemberExpr@{TraverseMemberExpr}}
+\index{TraverseMemberExpr@{TraverseMemberExpr}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{TraverseMemberExpr()}{TraverseMemberExpr()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::\+Traverse\+Member\+Expr (\begin{DoxyParamCaption}\item[{Member\+Expr $\ast$}]{memberexpr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_a74516f472ce4e35722be7643c053b7b6}\label{classsystemc__hdl_1_1HDLBody_a74516f472ce4e35722be7643c053b7b6}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!TraverseStmt@{TraverseStmt}}
+\index{TraverseStmt@{TraverseStmt}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{TraverseStmt()}{TraverseStmt()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::\+Traverse\+Stmt (\begin{DoxyParamCaption}\item[{Stmt $\ast$}]{stmt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_ac7fd58793093f1b4a92b15c82fb1f931}\label{classsystemc__hdl_1_1HDLBody_ac7fd58793093f1b4a92b15c82fb1f931}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!TraverseSwitchStmt@{TraverseSwitchStmt}}
+\index{TraverseSwitchStmt@{TraverseSwitchStmt}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{TraverseSwitchStmt()}{TraverseSwitchStmt()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::\+Traverse\+Switch\+Stmt (\begin{DoxyParamCaption}\item[{Switch\+Stmt $\ast$}]{switchs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_aea5adec11845becc800e3d0e10c58008}\label{classsystemc__hdl_1_1HDLBody_aea5adec11845becc800e3d0e10c58008}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!TraverseUnaryOperator@{TraverseUnaryOperator}}
+\index{TraverseUnaryOperator@{TraverseUnaryOperator}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{TraverseUnaryOperator()}{TraverseUnaryOperator()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::\+Traverse\+Unary\+Operator (\begin{DoxyParamCaption}\item[{Unary\+Operator $\ast$}]{expr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_aee15dc90242038d2cca3beef78cfac45}\label{classsystemc__hdl_1_1HDLBody_aee15dc90242038d2cca3beef78cfac45}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!TraverseWhileStmt@{TraverseWhileStmt}}
+\index{TraverseWhileStmt@{TraverseWhileStmt}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{TraverseWhileStmt()}{TraverseWhileStmt()}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::\+Traverse\+While\+Stmt (\begin{DoxyParamCaption}\item[{While\+Stmt $\ast$}]{whiles }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_a1384bcc5e7228663ec7cb0ccc6eef41e}\label{classsystemc__hdl_1_1HDLBody_a1384bcc5e7228663ec7cb0ccc6eef41e}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!add\_info@{add\_info}}
+\index{add\_info@{add\_info}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{add\_info}{add\_info}}
+{\footnotesize\ttfamily bool systemc\+\_\+hdl\+::\+HDLBody\+::add\+\_\+info\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_a09991f11eb7e41766147a1ac9ee1f4ba}\label{classsystemc__hdl_1_1HDLBody_a09991f11eb7e41766147a1ac9ee1f4ba}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!ast\_context\_@{ast\_context\_}}
+\index{ast\_context\_@{ast\_context\_}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{ast\_context\_}{ast\_context\_}}
+{\footnotesize\ttfamily const ASTContext\& systemc\+\_\+hdl\+::\+HDLBody\+::ast\+\_\+context\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_aa78bf9a85717918296b930aa0ae93e25}\label{classsystemc__hdl_1_1HDLBody_aa78bf9a85717918296b930aa0ae93e25}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!diag\_e@{diag\_e}}
+\index{diag\_e@{diag\_e}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{diag\_e}{diag\_e}}
+{\footnotesize\ttfamily clang\+::\+Diagnostics\+Engine\& systemc\+\_\+hdl\+::\+HDLBody\+::diag\+\_\+e}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_a63909266f79a4ac9c8ed9264a6b675a7}\label{classsystemc__hdl_1_1HDLBody_a63909266f79a4ac9c8ed9264a6b675a7}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!h\_ret@{h\_ret}}
+\index{h\_ret@{h\_ret}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{h\_ret}{h\_ret}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}} systemc\+\_\+hdl\+::\+HDLBody\+::h\+\_\+ret\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_a966103c3321be502a9ad764d5be76d4e}\label{classsystemc__hdl_1_1HDLBody_a966103c3321be502a9ad764d5be76d4e}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!lname@{lname}}
+\index{lname@{lname}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{lname}{lname}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhnode_1_1name__serve}{name\+\_\+serve}} systemc\+\_\+hdl\+::\+HDLBody\+::lname\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_a31853db61435860151cb1d805d47251a}\label{classsystemc__hdl_1_1HDLBody_a31853db61435860151cb1d805d47251a}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!lutil@{lutil}}
+\index{lutil@{lutil}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{lutil}{lutil}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhnode_1_1util}{util}} systemc\+\_\+hdl\+::\+HDLBody\+::lutil\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_aa2c5f0157aecad60a58a600bb315dc87}\label{classsystemc__hdl_1_1HDLBody_aa2c5f0157aecad60a58a600bb315dc87}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!methodecls@{methodecls}}
+\index{methodecls@{methodecls}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{methodecls}{methodecls}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$string, Function\+Decl $\ast$$>$ systemc\+\_\+hdl\+::\+HDLBody\+::methodecls}
+
+\mbox{\Hypertarget{classsystemc__hdl_1_1HDLBody_a3378aca791068509cfa933cade96eb2d}\label{classsystemc__hdl_1_1HDLBody_a3378aca791068509cfa933cade96eb2d}} 
+\index{systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}!vname\_map@{vname\_map}}
+\index{vname\_map@{vname\_map}!systemc\_hdl::HDLBody@{systemc\_hdl::HDLBody}}
+\doxysubsubsection{\texorpdfstring{vname\_map}{vname\_map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehnode_a3f10aaef8411f7c053be70eac6c4b52a}{hdecl\+\_\+name\+\_\+map\+\_\+t}} systemc\+\_\+hdl\+::\+HDLBody\+::vname\+\_\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+plugins/hdl/\mbox{\hyperlink{HDLBody_8h}{HDLBody.\+h}}\item 
+plugins/hdl/\mbox{\hyperlink{HDLBody_8cpp}{HDLBody.\+cpp}}\end{DoxyCompactItemize}

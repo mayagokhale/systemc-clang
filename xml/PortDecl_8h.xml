@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="PortDecl_8h" kind="file" language="C++">
+    <compoundname>PortDecl.h</compoundname>
+    <includes local="yes">json.hpp</includes>
+    <includes local="no">string</includes>
+    <includedby refid="PortMatcher_8h" local="yes">src/matchers/PortMatcher.h</includedby>
+    <includedby refid="ModuleInstance_8h" local="yes">src/model/ModuleInstance.h</includedby>
+    <includedby refid="PortDecl_8cpp" local="yes">src/model/PortDecl.cpp</includedby>
+    <includedby refid="SignalDecl_8h" local="yes">src/model/SignalDecl.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>json.hpp</label>
+      </node>
+      <node id="1">
+        <label>src/model/PortDecl.h</label>
+        <link refid="PortDecl_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="11">
+        <label>src/PluginAction.h</label>
+        <link refid="PluginAction_8h"/>
+      </node>
+      <node id="15">
+        <label>plugins/hdl/HDLBody.h</label>
+        <link refid="HDLBody_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>src/SystemCClang.h</label>
+        <link refid="SystemCClang_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>src/SCuitable/GlobalSuspensionAutomata.cpp</label>
+        <link refid="GlobalSuspensionAutomata_8cpp"/>
+      </node>
+      <node id="14">
+        <label>plugins/hdl/HDLBody.cpp</label>
+        <link refid="HDLBody_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/model/Model.cpp</label>
+        <link refid="Model_8cpp"/>
+      </node>
+      <node id="20">
+        <label>plugins/hdl/HDLType.cpp</label>
+        <link refid="HDLType_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/matchers/PortMatcher.h</label>
+        <link refid="PortMatcher_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>src/SCuitable/GlobalSuspensionAutomata.h</label>
+        <link refid="GlobalSuspensionAutomata_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/model/Model.h</label>
+        <link refid="Model_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>plugins/hdl/HDLHnode.cpp</label>
+        <link refid="HDLHnode_8cpp"/>
+      </node>
+      <node id="16">
+        <label>plugins/hdl/HDLMain.h</label>
+        <link refid="HDLMain_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/matchers/Matchers.h</label>
+        <link refid="Matchers_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>plugins/hdl/HDLMain.cpp</label>
+        <link refid="HDLMain_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/model/PortDecl.h</label>
+        <link refid="PortDecl_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>src/model/PortDecl.cpp</label>
+        <link refid="PortDecl_8cpp"/>
+      </node>
+      <node id="22">
+        <label>src/model/ModuleInstance.h</label>
+        <link refid="ModuleInstance_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/SystemCClang.cpp</label>
+        <link refid="SystemCClang_8cpp"/>
+      </node>
+      <node id="18">
+        <label>plugins/hdl/HDLHnode.h</label>
+        <link refid="HDLHnode_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/matchers/NetlistMatcher.h</label>
+        <link refid="NetlistMatcher_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>src/SAPlugin.h</label>
+        <link refid="SAPlugin_8h"/>
+      </node>
+      <node id="21">
+        <label>plugins/hdl/HDLType.h</label>
+        <link refid="HDLType_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>src/model/SignalDecl.h</label>
+        <link refid="SignalDecl_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>src/model/SignalDecl.cpp</label>
+        <link refid="SignalDecl_8cpp"/>
+      </node>
+      <node id="13">
+        <label>src/SCuitable/TimeAnalysis.h</label>
+        <link refid="TimeAnalysis_8h"/>
+      </node>
+      <node id="23">
+        <label>src/model/ModuleInstance.cpp</label>
+        <link refid="ModuleInstance_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsystemc__clang_1_1PortDecl" prot="public">systemc_clang::PortDecl</innerclass>
+    <innernamespace refid="namespacesystemc__clang">systemc_clang</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_PORT_DECL_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_PORT_DECL_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;json.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesystemc__clang" kindref="compound">systemc_clang</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//using<sp/>namespace<sp/>clang;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespacesystemc__clang_1ab232545035b571c3f3cd13a4459f2d9e" kindref="member">json</ref><sp/>=<sp/><ref refid="namespacesystemc__clang_1ab232545035b571c3f3cd13a4459f2d9e" kindref="member">nlohmann::json</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">FindTemplateTypes;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classsystemc__clang_1_1PortDecl" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsystemc__clang_1_1PortDecl" kindref="compound">PortDecl</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1PortDecl_1af53768c4cd2985ef74dfc9074d6a73f9" kindref="member">PortDecl</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1PortDecl_1af53768c4cd2985ef74dfc9074d6a73f9" kindref="member">PortDecl</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;,<sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref><sp/>*);</highlight></codeline>
+<codeline lineno="23" refid="classsystemc__clang_1_1PortDecl_1a0ebad05e0c7886666f6ae38218876951" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1PortDecl_1a0ebad05e0c7886666f6ae38218876951" kindref="member">PortDecl</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>clang::Decl<sp/>*,<sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref><sp/>*);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1PortDecl_1af53768c4cd2985ef74dfc9074d6a73f9" kindref="member">PortDecl</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1PortDecl" kindref="compound">PortDecl</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1PortDecl_1ab555f771865181e610019b7d3abccc40" kindref="member">~PortDecl</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1PortDecl_1a493bb5572de153c0022f164d01f0c73c" kindref="member">setModuleName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;);</highlight></codeline>
+<codeline lineno="30" refid="classsystemc__clang_1_1PortDecl_1a4e73bb1543ed5bd48f627c27c0a3d6eb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1PortDecl_1a4e73bb1543ed5bd48f627c27c0a3d6eb" kindref="member">setBinding</ref>(clang::VarDecl<sp/>*vd);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1PortDecl_1ade19aaa93ba5dd851d56f103541a79d0" kindref="member">setArrayType</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1PortDecl_1a5b5e271b1bd0ae65bf341f208a2f057c" kindref="member">addArraySize</ref>(llvm::APInt<sp/>size);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1PortDecl_1a43ca64dccbd062324c2abc5963154546" kindref="member">getArrayType</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>std::vector&lt;llvm::APInt&gt;<sp/><ref refid="classsystemc__clang_1_1PortDecl_1aa3622ca7b78d0a9e5aabc114829e1d14" kindref="member">getArraySizes</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="classsystemc__clang_1_1PortDecl_1a407dcd68862014e89d9f9666e4dc6231" kindref="member">getName</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>clang::FieldDecl<sp/>*<ref refid="classsystemc__clang_1_1PortDecl_1ae3257767b9f9234b66de907bbdfbceb7" kindref="member">getAsFieldDecl</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>clang::VarDecl<sp/>*<ref refid="classsystemc__clang_1_1PortDecl_1a0936c825c062aeba0b741c15fe05c914" kindref="member">getAsVarDecl</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref><sp/>*<ref refid="classsystemc__clang_1_1PortDecl_1a97faf57eddf2f20618033bf334301c4c" kindref="member">getTemplateType</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="namespacesystemc__clang_1ab232545035b571c3f3cd13a4459f2d9e" kindref="member">json</ref><sp/><ref refid="classsystemc__clang_1_1PortDecl_1a699003872595070eee23d589528e0adc" kindref="member">dump_json</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47" refid="classsystemc__clang_1_1PortDecl_1a03d8aad20ac4114a3170bd6c6173b312" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="classsystemc__clang_1_1PortDecl_1a03d8aad20ac4114a3170bd6c6173b312" kindref="member">port_name_</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classsystemc__clang_1_1PortDecl_1ae2afcf990e7c859dd47ad057c5c79409" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref><sp/>*<ref refid="classsystemc__clang_1_1PortDecl_1ae2afcf990e7c859dd47ad057c5c79409" kindref="member">template_type_</ref>;</highlight></codeline>
+<codeline lineno="52" refid="classsystemc__clang_1_1PortDecl_1ab907f3dbfe7a2bada940b37c896d48e7" refkind="member"><highlight class="normal"><sp/><sp/>clang::Decl<sp/>*<ref refid="classsystemc__clang_1_1PortDecl_1ab907f3dbfe7a2bada940b37c896d48e7" kindref="member">field_decl_</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classsystemc__clang_1_1PortDecl_1aaa40e3567d2a19a6f7310c455e4fc54d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1PortDecl_1aaa40e3567d2a19a6f7310c455e4fc54d" kindref="member">is_array_</ref>;<sp/></highlight></codeline>
+<codeline lineno="56" refid="classsystemc__clang_1_1PortDecl_1a1ed8b0f52527f43862e8576422f1bb84" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;llvm::APInt&gt;<sp/><ref refid="classsystemc__clang_1_1PortDecl_1a1ed8b0f52527f43862e8576422f1bb84" kindref="member">array_sizes_</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>systemc_clang</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/model/PortDecl.h"/>
+  </compounddef>
+</doxygen>

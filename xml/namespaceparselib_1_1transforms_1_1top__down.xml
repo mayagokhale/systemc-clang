@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceparselib_1_1transforms_1_1top__down" kind="namespace" language="Python">
+    <compoundname>parselib::transforms::top_down</compoundname>
+    <innerclass refid="classparselib_1_1transforms_1_1top__down_1_1VariableBindings" prot="public">parselib::transforms::top_down::VariableBindings</innerclass>
+    <innerclass refid="classparselib_1_1transforms_1_1top__down_1_1TopDown" prot="public">parselib::transforms::top_down::TopDown</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceparselib_1_1transforms_1_1top__down_1a46a01fe3b42f8f88146b97ef7c5b6a73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.top_down.some_vars</definition>
+        <argsstring>(var_dict)</argsstring>
+        <name>some_vars</name>
+        <param>
+          <type>var_dict</type>
+          <defname>var_dict</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/top_down.py" line="18" column="1" bodyfile="plugins/hdl/parselib/transforms/top_down.py" bodystart="18" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="plugins/hdl/parselib/transforms/top_down.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

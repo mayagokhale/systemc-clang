@@ -1,0 +1,414 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__clang_1_1FindTemplateTypes" kind="class" language="C++" prot="public">
+    <compoundname>systemc_clang::FindTemplateTypes</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">clang::RecursiveASTVisitor&lt; FindTemplateTypes &gt;</basecompoundref>
+    <includes refid="FindTemplateTypes_8h" local="no">FindTemplateTypes.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classsystemc__clang_1_1FindTemplateTypes_1a36fe33fbaeabb402ed67ab84bfb284c0" prot="public" static="no">
+        <type><ref refid="classsystemc__clang_1_1TemplateType" kindref="compound">TemplateType</ref></type>
+        <definition>typedef TemplateType systemc_clang::FindTemplateTypes::TemplateTypePtr</definition>
+        <argsstring></argsstring>
+        <name>TemplateTypePtr</name>
+        <briefdescription>
+<para>Typedefs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="49" column="24" bodyfile="src/matchers/FindTemplateTypes.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1FindTemplateTypes_1a7aca95e84873d0dd891c2dc53c492cfd" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classsystemc__clang_1_1FindTemplateTypes_1a36fe33fbaeabb402ed67ab84bfb284c0" kindref="member">TemplateTypePtr</ref> &gt;</type>
+        <definition>typedef std::vector&lt;TemplateTypePtr&gt; systemc_clang::FindTemplateTypes::type_vector_t</definition>
+        <argsstring></argsstring>
+        <name>type_vector_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="50" column="23" bodyfile="src/matchers/FindTemplateTypes.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1FindTemplateTypes_1a7a71e9cab2cda2feca1100605e869191" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classsystemc__clang_1_1FindTemplateTypes_1a36fe33fbaeabb402ed67ab84bfb284c0" kindref="member">TemplateTypePtr</ref> &gt;</type>
+        <definition>typedef std::vector&lt;TemplateTypePtr&gt; systemc_clang::FindTemplateTypes::argVectorType</definition>
+        <argsstring></argsstring>
+        <name>argVectorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="51" column="23" bodyfile="src/matchers/FindTemplateTypes.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindTemplateTypes_1aaebfc9684fe0c1679fe39ad8689c06f0" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1Tree" kindref="compound">Tree</ref>&lt; <ref refid="classsystemc__clang_1_1TemplateType" kindref="compound">TemplateType</ref> &gt;</type>
+        <definition>Tree&lt;TemplateType&gt; systemc_clang::FindTemplateTypes::template_args_</definition>
+        <argsstring></argsstring>
+        <name>template_args_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="93" column="8" bodyfile="src/matchers/FindTemplateTypes.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindTemplateTypes_1a1a5a05a299d882cce7e2f99d17f85f1a" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1Tree" kindref="compound">Tree</ref>&lt; <ref refid="classsystemc__clang_1_1TemplateType" kindref="compound">TemplateType</ref> &gt;::TreeNodePtr</type>
+        <definition>Tree&lt;TemplateType&gt;::TreeNodePtr systemc_clang::FindTemplateTypes::current_type_node_</definition>
+        <argsstring></argsstring>
+        <name>current_type_node_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="94" column="22" bodyfile="src/matchers/FindTemplateTypes.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindTemplateTypes_1a3e3a6f5f7cfb2ad47fb77a4253794d1b" prot="private" static="no" mutable="no">
+        <type>std::stack&lt; <ref refid="classsystemc__clang_1_1Tree" kindref="compound">Tree</ref>&lt; <ref refid="classsystemc__clang_1_1TemplateType" kindref="compound">TemplateType</ref> &gt;::TreeNodePtr &gt;</type>
+        <definition>std::stack&lt;Tree&lt;TemplateType&gt;::TreeNodePtr&gt; systemc_clang::FindTemplateTypes::stack_current_node_</definition>
+        <argsstring></argsstring>
+        <name>stack_current_node_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="95" column="15" bodyfile="src/matchers/FindTemplateTypes.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateTypes_1a0ea6171e3766471ee870a3a95ac4985b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FindTemplateTypes::FindTemplateTypes</definition>
+        <argsstring>()</argsstring>
+        <name>FindTemplateTypes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="55" column="3" bodyfile="src/matchers/FindTemplateTypes.cpp" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateTypes_1a06a41629eda95f03122985a95bad28a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FindTemplateTypes::FindTemplateTypes</definition>
+        <argsstring>(const FindTemplateTypes &amp;rhs)</argsstring>
+        <name>FindTemplateTypes</name>
+        <param>
+          <type>const <ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="58" column="3" bodyfile="src/matchers/FindTemplateTypes.cpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateTypes_1ae33de87280c5853147639f7a98543e1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FindTemplateTypes::FindTemplateTypes</definition>
+        <argsstring>(const FindTemplateTypes *rhs)</argsstring>
+        <name>FindTemplateTypes</name>
+        <param>
+          <type>const <ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref> *</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="59" column="3" bodyfile="src/matchers/FindTemplateTypes.cpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateTypes_1af1c0f61d80834c79db5b79256f157b98" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FindTemplateTypes::shouldVisitTemplateInstantiations</definition>
+        <argsstring>() const</argsstring>
+        <name>shouldVisitTemplateInstantiations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="62" column="8" bodyfile="src/matchers/FindTemplateTypes.cpp" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateTypes_1a27ab4b5ddc1ac71168caf9319621a819" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FindTemplateTypes::VisitIntegerLiteral</definition>
+        <argsstring>(IntegerLiteral *l)</argsstring>
+        <name>VisitIntegerLiteral</name>
+        <param>
+          <type>IntegerLiteral *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="64" column="8" bodyfile="src/matchers/FindTemplateTypes.cpp" bodystart="257" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateTypes_1a08be908975a5331dee884534b3678b31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FindTemplateTypes::VisitTemplateSpecializationType</definition>
+        <argsstring>(TemplateSpecializationType *special_type)</argsstring>
+        <name>VisitTemplateSpecializationType</name>
+        <param>
+          <type>TemplateSpecializationType *</type>
+          <declname>special_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>The specialized template type is used for user-defined template type arguments, and constexpr fpblk_sz (as in ZFP). The issue here is that one is a class, and the other is a function. So, if it&apos;s a function that we need to desugar it, and traverse its corresponding type. Otherwise, we proceed. Get the unqualified type.</para>
+<para>We don&apos;t want it to go further since we called TraverseType().</para>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="65" column="8" bodyfile="src/matchers/FindTemplateTypes.cpp" bodystart="84" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateTypes_1a0867ed3e94d6c427fcc1081f2e44ae91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FindTemplateTypes::VisitTypedefType</definition>
+        <argsstring>(TypedefType *typedef_type)</argsstring>
+        <name>VisitTypedefType</name>
+        <param>
+          <type>TypedefType *</type>
+          <declname>typedef_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="67" column="8" bodyfile="src/matchers/FindTemplateTypes.cpp" bodystart="168" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateTypes_1a98c42e1f3a2f47d0dbbbaf8c07387e41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FindTemplateTypes::VisitCXXRecordDecl</definition>
+        <argsstring>(CXXRecordDecl *cxx_type)</argsstring>
+        <name>VisitCXXRecordDecl</name>
+        <param>
+          <type>CXXRecordDecl *</type>
+          <declname>cxx_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="68" column="8" bodyfile="src/matchers/FindTemplateTypes.cpp" bodystart="130" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateTypes_1aee9dfae133aba48b43d3db618431bdb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FindTemplateTypes::VisitRecordType</definition>
+        <argsstring>(RecordType *rt)</argsstring>
+        <name>VisitRecordType</name>
+        <param>
+          <type>RecordType *</type>
+          <declname>rt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="69" column="8" bodyfile="src/matchers/FindTemplateTypes.cpp" bodystart="178" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateTypes_1afca890e8c672508a2873159ecac2fa73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FindTemplateTypes::VisitBuiltinType</definition>
+        <argsstring>(BuiltinType *bi_type)</argsstring>
+        <name>VisitBuiltinType</name>
+        <param>
+          <type>BuiltinType *</type>
+          <declname>bi_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="70" column="8" bodyfile="src/matchers/FindTemplateTypes.cpp" bodystart="145" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateTypes_1a465472dfc66a1f0bd77a706c5464434a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FindTemplateTypes::VisitDeclRefExpr</definition>
+        <argsstring>(DeclRefExpr *dre)</argsstring>
+        <name>VisitDeclRefExpr</name>
+        <param>
+          <type>DeclRefExpr *</type>
+          <declname>dre</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="72" column="8" bodyfile="src/matchers/FindTemplateTypes.cpp" bodystart="61" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateTypes_1a452d701c13c13cb79eaca7a9e7d46658" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FindTemplateTypes::~FindTemplateTypes</definition>
+        <argsstring>()</argsstring>
+        <name>~FindTemplateTypes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="74" column="3" bodyfile="src/matchers/FindTemplateTypes.cpp" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateTypes_1ae648d1354e92813a492ccb2f7011d183" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FindTemplateTypes::Enumerate</definition>
+        <argsstring>(const clang::Type *type)</argsstring>
+        <name>Enumerate</name>
+        <param>
+          <type>const clang::Type *</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="75" column="8" bodyfile="src/matchers/FindTemplateTypes.cpp" bodystart="51" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateTypes_1a6379b187759bbf16c8e378d2716cf3e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1Tree" kindref="compound">Tree</ref>&lt; <ref refid="classsystemc__clang_1_1TemplateType" kindref="compound">TemplateType</ref> &gt; *</type>
+        <definition>Tree&lt; TemplateType &gt; * FindTemplateTypes::getTemplateArgTreePtr</definition>
+        <argsstring>()</argsstring>
+        <name>getTemplateArgTreePtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="78" column="8" bodyfile="src/matchers/FindTemplateTypes.cpp" bodystart="266" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateTypes_1a3a30cd15d94fae87ef51731f9b720b91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FindTemplateTypes::printTemplateArguments</definition>
+        <argsstring>(llvm::raw_ostream &amp;os)</argsstring>
+        <name>printTemplateArguments</name>
+        <param>
+          <type>llvm::raw_ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="81" column="8" bodyfile="src/matchers/FindTemplateTypes.cpp" bodystart="297" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindTemplateTypes_1af899986dd7eb6be75e8a749a4508f77e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacesystemc__clang_1ab232545035b571c3f3cd13a4459f2d9e" kindref="member">json</ref></type>
+        <definition>json FindTemplateTypes::dump_json</definition>
+        <argsstring>()</argsstring>
+        <name>dump_json</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateTypes.h" line="82" column="8" bodyfile="src/matchers/FindTemplateTypes.cpp" bodystart="270" bodyend="295"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>clang::RecursiveASTVisitor&lt; FindTemplateTypes &gt;</label>
+      </node>
+      <node id="1">
+        <label>systemc_clang::FindTemplateTypes</label>
+        <link refid="classsystemc__clang_1_1FindTemplateTypes"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>systemc_clang::TreeNode&lt; systemc_clang::TemplateType &gt;</label>
+        <link refid="classsystemc__clang_1_1TreeNode"/>
+      </node>
+      <node id="2">
+        <label>clang::RecursiveASTVisitor&lt; FindTemplateTypes &gt;</label>
+      </node>
+      <node id="3">
+        <label>systemc_clang::Tree&lt; systemc_clang::TemplateType &gt;</label>
+        <link refid="classsystemc__clang_1_1Tree"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>root_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>systemc_clang::FindTemplateTypes</label>
+        <link refid="classsystemc__clang_1_1FindTemplateTypes"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>current_type_node_</edgelabel>
+          <edgelabel>template_args_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/matchers/FindTemplateTypes.h" line="46" column="1" bodyfile="src/matchers/FindTemplateTypes.h" bodystart="46" bodyend="96"/>
+    <listofallmembers>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1a7a71e9cab2cda2feca1100605e869191" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>argVectorType</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1a1a5a05a299d882cce7e2f99d17f85f1a" prot="private" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>current_type_node_</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1af899986dd7eb6be75e8a749a4508f77e" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>dump_json</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1ae648d1354e92813a492ccb2f7011d183" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>Enumerate</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1a0ea6171e3766471ee870a3a95ac4985b" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>FindTemplateTypes</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1a06a41629eda95f03122985a95bad28a5" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>FindTemplateTypes</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1ae33de87280c5853147639f7a98543e1a" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>FindTemplateTypes</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1a6379b187759bbf16c8e378d2716cf3e9" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>getTemplateArgTreePtr</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1a3a30cd15d94fae87ef51731f9b720b91" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>printTemplateArguments</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1af1c0f61d80834c79db5b79256f157b98" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>shouldVisitTemplateInstantiations</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1a3e3a6f5f7cfb2ad47fb77a4253794d1b" prot="private" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>stack_current_node_</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1aaebfc9684fe0c1679fe39ad8689c06f0" prot="private" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>template_args_</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1a36fe33fbaeabb402ed67ab84bfb284c0" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>TemplateTypePtr</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1a7aca95e84873d0dd891c2dc53c492cfd" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>type_vector_t</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1afca890e8c672508a2873159ecac2fa73" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>VisitBuiltinType</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1a98c42e1f3a2f47d0dbbbaf8c07387e41" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>VisitCXXRecordDecl</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1a465472dfc66a1f0bd77a706c5464434a" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>VisitDeclRefExpr</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1a27ab4b5ddc1ac71168caf9319621a819" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>VisitIntegerLiteral</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1aee9dfae133aba48b43d3db618431bdb9" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>VisitRecordType</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1a08be908975a5331dee884534b3678b31" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>VisitTemplateSpecializationType</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1a0867ed3e94d6c427fcc1081f2e44ae91" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>VisitTypedefType</name></member>
+      <member refid="classsystemc__clang_1_1FindTemplateTypes_1a452d701c13c13cb79eaca7a9e7d46658" prot="public" virt="non-virtual"><scope>systemc_clang::FindTemplateTypes</scope><name>~FindTemplateTypes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

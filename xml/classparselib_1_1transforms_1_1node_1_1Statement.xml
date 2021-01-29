@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classparselib_1_1transforms_1_1node_1_1Statement" kind="class" language="Python" prot="public">
+    <compoundname>parselib::transforms::node::Statement</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Tree</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1node_1_1Statement_1aaeb324759dd2f95015e1cf4a2138003d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.node.Statement.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/node.py" line="10" column="1" bodyfile="plugins/hdl/parselib/transforms/node.py" bodystart="10" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>parselib.transforms.node.Statement</label>
+        <link refid="classparselib_1_1transforms_1_1node_1_1Statement"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Tree</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>parselib.transforms.node.Statement</label>
+        <link refid="classparselib_1_1transforms_1_1node_1_1Statement"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Tree</label>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/parselib/transforms/node.py" line="9" column="1" bodyfile="plugins/hdl/parselib/transforms/node.py" bodystart="9" bodyend="14"/>
+    <listofallmembers>
+      <member refid="classparselib_1_1transforms_1_1node_1_1Statement_1aaeb324759dd2f95015e1cf4a2138003d" prot="public" virt="non-virtual"><scope>parselib::transforms::node::Statement</scope><name>__init__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

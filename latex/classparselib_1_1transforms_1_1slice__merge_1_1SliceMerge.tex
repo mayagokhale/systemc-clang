@@ -1,0 +1,109 @@
+\hypertarget{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge}{}\doxysection{parselib.\+transforms.\+slice\+\_\+merge.\+Slice\+Merge Class Reference}
+\label{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge}\index{parselib.transforms.slice\_merge.SliceMerge@{parselib.transforms.slice\_merge.SliceMerge}}
+
+
+Inheritance diagram for parselib.\+transforms.\+slice\+\_\+merge.\+Slice\+Merge\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for parselib.\+transforms.\+slice\+\_\+merge.\+Slice\+Merge\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_a75d4e89cd4b3462b71a182e68ff6cc75}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_a966449884942d4cd65516b1160ffbee7}{harrayref}} (self, tree)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_a4fe9521e39c73aaa1c2a77372b89e071}{hslice}} (self, tree)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_a1f349a5612105c5a2d340eaf08f2226e}{\+\_\+\+\_\+to\+\_\+seq}} (self, tree)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_a48657d221dda84212199e3f0f50a992b}{\+\_\+\+\_\+is\+\_\+literal\+\_\+node}} (self, t)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_a4f5f8164c4400f73d5af930a2c2b491b}{\+\_\+\+\_\+check\+\_\+part\+\_\+select\+\_\+left}} (self, tr)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_af41cd7d4325727e75e2ed9b6f65816ca}{\+\_\+\+\_\+check\+\_\+part\+\_\+select\+\_\+right}} (self, tr)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}recognize slice patterns and convert slicing into synthesizable index part select\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_a75d4e89cd4b3462b71a182e68ff6cc75}\label{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_a75d4e89cd4b3462b71a182e68ff6cc75}} 
+\index{parselib.transforms.slice\_merge.SliceMerge@{parselib.transforms.slice\_merge.SliceMerge}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!parselib.transforms.slice\_merge.SliceMerge@{parselib.transforms.slice\_merge.SliceMerge}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+slice\+\_\+merge.\+Slice\+Merge.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classparselib_1_1transforms_1_1top__down_1_1TopDown_aba7572132ec76ea47811c9d077763441}{parselib.\+transforms.\+top\+\_\+down.\+Top\+Down}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_a4f5f8164c4400f73d5af930a2c2b491b}\label{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_a4f5f8164c4400f73d5af930a2c2b491b}} 
+\index{parselib.transforms.slice\_merge.SliceMerge@{parselib.transforms.slice\_merge.SliceMerge}!\_\_check\_part\_select\_left@{\_\_check\_part\_select\_left}}
+\index{\_\_check\_part\_select\_left@{\_\_check\_part\_select\_left}!parselib.transforms.slice\_merge.SliceMerge@{parselib.transforms.slice\_merge.SliceMerge}}
+\doxysubsubsection{\texorpdfstring{\_\_check\_part\_select\_left()}{\_\_check\_part\_select\_left()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+slice\+\_\+merge.\+Slice\+Merge.\+\_\+\+\_\+check\+\_\+part\+\_\+select\+\_\+left (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}check if the left hand side is width * (ID + 1) - 1
+returns result, width, ID
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_af41cd7d4325727e75e2ed9b6f65816ca}\label{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_af41cd7d4325727e75e2ed9b6f65816ca}} 
+\index{parselib.transforms.slice\_merge.SliceMerge@{parselib.transforms.slice\_merge.SliceMerge}!\_\_check\_part\_select\_right@{\_\_check\_part\_select\_right}}
+\index{\_\_check\_part\_select\_right@{\_\_check\_part\_select\_right}!parselib.transforms.slice\_merge.SliceMerge@{parselib.transforms.slice\_merge.SliceMerge}}
+\doxysubsubsection{\texorpdfstring{\_\_check\_part\_select\_right()}{\_\_check\_part\_select\_right()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+slice\+\_\+merge.\+Slice\+Merge.\+\_\+\+\_\+check\+\_\+part\+\_\+select\+\_\+right (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}check if the right hand-side is width * ID
+returns result, width, ID
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_a48657d221dda84212199e3f0f50a992b}\label{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_a48657d221dda84212199e3f0f50a992b}} 
+\index{parselib.transforms.slice\_merge.SliceMerge@{parselib.transforms.slice\_merge.SliceMerge}!\_\_is\_literal\_node@{\_\_is\_literal\_node}}
+\index{\_\_is\_literal\_node@{\_\_is\_literal\_node}!parselib.transforms.slice\_merge.SliceMerge@{parselib.transforms.slice\_merge.SliceMerge}}
+\doxysubsubsection{\texorpdfstring{\_\_is\_literal\_node()}{\_\_is\_literal\_node()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+slice\+\_\+merge.\+Slice\+Merge.\+\_\+\+\_\+is\+\_\+literal\+\_\+node (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_a1f349a5612105c5a2d340eaf08f2226e}\label{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_a1f349a5612105c5a2d340eaf08f2226e}} 
+\index{parselib.transforms.slice\_merge.SliceMerge@{parselib.transforms.slice\_merge.SliceMerge}!\_\_to\_seq@{\_\_to\_seq}}
+\index{\_\_to\_seq@{\_\_to\_seq}!parselib.transforms.slice\_merge.SliceMerge@{parselib.transforms.slice\_merge.SliceMerge}}
+\doxysubsubsection{\texorpdfstring{\_\_to\_seq()}{\_\_to\_seq()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+slice\+\_\+merge.\+Slice\+Merge.\+\_\+\+\_\+to\+\_\+seq (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_a966449884942d4cd65516b1160ffbee7}\label{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_a966449884942d4cd65516b1160ffbee7}} 
+\index{parselib.transforms.slice\_merge.SliceMerge@{parselib.transforms.slice\_merge.SliceMerge}!harrayref@{harrayref}}
+\index{harrayref@{harrayref}!parselib.transforms.slice\_merge.SliceMerge@{parselib.transforms.slice\_merge.SliceMerge}}
+\doxysubsubsection{\texorpdfstring{harrayref()}{harrayref()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+slice\+\_\+merge.\+Slice\+Merge.\+harrayref (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tree }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_a4fe9521e39c73aaa1c2a77372b89e071}\label{classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_a4fe9521e39c73aaa1c2a77372b89e071}} 
+\index{parselib.transforms.slice\_merge.SliceMerge@{parselib.transforms.slice\_merge.SliceMerge}!hslice@{hslice}}
+\index{hslice@{hslice}!parselib.transforms.slice\_merge.SliceMerge@{parselib.transforms.slice\_merge.SliceMerge}}
+\doxysubsubsection{\texorpdfstring{hslice()}{hslice()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+slice\+\_\+merge.\+Slice\+Merge.\+hslice (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tree }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+plugins/hdl/parselib/transforms/\mbox{\hyperlink{slice__merge_8py}{slice\+\_\+merge.\+py}}\end{DoxyCompactItemize}

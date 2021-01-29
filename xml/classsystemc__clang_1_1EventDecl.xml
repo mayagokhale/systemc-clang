@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__clang_1_1EventDecl" kind="class" language="C++" prot="public">
+    <compoundname>systemc_clang::EventDecl</compoundname>
+    <includes refid="EventDecl_8h" local="no">EventDecl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsystemc__clang_1_1EventDecl_1ac7357257225eb731d6a785cb38bad571" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string systemc_clang::EventDecl::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EventDecl.h" line="39" column="10" bodyfile="src/model/EventDecl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1EventDecl_1a016d73afa2247cfd5c3f27a10fd0c7de" prot="private" static="no" mutable="no">
+        <type>FieldDecl *</type>
+        <definition>FieldDecl* systemc_clang::EventDecl::_astNode</definition>
+        <argsstring></argsstring>
+        <name>_astNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EventDecl.h" line="40" column="13" bodyfile="src/model/EventDecl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1EventDecl_1a18838003bf22ecfcf44e4c0525dad502" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EventDecl::EventDecl</definition>
+        <argsstring>()</argsstring>
+        <name>EventDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EventDecl.h" line="20" column="3" bodyfile="src/model/EventDecl.cpp" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EventDecl_1a125e07d77cb4f9dd640f33351c6e69a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EventDecl::EventDecl</definition>
+        <argsstring>(const string &amp;, FieldDecl *)</argsstring>
+        <name>EventDecl</name>
+        <param>
+          <type>const string &amp;</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>FieldDecl *</type>
+          <defname>fd</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EventDecl.h" line="21" column="3" bodyfile="src/model/EventDecl.cpp" bodystart="15" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EventDecl_1ab50166ef6ef9157143266da1745004e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EventDecl::EventDecl</definition>
+        <argsstring>(const EventDecl &amp;)</argsstring>
+        <name>EventDecl</name>
+        <param>
+          <type>const <ref refid="classsystemc__clang_1_1EventDecl" kindref="compound">EventDecl</ref> &amp;</type>
+          <defname>from</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EventDecl.h" line="24" column="3" bodyfile="src/model/EventDecl.cpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EventDecl_1af2eb6c188af1f3d21cc909710252bb12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EventDecl::~EventDecl</definition>
+        <argsstring>()</argsstring>
+        <name>~EventDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EventDecl.h" line="27" column="3" bodyfile="src/model/EventDecl.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EventDecl_1afeecb8ff73bb10f64a357fe908c80fd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string EventDecl::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <briefdescription>
+<para>Get parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EventDecl.h" line="30" column="10" bodyfile="src/model/EventDecl.cpp" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EventDecl_1ab352b6039879de107f298bd08de48184" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FieldDecl *</type>
+        <definition>FieldDecl * EventDecl::getASTNode</definition>
+        <argsstring>()</argsstring>
+        <name>getASTNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EventDecl.h" line="31" column="13" bodyfile="src/model/EventDecl.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EventDecl_1a77527fd82431888033223ce6927f3b8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EventDecl::dump</definition>
+        <argsstring>(raw_ostream &amp;, int tabn=0)</argsstring>
+        <name>dump</name>
+        <param>
+          <type>raw_ostream &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tabn</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EventDecl.h" line="33" column="8" bodyfile="src/model/EventDecl.cpp" bodystart="32" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1EventDecl_1a3b312c8fe250d5c3389b731434968e13" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EventDecl::ptrCheck</definition>
+        <argsstring>()</argsstring>
+        <name>ptrCheck</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EventDecl.h" line="36" column="8" bodyfile="src/model/EventDecl.cpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/model/EventDecl.h" line="13" column="1" bodyfile="src/model/EventDecl.h" bodystart="13" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classsystemc__clang_1_1EventDecl_1a016d73afa2247cfd5c3f27a10fd0c7de" prot="private" virt="non-virtual"><scope>systemc_clang::EventDecl</scope><name>_astNode</name></member>
+      <member refid="classsystemc__clang_1_1EventDecl_1ac7357257225eb731d6a785cb38bad571" prot="private" virt="non-virtual"><scope>systemc_clang::EventDecl</scope><name>_name</name></member>
+      <member refid="classsystemc__clang_1_1EventDecl_1a77527fd82431888033223ce6927f3b8f" prot="public" virt="non-virtual"><scope>systemc_clang::EventDecl</scope><name>dump</name></member>
+      <member refid="classsystemc__clang_1_1EventDecl_1a18838003bf22ecfcf44e4c0525dad502" prot="public" virt="non-virtual"><scope>systemc_clang::EventDecl</scope><name>EventDecl</name></member>
+      <member refid="classsystemc__clang_1_1EventDecl_1a125e07d77cb4f9dd640f33351c6e69a4" prot="public" virt="non-virtual"><scope>systemc_clang::EventDecl</scope><name>EventDecl</name></member>
+      <member refid="classsystemc__clang_1_1EventDecl_1ab50166ef6ef9157143266da1745004e7" prot="public" virt="non-virtual"><scope>systemc_clang::EventDecl</scope><name>EventDecl</name></member>
+      <member refid="classsystemc__clang_1_1EventDecl_1ab352b6039879de107f298bd08de48184" prot="public" virt="non-virtual"><scope>systemc_clang::EventDecl</scope><name>getASTNode</name></member>
+      <member refid="classsystemc__clang_1_1EventDecl_1afeecb8ff73bb10f64a357fe908c80fd8" prot="public" virt="non-virtual"><scope>systemc_clang::EventDecl</scope><name>getName</name></member>
+      <member refid="classsystemc__clang_1_1EventDecl_1a3b312c8fe250d5c3389b731434968e13" prot="private" virt="non-virtual"><scope>systemc_clang::EventDecl</scope><name>ptrCheck</name></member>
+      <member refid="classsystemc__clang_1_1EventDecl_1af2eb6c188af1f3d21cc909710252bb12" prot="public" virt="non-virtual"><scope>systemc_clang::EventDecl</scope><name>~EventDecl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

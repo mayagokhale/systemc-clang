@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ModuleInstanceType_8h" kind="file" language="C++">
+    <compoundname>ModuleInstanceType.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="InstanceMatcher_8h" local="yes">src/matchers/InstanceMatcher.h</includedby>
+    <includedby refid="ModuleInstance_8h" local="yes">src/model/ModuleInstance.h</includedby>
+    <includedby refid="SystemCClang_8cpp" local="yes">src/SystemCClang.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>src/model/ModuleInstanceType.h</label>
+        <link refid="ModuleInstanceType_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="11">
+        <label>src/PluginAction.h</label>
+        <link refid="PluginAction_8h"/>
+      </node>
+      <node id="15">
+        <label>plugins/hdl/HDLBody.h</label>
+        <link refid="HDLBody_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>src/SystemCClang.h</label>
+        <link refid="SystemCClang_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>src/SCuitable/GlobalSuspensionAutomata.cpp</label>
+        <link refid="GlobalSuspensionAutomata_8cpp"/>
+      </node>
+      <node id="14">
+        <label>plugins/hdl/HDLBody.cpp</label>
+        <link refid="HDLBody_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/matchers/InstanceMatcher.h</label>
+        <link refid="InstanceMatcher_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/model/Model.cpp</label>
+        <link refid="Model_8cpp"/>
+      </node>
+      <node id="20">
+        <label>plugins/hdl/HDLType.cpp</label>
+        <link refid="HDLType_8cpp"/>
+      </node>
+      <node id="23">
+        <label>src/matchers/PortMatcher.h</label>
+        <link refid="PortMatcher_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>src/SCuitable/GlobalSuspensionAutomata.h</label>
+        <link refid="GlobalSuspensionAutomata_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/model/Model.h</label>
+        <link refid="Model_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>plugins/hdl/HDLHnode.cpp</label>
+        <link refid="HDLHnode_8cpp"/>
+      </node>
+      <node id="16">
+        <label>plugins/hdl/HDLMain.h</label>
+        <link refid="HDLMain_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/matchers/Matchers.h</label>
+        <link refid="Matchers_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>plugins/hdl/HDLMain.cpp</label>
+        <link refid="HDLMain_8cpp"/>
+      </node>
+      <node id="22">
+        <label>src/model/ModuleInstance.h</label>
+        <link refid="ModuleInstance_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/SystemCClang.cpp</label>
+        <link refid="SystemCClang_8cpp"/>
+      </node>
+      <node id="18">
+        <label>plugins/hdl/HDLHnode.h</label>
+        <link refid="HDLHnode_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/matchers/NetlistMatcher.h</label>
+        <link refid="NetlistMatcher_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>src/SAPlugin.h</label>
+        <link refid="SAPlugin_8h"/>
+      </node>
+      <node id="1">
+        <label>src/model/ModuleInstanceType.h</label>
+        <link refid="ModuleInstanceType_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>plugins/hdl/HDLType.h</label>
+        <link refid="HDLType_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>src/SCuitable/TimeAnalysis.h</label>
+        <link refid="TimeAnalysis_8h"/>
+      </node>
+      <node id="24">
+        <label>src/model/ModuleInstance.cpp</label>
+        <link refid="ModuleInstance_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structsc__ast__matchers_1_1ModuleInstanceType" prot="public">sc_ast_matchers::ModuleInstanceType</innerclass>
+    <innernamespace refid="namespaceclang">clang</innernamespace>
+    <innernamespace refid="namespacesc__ast__matchers">sc_ast_matchers</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ModuleInstanceType_8h_1ad78e062f62e0d6e453941fb4ca843e4d" prot="public" static="no">
+        <name>DEBUG_TYPE</name>
+        <initializer>&quot;Dump&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="12" column="10" bodyfile="src/model/ModuleInstanceType.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_MODULE_INSTANCE_TYPE_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_MODULE_INSTANCE_TYPE_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceclang" kindref="compound">clang</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Decl;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>DEBUG_TYPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="ModuleInstanceType_8h_1ad78e062f62e0d6e453941fb4ca843e4d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEBUG_TYPE<sp/>&quot;Dump&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesc__ast__matchers" kindref="compound">sc_ast_matchers</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="structsc__ast__matchers_1_1ModuleInstanceType" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsc__ast__matchers_1_1ModuleInstanceType" kindref="compound">ModuleInstanceType</ref><sp/>{</highlight></codeline>
+<codeline lineno="17" refid="structsc__ast__matchers_1_1ModuleInstanceType_1a3b3ac6bc7550058593b15444e3f058ce" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a3b3ac6bc7550058593b15444e3f058ce" kindref="member">var_name</ref>;</highlight></codeline>
+<codeline lineno="18" refid="structsc__ast__matchers_1_1ModuleInstanceType_1a270baee7ec4b2b885ed4b765b7714062" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a270baee7ec4b2b885ed4b765b7714062" kindref="member">var_type_name</ref>;</highlight></codeline>
+<codeline lineno="19" refid="structsc__ast__matchers_1_1ModuleInstanceType_1ac2e3331654217483b96515b50fd7172d" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ac2e3331654217483b96515b50fd7172d" kindref="member">instance_name</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>std::string</highlight></codeline>
+<codeline lineno="21" refid="structsc__ast__matchers_1_1ModuleInstanceType_1a3f89bb63d3cb8f7aa0ba6ff6e08bb693" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a3f89bb63d3cb8f7aa0ba6ff6e08bb693" kindref="member">parent_name</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>the<sp/>name<sp/>of<sp/>the<sp/>class<sp/>that<sp/>holds<sp/>the<sp/>field.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="structsc__ast__matchers_1_1ModuleInstanceType_1ace8d813116395be7de22d9d492283a69" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ace8d813116395be7de22d9d492283a69" kindref="member">is_field_decl</ref>;</highlight></codeline>
+<codeline lineno="23" refid="structsc__ast__matchers_1_1ModuleInstanceType_1ab09f623c60a3aed02d2648512beca6e1" refkind="member"><highlight class="normal"><sp/><sp/>clang::Decl<sp/>*<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ab09f623c60a3aed02d2648512beca6e1" kindref="member">type_decl</ref>;</highlight></codeline>
+<codeline lineno="24" refid="structsc__ast__matchers_1_1ModuleInstanceType_1a2a82a26b5175ffbd26146154cde7b054" refkind="member"><highlight class="normal"><sp/><sp/>clang::Decl<sp/>*<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a2a82a26b5175ffbd26146154cde7b054" kindref="member">instance_decl</ref>;</highlight></codeline>
+<codeline lineno="25" refid="structsc__ast__matchers_1_1ModuleInstanceType_1a7176c5491aa5e6cd2fc04dae3e63eb66" refkind="member"><highlight class="normal"><sp/><sp/>clang::ValueDecl<sp/>*<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a7176c5491aa5e6cd2fc04dae3e63eb66" kindref="member">parent_decl</ref>;</highlight></codeline>
+<codeline lineno="26" refid="structsc__ast__matchers_1_1ModuleInstanceType_1ad9056089538277c3b0fb3b04ed7a00c9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ad9056089538277c3b0fb3b04ed7a00c9" kindref="member">is_array</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Arrays<sp/>can<sp/>have<sp/>multiple<sp/>names.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="structsc__ast__matchers_1_1ModuleInstanceType_1aca4d97a4786fa633d27ed90ecca494a0" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1aca4d97a4786fa633d27ed90ecca494a0" kindref="member">instance_names</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="structsc__ast__matchers_1_1ModuleInstanceType_1a10969391ab3bdda46fddafea615a17c0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a10969391ab3bdda46fddafea615a17c0" kindref="member">add_instance_name</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1aca4d97a4786fa633d27ed90ecca494a0" kindref="member">instance_names</ref>.push_back(name);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33" refid="structsc__ast__matchers_1_1ModuleInstanceType_1adea60ab02b411fa1c7c893b22bd60f2a" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1adea60ab02b411fa1c7c893b22bd60f2a" kindref="member">getInstanceNames</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1aca4d97a4786fa633d27ed90ecca494a0" kindref="member">instance_names</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>fields</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="structsc__ast__matchers_1_1ModuleInstanceType_1afdb810b7b04e23673a3c2e64b4cb3001" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1afdb810b7b04e23673a3c2e64b4cb3001" kindref="member">is_array_</ref>;</highlight></codeline>
+<codeline lineno="37" refid="structsc__ast__matchers_1_1ModuleInstanceType_1add7481687d407362b2aa2771ab44c81f" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;llvm::APInt&gt;<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1add7481687d407362b2aa2771ab44c81f" kindref="member">array_sizes_</ref>;</highlight></codeline>
+<codeline lineno="38" refid="structsc__ast__matchers_1_1ModuleInstanceType_1aac2023ad45d93dba8f49b60a99187900" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::tuple&lt;std::size_t,<sp/>std::size_t,<sp/>std::size_t&gt;<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1aac2023ad45d93dba8f49b60a99187900" kindref="member">ArrayParamType</ref>;</highlight></codeline>
+<codeline lineno="39" refid="structsc__ast__matchers_1_1ModuleInstanceType_1a236514c93fde675146a536181d6972c2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1aac2023ad45d93dba8f49b60a99187900" kindref="member">ArrayParamType</ref><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a236514c93fde675146a536181d6972c2" kindref="member">array_parameters_</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="structsc__ast__matchers_1_1ModuleInstanceType_1af689bd6362ade596b39cf60e0580a7e2" refkind="member"><highlight class="normal"><sp/><sp/>clang::Decl<sp/>*<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1af689bd6362ade596b39cf60e0580a7e2" kindref="member">getInstanceTypeDecl</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ab09f623c60a3aed02d2648512beca6e1" kindref="member">type_decl</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="42" refid="structsc__ast__matchers_1_1ModuleInstanceType_1a7de22e4517b0ea62852b08a721874e4f" refkind="member"><highlight class="normal"><sp/><sp/>clang::Decl<sp/>*<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a7de22e4517b0ea62852b08a721874e4f" kindref="member">getInstanceDecl</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a2a82a26b5175ffbd26146154cde7b054" kindref="member">instance_decl</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="43" refid="structsc__ast__matchers_1_1ModuleInstanceType_1a6f465b5e89502c3e28b91194c10bc15c" refkind="member"><highlight class="normal"><sp/><sp/>clang::ValueDecl<sp/>*<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a6f465b5e89502c3e28b91194c10bc15c" kindref="member">getParentDecl</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a7176c5491aa5e6cd2fc04dae3e63eb66" kindref="member">parent_decl</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="structsc__ast__matchers_1_1ModuleInstanceType_1afe46b03c037611210008d2163a5545a9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1afe46b03c037611210008d2163a5545a9" kindref="member">setArrayType</ref>()<sp/>{<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1afdb810b7b04e23673a3c2e64b4cb3001" kindref="member">is_array_</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="47" refid="structsc__ast__matchers_1_1ModuleInstanceType_1a26667c2766b34d55061efedda27946be" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a26667c2766b34d55061efedda27946be" kindref="member">setArrayParameters</ref>(<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1aac2023ad45d93dba8f49b60a99187900" kindref="member">ArrayParamType</ref><sp/>parm)<sp/>{<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a236514c93fde675146a536181d6972c2" kindref="member">array_parameters_</ref><sp/>=<sp/>parm;<sp/>}</highlight></codeline>
+<codeline lineno="48" refid="structsc__ast__matchers_1_1ModuleInstanceType_1a28162f2cd35d5d9f58bb6f6114ba3664" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1aac2023ad45d93dba8f49b60a99187900" kindref="member">ArrayParamType</ref><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a28162f2cd35d5d9f58bb6f6114ba3664" kindref="member">getArrayParameters</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a236514c93fde675146a536181d6972c2" kindref="member">array_parameters_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="49" refid="structsc__ast__matchers_1_1ModuleInstanceType_1a4371dc69e15c57afbf4488d7897b8c83" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a4371dc69e15c57afbf4488d7897b8c83" kindref="member">isArrayType</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1afdb810b7b04e23673a3c2e64b4cb3001" kindref="member">is_array_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="structsc__ast__matchers_1_1ModuleInstanceType_1a04ffe18b47e0526bc72d523764f9cf01" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a04ffe18b47e0526bc72d523764f9cf01" kindref="member">getArrayDimension</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1add7481687d407362b2aa2771ab44c81f" kindref="member">array_sizes_</ref>.size();<sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="structsc__ast__matchers_1_1ModuleInstanceType_1af3c77277d6002bbc654332fcff9ac1de" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1af3c77277d6002bbc654332fcff9ac1de" kindref="member">addArraySizes</ref>(std::vector&lt;llvm::APInt&gt;<sp/>sizes)<sp/>{<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1add7481687d407362b2aa2771ab44c81f" kindref="member">array_sizes_</ref><sp/>=<sp/>sizes;<sp/>}</highlight></codeline>
+<codeline lineno="57" refid="structsc__ast__matchers_1_1ModuleInstanceType_1a2e2b3da949e2f822f1f07eaa8726f5af" refkind="member"><highlight class="normal"><sp/><sp/>std::vector&lt;llvm::APInt&gt;<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a2e2b3da949e2f822f1f07eaa8726f5af" kindref="member">getArraySizes</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1add7481687d407362b2aa2771ab44c81f" kindref="member">array_sizes_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="structsc__ast__matchers_1_1ModuleInstanceType_1ad62e9f4402009961f4ba3383bcfb88df" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ad62e9f4402009961f4ba3383bcfb88df" kindref="member">ModuleInstanceType</ref>()</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a3b3ac6bc7550058593b15444e3f058ce" kindref="member">var_name</ref>{},</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a270baee7ec4b2b885ed4b765b7714062" kindref="member">var_type_name</ref>{},</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ac2e3331654217483b96515b50fd7172d" kindref="member">instance_name</ref>{},</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a3f89bb63d3cb8f7aa0ba6ff6e08bb693" kindref="member">parent_name</ref>{},</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ace8d813116395be7de22d9d492283a69" kindref="member">is_field_decl</ref>{false},</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ab09f623c60a3aed02d2648512beca6e1" kindref="member">type_decl</ref>{nullptr},</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a2a82a26b5175ffbd26146154cde7b054" kindref="member">instance_decl</ref>{nullptr},</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a7176c5491aa5e6cd2fc04dae3e63eb66" kindref="member">parent_decl</ref>{nullptr},</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1afdb810b7b04e23673a3c2e64b4cb3001" kindref="member">is_array_</ref>{false},</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a236514c93fde675146a536181d6972c2" kindref="member">array_parameters_</ref>{}<sp/>{}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="structsc__ast__matchers_1_1ModuleInstanceType_1ac7d33859a1ca9e45797c1077c9246b4e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ac7d33859a1ca9e45797c1077c9246b4e" kindref="member">ModuleInstanceType</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType" kindref="compound">ModuleInstanceType</ref><sp/>&amp;rhs)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a3b3ac6bc7550058593b15444e3f058ce" kindref="member">var_name</ref><sp/>=<sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a3b3ac6bc7550058593b15444e3f058ce" kindref="member">var_name</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a270baee7ec4b2b885ed4b765b7714062" kindref="member">var_type_name</ref><sp/>=<sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a270baee7ec4b2b885ed4b765b7714062" kindref="member">var_type_name</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ac2e3331654217483b96515b50fd7172d" kindref="member">instance_name</ref><sp/>=<sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ac2e3331654217483b96515b50fd7172d" kindref="member">instance_name</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a3f89bb63d3cb8f7aa0ba6ff6e08bb693" kindref="member">parent_name</ref><sp/>=<sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a3f89bb63d3cb8f7aa0ba6ff6e08bb693" kindref="member">parent_name</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ace8d813116395be7de22d9d492283a69" kindref="member">is_field_decl</ref><sp/>=<sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ace8d813116395be7de22d9d492283a69" kindref="member">is_field_decl</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ab09f623c60a3aed02d2648512beca6e1" kindref="member">type_decl</ref><sp/>=<sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ab09f623c60a3aed02d2648512beca6e1" kindref="member">type_decl</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a2a82a26b5175ffbd26146154cde7b054" kindref="member">instance_decl</ref><sp/>=<sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a2a82a26b5175ffbd26146154cde7b054" kindref="member">instance_decl</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a7176c5491aa5e6cd2fc04dae3e63eb66" kindref="member">parent_decl</ref><sp/>=<sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a7176c5491aa5e6cd2fc04dae3e63eb66" kindref="member">parent_decl</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1afdb810b7b04e23673a3c2e64b4cb3001" kindref="member">is_array_</ref><sp/>=<sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1afdb810b7b04e23673a3c2e64b4cb3001" kindref="member">is_array_</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1add7481687d407362b2aa2771ab44c81f" kindref="member">array_sizes_</ref><sp/>=<sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1add7481687d407362b2aa2771ab44c81f" kindref="member">array_sizes_</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1aca4d97a4786fa633d27ed90ecca494a0" kindref="member">instance_names</ref><sp/>=<sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1aca4d97a4786fa633d27ed90ecca494a0" kindref="member">instance_names</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a236514c93fde675146a536181d6972c2" kindref="member">array_parameters_</ref><sp/>=<sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a236514c93fde675146a536181d6972c2" kindref="member">array_parameters_</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="structsc__ast__matchers_1_1ModuleInstanceType_1afaf59d3bf2ff23c65984cd66bdc5f072" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1afaf59d3bf2ff23c65984cd66bdc5f072" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType" kindref="compound">ModuleInstanceType</ref><sp/>&amp;rhs)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::tie(<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a3b3ac6bc7550058593b15444e3f058ce" kindref="member">var_name</ref>,<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a270baee7ec4b2b885ed4b765b7714062" kindref="member">var_type_name</ref>,<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ac2e3331654217483b96515b50fd7172d" kindref="member">instance_name</ref>,<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a3f89bb63d3cb8f7aa0ba6ff6e08bb693" kindref="member">parent_name</ref>,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ace8d813116395be7de22d9d492283a69" kindref="member">is_field_decl</ref>,<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ab09f623c60a3aed02d2648512beca6e1" kindref="member">type_decl</ref>,<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a2a82a26b5175ffbd26146154cde7b054" kindref="member">instance_decl</ref>,<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a7176c5491aa5e6cd2fc04dae3e63eb66" kindref="member">parent_decl</ref>,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1afdb810b7b04e23673a3c2e64b4cb3001" kindref="member">is_array_</ref>,<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1add7481687d407362b2aa2771ab44c81f" kindref="member">array_sizes_</ref>,<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1aca4d97a4786fa633d27ed90ecca494a0" kindref="member">instance_names</ref>,<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a236514c93fde675146a536181d6972c2" kindref="member">array_parameters_</ref>)<sp/>==</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::tie(rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a3b3ac6bc7550058593b15444e3f058ce" kindref="member">var_name</ref>,<sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a270baee7ec4b2b885ed4b765b7714062" kindref="member">var_type_name</ref>,<sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ac2e3331654217483b96515b50fd7172d" kindref="member">instance_name</ref>,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a3f89bb63d3cb8f7aa0ba6ff6e08bb693" kindref="member">parent_name</ref>,<sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ace8d813116395be7de22d9d492283a69" kindref="member">is_field_decl</ref>,<sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ab09f623c60a3aed02d2648512beca6e1" kindref="member">type_decl</ref>,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a2a82a26b5175ffbd26146154cde7b054" kindref="member">instance_decl</ref>,<sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a7176c5491aa5e6cd2fc04dae3e63eb66" kindref="member">parent_decl</ref>,<sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1afdb810b7b04e23673a3c2e64b4cb3001" kindref="member">is_array_</ref>,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1add7481687d407362b2aa2771ab44c81f" kindref="member">array_sizes_</ref>,<sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1aca4d97a4786fa633d27ed90ecca494a0" kindref="member">instance_names</ref>,<sp/>rhs.<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a236514c93fde675146a536181d6972c2" kindref="member">array_parameters_</ref>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="structsc__ast__matchers_1_1ModuleInstanceType_1a442d565b3145ed94b42106a8be15a906" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a442d565b3145ed94b42106a8be15a906" kindref="member">dump</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>llvm::outs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ModuleInstanceMap<sp/>--<sp/><sp/>type_decl:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ab09f623c60a3aed02d2648512beca6e1" kindref="member">type_decl</ref></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>inst_decl:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a2a82a26b5175ffbd26146154cde7b054" kindref="member">instance_decl</ref></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>var_type_name:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a270baee7ec4b2b885ed4b765b7714062" kindref="member">var_type_name</ref></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>var_name:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a3b3ac6bc7550058593b15444e3f058ce" kindref="member">var_name</ref></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>instance_name:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ac2e3331654217483b96515b50fd7172d" kindref="member">instance_name</ref></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>parent_name:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a3f89bb63d3cb8f7aa0ba6ff6e08bb693" kindref="member">parent_name</ref></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>parent_decl:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a7176c5491aa5e6cd2fc04dae3e63eb66" kindref="member">parent_decl</ref></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>is_field_decl:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1ace8d813116395be7de22d9d492283a69" kindref="member">is_field_decl</ref></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>is_array_:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1afdb810b7b04e23673a3c2e64b4cb3001" kindref="member">is_array_</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>llvm::outs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Array<sp/>sizes:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1add7481687d407362b2aa2771ab44c81f" kindref="member">array_sizes_</ref>.size()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>--<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;size<sp/>:<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1add7481687d407362b2aa2771ab44c81f" kindref="member">array_sizes_</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>llvm::outs()<sp/>&lt;&lt;<sp/>size<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1aca4d97a4786fa633d27ed90ecca494a0" kindref="member">instance_names</ref>.size()<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>llvm::outs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;instance_names:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;name<sp/>:<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1aca4d97a4786fa633d27ed90ecca494a0" kindref="member">instance_names</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>llvm::outs()<sp/>&lt;&lt;<sp/>name;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>llvm::outs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>llvm::outs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Array<sp/>parameters:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a04ffe18b47e0526bc72d523764f9cf01" kindref="member">getArrayDimension</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>llvm::outs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;[x][y][z]:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::get&lt;0&gt;(<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a236514c93fde675146a536181d6972c2" kindref="member">array_parameters_</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>std::get&lt;1&gt;(<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a236514c93fde675146a536181d6972c2" kindref="member">array_parameters_</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>std::get&lt;2&gt;(<ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1a236514c93fde675146a536181d6972c2" kindref="member">array_parameters_</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">};<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>sc_ast_matchers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/model/ModuleInstanceType.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__clang_1_1EventContainer" kind="class" language="C++" prot="public">
+    <compoundname>systemc_clang::EventContainer</compoundname>
+    <includes refid="EventContainer_8h" local="no">EventContainer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsystemc__clang_1_1EventContainer_1ae2d8b33ac8e44534b4afac7e130a771f" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string systemc_clang::EventContainer::event_name_</definition>
+        <argsstring></argsstring>
+        <name>event_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EventContainer.h" line="44" column="10" bodyfile="src/model/EventContainer.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1EventContainer_1ab797ede613f8bd446bb241c9d9a72be9" prot="private" static="no" mutable="no">
+        <type>VarDecl *</type>
+        <definition>VarDecl* systemc_clang::EventContainer::ast_node_</definition>
+        <argsstring></argsstring>
+        <name>ast_node_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EventContainer.h" line="45" column="11" bodyfile="src/model/EventContainer.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1EventContainer_1ad3242575b058e92140bc460502043657" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EventContainer::EventContainer</definition>
+        <argsstring>()</argsstring>
+        <name>EventContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EventContainer.h" line="29" column="3" bodyfile="src/model/EventContainer.cpp" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EventContainer_1a2af179869e397d5d5308969bbb167bad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EventContainer::EventContainer</definition>
+        <argsstring>(string, VarDecl *)</argsstring>
+        <name>EventContainer</name>
+        <param>
+          <type>string</type>
+          <defname>pname</defname>
+        </param>
+        <param>
+          <type>VarDecl *</type>
+          <defname>e</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EventContainer.h" line="30" column="3" bodyfile="src/model/EventContainer.cpp" bodystart="13" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EventContainer_1adc74a954a66d933ee46e28fb83c5b6e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EventContainer::~EventContainer</definition>
+        <argsstring>()</argsstring>
+        <name>~EventContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EventContainer.h" line="32" column="3" bodyfile="src/model/EventContainer.cpp" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EventContainer_1afc58d03f3647e159747df7d84c5934cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EventContainer::EventContainer</definition>
+        <argsstring>(const EventContainer &amp;)</argsstring>
+        <name>EventContainer</name>
+        <param>
+          <type>const <ref refid="classsystemc__clang_1_1EventContainer" kindref="compound">EventContainer</ref> &amp;</type>
+          <defname>from</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EventContainer.h" line="35" column="3" bodyfile="src/model/EventContainer.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EventContainer_1a4c3469d3f67875d9c43975f11868d628" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string EventContainer::getEventName</definition>
+        <argsstring>() const</argsstring>
+        <name>getEventName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EventContainer.h" line="37" column="10" bodyfile="src/model/EventContainer.cpp" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EventContainer_1ae58ef7362327a2cb3064871b8b792fbd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>VarDecl *</type>
+        <definition>VarDecl * EventContainer::getASTNode</definition>
+        <argsstring>() const</argsstring>
+        <name>getASTNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EventContainer.h" line="38" column="11" bodyfile="src/model/EventContainer.cpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1EventContainer_1a00a7e6cd9504616d53d54b9e1a50b8f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EventContainer::dump</definition>
+        <argsstring>(llvm::raw_ostream &amp;os, int tabn=0)</argsstring>
+        <name>dump</name>
+        <param>
+          <type>llvm::raw_ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tabn</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/EventContainer.h" line="40" column="8" bodyfile="src/model/EventContainer.cpp" bodystart="25" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/model/EventContainer.h" line="27" column="1" bodyfile="src/model/EventContainer.h" bodystart="27" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classsystemc__clang_1_1EventContainer_1ab797ede613f8bd446bb241c9d9a72be9" prot="private" virt="non-virtual"><scope>systemc_clang::EventContainer</scope><name>ast_node_</name></member>
+      <member refid="classsystemc__clang_1_1EventContainer_1a00a7e6cd9504616d53d54b9e1a50b8f2" prot="public" virt="non-virtual"><scope>systemc_clang::EventContainer</scope><name>dump</name></member>
+      <member refid="classsystemc__clang_1_1EventContainer_1ae2d8b33ac8e44534b4afac7e130a771f" prot="private" virt="non-virtual"><scope>systemc_clang::EventContainer</scope><name>event_name_</name></member>
+      <member refid="classsystemc__clang_1_1EventContainer_1ad3242575b058e92140bc460502043657" prot="public" virt="non-virtual"><scope>systemc_clang::EventContainer</scope><name>EventContainer</name></member>
+      <member refid="classsystemc__clang_1_1EventContainer_1a2af179869e397d5d5308969bbb167bad" prot="public" virt="non-virtual"><scope>systemc_clang::EventContainer</scope><name>EventContainer</name></member>
+      <member refid="classsystemc__clang_1_1EventContainer_1afc58d03f3647e159747df7d84c5934cd" prot="public" virt="non-virtual"><scope>systemc_clang::EventContainer</scope><name>EventContainer</name></member>
+      <member refid="classsystemc__clang_1_1EventContainer_1ae58ef7362327a2cb3064871b8b792fbd" prot="public" virt="non-virtual"><scope>systemc_clang::EventContainer</scope><name>getASTNode</name></member>
+      <member refid="classsystemc__clang_1_1EventContainer_1a4c3469d3f67875d9c43975f11868d628" prot="public" virt="non-virtual"><scope>systemc_clang::EventContainer</scope><name>getEventName</name></member>
+      <member refid="classsystemc__clang_1_1EventContainer_1adc74a954a66d933ee46e28fb83c5b6e6" prot="public" virt="non-virtual"><scope>systemc_clang::EventContainer</scope><name>~EventContainer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

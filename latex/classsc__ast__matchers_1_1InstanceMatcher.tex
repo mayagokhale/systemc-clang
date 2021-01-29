@@ -1,0 +1,207 @@
+\hypertarget{classsc__ast__matchers_1_1InstanceMatcher}{}\doxysection{sc\+\_\+ast\+\_\+matchers\+::Instance\+Matcher Class Reference}
+\label{classsc__ast__matchers_1_1InstanceMatcher}\index{sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}}
+
+
+Class \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher}{Instance\+Matcher}}.  
+
+
+
+
+{\ttfamily \#include $<$Instance\+Matcher.\+h$>$}
+
+
+
+Inheritance diagram for sc\+\_\+ast\+\_\+matchers\+::Instance\+Matcher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classsc__ast__matchers_1_1InstanceMatcher__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sc\+\_\+ast\+\_\+matchers\+::Instance\+Matcher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classsc__ast__matchers_1_1InstanceMatcher__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::tuple$<$ std\+::string, clang\+::\+Decl $\ast$, \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType}{Module\+Instance\+Type}} $>$ \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a70b046aa0e773c870c2f169dc09b11a6}{Instance\+Decl\+Type}}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a70b046aa0e773c870c2f169dc09b11a6}{Instance\+Decl\+Type}} $>$ \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a365a93a3acf5d3e4296b0fc3b72de11d}{Instance\+Declarations\+Type}}
+\item 
+typedef std\+::pair$<$ clang\+::\+Decl $\ast$, \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType}{Module\+Instance\+Type}} $>$ \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a2da868d9005b524c65f6dc808f6a6e2b}{Module\+Instance\+Tuple}}
+\item 
+typedef std\+::map$<$ clang\+::\+Decl $\ast$, \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType}{Module\+Instance\+Type}} $>$ \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a2565d2317cefa7d03a6765d5370a15e5}{Instance\+Declarations}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a2565d2317cefa7d03a6765d5370a15e5}{Instance\+Declarations}} \& \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a5376976183a68f8d45e6988fa20562a6}{get\+Instance\+Map}} ()
+\item 
+bool \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_acbbca6eaf9fbbc3585f3e18932f13cf7}{find\+Instance\+By\+Variable\+Type}} (clang\+::\+CXXRecord\+Decl $\ast$decl, std\+::vector$<$ \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a70b046aa0e773c870c2f169dc09b11a6}{Instance\+Decl\+Type}} $>$ \&found\+\_\+instances)
+\item 
+auto \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_ae3317d935480e9288da5234459d0987b}{match\+\_\+ctor\+\_\+arg}} (const std\+::string \&bind\+\_\+arg\+\_\+name, const std\+::string \&bind\+\_\+ctor\+\_\+expr)
+\item 
+auto \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a87ee03e1e17cf1ffe6f8d2a14d0246d7}{make\+Array\+Sub\+Module}} (llvm\+::\+String\+Ref name)
+\item 
+void \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a9d0236cbba66632cf6aa5b20056eea0d}{register\+Matchers}} (Match\+Finder \&finder)
+\item 
+void \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a770fd63f4e6a2ae106fda6d1d91f590e}{parse\+Var\+Decl}} (clang\+::\+Var\+Decl $\ast$instance\+\_\+decl, std\+::string \&instance\+\_\+name)
+\item 
+void \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a932c5e4717cb56e805541329a045b026}{parse\+Field\+Decl}} (clang\+::\+Field\+Decl $\ast$instance\+\_\+decl, clang\+::\+Value\+Decl $\ast$parent\+\_\+decl, std\+::string instance\+\_\+name, \mbox{\hyperlink{namespacesc__ast__matchers_1_1utils_1_1array__type_a8d73d3e8a037eafac89d3561cbafb162}{Index\+Map\+Type}} \&index\+\_\+map)
+\item 
+virtual void \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a9a170c8fb20d0d812ec515cf9c09600f}{run}} (const Match\+Finder\+::\+Match\+Result \&result)
+\item 
+void \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a5b6ac85a7e4666104cd786415326fe87}{dump}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a365a93a3acf5d3e4296b0fc3b72de11d}{Instance\+Declarations\+Type}} \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_addc84e7ce6b84317f43e41f7f08250c7}{instances\+\_\+}}
+\begin{DoxyCompactList}\small\item\em deprecated \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a2565d2317cefa7d03a6765d5370a15e5}{Instance\+Declarations}} \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_ac2b21c735d12ccf05460992aa415a0dc}{instance\+\_\+map\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Map of Decl$\ast$ =$>$ \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType}{Module\+Instance\+Type}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher}{Instance\+Matcher}}. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classsc__ast__matchers_1_1InstanceMatcher_a2565d2317cefa7d03a6765d5370a15e5}\label{classsc__ast__matchers_1_1InstanceMatcher_a2565d2317cefa7d03a6765d5370a15e5}} 
+\index{sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}!InstanceDeclarations@{InstanceDeclarations}}
+\index{InstanceDeclarations@{InstanceDeclarations}!sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}}
+\doxysubsubsection{\texorpdfstring{InstanceDeclarations}{InstanceDeclarations}}
+{\footnotesize\ttfamily typedef std\+::map$<$clang\+::\+Decl $\ast$, \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType}{Module\+Instance\+Type}}$>$ \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a2565d2317cefa7d03a6765d5370a15e5}{sc\+\_\+ast\+\_\+matchers\+::\+Instance\+Matcher\+::\+Instance\+Declarations}}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1InstanceMatcher_a365a93a3acf5d3e4296b0fc3b72de11d}\label{classsc__ast__matchers_1_1InstanceMatcher_a365a93a3acf5d3e4296b0fc3b72de11d}} 
+\index{sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}!InstanceDeclarationsType@{InstanceDeclarationsType}}
+\index{InstanceDeclarationsType@{InstanceDeclarationsType}!sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}}
+\doxysubsubsection{\texorpdfstring{InstanceDeclarationsType}{InstanceDeclarationsType}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a70b046aa0e773c870c2f169dc09b11a6}{Instance\+Decl\+Type}}$>$ \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a365a93a3acf5d3e4296b0fc3b72de11d}{sc\+\_\+ast\+\_\+matchers\+::\+Instance\+Matcher\+::\+Instance\+Declarations\+Type}}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1InstanceMatcher_a70b046aa0e773c870c2f169dc09b11a6}\label{classsc__ast__matchers_1_1InstanceMatcher_a70b046aa0e773c870c2f169dc09b11a6}} 
+\index{sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}!InstanceDeclType@{InstanceDeclType}}
+\index{InstanceDeclType@{InstanceDeclType}!sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}}
+\doxysubsubsection{\texorpdfstring{InstanceDeclType}{InstanceDeclType}}
+{\footnotesize\ttfamily typedef std\+::tuple$<$std\+::string, clang\+::\+Decl $\ast$, \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType}{Module\+Instance\+Type}}$>$ \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a70b046aa0e773c870c2f169dc09b11a6}{sc\+\_\+ast\+\_\+matchers\+::\+Instance\+Matcher\+::\+Instance\+Decl\+Type}}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1InstanceMatcher_a2da868d9005b524c65f6dc808f6a6e2b}\label{classsc__ast__matchers_1_1InstanceMatcher_a2da868d9005b524c65f6dc808f6a6e2b}} 
+\index{sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}!ModuleInstanceTuple@{ModuleInstanceTuple}}
+\index{ModuleInstanceTuple@{ModuleInstanceTuple}!sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}}
+\doxysubsubsection{\texorpdfstring{ModuleInstanceTuple}{ModuleInstanceTuple}}
+{\footnotesize\ttfamily typedef std\+::pair$<$clang\+::\+Decl $\ast$, \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType}{Module\+Instance\+Type}}$>$ \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a2da868d9005b524c65f6dc808f6a6e2b}{sc\+\_\+ast\+\_\+matchers\+::\+Instance\+Matcher\+::\+Module\+Instance\+Tuple}}}
+
+Store all instances in a map. The map key should be the Decl$\ast$. This will work for both Field\+Decl (instances within sub-\/modules) and Var\+Decl separate modules in sc\+\_\+main(). 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsc__ast__matchers_1_1InstanceMatcher_a5b6ac85a7e4666104cd786415326fe87}\label{classsc__ast__matchers_1_1InstanceMatcher_a5b6ac85a7e4666104cd786415326fe87}} 
+\index{sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}!dump@{dump}}
+\index{dump@{dump}!sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void sc\+\_\+ast\+\_\+matchers\+::\+Instance\+Matcher\+::dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1InstanceMatcher_acbbca6eaf9fbbc3585f3e18932f13cf7}\label{classsc__ast__matchers_1_1InstanceMatcher_acbbca6eaf9fbbc3585f3e18932f13cf7}} 
+\index{sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}!findInstanceByVariableType@{findInstanceByVariableType}}
+\index{findInstanceByVariableType@{findInstanceByVariableType}!sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}}
+\doxysubsubsection{\texorpdfstring{findInstanceByVariableType()}{findInstanceByVariableType()}}
+{\footnotesize\ttfamily bool sc\+\_\+ast\+\_\+matchers\+::\+Instance\+Matcher\+::find\+Instance\+By\+Variable\+Type (\begin{DoxyParamCaption}\item[{clang\+::\+CXXRecord\+Decl $\ast$}]{decl,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a70b046aa0e773c870c2f169dc09b11a6}{Instance\+Decl\+Type}} $>$ \&}]{found\+\_\+instances }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1InstanceMatcher_a5376976183a68f8d45e6988fa20562a6}\label{classsc__ast__matchers_1_1InstanceMatcher_a5376976183a68f8d45e6988fa20562a6}} 
+\index{sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}!getInstanceMap@{getInstanceMap}}
+\index{getInstanceMap@{getInstanceMap}!sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}}
+\doxysubsubsection{\texorpdfstring{getInstanceMap()}{getInstanceMap()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a2565d2317cefa7d03a6765d5370a15e5}{Instance\+Declarations}}\& sc\+\_\+ast\+\_\+matchers\+::\+Instance\+Matcher\+::get\+Instance\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1InstanceMatcher_a87ee03e1e17cf1ffe6f8d2a14d0246d7}\label{classsc__ast__matchers_1_1InstanceMatcher_a87ee03e1e17cf1ffe6f8d2a14d0246d7}} 
+\index{sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}!makeArraySubModule@{makeArraySubModule}}
+\index{makeArraySubModule@{makeArraySubModule}!sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}}
+\doxysubsubsection{\texorpdfstring{makeArraySubModule()}{makeArraySubModule()}}
+{\footnotesize\ttfamily auto sc\+\_\+ast\+\_\+matchers\+::\+Instance\+Matcher\+::make\+Array\+Sub\+Module (\begin{DoxyParamCaption}\item[{llvm\+::\+String\+Ref}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1InstanceMatcher_ae3317d935480e9288da5234459d0987b}\label{classsc__ast__matchers_1_1InstanceMatcher_ae3317d935480e9288da5234459d0987b}} 
+\index{sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}!match\_ctor\_arg@{match\_ctor\_arg}}
+\index{match\_ctor\_arg@{match\_ctor\_arg}!sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}}
+\doxysubsubsection{\texorpdfstring{match\_ctor\_arg()}{match\_ctor\_arg()}}
+{\footnotesize\ttfamily auto sc\+\_\+ast\+\_\+matchers\+::\+Instance\+Matcher\+::match\+\_\+ctor\+\_\+arg (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{bind\+\_\+arg\+\_\+name,  }\item[{const std\+::string \&}]{bind\+\_\+ctor\+\_\+expr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1InstanceMatcher_a932c5e4717cb56e805541329a045b026}\label{classsc__ast__matchers_1_1InstanceMatcher_a932c5e4717cb56e805541329a045b026}} 
+\index{sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}!parseFieldDecl@{parseFieldDecl}}
+\index{parseFieldDecl@{parseFieldDecl}!sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}}
+\doxysubsubsection{\texorpdfstring{parseFieldDecl()}{parseFieldDecl()}}
+{\footnotesize\ttfamily void sc\+\_\+ast\+\_\+matchers\+::\+Instance\+Matcher\+::parse\+Field\+Decl (\begin{DoxyParamCaption}\item[{clang\+::\+Field\+Decl $\ast$}]{instance\+\_\+decl,  }\item[{clang\+::\+Value\+Decl $\ast$}]{parent\+\_\+decl,  }\item[{std\+::string}]{instance\+\_\+name,  }\item[{\mbox{\hyperlink{namespacesc__ast__matchers_1_1utils_1_1array__type_a8d73d3e8a037eafac89d3561cbafb162}{Index\+Map\+Type}} \&}]{index\+\_\+map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get all the 1D, 2D and 3D array type pointers.
+
+We need to set the array\+\_\+type pointer to the deepest array. That is if it is a 3D array then we need to set it to the third dimension element type to get the correct CXXRecord\+Decl.
+
+Find if an instance already exists. If it does exist.\mbox{\Hypertarget{classsc__ast__matchers_1_1InstanceMatcher_a770fd63f4e6a2ae106fda6d1d91f590e}\label{classsc__ast__matchers_1_1InstanceMatcher_a770fd63f4e6a2ae106fda6d1d91f590e}} 
+\index{sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}!parseVarDecl@{parseVarDecl}}
+\index{parseVarDecl@{parseVarDecl}!sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}}
+\doxysubsubsection{\texorpdfstring{parseVarDecl()}{parseVarDecl()}}
+{\footnotesize\ttfamily void sc\+\_\+ast\+\_\+matchers\+::\+Instance\+Matcher\+::parse\+Var\+Decl (\begin{DoxyParamCaption}\item[{clang\+::\+Var\+Decl $\ast$}]{instance\+\_\+decl,  }\item[{std\+::string \&}]{instance\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is the main object\textquotesingle{}s constructor name
+
+We do not get the instance name from within the field declaration. Get the type of the class of the field.
+
+auto instance\+\_\+name\{cast$<$\+String\+Literal$>$(ctor\+\_\+arg)-\/$>$get\+String().str()\};\mbox{\Hypertarget{classsc__ast__matchers_1_1InstanceMatcher_a9d0236cbba66632cf6aa5b20056eea0d}\label{classsc__ast__matchers_1_1InstanceMatcher_a9d0236cbba66632cf6aa5b20056eea0d}} 
+\index{sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}!registerMatchers@{registerMatchers}}
+\index{registerMatchers@{registerMatchers}!sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}}
+\doxysubsubsection{\texorpdfstring{registerMatchers()}{registerMatchers()}}
+{\footnotesize\ttfamily void sc\+\_\+ast\+\_\+matchers\+::\+Instance\+Matcher\+::register\+Matchers (\begin{DoxyParamCaption}\item[{Match\+Finder \&}]{finder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+We will have two matchers.
+
+Match when the following conditions are satisifed\+:
+\begin{DoxyItemize}
+\item It is a Field\+Decl
+\item It has a type that is a C++ class that is derived from sc\+\_\+module
+\end{DoxyItemize}
+
+These are field members within a class declaration. Hence, we only need to collect their Field\+Decl pointers and their variable names. Their instance names would appear when the constructor of the class that has these field members within it. This constructor would use the initialization list to provide an argument, which would be the instance name.
+
+Add the two matchers.\mbox{\Hypertarget{classsc__ast__matchers_1_1InstanceMatcher_a9a170c8fb20d0d812ec515cf9c09600f}\label{classsc__ast__matchers_1_1InstanceMatcher_a9a170c8fb20d0d812ec515cf9c09600f}} 
+\index{sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}!run@{run}}
+\index{run@{run}!sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily virtual void sc\+\_\+ast\+\_\+matchers\+::\+Instance\+Matcher\+::run (\begin{DoxyParamCaption}\item[{const Match\+Finder\+::\+Match\+Result \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+For arrays, an Init\+List\+Expr is generated. For non-\/arrays, CXXConstruct\+Expr is directly castable.
+
+If it is an array, then get to its Init\+List\+Expr, and then get the first element\textquotesingle{}s constructor.
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsc__ast__matchers_1_1InstanceMatcher_ac2b21c735d12ccf05460992aa415a0dc}\label{classsc__ast__matchers_1_1InstanceMatcher_ac2b21c735d12ccf05460992aa415a0dc}} 
+\index{sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}!instance\_map\_@{instance\_map\_}}
+\index{instance\_map\_@{instance\_map\_}!sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}}
+\doxysubsubsection{\texorpdfstring{instance\_map\_}{instance\_map\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a2565d2317cefa7d03a6765d5370a15e5}{Instance\+Declarations}} sc\+\_\+ast\+\_\+matchers\+::\+Instance\+Matcher\+::instance\+\_\+map\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Map of Decl$\ast$ =$>$ \mbox{\hyperlink{structsc__ast__matchers_1_1ModuleInstanceType}{Module\+Instance\+Type}}. 
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1InstanceMatcher_addc84e7ce6b84317f43e41f7f08250c7}\label{classsc__ast__matchers_1_1InstanceMatcher_addc84e7ce6b84317f43e41f7f08250c7}} 
+\index{sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}!instances\_@{instances\_}}
+\index{instances\_@{instances\_}!sc\_ast\_matchers::InstanceMatcher@{sc\_ast\_matchers::InstanceMatcher}}
+\doxysubsubsection{\texorpdfstring{instances\_}{instances\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc__ast__matchers_1_1InstanceMatcher_a365a93a3acf5d3e4296b0fc3b72de11d}{Instance\+Declarations\+Type}} sc\+\_\+ast\+\_\+matchers\+::\+Instance\+Matcher\+::instances\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+deprecated 
+
+Instances can come in two forms\+: Field\+Decl\+: this is when they are members of a class. Var\+Decl \+: this is when they are simply variables such as in functions or in the \mbox{\hyperlink{namespacehcode2verilog_ac9789ddccfb7ed9a117def742fc06ac5}{main()}}.
+
+The way to identify them both together is to look at its base class Decl. Then use dyn\+\_\+cast$<$$>$ to detect whether it is one of the two above mentioned types. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/matchers/\mbox{\hyperlink{InstanceMatcher_8h}{Instance\+Matcher.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,219 @@
+\hypertarget{classsystemc__clang_1_1GPUMacro}{}\doxysection{systemc\+\_\+clang\+::GPUMacro Class Reference}
+\label{classsystemc__clang_1_1GPUMacro}\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+
+
+{\ttfamily \#include $<$Find\+GPUMacro.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_acafbcb39ca1438df64a8a569af3067fd}{GPUMacro}} (int, int, int, int, int, int, int, int)
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_af05ea14efc34ed971726a8f63f296ff6}{GPUMacro}} ()
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_ab331633c6599c213c0845fb88172e6e3}{$\sim$\+GPUMacro}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_ae2fa35f05616f3ac77f11eccd2acbc14}{add\+GPUFit}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_adf2128a246b24e13330e59f99db46ff9}{deny\+GPUFit}} ()
+\item 
+int \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_aa93a604a0d682d38ea524d6ee2bc79d6}{get\+Block\+Idx}} ()
+\item 
+int \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_ad2c027b2c20fe2eafb882b4087ff265e}{get\+Block\+Idy}} ()
+\item 
+int \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_ace526615dea7ed936e25a6ecf93ea138}{get\+Block\+Idz}} ()
+\item 
+int \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_ab348265f86258f210a9be7bc35f77d13}{get\+Thread\+Idx}} ()
+\item 
+int \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_a0331700e0828b07120ef8f12f340049d}{get\+Thread\+Idy}} ()
+\item 
+int \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_a904d8a5936cfe65ae875ea9b5fd14dc6}{get\+Thread\+Idz}} ()
+\item 
+int \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_aa6a4895dd19fc7b3000cf3b280899967}{get\+GPUTime}} ()
+\item 
+int \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_abe0492628920eac96ed31fac90193917}{get\+CPUTime}} ()
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_a55930ac68902786908bf08cdcc4ccd13}{is\+GPUFit}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_aebb803764900c516e481a1de86b0ab9e}{dump}} (raw\+\_\+ostream \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_a06f803a27fdc9e008f8cc1904400ec5c}{\+\_\+block\+Idx}}
+\item 
+int \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_a4ca499a59b50cebf760f95c4220ef463}{\+\_\+block\+Idy}}
+\item 
+int \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_a2b6b46b2957fbe97a815b437b3346f5b}{\+\_\+block\+Idz}}
+\item 
+int \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_aa11a64d7561d885020a41d1415d760d1}{\+\_\+thread\+Idx}}
+\item 
+int \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_a1be3f3799006c7139cc3eac1e8d02fa8}{\+\_\+thread\+Idy}}
+\item 
+int \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_aa0c70be95d461aff5063a21467906dc8}{\+\_\+thread\+Idz}}
+\item 
+int \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_a16a787c0743b526b0f9fe0b3104369bb}{\+\_\+gpu\+Time}}
+\item 
+int \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_a2575febfce15bdc3d8909cfb188fa680}{\+\_\+cpu\+Time}}
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1GPUMacro_a9b1a0381f39e36104fad9f64658c8b1f}{\+\_\+gpu\+Fit}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_acafbcb39ca1438df64a8a569af3067fd}\label{classsystemc__clang_1_1GPUMacro_acafbcb39ca1438df64a8a569af3067fd}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!GPUMacro@{GPUMacro}}
+\index{GPUMacro@{GPUMacro}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{GPUMacro()}{GPUMacro()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily GPUMacro\+::\+GPUMacro (\begin{DoxyParamCaption}\item[{int}]{block\+Idx,  }\item[{int}]{block\+Idy,  }\item[{int}]{block\+Idz,  }\item[{int}]{thread\+Idx,  }\item[{int}]{thread\+Idy,  }\item[{int}]{thread\+Idz,  }\item[{int}]{gpu\+Time,  }\item[{int}]{cpu\+Time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_af05ea14efc34ed971726a8f63f296ff6}\label{classsystemc__clang_1_1GPUMacro_af05ea14efc34ed971726a8f63f296ff6}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!GPUMacro@{GPUMacro}}
+\index{GPUMacro@{GPUMacro}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{GPUMacro()}{GPUMacro()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily GPUMacro\+::\+GPUMacro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_ab331633c6599c213c0845fb88172e6e3}\label{classsystemc__clang_1_1GPUMacro_ab331633c6599c213c0845fb88172e6e3}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!````~GPUMacro@{$\sim$GPUMacro}}
+\index{````~GPUMacro@{$\sim$GPUMacro}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{$\sim$GPUMacro()}{~GPUMacro()}}
+{\footnotesize\ttfamily GPUMacro\+::$\sim$\+GPUMacro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_ae2fa35f05616f3ac77f11eccd2acbc14}\label{classsystemc__clang_1_1GPUMacro_ae2fa35f05616f3ac77f11eccd2acbc14}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!addGPUFit@{addGPUFit}}
+\index{addGPUFit@{addGPUFit}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{addGPUFit()}{addGPUFit()}}
+{\footnotesize\ttfamily void GPUMacro\+::add\+GPUFit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_adf2128a246b24e13330e59f99db46ff9}\label{classsystemc__clang_1_1GPUMacro_adf2128a246b24e13330e59f99db46ff9}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!denyGPUFit@{denyGPUFit}}
+\index{denyGPUFit@{denyGPUFit}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{denyGPUFit()}{denyGPUFit()}}
+{\footnotesize\ttfamily void GPUMacro\+::deny\+GPUFit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_aebb803764900c516e481a1de86b0ab9e}\label{classsystemc__clang_1_1GPUMacro_aebb803764900c516e481a1de86b0ab9e}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!dump@{dump}}
+\index{dump@{dump}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void GPUMacro\+::dump (\begin{DoxyParamCaption}\item[{raw\+\_\+ostream \&}]{os }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_aa93a604a0d682d38ea524d6ee2bc79d6}\label{classsystemc__clang_1_1GPUMacro_aa93a604a0d682d38ea524d6ee2bc79d6}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!getBlockIdx@{getBlockIdx}}
+\index{getBlockIdx@{getBlockIdx}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{getBlockIdx()}{getBlockIdx()}}
+{\footnotesize\ttfamily int GPUMacro\+::get\+Block\+Idx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_ad2c027b2c20fe2eafb882b4087ff265e}\label{classsystemc__clang_1_1GPUMacro_ad2c027b2c20fe2eafb882b4087ff265e}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!getBlockIdy@{getBlockIdy}}
+\index{getBlockIdy@{getBlockIdy}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{getBlockIdy()}{getBlockIdy()}}
+{\footnotesize\ttfamily int GPUMacro\+::get\+Block\+Idy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_ace526615dea7ed936e25a6ecf93ea138}\label{classsystemc__clang_1_1GPUMacro_ace526615dea7ed936e25a6ecf93ea138}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!getBlockIdz@{getBlockIdz}}
+\index{getBlockIdz@{getBlockIdz}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{getBlockIdz()}{getBlockIdz()}}
+{\footnotesize\ttfamily int GPUMacro\+::get\+Block\+Idz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_abe0492628920eac96ed31fac90193917}\label{classsystemc__clang_1_1GPUMacro_abe0492628920eac96ed31fac90193917}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!getCPUTime@{getCPUTime}}
+\index{getCPUTime@{getCPUTime}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{getCPUTime()}{getCPUTime()}}
+{\footnotesize\ttfamily int GPUMacro\+::get\+CPUTime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_aa6a4895dd19fc7b3000cf3b280899967}\label{classsystemc__clang_1_1GPUMacro_aa6a4895dd19fc7b3000cf3b280899967}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!getGPUTime@{getGPUTime}}
+\index{getGPUTime@{getGPUTime}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{getGPUTime()}{getGPUTime()}}
+{\footnotesize\ttfamily int GPUMacro\+::get\+GPUTime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_ab348265f86258f210a9be7bc35f77d13}\label{classsystemc__clang_1_1GPUMacro_ab348265f86258f210a9be7bc35f77d13}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!getThreadIdx@{getThreadIdx}}
+\index{getThreadIdx@{getThreadIdx}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{getThreadIdx()}{getThreadIdx()}}
+{\footnotesize\ttfamily int GPUMacro\+::get\+Thread\+Idx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_a0331700e0828b07120ef8f12f340049d}\label{classsystemc__clang_1_1GPUMacro_a0331700e0828b07120ef8f12f340049d}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!getThreadIdy@{getThreadIdy}}
+\index{getThreadIdy@{getThreadIdy}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{getThreadIdy()}{getThreadIdy()}}
+{\footnotesize\ttfamily int GPUMacro\+::get\+Thread\+Idy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_a904d8a5936cfe65ae875ea9b5fd14dc6}\label{classsystemc__clang_1_1GPUMacro_a904d8a5936cfe65ae875ea9b5fd14dc6}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!getThreadIdz@{getThreadIdz}}
+\index{getThreadIdz@{getThreadIdz}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{getThreadIdz()}{getThreadIdz()}}
+{\footnotesize\ttfamily int GPUMacro\+::get\+Thread\+Idz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_a55930ac68902786908bf08cdcc4ccd13}\label{classsystemc__clang_1_1GPUMacro_a55930ac68902786908bf08cdcc4ccd13}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!isGPUFit@{isGPUFit}}
+\index{isGPUFit@{isGPUFit}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{isGPUFit()}{isGPUFit()}}
+{\footnotesize\ttfamily bool GPUMacro\+::is\+GPUFit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_a06f803a27fdc9e008f8cc1904400ec5c}\label{classsystemc__clang_1_1GPUMacro_a06f803a27fdc9e008f8cc1904400ec5c}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!\_blockIdx@{\_blockIdx}}
+\index{\_blockIdx@{\_blockIdx}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{\_blockIdx}{\_blockIdx}}
+{\footnotesize\ttfamily int systemc\+\_\+clang\+::\+GPUMacro\+::\+\_\+block\+Idx\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_a4ca499a59b50cebf760f95c4220ef463}\label{classsystemc__clang_1_1GPUMacro_a4ca499a59b50cebf760f95c4220ef463}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!\_blockIdy@{\_blockIdy}}
+\index{\_blockIdy@{\_blockIdy}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{\_blockIdy}{\_blockIdy}}
+{\footnotesize\ttfamily int systemc\+\_\+clang\+::\+GPUMacro\+::\+\_\+block\+Idy\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_a2b6b46b2957fbe97a815b437b3346f5b}\label{classsystemc__clang_1_1GPUMacro_a2b6b46b2957fbe97a815b437b3346f5b}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!\_blockIdz@{\_blockIdz}}
+\index{\_blockIdz@{\_blockIdz}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{\_blockIdz}{\_blockIdz}}
+{\footnotesize\ttfamily int systemc\+\_\+clang\+::\+GPUMacro\+::\+\_\+block\+Idz\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_a2575febfce15bdc3d8909cfb188fa680}\label{classsystemc__clang_1_1GPUMacro_a2575febfce15bdc3d8909cfb188fa680}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!\_cpuTime@{\_cpuTime}}
+\index{\_cpuTime@{\_cpuTime}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{\_cpuTime}{\_cpuTime}}
+{\footnotesize\ttfamily int systemc\+\_\+clang\+::\+GPUMacro\+::\+\_\+cpu\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_a9b1a0381f39e36104fad9f64658c8b1f}\label{classsystemc__clang_1_1GPUMacro_a9b1a0381f39e36104fad9f64658c8b1f}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!\_gpuFit@{\_gpuFit}}
+\index{\_gpuFit@{\_gpuFit}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{\_gpuFit}{\_gpuFit}}
+{\footnotesize\ttfamily bool systemc\+\_\+clang\+::\+GPUMacro\+::\+\_\+gpu\+Fit\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_a16a787c0743b526b0f9fe0b3104369bb}\label{classsystemc__clang_1_1GPUMacro_a16a787c0743b526b0f9fe0b3104369bb}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!\_gpuTime@{\_gpuTime}}
+\index{\_gpuTime@{\_gpuTime}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{\_gpuTime}{\_gpuTime}}
+{\footnotesize\ttfamily int systemc\+\_\+clang\+::\+GPUMacro\+::\+\_\+gpu\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_aa11a64d7561d885020a41d1415d760d1}\label{classsystemc__clang_1_1GPUMacro_aa11a64d7561d885020a41d1415d760d1}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!\_threadIdx@{\_threadIdx}}
+\index{\_threadIdx@{\_threadIdx}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{\_threadIdx}{\_threadIdx}}
+{\footnotesize\ttfamily int systemc\+\_\+clang\+::\+GPUMacro\+::\+\_\+thread\+Idx\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_a1be3f3799006c7139cc3eac1e8d02fa8}\label{classsystemc__clang_1_1GPUMacro_a1be3f3799006c7139cc3eac1e8d02fa8}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!\_threadIdy@{\_threadIdy}}
+\index{\_threadIdy@{\_threadIdy}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{\_threadIdy}{\_threadIdy}}
+{\footnotesize\ttfamily int systemc\+\_\+clang\+::\+GPUMacro\+::\+\_\+thread\+Idy\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1GPUMacro_aa0c70be95d461aff5063a21467906dc8}\label{classsystemc__clang_1_1GPUMacro_aa0c70be95d461aff5063a21467906dc8}} 
+\index{systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}!\_threadIdz@{\_threadIdz}}
+\index{\_threadIdz@{\_threadIdz}!systemc\_clang::GPUMacro@{systemc\_clang::GPUMacro}}
+\doxysubsubsection{\texorpdfstring{\_threadIdz}{\_threadIdz}}
+{\footnotesize\ttfamily int systemc\+\_\+clang\+::\+GPUMacro\+::\+\_\+thread\+Idz\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+SCuitable/\mbox{\hyperlink{FindGPUMacro_8h}{Find\+GPUMacro.\+h}}\item 
+src/\+SCuitable/\mbox{\hyperlink{FindGPUMacro_8cpp}{Find\+GPUMacro.\+cpp}}\end{DoxyCompactItemize}

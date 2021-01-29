@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass" kind="class" language="Python" prot="public">
+    <compoundname>parselib::transforms::node_merge::NodeMergePass</compoundname>
+    <basecompoundref refid="classparselib_1_1transforms_1_1top__down_1_1TopDown" prot="public" virt="non-virtual">parselib.transforms.top_down.TopDown</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass_1aed35906d36119161b6a78e4607cda805" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.node_merge.NodeMergePass.hnsbinop</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hnsbinop</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/node_merge.py" line="9" column="1" bodyfile="plugins/hdl/parselib/transforms/node_merge.py" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass_1a4619152edba63d56ad01f43807ad743e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.node_merge.NodeMergePass.blkassign</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>blkassign</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>this handler fixes the a[b].read() case by removing read() and making it a[b]</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/node_merge.py" line="22" column="1" bodyfile="plugins/hdl/parselib/transforms/node_merge.py" bodystart="22" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass_1a2d95f6b7a5fbdbc2ae200ff726a6f4b4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.node_merge.NodeMergePass.__transform_arrayref_syscread</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>__transform_arrayref_syscread</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/node_merge.py" line="14" column="1" bodyfile="plugins/hdl/parselib/transforms/node_merge.py" bodystart="14" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>This pass merges separate nodes that are created for easy recognition for grammar,
+but actually shares the same semantics
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>parselib.transforms.node_merge.NodeMergePass</label>
+        <link refid="classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>parselib.transforms.top_down.TopDown</label>
+        <link refid="classparselib_1_1transforms_1_1top__down_1_1TopDown"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Interpreter</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>parselib.transforms.node_merge.NodeMergePass</label>
+        <link refid="classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>parselib.transforms.top_down.TopDown</label>
+        <link refid="classparselib_1_1transforms_1_1top__down_1_1TopDown"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Interpreter</label>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/parselib/transforms/node_merge.py" line="4" column="1" bodyfile="plugins/hdl/parselib/transforms/node_merge.py" bodystart="4" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1a2738f9bf2467d410d3990343dcaf88ff" prot="public" virt="non-virtual"><scope>parselib::transforms::node_merge::NodeMergePass</scope><name>__default__</name></member>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1aba7572132ec76ea47811c9d077763441" prot="public" virt="non-virtual"><scope>parselib::transforms::node_merge::NodeMergePass</scope><name>__init__</name></member>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1a7064a163977352a2b47acbf7e388116c" prot="private" virt="non-virtual"><scope>parselib::transforms::node_merge::NodeMergePass</scope><name>__push_up</name></member>
+      <member refid="classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass_1a2d95f6b7a5fbdbc2ae200ff726a6f4b4" prot="private" virt="non-virtual"><scope>parselib::transforms::node_merge::NodeMergePass</scope><name>__transform_arrayref_syscread</name></member>
+      <member refid="classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass_1a4619152edba63d56ad01f43807ad743e" prot="public" virt="non-virtual"><scope>parselib::transforms::node_merge::NodeMergePass</scope><name>blkassign</name></member>
+      <member refid="classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass_1aed35906d36119161b6a78e4607cda805" prot="public" virt="non-virtual"><scope>parselib::transforms::node_merge::NodeMergePass</scope><name>hnsbinop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

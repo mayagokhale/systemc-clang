@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacesystemc" kind="namespace" language="Python">
+    <compoundname>systemc</compoundname>
+    <briefdescription>
+<para>-clang </para>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>systemc-clang driver, a commandline utility for calling systemc-clang end-to-end from c++ to Verilog
+
+Usage:
+    python /path/to/systemc-clang.py SYSTEMC_CLANG_PARAMS --- [options]
+    options include:
+    -o, --output: specify Verilog output folder
+
+Example:
+    python ../llnl/systemc-clang.py ~/working/systemc-clang/examples/llnl-examples/zfpsynth/zfp3/z3test.cpp \
+        --debug -- -I ../systemc/include/ -I ../systemc-clang/examples/llnl-examples/zfpsynth/shared2/ -x c++ -w -c  \
+        -std=c++14 -D__STDC_CONSTANT_MACROS -D__STDC_LIMIT_MACROS -DRVD \
+        --- -o ./z3test_hdl.txt.v
+</verbatim> </para>
+    </detaileddescription>
+    <location file="plugins/hdl/systemc-clang.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

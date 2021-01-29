@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__clang_1_1TreeNode" kind="class" language="C++" prot="public">
+    <compoundname>systemc_clang::TreeNode</compoundname>
+    <includes refid="Tree_8h" local="no">Tree.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsystemc__clang_1_1TreeNode_1a39196ce3bb1f4b3baaeb1806cb099e3d" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T systemc_clang::TreeNode&lt; T &gt;::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.h" line="20" column="5" bodyfile="src/Tree.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1TreeNode_1ade4cfca76d30192595ed41ceee36617d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool systemc_clang::TreeNode&lt; T &gt;::discovered_</definition>
+        <argsstring></argsstring>
+        <name>discovered_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.h" line="21" column="8" bodyfile="src/Tree.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1TreeNode_1a88f697624515c4eff540f4fd44d4cf07" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1TreeNode" kindref="compound">TreeNode</ref> *</type>
+        <definition>TreeNode* systemc_clang::TreeNode&lt; T &gt;::parent_</definition>
+        <argsstring></argsstring>
+        <name>parent_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.h" line="22" column="12" bodyfile="src/Tree.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1TreeNode_1afc5dc71e550a2f1b97f31348faea0a42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>systemc_clang::TreeNode&lt; T &gt;::TreeNode</definition>
+        <argsstring>(T data)</argsstring>
+        <name>TreeNode</name>
+        <param>
+          <type>T</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.h" line="25" column="3" bodyfile="src/Tree.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1TreeNode_1ae4df9acfad4e8734fb344bc36ac3ebbb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>systemc_clang::TreeNode&lt; T &gt;::TreeNode</definition>
+        <argsstring>(const TreeNode &amp;from)</argsstring>
+        <name>TreeNode</name>
+        <param>
+          <type>const <ref refid="classsystemc__clang_1_1TreeNode" kindref="compound">TreeNode</ref> &amp;</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.h" line="27" column="3" bodyfile="src/Tree.h" bodystart="27" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1TreeNode_1a504829bc51e53feaeadaec11abd894d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>systemc_clang::TreeNode&lt; T &gt;::~TreeNode</definition>
+        <argsstring>()</argsstring>
+        <name>~TreeNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.h" line="33" column="3" bodyfile="src/Tree.h" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1TreeNode_1a1b2ccf587f21fe34d12d59a97c9308b6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T systemc_clang::TreeNode&lt; T &gt;::getData</definition>
+        <argsstring>() const</argsstring>
+        <name>getData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.h" line="37" column="5" bodyfile="src/Tree.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1TreeNode_1ac79adf291553b0bed07357b194836583" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T *</type>
+        <definition>const T* systemc_clang::TreeNode&lt; T &gt;::getDataPtr</definition>
+        <argsstring>()</argsstring>
+        <name>getDataPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.h" line="38" column="11" bodyfile="src/Tree.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1TreeNode_1af753d344aa7c5f1a8cfdc63ed88714b9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string systemc_clang::TreeNode&lt; T &gt;::toString</definition>
+        <argsstring>() const</argsstring>
+        <name>toString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.h" line="39" column="15" bodyfile="src/Tree.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1TreeNode_1a0155728cd4c230ece1da3f7c484eb0d9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_clang::TreeNode&lt; T &gt;::isDiscovered</definition>
+        <argsstring>() const</argsstring>
+        <name>isDiscovered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.h" line="41" column="8" bodyfile="src/Tree.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1TreeNode_1a056c6410d3527c575bc22a588242f5ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void systemc_clang::TreeNode&lt; T &gt;::setDiscovered</definition>
+        <argsstring>()</argsstring>
+        <name>setDiscovered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.h" line="42" column="8" bodyfile="src/Tree.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1TreeNode_1ad5822c3030a768e974bbc694c39b0d13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void systemc_clang::TreeNode&lt; T &gt;::resetDiscovered</definition>
+        <argsstring>()</argsstring>
+        <name>resetDiscovered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.h" line="43" column="8" bodyfile="src/Tree.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1TreeNode_1a9b4c33b13848aa25ef768e9eac358378" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void systemc_clang::TreeNode&lt; T &gt;::setParent</definition>
+        <argsstring>(TreeNode *from)</argsstring>
+        <name>setParent</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1TreeNode" kindref="compound">TreeNode</ref> *</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.h" line="45" column="8" bodyfile="src/Tree.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1TreeNode_1a2797e9913811daaa98fb71c8964b6db3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1TreeNode" kindref="compound">TreeNode</ref> *</type>
+        <definition>TreeNode* systemc_clang::TreeNode&lt; T &gt;::getParent</definition>
+        <argsstring>() const</argsstring>
+        <name>getParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.h" line="47" column="12" bodyfile="src/Tree.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1TreeNode_1a13856869703857c13541330d4dfeaeed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void systemc_clang::TreeNode&lt; T &gt;::dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.h" line="49" column="8" bodyfile="src/Tree.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1TreeNode_1a1b61d6391344a979ab6636bb2fba689c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void systemc_clang::TreeNode&lt; T &gt;::visit</definition>
+        <argsstring>()</argsstring>
+        <name>visit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.h" line="51" column="16" bodyfile="src/Tree.h" bodystart="51" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>systemc_clang::TreeNode&lt; T &gt;</label>
+        <link refid="classsystemc__clang_1_1TreeNode"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>parent_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/Tree.h" line="18" column="1" bodyfile="src/Tree.h" bodystart="18" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classsystemc__clang_1_1TreeNode_1a39196ce3bb1f4b3baaeb1806cb099e3d" prot="private" virt="non-virtual"><scope>systemc_clang::TreeNode</scope><name>data_</name></member>
+      <member refid="classsystemc__clang_1_1TreeNode_1ade4cfca76d30192595ed41ceee36617d" prot="private" virt="non-virtual"><scope>systemc_clang::TreeNode</scope><name>discovered_</name></member>
+      <member refid="classsystemc__clang_1_1TreeNode_1a13856869703857c13541330d4dfeaeed" prot="public" virt="non-virtual"><scope>systemc_clang::TreeNode</scope><name>dump</name></member>
+      <member refid="classsystemc__clang_1_1TreeNode_1a1b2ccf587f21fe34d12d59a97c9308b6" prot="public" virt="non-virtual"><scope>systemc_clang::TreeNode</scope><name>getData</name></member>
+      <member refid="classsystemc__clang_1_1TreeNode_1ac79adf291553b0bed07357b194836583" prot="public" virt="non-virtual"><scope>systemc_clang::TreeNode</scope><name>getDataPtr</name></member>
+      <member refid="classsystemc__clang_1_1TreeNode_1a2797e9913811daaa98fb71c8964b6db3" prot="public" virt="non-virtual"><scope>systemc_clang::TreeNode</scope><name>getParent</name></member>
+      <member refid="classsystemc__clang_1_1TreeNode_1a0155728cd4c230ece1da3f7c484eb0d9" prot="public" virt="non-virtual"><scope>systemc_clang::TreeNode</scope><name>isDiscovered</name></member>
+      <member refid="classsystemc__clang_1_1TreeNode_1a88f697624515c4eff540f4fd44d4cf07" prot="private" virt="non-virtual"><scope>systemc_clang::TreeNode</scope><name>parent_</name></member>
+      <member refid="classsystemc__clang_1_1TreeNode_1ad5822c3030a768e974bbc694c39b0d13" prot="public" virt="non-virtual"><scope>systemc_clang::TreeNode</scope><name>resetDiscovered</name></member>
+      <member refid="classsystemc__clang_1_1TreeNode_1a056c6410d3527c575bc22a588242f5ae" prot="public" virt="non-virtual"><scope>systemc_clang::TreeNode</scope><name>setDiscovered</name></member>
+      <member refid="classsystemc__clang_1_1TreeNode_1a9b4c33b13848aa25ef768e9eac358378" prot="public" virt="non-virtual"><scope>systemc_clang::TreeNode</scope><name>setParent</name></member>
+      <member refid="classsystemc__clang_1_1TreeNode_1af753d344aa7c5f1a8cfdc63ed88714b9" prot="public" virt="non-virtual"><scope>systemc_clang::TreeNode</scope><name>toString</name></member>
+      <member refid="classsystemc__clang_1_1TreeNode_1afc5dc71e550a2f1b97f31348faea0a42" prot="public" virt="non-virtual"><scope>systemc_clang::TreeNode</scope><name>TreeNode</name></member>
+      <member refid="classsystemc__clang_1_1TreeNode_1ae4df9acfad4e8734fb344bc36ac3ebbb" prot="public" virt="non-virtual"><scope>systemc_clang::TreeNode</scope><name>TreeNode</name></member>
+      <member refid="classsystemc__clang_1_1TreeNode_1a1b61d6391344a979ab6636bb2fba689c" prot="public" virt="virtual"><scope>systemc_clang::TreeNode</scope><name>visit</name></member>
+      <member refid="classsystemc__clang_1_1TreeNode_1a504829bc51e53feaeadaec11abd894d7" prot="public" virt="non-virtual"><scope>systemc_clang::TreeNode</scope><name>~TreeNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

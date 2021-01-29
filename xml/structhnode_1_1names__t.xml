@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structhnode_1_1names__t" kind="struct" language="C++" prot="public">
+    <compoundname>hnode::names_t</compoundname>
+    <includes refid="hNode_8h" local="no">hNode.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhnode_1_1names__t_1ae41f95f95e7e0b72c4f4c399d72dd7a5" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string hnode::names_t::oldn</definition>
+        <argsstring></argsstring>
+        <name>oldn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/hNode.h" line="266" column="12" bodyfile="plugins/hdl/hNode.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhnode_1_1names__t_1afc0e10eb6caf6805206423e99b2a8650" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string hnode::names_t::newn</definition>
+        <argsstring></argsstring>
+        <name>newn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/hNode.h" line="267" column="12" bodyfile="plugins/hdl/hNode.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhnode_1_1names__t_1a9b4e9c1fba5cc4661b34936ebc8aaf49" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacehnode_1ae5db0847c00e6e0627bc73df624628d0" kindref="member">hNodep</ref></type>
+        <definition>hNodep hnode::names_t::h_vardeclp</definition>
+        <argsstring></argsstring>
+        <name>h_vardeclp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/hNode.h" line="268" column="12" bodyfile="plugins/hdl/hNode.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>hnode::hNode</label>
+        <link refid="classhnode_1_1hNode"/>
+      </node>
+      <node id="1">
+        <label>hnode::names_t</label>
+        <link refid="structhnode_1_1names__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>h_vardeclp</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/hNode.h" line="265" column="3" bodyfile="plugins/hdl/hNode.h" bodystart="265" bodyend="269"/>
+    <listofallmembers>
+      <member refid="structhnode_1_1names__t_1a9b4e9c1fba5cc4661b34936ebc8aaf49" prot="public" virt="non-virtual"><scope>hnode::names_t</scope><name>h_vardeclp</name></member>
+      <member refid="structhnode_1_1names__t_1afc0e10eb6caf6805206423e99b2a8650" prot="public" virt="non-virtual"><scope>hnode::names_t</scope><name>newn</name></member>
+      <member refid="structhnode_1_1names__t_1ae41f95f95e7e0b72c4f4c399d72dd7a5" prot="public" virt="non-virtual"><scope>hnode::names_t</scope><name>oldn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__clang_1_1SignalDecl" kind="class" language="C++" prot="public">
+    <compoundname>systemc_clang::SignalDecl</compoundname>
+    <basecompoundref refid="classsystemc__clang_1_1PortDecl" prot="public" virt="non-virtual">systemc_clang::PortDecl</basecompoundref>
+    <includes refid="SignalDecl_8h" local="no">SignalDecl.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1SignalDecl_1aec4c010bf96221d61477e03f70569f00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SignalDecl::SignalDecl</definition>
+        <argsstring>()</argsstring>
+        <name>SignalDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/SignalDecl.h" line="19" column="3" bodyfile="src/model/SignalDecl.cpp" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1SignalDecl_1afdf0c2aec12a1db0ec5f0481b5a423af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SignalDecl::SignalDecl</definition>
+        <argsstring>(const PortDecl &amp;pd)</argsstring>
+        <name>SignalDecl</name>
+        <param>
+          <type>const <ref refid="classsystemc__clang_1_1PortDecl" kindref="compound">PortDecl</ref> &amp;</type>
+          <declname>pd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/SignalDecl.h" line="20" column="3" bodyfile="src/model/SignalDecl.cpp" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1SignalDecl_1ad9ba1e884e1d59cdb6c4cd3746716158" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>SignalDecl::~SignalDecl</definition>
+        <argsstring>()</argsstring>
+        <name>~SignalDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/SignalDecl.h" line="21" column="11" bodyfile="src/model/SignalDecl.cpp" bodystart="9" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1SignalDecl_1a1f606dd92179a90f4e787ccc76e450d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SignalDecl::SignalDecl</definition>
+        <argsstring>(const std::string &amp;name, clang::FieldDecl *fd, FindTemplateTypes *tt)</argsstring>
+        <name>SignalDecl</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>clang::FieldDecl *</type>
+          <declname>fd</declname>
+        </param>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref> *</type>
+          <declname>tt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/SignalDecl.h" line="22" column="3" bodyfile="src/model/SignalDecl.cpp" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1SignalDecl_1a385d9952449643c4c6a54ffb3b5cad06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string SignalDecl::getName</definition>
+        <argsstring>()</argsstring>
+        <name>getName</name>
+        <briefdescription>
+<para>Get parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/SignalDecl.h" line="26" column="15" bodyfile="src/model/SignalDecl.cpp" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1SignalDecl_1abf1d2f397d5de7eab11ccd03fa4e50c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref> *</type>
+        <definition>FindTemplateTypes * SignalDecl::getTemplateTypes</definition>
+        <argsstring>()</argsstring>
+        <name>getTemplateTypes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/SignalDecl.h" line="27" column="21" bodyfile="src/model/SignalDecl.cpp" bodystart="23" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1SignalDecl_1a66b8f2838d8af4f850c87e58ad1fd295" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const clang::FieldDecl *</type>
+        <definition>const clang::FieldDecl * SignalDecl::getASTNode</definition>
+        <argsstring>() const</argsstring>
+        <name>getASTNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/SignalDecl.h" line="28" column="26" bodyfile="src/model/SignalDecl.cpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1SignalDecl_1ae8f3e3cf56107bef6330c4018891d4ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacesystemc__clang_1ab232545035b571c3f3cd13a4459f2d9e" kindref="member">json</ref></type>
+        <definition>json SignalDecl::dump_json</definition>
+        <argsstring>()</argsstring>
+        <name>dump_json</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/SignalDecl.h" line="30" column="8" bodyfile="src/model/SignalDecl.cpp" bodystart="31" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>systemc_clang::SignalDecl</label>
+        <link refid="classsystemc__clang_1_1SignalDecl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>systemc_clang::PortDecl</label>
+        <link refid="classsystemc__clang_1_1PortDecl"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>systemc_clang::TreeNode&lt; systemc_clang::TemplateType &gt;</label>
+        <link refid="classsystemc__clang_1_1TreeNode"/>
+      </node>
+      <node id="4">
+        <label>clang::RecursiveASTVisitor&lt; FindTemplateTypes &gt;</label>
+      </node>
+      <node id="1">
+        <label>systemc_clang::SignalDecl</label>
+        <link refid="classsystemc__clang_1_1SignalDecl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>systemc_clang::PortDecl</label>
+        <link refid="classsystemc__clang_1_1PortDecl"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>template_type_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>systemc_clang::Tree&lt; systemc_clang::TemplateType &gt;</label>
+        <link refid="classsystemc__clang_1_1Tree"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>root_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>systemc_clang::FindTemplateTypes</label>
+        <link refid="classsystemc__clang_1_1FindTemplateTypes"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>current_type_node_</edgelabel>
+          <edgelabel>template_args_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/model/SignalDecl.h" line="17" column="1" bodyfile="src/model/SignalDecl.h" bodystart="17" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classsystemc__clang_1_1PortDecl_1a5b5e271b1bd0ae65bf341f208a2f057c" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>addArraySize</name></member>
+      <member refid="classsystemc__clang_1_1PortDecl_1a1ed8b0f52527f43862e8576422f1bb84" prot="private" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>array_sizes_</name></member>
+      <member refid="classsystemc__clang_1_1SignalDecl_1ae8f3e3cf56107bef6330c4018891d4ec" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>dump_json</name></member>
+      <member refid="classsystemc__clang_1_1PortDecl_1ab907f3dbfe7a2bada940b37c896d48e7" prot="private" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>field_decl_</name></member>
+      <member refid="classsystemc__clang_1_1PortDecl_1aa3622ca7b78d0a9e5aabc114829e1d14" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>getArraySizes</name></member>
+      <member refid="classsystemc__clang_1_1PortDecl_1a43ca64dccbd062324c2abc5963154546" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>getArrayType</name></member>
+      <member refid="classsystemc__clang_1_1PortDecl_1ae3257767b9f9234b66de907bbdfbceb7" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>getAsFieldDecl</name></member>
+      <member refid="classsystemc__clang_1_1SignalDecl_1a66b8f2838d8af4f850c87e58ad1fd295" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>getASTNode</name></member>
+      <member refid="classsystemc__clang_1_1PortDecl_1a0936c825c062aeba0b741c15fe05c914" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>getAsVarDecl</name></member>
+      <member refid="classsystemc__clang_1_1SignalDecl_1a385d9952449643c4c6a54ffb3b5cad06" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>getName</name></member>
+      <member refid="classsystemc__clang_1_1PortDecl_1a407dcd68862014e89d9f9666e4dc6231" prot="public" virt="non-virtual" ambiguityscope="systemc_clang::PortDecl::"><scope>systemc_clang::SignalDecl</scope><name>getName</name></member>
+      <member refid="classsystemc__clang_1_1PortDecl_1a97faf57eddf2f20618033bf334301c4c" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>getTemplateType</name></member>
+      <member refid="classsystemc__clang_1_1SignalDecl_1abf1d2f397d5de7eab11ccd03fa4e50c6" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>getTemplateTypes</name></member>
+      <member refid="classsystemc__clang_1_1PortDecl_1aaa40e3567d2a19a6f7310c455e4fc54d" prot="private" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>is_array_</name></member>
+      <member refid="classsystemc__clang_1_1PortDecl_1a03d8aad20ac4114a3170bd6c6173b312" prot="private" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>port_name_</name></member>
+      <member refid="classsystemc__clang_1_1PortDecl_1af53768c4cd2985ef74dfc9074d6a73f9" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>PortDecl</name></member>
+      <member refid="classsystemc__clang_1_1PortDecl_1af5949460ace7adc49920708e8744e91f" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>PortDecl</name></member>
+      <member refid="classsystemc__clang_1_1PortDecl_1a0ebad05e0c7886666f6ae38218876951" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>PortDecl</name></member>
+      <member refid="classsystemc__clang_1_1PortDecl_1a70a494619e7316ba9a33cfa6318b5749" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>PortDecl</name></member>
+      <member refid="classsystemc__clang_1_1PortDecl_1ade19aaa93ba5dd851d56f103541a79d0" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>setArrayType</name></member>
+      <member refid="classsystemc__clang_1_1PortDecl_1a4e73bb1543ed5bd48f627c27c0a3d6eb" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>setBinding</name></member>
+      <member refid="classsystemc__clang_1_1PortDecl_1a493bb5572de153c0022f164d01f0c73c" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>setModuleName</name></member>
+      <member refid="classsystemc__clang_1_1SignalDecl_1aec4c010bf96221d61477e03f70569f00" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>SignalDecl</name></member>
+      <member refid="classsystemc__clang_1_1SignalDecl_1afdf0c2aec12a1db0ec5f0481b5a423af" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>SignalDecl</name></member>
+      <member refid="classsystemc__clang_1_1SignalDecl_1a1f606dd92179a90f4e787ccc76e450d3" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>SignalDecl</name></member>
+      <member refid="classsystemc__clang_1_1PortDecl_1ae2afcf990e7c859dd47ad057c5c79409" prot="private" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>template_type_</name></member>
+      <member refid="classsystemc__clang_1_1PortDecl_1ab555f771865181e610019b7d3abccc40" prot="public" virt="non-virtual"><scope>systemc_clang::SignalDecl</scope><name>~PortDecl</name></member>
+      <member refid="classsystemc__clang_1_1SignalDecl_1ad9ba1e884e1d59cdb6c4cd3746716158" prot="public" virt="virtual"><scope>systemc_clang::SignalDecl</scope><name>~SignalDecl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

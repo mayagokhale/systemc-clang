@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsc__ast__matchers_1_1SensitivityMatcher" kind="class" language="C++" prot="public">
+    <compoundname>sc_ast_matchers::SensitivityMatcher</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MatchFinder::MatchCallback</basecompoundref>
+    <includes refid="SensitivityMatcher_8h" local="no">SensitivityMatcher.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classsc__ast__matchers_1_1SensitivityMatcher_1aafd4cb069bd8191fe9dff6e4034cbc60" prot="public" static="no">
+        <type>std::tuple&lt; std::string, clang::ValueDecl *, clang::MemberExpr *, clang::DeclRefExpr *, clang::ArraySubscriptExpr * &gt;</type>
+        <definition>typedef std::tuple&lt;std::string, clang::ValueDecl*, clang::MemberExpr*, clang::DeclRefExpr*, clang::ArraySubscriptExpr*&gt; sc_ast_matchers::SensitivityMatcher::SensitivityTupleType</definition>
+        <argsstring></argsstring>
+        <name>SensitivityTupleType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A sensitivity will typically have a member field, and sometimes a call on the member field. The ValueDecl records the FieldDecl, and the VarDecl that may be used in the sensitivity list. The MemberExpr is just a way to represent where this particular ValueDecl was found for further parsing. The VarDecl* is the process handle to which this sensitivity is bound to. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/SensitivityMatcher.h" line="213" column="7" bodyfile="src/matchers/SensitivityMatcher.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsc__ast__matchers_1_1SensitivityMatcher_1a4a1b0e3b68182be4384fe67f247b9555" prot="public" static="no">
+        <type>std::pair&lt; std::string, std::vector&lt; <ref refid="classsc__ast__matchers_1_1SensitivityMatcher_1aafd4cb069bd8191fe9dff6e4034cbc60" kindref="member">SensitivityTupleType</ref> &gt; &gt;</type>
+        <definition>typedef std::pair&lt;std::string, std::vector&lt;SensitivityTupleType&gt; &gt; sc_ast_matchers::SensitivityMatcher::SensitivityPairType</definition>
+        <argsstring></argsstring>
+        <name>SensitivityPairType</name>
+        <briefdescription>
+<para>This is the pair for inserting key-value entries in the map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/SensitivityMatcher.h" line="217" column="7" bodyfile="src/matchers/SensitivityMatcher.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsc__ast__matchers_1_1SensitivityMatcher_1a96b39bcbdce6458e57f9abf038d48a20" prot="public" static="no">
+        <type>std::map&lt; std::string, std::vector&lt; <ref refid="classsc__ast__matchers_1_1SensitivityMatcher_1aafd4cb069bd8191fe9dff6e4034cbc60" kindref="member">SensitivityTupleType</ref> &gt; &gt;</type>
+        <definition>typedef std::map&lt;std::string, std::vector&lt;SensitivityTupleType&gt; &gt; sc_ast_matchers::SensitivityMatcher::SenseMapType</definition>
+        <argsstring></argsstring>
+        <name>SenseMapType</name>
+        <briefdescription>
+<para>The key is going to be the name of the FieldDecl/VarDecl. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/SensitivityMatcher.h" line="221" column="20" bodyfile="src/matchers/SensitivityMatcher.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsc__ast__matchers_1_1SensitivityMatcher_1afcdb6aa9e91e267172669333602d17aa" prot="private" static="no" mutable="no">
+        <type><ref refid="classsc__ast__matchers_1_1SensitivityMatcher_1a96b39bcbdce6458e57f9abf038d48a20" kindref="member">SenseMapType</ref></type>
+        <definition>SenseMapType sc_ast_matchers::SensitivityMatcher::sensitivity_</definition>
+        <argsstring></argsstring>
+        <name>sensitivity_</name>
+        <briefdescription>
+<para>This is the map structure to store the identified sensitivity list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/SensitivityMatcher.h" line="225" column="16" bodyfile="src/matchers/SensitivityMatcher.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsc__ast__matchers_1_1SensitivityMatcher_1abd3386988ec3ebac0c4fe22e9af22a05" prot="private" static="no" mutable="no">
+        <type>clang::DeclRefExpr *</type>
+        <definition>clang::DeclRefExpr* sc_ast_matchers::SensitivityMatcher::process_handle_</definition>
+        <argsstring></argsstring>
+        <name>process_handle_</name>
+        <briefdescription>
+<para>This provides access to the SystemC process&apos; entry function handler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/SensitivityMatcher.h" line="228" column="22" bodyfile="src/matchers/SensitivityMatcher.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsc__ast__matchers_1_1SensitivityMatcher_1afa2eb5d64c58309f87ae5fd69afc2437" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string sc_ast_matchers::SensitivityMatcher::generateSensitivityName</definition>
+        <argsstring>(const std::vector&lt; SensitivityTupleType &gt; &amp;sense_args)</argsstring>
+        <name>generateSensitivityName</name>
+        <param>
+          <type>const std::vector&lt; <ref refid="classsc__ast__matchers_1_1SensitivityMatcher_1aafd4cb069bd8191fe9dff6e4034cbc60" kindref="member">SensitivityTupleType</ref> &gt; &amp;</type>
+          <declname>sense_args</declname>
+        </param>
+        <briefdescription>
+<para>This generates an encoded name of the argument for the sensitivity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/SensitivityMatcher.h" line="231" column="15" bodyfile="src/matchers/SensitivityMatcher.h" bodystart="231" bodyend="241"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsc__ast__matchers_1_1SensitivityMatcher_1a99d19c738a2ae450e9d459ccefdcd4ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsc__ast__matchers_1_1SensitivityMatcher_1a96b39bcbdce6458e57f9abf038d48a20" kindref="member">SenseMapType</ref></type>
+        <definition>SenseMapType sc_ast_matchers::SensitivityMatcher::getSensitivityMap</definition>
+        <argsstring>()</argsstring>
+        <name>getSensitivityMap</name>
+        <briefdescription>
+<para>Return the sensitivity map that has been created. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A map of sensitivity lists found.</para>
+</simplesect>
+This method just returns the identified map of sensitivity lists. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/SensitivityMatcher.h" line="248" column="16" bodyfile="src/matchers/SensitivityMatcher.h" bodystart="248" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classsc__ast__matchers_1_1SensitivityMatcher_1a92bd6c2d7eac3dfaf9275c3fdba538a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sc_ast_matchers::SensitivityMatcher::registerMatchers</definition>
+        <argsstring>(MatchFinder &amp;finder)</argsstring>
+        <name>registerMatchers</name>
+        <param>
+          <type>MatchFinder &amp;</type>
+          <declname>finder</declname>
+        </param>
+        <briefdescription>
+<para>Defines the matcher, and setup the matcher. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Add the matcher.</para>
+        </inbodydescription>
+        <location file="src/matchers/SensitivityMatcher.h" line="252" column="8" bodyfile="src/matchers/SensitivityMatcher.h" bodystart="252" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="classsc__ast__matchers_1_1SensitivityMatcher_1a06b1f9e16feadaf50e77dcfddd31cf3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sc_ast_matchers::SensitivityMatcher::run</definition>
+        <argsstring>(const MatchFinder::MatchResult &amp;result)</argsstring>
+        <name>run</name>
+        <param>
+          <type>const MatchFinder::MatchResult &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>This is the callback function whenever there is a match. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Debug code</para>
+<para>If the argument to the operator&lt;&lt;() is a MemberExpr. This is the situation when we only have a FieldDecl as a part of the sensitivity list. This is when there is no member call being invoked on the FieldDecl.</para>
+<para>If the argument to the operator&lt;&lt;() is a CXXMemberCallExpr. This is needed when there is a clk.pos() in the sensitivity list. This is when we have member call expressions on the FieldDecl.</para>
+<para>If the argument is an ArraySubscriptExpr, then only provide access to the pointer to ArraySubscriptExpr.</para>
+        </inbodydescription>
+        <location file="src/matchers/SensitivityMatcher.h" line="275" column="16" bodyfile="src/matchers/SensitivityMatcher.h" bodystart="275" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="classsc__ast__matchers_1_1SensitivityMatcher_1a9beae4c7b15cd3f4b00750104dbfee00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sc_ast_matchers::SensitivityMatcher::dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <briefdescription>
+<para>Dump out the detected sensitivity list for every process. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is going to print out the sensitivity list. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/SensitivityMatcher.h" line="374" column="8" bodyfile="src/matchers/SensitivityMatcher.h" bodystart="374" bodyend="391"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class <ref refid="classsc__ast__matchers_1_1SensitivityMatcher" kindref="compound">SensitivityMatcher</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MatchFinder::MatchCallback</label>
+      </node>
+      <node id="1">
+        <label>sc_ast_matchers::SensitivityMatcher</label>
+        <link refid="classsc__ast__matchers_1_1SensitivityMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MatchFinder::MatchCallback</label>
+      </node>
+      <node id="1">
+        <label>sc_ast_matchers::SensitivityMatcher</label>
+        <link refid="classsc__ast__matchers_1_1SensitivityMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/matchers/SensitivityMatcher.h" line="204" column="1" bodyfile="src/matchers/SensitivityMatcher.h" bodystart="204" bodyend="392"/>
+    <listofallmembers>
+      <member refid="classsc__ast__matchers_1_1SensitivityMatcher_1a9beae4c7b15cd3f4b00750104dbfee00" prot="public" virt="non-virtual"><scope>sc_ast_matchers::SensitivityMatcher</scope><name>dump</name></member>
+      <member refid="classsc__ast__matchers_1_1SensitivityMatcher_1afa2eb5d64c58309f87ae5fd69afc2437" prot="private" virt="non-virtual"><scope>sc_ast_matchers::SensitivityMatcher</scope><name>generateSensitivityName</name></member>
+      <member refid="classsc__ast__matchers_1_1SensitivityMatcher_1a99d19c738a2ae450e9d459ccefdcd4ec" prot="public" virt="non-virtual"><scope>sc_ast_matchers::SensitivityMatcher</scope><name>getSensitivityMap</name></member>
+      <member refid="classsc__ast__matchers_1_1SensitivityMatcher_1abd3386988ec3ebac0c4fe22e9af22a05" prot="private" virt="non-virtual"><scope>sc_ast_matchers::SensitivityMatcher</scope><name>process_handle_</name></member>
+      <member refid="classsc__ast__matchers_1_1SensitivityMatcher_1a92bd6c2d7eac3dfaf9275c3fdba538a9" prot="public" virt="non-virtual"><scope>sc_ast_matchers::SensitivityMatcher</scope><name>registerMatchers</name></member>
+      <member refid="classsc__ast__matchers_1_1SensitivityMatcher_1a06b1f9e16feadaf50e77dcfddd31cf3b" prot="public" virt="virtual"><scope>sc_ast_matchers::SensitivityMatcher</scope><name>run</name></member>
+      <member refid="classsc__ast__matchers_1_1SensitivityMatcher_1a96b39bcbdce6458e57f9abf038d48a20" prot="public" virt="non-virtual"><scope>sc_ast_matchers::SensitivityMatcher</scope><name>SenseMapType</name></member>
+      <member refid="classsc__ast__matchers_1_1SensitivityMatcher_1afcdb6aa9e91e267172669333602d17aa" prot="private" virt="non-virtual"><scope>sc_ast_matchers::SensitivityMatcher</scope><name>sensitivity_</name></member>
+      <member refid="classsc__ast__matchers_1_1SensitivityMatcher_1a4a1b0e3b68182be4384fe67f247b9555" prot="public" virt="non-virtual"><scope>sc_ast_matchers::SensitivityMatcher</scope><name>SensitivityPairType</name></member>
+      <member refid="classsc__ast__matchers_1_1SensitivityMatcher_1aafd4cb069bd8191fe9dff6e4034cbc60" prot="public" virt="non-virtual"><scope>sc_ast_matchers::SensitivityMatcher</scope><name>SensitivityTupleType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

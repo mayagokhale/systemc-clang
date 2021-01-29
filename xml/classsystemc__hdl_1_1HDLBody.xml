@@ -1,0 +1,690 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__hdl_1_1HDLBody" kind="class" language="C++" prot="public">
+    <compoundname>systemc_hdl::HDLBody</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">clang::RecursiveASTVisitor&lt; HDLBody &gt;</basecompoundref>
+    <includes refid="HDLBody_8h" local="no">HDLBody.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsystemc__hdl_1_1HDLBody_1aa2c5f0157aecad60a58a600bb315dc87" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; string, FunctionDecl * &gt;</type>
+        <definition>std::unordered_map&lt;string, FunctionDecl *&gt; systemc_hdl::HDLBody::methodecls</definition>
+        <argsstring></argsstring>
+        <name>methodecls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="63" column="24" bodyfile="plugins/hdl/HDLBody.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__hdl_1_1HDLBody_1aa78bf9a85717918296b930aa0ae93e25" prot="public" static="no" mutable="no">
+        <type>clang::DiagnosticsEngine &amp;</type>
+        <definition>clang::DiagnosticsEngine&amp; systemc_hdl::HDLBody::diag_e</definition>
+        <argsstring></argsstring>
+        <name>diag_e</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="64" column="30" bodyfile="plugins/hdl/HDLBody.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsystemc__hdl_1_1HDLBody_1a63909266f79a4ac9c8ed9264a6b675a7" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacehnode_1ae5db0847c00e6e0627bc73df624628d0" kindref="member">hNodep</ref></type>
+        <definition>hNodep systemc_hdl::HDLBody::h_ret</definition>
+        <argsstring></argsstring>
+        <name>h_ret</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="68" column="12" bodyfile="plugins/hdl/HDLBody.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__hdl_1_1HDLBody_1a3378aca791068509cfa933cade96eb2d" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacehnode_1a3f10aaef8411f7c053be70eac6c4b52a" kindref="member">hdecl_name_map_t</ref></type>
+        <definition>hdecl_name_map_t systemc_hdl::HDLBody::vname_map</definition>
+        <argsstring></argsstring>
+        <name>vname_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="69" column="22" bodyfile="plugins/hdl/HDLBody.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__hdl_1_1HDLBody_1a966103c3321be502a9ad764d5be76d4e" prot="private" static="no" mutable="no">
+        <type><ref refid="classhnode_1_1name__serve" kindref="compound">name_serve</ref></type>
+        <definition>name_serve systemc_hdl::HDLBody::lname</definition>
+        <argsstring></argsstring>
+        <name>lname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="70" column="16" bodyfile="plugins/hdl/HDLBody.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__hdl_1_1HDLBody_1a1384bcc5e7228663ec7cb0ccc6eef41e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::add_info</definition>
+        <argsstring></argsstring>
+        <name>add_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="72" column="10" bodyfile="plugins/hdl/HDLBody.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__hdl_1_1HDLBody_1a31853db61435860151cb1d805d47251a" prot="private" static="no" mutable="no">
+        <type><ref refid="classhnode_1_1util" kindref="compound">util</ref></type>
+        <definition>util systemc_hdl::HDLBody::lutil</definition>
+        <argsstring></argsstring>
+        <name>lutil</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="81" column="10" bodyfile="plugins/hdl/HDLBody.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__hdl_1_1HDLBody_1a09991f11eb7e41766147a1ac9ee1f4ba" prot="private" static="no" mutable="no">
+        <type>const ASTContext &amp;</type>
+        <definition>const ASTContext&amp; systemc_hdl::HDLBody::ast_context_</definition>
+        <argsstring></argsstring>
+        <name>ast_context_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="83" column="22" bodyfile="plugins/hdl/HDLBody.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1a734cef75cd9a13b06f57f2e0ec778cf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>systemc_hdl::HDLBody::HDLBody</definition>
+        <argsstring>(CXXMethodDecl *emd, hNodep &amp;h_top, clang::DiagnosticsEngine &amp;diag_engine, const ASTContext &amp;ast_context)</argsstring>
+        <name>HDLBody</name>
+        <param>
+          <type>CXXMethodDecl *</type>
+          <declname>emd</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehnode_1ae5db0847c00e6e0627bc73df624628d0" kindref="member">hNodep</ref> &amp;</type>
+          <declname>h_top</declname>
+        </param>
+        <param>
+          <type>clang::DiagnosticsEngine &amp;</type>
+          <declname>diag_engine</declname>
+        </param>
+        <param>
+          <type>const ASTContext &amp;</type>
+          <declname>ast_context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="33" column="5" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="33" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1ad691bfbc389673287e37513fa514affb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>systemc_hdl::HDLBody::HDLBody</definition>
+        <argsstring>(Stmt *stmt, hNodep &amp;h_top, clang::DiagnosticsEngine &amp;diag_engine, const ASTContext &amp;ast_context, bool add_info=true)</argsstring>
+        <name>HDLBody</name>
+        <param>
+          <type>Stmt *</type>
+          <declname>stmt</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehnode_1ae5db0847c00e6e0627bc73df624628d0" kindref="member">hNodep</ref> &amp;</type>
+          <declname>h_top</declname>
+        </param>
+        <param>
+          <type>clang::DiagnosticsEngine &amp;</type>
+          <declname>diag_engine</declname>
+        </param>
+        <param>
+          <type>const ASTContext &amp;</type>
+          <declname>ast_context</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>add_info</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="34" column="5" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="45" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1ad5ca9f42bdfcd0663d41aba6c57800c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>systemc_hdl::HDLBody::~HDLBody</definition>
+        <argsstring>()</argsstring>
+        <name>~HDLBody</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="35" column="13" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1aafad671a20a179ef463167b25485e8fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::TraverseCompoundStmt</definition>
+        <argsstring>(CompoundStmt *compoundStmt)</argsstring>
+        <name>TraverseCompoundStmt</name>
+        <param>
+          <type>CompoundStmt *</type>
+          <declname>compoundStmt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="37" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="216" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1a74516f472ce4e35722be7643c053b7b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::TraverseStmt</definition>
+        <argsstring>(Stmt *stmt)</argsstring>
+        <name>TraverseStmt</name>
+        <param>
+          <type>Stmt *</type>
+          <declname>stmt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="38" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="68" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1aca201d3841cae13a158ad56804b39702" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::TraverseDeclStmt</definition>
+        <argsstring>(DeclStmt *declstmt)</argsstring>
+        <name>TraverseDeclStmt</name>
+        <param>
+          <type>DeclStmt *</type>
+          <declname>declstmt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Process local variable and signal declarations, promoting to module level with unique names </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="39" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="245" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1a55042a90189466a86766cfb296246ae3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::ProcessVarDecl</definition>
+        <argsstring>(VarDecl *vardecl)</argsstring>
+        <name>ProcessVarDecl</name>
+        <param>
+          <type>VarDecl *</type>
+          <declname>vardecl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="40" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="262" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1acc81f61d10ee061d86ccc73dd5f9de01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::TraverseBinaryOperator</definition>
+        <argsstring>(BinaryOperator *expr)</argsstring>
+        <name>TraverseBinaryOperator</name>
+        <param>
+          <type>BinaryOperator *</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="41" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="299" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1aea5adec11845becc800e3d0e10c58008" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::TraverseUnaryOperator</definition>
+        <argsstring>(UnaryOperator *expr)</argsstring>
+        <name>TraverseUnaryOperator</name>
+        <param>
+          <type>UnaryOperator *</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="42" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="326" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1adb7a15568d3f6a9f4a45248a2793fcc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::TraverseConditionalOperator</definition>
+        <argsstring>(ConditionalOperator *expr)</argsstring>
+        <name>TraverseConditionalOperator</name>
+        <param>
+          <type>ConditionalOperator *</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="43" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="344" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1a5927cd7ddc838f65bf54e11893e84df3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::TraverseIntegerLiteral</definition>
+        <argsstring>(IntegerLiteral *lit)</argsstring>
+        <name>TraverseIntegerLiteral</name>
+        <param>
+          <type>IntegerLiteral *</type>
+          <declname>lit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="44" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="361" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1a458fceb18a00fa69d63b9e8a83ea798a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::TraverseCXXBoolLiteralExpr</definition>
+        <argsstring>(CXXBoolLiteralExpr *b)</argsstring>
+        <name>TraverseCXXBoolLiteralExpr</name>
+        <param>
+          <type>CXXBoolLiteralExpr *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="45" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="369" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1a0c8d6b9029cf7bba2982d7253d610412" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::TraverseDeclRefExpr</definition>
+        <argsstring>(DeclRefExpr *expr)</argsstring>
+        <name>TraverseDeclRefExpr</name>
+        <param>
+          <type>DeclRefExpr *</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="46" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="377" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1a8406d03c977f43a3b31ed07962ea9845" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::TraverseArraySubscriptExpr</definition>
+        <argsstring>(ArraySubscriptExpr *expr)</argsstring>
+        <name>TraverseArraySubscriptExpr</name>
+        <param>
+          <type>ArraySubscriptExpr *</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="47" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="434" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1a0eb4f05f7689a354ebc629757f607d5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::TraverseCXXMemberCallExpr</definition>
+        <argsstring>(CXXMemberCallExpr *callexpr)</argsstring>
+        <name>TraverseCXXMemberCallExpr</name>
+        <param>
+          <type>CXXMemberCallExpr *</type>
+          <declname>callexpr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="48" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="446" bodyend="518"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1a0dc3dfd50bf589fc7c69981eea7ac1c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::TraverseCXXOperatorCallExpr</definition>
+        <argsstring>(CXXOperatorCallExpr *opcall)</argsstring>
+        <name>TraverseCXXOperatorCallExpr</name>
+        <param>
+          <type>CXXOperatorCallExpr *</type>
+          <declname>opcall</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="49" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="535" bodyend="583"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1ab511f4ac8481cf7c2484a66a6126d513" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::TraverseCallExpr</definition>
+        <argsstring>(CallExpr *callexpr)</argsstring>
+        <name>TraverseCallExpr</name>
+        <param>
+          <type>CallExpr *</type>
+          <declname>callexpr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="50" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="641" bodyend="679"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1a3ca3d90287f200a28ed63964f597dd56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::TraverseMemberExpr</definition>
+        <argsstring>(MemberExpr *memberexpr)</argsstring>
+        <name>TraverseMemberExpr</name>
+        <param>
+          <type>MemberExpr *</type>
+          <declname>memberexpr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="51" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="585" bodyend="639"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1aebb8def7816135ee91e7bafafb156ddf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::TraverseIfStmt</definition>
+        <argsstring>(IfStmt *ifs)</argsstring>
+        <name>TraverseIfStmt</name>
+        <param>
+          <type>IfStmt *</type>
+          <declname>ifs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="52" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="681" bodyend="706"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1ac93015ba58e789a3b7cf6811bd4ed31d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::TraverseForStmt</definition>
+        <argsstring>(ForStmt *fors)</argsstring>
+        <name>TraverseForStmt</name>
+        <param>
+          <type>ForStmt *</type>
+          <declname>fors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="53" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="708" bodyend="736"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1ac7fd58793093f1b4a92b15c82fb1f931" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::TraverseSwitchStmt</definition>
+        <argsstring>(SwitchStmt *switchs)</argsstring>
+        <name>TraverseSwitchStmt</name>
+        <param>
+          <type>SwitchStmt *</type>
+          <declname>switchs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="54" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="765" bodyend="807"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1abc6014214ed2dc52d3e7d28188387112" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::ProcessSwitchCase</definition>
+        <argsstring>(SwitchCase *cases)</argsstring>
+        <name>ProcessSwitchCase</name>
+        <param>
+          <type>SwitchCase *</type>
+          <declname>cases</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="55" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="737" bodyend="763"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1aee15dc90242038d2cca3beef78cfac45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::TraverseWhileStmt</definition>
+        <argsstring>(WhileStmt *whiles)</argsstring>
+        <name>TraverseWhileStmt</name>
+        <param>
+          <type>WhileStmt *</type>
+          <declname>whiles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="56" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="810" bodyend="832"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1a6b7efd524dc48ad45e362c6abe3b6c50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void systemc_hdl::HDLBody::AddVnames</definition>
+        <argsstring>(hNodep &amp;hvns)</argsstring>
+        <name>AddVnames</name>
+        <param>
+          <type><ref refid="namespacehnode_1ae5db0847c00e6e0627bc73df624628d0" kindref="member">hNodep</ref> &amp;</type>
+          <declname>hvns</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="57" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="834" bodyend="847"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1ab94ba57fe3e7aed9d56f89604a94a4ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacehnode_1ae5db0847c00e6e0627bc73df624628d0" kindref="member">hNodep</ref></type>
+        <definition>hNodep systemc_hdl::HDLBody::NormalizeHcode</definition>
+        <argsstring>(hNodep hinp)</argsstring>
+        <name>NormalizeHcode</name>
+        <param>
+          <type><ref refid="namespacehnode_1ae5db0847c00e6e0627bc73df624628d0" kindref="member">hNodep</ref></type>
+          <declname>hinp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="59" column="12" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="849" bodyend="865"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1a213d15671a95dcc8cb46eb663dc6a159" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::isLogicalOp</definition>
+        <argsstring>(clang::OverloadedOperatorKind opc)</argsstring>
+        <name>isLogicalOp</name>
+        <param>
+          <type>clang::OverloadedOperatorKind</type>
+          <declname>opc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="74" column="10" bodyfile="plugins/hdl/HDLBody.cpp" bodystart="520" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLBody_1a87368c8c56e554352e112391d4fe2b3f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLBody::isAssignOp</definition>
+        <argsstring>(hNodep hp)</argsstring>
+        <name>isAssignOp</name>
+        <param>
+          <type><ref refid="namespacehnode_1ae5db0847c00e6e0627bc73df624628d0" kindref="member">hNodep</ref></type>
+          <declname>hp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLBody.h" line="76" column="17" bodyfile="plugins/hdl/HDLBody.h" bodystart="76" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>clang::RecursiveASTVisitor&lt; HDLBody &gt;</label>
+      </node>
+      <node id="1">
+        <label>systemc_hdl::HDLBody</label>
+        <link refid="classsystemc__hdl_1_1HDLBody"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>hnode::name_serve</label>
+        <link refid="classhnode_1_1name__serve"/>
+      </node>
+      <node id="2">
+        <label>clang::RecursiveASTVisitor&lt; HDLBody &gt;</label>
+      </node>
+      <node id="4">
+        <label>hnode::hNode</label>
+        <link refid="classhnode_1_1hNode"/>
+      </node>
+      <node id="1">
+        <label>systemc_hdl::HDLBody</label>
+        <link refid="classsystemc__hdl_1_1HDLBody"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>lutil</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>h_ret</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>lname</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>hnode::util</label>
+        <link refid="classhnode_1_1util"/>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/HDLBody.h" line="31" column="3" bodyfile="plugins/hdl/HDLBody.h" bodystart="31" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classsystemc__hdl_1_1HDLBody_1a1384bcc5e7228663ec7cb0ccc6eef41e" prot="private" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>add_info</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1a6b7efd524dc48ad45e362c6abe3b6c50" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>AddVnames</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1a09991f11eb7e41766147a1ac9ee1f4ba" prot="private" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>ast_context_</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1aa78bf9a85717918296b930aa0ae93e25" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>diag_e</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1a63909266f79a4ac9c8ed9264a6b675a7" prot="private" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>h_ret</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1a734cef75cd9a13b06f57f2e0ec778cf2" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>HDLBody</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1ad691bfbc389673287e37513fa514affb" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>HDLBody</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1a87368c8c56e554352e112391d4fe2b3f" prot="private" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>isAssignOp</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1a213d15671a95dcc8cb46eb663dc6a159" prot="private" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>isLogicalOp</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1a966103c3321be502a9ad764d5be76d4e" prot="private" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>lname</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1a31853db61435860151cb1d805d47251a" prot="private" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>lutil</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1aa2c5f0157aecad60a58a600bb315dc87" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>methodecls</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1ab94ba57fe3e7aed9d56f89604a94a4ac" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>NormalizeHcode</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1abc6014214ed2dc52d3e7d28188387112" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>ProcessSwitchCase</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1a55042a90189466a86766cfb296246ae3" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>ProcessVarDecl</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1a8406d03c977f43a3b31ed07962ea9845" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>TraverseArraySubscriptExpr</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1acc81f61d10ee061d86ccc73dd5f9de01" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>TraverseBinaryOperator</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1ab511f4ac8481cf7c2484a66a6126d513" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>TraverseCallExpr</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1aafad671a20a179ef463167b25485e8fd" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>TraverseCompoundStmt</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1adb7a15568d3f6a9f4a45248a2793fcc0" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>TraverseConditionalOperator</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1a458fceb18a00fa69d63b9e8a83ea798a" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>TraverseCXXBoolLiteralExpr</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1a0eb4f05f7689a354ebc629757f607d5c" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>TraverseCXXMemberCallExpr</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1a0dc3dfd50bf589fc7c69981eea7ac1c2" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>TraverseCXXOperatorCallExpr</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1a0c8d6b9029cf7bba2982d7253d610412" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>TraverseDeclRefExpr</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1aca201d3841cae13a158ad56804b39702" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>TraverseDeclStmt</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1ac93015ba58e789a3b7cf6811bd4ed31d" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>TraverseForStmt</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1aebb8def7816135ee91e7bafafb156ddf" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>TraverseIfStmt</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1a5927cd7ddc838f65bf54e11893e84df3" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>TraverseIntegerLiteral</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1a3ca3d90287f200a28ed63964f597dd56" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>TraverseMemberExpr</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1a74516f472ce4e35722be7643c053b7b6" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>TraverseStmt</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1ac7fd58793093f1b4a92b15c82fb1f931" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>TraverseSwitchStmt</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1aea5adec11845becc800e3d0e10c58008" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>TraverseUnaryOperator</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1aee15dc90242038d2cca3beef78cfac45" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>TraverseWhileStmt</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1a3378aca791068509cfa933cade96eb2d" prot="private" virt="non-virtual"><scope>systemc_hdl::HDLBody</scope><name>vname_map</name></member>
+      <member refid="classsystemc__hdl_1_1HDLBody_1ad5ca9f42bdfcd0663d41aba6c57800c9" prot="public" virt="virtual"><scope>systemc_hdl::HDLBody</scope><name>~HDLBody</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,664 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__clang_1_1PortBinding" kind="class" language="C++" prot="public">
+    <compoundname>systemc_clang::PortBinding</compoundname>
+    <includes refid="PortBinding_8h" local="no">PortBinding.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classsystemc__clang_1_1PortBinding_1a0effb4c0e27bbcfbd56f59bca0ca46e6" prot="public" static="no">
+        <type>std::vector&lt; const clang::Expr * &gt;</type>
+        <definition>typedef std::vector&lt;const clang::Expr *&gt; systemc_clang::PortBinding::ArraySubscriptsExprType</definition>
+        <argsstring></argsstring>
+        <name>ArraySubscriptsExprType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="13" column="23" bodyfile="src/model/PortBinding.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1a026b4d99698ce6e3d49b82488e5f7e69" prot="private" static="no" mutable="no">
+        <type>const clang::Expr *</type>
+        <definition>const clang::Expr* systemc_clang::PortBinding::caller_expr_</definition>
+        <argsstring></argsstring>
+        <name>caller_expr_</name>
+        <briefdescription>
+<para>Caller. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="18" column="21" bodyfile="src/model/PortBinding.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1a143dbab63245fc86bb7c3ef2144ec8b5" prot="private" static="no" mutable="no">
+        <type>const clang::ArraySubscriptExpr *</type>
+        <definition>const clang::ArraySubscriptExpr* systemc_clang::PortBinding::caller_array_expr_</definition>
+        <argsstring></argsstring>
+        <name>caller_array_expr_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="19" column="35" bodyfile="src/model/PortBinding.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1ae14c585c2c9ba37a0aa9644cb5ca5cc8" prot="private" static="no" mutable="no">
+        <type>const clang::MemberExpr *</type>
+        <definition>const clang::MemberExpr* systemc_clang::PortBinding::caller_instance_me_expr_</definition>
+        <argsstring></argsstring>
+        <name>caller_instance_me_expr_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="20" column="27" bodyfile="src/model/PortBinding.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1a7ca2386055369582bcfb15e2782e64ad" prot="private" static="no" mutable="no">
+        <type>const clang::Expr *</type>
+        <definition>const clang::Expr* systemc_clang::PortBinding::caller_port_array_expr_</definition>
+        <argsstring></argsstring>
+        <name>caller_port_array_expr_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="21" column="21" bodyfile="src/model/PortBinding.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1a716943516d2dc10fd3f6805494c67114" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1PortBinding_1a0effb4c0e27bbcfbd56f59bca0ca46e6" kindref="member">ArraySubscriptsExprType</ref></type>
+        <definition>ArraySubscriptsExprType systemc_clang::PortBinding::caller_port_array_subscripts_</definition>
+        <argsstring></argsstring>
+        <name>caller_port_array_subscripts_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="22" column="27" bodyfile="src/model/PortBinding.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1a9af7a1acc339034ae2fb32c43b985169" prot="private" static="no" mutable="no">
+        <type>const clang::MemberExpr *</type>
+        <definition>const clang::MemberExpr* systemc_clang::PortBinding::caller_port_me_expr_</definition>
+        <argsstring></argsstring>
+        <name>caller_port_me_expr_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="23" column="27" bodyfile="src/model/PortBinding.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1a99959a59584fe9b98e37394d1800ec05" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1PortBinding_1a0effb4c0e27bbcfbd56f59bca0ca46e6" kindref="member">ArraySubscriptsExprType</ref></type>
+        <definition>ArraySubscriptsExprType systemc_clang::PortBinding::caller_array_subscripts_</definition>
+        <argsstring></argsstring>
+        <name>caller_array_subscripts_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="24" column="27" bodyfile="src/model/PortBinding.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1a4f5e8a8950f91aa19070c252e2920d9c" prot="private" static="no" mutable="no">
+        <type>const clang::Expr *</type>
+        <definition>const clang::Expr* systemc_clang::PortBinding::callee_expr_</definition>
+        <argsstring></argsstring>
+        <name>callee_expr_</name>
+        <briefdescription>
+<para>Callee. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="27" column="21" bodyfile="src/model/PortBinding.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1a46fa575845c6a9bb0edd004bf6bf353e" prot="private" static="no" mutable="no">
+        <type>const clang::MemberExpr *</type>
+        <definition>const clang::MemberExpr* systemc_clang::PortBinding::callee_port_me_expr_</definition>
+        <argsstring></argsstring>
+        <name>callee_port_me_expr_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="28" column="27" bodyfile="src/model/PortBinding.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1a3f12e3964d8904c2c594dc6dd559bae8" prot="private" static="no" mutable="no">
+        <type>const clang::MemberExpr *</type>
+        <definition>const clang::MemberExpr* systemc_clang::PortBinding::callee_instance_me_expr_</definition>
+        <argsstring></argsstring>
+        <name>callee_instance_me_expr_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="29" column="27" bodyfile="src/model/PortBinding.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1a942150b95463bf26159072f1f1044914" prot="private" static="no" mutable="no">
+        <type>const clang::ArraySubscriptExpr *</type>
+        <definition>const clang::ArraySubscriptExpr* systemc_clang::PortBinding::callee_array_expr_</definition>
+        <argsstring></argsstring>
+        <name>callee_array_expr_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="30" column="35" bodyfile="src/model/PortBinding.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1a02a0565ab3a38b5aee283e7d5f8adf30" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1PortBinding_1a0effb4c0e27bbcfbd56f59bca0ca46e6" kindref="member">ArraySubscriptsExprType</ref></type>
+        <definition>ArraySubscriptsExprType systemc_clang::PortBinding::callee_array_subscripts_</definition>
+        <argsstring></argsstring>
+        <name>callee_array_subscripts_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="31" column="27" bodyfile="src/model/PortBinding.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1a715028e7c52f0085911fbf204a4ba9d5" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string systemc_clang::PortBinding::caller_instance_name_</definition>
+        <argsstring></argsstring>
+        <name>caller_instance_name_</name>
+        <briefdescription>
+<para>We no longer support sc_main parsing. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="36" column="15" bodyfile="src/model/PortBinding.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1aae42a0a5eb8919133e7f0fe46806e18b" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string systemc_clang::PortBinding::caller_port_name_</definition>
+        <argsstring></argsstring>
+        <name>caller_port_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="37" column="15" bodyfile="src/model/PortBinding.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1a143d25608456e5b2c7fb0d2d10561688" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string systemc_clang::PortBinding::caller_instance_type_name_</definition>
+        <argsstring></argsstring>
+        <name>caller_instance_type_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="38" column="15" bodyfile="src/model/PortBinding.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1a91067964a5466069408d740ad5d3d7fe" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string systemc_clang::PortBinding::callee_instance_name_</definition>
+        <argsstring></argsstring>
+        <name>callee_instance_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="40" column="15" bodyfile="src/model/PortBinding.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1a7f355ba5c93438a515238b370cfad3de" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string systemc_clang::PortBinding::callee_port_name_</definition>
+        <argsstring></argsstring>
+        <name>callee_port_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="41" column="15" bodyfile="src/model/PortBinding.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1a8e400410dc8687510dec2b4b4820e654" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string systemc_clang::PortBinding::callee_type_name_</definition>
+        <argsstring></argsstring>
+        <name>callee_type_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="42" column="15" bodyfile="src/model/PortBinding.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1a2d1ca9566823728e7bef38aad186dcde" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string systemc_clang::PortBinding::instance_type_</definition>
+        <argsstring></argsstring>
+        <name>instance_type_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="44" column="15" bodyfile="src/model/PortBinding.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1afda27f653f063b97e5434d85a4e80a7f" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string systemc_clang::PortBinding::instance_var_name_</definition>
+        <argsstring></argsstring>
+        <name>instance_var_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="45" column="15" bodyfile="src/model/PortBinding.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1a1f6c1768a1be812b51b968e00822853d" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string systemc_clang::PortBinding::instance_constructor_name_</definition>
+        <argsstring></argsstring>
+        <name>instance_constructor_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="46" column="15" bodyfile="src/model/PortBinding.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1PortBinding_1a840edc4d7d15b2584ff27d923cc67a4e" prot="private" static="no" mutable="no">
+        <type>const clang::CXXRecordDecl *</type>
+        <definition>const clang::CXXRecordDecl* systemc_clang::PortBinding::instance_type_decl_</definition>
+        <argsstring></argsstring>
+        <name>instance_type_decl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="48" column="30" bodyfile="src/model/PortBinding.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1PortBinding_1a4bd0428a8f23be87f89e7cda084139a3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const std::string systemc_clang::PortBinding::getCallerInstanceName</definition>
+        <argsstring>() const</argsstring>
+        <name>getCallerInstanceName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="51" column="21" bodyfile="src/model/PortBinding.h" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1PortBinding_1a31718873d60c8a69ef3357b0fc1d3fca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const std::string systemc_clang::PortBinding::getCallerInstanceTypeName</definition>
+        <argsstring>() const</argsstring>
+        <name>getCallerInstanceTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="54" column="21" bodyfile="src/model/PortBinding.h" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1PortBinding_1af2aa9c5d2455ab06f1661cd76ded189f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const std::string systemc_clang::PortBinding::getCallerPortName</definition>
+        <argsstring>() const</argsstring>
+        <name>getCallerPortName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="57" column="21" bodyfile="src/model/PortBinding.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1PortBinding_1a1376ee922434c1d318027bf5623c936b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const std::string systemc_clang::PortBinding::getCalleeInstanceName</definition>
+        <argsstring>() const</argsstring>
+        <name>getCalleeInstanceName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="59" column="21" bodyfile="src/model/PortBinding.h" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1PortBinding_1a056c88fb1c71198441be3779e9c1ff12" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const std::string systemc_clang::PortBinding::getCalleePortName</definition>
+        <argsstring>() const</argsstring>
+        <name>getCalleePortName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="62" column="21" bodyfile="src/model/PortBinding.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1PortBinding_1aa0ad3a4de12bf03fd0382f0f8fb2c0dc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1PortBinding_1a0effb4c0e27bbcfbd56f59bca0ca46e6" kindref="member">ArraySubscriptsExprType</ref></type>
+        <definition>ArraySubscriptsExprType systemc_clang::PortBinding::getCallerArraySubscripts</definition>
+        <argsstring>() const</argsstring>
+        <name>getCallerArraySubscripts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="64" column="27" bodyfile="src/model/PortBinding.h" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1PortBinding_1ad83753efdd44051cfa710bfa00d57084" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1PortBinding_1a0effb4c0e27bbcfbd56f59bca0ca46e6" kindref="member">ArraySubscriptsExprType</ref></type>
+        <definition>ArraySubscriptsExprType systemc_clang::PortBinding::getCallerPortArraySubscripts</definition>
+        <argsstring>() const</argsstring>
+        <name>getCallerPortArraySubscripts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="68" column="27" bodyfile="src/model/PortBinding.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1PortBinding_1a7da5517adff2b424a37aa0a9c8ea4bba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1PortBinding_1a0effb4c0e27bbcfbd56f59bca0ca46e6" kindref="member">ArraySubscriptsExprType</ref></type>
+        <definition>ArraySubscriptsExprType systemc_clang::PortBinding::getCalleeArraySubscripts</definition>
+        <argsstring>() const</argsstring>
+        <name>getCalleeArraySubscripts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="72" column="27" bodyfile="src/model/PortBinding.h" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1PortBinding_1aae351ed5cfcc4a1203d2c96160060872" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void systemc_clang::PortBinding::setInstanceVarName</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>setInstanceVarName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="76" column="8" bodyfile="src/model/PortBinding.h" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1PortBinding_1a552fc900e72c58a08fe91a601d083d99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void systemc_clang::PortBinding::setInstanceConstructorName</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>setInstanceConstructorName</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="79" column="8" bodyfile="src/model/PortBinding.h" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1PortBinding_1a515880f9dc12f43627d54e111c41ddef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; systemc_clang::PortBinding::getPortName</definition>
+        <argsstring>() const</argsstring>
+        <name>getPortName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="83" column="21" bodyfile="src/model/PortBinding.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1PortBinding_1a6c451d3430ce1e4d9b84539ba608156c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const clang::MemberExpr *</type>
+        <definition>const clang::MemberExpr* systemc_clang::PortBinding::getCallerMemberExpr</definition>
+        <argsstring>() const</argsstring>
+        <name>getCallerMemberExpr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="84" column="27" bodyfile="src/model/PortBinding.h" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1PortBinding_1aca81e65bd1f98d625e71247a946dd4d8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; systemc_clang::PortBinding::getInstanceType</definition>
+        <argsstring>() const</argsstring>
+        <name>getInstanceType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="87" column="21" bodyfile="src/model/PortBinding.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1PortBinding_1a5db914273696e24ec68351b3f6767a5a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; systemc_clang::PortBinding::getInstanceVarName</definition>
+        <argsstring>() const</argsstring>
+        <name>getInstanceVarName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="88" column="21" bodyfile="src/model/PortBinding.h" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1PortBinding_1a3b6421c1ef347ca6bad167b9b944f88c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; systemc_clang::PortBinding::getInstanceConstructorName</definition>
+        <argsstring>() const</argsstring>
+        <name>getInstanceConstructorName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="89" column="21" bodyfile="src/model/PortBinding.h" bodystart="89" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1PortBinding_1a9e7757029c29a36711c931d1f9434cd1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const clang::CXXRecordDecl *</type>
+        <definition>const clang::CXXRecordDecl* systemc_clang::PortBinding::getInstanceTypeDecl</definition>
+        <argsstring>() const</argsstring>
+        <name>getInstanceTypeDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="92" column="30" bodyfile="src/model/PortBinding.h" bodystart="92" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1PortBinding_1a356024c2075154042aeb19be51dbd197" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>const std::string systemc_clang::PortBinding::toString</definition>
+        <argsstring>() const</argsstring>
+        <name>toString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Convert the port binding information into a single string.</para>
+<para>This is mainly used in the regression tests. The returned string is compared with what is expected. </para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Caller port name</para>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="100" column="21" bodyfile="src/model/PortBinding.h" bodystart="100" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1PortBinding_1a25fdfd072120fe0c79cfe6cba4f86542" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void systemc_clang::PortBinding::dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dumps to llvm::outs() the recorded port binding information. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="165" column="8" bodyfile="src/model/PortBinding.h" bodystart="165" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1PortBinding_1a408edf12d41406dc7d7957b3f975f2b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>systemc_clang::PortBinding::PortBinding</definition>
+        <argsstring>(clang::Expr *caller_expr, clang::Expr *caller_port_expr, clang::MemberExpr *caller_port_me_expr, clang::Expr *callee_expr, clang::MemberExpr *callee_port_me_expr)</argsstring>
+        <name>PortBinding</name>
+        <param>
+          <type>clang::Expr *</type>
+          <declname>caller_expr</declname>
+        </param>
+        <param>
+          <type>clang::Expr *</type>
+          <declname>caller_port_expr</declname>
+        </param>
+        <param>
+          <type>clang::MemberExpr *</type>
+          <declname>caller_port_me_expr</declname>
+        </param>
+        <param>
+          <type>clang::Expr *</type>
+          <declname>callee_expr</declname>
+        </param>
+        <param>
+          <type>clang::MemberExpr *</type>
+          <declname>callee_port_me_expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor that records the port binding.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>caller_expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>provides access to the caller information irrespective of whether it is an array or not.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>caller_port_expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>provides access to the caller&apos;s port. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Cast to see if it&apos;s an array.</para>
+<para>If it is an array.</para>
+        </inbodydescription>
+        <location file="src/model/PortBinding.h" line="225" column="3" bodyfile="src/model/PortBinding.h" bodystart="225" bodyend="290"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/model/PortBinding.h" line="11" column="1" bodyfile="src/model/PortBinding.h" bodystart="11" bodyend="292"/>
+    <listofallmembers>
+      <member refid="classsystemc__clang_1_1PortBinding_1a0effb4c0e27bbcfbd56f59bca0ca46e6" prot="public" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>ArraySubscriptsExprType</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a942150b95463bf26159072f1f1044914" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>callee_array_expr_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a02a0565ab3a38b5aee283e7d5f8adf30" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>callee_array_subscripts_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a4f5e8a8950f91aa19070c252e2920d9c" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>callee_expr_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a3f12e3964d8904c2c594dc6dd559bae8" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>callee_instance_me_expr_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a91067964a5466069408d740ad5d3d7fe" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>callee_instance_name_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a46fa575845c6a9bb0edd004bf6bf353e" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>callee_port_me_expr_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a7f355ba5c93438a515238b370cfad3de" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>callee_port_name_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a8e400410dc8687510dec2b4b4820e654" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>callee_type_name_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a143dbab63245fc86bb7c3ef2144ec8b5" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>caller_array_expr_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a99959a59584fe9b98e37394d1800ec05" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>caller_array_subscripts_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a026b4d99698ce6e3d49b82488e5f7e69" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>caller_expr_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1ae14c585c2c9ba37a0aa9644cb5ca5cc8" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>caller_instance_me_expr_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a715028e7c52f0085911fbf204a4ba9d5" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>caller_instance_name_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a143d25608456e5b2c7fb0d2d10561688" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>caller_instance_type_name_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a7ca2386055369582bcfb15e2782e64ad" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>caller_port_array_expr_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a716943516d2dc10fd3f6805494c67114" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>caller_port_array_subscripts_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a9af7a1acc339034ae2fb32c43b985169" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>caller_port_me_expr_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1aae42a0a5eb8919133e7f0fe46806e18b" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>caller_port_name_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a25fdfd072120fe0c79cfe6cba4f86542" prot="public" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>dump</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a7da5517adff2b424a37aa0a9c8ea4bba" prot="public" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>getCalleeArraySubscripts</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a1376ee922434c1d318027bf5623c936b" prot="public" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>getCalleeInstanceName</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a056c88fb1c71198441be3779e9c1ff12" prot="public" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>getCalleePortName</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1aa0ad3a4de12bf03fd0382f0f8fb2c0dc" prot="public" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>getCallerArraySubscripts</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a4bd0428a8f23be87f89e7cda084139a3" prot="public" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>getCallerInstanceName</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a31718873d60c8a69ef3357b0fc1d3fca" prot="public" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>getCallerInstanceTypeName</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a6c451d3430ce1e4d9b84539ba608156c" prot="public" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>getCallerMemberExpr</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1ad83753efdd44051cfa710bfa00d57084" prot="public" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>getCallerPortArraySubscripts</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1af2aa9c5d2455ab06f1661cd76ded189f" prot="public" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>getCallerPortName</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a3b6421c1ef347ca6bad167b9b944f88c" prot="public" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>getInstanceConstructorName</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1aca81e65bd1f98d625e71247a946dd4d8" prot="public" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>getInstanceType</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a9e7757029c29a36711c931d1f9434cd1" prot="public" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>getInstanceTypeDecl</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a5db914273696e24ec68351b3f6767a5a" prot="public" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>getInstanceVarName</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a515880f9dc12f43627d54e111c41ddef" prot="public" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>getPortName</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a1f6c1768a1be812b51b968e00822853d" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>instance_constructor_name_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a2d1ca9566823728e7bef38aad186dcde" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>instance_type_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a840edc4d7d15b2584ff27d923cc67a4e" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>instance_type_decl_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1afda27f653f063b97e5434d85a4e80a7f" prot="private" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>instance_var_name_</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a408edf12d41406dc7d7957b3f975f2b3" prot="public" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>PortBinding</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a552fc900e72c58a08fe91a601d083d99" prot="public" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>setInstanceConstructorName</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1aae351ed5cfcc4a1203d2c96160060872" prot="public" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>setInstanceVarName</name></member>
+      <member refid="classsystemc__clang_1_1PortBinding_1a356024c2075154042aeb19be51dbd197" prot="public" virt="non-virtual"><scope>systemc_clang::PortBinding</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

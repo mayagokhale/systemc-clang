@@ -1,0 +1,67 @@
+\hypertarget{classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl}{}\doxysection{parselib.\+transforms.\+sort\+\_\+var\+\_\+decl.\+Sort\+Var\+Decl Class Reference}
+\label{classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl}\index{parselib.transforms.sort\_var\_decl.SortVarDecl@{parselib.transforms.sort\_var\_decl.SortVarDecl}}
+
+
+Inheritance diagram for parselib.\+transforms.\+sort\+\_\+var\+\_\+decl.\+Sort\+Var\+Decl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for parselib.\+transforms.\+sort\+\_\+var\+\_\+decl.\+Sort\+Var\+Decl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl_af7908292c69f55416ec3b2683d7e6721}{modportsiglist}} (self, tree)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl_a45614fae5db0e20743fa043a73dfb996}{\+\_\+\+\_\+top\+\_\+sort\+\_\+helper}} (self, u, edges, vis, res)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl_a398eb2ed6feb821d62d51fc57645e7bc}{\+\_\+\+\_\+top\+\_\+sort}} (self, edges)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This pass sorts the variable declaration in modules based on their reference dependencies.
+The tools might require that a variable is declared before used.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl_a398eb2ed6feb821d62d51fc57645e7bc}\label{classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl_a398eb2ed6feb821d62d51fc57645e7bc}} 
+\index{parselib.transforms.sort\_var\_decl.SortVarDecl@{parselib.transforms.sort\_var\_decl.SortVarDecl}!\_\_top\_sort@{\_\_top\_sort}}
+\index{\_\_top\_sort@{\_\_top\_sort}!parselib.transforms.sort\_var\_decl.SortVarDecl@{parselib.transforms.sort\_var\_decl.SortVarDecl}}
+\doxysubsubsection{\texorpdfstring{\_\_top\_sort()}{\_\_top\_sort()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+sort\+\_\+var\+\_\+decl.\+Sort\+Var\+Decl.\+\_\+\+\_\+top\+\_\+sort (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{edges }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyVerb}sort nodes topologically\end{DoxyVerb}
+ \mbox{\Hypertarget{classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl_a45614fae5db0e20743fa043a73dfb996}\label{classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl_a45614fae5db0e20743fa043a73dfb996}} 
+\index{parselib.transforms.sort\_var\_decl.SortVarDecl@{parselib.transforms.sort\_var\_decl.SortVarDecl}!\_\_top\_sort\_helper@{\_\_top\_sort\_helper}}
+\index{\_\_top\_sort\_helper@{\_\_top\_sort\_helper}!parselib.transforms.sort\_var\_decl.SortVarDecl@{parselib.transforms.sort\_var\_decl.SortVarDecl}}
+\doxysubsubsection{\texorpdfstring{\_\_top\_sort\_helper()}{\_\_top\_sort\_helper()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+sort\+\_\+var\+\_\+decl.\+Sort\+Var\+Decl.\+\_\+\+\_\+top\+\_\+sort\+\_\+helper (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{u,  }\item[{}]{edges,  }\item[{}]{vis,  }\item[{}]{res }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl_af7908292c69f55416ec3b2683d7e6721}\label{classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl_af7908292c69f55416ec3b2683d7e6721}} 
+\index{parselib.transforms.sort\_var\_decl.SortVarDecl@{parselib.transforms.sort\_var\_decl.SortVarDecl}!modportsiglist@{modportsiglist}}
+\index{modportsiglist@{modportsiglist}!parselib.transforms.sort\_var\_decl.SortVarDecl@{parselib.transforms.sort\_var\_decl.SortVarDecl}}
+\doxysubsubsection{\texorpdfstring{modportsiglist()}{modportsiglist()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+sort\+\_\+var\+\_\+decl.\+Sort\+Var\+Decl.\+modportsiglist (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tree }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+plugins/hdl/parselib/transforms/\mbox{\hyperlink{sort__var__decl_8py}{sort\+\_\+var\+\_\+decl.\+py}}\end{DoxyCompactItemize}

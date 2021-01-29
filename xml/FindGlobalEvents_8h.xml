@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="FindGlobalEvents_8h" kind="file" language="C++">
+    <compoundname>FindGlobalEvents.h</compoundname>
+    <includes refid="systemc-clang_8h" local="yes">systemc-clang.h</includes>
+    <includes local="yes">json.hpp</includes>
+    <includes local="yes">clang/AST/Decl.h</includes>
+    <includes local="yes">clang/AST/RecursiveASTVisitor.h</includes>
+    <includes local="yes">llvm/Support/raw_ostream.h</includes>
+    <includes local="no">map</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="FindGlobalEvents_8cpp" local="yes">src/matchers/FindGlobalEvents.cpp</includedby>
+    <includedby refid="Model_8h" local="yes">src/model/Model.h</includedby>
+    <includedby refid="SystemCClang_8cpp" local="yes">src/SystemCClang.cpp</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>clang/AST/Decl.h</label>
+      </node>
+      <node id="8">
+        <label>llvm/Support/raw_ostream.h</label>
+      </node>
+      <node id="7">
+        <label>clang/AST/RecursiveASTVisitor.h</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>map</label>
+      </node>
+      <node id="5">
+        <label>json.hpp</label>
+      </node>
+      <node id="2">
+        <label>systemc-clang.h</label>
+        <link refid="systemc-clang_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="3">
+        <label>sstream</label>
+      </node>
+      <node id="1">
+        <label>src/matchers/FindGlobalEvents.h</label>
+        <link refid="FindGlobalEvents_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8">
+        <label>src/PluginAction.h</label>
+        <link refid="PluginAction_8h"/>
+      </node>
+      <node id="13">
+        <label>plugins/hdl/HDLBody.h</label>
+        <link refid="HDLBody_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/SystemCClang.h</label>
+        <link refid="SystemCClang_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/SCuitable/GlobalSuspensionAutomata.cpp</label>
+        <link refid="GlobalSuspensionAutomata_8cpp"/>
+      </node>
+      <node id="12">
+        <label>plugins/hdl/HDLBody.cpp</label>
+        <link refid="HDLBody_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/model/Model.cpp</label>
+        <link refid="Model_8cpp"/>
+      </node>
+      <node id="18">
+        <label>plugins/hdl/HDLType.cpp</label>
+        <link refid="HDLType_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/SCuitable/GlobalSuspensionAutomata.h</label>
+        <link refid="GlobalSuspensionAutomata_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/model/Model.h</label>
+        <link refid="Model_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>plugins/hdl/HDLHnode.cpp</label>
+        <link refid="HDLHnode_8cpp"/>
+      </node>
+      <node id="14">
+        <label>plugins/hdl/HDLMain.h</label>
+        <link refid="HDLMain_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>plugins/hdl/HDLMain.cpp</label>
+        <link refid="HDLMain_8cpp"/>
+      </node>
+      <node id="11">
+        <label>src/SystemCClang.cpp</label>
+        <link refid="SystemCClang_8cpp"/>
+      </node>
+      <node id="16">
+        <label>plugins/hdl/HDLHnode.h</label>
+        <link refid="HDLHnode_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>src/SAPlugin.h</label>
+        <link refid="SAPlugin_8h"/>
+      </node>
+      <node id="19">
+        <label>plugins/hdl/HDLType.h</label>
+        <link refid="HDLType_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/matchers/FindGlobalEvents.h</label>
+        <link refid="FindGlobalEvents_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/matchers/FindGlobalEvents.cpp</label>
+        <link refid="FindGlobalEvents_8cpp"/>
+      </node>
+      <node id="10">
+        <label>src/SCuitable/TimeAnalysis.h</label>
+        <link refid="TimeAnalysis_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsystemc__clang_1_1FindGlobalEvents" prot="public">systemc_clang::FindGlobalEvents</innerclass>
+    <innernamespace refid="namespacesystemc__clang">systemc_clang</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_FIND_GLOBAL_EVENTS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FIND_GLOBAL_EVENTS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="systemc-clang_8h" kindref="compound">systemc-clang.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;json.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;clang/AST/Decl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;clang/AST/RecursiveASTVisitor.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;llvm/Support/raw_ostream.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesystemc__clang" kindref="compound">systemc_clang</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceclang" kindref="compound">clang</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="16" refid="namespacesystemc__clang_1ab232545035b571c3f3cd13a4459f2d9e" refkind="member"><highlight class="normal"><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespacesystemc__clang_1ab232545035b571c3f3cd13a4459f2d9e" kindref="member">json</ref><sp/>=<sp/><ref refid="namespacesystemc__clang_1ab232545035b571c3f3cd13a4459f2d9e" kindref="member">nlohmann::json</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="18" refid="classsystemc__clang_1_1FindGlobalEvents" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsystemc__clang_1_1FindGlobalEvents" kindref="compound">FindGlobalEvents</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>RecursiveASTVisitor&lt;FindGlobalEvents&gt;<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20" refid="classsystemc__clang_1_1FindGlobalEvents_1a07d8ada4c3bf82ddeaf241c30cdd257a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>map&lt;string,<sp/>VarDecl<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1FindGlobalEvents_1a07d8ada4c3bf82ddeaf241c30cdd257a" kindref="member">globalEventMapType</ref>;</highlight></codeline>
+<codeline lineno="21" refid="classsystemc__clang_1_1FindGlobalEvents_1a4236ad7b03182c36006b2f37ae1a7d0d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>pair&lt;string,<sp/>VarDecl<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1FindGlobalEvents_1a4236ad7b03182c36006b2f37ae1a7d0d" kindref="member">kvType</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindGlobalEvents" kindref="compound">FindGlobalEvents</ref>(TranslationUnitDecl<sp/>*,<sp/>llvm::raw_ostream<sp/>&amp;);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classsystemc__clang_1_1FindGlobalEvents" kindref="compound">FindGlobalEvents</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>VisitVarDecl(VarDecl<sp/>*);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindGlobalEvents_1a07d8ada4c3bf82ddeaf241c30cdd257a" kindref="member">globalEventMapType</ref><sp/>getEventMap();</highlight></codeline>
+<codeline lineno="29" refid="classsystemc__clang_1_1FindGlobalEvents_1af17d5125892b5e5f8425d0806d557279" refkind="member"><highlight class="normal"><sp/><sp/>vector&lt;string&gt;<sp/><ref refid="classsystemc__clang_1_1FindGlobalEvents_1af17d5125892b5e5f8425d0806d557279" kindref="member">getEventNames</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dump();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><ref refid="namespacesystemc__clang_1ab232545035b571c3f3cd13a4459f2d9e" kindref="member">json</ref><sp/>dump_json();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36" refid="classsystemc__clang_1_1FindGlobalEvents_1a4a33d4ffeb02939957b01f4a051db3b2" refkind="member"><highlight class="normal"><sp/><sp/>llvm::raw_ostream<sp/>&amp;<ref refid="classsystemc__clang_1_1FindGlobalEvents_1a4a33d4ffeb02939957b01f4a051db3b2" kindref="member">_os</ref>;</highlight></codeline>
+<codeline lineno="37" refid="classsystemc__clang_1_1FindGlobalEvents_1af3ef958e39f096aa676e438c2141f099" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindGlobalEvents_1a07d8ada4c3bf82ddeaf241c30cdd257a" kindref="member">globalEventMapType</ref><sp/><ref refid="classsystemc__clang_1_1FindGlobalEvents_1af3ef958e39f096aa676e438c2141f099" kindref="member">_globalEvents</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>systemc_clang</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/matchers/FindGlobalEvents.h"/>
+  </compounddef>
+</doxygen>

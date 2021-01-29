@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl" kind="class" language="Python" prot="public">
+    <compoundname>parselib::transforms::sort_var_decl::SortVarDecl</compoundname>
+    <basecompoundref refid="classparselib_1_1transforms_1_1top__down_1_1TopDown" prot="public" virt="non-virtual">parselib.transforms.top_down.TopDown</basecompoundref>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl_1a45614fae5db0e20743fa043a73dfb996" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.sort_var_decl.SortVarDecl.__top_sort_helper</definition>
+        <argsstring>(self, u, edges, vis, res)</argsstring>
+        <name>__top_sort_helper</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>u</type>
+          <defname>u</defname>
+        </param>
+        <param>
+          <type>edges</type>
+          <defname>edges</defname>
+        </param>
+        <param>
+          <type>vis</type>
+          <defname>vis</defname>
+        </param>
+        <param>
+          <type>res</type>
+          <defname>res</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/sort_var_decl.py" line="8" column="1" bodyfile="plugins/hdl/parselib/transforms/sort_var_decl.py" bodystart="8" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl_1a398eb2ed6feb821d62d51fc57645e7bc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.sort_var_decl.SortVarDecl.__top_sort</definition>
+        <argsstring>(self, edges)</argsstring>
+        <name>__top_sort</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>edges</type>
+          <defname>edges</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>sort nodes topologically</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/sort_var_decl.py" line="19" column="1" bodyfile="plugins/hdl/parselib/transforms/sort_var_decl.py" bodystart="19" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl_1af7908292c69f55416ec3b2683d7e6721" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.sort_var_decl.SortVarDecl.modportsiglist</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>modportsiglist</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/sort_var_decl.py" line="39" column="1" bodyfile="plugins/hdl/parselib/transforms/sort_var_decl.py" bodystart="39" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>This pass sorts the variable declaration in modules based on their reference dependencies.
+The tools might require that a variable is declared before used.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>parselib.transforms.top_down.TopDown</label>
+        <link refid="classparselib_1_1transforms_1_1top__down_1_1TopDown"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Interpreter</label>
+      </node>
+      <node id="1">
+        <label>parselib.transforms.sort_var_decl.SortVarDecl</label>
+        <link refid="classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>parselib.transforms.top_down.TopDown</label>
+        <link refid="classparselib_1_1transforms_1_1top__down_1_1TopDown"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Interpreter</label>
+      </node>
+      <node id="1">
+        <label>parselib.transforms.sort_var_decl.SortVarDecl</label>
+        <link refid="classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/parselib/transforms/sort_var_decl.py" line="4" column="1" bodyfile="plugins/hdl/parselib/transforms/sort_var_decl.py" bodystart="4" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1a2738f9bf2467d410d3990343dcaf88ff" prot="public" virt="non-virtual"><scope>parselib::transforms::sort_var_decl::SortVarDecl</scope><name>__default__</name></member>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1aba7572132ec76ea47811c9d077763441" prot="public" virt="non-virtual"><scope>parselib::transforms::sort_var_decl::SortVarDecl</scope><name>__init__</name></member>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1a7064a163977352a2b47acbf7e388116c" prot="private" virt="non-virtual"><scope>parselib::transforms::sort_var_decl::SortVarDecl</scope><name>__push_up</name></member>
+      <member refid="classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl_1a398eb2ed6feb821d62d51fc57645e7bc" prot="private" virt="non-virtual"><scope>parselib::transforms::sort_var_decl::SortVarDecl</scope><name>__top_sort</name></member>
+      <member refid="classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl_1a45614fae5db0e20743fa043a73dfb996" prot="private" virt="non-virtual"><scope>parselib::transforms::sort_var_decl::SortVarDecl</scope><name>__top_sort_helper</name></member>
+      <member refid="classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl_1af7908292c69f55416ec3b2683d7e6721" prot="public" virt="non-virtual"><scope>parselib::transforms::sort_var_decl::SortVarDecl</scope><name>modportsiglist</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

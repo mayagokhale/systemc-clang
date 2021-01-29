@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classparselib_1_1primitives_1_1TypeContext" kind="class" language="Python" prot="public">
+    <compoundname>parselib::primitives::TypeContext</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classparselib_1_1primitives_1_1TypeContext_1a4249f6dbbfeb1e5edf12228744de0ad0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.primitives.TypeContext::prefix</definition>
+        <argsstring></argsstring>
+        <name>prefix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/primitives.py" line="7" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparselib_1_1primitives_1_1TypeContext_1a79b971bea16103a8b36c771a46f06775" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.primitives.TypeContext::suffix</definition>
+        <argsstring></argsstring>
+        <name>suffix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/primitives.py" line="8" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparselib_1_1primitives_1_1TypeContext_1a1feb47a16996ff69784488b87ed014ab" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.primitives.TypeContext::sep</definition>
+        <argsstring></argsstring>
+        <name>sep</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/primitives.py" line="9" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparselib_1_1primitives_1_1TypeContext_1a797d62bcb5b28c36580dbe1687e9cdf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.primitives.TypeContext.__init__</definition>
+        <argsstring>(self, prefix=None, suffix=None, sep=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classparselib_1_1primitives_1_1TypeContext_1a4249f6dbbfeb1e5edf12228744de0ad0" kindref="member">prefix</ref></type>
+          <defname>prefix</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classparselib_1_1primitives_1_1TypeContext_1a79b971bea16103a8b36c771a46f06775" kindref="member">suffix</ref></type>
+          <defname>suffix</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classparselib_1_1primitives_1_1TypeContext_1a1feb47a16996ff69784488b87ed014ab" kindref="member">sep</ref></type>
+          <defname>sep</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/primitives.py" line="6" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="6" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1primitives_1_1TypeContext_1abc6ba3706d37b9525a3a7e4f48ccf446" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.primitives.TypeContext.update_not_none</definition>
+        <argsstring>(self, that)</argsstring>
+        <name>update_not_none</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>that</type>
+          <defname>that</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>merges fields of two contexts, throws error if both fields are non None</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/primitives.py" line="22" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="22" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classparselib_1_1primitives_1_1TypeContext_1aaf9474f485f65769ea7fca875d1c5048" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.primitives.TypeContext.merge_field_default_this</definition>
+        <argsstring>(this, that)</argsstring>
+        <name>merge_field_default_this</name>
+        <param>
+          <type>this</type>
+          <defname>this</defname>
+        </param>
+        <param>
+          <type>that</type>
+          <defname>that</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/primitives.py" line="12" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="12" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>parselib.primitives.TypeContext</label>
+        <link refid="classparselib_1_1primitives_1_1TypeContext"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>parselib.primitives.TypeContext</label>
+        <link refid="classparselib_1_1primitives_1_1TypeContext"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/parselib/primitives.py" line="5" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="5" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classparselib_1_1primitives_1_1TypeContext_1a797d62bcb5b28c36580dbe1687e9cdf1" prot="public" virt="non-virtual"><scope>parselib::primitives::TypeContext</scope><name>__init__</name></member>
+      <member refid="classparselib_1_1primitives_1_1TypeContext_1aaf9474f485f65769ea7fca875d1c5048" prot="public" virt="non-virtual"><scope>parselib::primitives::TypeContext</scope><name>merge_field_default_this</name></member>
+      <member refid="classparselib_1_1primitives_1_1TypeContext_1a4249f6dbbfeb1e5edf12228744de0ad0" prot="public" virt="non-virtual"><scope>parselib::primitives::TypeContext</scope><name>prefix</name></member>
+      <member refid="classparselib_1_1primitives_1_1TypeContext_1a1feb47a16996ff69784488b87ed014ab" prot="public" virt="non-virtual"><scope>parselib::primitives::TypeContext</scope><name>sep</name></member>
+      <member refid="classparselib_1_1primitives_1_1TypeContext_1a79b971bea16103a8b36c771a46f06775" prot="public" virt="non-virtual"><scope>parselib::primitives::TypeContext</scope><name>suffix</name></member>
+      <member refid="classparselib_1_1primitives_1_1TypeContext_1abc6ba3706d37b9525a3a7e4f48ccf446" prot="public" virt="non-virtual"><scope>parselib::primitives::TypeContext</scope><name>update_not_none</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

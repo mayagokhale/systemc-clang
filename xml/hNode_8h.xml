@@ -1,0 +1,423 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="hNode_8h" kind="file" language="C++">
+    <compoundname>hNode.h</compoundname>
+    <includes local="yes">llvm/Support/raw_ostream.h</includes>
+    <includes local="no">stack</includes>
+    <includes local="no">algorithm</includes>
+    <includedby refid="HDLBody_8h" local="yes">plugins/hdl/HDLBody.h</includedby>
+    <includedby refid="HDLHnode_8h" local="yes">plugins/hdl/HDLHnode.h</includedby>
+    <includedby refid="HDLMain_8h" local="yes">plugins/hdl/HDLMain.h</includedby>
+    <includedby refid="HDLType_8h" local="yes">plugins/hdl/HDLType.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>llvm/Support/raw_ostream.h</label>
+      </node>
+      <node id="1">
+        <label>plugins/hdl/hNode.h</label>
+        <link refid="hNode_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stack</label>
+      </node>
+      <node id="4">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>plugins/hdl/HDLBody.h</label>
+        <link refid="HDLBody_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>plugins/hdl/hNode.h</label>
+        <link refid="hNode_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>plugins/hdl/HDLBody.cpp</label>
+        <link refid="HDLBody_8cpp"/>
+      </node>
+      <node id="9">
+        <label>plugins/hdl/HDLType.cpp</label>
+        <link refid="HDLType_8cpp"/>
+      </node>
+      <node id="7">
+        <label>plugins/hdl/HDLHnode.cpp</label>
+        <link refid="HDLHnode_8cpp"/>
+      </node>
+      <node id="4">
+        <label>plugins/hdl/HDLMain.h</label>
+        <link refid="HDLMain_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>plugins/hdl/HDLMain.cpp</label>
+        <link refid="HDLMain_8cpp"/>
+      </node>
+      <node id="6">
+        <label>plugins/hdl/HDLHnode.h</label>
+        <link refid="HDLHnode_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>plugins/hdl/HDLType.h</label>
+        <link refid="HDLType_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classhnode_1_1hNode" prot="public">hnode::hNode</innerclass>
+    <innerclass refid="classhnode_1_1util" prot="public">hnode::util</innerclass>
+    <innerclass refid="structhnode_1_1names__t" prot="public">hnode::names_t</innerclass>
+    <innerclass refid="classhnode_1_1name__serve" prot="public">hnode::name_serve</innerclass>
+    <innernamespace refid="namespacehnode">hnode</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="hNode_8h_1a64eb54355c84a41ba54190a6d70e5296" prot="public" static="no">
+        <name>HNODEen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/hNode.h" line="26" column="9" bodyfile="plugins/hdl/hNode.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="hNode_8h_1ab3bfcd8ed86420e6208923263968d872" prot="public" static="no">
+        <name>etype</name>
+        <param><defname>x</defname></param>
+        <initializer>x</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/hNode.h" line="79" column="9" bodyfile="plugins/hdl/hNode.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="hNode_8h_1ab3bfcd8ed86420e6208923263968d872" prot="public" static="no">
+        <name>etype</name>
+        <param><defname>x</defname></param>
+        <initializer>#x</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/hNode.h" line="91" column="10" bodyfile="plugins/hdl/hNode.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_HNODE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_HNODE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;llvm/Support/raw_ostream.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stack&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesystemc__clang" kindref="compound">systemc_clang</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="namespacehnode" refkind="compound"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacehnode" kindref="compound">hnode</ref><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="namespacehnode_1ae5db0847c00e6e0627bc73df624628d0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref><sp/>*<sp/><ref refid="namespacehnode_1ae5db0847c00e6e0627bc73df624628d0" kindref="member">hNodep</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classhnode_1_1hNode" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="hNode_8h_1a64eb54355c84a41ba54190a6d70e5296" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HNODEen<sp/>\</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"><sp/><sp/>etype(hNoop),<sp/>\</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"><sp/><sp/>etype(hModule),<sp/>\</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"><sp/><sp/>etype(hModinitblock),<sp/>\</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"><sp/><sp/>etype(hPortbindings),<sp/>\</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"><sp/><sp/>etype(hPortbinding),<sp/>\</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"><sp/><sp/>etype(hProcesses),<sp/>\</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"><sp/><sp/>etype(hProcess),<sp/>\</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"><sp/><sp/>etype(hMethod),<sp/>\</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"><sp/><sp/>etype(hCStmt),<sp/>\</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"><sp/><sp/>etype(hPortsigvarlist),<sp/>\</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"><sp/><sp/>etype(hPortin),<sp/>\</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"><sp/><sp/>etype(hPortout),<sp/>\</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"><sp/><sp/>etype(hPortio),<sp/>\</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"><sp/><sp/>etype(hSenslist),<sp/>\</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"><sp/><sp/>etype(hSensvar),<sp/>\</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"><sp/><sp/>etype(hSensedge),<sp/>\</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"><sp/><sp/>etype(hTypeinfo),<sp/>\</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"><sp/><sp/>etype(hType),<sp/>\</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"><sp/><sp/>etype(hTypeField),<sp/>\</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"><sp/><sp/>etype(hTypedef),<sp/>\</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"><sp/><sp/>etype(hTypeTemplateParam),<sp/>\</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"><sp/><sp/>etype(hInt),<sp/>\</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"><sp/><sp/>etype(hSigdecl),<sp/>\</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"><sp/><sp/>etype(hVardecl),<sp/>\</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"><sp/><sp/>etype(hVardeclrn),<sp/>\</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"><sp/><sp/>etype(hModdecl),<sp/>\</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"><sp/><sp/>etype(hVarref),<sp/>\</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"><sp/><sp/>etype(hVarInit),<sp/>\</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"><sp/><sp/>etype(hSigAssignL),<sp/>\</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"><sp/><sp/>etype(hSigAssignR),<sp/>\</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"><sp/><sp/>etype(hVarAssign),<sp/>\</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"><sp/><sp/>etype(hBinop),<sp/>\</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"><sp/><sp/>etype(hUnop),<sp/>\</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"><sp/><sp/>etype(hCondop),<sp/>\</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"><sp/><sp/>etype(hMethodCall),<sp/>\</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"><sp/><sp/>etype(hIfStmt),<sp/>\</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"><sp/><sp/>etype(hForStmt),<sp/>\</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"><sp/><sp/>etype(hSwitchStmt),<sp/>\</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"><sp/><sp/>etype(hSwitchCase),<sp/>\</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"><sp/><sp/>etype(hSwitchDefault),<sp/>\</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"><sp/><sp/>etype(hWhileStmt),<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"><sp/><sp/>etype(hReturnStmt),<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"><sp/><sp/>etype(hLiteral),<sp/>\</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"><sp/><sp/>etype(hFunction),<sp/>\</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"><sp/><sp/>etype(hFunctionRetType),<sp/>\</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"><sp/><sp/>etype(hFunctionParams),<sp/>\</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"><sp/><sp/>etype(hUnimpl),<sp/>\</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"><sp/><sp/>etype(hLast)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>etype(x)<sp/>x</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="81" refid="classhnode_1_1hNode_1a72bcc22543c267571a24ec713633e39aad2c332521864677adb38ef1776a57be8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{<sp/><ref refid="hNode_8h_1a64eb54355c84a41ba54190a6d70e5296" kindref="member">HNODEen</ref><sp/>}<sp/>hdlopsEnum;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//bool<sp/>is_leaf;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85" refid="classhnode_1_1hNode_1a3f80d521bb4068a6e86718a6ace723d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode_1a3f80d521bb4068a6e86718a6ace723d8" kindref="member">h_name</ref>;</highlight></codeline>
+<codeline lineno="86" refid="classhnode_1_1hNode_1a18abdaf770d5490367b9846b0896bdec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode_1a72bcc22543c267571a24ec713633e39a" kindref="member">hdlopsEnum</ref><sp/><ref refid="classhnode_1_1hNode_1a18abdaf770d5490367b9846b0896bdec" kindref="member">h_op</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//list&lt;hNodep&gt;<sp/>child_list;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;hNodep&gt;<sp/><ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>etype</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="hNode_8h_1ab3bfcd8ed86420e6208923263968d872" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>etype(x)<sp/>#x</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classhnode_1_1hNode_1aa9b67f859b7fe96a805ececa8806756e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>hdlop_pn<sp/>[hLast+1]<sp/><sp/>=<sp/><sp/>{<sp/><ref refid="hNode_8h_1a64eb54355c84a41ba54190a6d70e5296" kindref="member">HNODEen</ref><sp/>};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//hNode()<sp/>{<sp/>is_leaf<sp/>=<sp/>true;}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="classhnode_1_1hNode_1a16258c9b7990cde944815124ccddd4bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode_1a16258c9b7990cde944815124ccddd4bd" kindref="member">hNode</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>lf)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//is_leaf<sp/>=<sp/>lf;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>h_op<sp/>=<sp/>hdlopsEnum::hNoop;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>h_name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="classhnode_1_1hNode_1aa8237ce3fce5b886d6220282572a3071" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode_1aa8237ce3fce5b886d6220282572a3071" kindref="member">hNode</ref>(<ref refid="classhnode_1_1hNode_1a72bcc22543c267571a24ec713633e39a" kindref="member">hdlopsEnum</ref><sp/>h)<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>h_op<sp/>=<sp/>h;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>h_name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="108" refid="classhnode_1_1hNode_1ac72ce07937a6dfb6b691737a2ff8d748" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode_1ac72ce07937a6dfb6b691737a2ff8d748" kindref="member">hNode</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>s,<sp/><ref refid="classhnode_1_1hNode_1a72bcc22543c267571a24ec713633e39a" kindref="member">hdlopsEnum</ref><sp/>h)<sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//is_leaf<sp/>=<sp/>true;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>h_op<sp/>=<sp/>h;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>h_name<sp/>=<sp/>s;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="classhnode_1_1hNode_1abed291e2aa9544c233e6a9febca2a366" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode_1abed291e2aa9544c233e6a9febca2a366" kindref="member">~hNode</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!child_list.empty())<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//list&lt;hNodep&gt;::iterator<sp/>it;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;hNodep&gt;::iterator<sp/>it;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(it<sp/>=<sp/>child_list.begin();<sp/>it<sp/>!=<sp/>child_list.end();<sp/>it++)<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>(*it)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;child<sp/>list<sp/>element<sp/>&quot;<sp/>&lt;&lt;<sp/>*it<sp/>&lt;&lt;<sp/>&quot;\n&quot;;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*it)<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>*it;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="classhnode_1_1hNode_1a59ce73e9dec57311dc1fc18b7ab66aac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode_1a59ce73e9dec57311dc1fc18b7ab66aac" kindref="member">set</ref>(<sp/><ref refid="classhnode_1_1hNode_1a72bcc22543c267571a24ec713633e39a" kindref="member">hdlopsEnum</ref><sp/>h,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>s<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>h_op<sp/>=<sp/>h;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>h_name<sp/>=<sp/>s;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="classhnode_1_1hNode_1aee97c18f0579336450d0213f1e35c87c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode_1aee97c18f0579336450d0213f1e35c87c" kindref="member">set</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>s<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>h_name<sp/>=<sp/>s;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136" refid="classhnode_1_1hNode_1a5218144f0be6b3190e69a32fbf007ee4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode_1a5218144f0be6b3190e69a32fbf007ee4" kindref="member">printopc</ref>(<ref refid="classhnode_1_1hNode_1a72bcc22543c267571a24ec713633e39a" kindref="member">hdlopsEnum</ref><sp/>opc)<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>hdlop_pn[</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(opc)];</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="classhnode_1_1hNode_1a3a514db7343d00d4371a07a4714d5ad1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode_1a3a514db7343d00d4371a07a4714d5ad1" kindref="member">getname</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>h_name;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="classhnode_1_1hNode_1a2321b495c12ccc2cb4aa002fb3b01371" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode_1a72bcc22543c267571a24ec713633e39a" kindref="member">hdlopsEnum</ref><sp/><ref refid="classhnode_1_1hNode_1a2321b495c12ccc2cb4aa002fb3b01371" kindref="member">getopc</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>h_op;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>completeness</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="classhnode_1_1hNode_1aec703ee51063e979f59919fb4d11494c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode_1a72bcc22543c267571a24ec713633e39a" kindref="member">hdlopsEnum</ref><sp/><ref refid="classhnode_1_1hNode_1aec703ee51063e979f59919fb4d11494c" kindref="member">str2hdlopenum</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>st)<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal"><sp/>(hdlop_pn)/</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal"><sp/>(hdlop_pn[0]);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(hdlop_pn[i]<sp/>==<sp/>st)</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="classhnode_1_1hNode_1a72bcc22543c267571a24ec713633e39a" kindref="member">hdlopsEnum</ref>)<sp/>i;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>hLast;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//void<sp/>print(llvm::raw_fd_ostream<sp/>&amp;<sp/>modelout,<sp/>unsigned<sp/>int<sp/>indnt=2)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="classhnode_1_1hNode_1af2caf10bac111af51d09b98b302ec40c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode_1af2caf10bac111af51d09b98b302ec40c" kindref="member">print</ref>(llvm::raw_ostream<sp/>&amp;<sp/>modelout=llvm::outs(),<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>indnt=2)<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>modelout.indent(indnt);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>modelout<sp/>&lt;&lt;<sp/>printopc(h_op)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(h_name<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>modelout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>NONAME&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>modelout<sp/>&lt;&lt;<sp/>h_name;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(child_list.empty())</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>modelout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>NOLIST\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>modelout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>[\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>child<sp/>:<sp/>child_list)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(child)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>child-&gt;print(modelout,<sp/>indnt+2);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>modelout.indent(indnt+2);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>modelout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&lt;null<sp/>child&gt;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>modelout.indent(indnt);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>modelout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;]\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>default<sp/>arguments<sp/>don&apos;t<sp/>work<sp/>in<sp/>lldb</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="classhnode_1_1hNode_1a17a5ed3f65caf754c1b9099169deff5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode_1a17a5ed3f65caf754c1b9099169deff5b" kindref="member">dumphcode</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>print(llvm::outs(),<sp/>2);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="193" refid="classhnode_1_1util" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classhnode_1_1util" kindref="compound">util</ref><sp/>{<sp/></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="195" refid="classhnode_1_1util_1aa328c7a165b1c61c2f40826d13a98391" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numstr<sp/>=<sp/>6;</highlight></codeline>
+<codeline lineno="196" refid="classhnode_1_1util_1a942d5e2825dbec1bca7b9e3174420d66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>scbuiltintype<sp/>[6]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;sc_uint&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;sc_int&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;sc_bigint&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;sc_biguint&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;sc_bv&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;sc_logic&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="204" refid="classhnode_1_1util_1a452e348d557d610adb1462cb0039b7b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scbtlen<sp/>[<sp/>6<sp/>];</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="206" refid="classhnode_1_1util_1a2f939b759f2612426d6e6832256c4228" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1util_1a2f939b759f2612426d6e6832256c4228" kindref="member">util</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i<sp/>&lt;<sp/>numstr;<sp/>i++)</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>scbtlen[i]<sp/>=<sp/>scbuiltintype[i].length();</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210" refid="classhnode_1_1util_1a40c1447431ed1788a1a4a03e13f7005d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1util_1a40c1447431ed1788a1a4a03e13f7005d" kindref="member">~util</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="212" refid="classhnode_1_1util_1af510b612fdd0ce12ab898c842d3f6736" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1util_1af510b612fdd0ce12ab898c842d3f6736" kindref="member">make_ident</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;nm)<sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>https://stackoverflow.com/questions/14475462/remove-set-of-characters-from-the-string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//str.erase(</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::remove_if(str.begin(),<sp/>str.end(),<sp/>[](char<sp/>chr){<sp/>return<sp/>chr<sp/>==<sp/>&apos;&amp;&apos;<sp/>||<sp/>chr<sp/>==<sp/>&apos;<sp/>&apos;;}),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//str.end());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::replace(nm.begin(),<sp/>nm.end(),<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="charliteral">&apos;_&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>nm.erase(std::remove_if(nm.begin(),<sp/>nm.end(),</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[](</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c){<sp/>return<sp/>c!=</highlight><highlight class="stringliteral">&apos;_&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>!isalnum(c)<sp/>;}),<sp/>nm.end());</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="222" refid="classhnode_1_1util_1a53db35005ca79755b09244b48dffe069" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1util_1a53db35005ca79755b09244b48dffe069" kindref="member">isSCBuiltinType</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>tstring){</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>linear<sp/>search<sp/>sorry,<sp/>but<sp/>at<sp/>least<sp/>the<sp/>length</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>isn&apos;t<sp/>hard<sp/>coded<sp/>in<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i<sp/>&lt;<sp/>numstr;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tstring.substr(0,<sp/>scbtlen[i])<sp/>==<sp/>scbuiltintype[i])</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="232" refid="classhnode_1_1util_1a97860daf2ea8e7d8680a28896c2548b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1util_1a97860daf2ea8e7d8680a28896c2548b7" kindref="member">isSCType</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>tstring)<sp/>{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>linear<sp/>search<sp/>and<sp/>the<sp/>length<sp/>is<sp/>hard<sp/>coded<sp/>in<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>used<sp/>in<sp/>the<sp/>method<sp/>name<sp/>logic</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>strings[]<sp/>=<sp/>{</highlight><highlight class="stringliteral">&quot;sc_in&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;sc_rvd&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;sc_out&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;sc_rvd&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;sc_inout&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;sc_signal&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;sc_subref&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;sc_dt&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>onestring<sp/>:<sp/>strings)<sp/>{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tstring.find(onestring)!=string::npos)</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>if<sp/>(tstring.substr(0,<sp/>6)<sp/>==<sp/>&quot;class<sp/>&quot;)<sp/>//<sp/>this<sp/>is<sp/>so<sp/>stupid<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/>tstring<sp/>=<sp/>tstring.substr(6,<sp/>tstring.length()<sp/>-<sp/>6);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>//return<sp/>(tstring.find(&quot;sc_in&quot;)!=string::npos)<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>return<sp/>((tstring.substr(0,<sp/>12)<sp/>==<sp/>&quot;sc_core::sc_&quot;)<sp/>||<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(tstring.substr(0,<sp/>5)<sp/>==<sp/>&quot;sc_in&quot;)<sp/>||<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(tstring.substr(0,<sp/>9)<sp/>==<sp/>&quot;sc_rvd_in&quot;)<sp/>||<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(tstring.substr(0,<sp/>6)<sp/>==<sp/>&quot;sc_out&quot;)<sp/>||<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(tstring.substr(0,<sp/>10)<sp/>==<sp/>&quot;sc_rvd_out&quot;)<sp/>||<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(tstring.substr(0,<sp/>8)<sp/>==<sp/>&quot;sc_inout&quot;)<sp/>||<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(tstring.substr(0,<sp/>9)<sp/>==<sp/>&quot;sc_signal&quot;)<sp/>||<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(tstring.substr(0,<sp/>6)<sp/>==<sp/>&quot;sc_rvd&quot;)<sp/>||<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(tstring.substr(0,<sp/>9)<sp/>==<sp/>&quot;sc_subref&quot;)<sp/>||<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(tstring.substr(0,5)<sp/>==<sp/>&quot;sc_dt&quot;));<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257" refid="classhnode_1_1util_1aec9118a21d646bbc50205199825839fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1util_1aec9118a21d646bbc50205199825839fd" kindref="member">isposint</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;str)<sp/>{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>https://stackoverflow.com/questions/4654636/how-to-determine-if-a-string-is-a-number-with-c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>towards<sp/>the<sp/>middle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!str.empty()<sp/>&amp;&amp;<sp/>str.find_first_not_of(</highlight><highlight class="stringliteral">&quot;0123456789&quot;</highlight><highlight class="normal">)<sp/>==<sp/>string::npos;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="structhnode_1_1names__t" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="266" refid="structhnode_1_1names__t_1ae41f95f95e7e0b72c4f4c399d72dd7a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structhnode_1_1names__t_1ae41f95f95e7e0b72c4f4c399d72dd7a5" kindref="member">oldn</ref>;</highlight></codeline>
+<codeline lineno="267" refid="structhnode_1_1names__t_1afc0e10eb6caf6805206423e99b2a8650" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="structhnode_1_1names__t_1afc0e10eb6caf6805206423e99b2a8650" kindref="member">newn</ref>;</highlight></codeline>
+<codeline lineno="268" refid="structhnode_1_1names__t_1a9b4e9c1fba5cc4661b34936ebc8aaf49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/><ref refid="structhnode_1_1names__t_1a9b4e9c1fba5cc4661b34936ebc8aaf49" kindref="member">h_vardeclp</ref>;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/>}<sp/><ref refid="structhnode_1_1names__t" kindref="compound">names_t</ref>;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271" refid="namespacehnode_1a3f10aaef8411f7c053be70eac6c4b52a" refkind="member"><highlight class="normal"><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;Decl<sp/>*,<sp/>names_t&gt;<sp/><ref refid="namespacehnode_1a3f10aaef8411f7c053be70eac6c4b52a" kindref="member">hdecl_name_map_t</ref>;</highlight></codeline>
+<codeline lineno="272" refid="namespacehnode_1a895d5dd4b2ad8625d95e059f85f9bef7" refkind="member"><highlight class="normal"><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;ModuleInstance<sp/>*,<sp/>names_t&gt;<sp/><ref refid="namespacehnode_1a895d5dd4b2ad8625d95e059f85f9bef7" kindref="member">hmodinst_name_map_t</ref>;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="274" refid="classhnode_1_1name__serve" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classhnode_1_1name__serve" kindref="compound">name_serve</ref><sp/>{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="276" refid="classhnode_1_1name__serve_1a89abe9e0595a8d73481d357172c4f081" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1name__serve_1a89abe9e0595a8d73481d357172c4f081" kindref="member">cnt</ref>;</highlight></codeline>
+<codeline lineno="277" refid="classhnode_1_1name__serve_1a7e072d7ea45dbde30c7d005750ada345" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1name__serve_1a7e072d7ea45dbde30c7d005750ada345" kindref="member">prefix</ref>;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="279" refid="classhnode_1_1name__serve_1a438588385b36efb716ebcd7388291234" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classhnode_1_1name__serve_1a438588385b36efb716ebcd7388291234" kindref="member">name_serve</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>prefx=</highlight><highlight class="stringliteral">&quot;_local_&quot;</highlight><highlight class="normal">)<sp/>:<sp/>prefix(prefx),<sp/>cnt(0){<sp/>}</highlight></codeline>
+<codeline lineno="280" refid="classhnode_1_1name__serve_1a12adbb0b4092be756869424f71db9408" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1name__serve_1a12adbb0b4092be756869424f71db9408" kindref="member">newname</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(prefix+<ref refid="namespacesystemc__clang_1a1b591007cd72b04c83e568db359ca573" kindref="member">to_string</ref>(cnt++));</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="285"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>hnode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="plugins/hdl/hNode.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classHDLType" kind="class" language="C++" prot="public">
+    <compoundname>HDLType</compoundname>
+    <includes refid="HDLType_8h" local="no">HDLType.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classHDLType_1a18f4ba5ed554687ef615dbf573740797" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; string, QualType &gt;</type>
+        <definition>std::unordered_map&lt;string, QualType&gt; HDLType::usertypes</definition>
+        <argsstring></argsstring>
+        <name>usertypes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLType.h" line="29" column="22" bodyfile="plugins/hdl/HDLType.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classHDLType_1a8f161eb374dfcbd7b0c32626d521b324" prot="private" static="no" mutable="no">
+        <type><ref refid="classhnode_1_1util" kindref="compound">util</ref></type>
+        <definition>util HDLType::tutil</definition>
+        <argsstring></argsstring>
+        <name>tutil</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLType.h" line="32" column="8" bodyfile="plugins/hdl/HDLType.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classHDLType_1aaa8e5116a4baaba73ab526315de39c78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>HDLType::HDLType</definition>
+        <argsstring>()</argsstring>
+        <name>HDLType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLType.h" line="17" column="3" bodyfile="plugins/hdl/HDLType.h" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classHDLType_1a77380ab95df65c28289f6ce8d68f3b85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>HDLType::~HDLType</definition>
+        <argsstring>()</argsstring>
+        <name>~HDLType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLType.h" line="18" column="3" bodyfile="plugins/hdl/HDLType.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classHDLType_1a6438b9a449e3fedf55ab579878a33480" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HDLType::SCtype2hcode</definition>
+        <argsstring>(string prefix, Tree&lt; TemplateType &gt; *template_argtp, std::vector&lt; llvm::APInt &gt; *arr_sizes, hNode::hdlopsEnum h_op, hNodep &amp;h_info)</argsstring>
+        <name>SCtype2hcode</name>
+        <param>
+          <type>string</type>
+          <declname>prefix</declname>
+        </param>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Tree" kindref="compound">Tree</ref>&lt; <ref refid="classsystemc__clang_1_1TemplateType" kindref="compound">TemplateType</ref> &gt; *</type>
+          <declname>template_argtp</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; llvm::APInt &gt; *</type>
+          <declname>arr_sizes</declname>
+        </param>
+        <param>
+          <type><ref refid="classhnode_1_1hNode_1a72bcc22543c267571a24ec713633e39a" kindref="member">hNode::hdlopsEnum</ref></type>
+          <declname>h_op</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehnode_1ae5db0847c00e6e0627bc73df624628d0" kindref="member">hNodep</ref> &amp;</type>
+          <declname>h_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resolve types of systemc variables, signals, and ports including templated types and generate primitive type declarations Relies on TemplateTree matcher provided by front end and can handle structured types. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLType.h" line="20" column="8" bodyfile="plugins/hdl/HDLType.cpp" bodystart="26" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classHDLType_1a433b9891f019a75accd21b0af76f4f78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HDLType::generatetype</definition>
+        <argsstring>(systemc_clang::TreeNode&lt; systemc_clang::TemplateType &gt; *const &amp;node, systemc_clang::Tree&lt; systemc_clang::TemplateType &gt; *const &amp;treehead, hNodep &amp;h_info)</argsstring>
+        <name>generatetype</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1TreeNode" kindref="compound">systemc_clang::TreeNode</ref>&lt; <ref refid="classsystemc__clang_1_1TemplateType" kindref="compound">systemc_clang::TemplateType</ref> &gt; *const &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Tree" kindref="compound">systemc_clang::Tree</ref>&lt; <ref refid="classsystemc__clang_1_1TemplateType" kindref="compound">systemc_clang::TemplateType</ref> &gt; *const &amp;</type>
+          <declname>treehead</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehnode_1ae5db0847c00e6e0627bc73df624628d0" kindref="member">hNodep</ref> &amp;</type>
+          <declname>h_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLType.h" line="23" column="8" bodyfile="plugins/hdl/HDLType.cpp" bodystart="72" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classHDLType_1a3af4b2476e7143388f415531d5b2384f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacehnode_1ae5db0847c00e6e0627bc73df624628d0" kindref="member">hNodep</ref></type>
+        <definition>hNodep HDLType::addtype</definition>
+        <argsstring>(string typname, QualType qtyp, ASTContext &amp;astcontext)</argsstring>
+        <name>addtype</name>
+        <param>
+          <type>string</type>
+          <declname>typname</declname>
+        </param>
+        <param>
+          <type>QualType</type>
+          <declname>qtyp</declname>
+        </param>
+        <param>
+          <type>ASTContext &amp;</type>
+          <declname>astcontext</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLType.h" line="27" column="10" bodyfile="plugins/hdl/HDLType.cpp" bodystart="114" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classHDLType_1a7311aa244ba45252456b87a56000e102" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HDLType::addfieldtype</definition>
+        <argsstring>(const FieldDecl *fld, hNodep &amp;h_typdef)</argsstring>
+        <name>addfieldtype</name>
+        <param>
+          <type>const FieldDecl *</type>
+          <declname>fld</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehnode_1ae5db0847c00e6e0627bc73df624628d0" kindref="member">hNodep</ref> &amp;</type>
+          <declname>h_typdef</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLType.h" line="28" column="8" bodyfile="plugins/hdl/HDLType.cpp" bodystart="181" bodyend="201"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>HDLType</label>
+        <link refid="classHDLType"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>tutil</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>hnode::util</label>
+        <link refid="classhnode_1_1util"/>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/HDLType.h" line="15" column="1" bodyfile="plugins/hdl/HDLType.h" bodystart="15" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classHDLType_1a7311aa244ba45252456b87a56000e102" prot="public" virt="non-virtual"><scope>HDLType</scope><name>addfieldtype</name></member>
+      <member refid="classHDLType_1a3af4b2476e7143388f415531d5b2384f" prot="public" virt="non-virtual"><scope>HDLType</scope><name>addtype</name></member>
+      <member refid="classHDLType_1a433b9891f019a75accd21b0af76f4f78" prot="public" virt="non-virtual"><scope>HDLType</scope><name>generatetype</name></member>
+      <member refid="classHDLType_1aaa8e5116a4baaba73ab526315de39c78" prot="public" virt="non-virtual"><scope>HDLType</scope><name>HDLType</name></member>
+      <member refid="classHDLType_1a6438b9a449e3fedf55ab579878a33480" prot="public" virt="non-virtual"><scope>HDLType</scope><name>SCtype2hcode</name></member>
+      <member refid="classHDLType_1a8f161eb374dfcbd7b0c32626d521b324" prot="private" virt="non-virtual"><scope>HDLType</scope><name>tutil</name></member>
+      <member refid="classHDLType_1a18f4ba5ed554687ef615dbf573740797" prot="public" virt="non-virtual"><scope>HDLType</scope><name>usertypes</name></member>
+      <member refid="classHDLType_1a77380ab95df65c28289f6ce8d68f3b85" prot="public" virt="non-virtual"><scope>HDLType</scope><name>~HDLType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

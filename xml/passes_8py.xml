@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="passes_8py" kind="file" language="Python">
+    <compoundname>passes.py</compoundname>
+    <innerclass refid="classparselib_1_1transforms_1_1passes_1_1VerilogTranslator" prot="public">parselib::transforms::passes::VerilogTranslator</innerclass>
+    <innernamespace refid="namespaceparselib_1_1transforms_1_1passes">parselib::transforms::passes</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespaceparselib_1_1transforms_1_1passes" refkind="compound"><highlight class="stringliteral">&quot;&quot;&quot;Different<sp/>pass<sp/>of<sp/>the<sp/>translation&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.alias_translation<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>AliasTranslation</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.literal_expansion<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>LiteralExpansion</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.node_merge<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>NodeMergePass</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.sort_var_decl<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>SortVarDecl</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.typedef_expansion<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>TypedefExpansion</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.typedef_filter<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>TypeDefFilter</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.verilog_tranlation<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>VerilogTranslationPass</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.port_expansion<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>PortExpansion</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.slice_merge<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>SliceMerge</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.node_movement<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>NodeMovement</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.function_param_marker<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>FunctionParamMarker</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.reorder_mod_init_block<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ReorderModInitBlock</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classparselib_1_1transforms_1_1passes_1_1VerilogTranslator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classparselib_1_1transforms_1_1passes_1_1VerilogTranslator" kindref="compound">VerilogTranslator</ref>:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Translate<sp/>hcode<sp/>to<sp/>verilog&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">@staticmethod</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classparselib_1_1transforms_1_1passes_1_1VerilogTranslator_1a5ec6e2016c97f3fc9ab73ec1b5cff982" kindref="member">translate</ref>(tree):</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>we<sp/>need<sp/>some<sp/>form<sp/>of<sp/>`level&apos;<sp/>of<sp/>the<sp/>tree,<sp/>lower<sp/>level<sp/>meaning<sp/>it<sp/>is<sp/>loosing<sp/>more<sp/>information,<sp/>but<sp/>more<sp/>lenient</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>to<sp/>hardware<sp/>language</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev<sp/>=<sp/>tree</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev<sp/>=<sp/><ref refid="classparselib_1_1transforms_1_1reorder__mod__init__block_1_1ReorderModInitBlock" kindref="compound">ReorderModInitBlock</ref>().visit(prev)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev<sp/>=<sp/><ref refid="classparselib_1_1transforms_1_1node__movement_1_1NodeMovement" kindref="compound">NodeMovement</ref>().visit(prev)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev<sp/>=<sp/><ref refid="classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl" kindref="compound">SortVarDecl</ref>().visit(prev)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev<sp/>=<sp/><ref refid="classparselib_1_1transforms_1_1alias__translation_1_1AliasTranslation" kindref="compound">AliasTranslation</ref>().visit(prev)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev<sp/>=<sp/><ref refid="classparselib_1_1transforms_1_1literal__expansion_1_1LiteralExpansion" kindref="compound">LiteralExpansion</ref>().visit(prev)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev<sp/>=<sp/><ref refid="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge" kindref="compound">SliceMerge</ref>().visit(prev)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f<sp/>=<sp/><ref refid="classparselib_1_1transforms_1_1typedef__filter_1_1TypeDefFilter" kindref="compound">TypeDefFilter</ref>()</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev<sp/>=<sp/>f.visit(prev)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev<sp/>=<sp/><ref refid="classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass" kindref="compound">NodeMergePass</ref>().visit(prev)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev<sp/>=<sp/><ref refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion" kindref="compound">PortExpansion</ref>().visit(prev)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>note<sp/>typedef<sp/>should<sp/>be<sp/>after<sp/>port<sp/>expansion<sp/>to<sp/>prevent<sp/>duplicate<sp/>valid/ready</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev<sp/>=<sp/><ref refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion" kindref="compound">TypedefExpansion</ref>(f.types).visit(prev)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev<sp/>=<sp/><ref refid="classparselib_1_1transforms_1_1function__param__marker_1_1FunctionParamMarker" kindref="compound">FunctionParamMarker</ref>().visit(prev)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev<sp/>=<sp/><ref refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass" kindref="compound">VerilogTranslationPass</ref>().visit(prev)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>prev</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="plugins/hdl/parselib/transforms/passes.py"/>
+  </compounddef>
+</doxygen>

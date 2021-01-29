@@ -1,0 +1,805 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__clang_1_1Graph" kind="class" language="C++" prot="public">
+    <compoundname>systemc_clang::Graph</compoundname>
+    <includes refid="Automata_8h" local="no">Automata.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classsystemc__clang_1_1Graph_1a54442bd306bba787fcca6446837c7d60" prot="public" static="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>typedef vector&lt;int&gt; systemc_clang::Graph::nodeIDVector</definition>
+        <argsstring></argsstring>
+        <name>nodeIDVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="68" column="18" bodyfile="src/SCuitable/Automata.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1Graph_1acc6f301ba6e28a826613c7053c0081bd" prot="public" static="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>typedef vector&lt;int&gt; systemc_clang::Graph::edgeIDVector</definition>
+        <argsstring></argsstring>
+        <name>edgeIDVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="69" column="18" bodyfile="src/SCuitable/Automata.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1Graph_1a3b0352fd1dd6b94efbefa9a7371f8d96" prot="public" static="no">
+        <type>vector&lt; <ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> * &gt;</type>
+        <definition>typedef vector&lt;Node *&gt; systemc_clang::Graph::nodeVector</definition>
+        <argsstring></argsstring>
+        <name>nodeVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="71" column="18" bodyfile="src/SCuitable/Automata.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1Graph_1a5d8068c36a854814c31e59fc4c1955aa" prot="public" static="no">
+        <type>vector&lt; <ref refid="classsystemc__clang_1_1Edge" kindref="compound">Edge</ref> * &gt;</type>
+        <definition>typedef vector&lt;Edge *&gt; systemc_clang::Graph::edgeVector</definition>
+        <argsstring></argsstring>
+        <name>edgeVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="72" column="18" bodyfile="src/SCuitable/Automata.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1Graph_1a7af5211f31c0ef1ee48d0ab23df30caa" prot="public" static="no">
+        <type>map&lt; int, <ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> * &gt;</type>
+        <definition>typedef map&lt;int, Node *&gt; systemc_clang::Graph::nodeMapType</definition>
+        <argsstring></argsstring>
+        <name>nodeMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="74" column="15" bodyfile="src/SCuitable/Automata.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1Graph_1a39f2c14c0eb9e331c896313eb9bb7a14" prot="public" static="no">
+        <type>pair&lt; int, <ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> * &gt;</type>
+        <definition>typedef pair&lt;int, Node *&gt; systemc_clang::Graph::nodePairType</definition>
+        <argsstring></argsstring>
+        <name>nodePairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="75" column="16" bodyfile="src/SCuitable/Automata.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1Graph_1abff1b72e06bcd00a734cc17beaec7037" prot="public" static="no">
+        <type>map&lt; int, <ref refid="classsystemc__clang_1_1Edge" kindref="compound">Edge</ref> * &gt;</type>
+        <definition>typedef map&lt;int, Edge *&gt; systemc_clang::Graph::edgeMapType</definition>
+        <argsstring></argsstring>
+        <name>edgeMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="77" column="15" bodyfile="src/SCuitable/Automata.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1Graph_1addbac67cac024ada8cd801dbef9fabed" prot="public" static="no">
+        <type>pair&lt; int, <ref refid="classsystemc__clang_1_1Edge" kindref="compound">Edge</ref> * &gt;</type>
+        <definition>typedef pair&lt;int, Edge *&gt; systemc_clang::Graph::edgePairType</definition>
+        <argsstring></argsstring>
+        <name>edgePairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="78" column="16" bodyfile="src/SCuitable/Automata.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1Graph_1a9c540d3b0c52a6759ad3c6e10752255d" prot="public" static="no">
+        <type>pair&lt; int, int &gt;</type>
+        <definition>typedef pair&lt;int, int&gt; systemc_clang::Graph::twoNodePairType</definition>
+        <argsstring></argsstring>
+        <name>twoNodePairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="80" column="16" bodyfile="src/SCuitable/Automata.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1Graph_1a6c0212ddb2c4e032bc508d37d1a8ae90" prot="public" static="no">
+        <type>pair&lt; <ref refid="classsystemc__clang_1_1Graph_1a9c540d3b0c52a6759ad3c6e10752255d" kindref="member">twoNodePairType</ref>, <ref refid="classsystemc__clang_1_1Edge" kindref="compound">Edge</ref> * &gt;</type>
+        <definition>typedef pair&lt;twoNodePairType, Edge *&gt; systemc_clang::Graph::adjPairType</definition>
+        <argsstring></argsstring>
+        <name>adjPairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="82" column="16" bodyfile="src/SCuitable/Automata.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1Graph_1a4f17ef653bb8b7e86d92639f6013890f" prot="public" static="no">
+        <type>map&lt; <ref refid="classsystemc__clang_1_1Graph_1a9c540d3b0c52a6759ad3c6e10752255d" kindref="member">twoNodePairType</ref>, <ref refid="classsystemc__clang_1_1Edge" kindref="compound">Edge</ref> * &gt;</type>
+        <definition>typedef map&lt;twoNodePairType, Edge *&gt; systemc_clang::Graph::adjMapType</definition>
+        <argsstring></argsstring>
+        <name>adjMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="83" column="15" bodyfile="src/SCuitable/Automata.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1Graph_1a2d1b4a9967fafc8e8cf31572d68ccfac" prot="public" static="no">
+        <type>pair&lt; int, vector&lt; <ref refid="classsystemc__clang_1_1Edge" kindref="compound">Edge</ref> * &gt; &gt;</type>
+        <definition>typedef pair&lt;int, vector&lt;Edge *&gt; &gt; systemc_clang::Graph::adjEdgesPairType</definition>
+        <argsstring></argsstring>
+        <name>adjEdgesPairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="85" column="16" bodyfile="src/SCuitable/Automata.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1Graph_1a6119afe7f2c8b9e9557707c0aa27983c" prot="public" static="no">
+        <type>map&lt; int, vector&lt; <ref refid="classsystemc__clang_1_1Edge" kindref="compound">Edge</ref> * &gt; &gt;</type>
+        <definition>typedef map&lt;int, vector&lt;Edge *&gt; &gt; systemc_clang::Graph::adjEdgesMapType</definition>
+        <argsstring></argsstring>
+        <name>adjEdgesMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="86" column="15" bodyfile="src/SCuitable/Automata.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classsystemc__clang_1_1Graph_1ab664bc6281dc4128bdb4f2841585f2a4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1Graph_1a4f17ef653bb8b7e86d92639f6013890f" kindref="member">adjMapType</ref></type>
+        <definition>adjMapType systemc_clang::Graph::_adjList</definition>
+        <argsstring></argsstring>
+        <name>_adjList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="122" column="14" bodyfile="src/SCuitable/Automata.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1Graph_1af67d8d291a91ab917db2251f5f47431c" prot="protected" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1Graph_1a7af5211f31c0ef1ee48d0ab23df30caa" kindref="member">nodeMapType</ref></type>
+        <definition>nodeMapType systemc_clang::Graph::_nodeMap</definition>
+        <argsstring></argsstring>
+        <name>_nodeMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="123" column="15" bodyfile="src/SCuitable/Automata.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1Graph_1aaf346483a16338109cfe22ae77b0aea7" prot="protected" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1Graph_1abff1b72e06bcd00a734cc17beaec7037" kindref="member">edgeMapType</ref></type>
+        <definition>edgeMapType systemc_clang::Graph::_edgeMap</definition>
+        <argsstring></argsstring>
+        <name>_edgeMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="124" column="15" bodyfile="src/SCuitable/Automata.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1Graph_1a4b709e07bf41b66ede6baad03d7b6045" prot="protected" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1Graph_1a6119afe7f2c8b9e9557707c0aa27983c" kindref="member">adjEdgesMapType</ref></type>
+        <definition>adjEdgesMapType systemc_clang::Graph::_adjEdges</definition>
+        <argsstring></argsstring>
+        <name>_adjEdges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="125" column="19" bodyfile="src/SCuitable/Automata.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1Graph_1a71e0b7e63897c0885beb33a17af84bb1" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int systemc_clang::Graph::_nNodes</definition>
+        <argsstring></argsstring>
+        <name>_nNodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="126" column="7" bodyfile="src/SCuitable/Automata.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1Graph_1acf09b64d745c09f15760a531faa322af" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int systemc_clang::Graph::_nEdges</definition>
+        <argsstring></argsstring>
+        <name>_nEdges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="127" column="7" bodyfile="src/SCuitable/Automata.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1Graph_1af13eb33fa96442fe8ccc096b8b082a91" prot="protected" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1Graph_1a54442bd306bba787fcca6446837c7d60" kindref="member">nodeIDVector</ref></type>
+        <definition>nodeIDVector systemc_clang::Graph::_nodeIDVector</definition>
+        <argsstring></argsstring>
+        <name>_nodeIDVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="128" column="16" bodyfile="src/SCuitable/Automata.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1Graph_1a4d7a95893a2a17af3272011da782d2d8" prot="protected" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1Graph_1acc6f301ba6e28a826613c7053c0081bd" kindref="member">edgeIDVector</ref></type>
+        <definition>edgeIDVector systemc_clang::Graph::_edgeIDVector</definition>
+        <argsstring></argsstring>
+        <name>_edgeIDVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="129" column="16" bodyfile="src/SCuitable/Automata.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1Graph_1ae649078866f29edd91b3ceb323158e27" prot="protected" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1Graph_1a3b0352fd1dd6b94efbefa9a7371f8d96" kindref="member">nodeVector</ref></type>
+        <definition>nodeVector systemc_clang::Graph::_nodeVector</definition>
+        <argsstring></argsstring>
+        <name>_nodeVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="130" column="14" bodyfile="src/SCuitable/Automata.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1Graph_1a2cf78aa48aae66f81e4acc6cbc4ef5e8" prot="protected" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1Graph_1a5d8068c36a854814c31e59fc4c1955aa" kindref="member">edgeVector</ref></type>
+        <definition>edgeVector systemc_clang::Graph::_edgeVector</definition>
+        <argsstring></argsstring>
+        <name>_edgeVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="131" column="14" bodyfile="src/SCuitable/Automata.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1ae4c72b8ac4d693c49800a4c7e273654f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Graph::Graph</definition>
+        <argsstring>()</argsstring>
+        <name>Graph</name>
+        <briefdescription>
+<para><ref refid="classsystemc__clang_1_1Graph" kindref="compound">Graph</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="88" column="3" bodyfile="src/SCuitable/Automata.cpp" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1a902c5b3eacb66d60752525ab23297a95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Graph::~Graph</definition>
+        <argsstring>()</argsstring>
+        <name>~Graph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="89" column="3" bodyfile="src/SCuitable/Automata.cpp" bodystart="397" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1ae60f539c9249bb68663a23920579d99e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> *</type>
+        <definition>Node * Graph::addNode</definition>
+        <argsstring>()</argsstring>
+        <name>addNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="91" column="8" bodyfile="src/SCuitable/Automata.cpp" bodystart="90" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1a2dc46182b1e2e167148c44a57e1db489" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> *</type>
+        <definition>Node * Graph::addNode</definition>
+        <argsstring>(int)</argsstring>
+        <name>addNode</name>
+        <param>
+          <type>int</type>
+          <defname>id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="92" column="8" bodyfile="src/SCuitable/Automata.cpp" bodystart="100" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1a28c50cfbe981e0e1fa6189165676d6a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1Edge" kindref="compound">Edge</ref> *</type>
+        <definition>Edge * Graph::addEdge</definition>
+        <argsstring>(Node *, Node *)</argsstring>
+        <name>addEdge</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> *</type>
+          <defname>f</defname>
+        </param>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> *</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="93" column="8" bodyfile="src/SCuitable/Automata.cpp" bodystart="110" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1a0fc0c735182b78dff165c5bcf1ba8ec5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1Edge" kindref="compound">Edge</ref> *</type>
+        <definition>Edge * Graph::addEdge</definition>
+        <argsstring>(int, int)</argsstring>
+        <name>addEdge</name>
+        <param>
+          <type>int</type>
+          <defname>fID</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>tID</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="94" column="8" bodyfile="src/SCuitable/Automata.cpp" bodystart="125" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1a2c243b93d640a155b9b885b46c6d4dba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Graph::getEdgeID</definition>
+        <argsstring>(Edge *)</argsstring>
+        <name>getEdgeID</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Edge" kindref="compound">Edge</ref> *</type>
+          <defname>e</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="96" column="7" bodyfile="src/SCuitable/Automata.cpp" bodystart="172" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1af4e3ee0614273a2609a098c318cbefbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Graph::getEdgeID</definition>
+        <argsstring>(Node *, Node *)</argsstring>
+        <name>getEdgeID</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> *</type>
+          <defname>f</defname>
+        </param>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> *</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="97" column="7" bodyfile="src/SCuitable/Automata.cpp" bodystart="182" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1a5b37cba4d4dc7353196acf907145710f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Graph::getEdgeID</definition>
+        <argsstring>(int, int)</argsstring>
+        <name>getEdgeID</name>
+        <param>
+          <type>int</type>
+          <defname>fID</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>tID</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="98" column="7" bodyfile="src/SCuitable/Automata.cpp" bodystart="192" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1a1a7dd9bf6fae1e4313e953da79879547" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Graph::getNodeID</definition>
+        <argsstring>(Node *)</argsstring>
+        <name>getNodeID</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> *</type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="99" column="7" bodyfile="src/SCuitable/Automata.cpp" bodystart="162" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1a8a750db74890cad002240e0734da43d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1Edge" kindref="compound">Edge</ref> *</type>
+        <definition>Edge * Graph::getEdge</definition>
+        <argsstring>(Node *, Node *)</argsstring>
+        <name>getEdge</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> *</type>
+          <defname>f</defname>
+        </param>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> *</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="101" column="8" bodyfile="src/SCuitable/Automata.cpp" bodystart="208" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1a46614dc9af2eeea6ae6d7bcbf700f73d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1Edge" kindref="compound">Edge</ref> *</type>
+        <definition>Edge * Graph::getEdge</definition>
+        <argsstring>(int, int)</argsstring>
+        <name>getEdge</name>
+        <param>
+          <type>int</type>
+          <defname>f</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="102" column="8" bodyfile="src/SCuitable/Automata.cpp" bodystart="200" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1a7bd159419fd64439460675934b6a998e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> *</type>
+        <definition>Node * Graph::getNode</definition>
+        <argsstring>(int)</argsstring>
+        <name>getNode</name>
+        <param>
+          <type>int</type>
+          <defname>nodeID</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="103" column="8" bodyfile="src/SCuitable/Automata.cpp" bodystart="218" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1a27fde3fe501aa414188b09f84ac6a923" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="classsystemc__clang_1_1Edge" kindref="compound">Edge</ref> * &gt;</type>
+        <definition>vector&lt; Edge * &gt; Graph::getEdgesFromSource</definition>
+        <argsstring>(int)</argsstring>
+        <name>getEdgesFromSource</name>
+        <param>
+          <type>int</type>
+          <defname>sourceID</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="105" column="10" bodyfile="src/SCuitable/Automata.cpp" bodystart="226" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1a2a91f74bfc51cf689f49f4cadc5b7eca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="classsystemc__clang_1_1Edge" kindref="compound">Edge</ref> * &gt;</type>
+        <definition>vector&lt; Edge * &gt; Graph::getEdgesFromSource</definition>
+        <argsstring>(Node *)</argsstring>
+        <name>getEdgesFromSource</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> *</type>
+          <defname>sourceNode</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="106" column="10" bodyfile="src/SCuitable/Automata.cpp" bodystart="252" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1abc844b7bc921741a0dc6575c31b22478" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="classsystemc__clang_1_1Edge" kindref="compound">Edge</ref> * &gt;</type>
+        <definition>vector&lt; Edge * &gt; Graph::getEdgesFromDest</definition>
+        <argsstring>(int)</argsstring>
+        <name>getEdgesFromDest</name>
+        <param>
+          <type>int</type>
+          <defname>destID</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="107" column="10" bodyfile="src/SCuitable/Automata.cpp" bodystart="239" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1aca79bee6b172c861e80f6f757e90095b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="classsystemc__clang_1_1Edge" kindref="compound">Edge</ref> * &gt;</type>
+        <definition>vector&lt; Edge * &gt; Graph::getEdgesFromDest</definition>
+        <argsstring>(Node *)</argsstring>
+        <name>getEdgesFromDest</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Node" kindref="compound">Node</ref> *</type>
+          <defname>destNode</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="108" column="10" bodyfile="src/SCuitable/Automata.cpp" bodystart="261" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1ab2ff50fa552965ba072a75ccf7422f5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1Graph_1a4f17ef653bb8b7e86d92639f6013890f" kindref="member">adjMapType</ref></type>
+        <definition>Graph::adjMapType Graph::returnAdjList</definition>
+        <argsstring>()</argsstring>
+        <name>returnAdjList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="110" column="14" bodyfile="src/SCuitable/Automata.cpp" bodystart="387" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1aeca7b15fa86065e5b8c808911a3d19b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1Graph_1a54442bd306bba787fcca6446837c7d60" kindref="member">nodeIDVector</ref></type>
+        <definition>Graph::nodeIDVector Graph::returnNodeIDs</definition>
+        <argsstring>()</argsstring>
+        <name>returnNodeIDs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="111" column="16" bodyfile="src/SCuitable/Automata.cpp" bodystart="389" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1ac46b28e74c68e422c5172dad45329e5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1Graph_1acc6f301ba6e28a826613c7053c0081bd" kindref="member">edgeIDVector</ref></type>
+        <definition>Graph::edgeIDVector Graph::returnEdgeIDs</definition>
+        <argsstring>()</argsstring>
+        <name>returnEdgeIDs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="112" column="16" bodyfile="src/SCuitable/Automata.cpp" bodystart="391" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1a8f34b34d2085ae9a65161604bbd9600f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1Graph_1a3b0352fd1dd6b94efbefa9a7371f8d96" kindref="member">nodeVector</ref></type>
+        <definition>nodeVector systemc_clang::Graph::returnNodes</definition>
+        <argsstring>()</argsstring>
+        <name>returnNodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="113" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1a20a097bf79471e8e7a2353ed62e06fbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1Graph_1a5d8068c36a854814c31e59fc4c1955aa" kindref="member">edgeVector</ref></type>
+        <definition>edgeVector systemc_clang::Graph::returnEdges</definition>
+        <argsstring>()</argsstring>
+        <name>returnEdges</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="114" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1a1dcbedf25a43b2edc7e3c92c7f191f43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1Graph_1a5d8068c36a854814c31e59fc4c1955aa" kindref="member">edgeVector</ref></type>
+        <definition>Graph::edgeVector Graph::returnEdgeVector</definition>
+        <argsstring>()</argsstring>
+        <name>returnEdgeVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="115" column="14" bodyfile="src/SCuitable/Automata.cpp" bodystart="395" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1acc442b86231bfa1ef0ef88a955a04e2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1Graph_1a3b0352fd1dd6b94efbefa9a7371f8d96" kindref="member">nodeVector</ref></type>
+        <definition>Graph::nodeVector Graph::returnNodeVector</definition>
+        <argsstring>()</argsstring>
+        <name>returnNodeVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="116" column="14" bodyfile="src/SCuitable/Automata.cpp" bodystart="393" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1a0309822fc98dfc94ffbc01f61bb91102" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Graph::dump</definition>
+        <argsstring>(raw_ostream &amp;, int tabn=0)</argsstring>
+        <name>dump</name>
+        <param>
+          <type>raw_ostream &amp;</type>
+          <defname>os</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tabn</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="118" column="8" bodyfile="src/SCuitable/Automata.cpp" bodystart="270" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1Graph_1a48fa649326ace942190a16774fba9fef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Graph::dumpSauto</definition>
+        <argsstring>(raw_ostream &amp;, int tabn=0)</argsstring>
+        <name>dumpSauto</name>
+        <param>
+          <type>raw_ostream &amp;</type>
+          <defname>os</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tabn</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SCuitable/Automata.h" line="119" column="8" bodyfile="src/SCuitable/Automata.cpp" bodystart="305" bodyend="335"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/SCuitable/Automata.h" line="66" column="1" bodyfile="src/SCuitable/Automata.h" bodystart="66" bodyend="132"/>
+    <listofallmembers>
+      <member refid="classsystemc__clang_1_1Graph_1a4b709e07bf41b66ede6baad03d7b6045" prot="protected" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>_adjEdges</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1ab664bc6281dc4128bdb4f2841585f2a4" prot="protected" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>_adjList</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a4d7a95893a2a17af3272011da782d2d8" prot="protected" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>_edgeIDVector</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1aaf346483a16338109cfe22ae77b0aea7" prot="protected" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>_edgeMap</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a2cf78aa48aae66f81e4acc6cbc4ef5e8" prot="protected" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>_edgeVector</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1acf09b64d745c09f15760a531faa322af" prot="protected" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>_nEdges</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a71e0b7e63897c0885beb33a17af84bb1" prot="protected" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>_nNodes</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1af13eb33fa96442fe8ccc096b8b082a91" prot="protected" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>_nodeIDVector</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1af67d8d291a91ab917db2251f5f47431c" prot="protected" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>_nodeMap</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1ae649078866f29edd91b3ceb323158e27" prot="protected" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>_nodeVector</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a28c50cfbe981e0e1fa6189165676d6a6" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>addEdge</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a0fc0c735182b78dff165c5bcf1ba8ec5" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>addEdge</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1ae60f539c9249bb68663a23920579d99e" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>addNode</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a2dc46182b1e2e167148c44a57e1db489" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>addNode</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a6119afe7f2c8b9e9557707c0aa27983c" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>adjEdgesMapType</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a2d1b4a9967fafc8e8cf31572d68ccfac" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>adjEdgesPairType</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a4f17ef653bb8b7e86d92639f6013890f" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>adjMapType</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a6c0212ddb2c4e032bc508d37d1a8ae90" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>adjPairType</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a0309822fc98dfc94ffbc01f61bb91102" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>dump</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a48fa649326ace942190a16774fba9fef" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>dumpSauto</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1acc6f301ba6e28a826613c7053c0081bd" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>edgeIDVector</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1abff1b72e06bcd00a734cc17beaec7037" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>edgeMapType</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1addbac67cac024ada8cd801dbef9fabed" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>edgePairType</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a5d8068c36a854814c31e59fc4c1955aa" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>edgeVector</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a8a750db74890cad002240e0734da43d9" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>getEdge</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a46614dc9af2eeea6ae6d7bcbf700f73d" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>getEdge</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a2c243b93d640a155b9b885b46c6d4dba" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>getEdgeID</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1af4e3ee0614273a2609a098c318cbefbc" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>getEdgeID</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a5b37cba4d4dc7353196acf907145710f" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>getEdgeID</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1abc844b7bc921741a0dc6575c31b22478" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>getEdgesFromDest</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1aca79bee6b172c861e80f6f757e90095b" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>getEdgesFromDest</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a27fde3fe501aa414188b09f84ac6a923" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>getEdgesFromSource</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a2a91f74bfc51cf689f49f4cadc5b7eca" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>getEdgesFromSource</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a7bd159419fd64439460675934b6a998e" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>getNode</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a1a7dd9bf6fae1e4313e953da79879547" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>getNodeID</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1ae4c72b8ac4d693c49800a4c7e273654f" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>Graph</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a54442bd306bba787fcca6446837c7d60" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>nodeIDVector</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a7af5211f31c0ef1ee48d0ab23df30caa" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>nodeMapType</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a39f2c14c0eb9e331c896313eb9bb7a14" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>nodePairType</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a3b0352fd1dd6b94efbefa9a7371f8d96" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>nodeVector</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1ab2ff50fa552965ba072a75ccf7422f5d" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>returnAdjList</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1ac46b28e74c68e422c5172dad45329e5c" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>returnEdgeIDs</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a20a097bf79471e8e7a2353ed62e06fbe" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>returnEdges</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a1dcbedf25a43b2edc7e3c92c7f191f43" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>returnEdgeVector</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1aeca7b15fa86065e5b8c808911a3d19b4" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>returnNodeIDs</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a8f34b34d2085ae9a65161604bbd9600f" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>returnNodes</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1acc442b86231bfa1ef0ef88a955a04e2d" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>returnNodeVector</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a9c540d3b0c52a6759ad3c6e10752255d" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>twoNodePairType</name></member>
+      <member refid="classsystemc__clang_1_1Graph_1a902c5b3eacb66d60752525ab23297a95" prot="public" virt="non-virtual"><scope>systemc_clang::Graph</scope><name>~Graph</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

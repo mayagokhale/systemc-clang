@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_86b8b06a3e741cba3feb7559e999d976" kind="dir">
+    <compoundname>plugins/hdl</compoundname>
+    <innerdir refid="dir_4877e45ff5991ad54d541106ac32363b">plugins/hdl/parselib</innerdir>
+    <innerfile refid="hcode2verilog_8py">hcode2verilog.py</innerfile>
+    <innerfile refid="HDLBody_8cpp">HDLBody.cpp</innerfile>
+    <innerfile refid="HDLBody_8h">HDLBody.h</innerfile>
+    <innerfile refid="HDLHnode_8cpp">HDLHnode.cpp</innerfile>
+    <innerfile refid="HDLHnode_8h">HDLHnode.h</innerfile>
+    <innerfile refid="HDLMain_8cpp">HDLMain.cpp</innerfile>
+    <innerfile refid="HDLMain_8h">HDLMain.h</innerfile>
+    <innerfile refid="HDLType_8cpp">HDLType.cpp</innerfile>
+    <innerfile refid="HDLType_8h">HDLType.h</innerfile>
+    <innerfile refid="hNode_8h">hNode.h</innerfile>
+    <innerfile refid="systemc-clang_8py">systemc-clang.py</innerfile>
+    <innerfile refid="TemplateParametersMatcher_8h">TemplateParametersMatcher.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="plugins/hdl/"/>
+  </compounddef>
+</doxygen>

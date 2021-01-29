@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="FindEntryFunctions_8h" kind="file" language="C++">
+    <compoundname>FindEntryFunctions.h</compoundname>
+    <includes refid="EntryFunctionContainer_8h" local="yes">EntryFunctionContainer.h</includes>
+    <includes local="yes">clang/AST/RecursiveASTVisitor.h</includes>
+    <includes local="no">map</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="FindEntryFunctions_8cpp" local="yes">src/matchers/FindEntryFunctions.cpp</includedby>
+    <includedby refid="ModuleInstance_8h" local="yes">src/model/ModuleInstance.h</includedby>
+    <includedby refid="SystemCClang_8cpp" local="yes">src/SystemCClang.cpp</includedby>
+    <incdepgraph>
+      <node id="30">
+        <label>clang/Basic/SourceManager.h</label>
+      </node>
+      <node id="25">
+        <label>clang/Analysis/CFG.h</label>
+      </node>
+      <node id="8">
+        <label>llvm/Support/raw_ostream.h</label>
+      </node>
+      <node id="24">
+        <label>clang/AST/ParentMap.h</label>
+      </node>
+      <node id="26">
+        <label>clang/Analysis/CFGStmtMap.h</label>
+      </node>
+      <node id="19">
+        <label>clang/AST/PrettyPrinter.h</label>
+      </node>
+      <node id="7">
+        <label>clang/AST/RecursiveASTVisitor.h</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>map</label>
+      </node>
+      <node id="1">
+        <label>src/matchers/FindEntryFunctions.h</label>
+        <link refid="FindEntryFunctions_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>WaitContainer.h</label>
+        <link refid="WaitContainer_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>NotifyContainer.h</label>
+        <link refid="NotifyContainer_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>clang/ASTMatchers/ASTMatchers.h</label>
+      </node>
+      <node id="23">
+        <label>clang/AST/Expr.h</label>
+      </node>
+      <node id="22">
+        <label>Automata.h</label>
+        <link refid="Automata_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>clang/AST/Type.h</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="21">
+        <label>SuspensionAutomata.h</label>
+        <link refid="SuspensionAutomata_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>FindNotify.h</label>
+        <link refid="FindNotify_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>clang/AST/ExprCXX.h</label>
+      </node>
+      <node id="27">
+        <label>deque</label>
+      </node>
+      <node id="17">
+        <label>FindWait.h</label>
+        <link refid="FindWait_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>llvm/Support/Debug.h</label>
+      </node>
+      <node id="29">
+        <label>Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>SensitivityMatcher.h</label>
+        <link refid="SensitivityMatcher_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>EntryFunctionContainer.h</label>
+        <link refid="EntryFunctionContainer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>clang/AST/DeclCXX.h</label>
+      </node>
+      <node id="31">
+        <label>enums.h</label>
+        <link refid="enums_8h"/>
+      </node>
+      <node id="11">
+        <label>clang/ASTMatchers/ASTMatchFinder.h</label>
+      </node>
+      <node id="28">
+        <label>stdio.h</label>
+      </node>
+      <node id="14">
+        <label>ArrayTypeUtils.h</label>
+        <link refid="ArrayTypeUtils_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="12">
+        <label>src/PluginAction.h</label>
+        <link refid="PluginAction_8h"/>
+      </node>
+      <node id="16">
+        <label>plugins/hdl/HDLBody.h</label>
+        <link refid="HDLBody_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>src/SystemCClang.h</label>
+        <link refid="SystemCClang_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>src/SCuitable/GlobalSuspensionAutomata.cpp</label>
+        <link refid="GlobalSuspensionAutomata_8cpp"/>
+      </node>
+      <node id="15">
+        <label>plugins/hdl/HDLBody.cpp</label>
+        <link refid="HDLBody_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/model/Model.cpp</label>
+        <link refid="Model_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/matchers/FindEntryFunctions.h</label>
+        <link refid="FindEntryFunctions_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>plugins/hdl/HDLType.cpp</label>
+        <link refid="HDLType_8cpp"/>
+      </node>
+      <node id="23">
+        <label>src/matchers/PortMatcher.h</label>
+        <link refid="PortMatcher_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>src/SCuitable/GlobalSuspensionAutomata.h</label>
+        <link refid="GlobalSuspensionAutomata_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>src/model/Model.h</label>
+        <link refid="Model_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>plugins/hdl/HDLHnode.cpp</label>
+        <link refid="HDLHnode_8cpp"/>
+      </node>
+      <node id="2">
+        <label>src/matchers/FindEntryFunctions.cpp</label>
+        <link refid="FindEntryFunctions_8cpp"/>
+      </node>
+      <node id="17">
+        <label>plugins/hdl/HDLMain.h</label>
+        <link refid="HDLMain_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>src/matchers/Matchers.h</label>
+        <link refid="Matchers_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>plugins/hdl/HDLMain.cpp</label>
+        <link refid="HDLMain_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/model/ModuleInstance.h</label>
+        <link refid="ModuleInstance_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/SystemCClang.cpp</label>
+        <link refid="SystemCClang_8cpp"/>
+      </node>
+      <node id="19">
+        <label>plugins/hdl/HDLHnode.h</label>
+        <link refid="HDLHnode_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/matchers/NetlistMatcher.h</label>
+        <link refid="NetlistMatcher_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>src/SAPlugin.h</label>
+        <link refid="SAPlugin_8h"/>
+      </node>
+      <node id="22">
+        <label>plugins/hdl/HDLType.h</label>
+        <link refid="HDLType_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>src/SCuitable/TimeAnalysis.h</label>
+        <link refid="TimeAnalysis_8h"/>
+      </node>
+      <node id="24">
+        <label>src/model/ModuleInstance.cpp</label>
+        <link refid="ModuleInstance_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsystemc__clang_1_1FindEntryFunctions" prot="public">systemc_clang::FindEntryFunctions</innerclass>
+    <innernamespace refid="namespacesystemc__clang">systemc_clang</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_FIND_ENTRY_FUNCTIONS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FIND_ENTRY_FUNCTIONS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="EntryFunctionContainer_8h" kindref="compound">EntryFunctionContainer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;clang/AST/RecursiveASTVisitor.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesystemc__clang" kindref="compound">systemc_clang</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceclang" kindref="compound">clang</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classsystemc__clang_1_1FindEntryFunctions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsystemc__clang_1_1FindEntryFunctions" kindref="compound">FindEntryFunctions</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>RecursiveASTVisitor&lt;FindEntryFunctions&gt;<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="classsystemc__clang_1_1FindEntryFunctions_1a7414ce6160d09ea8539f4513bc204338" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;EntryFunctionContainer<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a7414ce6160d09ea8539f4513bc204338" kindref="member">entryFunctionVectorType</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classsystemc__clang_1_1FindEntryFunctions_1a9a5f9822d44e890c428e58f02f7a519c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::pair&lt;string,<sp/>vector&lt;string&gt;&gt;<sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a9a5f9822d44e890c428e58f02f7a519c" kindref="member">entryFunctionLHSPairType</ref>;</highlight></codeline>
+<codeline lineno="20" refid="classsystemc__clang_1_1FindEntryFunctions_1aff6d7588de582ac4424d09bfd22f3993" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;string,<sp/>vector&lt;string&gt;&gt;<sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1aff6d7588de582ac4424d09bfd22f3993" kindref="member">entryFunctionLHSMapType</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions" kindref="compound">FindEntryFunctions</ref>(CXXRecordDecl<sp/>*d,<sp/>llvm::raw_ostream<sp/>&amp;os);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classsystemc__clang_1_1FindEntryFunctions" kindref="compound">FindEntryFunctions</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>VisitStringLiteral(StringLiteral<sp/>*l);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>VisitCXXMethodDecl(CXXMethodDecl<sp/>*d);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>VisitMemberExpr(MemberExpr<sp/>*e);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>shouldVisitTemplateInstantiations()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Access<sp/>Methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>CXXRecordDecl<sp/>*getEntryCXXRecordDecl();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>CXXMethodDecl<sp/>*getEntryMethodDecl();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>getEntryName();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a7414ce6160d09ea8539f4513bc204338" kindref="member">entryFunctionVectorType</ref><sp/>*getEntryFunctions();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>vector&lt;CXXMethodDecl<sp/>*&gt;<sp/>getOtherFunctions();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dump();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41" refid="classsystemc__clang_1_1FindEntryFunctions_1a693c60bf6a806b7323ce13ed1070230f" refkind="member"><highlight class="normal"><sp/><sp/>llvm::raw_ostream<sp/>&amp;<ref refid="classsystemc__clang_1_1FindEntryFunctions_1a693c60bf6a806b7323ce13ed1070230f" kindref="member">os_</ref>;</highlight></codeline>
+<codeline lineno="42" refid="classsystemc__clang_1_1FindEntryFunctions_1af6b692f7f5e419504f6d9c6c7194e656" refkind="member"><highlight class="normal"><sp/><sp/>CXXRecordDecl<sp/>*<ref refid="classsystemc__clang_1_1FindEntryFunctions_1af6b692f7f5e419504f6d9c6c7194e656" kindref="member">_d</ref>;</highlight></codeline>
+<codeline lineno="43" refid="classsystemc__clang_1_1FindEntryFunctions_1ab67becfe5748fc2b42e23a2a739bc77a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1ab67becfe5748fc2b42e23a2a739bc77a" kindref="member">is_entry_function_</ref>;</highlight></codeline>
+<codeline lineno="44" refid="classsystemc__clang_1_1FindEntryFunctions_1a1e84094f47e97c948c674a631a74b6f6" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacesystemc__clang_1aee628e0c13dbaaeb824bd830dc47a138" kindref="member">PROCESS_TYPE</ref><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a1e84094f47e97c948c674a631a74b6f6" kindref="member">proc_type_</ref>;</highlight></codeline>
+<codeline lineno="45" refid="classsystemc__clang_1_1FindEntryFunctions_1a673b7911bddb00776acbd6a80bc757f4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a673b7911bddb00776acbd6a80bc757f4" kindref="member">entry_name_</ref>;</highlight></codeline>
+<codeline lineno="46" refid="classsystemc__clang_1_1FindEntryFunctions_1a0847c1c40aabb1c90939d929a63187a7" refkind="member"><highlight class="normal"><sp/><sp/>CXXRecordDecl<sp/>*<ref refid="classsystemc__clang_1_1FindEntryFunctions_1a0847c1c40aabb1c90939d929a63187a7" kindref="member">entry_cxx_record_decl_</ref>;</highlight></codeline>
+<codeline lineno="47" refid="classsystemc__clang_1_1FindEntryFunctions_1a743ed8eda884d5ca2252e6ca7259c35f" refkind="member"><highlight class="normal"><sp/><sp/>CXXMethodDecl<sp/>*<ref refid="classsystemc__clang_1_1FindEntryFunctions_1a743ed8eda884d5ca2252e6ca7259c35f" kindref="member">entry_method_decl_</ref>;</highlight></codeline>
+<codeline lineno="48" refid="classsystemc__clang_1_1FindEntryFunctions_1a12970bdbd070601e1c886ebaa00c283e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a12970bdbd070601e1c886ebaa00c283e" kindref="member">found_entry_decl_</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classsystemc__clang_1_1FindEntryFunctions_1a8759e45cd4ebb8290a0892f70fa5edba" refkind="member"><highlight class="normal"><sp/><sp/>Stmt<sp/>*<ref refid="classsystemc__clang_1_1FindEntryFunctions_1a8759e45cd4ebb8290a0892f70fa5edba" kindref="member">constructor_stmt_</ref>;</highlight></codeline>
+<codeline lineno="50" refid="classsystemc__clang_1_1FindEntryFunctions_1a30a5efb59a564acfe4ce1cebf167d8bc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1EntryFunctionContainer" kindref="compound">EntryFunctionContainer</ref><sp/>*<ref refid="classsystemc__clang_1_1FindEntryFunctions_1a30a5efb59a564acfe4ce1cebf167d8bc" kindref="member">ef</ref>;</highlight></codeline>
+<codeline lineno="51" refid="classsystemc__clang_1_1FindEntryFunctions_1adefc3c1a7fc8504ac7aea94b62c16db3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1adefc3c1a7fc8504ac7aea94b62c16db3" kindref="member">pass_</ref>;</highlight></codeline>
+<codeline lineno="52" refid="classsystemc__clang_1_1FindEntryFunctions_1a44ce48e91ea56e28e46e6cf3dca4438b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a7414ce6160d09ea8539f4513bc204338" kindref="member">entryFunctionVectorType</ref><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a44ce48e91ea56e28e46e6cf3dca4438b" kindref="member">entry_function_list_</ref>;</highlight></codeline>
+<codeline lineno="53" refid="classsystemc__clang_1_1FindEntryFunctions_1a5b32df3d56ee25cae46075545975c31b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1aff6d7588de582ac4424d09bfd22f3993" kindref="member">entryFunctionLHSMapType</ref><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a5b32df3d56ee25cae46075545975c31b" kindref="member">entry_function_map_</ref>;</highlight></codeline>
+<codeline lineno="54" refid="classsystemc__clang_1_1FindEntryFunctions_1a37ec517421a5e437e5cad9ec6697db55" refkind="member"><highlight class="normal"><sp/><sp/>vector&lt;CXXMethodDecl<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a37ec517421a5e437e5cad9ec6697db55" kindref="member">other_function_list_</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Disallow<sp/>constructor<sp/>with<sp/>no<sp/>argument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classsystemc__clang_1_1FindEntryFunctions_1a39ea981a0f141da33a95ec7e6c10feaa" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a39ea981a0f141da33a95ec7e6c10feaa" kindref="member">FindEntryFunctions</ref>(llvm::raw_ostream<sp/>&amp;os);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>systemc_clang</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/matchers/FindEntryFunctions.h"/>
+  </compounddef>
+</doxygen>

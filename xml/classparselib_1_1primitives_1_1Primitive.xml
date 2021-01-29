@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classparselib_1_1primitives_1_1Primitive" kind="class" language="Python" prot="public">
+    <compoundname>parselib::primitives::Primitive</compoundname>
+    <derivedcompoundref refid="classparselib_1_1primitives_1_1____func__inout" prot="public" virt="non-virtual">parselib.primitives.__func_inout</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1primitives_1_1array" prot="public" virt="non-virtual">parselib.primitives.array</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1primitives_1_1cppbool" prot="public" virt="non-virtual">parselib.primitives.cppbool</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1primitives_1_1cppint" prot="public" virt="non-virtual">parselib.primitives.cppint</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1primitives_1_1cppshort" prot="public" virt="non-virtual">parselib.primitives.cppshort</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1primitives_1_1cppuint" prot="public" virt="non-virtual">parselib.primitives.cppuint</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1primitives_1_1cppushort" prot="public" virt="non-virtual">parselib.primitives.cppushort</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1primitives_1_1sc__bv" prot="public" virt="non-virtual">parselib.primitives.sc_bv</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1primitives_1_1sc__clock" prot="public" virt="non-virtual">parselib.primitives.sc_clock</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1primitives_1_1sc__in" prot="public" virt="non-virtual">parselib.primitives.sc_in</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1primitives_1_1sc__int" prot="public" virt="non-virtual">parselib.primitives.sc_int</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1primitives_1_1sc__out" prot="public" virt="non-virtual">parselib.primitives.sc_out</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1primitives_1_1sc__rvd__in" prot="public" virt="non-virtual">parselib.primitives.sc_rvd_in</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1primitives_1_1sc__rvd__out" prot="public" virt="non-virtual">parselib.primitives.sc_rvd_out</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1primitives_1_1sc__signal" prot="public" virt="non-virtual">parselib.primitives.sc_signal</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1primitives_1_1sc__uint" prot="public" virt="non-virtual">parselib.primitives.sc_uint</derivedcompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classparselib_1_1primitives_1_1Primitive_1af371635dccfb2a6eaf6a5ffd19cf1acb" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list parselib.primitives.Primitive::primitive_type_names</definition>
+        <argsstring></argsstring>
+        <name>primitive_type_names</name>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/primitives.py" line="37" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparselib_1_1primitives_1_1Primitive_1ae8f4ff243e4df9f304540a76e7be5a0f" prot="public" static="yes" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary parselib.primitives.Primitive::name_mapping</definition>
+        <argsstring></argsstring>
+        <name>name_mapping</name>
+        <initializer>=  { &apos;_Bool&apos;: &apos;<ref refid="classparselib_1_1primitives_1_1cppbool" kindref="compound">cppbool</ref>&apos;, &apos;unsigned_int&apos;: &apos;<ref refid="classparselib_1_1primitives_1_1cppuint" kindref="compound">cppuint</ref>&apos;, &apos;int&apos;: &apos;<ref refid="classparselib_1_1primitives_1_1cppint" kindref="compound">cppint</ref>&apos;, &apos;unsigned_short&apos;: &apos;<ref refid="classparselib_1_1primitives_1_1cppushort" kindref="compound">cppushort</ref>&apos;, &apos;short&apos;: &apos;<ref refid="classparselib_1_1primitives_1_1cppshort" kindref="compound">cppshort</ref>&apos; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/primitives.py" line="38" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparselib_1_1primitives_1_1Primitive_1a062285edf31e537be6a0f228cfe0eb5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.primitives.Primitive.__init_subclass__</definition>
+        <argsstring>(cls, **kwargs)</argsstring>
+        <name>__init_subclass__</name>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>registers subclass automatically</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/primitives.py" line="40" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="40" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classparselib_1_1primitives_1_1Primitive_1af46fa1f3666383e39598f4abb402f83f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.primitives.Primitive.get_primitive_name_dict</definition>
+        <argsstring>()</argsstring>
+        <name>get_primitive_name_dict</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>convert the primitive name string -&gt; type to a dict</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/primitives.py" line="46" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1primitives_1_1Primitive_1a883ddfc550f0cc66ae33b9787cd97412" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.primitives.Primitive.get_primitive</definition>
+        <argsstring>(name)</argsstring>
+        <name>get_primitive</name>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get the primitive type of name</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/primitives.py" line="51" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="51" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1primitives_1_1Primitive_1ae03c1c6609d4622b3753708cae8fd47f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.primitives.Primitive.name_filter</definition>
+        <argsstring>(name)</argsstring>
+        <name>name_filter</name>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>maps type name to internal name</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/primitives.py" line="61" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="61" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Primitive base class,
+handles automatically subclass registration for primitive types
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="17">
+        <label>parselib.primitives.sc_uint</label>
+        <link refid="classparselib_1_1primitives_1_1sc__uint"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>parselib.primitives.Primitive</label>
+        <link refid="classparselib_1_1primitives_1_1Primitive"/>
+      </node>
+      <node id="10">
+        <label>parselib.primitives.sc_clock</label>
+        <link refid="classparselib_1_1primitives_1_1sc__clock"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>parselib.primitives.array</label>
+        <link refid="classparselib_1_1primitives_1_1array"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>parselib.primitives.sc_out</label>
+        <link refid="classparselib_1_1primitives_1_1sc__out"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>parselib.primitives.sc_in</label>
+        <link refid="classparselib_1_1primitives_1_1sc__in"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>parselib.primitives.sc_rvd_out</label>
+        <link refid="classparselib_1_1primitives_1_1sc__rvd__out"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>parselib.primitives.sc_int</label>
+        <link refid="classparselib_1_1primitives_1_1sc__int"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>parselib.primitives.__func_inout</label>
+        <link refid="classparselib_1_1primitives_1_1____func__inout"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>parselib.primitives.sc_bv</label>
+        <link refid="classparselib_1_1primitives_1_1sc__bv"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>parselib.primitives.cppbool</label>
+        <link refid="classparselib_1_1primitives_1_1cppbool"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>parselib.primitives.cppshort</label>
+        <link refid="classparselib_1_1primitives_1_1cppshort"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>parselib.primitives.cppuint</label>
+        <link refid="classparselib_1_1primitives_1_1cppuint"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>parselib.primitives.cppint</label>
+        <link refid="classparselib_1_1primitives_1_1cppint"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>parselib.primitives.cppushort</label>
+        <link refid="classparselib_1_1primitives_1_1cppushort"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>parselib.primitives.sc_rvd_in</label>
+        <link refid="classparselib_1_1primitives_1_1sc__rvd__in"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>parselib.primitives.sc_signal</label>
+        <link refid="classparselib_1_1primitives_1_1sc__signal"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="plugins/hdl/parselib/primitives.py" line="32" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="32" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classparselib_1_1primitives_1_1Primitive_1a062285edf31e537be6a0f228cfe0eb5d" prot="public" virt="non-virtual"><scope>parselib::primitives::Primitive</scope><name>__init_subclass__</name></member>
+      <member refid="classparselib_1_1primitives_1_1Primitive_1a883ddfc550f0cc66ae33b9787cd97412" prot="public" virt="non-virtual"><scope>parselib::primitives::Primitive</scope><name>get_primitive</name></member>
+      <member refid="classparselib_1_1primitives_1_1Primitive_1af46fa1f3666383e39598f4abb402f83f" prot="public" virt="non-virtual"><scope>parselib::primitives::Primitive</scope><name>get_primitive_name_dict</name></member>
+      <member refid="classparselib_1_1primitives_1_1Primitive_1ae03c1c6609d4622b3753708cae8fd47f" prot="public" virt="non-virtual"><scope>parselib::primitives::Primitive</scope><name>name_filter</name></member>
+      <member refid="classparselib_1_1primitives_1_1Primitive_1ae8f4ff243e4df9f304540a76e7be5a0f" prot="public" virt="non-virtual"><scope>parselib::primitives::Primitive</scope><name>name_mapping</name></member>
+      <member refid="classparselib_1_1primitives_1_1Primitive_1af371635dccfb2a6eaf6a5ffd19cf1acb" prot="public" virt="non-virtual"><scope>parselib::primitives::Primitive</scope><name>primitive_type_names</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

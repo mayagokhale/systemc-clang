@@ -1,0 +1,1504 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass" kind="class" language="Python" prot="public">
+    <compoundname>parselib::transforms::verilog_tranlation::VerilogTranslationPass</compoundname>
+    <basecompoundref refid="classparselib_1_1transforms_1_1top__down_1_1TopDown" prot="public" virt="non-virtual">parselib.transforms.top_down.TopDown</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a062b064734e7160348d624fb02fe2f3a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.transforms.verilog_tranlation.VerilogTranslationPass::indent_character</definition>
+        <argsstring></argsstring>
+        <name>indent_character</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="16" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1aadfe5e638145d76f2991f6cdbe339345" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.transforms.verilog_tranlation.VerilogTranslationPass::current_indent</definition>
+        <argsstring></argsstring>
+        <name>current_indent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="17" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1aaf2d58e737f8f426ee57243d54d742f3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.transforms.verilog_tranlation.VerilogTranslationPass::indent_inc</definition>
+        <argsstring></argsstring>
+        <name>indent_inc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="18" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a8036224acb17dc18b74915df4a349747" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.transforms.verilog_tranlation.VerilogTranslationPass::indent_stack</definition>
+        <argsstring></argsstring>
+        <name>indent_stack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="19" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ade420ad95186a35a6598f76b2f55022c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.transforms.verilog_tranlation.VerilogTranslationPass::bindings</definition>
+        <argsstring></argsstring>
+        <name>bindings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="20" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a0e6c5ded3d6e57ee4c52fb73608a2531" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.transforms.verilog_tranlation.VerilogTranslationPass::local_variables</definition>
+        <argsstring></argsstring>
+        <name>local_variables</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="21" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a1aa0839f1911a8aebd8d3d9a664ed8a8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.transforms.verilog_tranlation.VerilogTranslationPass::in_for_init</definition>
+        <argsstring></argsstring>
+        <name>in_for_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="22" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a354d2a73b686cb8939e2c6109214c187" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.transforms.verilog_tranlation.VerilogTranslationPass::current_module</definition>
+        <argsstring></argsstring>
+        <name>current_module</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="554" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="554" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a631a23fbc6998274af5f3ab977a1ff05" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.transforms.verilog_tranlation.VerilogTranslationPass::senselist</definition>
+        <argsstring></argsstring>
+        <name>senselist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="555" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="555" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ab2481ae6da2d740bc0b872e91645632c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <reimplements refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1aba7572132ec76ea47811c9d077763441">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="14" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="14" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a55ea97a113b23d544eda9a548806a94c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.start</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>start</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="24" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1afeb49a21849727e08f236d3e11f7725d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.modulelist</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>modulelist</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="28" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="28" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a9c8ccb6656571047027033fceb7db634" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.nonrefexp</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>nonrefexp</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="33" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="33" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ab4751b27d52abb4ff2d8a53596064563" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.hmethodcall</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hmethodcall</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="48" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ab08e1cdc70cc8b1d29c6d32e85589fec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.blkassign</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>blkassign</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="52" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="52" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a4bf052f53b76385dfb53286209efb7ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.syscwrite</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>syscwrite</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="85" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="85" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ae6128b055da8f6a3a738fa6e152a5d72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.numlitwidth</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>numlitwidth</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="90" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="90" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a29392ddf8edfbef8a4f746e9c3bfc93e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.hcondop</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hcondop</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="97" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a352bec148cc19c52dcfdb1fb0212a817" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.hliteral</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hliteral</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>stops at literal, it is some kinds of terminal</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="101" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="101" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a3e586a5ee2474f50fbcfd4e9ea7dbdc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.hvarref</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hvarref</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="107" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ababcba8d2a22b04b52d8ccb04dc73369" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.syscread</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>syscread</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>syscread: hsigassignr, token</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="111" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="111" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a86b58a805de8b328f1e85809cce603fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.harrayref</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>harrayref</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="116" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="116" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1afe638a54827bbf8feaba7c79047a5b6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.hsigassignl</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hsigassignl</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="134" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="134" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a495b61bc613459f1a3d67636be215413" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.hbinop</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hbinop</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="141" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="141" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ac8585efd789384ff819e52189770d668" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.hunop</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hunop</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="155" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="155" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a8f073f74e679ee8411991842f43477fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.hcstmt</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hcstmt</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="166" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="166" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1abea5a94ba463794adf7d38607e42e205" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.get_current_ind_prefix</definition>
+        <argsstring>(self)</argsstring>
+        <name>get_current_ind_prefix</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="174" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="174" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ac92b2a5d2fd24f30ae391f2e9a4b33fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.casevalue</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>casevalue</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="178" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="178" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a3dae8552c03e3e5c66ccddb3aa235845" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.switchbody</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>switchbody</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="182" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a4a4d943a5b27933d754d5338db1993fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.casestmt</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>casestmt</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="186" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="186" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ad0ff3ed6f86d32b5c26750e8c91c1dad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.switchcond</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>switchcond</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="194" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="194" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a3c40c3882f85928e7d9d3db10f3d932e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.switchstmt</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>switchstmt</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="198" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="198" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1aaed1b086a44b8256d05b1ecc458836ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.stmt</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>stmt</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="206" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="206" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1abcfaa26c49a2cb05f50e5b23919a868a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.hnoop</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hnoop</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="240" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="240" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a0ecb8fa304aed5206b7e22a5c14d4978" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.whilestmt</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>whilestmt</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="244" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="244" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a99339ecf8fbb287273bc8bde83030e96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.stmts</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>stmts</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="254" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="254" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a03df8ef2458c8724e0a5ed35350a6810" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.inc_indent</definition>
+        <argsstring>(self)</argsstring>
+        <name>inc_indent</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="259" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="259" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a2b34d5e18ccbb61654bb684632db05d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.dec_indent</definition>
+        <argsstring>(self)</argsstring>
+        <name>dec_indent</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="262" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="262" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a1fef246c15925c9cf198880f7d374d68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.push_indent</definition>
+        <argsstring>(self)</argsstring>
+        <name>push_indent</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>used to service temporary indent removal, such as that in for condition</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="265" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="265" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a1ba36588386aa5316523fefb96c3c356" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.pop_indent</definition>
+        <argsstring>(self)</argsstring>
+        <name>pop_indent</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="269" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="269" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a243def17c262593eea32940b00cd00a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.ifstmt</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>ifstmt</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="272" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="272" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a82a4bb416346cfb0cafe781324c9904c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.forinit</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>forinit</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="287" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="287" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a5a3aa0d5132a30ad88a7afc7b613a2a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.forcond</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>forcond</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="298" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="298" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a8865d7be05caddebe29dff722ccb9f3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.forpostcond</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>forpostcond</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="302" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="302" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a954af6bf5edb21a915bae50bc70ed4b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.forbody</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>forbody</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="306" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="306" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a3effa1ae9e1a59c6e615d2f3642282a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.forstmt</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>forstmt</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="310" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="310" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ab5c61a14dbb66c63a84c113a911c32b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.hsensvars</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hsensvars</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="329" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="329" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a849f443d58f573b67fe1e6637e9e5280" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.npa</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>npa</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="333" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="333" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ab1f9f1b1ef3e813893dc152009edd8b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.hsensedge</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hsensedge</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="336" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="336" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a47f1ba825843fcec2e9c921ea8b3551f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.hsenslist</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hsenslist</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="340" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="340" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1aa0abc55c0077f81839f36553cd4e9f9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.hvalchange</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hvalchange</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="358" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="358" bodyend="362"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a879e6bda7c996ff0fa1b361a1507352d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.hprocess</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hprocess</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="363" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="363" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1aeb9c2da3a0d6c08a387d55be2229eff0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.htype</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>htype</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="399" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="399" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a70fc878385404a664a0a86dd6dc3a203" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.hreturnstmt</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hreturnstmt</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="406" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="406" bodyend="422"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1af4bea6a6f32ed226b20ff6bec5cc85af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.vardeclinit</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>vardeclinit</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="423" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="423" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a7d986773b4ba45a35d884a4dbdd9540a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.expand_binding_ref</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>expand_binding_ref</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="437" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="437" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a6bc2394931bd4cac1e1eb9ed3daa7471" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.moduleinst</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>moduleinst</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="443" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="443" bodyend="497"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a5784b6cf6e4c57ac148bbb521c760373" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.vardecl</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>vardecl</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="498" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="498" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a7ac34e1feae0ee799382ecfef6608036" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.prevardecl</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>prevardecl</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="502" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="502" bodyend="509"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a5e0d99f10e5a727155012714e19d8dce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.htypeinfo</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>htypeinfo</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="510" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="510" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a5d9acf834d680849538d7d834195af9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.hfunctionparams</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hfunctionparams</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="515" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="515" bodyend="518"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1aeb14ba5c6bfa8af3f1a35de8eaaeaab8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.hfunctionrettype</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hfunctionrettype</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="519" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="519" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a06a32f1a2ba0f6d93701653d63329098" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.htouint</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>htouint</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="525" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="525" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a6d0437c7e1ae85a7bf27685ae66578b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.htoint</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>htoint</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="529" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="529" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1acbddd14baa0cd3c812f0f093a9916e81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.hfunction</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hfunction</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="533" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="533" bodyend="550"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ab74950c928ab738f41ed4e6d9b2b410c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.hmodule</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hmodule</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="551" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="551" bodyend="679"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1acc8d0c53ff1a67ddfe789009d35adc85" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.__get_var_name</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>__get_var_name</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="38" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="38" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a3ea55b2f2b4a0d4d81e5a91f798bfcf4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.__is_local_varialbe</definition>
+        <argsstring>(self, var_name)</argsstring>
+        <name>__is_local_varialbe</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>var_name</type>
+          <defname>var_name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="138" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="138" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a293bfe281342adf605e19da901121fa4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.__reset_local_variables</definition>
+        <argsstring>(self)</argsstring>
+        <name>__reset_local_variables</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="392" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="392" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a3b2193437df2e002e259ae4ddeb2e123" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.verilog_tranlation.VerilogTranslationPass.__add_local_variables</definition>
+        <argsstring>(self, var_name)</argsstring>
+        <name>__add_local_variables</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>var_name</type>
+          <defname>var_name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="395" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="395" bodyend="398"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Translate low-level format of the _hdl.txt into Verilog
+Note that type defs are already expanded at this point, so all htypeinfo/htype should only include primitive types
+This pass does not perform any tree transformation that alters the semantics, but **only** generates Verilog
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>parselib.transforms.top_down.TopDown</label>
+        <link refid="classparselib_1_1transforms_1_1top__down_1_1TopDown"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>parselib.transforms.verilog_tranlation.VerilogTranslationPass</label>
+        <link refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Interpreter</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>parselib.transforms.top_down.TopDown</label>
+        <link refid="classparselib_1_1transforms_1_1top__down_1_1TopDown"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>parselib.transforms.verilog_tranlation.VerilogTranslationPass</label>
+        <link refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Interpreter</label>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/parselib/transforms/verilog_tranlation.py" line="9" column="1" bodyfile="plugins/hdl/parselib/transforms/verilog_tranlation.py" bodystart="9" bodyend="679"/>
+    <listofallmembers>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a3b2193437df2e002e259ae4ddeb2e123" prot="private" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>__add_local_variables</name></member>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1a2738f9bf2467d410d3990343dcaf88ff" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>__default__</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1acc8d0c53ff1a67ddfe789009d35adc85" prot="private" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>__get_var_name</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ab2481ae6da2d740bc0b872e91645632c" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>__init__</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a3ea55b2f2b4a0d4d81e5a91f798bfcf4" prot="private" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>__is_local_varialbe</name></member>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1a7064a163977352a2b47acbf7e388116c" prot="private" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>__push_up</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a293bfe281342adf605e19da901121fa4" prot="private" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>__reset_local_variables</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ade420ad95186a35a6598f76b2f55022c" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>bindings</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ab08e1cdc70cc8b1d29c6d32e85589fec" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>blkassign</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a4a4d943a5b27933d754d5338db1993fc" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>casestmt</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ac92b2a5d2fd24f30ae391f2e9a4b33fc" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>casevalue</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1aadfe5e638145d76f2991f6cdbe339345" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>current_indent</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a354d2a73b686cb8939e2c6109214c187" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>current_module</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a2b34d5e18ccbb61654bb684632db05d2" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>dec_indent</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a7d986773b4ba45a35d884a4dbdd9540a" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>expand_binding_ref</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a954af6bf5edb21a915bae50bc70ed4b8" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>forbody</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a5a3aa0d5132a30ad88a7afc7b613a2a6" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>forcond</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a82a4bb416346cfb0cafe781324c9904c" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>forinit</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a8865d7be05caddebe29dff722ccb9f3e" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>forpostcond</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a3effa1ae9e1a59c6e615d2f3642282a2" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>forstmt</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1abea5a94ba463794adf7d38607e42e205" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>get_current_ind_prefix</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a86b58a805de8b328f1e85809cce603fd" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>harrayref</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a495b61bc613459f1a3d67636be215413" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>hbinop</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a29392ddf8edfbef8a4f746e9c3bfc93e" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>hcondop</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a8f073f74e679ee8411991842f43477fa" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>hcstmt</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1acbddd14baa0cd3c812f0f093a9916e81" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>hfunction</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a5d9acf834d680849538d7d834195af9d" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>hfunctionparams</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1aeb14ba5c6bfa8af3f1a35de8eaaeaab8" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>hfunctionrettype</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a352bec148cc19c52dcfdb1fb0212a817" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>hliteral</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ab4751b27d52abb4ff2d8a53596064563" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>hmethodcall</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ab74950c928ab738f41ed4e6d9b2b410c" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>hmodule</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1abcfaa26c49a2cb05f50e5b23919a868a" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>hnoop</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a879e6bda7c996ff0fa1b361a1507352d" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>hprocess</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a70fc878385404a664a0a86dd6dc3a203" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>hreturnstmt</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ab1f9f1b1ef3e813893dc152009edd8b7" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>hsensedge</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a47f1ba825843fcec2e9c921ea8b3551f" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>hsenslist</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ab5c61a14dbb66c63a84c113a911c32b2" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>hsensvars</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1afe638a54827bbf8feaba7c79047a5b6a" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>hsigassignl</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a6d0437c7e1ae85a7bf27685ae66578b1" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>htoint</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a06a32f1a2ba0f6d93701653d63329098" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>htouint</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1aeb9c2da3a0d6c08a387d55be2229eff0" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>htype</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a5e0d99f10e5a727155012714e19d8dce" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>htypeinfo</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ac8585efd789384ff819e52189770d668" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>hunop</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1aa0abc55c0077f81839f36553cd4e9f9c" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>hvalchange</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a3e586a5ee2474f50fbcfd4e9ea7dbdc3" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>hvarref</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a243def17c262593eea32940b00cd00a1" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>ifstmt</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a1aa0839f1911a8aebd8d3d9a664ed8a8" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>in_for_init</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a03df8ef2458c8724e0a5ed35350a6810" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>inc_indent</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a062b064734e7160348d624fb02fe2f3a" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>indent_character</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1aaf2d58e737f8f426ee57243d54d742f3" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>indent_inc</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a8036224acb17dc18b74915df4a349747" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>indent_stack</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a0e6c5ded3d6e57ee4c52fb73608a2531" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>local_variables</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a6bc2394931bd4cac1e1eb9ed3daa7471" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>moduleinst</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1afeb49a21849727e08f236d3e11f7725d" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>modulelist</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a9c8ccb6656571047027033fceb7db634" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>nonrefexp</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a849f443d58f573b67fe1e6637e9e5280" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>npa</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ae6128b055da8f6a3a738fa6e152a5d72" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>numlitwidth</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a1ba36588386aa5316523fefb96c3c356" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>pop_indent</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a7ac34e1feae0ee799382ecfef6608036" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>prevardecl</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a1fef246c15925c9cf198880f7d374d68" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>push_indent</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a631a23fbc6998274af5f3ab977a1ff05" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>senselist</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a55ea97a113b23d544eda9a548806a94c" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>start</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1aaed1b086a44b8256d05b1ecc458836ce" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>stmt</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a99339ecf8fbb287273bc8bde83030e96" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>stmts</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a3dae8552c03e3e5c66ccddb3aa235845" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>switchbody</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ad0ff3ed6f86d32b5c26750e8c91c1dad" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>switchcond</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a3c40c3882f85928e7d9d3db10f3d932e" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>switchstmt</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ababcba8d2a22b04b52d8ccb04dc73369" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>syscread</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a4bf052f53b76385dfb53286209efb7ad" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>syscwrite</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a5784b6cf6e4c57ac148bbb521c760373" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>vardecl</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1af4bea6a6f32ed226b20ff6bec5cc85af" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>vardeclinit</name></member>
+      <member refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1a0ecb8fa304aed5206b7e22a5c14d4978" prot="public" virt="non-virtual"><scope>parselib::transforms::verilog_tranlation::VerilogTranslationPass</scope><name>whilestmt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

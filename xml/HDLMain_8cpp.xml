@@ -1,0 +1,1236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="HDLMain_8cpp" kind="file" language="C++">
+    <compoundname>HDLMain.cpp</compoundname>
+    <includes local="no">regex</includes>
+    <includes local="no">tuple</includes>
+    <includes refid="SystemCClang_8h" local="yes">SystemCClang.h</includes>
+    <includes refid="PortBinding_8h" local="yes">PortBinding.h</includes>
+    <includes refid="Tree_8h" local="yes">Tree.h</includes>
+    <includes refid="HDLMain_8h" local="yes">HDLMain.h</includes>
+    <includes refid="HDLType_8h" local="yes">HDLType.h</includes>
+    <includes refid="SensitivityMatcher_8h" local="yes">SensitivityMatcher.h</includes>
+    <includes local="yes">clang/Basic/FileManager.h</includes>
+    <includes local="yes">llvm/Support/Debug.h</includes>
+    <includes local="yes">clang/Basic/Diagnostic.h</includes>
+    <includes refid="HDLHnode_8h" local="yes">HDLHnode.h</includes>
+    <incdepgraph>
+      <node id="57">
+        <label>InterfaceDecl.h</label>
+        <link refid="InterfaceDecl_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>clang/AST/Decl.h</label>
+      </node>
+      <node id="56">
+        <label>queue</label>
+      </node>
+      <node id="7">
+        <label>clang/Basic/SourceManager.h</label>
+      </node>
+      <node id="35">
+        <label>clang/Analysis/CFG.h</label>
+      </node>
+      <node id="73">
+        <label>HDLBody.h</label>
+        <link refid="HDLBody_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>llvm/Support/raw_ostream.h</label>
+      </node>
+      <node id="69">
+        <label>llvm/ADT/StringRef.h</label>
+      </node>
+      <node id="34">
+        <label>clang/AST/ParentMap.h</label>
+      </node>
+      <node id="71">
+        <label>hNode.h</label>
+        <link refid="hNode_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>clang/Analysis/CFGStmtMap.h</label>
+      </node>
+      <node id="4">
+        <label>SystemCClang.h</label>
+        <link refid="SystemCClang_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>clang/AST/PrettyPrinter.h</label>
+      </node>
+      <node id="6">
+        <label>clang/AST/RecursiveASTVisitor.h</label>
+      </node>
+      <node id="76">
+        <label>clang/AST/Stmt.h</label>
+      </node>
+      <node id="64">
+        <label>InstanceMatcher.h</label>
+        <link refid="InstanceMatcher_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>clang/Frontend/CompilerInstance.h</label>
+      </node>
+      <node id="48">
+        <label>FindSimTime.h</label>
+        <link refid="FindSimTime_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>clang/AST/ASTConsumer.h</label>
+      </node>
+      <node id="9">
+        <label>clang/Frontend/FrontendPluginRegistry.h</label>
+      </node>
+      <node id="15">
+        <label>string</label>
+      </node>
+      <node id="14">
+        <label>map</label>
+      </node>
+      <node id="77">
+        <label>clang/Basic/Diagnostic.h</label>
+      </node>
+      <node id="2">
+        <label>regex</label>
+      </node>
+      <node id="74">
+        <label>unordered_set</label>
+      </node>
+      <node id="45">
+        <label>json.hpp</label>
+      </node>
+      <node id="51">
+        <label>FindEntryFunctions.h</label>
+        <link refid="FindEntryFunctions_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>FindTemplateTypes.h</label>
+        <link refid="FindTemplateTypes_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>PortMatcher.h</label>
+        <link refid="PortMatcher_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>WaitContainer.h</label>
+        <link refid="WaitContainer_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>NotifyContainer.h</label>
+        <link refid="NotifyContainer_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>EventContainer.h</label>
+        <link refid="EventContainer_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>clang/ASTMatchers/ASTMatchers.h</label>
+      </node>
+      <node id="12">
+        <label>model/Model.h</label>
+        <link refid="Model_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>clang/AST/Expr.h</label>
+      </node>
+      <node id="32">
+        <label>Automata.h</label>
+        <link refid="Automata_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>FindNetlist.h</label>
+        <link refid="FindNetlist_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>clang/AST/Type.h</label>
+      </node>
+      <node id="60">
+        <label>ProcessDecl.h</label>
+        <link refid="ProcessDecl_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>tuple</label>
+      </node>
+      <node id="68">
+        <label>HDLMain.h</label>
+        <link refid="HDLMain_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>systemc-clang.h</label>
+        <link refid="systemc-clang_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>Matchers.h</label>
+        <link refid="Matchers_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>Tree.h</label>
+        <link refid="Tree_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>plugins/hdl/HDLMain.cpp</label>
+        <link refid="HDLMain_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>stack</label>
+      </node>
+      <node id="20">
+        <label>vector</label>
+      </node>
+      <node id="11">
+        <label>clang/Tooling/Tooling.h</label>
+      </node>
+      <node id="59">
+        <label>PortDecl.h</label>
+        <link refid="PortDecl_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>sstream</label>
+      </node>
+      <node id="49">
+        <label>ModuleInstance.h</label>
+        <link refid="ModuleInstance_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>SuspensionAutomata.h</label>
+        <link refid="SuspensionAutomata_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>FindNotify.h</label>
+        <link refid="FindNotify_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>clang/AST/ExprCXX.h</label>
+      </node>
+      <node id="80">
+        <label>HDLHnode.h</label>
+        <link refid="HDLHnode_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>PortBinding.h</label>
+        <link refid="PortBinding_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>SCuitable/FindGPUMacro.h</label>
+        <link refid="FindGPUMacro_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>deque</label>
+      </node>
+      <node id="27">
+        <label>FindWait.h</label>
+        <link refid="FindWait_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>FindConstructor.h</label>
+        <link refid="FindConstructor_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>ctype.h</label>
+      </node>
+      <node id="23">
+        <label>llvm/Support/Debug.h</label>
+      </node>
+      <node id="70">
+        <label>llvm/Support/FileSystem.h</label>
+      </node>
+      <node id="39">
+        <label>Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>ModuleInstanceType.h</label>
+        <link refid="ModuleInstanceType_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>SensitivityMatcher.h</label>
+        <link refid="SensitivityMatcher_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>HDLType.h</label>
+        <link refid="HDLType_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>EntryFunctionContainer.h</label>
+        <link refid="EntryFunctionContainer_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>clang/AST/DeclCXX.h</label>
+      </node>
+      <node id="42">
+        <label>FindGlobalEvents.h</label>
+        <link refid="FindGlobalEvents_8h"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>enums.h</label>
+        <link refid="enums_8h"/>
+      </node>
+      <node id="61">
+        <label>SignalDecl.h</label>
+        <link refid="SignalDecl_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>clang/ASTMatchers/ASTMatchFinder.h</label>
+      </node>
+      <node id="67">
+        <label>set</label>
+      </node>
+      <node id="10">
+        <label>clang/Tooling/CommonOptionsParser.h</label>
+      </node>
+      <node id="52">
+        <label>FindTLMInterfaces.h</label>
+        <link refid="FindTLMInterfaces_8h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>algorithm</label>
+      </node>
+      <node id="38">
+        <label>stdio.h</label>
+      </node>
+      <node id="79">
+        <label>clang/Basic/FileManager.h</label>
+      </node>
+      <node id="24">
+        <label>ArrayTypeUtils.h</label>
+        <link refid="ArrayTypeUtils_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacesystemc__hdl">systemc_hdl</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="HDLMain_8cpp_1ad78e062f62e0d6e453941fb4ca843e4d" prot="public" static="no">
+        <name>DEBUG_TYPE</name>
+        <initializer>&quot;HDL&quot;</initializer>
+        <briefdescription>
+<para>Different matchers may use different DEBUG_TYPE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.cpp" line="19" column="10" bodyfile="plugins/hdl/HDLMain.cpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>clang-format<sp/>off</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;regex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;tuple&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="SystemCClang_8h" kindref="compound">SystemCClang.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="PortBinding_8h" kindref="compound">PortBinding.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Tree_8h" kindref="compound">Tree.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="HDLMain_8h" kindref="compound">HDLMain.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;TemplateParametersMatcher.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="HDLType_8h" kindref="compound">HDLType.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="SensitivityMatcher_8h" kindref="compound">SensitivityMatcher.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;clang/Basic/FileManager.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;llvm/Support/Debug.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;clang/Basic/Diagnostic.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="HDLHnode_8h" kindref="compound">HDLHnode.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>clang-format<sp/>on</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"></highlight><highlight class="preprocessor">#undef<sp/>DEBUG_TYPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEBUG_TYPE<sp/>&quot;HDL&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacehnode" kindref="compound">hnode</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesystemc__clang" kindref="compound">systemc_clang</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceclang" kindref="compound">clang</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesystemc__hdl" kindref="compound">systemc_hdl</ref><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>std::unique_ptr&lt;clang::tooling::FrontendActionFactory&gt;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><ref refid="namespacesystemc__hdl_1a8fb0c82c653745ba6e05bde394f63f42" kindref="member">newFrontendActionFactory</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;top_module)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::unique_ptr&lt;tooling::FrontendActionFactory&gt;(</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>HDLFrontendActionFactory(top_module));</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>HDLMain::postFire()<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1Model" kindref="compound">Model</ref><sp/>*model<sp/>=<sp/>getSystemCModel();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>std::error_code<sp/>ec;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>outputfn;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;HDL-FILE-OUTPUT:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>hdl_file_out_<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;<sp/>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>FileID<sp/>fileID<sp/>=<sp/>getSourceManager().getMainFileID();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FileEntry<sp/>*fileentry<sp/>=<sp/>getSourceManager().getFileEntryForID(fileID);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(hdl_file_out_<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!fileentry)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>outputfn<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;HCodeout&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Null<sp/>file<sp/>entry<sp/>for<sp/>tranlation<sp/>unit<sp/>for<sp/>this<sp/>astcontext\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>outputfn<sp/>=<sp/>fileentry-&gt;getName().str();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>regex<sp/>r(</highlight><highlight class="stringliteral">&quot;\\.cpp&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>outputfn<sp/>=<sp/>regex_replace(outputfn,<sp/>r,<sp/></highlight><highlight class="stringliteral">&quot;_hdl&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;File<sp/>name<sp/>is<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>outputfn<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>outputfn<sp/>=<sp/>hdl_file_out_;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>llvm::raw_fd_ostream<sp/>HCodeOut(outputfn<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.txt&quot;</highlight><highlight class="normal">,<sp/>ec,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>llvm::sys::fs::CD_CreateAlways);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;file<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>outputfn</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.txt,<sp/>create<sp/>error<sp/>code<sp/>is<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>ec.value()</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n<sp/>SC<sp/><sp/>HDL<sp/>plugin\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>typedef<sp/>std::vector&lt;<sp/>modulePairType<sp/>&gt;<sp/>moduleMapType;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>typedef<sp/>std::pair&lt;std::string,<sp/>ModuleInstance<sp/>*&gt;<sp/>modulePairType;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref><sp/>*modinstance{model-&gt;<ref refid="classsystemc__clang_1_1Model_1a04cfa4254df094161b4f8672d6fbac90" kindref="member">getRootModuleInstance</ref>()};</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(modinstance<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\nRoot<sp/>instance<sp/>not<sp/>found,<sp/>exiting\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>generate<sp/>module<sp/>instance<sp/>for<sp/>top<sp/>module<sp/>and<sp/>its<sp/>submodules</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>modname<sp/>=<sp/>mod_newn.newname();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\ntop<sp/>level<sp/>module<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>modinstance-&gt;getName()</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>renamed<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>modname<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>h_module<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(modname,<sp/>hNode::hdlopsEnum::hModule);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//mod_name_map[modinstance-&gt;getInstanceDecl()]<sp/>=<sp/>{modinstance-&gt;getName(),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>mod_name_map[modinstance]<sp/>=<sp/>{modinstance-&gt;getName(),</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>modname,<sp/>h_module};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>SCmodule2hcode(modinstance,<sp/>h_module,<sp/>HCodeOut);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>h_module-&gt;print(HCodeOut);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;User<sp/>Types<sp/>Map\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!HDLt.usertypes.empty())<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::unordered_map&lt;string,<sp/>QualType&gt;<sp/>usertypestmp<sp/>=<sp/>HDLt.usertypes;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>HDLt.usertypes.clear();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>t<sp/>:<sp/>usertypestmp)<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;User<sp/>Type<sp/>--------\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>t.first<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>t.second.getTypePtr()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(t.second-&gt;dump(llvm::dbgs(),<sp/>getContext()));</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;---------\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>HDLt.addtype(t.first,<sp/>t.second,<sp/>getContext())-&gt;print(HCodeOut);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HDLMain::SCmodule2hcode(<ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref><sp/>*mod,<sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>&amp;h_module,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>llvm::raw_fd_ostream<sp/>&amp;HCodeOut)<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;ModuleInstance<sp/>*&gt;<sp/>&amp;submodv<sp/>=<sp/>mod-&gt;<ref refid="classsystemc__clang_1_1ModuleInstance_1a58b6305e7ca18d172ddbb9887b06d572" kindref="member">getNestedModuleInstances</ref>();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>look<sp/>at<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/>&quot;dumping<sp/>module<sp/>constructor<sp/>stmt\n&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>LLVM_DEBUG(mod-&gt;getConstructorStmt()-&gt;dump(llvm::dbgs()));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(<sp/>llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;dumping<sp/>module<sp/>constructor<sp/>decl<sp/>body\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(mod-&gt;<ref refid="classsystemc__clang_1_1ModuleInstance_1ae8e899d81a715836b322079d1140d480" kindref="member">getConstructorDecl</ref>()-&gt;getBody()-&gt;dump());</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(<sp/>llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;end<sp/>dumping<sp/>module<sp/>constructor<sp/>decl<sp/>body\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//LLVM_DEBUG(mod-&gt;getConstructorDecl()-&gt;dump(llvm::dbgs()));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;submodule<sp/>count<sp/>is<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>submodv.size()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Ports</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>h_ports<sp/>=</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(hNode::hdlopsEnum::hPortsigvarlist);<sp/><sp/></highlight><highlight class="comment">//<sp/>list<sp/>of<sp/>ports,<sp/>signals</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>SCport2hcode(mod-&gt;<ref refid="classsystemc__clang_1_1ModuleInstance_1a6ec969b2c238524cd54ae9e939be3f25" kindref="member">getIPorts</ref>(),<sp/>hNode::hdlopsEnum::hPortin,<sp/>h_ports);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>SCport2hcode(mod-&gt;<ref refid="classsystemc__clang_1_1ModuleInstance_1a2ee12c7ff9afe500c9164afe2c5288fc" kindref="member">getInputStreamPorts</ref>(),<sp/>hNode::hdlopsEnum::hPortin,<sp/>h_ports);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>SCport2hcode(mod-&gt;<ref refid="classsystemc__clang_1_1ModuleInstance_1a5693ea0597d4a8b1192bd71b4ce234a3" kindref="member">getOPorts</ref>(),<sp/>hNode::hdlopsEnum::hPortout,<sp/>h_ports);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>SCport2hcode(mod-&gt;<ref refid="classsystemc__clang_1_1ModuleInstance_1a10f67b9c01dad4bda17c2ee3a8a5c37f" kindref="member">getOutputStreamPorts</ref>(),<sp/>hNode::hdlopsEnum::hPortout,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_ports);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>SCport2hcode(mod-&gt;<ref refid="classsystemc__clang_1_1ModuleInstance_1a21f0e70daa7aa40a8c47abecbd7624ea" kindref="member">getIOPorts</ref>(),<sp/>hNode::hdlopsEnum::hPortio,<sp/>h_ports);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Signals</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>SCsig2hcode(mod-&gt;<ref refid="classsystemc__clang_1_1ModuleInstance_1af851f06fc902cd0a3a90b78e2804a16e" kindref="member">getSignals</ref>(),<sp/>hNode::hdlopsEnum::hSigdecl,<sp/>h_ports);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>h_module-&gt;<ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>.push_back(h_ports);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>SCport2hcode(mod-&gt;<ref refid="classsystemc__clang_1_1ModuleInstance_1accaefca4030f64825d3ef85379feecfb" kindref="member">getOtherVars</ref>(),<sp/>hNode::hdlopsEnum::hVardecl,<sp/>h_ports);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;smod<sp/>:<sp/>submodv)<sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(smod-&gt;getInstanceInfo().isArrayType())<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Array<sp/>submodule<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>smod-&gt;getInstanceName()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Non-Array<sp/>submodule<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>smod-&gt;getInstanceName()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/>&amp;instnames{smod-&gt;getInstanceInfo().getInstanceNames()};</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>newmodname<sp/>=<sp/>mod_newn.newname();</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>instname:<sp/>instnames)<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Instance<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>instname<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>h_smod<sp/>=</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(instname,<sp/>hNode::hdlopsEnum::hModdecl);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>h_ports-&gt;<ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>.push_back(h_smod);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>h_smodtypinfo<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(hNode::hdlopsEnum::hTypeinfo);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>mod_name_map[smod]<sp/>=<sp/>{instname,</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newmodname,<sp/>h_smod};</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>h_smodtypinfo-&gt;<ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>.push_back(</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(newmodname,<sp/>hNode::hdlopsEnum::hType));</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>h_smod-&gt;<ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>.push_back(h_smodtypinfo);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Processes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>h_top<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(hNode::hdlopsEnum::hProcesses);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>SCproc2hcode(mod-&gt;<ref refid="classsystemc__clang_1_1ModuleInstance_1aec22a3bf8796f20950258d7353fa9e62" kindref="member">getProcessMap</ref>(),<sp/>h_top);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!h_top-&gt;child_list.empty())<sp/>h_module-&gt;<ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>.push_back(h_top);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>init<sp/>block</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>clang::DiagnosticsEngine<sp/>&amp;diag_engine{getContext().getDiagnostics()};</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>hconstructor<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(mod-&gt;<ref refid="classsystemc__clang_1_1ModuleInstance_1a8c053ec6f0756cef1f68102ef1d9f145" kindref="member">getInstanceName</ref>(),<sp/>hNode::hdlopsEnum::hModinitblock);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>HDLBody<sp/>xconstructor(mod-&gt;<ref refid="classsystemc__clang_1_1ModuleInstance_1ae8e899d81a715836b322079d1140d480" kindref="member">getConstructorDecl</ref>()-&gt;getBody(),<sp/>hconstructor,<sp/>diag_engine,<sp/>getContext());</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;HDL<sp/>output<sp/>for<sp/>module<sp/>body\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>hconstructor-&gt;<ref refid="classhnode_1_1hNode_1af2caf10bac111af51d09b98b302ec40c" kindref="member">print</ref>(llvm::dbgs());</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>HDLConstructorHcode<sp/>hcxxbody;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>h_module-&gt;<ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>.push_back(hcxxbody.ProcessCXXConstructorHcode(hconstructor));</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//hconstructor-&gt;print(HCodeOut);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>diag_engine<sp/>scope<sp/>ends</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>typedef<sp/>std::pair&lt;std::string,<sp/>PortBinding<sp/>*&gt;<sp/>portBindingPairType;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>typedef<sp/>std::map&lt;std::string,<sp/>PortBinding<sp/>*&gt;<sp/>portBindingMapType;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>portBindingMapType<sp/>getPortBindings();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>are<sp/>doing<sp/>port<sp/>bindings<sp/>in<sp/>the<sp/>init<sp/>block<sp/>now</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>hNodep<sp/>h_submodule_pb<sp/>=</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>new<sp/>hNode(mod-&gt;getInstanceName()+&quot;_portbindings&quot;,<sp/>hNode::hdlopsEnum::hPortbindings);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>SCportbindings2hcode(mod,<sp/>h_submodule_pb);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>(!h_submodule_pb-&gt;child_list.empty())</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>h_module-&gt;child_list.push_back(h_submodule_pb);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(allmethodecls.size()<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Module<sp/>Method/Function<sp/>Map\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::unordered_map&lt;string,<sp/>FunctionDecl<sp/>*&gt;<sp/>modmethodecls;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>modmethodecls<sp/>=</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::move(allmethodecls);<sp/><sp/></highlight><highlight class="comment">//<sp/>procedures/functions<sp/>found<sp/>in<sp/>this<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;size<sp/>of<sp/>allmethodecls<sp/>is<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>allmethodecls.size()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;size<sp/>of<sp/>modmethodecls<sp/>is<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>modmethodecls.size()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>m<sp/>:<sp/>modmethodecls)<sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Method<sp/>--------\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>m.first<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>m.second<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>LLVM_DEBUG(m.second-&gt;dump(llvm::dbgs()));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;---------\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>clang::DiagnosticsEngine<sp/>&amp;diag_engine{getContext().getDiagnostics()};</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m.second-&gt;hasBody())<sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>hfunc<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(m.first,<sp/>hNode::hdlopsEnum::hFunction);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>QualType<sp/>qrettype<sp/>=<sp/>m.second-&gt;getDeclaredReturnType();</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>clang::Type<sp/>*rettype<sp/>=<sp/>qrettype.getTypePtr();</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref><sp/>*te<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref>();</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>te-&gt;<ref refid="classsystemc__clang_1_1FindTemplateTypes_1ae648d1354e92813a492ccb2f7011d183" kindref="member">Enumerate</ref>(rettype);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classHDLType" kindref="compound">HDLType</ref><sp/>HDLt;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>HDLt.<ref refid="classHDLType_1a6438b9a449e3fedf55ab579878a33480" kindref="member">SCtype2hcode</ref>(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/>te-&gt;<ref refid="classsystemc__clang_1_1FindTemplateTypes_1a6379b187759bbf16c8e378d2716cf3e9" kindref="member">getTemplateArgTreePtr</ref>(),<sp/>NULL,</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hNode::hdlopsEnum::hFunctionRetType,<sp/>hfunc);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m.second-&gt;getNumParams()<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>hparams<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(hNode::hdlopsEnum::hFunctionParams);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hfunc-&gt;<ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>.push_back(hparams);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>m.second-&gt;getNumParams();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VarDecl<sp/>*vardecl<sp/>=<sp/>m.second-&gt;getParamDecl(i);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QualType<sp/>q<sp/>=<sp/>vardecl-&gt;getType();</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>clang::Type<sp/>*tp<sp/>=<sp/>q.getTypePtr();</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ProcessParmVarDecl<sp/>type<sp/>name<sp/>is<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>q.getAsString()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref><sp/>*te<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref>();</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>te-&gt;<ref refid="classsystemc__clang_1_1FindTemplateTypes_1ae648d1354e92813a492ccb2f7011d183" kindref="member">Enumerate</ref>(tp);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classHDLType" kindref="compound">HDLType</ref><sp/>HDLt;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HDLt.<ref refid="classHDLType_1a6438b9a449e3fedf55ab579878a33480" kindref="member">SCtype2hcode</ref>(vardecl-&gt;getName().str(),<sp/>te-&gt;<ref refid="classsystemc__clang_1_1FindTemplateTypes_1a6379b187759bbf16c8e378d2716cf3e9" kindref="member">getTemplateArgTreePtr</ref>(),</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NULL,<sp/>hNode::hdlopsEnum::hVardecl,<sp/>hparams);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HDLBody<sp/>xfunction(m.second-&gt;getBody(),<sp/>hfunc,<sp/>diag_engine,<sp/>getContext(),<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>suppress<sp/>output<sp/>of<sp/>unqualified<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HDLBody<sp/>xfunction(m.second-&gt;getBody(),<sp/>hfunc,<sp/>diag_engine,<sp/>getContext(),<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>suppress<sp/>output<sp/>of<sp/>unqualified<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>h_top-&gt;child_list.push_back(hfunc);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>LLVM_DEBUG(m.second-&gt;dump(llvm::dbgs()));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>h_module-&gt;<ref refid="classhnode_1_1hNode_1af2caf10bac111af51d09b98b302ec40c" kindref="member">print</ref>(HCodeOut);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>now<sp/>generate<sp/>submodules</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;smod<sp/>:<sp/>submodv)<sp/>{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//for<sp/>(int<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>smod-&gt;getInstanceInfo().instance_names.size();<sp/>i++)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//string<sp/>modname<sp/>=<sp/>mod_name_map[smod-&gt;getInstanceDecl()].newn;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>modname<sp/>=<sp/>mod_name_map[smod].newn;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;generate<sp/>submodule<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>smod-&gt;getName()<sp/></highlight><highlight class="comment">//smod-&gt;getInstanceInfo().instance_names[i]<sp/>//getInstanceName()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>renamed<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>modname<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>h_submod<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(modname,<sp/>hNode::hdlopsEnum::hModule);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>SCmodule2hcode(smod,<sp/>h_submod,<sp/>HCodeOut);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HDLMain::SCportbindings2hcode(<ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref>*<sp/>mod,</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//systemc_clang::ModuleInstance::portBindingMapType<sp/>portbindingmap,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>&amp;h_pbs)<sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1ModuleInstance_1a8fc3d86b879f530c74b1de52d7fe1e65" kindref="member">systemc_clang::ModuleInstance::portBindingMapType</ref><sp/>portbindingmap{mod-&gt;<ref refid="classsystemc__clang_1_1ModuleInstance_1a246e0b1f1f5704042f2a0f9dcc19f605" kindref="member">getPortBindings</ref>()};</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;pb<sp/>:<sp/>portbindingmap)<sp/>{</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1PortBinding" kindref="compound">PortBinding</ref><sp/>*binding{get&lt;1&gt;(pb)};</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>port_name{binding-&gt;<ref refid="classsystemc__clang_1_1PortBinding_1af2aa9c5d2455ab06f1661cd76ded189f" kindref="member">getCallerPortName</ref>()};</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;SC<sp/>port<sp/>binding<sp/>found<sp/>Caller<sp/>port<sp/>name<sp/><sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>port_name</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>caller<sp/>instance<sp/>name<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>binding-&gt;getCallerInstanceName()</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&lt;==&gt;<sp/>callee<sp/>port<sp/>name<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>binding-&gt;getCalleePortName()<sp/>&lt;&lt;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/>callee<sp/>instance<sp/>name<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>binding-&gt;getCalleeInstanceName()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(binding-&gt;getCallerArraySubscripts().size()<sp/>&gt;0)</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Caller<sp/>Subscript<sp/>vector<sp/>length<sp/>is<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>binding-&gt;getCallerArraySubscripts().size()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>subscriptex:<sp/>binding-&gt;getCallerArraySubscripts())<sp/>{</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(subscriptex-&gt;dump(llvm::dbgs(),<sp/>getContext()));</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(binding-&gt;getCalleeArraySubscripts().size()&gt;0)<sp/>{</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Callee<sp/>Subscript<sp/>vector<sp/>length<sp/>is<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>binding-&gt;getCalleeArraySubscripts().size()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>subscriptex:<sp/>binding-&gt;getCalleeArraySubscripts())<sp/>{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(subscriptex-&gt;dump(llvm::dbgs(),<sp/>getContext()));</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>hpb<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(binding-&gt;getCallerInstanceName(),<sp/>hNode::hdlopsEnum::hPortbinding);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>caller<sp/>module<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>hpb_caller<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(port_name,<sp/>hNode::hdlopsEnum::hVarref);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(binding-&gt;getCallerPortArraySubscripts().size()<sp/>&gt;0)<sp/>{</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>hpb_caller-&gt;<ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>.push_back(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(</highlight><highlight class="stringliteral">&quot;INDEX&quot;</highlight><highlight class="normal">,<sp/>hNode::hdlopsEnum::hLiteral));<sp/></highlight><highlight class="comment">//placeholder</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>hpb-&gt;<ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>.push_back(hpb_caller);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>mapped_name<sp/>=<sp/><sp/>binding-&gt;getCalleeInstanceName();</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>hpb-&gt;child_list.push_back(new<sp/>hNode(binding-&gt;getBoundToName(),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>hNode::hdlopsEnum::hVarref));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>hpb_callee<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(mapped_name,<sp/>hNode::hdlopsEnum::hVarref);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(binding-&gt;getCalleeArraySubscripts().size()<sp/>&gt;0)<sp/>{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>hpb_callee-&gt;<ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>.push_back(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(</highlight><highlight class="stringliteral">&quot;INDEX&quot;</highlight><highlight class="normal">,<sp/>hNode::hdlopsEnum::hLiteral));<sp/></highlight><highlight class="comment">//placeholder</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>hpb-&gt;<ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>.push_back(hpb_callee);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>h_pbs-&gt;<ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>.push_back(hpb);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HDLMain::SCport2hcode(<ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">ModuleInstance::portMapType</ref><sp/>pmap,<sp/><ref refid="classhnode_1_1hNode_1a72bcc22543c267571a24ec713633e39a" kindref="member">hNode::hdlopsEnum</ref><sp/>h_op,</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>&amp;h_info)<sp/>{</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>clang::DiagnosticsEngine<sp/>&amp;diag_engine{getContext().getDiagnostics()};</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(ModuleInstance::portMapType::iterator<sp/>mit<sp/>=<sp/>pmap.begin();<sp/>mit<sp/>!=<sp/>pmap.end();</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>mit++)<sp/>{</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>objname<sp/>=<sp/>get&lt;0&gt;(*mit);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;object<sp/>name<sp/>is<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>objname<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>and<sp/>h_op<sp/>is<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>h_op<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1PortDecl" kindref="compound">PortDecl</ref><sp/>*pd<sp/>=<sp/>get&lt;1&gt;(*mit);</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1Tree" kindref="compound">Tree&lt;TemplateType&gt;</ref><sp/>*template_argtp<sp/>=</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(pd-&gt;<ref refid="classsystemc__clang_1_1PortDecl_1a97faf57eddf2f20618033bf334301c4c" kindref="member">getTemplateType</ref>())-&gt;getTemplateArgTreePtr();</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;llvm::APInt&gt;<sp/>array_sizes<sp/>=<sp/>pd-&gt;<ref refid="classsystemc__clang_1_1PortDecl_1aa3622ca7b78d0a9e5aabc114829e1d14" kindref="member">getArraySizes</ref>();</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>HDLt.<ref refid="classHDLType_1a6438b9a449e3fedf55ab579878a33480" kindref="member">SCtype2hcode</ref>(objname,<sp/>template_argtp,<sp/>&amp;array_sizes,<sp/>h_op,</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_info);<sp/><sp/></highlight><highlight class="comment">//<sp/>passing<sp/>the<sp/>sigvarlist</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>check<sp/>for<sp/>initializer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>VarDecl<sp/>*vard<sp/>=<sp/>pd-&gt;<ref refid="classsystemc__clang_1_1PortDecl_1a0936c825c062aeba0b741c15fe05c914" kindref="member">getAsVarDecl</ref>();</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(vard)<sp/>{</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;var<sp/>decl<sp/>dump<sp/>follows\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(vard-&gt;dump(llvm::dbgs()));</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(vard-&gt;hasInit())<sp/>{</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>APValue<sp/>*apval<sp/>=<sp/>vard-&gt;getEvaluatedValue();</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(apval<sp/>&amp;&amp;<sp/>apval-&gt;isInt())<sp/>{</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>h_lit<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>((apval-&gt;getInt()).toString(10),</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hNode::hdlopsEnum::hLiteral);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>h_varinit<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(hNode::hdlopsEnum::hVarInit);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_varinit-&gt;<ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>.push_back(h_lit);</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(h_info-&gt;<ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>.back())-&gt;child_list.push_back(h_varinit);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/>FieldDecl<sp/>*fieldd<sp/>=<sp/>pd-&gt;<ref refid="classsystemc__clang_1_1PortDecl_1ae3257767b9f9234b66de907bbdfbceb7" kindref="member">getAsFieldDecl</ref>();</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fieldd)<sp/>{</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;field<sp/>decl<sp/>dump<sp/>follows\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(fieldd-&gt;dump(llvm::dbgs()));</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Expr*<sp/>initializer<sp/>=<sp/>fieldd-&gt;getInClassInitializer();</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(initializer<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;field<sp/>initializer<sp/>dump<sp/>follows\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(initializer-&gt;dump(llvm::dbgs(),<sp/>getContext()));</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>h_init<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(hNode::hdlopsEnum::hVarInit);</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HDLBody<sp/>xmethod(initializer,<sp/>h_init,<sp/>diag_engine,<sp/>getContext());</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(h_info-&gt;<ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>.back())-&gt;child_list.push_back(h_init);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HDLMain::SCsig2hcode(<ref refid="classsystemc__clang_1_1ModuleInstance_1adad65a1c03e742c7c8eb6d0bd1a57271" kindref="member">ModuleInstance::signalMapType</ref><sp/>pmap,</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode_1a72bcc22543c267571a24ec713633e39a" kindref="member">hNode::hdlopsEnum</ref><sp/>h_op,<sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>&amp;h_info)<sp/>{</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(ModuleInstance::signalMapType::iterator<sp/>mit<sp/>=<sp/>pmap.begin();</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>mit<sp/>!=<sp/>pmap.end();<sp/>mit++)<sp/>{</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>objname<sp/>=<sp/>get&lt;0&gt;(*mit);</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;object<sp/>name<sp/>is<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>objname<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1SignalDecl" kindref="compound">SignalDecl</ref><sp/>*pd<sp/>=<sp/>get&lt;1&gt;(*mit);</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1Tree" kindref="compound">Tree&lt;TemplateType&gt;</ref><sp/>*template_argtp<sp/>=</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(pd-&gt;<ref refid="classsystemc__clang_1_1SignalDecl_1abf1d2f397d5de7eab11ccd03fa4e50c6" kindref="member">getTemplateTypes</ref>())-&gt;getTemplateArgTreePtr();</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>arr_size<sp/>=<sp/>pd-&gt;<ref refid="classsystemc__clang_1_1PortDecl_1aa3622ca7b78d0a9e5aabc114829e1d14" kindref="member">getArraySizes</ref>().size()<sp/>&gt;<sp/>0</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/>?<sp/>pd-&gt;<ref refid="classsystemc__clang_1_1PortDecl_1aa3622ca7b78d0a9e5aabc114829e1d14" kindref="member">getArraySizes</ref>()[0].getLimitedValue()</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;llvm::APInt&gt;<sp/>array_sizes<sp/>=<sp/>pd-&gt;<ref refid="classsystemc__clang_1_1PortDecl_1aa3622ca7b78d0a9e5aabc114829e1d14" kindref="member">getArraySizes</ref>();</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>HDLt.<ref refid="classHDLType_1a6438b9a449e3fedf55ab579878a33480" kindref="member">SCtype2hcode</ref>(objname,<sp/>template_argtp,<sp/>&amp;array_sizes,<sp/>h_op,</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_info);<sp/><sp/></highlight><highlight class="comment">//<sp/>passing<sp/>the<sp/>sigvarlist</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HDLMain::SCproc2hcode(<ref refid="classsystemc__clang_1_1ModuleInstance_1aa971eba18c75ee5a38fcfc9739bbf9a5" kindref="member">ModuleInstance::processMapType</ref><sp/>pm,<sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>&amp;h_top)<sp/>{</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>typedef<sp/>std::map&lt;std::string,<sp/>ProcessDecl<sp/>*&gt;<sp/>processMapType;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>processMapType<sp/>getProcessMap();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ProcessDecl::getEntryFunction()<sp/>returns<sp/>EntryFunctionContainer*</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/>clang::DiagnosticsEngine<sp/>&amp;diag_engine{getContext().getDiagnostics()};</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>cxx_record_id1<sp/>=<sp/>diag_engine.getCustomDiagID(</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clang::DiagnosticsEngine::Remark,<sp/></highlight><highlight class="stringliteral">&quot;non-SC_METHOD<sp/>&apos;%0&apos;<sp/>skipped.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;pm_entry<sp/>:<sp/>pm)<sp/>{</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1ProcessDecl" kindref="compound">ProcessDecl</ref><sp/>*pd{get&lt;1&gt;(pm_entry)};</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1EntryFunctionContainer" kindref="compound">EntryFunctionContainer</ref><sp/>*efc{pd-&gt;getEntryFunction()};</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(efc-&gt;getProcessType()<sp/>==<sp/>PROCESS_TYPE::METHOD)<sp/>{</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>h_process<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(efc-&gt;getName(),<sp/>hNode::hdlopsEnum::hProcess);</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;process<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>efc-&gt;getName()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>are<sp/>doing<sp/>sensitivity<sp/>list<sp/>processing<sp/>in<sp/>the<sp/>mod<sp/>init<sp/>block.<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>now,<sp/>this<sp/>obsolete<sp/>code<sp/>is<sp/>ifdef&apos;ed<sp/>out<sp/>in<sp/>case<sp/>we<sp/>want<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>use<sp/>parts<sp/>of<sp/>it<sp/>later.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Sensitivity<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1EntryFunctionContainer_1a4d69296f0e62e5aea47b39f1d8f96df8" kindref="member">EntryFunctionContainer::SenseMapType</ref><sp/>sensmap<sp/>=<sp/>efc-&gt;getSenseMap();</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!sensmap.empty())<sp/>{</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>h_senslist<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(hNode::hdlopsEnum::hSenslist);</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sensmapitem<sp/>:<sp/>sensmap)<sp/>{</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>typedef<sp/>std::map&lt;std::string,<sp/>std::vector&lt;SensitivityTupleType&gt;&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>SenseMapType;<sp/>typedef<sp/>std::tuple&lt;std::string,<sp/>ValueDecl<sp/>*,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MemberExpr<sp/>*,<sp/>DeclRefExpr*&gt;SensitivityTupleType;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sensmapitem.first<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;dont_initialize&quot;</highlight><highlight class="normal">)<sp/><sp/></highlight><highlight class="comment">//<sp/>nonsynthesizable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;sensmap<sp/>item<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>sensmapitem.first<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>found<sp/>=<sp/>sensmapitem.first.find(</highlight><highlight class="stringliteral">&quot;_handle&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/>&quot;first<sp/>part<sp/>is<sp/>&quot;<sp/>&lt;&lt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>sensmapitem.first.substr(0,<sp/>found)<sp/>&lt;&lt;<sp/>&quot;\n&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((found<sp/>==<sp/>std::string::npos)<sp/>||</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(sensmapitem.first.substr(0,<sp/>found).compare(efc-&gt;getName())<sp/>!=</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0))<sp/>{</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/>&quot;compare<sp/>not<sp/>equal<sp/>&quot;<sp/>&lt;&lt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>sensmapitem.first.substr(0,<sp/>found)<sp/>&lt;&lt;<sp/>&quot;<sp/>&quot;<sp/>&lt;&lt;<sp/>efc-&gt;getName()<sp/>&lt;&lt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>&quot;\n&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;<sp/><sp/></highlight><highlight class="comment">//<sp/>sensitivity<sp/>item<sp/>is<sp/>not<sp/>for<sp/>this<sp/>process</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;EntryFunctionContainer::SensitivityTupleType&gt;<sp/>sttv<sp/>=</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sensmapitem.second;</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1EntryFunctionContainer_1a9c37085137095b5102a25bfc8716ed3d" kindref="member">EntryFunctionContainer::SensitivityTupleType</ref><sp/>sensitem0<sp/>=<sp/>sttv[0];</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>sensitm<sp/>=<sp/>get&lt;1&gt;(sensitem0)-&gt;getNameAsString();</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;sens<sp/>item<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>sensitm<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/>&quot;<sp/>declref<sp/>follows\n&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>LLVM_DEBUG(get&lt;3&gt;(sensitem0)-&gt;dump(llvm::dbgs()));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode_1a72bcc22543c267571a24ec713633e39a" kindref="member">hNode::hdlopsEnum</ref><sp/>h_op;</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((sensitm.compare(</highlight><highlight class="stringliteral">&quot;pos&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0)<sp/>||<sp/>(sensitm.compare(</highlight><highlight class="stringliteral">&quot;neg&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0))<sp/>{</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_op<sp/>=<sp/>hNode::hdlopsEnum::hSensedge;</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_op<sp/>=<sp/>hNode::hdlopsEnum::hSensvar;</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>h_firstfield<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(sensitm,<sp/>h_op);</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>sttv.size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sensitm<sp/>=<sp/>get&lt;1&gt;(sttv[i])-&gt;getNameAsString();</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((sensitm.compare(</highlight><highlight class="stringliteral">&quot;pos&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0)<sp/>||</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(sensitm.compare(</highlight><highlight class="stringliteral">&quot;neg&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0))<sp/>{</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_op<sp/>=<sp/>hNode::hdlopsEnum::hSensedge;</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_op<sp/>=<sp/>hNode::hdlopsEnum::hSensvar;</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_firstfield-&gt;<ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>.push_back(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(sensitm,<sp/>h_op));</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_senslist-&gt;<ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>.push_back(h_firstfield);</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>h_process-&gt;<ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>.push_back(h_senslist);</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/>CXXMethodDecl<sp/>*emd<sp/>=<sp/>efc-&gt;getEntryMethod();</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(emd-&gt;hasBody())<sp/>{</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNodep</ref><sp/>h_body<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classhnode_1_1hNode" kindref="compound">hNode</ref>(hNode::hdlopsEnum::hMethod);</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>HDLBody<sp/>xmethod(emd,<sp/>h_body,<sp/>diag_engine,<sp/>getContext());</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>allmethodecls.insert(xmethod.methodecls.begin(),</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmethod.methodecls.end());</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>h_process-&gt;<ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>.push_back(h_body);</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>h_top-&gt;<ref refid="classhnode_1_1hNode_1a6e91af95846022a423674145de0ed949" kindref="member">child_list</ref>.push_back(h_process);</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Entry<sp/>Method<sp/>is<sp/>null\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/>clang::DiagnosticBuilder<sp/>diag_builder{diag_engine.Report(</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(efc-&gt;getEntryMethod())-&gt;getLocation(),<sp/>cxx_record_id1)};</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/>diag_builder<sp/>&lt;&lt;<sp/>efc-&gt;getName();</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"></highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/><sp/><sp/>LLVM_DEBUG(llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;process<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>efc-&gt;getName()</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>not<sp/>SC_METHOD,<sp/>skipping\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="485"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="plugins/hdl/HDLMain.cpp"/>
+  </compounddef>
+</doxygen>

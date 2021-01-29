@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceparselib_1_1utils" kind="namespace" language="Python">
+    <compoundname>parselib::utils</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceparselib_1_1utils_1a34f9a47e153cc8a5c7939ca47f3261f0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool parselib::utils.debug</definition>
+        <argsstring></argsstring>
+        <name>debug</name>
+        <initializer>=  True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/utils.py" line="29" column="1" bodyfile="plugins/hdl/parselib/utils.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceparselib_1_1utils_1a41a9e40ebc52ca075bbe7d5ecd184d34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.utils.tidify</definition>
+        <argsstring>(verilog, current_indent=0, indent_width=2)</argsstring>
+        <name>tidify</name>
+        <param>
+          <type>verilog</type>
+          <defname>verilog</defname>
+        </param>
+        <param>
+          <type>current_indent</type>
+          <defname>current_indent</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>indent_width</type>
+          <defname>indent_width</defname>
+          <defval>2</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>makes the generated verilog looks a bit better, may be subject to changes later</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/utils.py" line="6" column="1" bodyfile="plugins/hdl/parselib/utils.py" bodystart="6" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceparselib_1_1utils_1ab81a1e875b4ab8a6c0b13efab8be1115" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.utils.p</definition>
+        <argsstring>(decorated)</argsstring>
+        <name>p</name>
+        <param>
+          <type>decorated</type>
+          <defname>decorated</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>a decorator that helps printing out the transformation results</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/utils.py" line="30" column="1" bodyfile="plugins/hdl/parselib/utils.py" bodystart="30" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceparselib_1_1utils_1a9e1fe72403522f24758bb59a55be52e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.utils.dprint</definition>
+        <argsstring>(*arg, **kwargs)</argsstring>
+        <name>dprint</name>
+        <param>
+          <type>*</type>
+          <declname>arg</declname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>debug utility for printing, prints line number</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/utils.py" line="43" column="1" bodyfile="plugins/hdl/parselib/utils.py" bodystart="43" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceparselib_1_1utils_1a09053f88609cbe422327a1fd7af65503" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.utils.is_tree_type</definition>
+        <argsstring>(t, name)</argsstring>
+        <name>is_tree_type</name>
+        <param>
+          <type>t</type>
+          <defname>t</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Check whether t is lark Tree and whether the tree type is name</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/utils.py" line="50" column="1" bodyfile="plugins/hdl/parselib/utils.py" bodystart="50" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceparselib_1_1utils_1aa5c39b6d417e8911ce6853f7524c6c82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.utils.is_tree_types</definition>
+        <argsstring>(t, names)</argsstring>
+        <name>is_tree_types</name>
+        <param>
+          <type>t</type>
+          <defname>t</defname>
+        </param>
+        <param>
+          <type>names</type>
+          <defname>names</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Check whether t is lark Tree and whether the tree type is name</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/utils.py" line="55" column="1" bodyfile="plugins/hdl/parselib/utils.py" bodystart="55" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceparselib_1_1utils_1a0221135d384562381f5b8a5b15940ef2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.utils.get_ids_in_tree</definition>
+        <argsstring>(tree)</argsstring>
+        <name>get_ids_in_tree</name>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>get all ids</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/utils.py" line="62" column="1" bodyfile="plugins/hdl/parselib/utils.py" bodystart="62" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceparselib_1_1utils_1ac40a3d79a87830f6105e7f24baadd007" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.utils.alternate_ids</definition>
+        <argsstring>(tree, ops)</argsstring>
+        <name>alternate_ids</name>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <param>
+          <type>ops</type>
+          <defname>ops</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Change the ids within a tree, given operations ops as an array of lambdas</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/utils.py" line="75" column="1" bodyfile="plugins/hdl/parselib/utils.py" bodystart="75" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Utility library</verbatim> </para>
+    </detaileddescription>
+    <location file="plugins/hdl/parselib/utils.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

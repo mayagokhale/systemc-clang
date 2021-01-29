@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="FindEntryFunctions_8cpp" kind="file" language="C++">
+    <compoundname>FindEntryFunctions.cpp</compoundname>
+    <includes refid="FindEntryFunctions_8h" local="yes">FindEntryFunctions.h</includes>
+    <incdepgraph>
+      <node id="31">
+        <label>clang/Basic/SourceManager.h</label>
+      </node>
+      <node id="26">
+        <label>clang/Analysis/CFG.h</label>
+      </node>
+      <node id="9">
+        <label>llvm/Support/raw_ostream.h</label>
+      </node>
+      <node id="25">
+        <label>clang/AST/ParentMap.h</label>
+      </node>
+      <node id="27">
+        <label>clang/Analysis/CFGStmtMap.h</label>
+      </node>
+      <node id="20">
+        <label>clang/AST/PrettyPrinter.h</label>
+      </node>
+      <node id="8">
+        <label>clang/AST/RecursiveASTVisitor.h</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="4">
+        <label>map</label>
+      </node>
+      <node id="2">
+        <label>FindEntryFunctions.h</label>
+        <link refid="FindEntryFunctions_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>WaitContainer.h</label>
+        <link refid="WaitContainer_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>NotifyContainer.h</label>
+        <link refid="NotifyContainer_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>clang/ASTMatchers/ASTMatchers.h</label>
+      </node>
+      <node id="24">
+        <label>clang/AST/Expr.h</label>
+      </node>
+      <node id="23">
+        <label>Automata.h</label>
+        <link refid="Automata_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/matchers/FindEntryFunctions.cpp</label>
+        <link refid="FindEntryFunctions_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>clang/AST/Type.h</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+      <node id="22">
+        <label>SuspensionAutomata.h</label>
+        <link refid="SuspensionAutomata_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>FindNotify.h</label>
+        <link refid="FindNotify_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>clang/AST/ExprCXX.h</label>
+      </node>
+      <node id="28">
+        <label>deque</label>
+      </node>
+      <node id="18">
+        <label>FindWait.h</label>
+        <link refid="FindWait_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>llvm/Support/Debug.h</label>
+      </node>
+      <node id="30">
+        <label>Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>SensitivityMatcher.h</label>
+        <link refid="SensitivityMatcher_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>EntryFunctionContainer.h</label>
+        <link refid="EntryFunctionContainer_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>clang/AST/DeclCXX.h</label>
+      </node>
+      <node id="32">
+        <label>enums.h</label>
+        <link refid="enums_8h"/>
+      </node>
+      <node id="12">
+        <label>clang/ASTMatchers/ASTMatchFinder.h</label>
+      </node>
+      <node id="29">
+        <label>stdio.h</label>
+      </node>
+      <node id="15">
+        <label>ArrayTypeUtils.h</label>
+        <link refid="ArrayTypeUtils_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="FindEntryFunctions_8h" kindref="compound">FindEntryFunctions.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesystemc__clang" kindref="compound">systemc_clang</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a873d57d37c7f0d20010958f961cc0189" kindref="member">FindEntryFunctions::FindEntryFunctions</ref>(CXXRecordDecl<sp/>*d,<sp/>llvm::raw_ostream<sp/>&amp;os)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>os_{os},</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_d{d},</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>is_entry_function_{false},</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>proc_type_{<ref refid="namespacesystemc__clang_1aee628e0c13dbaaeb824bd830dc47a138" kindref="member">PROCESS_TYPE</ref>::<ref refid="namespacesystemc__clang_1aee628e0c13dbaaeb824bd830dc47a138ab50339a10e1de285ac99d4c3990b8693" kindref="member">NONE</ref>},</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>entry_cxx_record_decl_{nullptr},</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>entry_method_decl_{nullptr},</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>found_entry_decl_{false},</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>constructor_stmt_{nullptr},</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pass_{1}<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>os_<sp/>&lt;&lt;<sp/>&quot;\n&gt;&gt;&gt;&gt;<sp/>PASS<sp/>1\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>TraverseDecl(_d);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>os_<sp/>&lt;&lt;<sp/>&quot;\n<sp/>EntryFunctions<sp/>found:<sp/>&quot;<sp/>&lt;&lt;<sp/>entry_function_list_.size()<sp/>&lt;&lt;<sp/>&quot;\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>pass_<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>os_<sp/>&lt;&lt;<sp/>&quot;\n&gt;&gt;&gt;&gt;<sp/>PASS<sp/>2\n&quot;;</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>TraverseStmt(constructor_stmt_);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>pass_<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>TraverseDecl(_d);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>pass_<sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">FindEntryFunctions::~FindEntryFunctions()<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a0847c1c40aabb1c90939d929a63187a7" kindref="member">entry_cxx_record_decl_</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a743ed8eda884d5ca2252e6ca7259c35f" kindref="member">entry_method_decl_</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a8759e45cd4ebb8290a0892f70fa5edba" kindref="member">constructor_stmt_</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1ac7165b7fc5f121975190f62f60a32247" kindref="member">FindEntryFunctions::shouldVisitTemplateInstantiations</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a9a2e505c15b40da548c24ad7c2593bd4" kindref="member">FindEntryFunctions::VisitMemberExpr</ref>(MemberExpr<sp/>*e)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>os_<sp/>&lt;&lt;<sp/>&quot;\tVisitMemberExpr&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="classsystemc__clang_1_1FindEntryFunctions_1adefc3c1a7fc8504ac7aea94b62c16db3" kindref="member">pass_</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>memberName<sp/>=<sp/>e-&gt;getMemberDecl()-&gt;getNameAsString();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>os_<sp/>&lt;&lt;&quot;\n<sp/>member<sp/>name<sp/>:<sp/>&quot;<sp/>&lt;&lt;memberName;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>os_<sp/>&lt;&lt;<sp/>&quot;####:<sp/>MemberExpr<sp/>--<sp/>&quot;<sp/>&lt;&lt;<sp/>memberName<sp/>&lt;&lt;<sp/>&quot;\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(memberName<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;create_method_process&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a1e84094f47e97c948c674a631a74b6f6" kindref="member">proc_type_</ref><sp/>=<sp/><ref refid="namespacesystemc__clang_1aee628e0c13dbaaeb824bd830dc47a138a725e74fd6435d86483781e2bd8e9d2c7" kindref="member">PROCESS_TYPE::METHOD</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(memberName<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;create_thread_process&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a1e84094f47e97c948c674a631a74b6f6" kindref="member">proc_type_</ref><sp/>=<sp/><ref refid="namespacesystemc__clang_1aee628e0c13dbaaeb824bd830dc47a138a57f8b9e1bf05e9058d703c68ac2d53b0" kindref="member">PROCESS_TYPE::THREAD</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(memberName<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;create_cthread_process&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a1e84094f47e97c948c674a631a74b6f6" kindref="member">proc_type_</ref><sp/>=<sp/><ref refid="namespacesystemc__clang_1aee628e0c13dbaaeb824bd830dc47a138ac8d304bc25d6596b687ba2798223dd32" kindref="member">PROCESS_TYPE::CTHREAD</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a2fadc394a413c49341bb994c4cc87891" kindref="member">FindEntryFunctions::VisitStringLiteral</ref>(StringLiteral<sp/>*s)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>os_<sp/>&lt;&lt;<sp/>&quot;\t\tVisitStringLiteral\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="classsystemc__clang_1_1FindEntryFunctions_1adefc3c1a7fc8504ac7aea94b62c16db3" kindref="member">pass_</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>os_<sp/>&lt;&lt;<sp/>&quot;\nVisitStringLiteral\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a673b7911bddb00776acbd6a80bc757f4" kindref="member">entry_name_</ref><sp/>=<sp/>s-&gt;getString().str();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>EntryFunctionType*<sp/>ef<sp/>=<sp/>new<sp/>EntryFunctionType();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a30a5efb59a564acfe4ce1cebf167d8bc" kindref="member">ef</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1EntryFunctionContainer" kindref="compound">EntryFunctionContainer</ref>();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ef-&gt;setConstructorStmt<sp/>(constructor_stmt_);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a30a5efb59a564acfe4ce1cebf167d8bc" kindref="member">ef</ref>-&gt;<ref refid="classsystemc__clang_1_1EntryFunctionContainer_1a1091160a0433997fecb18f7d429fbc55" kindref="member">setName</ref>(<ref refid="classsystemc__clang_1_1FindEntryFunctions_1a673b7911bddb00776acbd6a80bc757f4" kindref="member">entry_name_</ref>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a30a5efb59a564acfe4ce1cebf167d8bc" kindref="member">ef</ref>-&gt;<ref refid="classsystemc__clang_1_1EntryFunctionContainer_1ae6e38aced6b2eb7ea7ba5d5e7096977b" kindref="member">setProcessType</ref>(<ref refid="classsystemc__clang_1_1FindEntryFunctions_1a1e84094f47e97c948c674a631a74b6f6" kindref="member">proc_type_</ref>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classsystemc__clang_1_1FindEntryFunctions_1a1e84094f47e97c948c674a631a74b6f6" kindref="member">proc_type_</ref><sp/>!=<sp/><ref refid="namespacesystemc__clang_1aee628e0c13dbaaeb824bd830dc47a138ab50339a10e1de285ac99d4c3990b8693" kindref="member">PROCESS_TYPE::NONE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a44ce48e91ea56e28e46e6cf3dca4438b" kindref="member">entry_function_list_</ref>.push_back(<ref refid="classsystemc__clang_1_1FindEntryFunctions_1a30a5efb59a564acfe4ce1cebf167d8bc" kindref="member">ef</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/>ef-&gt;constructor_stmt_<sp/>=<sp/>constructor_stmt_;</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ef-&gt;entry_name_<sp/>=<sp/>entry_name_;</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ef-&gt;proc_type_<sp/>=<sp/>proc_type_;</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a0aad58d8b2a42e496ba79519dd277a37" kindref="member">FindEntryFunctions::VisitCXXMethodDecl</ref>(CXXMethodDecl<sp/>*md)<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>os_<sp/>&lt;&lt;<sp/>&quot;\nVisitCXXMethodDecl:<sp/>&quot;<sp/>&lt;&lt;<sp/>pass_<sp/>&lt;&lt;<sp/>&quot;,<sp/>&quot;<sp/>&lt;&lt;<sp/>md-&gt;getNameAsString()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>&lt;&lt;<sp/>&quot;\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a37ec517421a5e437e5cad9ec6697db55" kindref="member">other_function_list_</ref>.push_back(md);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="classsystemc__clang_1_1FindEntryFunctions_1adefc3c1a7fc8504ac7aea94b62c16db3" kindref="member">pass_</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>os_<sp/>&lt;&lt;<sp/>&quot;\n\nPass_<sp/>1<sp/>of<sp/>VisitCXXMethodDecl\n\n&quot;;</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(CXXConstructorDecl<sp/>*<sp/>cd{dyn_cast&lt;CXXConstructorDecl&gt;(md)})<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FunctionDecl<sp/>*fd{</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cd-&gt;getBody(fd);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cd-&gt;hasBody())<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a8759e45cd4ebb8290a0892f70fa5edba" kindref="member">constructor_stmt_</ref><sp/>=<sp/>cd-&gt;getBody();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>os_<sp/>&lt;&lt;<sp/>&quot;\n\nPass_<sp/>2<sp/>of<sp/>VisitCXXMethodDecl\n\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:<sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>os_<sp/>&lt;&lt;&quot;\n<sp/>md<sp/>name<sp/>:<sp/>&quot;<sp/>&lt;&lt;md-&gt;getNameAsString();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a44ce48e91ea56e28e46e6cf3dca4438b" kindref="member">entry_function_list_</ref>.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(md-&gt;getNameAsString()<sp/>==<sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a44ce48e91ea56e28e46e6cf3dca4438b" kindref="member">entry_function_list_</ref>.at(i)-&gt;getName())<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1EntryFunctionContainer" kindref="compound">EntryFunctionContainer</ref><sp/>*tmp{<ref refid="classsystemc__clang_1_1FindEntryFunctions_1a44ce48e91ea56e28e46e6cf3dca4438b" kindref="member">entry_function_list_</ref>.at(i)};</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a743ed8eda884d5ca2252e6ca7259c35f" kindref="member">entry_method_decl_</ref><sp/>=<sp/>md;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classsystemc__clang_1_1FindEntryFunctions_1a743ed8eda884d5ca2252e6ca7259c35f" kindref="member">entry_method_decl_</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp-&gt;setEntryMethod(<ref refid="classsystemc__clang_1_1FindEntryFunctions_1a743ed8eda884d5ca2252e6ca7259c35f" kindref="member">entry_method_decl_</ref>);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ef-&gt;entry_method_decl_<sp/>=<sp/>entry_method_decl_;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>os_<sp/>&lt;&lt;<sp/>&quot;\n<sp/>case<sp/>3:<sp/>&quot;<sp/>&lt;&lt;<sp/>md-&gt;getNameAsString()<sp/>&lt;&lt;<sp/>&quot;,<sp/>&quot;<sp/>&lt;&lt;<sp/>entry_name_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal">CXXRecordDecl<sp/>*<ref refid="classsystemc__clang_1_1FindEntryFunctions_1ac446832a87870fc13179e8b713574081" kindref="member">FindEntryFunctions::getEntryCXXRecordDecl</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>assert(<ref refid="classsystemc__clang_1_1FindEntryFunctions_1a0847c1c40aabb1c90939d929a63187a7" kindref="member">entry_cxx_record_decl_</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a0847c1c40aabb1c90939d929a63187a7" kindref="member">entry_cxx_record_decl_</ref>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal">CXXMethodDecl<sp/>*<ref refid="classsystemc__clang_1_1FindEntryFunctions_1aa0f2f247b3a02230180881351537a0a5" kindref="member">FindEntryFunctions::getEntryMethodDecl</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>assert(<ref refid="classsystemc__clang_1_1FindEntryFunctions_1a743ed8eda884d5ca2252e6ca7259c35f" kindref="member">entry_method_decl_</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a743ed8eda884d5ca2252e6ca7259c35f" kindref="member">entry_method_decl_</ref>;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a673209f6cc96685a46af0fc5b6a3310b" kindref="member">FindEntryFunctions::dump</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a693c60bf6a806b7323ce13ed1070230f" kindref="member">os_</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n<sp/>==============<sp/>FindEntryFunction<sp/>===============\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a693c60bf6a806b7323ce13ed1070230f" kindref="member">os_</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n:&gt;<sp/>Print<sp/>Entry<sp/>Function<sp/>informtion<sp/>for<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1af6b692f7f5e419504f6d9c6c7194e656" kindref="member">_d</ref>-&gt;getNameAsString()</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a44ce48e91ea56e28e46e6cf3dca4438b" kindref="member">entry_function_list_</ref>.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1EntryFunctionContainer" kindref="compound">EntryFunctionContainer</ref><sp/>*<ref refid="classsystemc__clang_1_1FindEntryFunctions_1a30a5efb59a564acfe4ce1cebf167d8bc" kindref="member">ef</ref><sp/>=<sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a44ce48e91ea56e28e46e6cf3dca4438b" kindref="member">entry_function_list_</ref>[i];</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a693c60bf6a806b7323ce13ed1070230f" kindref="member">os_</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n:&gt;<sp/>Entry<sp/>function<sp/>name:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a30a5efb59a564acfe4ce1cebf167d8bc" kindref="member">ef</ref>-&gt;<ref refid="classsystemc__clang_1_1EntryFunctionContainer_1a8c4e6135b1fc18475ffd1ed6351925ea" kindref="member">getName</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,<sp/>process<sp/>type:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="classsystemc__clang_1_1FindEntryFunctions_1a30a5efb59a564acfe4ce1cebf167d8bc" kindref="member">ef</ref>-&gt;<ref refid="classsystemc__clang_1_1EntryFunctionContainer_1ad8229147a1e4fa479126e3761da2f202" kindref="member">getProcessType</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacesystemc__clang_1aee628e0c13dbaaeb824bd830dc47a138a57f8b9e1bf05e9058d703c68ac2d53b0" kindref="member">PROCESS_TYPE::THREAD</ref>:</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a693c60bf6a806b7323ce13ed1070230f" kindref="member">os_</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>SC_THREAD\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacesystemc__clang_1aee628e0c13dbaaeb824bd830dc47a138a725e74fd6435d86483781e2bd8e9d2c7" kindref="member">PROCESS_TYPE::METHOD</ref>:</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a693c60bf6a806b7323ce13ed1070230f" kindref="member">os_</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>SC_METHOD\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespacesystemc__clang_1aee628e0c13dbaaeb824bd830dc47a138ac8d304bc25d6596b687ba2798223dd32" kindref="member">PROCESS_TYPE::CTHREAD</ref>:</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a693c60bf6a806b7323ce13ed1070230f" kindref="member">os_</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>SC_CTHREAD\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a693c60bf6a806b7323ce13ed1070230f" kindref="member">os_</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>NONE\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a693c60bf6a806b7323ce13ed1070230f" kindref="member">os_</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:&gt;<sp/>CXXMethodDecl<sp/>addr:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a30a5efb59a564acfe4ce1cebf167d8bc" kindref="member">ef</ref>-&gt;<ref refid="classsystemc__clang_1_1EntryFunctionContainer_1a956d0b7c6e78ddb05b020323097d6ed7" kindref="member">getEntryMethod</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ef-&gt;entry_method_decl_-&gt;dump();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a693c60bf6a806b7323ce13ed1070230f" kindref="member">os_</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n<sp/>==============<sp/>END<sp/>FindEntryFunction<sp/>===============\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a693c60bf6a806b7323ce13ed1070230f" kindref="member">os_</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a7414ce6160d09ea8539f4513bc204338" kindref="member">FindEntryFunctions::entryFunctionVectorType</ref><sp/>*</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><ref refid="classsystemc__clang_1_1FindEntryFunctions_1af7a21991fe8d8e3b5789c28dcb4001bc" kindref="member">FindEntryFunctions::getEntryFunctions</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a7414ce6160d09ea8539f4513bc204338" kindref="member">entryFunctionVectorType</ref>(<ref refid="classsystemc__clang_1_1FindEntryFunctions_1a44ce48e91ea56e28e46e6cf3dca4438b" kindref="member">entry_function_list_</ref>);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal">vector&lt;CXXMethodDecl<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a6f7589522be2c6e22585a950afc07d73" kindref="member">FindEntryFunctions::getOtherFunctions</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a37ec517421a5e437e5cad9ec6697db55" kindref="member">other_function_list_</ref>;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1ab69b3a5704295d3655b6f77405506b1d" kindref="member">FindEntryFunctions::getEntryName</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a673b7911bddb00776acbd6a80bc757f4" kindref="member">entry_name_</ref>;<sp/>}</highlight></codeline>
+    </programlisting>
+    <location file="src/matchers/FindEntryFunctions.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,157 @@
+\hypertarget{classsystemc__clang_1_1FindTLMInterfaces}{}\doxysection{systemc\+\_\+clang\+::Find\+TLMInterfaces Class Reference}
+\label{classsystemc__clang_1_1FindTLMInterfaces}\index{systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}}
+
+
+{\ttfamily \#include $<$Find\+TLMInterfaces.\+h$>$}
+
+
+
+Inheritance diagram for systemc\+\_\+clang\+::Find\+TLMInterfaces\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{classsystemc__clang_1_1FindTLMInterfaces__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for systemc\+\_\+clang\+::Find\+TLMInterfaces\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{classsystemc__clang_1_1FindTLMInterfaces__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ string, \mbox{\hyperlink{classsystemc__clang_1_1FindTemplateTypes}{Find\+Template\+Types}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_a7ec171b2fc273ec1012eb9b9d3a5d3a8}{interface\+Type}}
+\item 
+typedef std\+::pair$<$ string, \mbox{\hyperlink{classsystemc__clang_1_1FindTemplateTypes}{Find\+Template\+Types}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_af3ae5d086da23f9985633a6ea89cfc22}{kv\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_ad9f625f0649f5c02363f0d8bb258c170}{Find\+TLMInterfaces}} (CXXRecord\+Decl $\ast$, llvm\+::raw\+\_\+ostream \&)
+\item 
+virtual \mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_a1d69a242e7bc88173a38b7cca5bbb5e2}{$\sim$\+Find\+TLMInterfaces}} ()
+\item 
+virtual bool \mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_ab5ddfd1d00d11a10750c850e41d83b37}{Visit\+Field\+Decl}} (Field\+Decl $\ast$)
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_a7ec171b2fc273ec1012eb9b9d3a5d3a8}{interface\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_a4d4c18ed22cb13db65adf9f227216449}{get\+Input\+Interfaces}} ()
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_a7ec171b2fc273ec1012eb9b9d3a5d3a8}{interface\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_af1af50f52696772f60128dd5311e987e}{get\+Output\+Interfaces}} ()
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_a7ec171b2fc273ec1012eb9b9d3a5d3a8}{interface\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_abbd673e1caef50580434b32dccf739b5}{get\+Input\+Output\+Interfaces}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_ad947f1e56ae65901cb8f0b1d38f8bff2}{dump}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+llvm\+::raw\+\_\+ostream \& \mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_a7feb7b27cadca0cd0362552ea2ee4cc5}{\+\_\+os}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_a7ec171b2fc273ec1012eb9b9d3a5d3a8}{interface\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_aa08968acff3477361e7d916494dbf04d}{\+\_\+in\+Interfaces}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_a7ec171b2fc273ec1012eb9b9d3a5d3a8}{interface\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_a25d27b3f394c691071aa3497c52cd9c7}{\+\_\+out\+Interfaces}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_a7ec171b2fc273ec1012eb9b9d3a5d3a8}{interface\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_a646b49d4c33474ccbaee8c220c82eab3}{\+\_\+inout\+Interfaces}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTLMInterfaces_a7ec171b2fc273ec1012eb9b9d3a5d3a8}\label{classsystemc__clang_1_1FindTLMInterfaces_a7ec171b2fc273ec1012eb9b9d3a5d3a8}} 
+\index{systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}!interfaceType@{interfaceType}}
+\index{interfaceType@{interfaceType}!systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}}
+\doxysubsubsection{\texorpdfstring{interfaceType}{interfaceType}}
+{\footnotesize\ttfamily typedef std\+::map$<$string, \mbox{\hyperlink{classsystemc__clang_1_1FindTemplateTypes}{Find\+Template\+Types}} $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_a7ec171b2fc273ec1012eb9b9d3a5d3a8}{systemc\+\_\+clang\+::\+Find\+TLMInterfaces\+::interface\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTLMInterfaces_af3ae5d086da23f9985633a6ea89cfc22}\label{classsystemc__clang_1_1FindTLMInterfaces_af3ae5d086da23f9985633a6ea89cfc22}} 
+\index{systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}!kvType@{kvType}}
+\index{kvType@{kvType}!systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}}
+\doxysubsubsection{\texorpdfstring{kvType}{kvType}}
+{\footnotesize\ttfamily typedef std\+::pair$<$string, \mbox{\hyperlink{classsystemc__clang_1_1FindTemplateTypes}{Find\+Template\+Types}} $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_af3ae5d086da23f9985633a6ea89cfc22}{systemc\+\_\+clang\+::\+Find\+TLMInterfaces\+::kv\+Type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTLMInterfaces_ad9f625f0649f5c02363f0d8bb258c170}\label{classsystemc__clang_1_1FindTLMInterfaces_ad9f625f0649f5c02363f0d8bb258c170}} 
+\index{systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}!FindTLMInterfaces@{FindTLMInterfaces}}
+\index{FindTLMInterfaces@{FindTLMInterfaces}!systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}}
+\doxysubsubsection{\texorpdfstring{FindTLMInterfaces()}{FindTLMInterfaces()}}
+{\footnotesize\ttfamily Find\+TLMInterfaces\+::\+Find\+TLMInterfaces (\begin{DoxyParamCaption}\item[{CXXRecord\+Decl $\ast$}]{d,  }\item[{llvm\+::raw\+\_\+ostream \&}]{os }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTLMInterfaces_a1d69a242e7bc88173a38b7cca5bbb5e2}\label{classsystemc__clang_1_1FindTLMInterfaces_a1d69a242e7bc88173a38b7cca5bbb5e2}} 
+\index{systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}!````~FindTLMInterfaces@{$\sim$FindTLMInterfaces}}
+\index{````~FindTLMInterfaces@{$\sim$FindTLMInterfaces}!systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}}
+\doxysubsubsection{\texorpdfstring{$\sim$FindTLMInterfaces()}{~FindTLMInterfaces()}}
+{\footnotesize\ttfamily Find\+TLMInterfaces\+::$\sim$\+Find\+TLMInterfaces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTLMInterfaces_ad947f1e56ae65901cb8f0b1d38f8bff2}\label{classsystemc__clang_1_1FindTLMInterfaces_ad947f1e56ae65901cb8f0b1d38f8bff2}} 
+\index{systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}!dump@{dump}}
+\index{dump@{dump}!systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void Find\+TLMInterfaces\+::dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTLMInterfaces_a4d4c18ed22cb13db65adf9f227216449}\label{classsystemc__clang_1_1FindTLMInterfaces_a4d4c18ed22cb13db65adf9f227216449}} 
+\index{systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}!getInputInterfaces@{getInputInterfaces}}
+\index{getInputInterfaces@{getInputInterfaces}!systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}}
+\doxysubsubsection{\texorpdfstring{getInputInterfaces()}{getInputInterfaces()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_a7ec171b2fc273ec1012eb9b9d3a5d3a8}{Find\+TLMInterfaces\+::interface\+Type}} Find\+TLMInterfaces\+::get\+Input\+Interfaces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTLMInterfaces_abbd673e1caef50580434b32dccf739b5}\label{classsystemc__clang_1_1FindTLMInterfaces_abbd673e1caef50580434b32dccf739b5}} 
+\index{systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}!getInputOutputInterfaces@{getInputOutputInterfaces}}
+\index{getInputOutputInterfaces@{getInputOutputInterfaces}!systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}}
+\doxysubsubsection{\texorpdfstring{getInputOutputInterfaces()}{getInputOutputInterfaces()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_a7ec171b2fc273ec1012eb9b9d3a5d3a8}{Find\+TLMInterfaces\+::interface\+Type}} Find\+TLMInterfaces\+::get\+Input\+Output\+Interfaces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTLMInterfaces_af1af50f52696772f60128dd5311e987e}\label{classsystemc__clang_1_1FindTLMInterfaces_af1af50f52696772f60128dd5311e987e}} 
+\index{systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}!getOutputInterfaces@{getOutputInterfaces}}
+\index{getOutputInterfaces@{getOutputInterfaces}!systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}}
+\doxysubsubsection{\texorpdfstring{getOutputInterfaces()}{getOutputInterfaces()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_a7ec171b2fc273ec1012eb9b9d3a5d3a8}{Find\+TLMInterfaces\+::interface\+Type}} Find\+TLMInterfaces\+::get\+Output\+Interfaces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTLMInterfaces_ab5ddfd1d00d11a10750c850e41d83b37}\label{classsystemc__clang_1_1FindTLMInterfaces_ab5ddfd1d00d11a10750c850e41d83b37}} 
+\index{systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}!VisitFieldDecl@{VisitFieldDecl}}
+\index{VisitFieldDecl@{VisitFieldDecl}!systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}}
+\doxysubsubsection{\texorpdfstring{VisitFieldDecl()}{VisitFieldDecl()}}
+{\footnotesize\ttfamily bool Find\+TLMInterfaces\+::\+Visit\+Field\+Decl (\begin{DoxyParamCaption}\item[{Field\+Decl $\ast$}]{fd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This is sometype we don\textquotesingle{}t know about.
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTLMInterfaces_aa08968acff3477361e7d916494dbf04d}\label{classsystemc__clang_1_1FindTLMInterfaces_aa08968acff3477361e7d916494dbf04d}} 
+\index{systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}!\_inInterfaces@{\_inInterfaces}}
+\index{\_inInterfaces@{\_inInterfaces}!systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}}
+\doxysubsubsection{\texorpdfstring{\_inInterfaces}{\_inInterfaces}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_a7ec171b2fc273ec1012eb9b9d3a5d3a8}{interface\+Type}} systemc\+\_\+clang\+::\+Find\+TLMInterfaces\+::\+\_\+in\+Interfaces\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTLMInterfaces_a646b49d4c33474ccbaee8c220c82eab3}\label{classsystemc__clang_1_1FindTLMInterfaces_a646b49d4c33474ccbaee8c220c82eab3}} 
+\index{systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}!\_inoutInterfaces@{\_inoutInterfaces}}
+\index{\_inoutInterfaces@{\_inoutInterfaces}!systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}}
+\doxysubsubsection{\texorpdfstring{\_inoutInterfaces}{\_inoutInterfaces}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_a7ec171b2fc273ec1012eb9b9d3a5d3a8}{interface\+Type}} systemc\+\_\+clang\+::\+Find\+TLMInterfaces\+::\+\_\+inout\+Interfaces\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTLMInterfaces_a7feb7b27cadca0cd0362552ea2ee4cc5}\label{classsystemc__clang_1_1FindTLMInterfaces_a7feb7b27cadca0cd0362552ea2ee4cc5}} 
+\index{systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}!\_os@{\_os}}
+\index{\_os@{\_os}!systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}}
+\doxysubsubsection{\texorpdfstring{\_os}{\_os}}
+{\footnotesize\ttfamily llvm\+::raw\+\_\+ostream\& systemc\+\_\+clang\+::\+Find\+TLMInterfaces\+::\+\_\+os\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindTLMInterfaces_a25d27b3f394c691071aa3497c52cd9c7}\label{classsystemc__clang_1_1FindTLMInterfaces_a25d27b3f394c691071aa3497c52cd9c7}} 
+\index{systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}!\_outInterfaces@{\_outInterfaces}}
+\index{\_outInterfaces@{\_outInterfaces}!systemc\_clang::FindTLMInterfaces@{systemc\_clang::FindTLMInterfaces}}
+\doxysubsubsection{\texorpdfstring{\_outInterfaces}{\_outInterfaces}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindTLMInterfaces_a7ec171b2fc273ec1012eb9b9d3a5d3a8}{interface\+Type}} systemc\+\_\+clang\+::\+Find\+TLMInterfaces\+::\+\_\+out\+Interfaces\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/matchers/\mbox{\hyperlink{FindTLMInterfaces_8h}{Find\+TLMInterfaces.\+h}}\item 
+src/matchers/\mbox{\hyperlink{FindTLMInterfaces_8cpp}{Find\+TLMInterfaces.\+cpp}}\end{DoxyCompactItemize}

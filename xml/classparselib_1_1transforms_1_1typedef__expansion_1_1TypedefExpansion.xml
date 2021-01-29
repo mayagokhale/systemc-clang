@@ -1,0 +1,685 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion" kind="class" language="Python" prot="public">
+    <compoundname>parselib::transforms::typedef_expansion::TypedefExpansion</compoundname>
+    <basecompoundref refid="classparselib_1_1transforms_1_1top__down_1_1TopDown" prot="public" virt="non-virtual">parselib.transforms.top_down.TopDown</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a17e7f2f395a64011f0dd9c76082c8d02" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.transforms.typedef_expansion.TypedefExpansion::types</definition>
+        <argsstring></argsstring>
+        <name>types</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="16" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a7b7dd721e7f60557aa15063f8c05f8c8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.transforms.typedef_expansion.TypedefExpansion::expanded</definition>
+        <argsstring></argsstring>
+        <name>expanded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="18" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a63540a238bda2e39aeb00d78c8cce708" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.transforms.typedef_expansion.TypedefExpansion::current_module</definition>
+        <argsstring></argsstring>
+        <name>current_module</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="19" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a7e4e3c11ad9a54ae4caef16f86ac36a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.__init__</definition>
+        <argsstring>(self, types)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a17e7f2f395a64011f0dd9c76082c8d02" kindref="member">types</ref></type>
+          <defname>types</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="14" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="14" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a8be7697fff82674b74ab721ec11581e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.hsensvars</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hsensvars</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>expand identifiers in sensitivity list with fields</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="141" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="141" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1aef2b127a8ffd4b16d19434e4f43148e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.modportsiglist</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>modportsiglist</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="161" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="161" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a7a780c227e6f44f81c59fdd32df25fbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.stmt</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>stmt</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="326" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="326" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a55a704f117a4e41384ad78e696c9d5f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.hprocess</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hprocess</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>add another scope for a process</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="350" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="350" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1ae76e54fc300d8397756153518e758a3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.hfunctionparams</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hfunctionparams</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="358" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="358" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a199551cb6d3289cf96810730b9b999fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.hmethodcall</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hmethodcall</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="365" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="365" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1af7af7710caca7a69e26ca79851bacbf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.vardecl</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>vardecl</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>for variable expansion in statement</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="385" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="385" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a8ac066a3f4d939e880f54aa846c4777a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.hfunctionlocalvars</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hfunctionlocalvars</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="391" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="391" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a90eaeb250fbaae6d595cffd16edee5ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.hmodinitblock</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hmodinitblock</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>expands the hmodinitblock
+hmodinitblock includes a initialization block and portdecl block, both of which can include
+aggregated types
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="419" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="419" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1aaf65f2b8a7a0f8148c0a5eca8bfe579b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.portbindinglist</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>portbindinglist</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="428" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="428" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1ac0d23d00f77803f0fff0222505ad2ed0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.hmodule</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hmodule</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>add another scope for a module</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="464" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="464" bodyend="471"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a3b4c4e63144562fb83a1875cf57fd78c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.__expand_htype</definition>
+        <argsstring>(self, htype)</argsstring>
+        <name>__expand_htype</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>htype</type>
+          <defname>htype</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>expand non-primitive htype into primitive sub-field type</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="21" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="21" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a16d97a3a3e0b5393824e13d2919c106f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.__expand_typeinfo</definition>
+        <argsstring>(self, typeinfo)</argsstring>
+        <name>__expand_typeinfo</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>typeinfo</type>
+          <defname>typeinfo</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="64" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="64" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a8c664a5fba120a348c064acda0bb6500" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.__expand_helper</definition>
+        <argsstring>(self, portdecl, typeinfo)</argsstring>
+        <name>__expand_helper</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>portdecl</type>
+          <defname>portdecl</defname>
+        </param>
+        <param>
+          <type>typeinfo</type>
+          <defname>typeinfo</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>portdecl is the name:
+Tree(outportdecl, [Token(ID, &apos;dout&apos;)])
+typeinfo is the real type info:
+Tree(htypeinfo, [Tree(htype, [Token(TYPESTR, &apos;sc_out&apos;), Tree(htype, [Token(TYPESTR, &apos;fp_t&apos;), 52, 11])])])
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="71" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="71" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a5a4c110ba1033ddfbd31d86812aed2c7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.__expand_portdecltype</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>__expand_portdecltype</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>The expansion is achieved by first traverse the type subtree to detect the expandable type,
+then, any parent path is duplicated
+An example of tree:
+Tree(portdecltype, [Tree(inportdecl, [Token(ID, &apos;clk&apos;)]), Tree(htypeinfo,
+    [Tree(htype, [Token(TYPESTR, &apos;sc_in&apos;), Tree(htype, [Token(TYPESTR, &apos;_Bool&apos;)])])])])
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="90" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="90" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a32e44279d3729db7d8be3b00a59e0dfd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.__expand_vardecltype</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>__expand_vardecltype</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="102" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="102" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1abdbca8d5fc91037a55fb9eb26bf5395d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.__expand_sigdecltype</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>__expand_sigdecltype</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="138" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="138" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a0968a2827251de24a0ca81a5f4ffd8cd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.__get_expandable_type_from_htype</definition>
+        <argsstring>(self, htype)</argsstring>
+        <name>__get_expandable_type_from_htype</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>htype</type>
+          <defname>htype</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="230" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="230" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a003c1cda98b4300226741a0df2834ae7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.__get_expandable_var_from_tree</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>__get_expandable_var_from_tree</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="237" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="237" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a97d30c2f56ab36ba812bfa2cd0dc7a80" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.__append_to_expandable_var_to_tree</definition>
+        <argsstring>(self, tree, field_name)</argsstring>
+        <name>__append_to_expandable_var_to_tree</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <param>
+          <type>field_name</type>
+          <defname>field_name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>append the field_name to the expandable variable in tree</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="259" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="259" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a5ba617801f2b9208b8a0ed92b2584272" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.__expand_blkassign</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>__expand_blkassign</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>detects the expandable variable on lhs and rhs and
+expand them with the fields</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="277" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="277" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a5f54894aa30dfb360d060af713948f4a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.__expanded_type</definition>
+        <argsstring>(self, var_name)</argsstring>
+        <name>__expanded_type</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>var_name</type>
+          <defname>var_name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="339" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="339" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1ab77ebcd3ab80a2f3bcb10f9f4aa0cb39" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.__set_expanded</definition>
+        <argsstring>(self, var_name, var_type)</argsstring>
+        <name>__set_expanded</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>var_name</type>
+          <defname>var_name</defname>
+        </param>
+        <param>
+          <type>var_type</type>
+          <defname>var_type</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="345" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="345" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a128749a3317f5b8fd82551f74adb6e99" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_expansion.TypedefExpansion.__expand_vardecl_in_tree_children</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>__expand_vardecl_in_tree_children</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="396" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="396" bodyend="418"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Expands block assignment of custom types into primitive types</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>parselib.transforms.typedef_expansion.TypedefExpansion</label>
+        <link refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>parselib.transforms.top_down.TopDown</label>
+        <link refid="classparselib_1_1transforms_1_1top__down_1_1TopDown"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Interpreter</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>parselib.transforms.typedef_expansion.TypedefExpansion</label>
+        <link refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>parselib.transforms.top_down.TopDown</label>
+        <link refid="classparselib_1_1transforms_1_1top__down_1_1TopDown"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Interpreter</label>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/parselib/transforms/typedef_expansion.py" line="12" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_expansion.py" bodystart="12" bodyend="471"/>
+    <listofallmembers>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a97d30c2f56ab36ba812bfa2cd0dc7a80" prot="private" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>__append_to_expandable_var_to_tree</name></member>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1a2738f9bf2467d410d3990343dcaf88ff" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>__default__</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a5ba617801f2b9208b8a0ed92b2584272" prot="private" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>__expand_blkassign</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a8c664a5fba120a348c064acda0bb6500" prot="private" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>__expand_helper</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a3b4c4e63144562fb83a1875cf57fd78c" prot="private" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>__expand_htype</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a5a4c110ba1033ddfbd31d86812aed2c7" prot="private" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>__expand_portdecltype</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1abdbca8d5fc91037a55fb9eb26bf5395d" prot="private" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>__expand_sigdecltype</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a16d97a3a3e0b5393824e13d2919c106f" prot="private" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>__expand_typeinfo</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a128749a3317f5b8fd82551f74adb6e99" prot="private" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>__expand_vardecl_in_tree_children</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a32e44279d3729db7d8be3b00a59e0dfd" prot="private" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>__expand_vardecltype</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a5f54894aa30dfb360d060af713948f4a" prot="private" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>__expanded_type</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a0968a2827251de24a0ca81a5f4ffd8cd" prot="private" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>__get_expandable_type_from_htype</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a003c1cda98b4300226741a0df2834ae7" prot="private" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>__get_expandable_var_from_tree</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a7e4e3c11ad9a54ae4caef16f86ac36a0" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>__init__</name></member>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1aba7572132ec76ea47811c9d077763441" prot="public" virt="non-virtual" ambiguityscope="parselib::transforms::top_down::TopDown."><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>__init__</name></member>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1a7064a163977352a2b47acbf7e388116c" prot="private" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>__push_up</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1ab77ebcd3ab80a2f3bcb10f9f4aa0cb39" prot="private" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>__set_expanded</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a63540a238bda2e39aeb00d78c8cce708" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>current_module</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a7b7dd721e7f60557aa15063f8c05f8c8" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>expanded</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a8ac066a3f4d939e880f54aa846c4777a" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>hfunctionlocalvars</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1ae76e54fc300d8397756153518e758a3c" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>hfunctionparams</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a199551cb6d3289cf96810730b9b999fa" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>hmethodcall</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a90eaeb250fbaae6d595cffd16edee5ba" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>hmodinitblock</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1ac0d23d00f77803f0fff0222505ad2ed0" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>hmodule</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a55a704f117a4e41384ad78e696c9d5f4" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>hprocess</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a8be7697fff82674b74ab721ec11581e3" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>hsensvars</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1aef2b127a8ffd4b16d19434e4f43148e6" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>modportsiglist</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1aaf65f2b8a7a0f8148c0a5eca8bfe579b" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>portbindinglist</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a7a780c227e6f44f81c59fdd32df25fbb" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>stmt</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1a17e7f2f395a64011f0dd9c76082c8d02" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>types</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion_1af7af7710caca7a69e26ca79851bacbf7" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_expansion::TypedefExpansion</scope><name>vardecl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

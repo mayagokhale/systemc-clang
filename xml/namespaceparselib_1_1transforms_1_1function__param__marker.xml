@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceparselib_1_1transforms_1_1function__param__marker" kind="namespace" language="Python">
+    <compoundname>parselib::transforms::function_param_marker</compoundname>
+    <innerclass refid="classparselib_1_1transforms_1_1function__param__marker_1_1FunctionParamMarker" prot="public">parselib::transforms::function_param_marker::FunctionParamMarker</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="plugins/hdl/parselib/transforms/function_param_marker.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

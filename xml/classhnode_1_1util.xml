@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classhnode_1_1util" kind="class" language="C++" prot="public">
+    <compoundname>hnode::util</compoundname>
+    <includes refid="hNode_8h" local="no">hNode.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classhnode_1_1util_1aa328c7a165b1c61c2f40826d13a98391" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int hnode::util::numstr</definition>
+        <argsstring></argsstring>
+        <name>numstr</name>
+        <initializer>= 6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/hNode.h" line="195" column="16" bodyfile="plugins/hdl/hNode.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhnode_1_1util_1a942d5e2825dbec1bca7b9e3174420d66" prot="public" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string hnode::util::scbuiltintype[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>scbuiltintype</name>
+        <initializer>= {
+      &quot;sc_uint&quot;,
+      &quot;sc_int&quot;,
+      &quot;sc_bigint&quot;,
+      &quot;sc_biguint&quot;,
+      &quot;sc_bv&quot;,
+      &quot;sc_logic&quot;
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/hNode.h" line="196" column="18" bodyfile="plugins/hdl/hNode.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhnode_1_1util_1a452e348d557d610adb1462cb0039b7b7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hnode::util::scbtlen[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>scbtlen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/hNode.h" line="204" column="9" bodyfile="plugins/hdl/hNode.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhnode_1_1util_1a2f939b759f2612426d6e6832256c4228" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hnode::util::util</definition>
+        <argsstring>()</argsstring>
+        <name>util</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/hNode.h" line="206" column="5" bodyfile="plugins/hdl/hNode.h" bodystart="206" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classhnode_1_1util_1a40c1447431ed1788a1a4a03e13f7005d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hnode::util::~util</definition>
+        <argsstring>()</argsstring>
+        <name>~util</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/hNode.h" line="210" column="5" bodyfile="plugins/hdl/hNode.h" bodystart="210" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classhnode_1_1util_1a53db35005ca79755b09244b48dffe069" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hnode::util::isSCBuiltinType</definition>
+        <argsstring>(string tstring)</argsstring>
+        <name>isSCBuiltinType</name>
+        <param>
+          <type>string</type>
+          <declname>tstring</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/hNode.h" line="222" column="18" bodyfile="plugins/hdl/hNode.h" bodystart="222" bodyend="230"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classhnode_1_1util_1af510b612fdd0ce12ab898c842d3f6736" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void hnode::util::make_ident</definition>
+        <argsstring>(string &amp;nm)</argsstring>
+        <name>make_ident</name>
+        <param>
+          <type>string &amp;</type>
+          <declname>nm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/hNode.h" line="212" column="24" bodyfile="plugins/hdl/hNode.h" bodystart="212" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classhnode_1_1util_1a97860daf2ea8e7d8680a28896c2548b7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool hnode::util::isSCType</definition>
+        <argsstring>(string tstring)</argsstring>
+        <name>isSCType</name>
+        <param>
+          <type>string</type>
+          <declname>tstring</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/hNode.h" line="232" column="24" bodyfile="plugins/hdl/hNode.h" bodystart="232" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classhnode_1_1util_1aec9118a21d646bbc50205199825839fd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool hnode::util::isposint</definition>
+        <argsstring>(const std::string &amp;str)</argsstring>
+        <name>isposint</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/hNode.h" line="257" column="24" bodyfile="plugins/hdl/hNode.h" bodystart="257" bodyend="261"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The util class provides small utility functions to generate and recognize C++ and SystemC conformant identifiers. </para>
+    </detaileddescription>
+    <location file="plugins/hdl/hNode.h" line="193" column="3" bodyfile="plugins/hdl/hNode.h" bodystart="193" bodyend="263"/>
+    <listofallmembers>
+      <member refid="classhnode_1_1util_1aec9118a21d646bbc50205199825839fd" prot="public" virt="non-virtual"><scope>hnode::util</scope><name>isposint</name></member>
+      <member refid="classhnode_1_1util_1a53db35005ca79755b09244b48dffe069" prot="public" virt="non-virtual"><scope>hnode::util</scope><name>isSCBuiltinType</name></member>
+      <member refid="classhnode_1_1util_1a97860daf2ea8e7d8680a28896c2548b7" prot="public" virt="non-virtual"><scope>hnode::util</scope><name>isSCType</name></member>
+      <member refid="classhnode_1_1util_1af510b612fdd0ce12ab898c842d3f6736" prot="public" virt="non-virtual"><scope>hnode::util</scope><name>make_ident</name></member>
+      <member refid="classhnode_1_1util_1aa328c7a165b1c61c2f40826d13a98391" prot="public" virt="non-virtual"><scope>hnode::util</scope><name>numstr</name></member>
+      <member refid="classhnode_1_1util_1a452e348d557d610adb1462cb0039b7b7" prot="public" virt="non-virtual"><scope>hnode::util</scope><name>scbtlen</name></member>
+      <member refid="classhnode_1_1util_1a942d5e2825dbec1bca7b9e3174420d66" prot="public" virt="non-virtual"><scope>hnode::util</scope><name>scbuiltintype</name></member>
+      <member refid="classhnode_1_1util_1a2f939b759f2612426d6e6832256c4228" prot="public" virt="non-virtual"><scope>hnode::util</scope><name>util</name></member>
+      <member refid="classhnode_1_1util_1a40c1447431ed1788a1a4a03e13f7005d" prot="public" virt="non-virtual"><scope>hnode::util</scope><name>~util</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

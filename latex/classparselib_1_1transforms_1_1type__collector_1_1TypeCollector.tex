@@ -1,0 +1,190 @@
+\hypertarget{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector}{}\doxysection{parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector Class Reference}
+\label{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector}\index{parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}}
+
+
+Inheritance diagram for parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a0a399eca7ff47fbec5477335f96bab22}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, skip=None, $\ast$args, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a720e7bb1e9ef36e5ac6ce071711184aa}{is\+\_\+module\+\_\+type}} (self, name)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a4c9c373b6d650638fd3ce2ab97351118}{get\+\_\+port\+\_\+bindings}} (self, name, parent=None)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_ad8daeb59ab572d9862b86dc7b580bbc8}{is\+\_\+custom\+\_\+type}} (self, name)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a528c757d68c4ff736f2052636b9327a8}{get\+\_\+custom\+\_\+type}} (self, name)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_ae92ab391abfef993fc022be3609d30b4}{htype}} (self, args)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_af53345b1aad31b193cdb365d2bdcd2b7}{htypedef}} (self, args)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a0b9a0d06bb171081dbc389ea9b5cae6f}{hmodule}} (self, args)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a0a2afd0adebb06de3c35bf822da38880}{hvarref}} (self, args)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_ac881bceb46761c2b2377e016acf23308}{htypeint}} (self, args)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a592e8c093dc29221da68ab2594168193}{htypefields}} (self, args)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a248409e71f0d0013ce3c2206182a40d8}{htypefield}} (self, args)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a0ba67ed15aeab840581db44cd4a48ff5}{htypetemplateparams}} (self, args)
+\item 
+def \mbox{\hyperlink{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a841abaf8f31935a498d987200c2e71e4}{htypetemplateparam}} (self, args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a1125b313e3ebf88972d6620ac0bbc5ab}{custom\+\_\+types}}
+\item 
+\mbox{\hyperlink{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a2befed09dbd2b87fcacb4180d3ce8050}{module\+\_\+types}}
+\item 
+\mbox{\hyperlink{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_abdfd8a55d0709892006259ffcf39e915}{current\+\_\+bindings}}
+\item 
+\mbox{\hyperlink{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a514fee13528b611a6ac988cc67e5f583}{current\+\_\+mod}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This pass collects all types within a hcode file.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a0a399eca7ff47fbec5477335f96bab22}\label{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a0a399eca7ff47fbec5477335f96bab22}} 
+\index{parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{skip = {\ttfamily None},  }\item[{$\ast$}]{args,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a528c757d68c4ff736f2052636b9327a8}\label{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a528c757d68c4ff736f2052636b9327a8}} 
+\index{parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}!get\_custom\_type@{get\_custom\_type}}
+\index{get\_custom\_type@{get\_custom\_type}!parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}}
+\doxysubsubsection{\texorpdfstring{get\_custom\_type()}{get\_custom\_type()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector.\+get\+\_\+custom\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a4c9c373b6d650638fd3ce2ab97351118}\label{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a4c9c373b6d650638fd3ce2ab97351118}} 
+\index{parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}!get\_port\_bindings@{get\_port\_bindings}}
+\index{get\_port\_bindings@{get\_port\_bindings}!parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}}
+\doxysubsubsection{\texorpdfstring{get\_port\_bindings()}{get\_port\_bindings()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector.\+get\+\_\+port\+\_\+bindings (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{parent = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a0b9a0d06bb171081dbc389ea9b5cae6f}\label{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a0b9a0d06bb171081dbc389ea9b5cae6f}} 
+\index{parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}!hmodule@{hmodule}}
+\index{hmodule@{hmodule}!parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}}
+\doxysubsubsection{\texorpdfstring{hmodule()}{hmodule()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector.\+hmodule (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_ae92ab391abfef993fc022be3609d30b4}\label{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_ae92ab391abfef993fc022be3609d30b4}} 
+\index{parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}!htype@{htype}}
+\index{htype@{htype}!parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}}
+\doxysubsubsection{\texorpdfstring{htype()}{htype()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector.\+htype (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_af53345b1aad31b193cdb365d2bdcd2b7}\label{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_af53345b1aad31b193cdb365d2bdcd2b7}} 
+\index{parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}!htypedef@{htypedef}}
+\index{htypedef@{htypedef}!parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}}
+\doxysubsubsection{\texorpdfstring{htypedef()}{htypedef()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector.\+htypedef (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a248409e71f0d0013ce3c2206182a40d8}\label{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a248409e71f0d0013ce3c2206182a40d8}} 
+\index{parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}!htypefield@{htypefield}}
+\index{htypefield@{htypefield}!parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}}
+\doxysubsubsection{\texorpdfstring{htypefield()}{htypefield()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector.\+htypefield (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a592e8c093dc29221da68ab2594168193}\label{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a592e8c093dc29221da68ab2594168193}} 
+\index{parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}!htypefields@{htypefields}}
+\index{htypefields@{htypefields}!parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}}
+\doxysubsubsection{\texorpdfstring{htypefields()}{htypefields()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector.\+htypefields (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_ac881bceb46761c2b2377e016acf23308}\label{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_ac881bceb46761c2b2377e016acf23308}} 
+\index{parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}!htypeint@{htypeint}}
+\index{htypeint@{htypeint}!parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}}
+\doxysubsubsection{\texorpdfstring{htypeint()}{htypeint()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector.\+htypeint (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a841abaf8f31935a498d987200c2e71e4}\label{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a841abaf8f31935a498d987200c2e71e4}} 
+\index{parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}!htypetemplateparam@{htypetemplateparam}}
+\index{htypetemplateparam@{htypetemplateparam}!parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}}
+\doxysubsubsection{\texorpdfstring{htypetemplateparam()}{htypetemplateparam()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector.\+htypetemplateparam (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a0ba67ed15aeab840581db44cd4a48ff5}\label{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a0ba67ed15aeab840581db44cd4a48ff5}} 
+\index{parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}!htypetemplateparams@{htypetemplateparams}}
+\index{htypetemplateparams@{htypetemplateparams}!parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}}
+\doxysubsubsection{\texorpdfstring{htypetemplateparams()}{htypetemplateparams()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector.\+htypetemplateparams (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a0a2afd0adebb06de3c35bf822da38880}\label{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a0a2afd0adebb06de3c35bf822da38880}} 
+\index{parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}!hvarref@{hvarref}}
+\index{hvarref@{hvarref}!parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}}
+\doxysubsubsection{\texorpdfstring{hvarref()}{hvarref()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector.\+hvarref (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_ad8daeb59ab572d9862b86dc7b580bbc8}\label{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_ad8daeb59ab572d9862b86dc7b580bbc8}} 
+\index{parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}!is\_custom\_type@{is\_custom\_type}}
+\index{is\_custom\_type@{is\_custom\_type}!parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}}
+\doxysubsubsection{\texorpdfstring{is\_custom\_type()}{is\_custom\_type()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector.\+is\+\_\+custom\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a720e7bb1e9ef36e5ac6ce071711184aa}\label{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a720e7bb1e9ef36e5ac6ce071711184aa}} 
+\index{parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}!is\_module\_type@{is\_module\_type}}
+\index{is\_module\_type@{is\_module\_type}!parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}}
+\doxysubsubsection{\texorpdfstring{is\_module\_type()}{is\_module\_type()}}
+{\footnotesize\ttfamily def parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector.\+is\+\_\+module\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_abdfd8a55d0709892006259ffcf39e915}\label{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_abdfd8a55d0709892006259ffcf39e915}} 
+\index{parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}!current\_bindings@{current\_bindings}}
+\index{current\_bindings@{current\_bindings}!parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}}
+\doxysubsubsection{\texorpdfstring{current\_bindings}{current\_bindings}}
+{\footnotesize\ttfamily parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector.\+current\+\_\+bindings}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a514fee13528b611a6ac988cc67e5f583}\label{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a514fee13528b611a6ac988cc67e5f583}} 
+\index{parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}!current\_mod@{current\_mod}}
+\index{current\_mod@{current\_mod}!parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}}
+\doxysubsubsection{\texorpdfstring{current\_mod}{current\_mod}}
+{\footnotesize\ttfamily parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector.\+current\+\_\+mod}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a1125b313e3ebf88972d6620ac0bbc5ab}\label{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a1125b313e3ebf88972d6620ac0bbc5ab}} 
+\index{parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}!custom\_types@{custom\_types}}
+\index{custom\_types@{custom\_types}!parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}}
+\doxysubsubsection{\texorpdfstring{custom\_types}{custom\_types}}
+{\footnotesize\ttfamily parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector.\+custom\+\_\+types}
+
+\mbox{\Hypertarget{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a2befed09dbd2b87fcacb4180d3ce8050}\label{classparselib_1_1transforms_1_1type__collector_1_1TypeCollector_a2befed09dbd2b87fcacb4180d3ce8050}} 
+\index{parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}!module\_types@{module\_types}}
+\index{module\_types@{module\_types}!parselib.transforms.type\_collector.TypeCollector@{parselib.transforms.type\_collector.TypeCollector}}
+\doxysubsubsection{\texorpdfstring{module\_types}{module\_types}}
+{\footnotesize\ttfamily parselib.\+transforms.\+type\+\_\+collector.\+Type\+Collector.\+module\+\_\+types}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+plugins/hdl/parselib/transforms/\mbox{\hyperlink{type__collector_8py}{type\+\_\+collector.\+py}}\end{DoxyCompactItemize}

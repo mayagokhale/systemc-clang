@@ -1,0 +1,435 @@
+\hypertarget{classsc__ast__matchers_1_1PortMatcher}{}\doxysection{sc\+\_\+ast\+\_\+matchers\+::Port\+Matcher Class Reference}
+\label{classsc__ast__matchers_1_1PortMatcher}\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+
+
+Class \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher}{Port\+Matcher}}.  
+
+
+
+
+{\ttfamily \#include $<$Port\+Matcher.\+h$>$}
+
+
+
+Inheritance diagram for sc\+\_\+ast\+\_\+matchers\+::Port\+Matcher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classsc__ast__matchers_1_1PortMatcher__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sc\+\_\+ast\+\_\+matchers\+::Port\+Matcher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classsc__ast__matchers_1_1PortMatcher__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ std\+::tuple$<$ std\+::string, \mbox{\hyperlink{classsystemc__clang_1_1PortDecl}{Port\+Decl}} $\ast$ $>$ $>$ \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \& \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a999daf8b4930ebb7910de642011227db}{get\+Clock\+Ports}} () const
+\item 
+const \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \& \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a931f9cd871638761ba1442053aca90a7}{get\+Input\+Ports}} () const
+\item 
+const \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \& \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ab6015537c8e1640a738da4e406923fe2}{get\+Output\+Ports}} () const
+\item 
+const \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \& \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a1ad8937d9f60d552594f8f3fdedb0e18}{get\+In\+Out\+Ports}} () const
+\item 
+const \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \& \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a65778692eb11492e527165156e90ea18}{get\+Other\+Vars}} () const
+\item 
+const \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \& \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae61a181de0ab202424e9735dab85a456}{get\+Signals}} () const
+\item 
+const \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \& \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_acbae38d79009ad6c41e31eb4deb935a7}{get\+Submodules}} () const
+\item 
+const \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \& \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a2ab5f114faa28b64cd7082c4964fe2f1}{get\+Input\+Stream\+Ports}} () const
+\item 
+const \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \& \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a77709066aca9433c605accb3dfcde857}{get\+Output\+Stream\+Ports}} () const
+\item 
+const \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \& \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a0a3bb14d0f664ad16baad96c92e3b54d}{get\+Ports}} () const
+\begin{DoxyCompactList}\small\item\em Returns the identified ports. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a1bd74e34abdc8377be310d1f1580fc05}{Port\+Matcher}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a21e6809bbd32312c91c46e677489ed16}{make\+Field\+Matcher}} (llvm\+::\+String\+Ref name)
+\begin{DoxyCompactList}\small\item\em AST matcher to detect field declarations. \end{DoxyCompactList}\item 
+auto \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_aa23d0e0720b102dd9f5b99cc2af9da4f}{make\+Signal\+Array\+Type}} (const std\+::string \&name)
+\item 
+auto \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a8386ce39015a0c2e27b7abd022b2331c}{signal\+Matcher}} (const std\+::string \&name)
+\item 
+auto \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ac45ad8918c6b3ace857842a6e41eb7d6}{make\+Signal\+Matcher}} (llvm\+::\+String\+Ref name)
+\item 
+auto \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_add66f655ad7ede0fe79c9b339ccba482}{make\+Array\+Type\+Matcher}} (const std\+::string \&name)
+\item 
+auto \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_aa216994927873cee14ae2d889fb6f382}{port\+Name\+Matcher}} (const std\+::string \&name)
+\item 
+auto \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a6062254c872b265293c9a384f8ec3f39}{make\+Port\+Has\+Name\+Matcher}} (llvm\+::\+String\+Ref name)
+\item 
+auto \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a70ceea1e69e277a55c60533d42117ed0}{make\+Port\+Has\+Named\+Decl\+Name\+Matcher}} (llvm\+::\+String\+Ref name)
+\item 
+auto \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a9b33046ea76702cc1c8d163b75ce5e4d}{make\+Array\+Sub\+Module}} (llvm\+::\+String\+Ref name)
+\item 
+auto \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a6b4fe3147cce017779723220a7860064}{make\+Member\+Is\+Sub\+Module}} ()
+\item 
+{\footnotesize template$<$typename Node\+Type $>$ }\\auto \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a3d8d06b809af592cc82099c54fa93368}{check\+Match}} (const std\+::string \&name, const Match\+Finder\+::\+Match\+Result \&result)
+\item 
+void \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a20ca4349a2d84d35992a77ad30805430}{print\+Template\+Arguments}} (\mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \&found\+\_\+ports)
+\item 
+{\footnotesize template$<$typename T $>$ }\\auto \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ac537904be7197f770dfcc317481cc624}{parse\+Template\+Type}} (const T $\ast$fd)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a4d4a0d38c8dcfd0cca88fdd4056fa92d}{insert\+\_\+port}} (\mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \&port, T $\ast$decl, bool is\+Field\+Decl=true)
+\item 
+void \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a399a97f258fecfb0c5bca9de84a92822}{register\+Matchers}} (Match\+Finder \&finder)
+\item 
+virtual void \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ad9f8dff551d34080d67d973c119edab8}{run}} (const Match\+Finder\+::\+Match\+Result \&result)
+\item 
+void \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae641d2f5b01bb74dba999630d3b779c2}{dump}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a6c9455bf67e1f10d2f466b787fe86eed}{clock\+\_\+ports\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Separate out the member declarations found within a SystemC module. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a6cd9c1fbdce7a63e2290869a3a2d91bd}{in\+\_\+ports\+\_\+}}
+\item 
+\mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a6c758be3a03eda8017b63e7b1d26005f}{out\+\_\+ports\+\_\+}}
+\item 
+\mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ac8656e52700fdf69ef385e6053f413a6}{inout\+\_\+ports\+\_\+}}
+\item 
+\mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_aad7fa3383018549914978aa2ae70cbe0}{other\+\_\+fields\+\_\+}}
+\item 
+\mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_abf60489f8beb59c611631acf505ec127}{signal\+\_\+fields\+\_\+}}
+\item 
+\mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a9ed1d0cc8e4537b8862a0422640e9550}{instream\+\_\+ports\+\_\+}}
+\item 
+\mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a1871cef913dd1e3f60e698b9b70e429e}{outstream\+\_\+ports\+\_\+}}
+\item 
+\mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_aee2cffb6787abffd58c2fb924e41c0bb}{sc\+\_\+ports\+\_\+}}
+\item 
+\mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_a3bf521271c460c87b76f2e4dcce26463}{submodules\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Store the declaration of submodules. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher}{Port\+Matcher}}. 
+
+This class identifies a SystemC module\textquotesingle{}s port declaration, and nested submodules as well. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}\label{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!MemberDeclType@{MemberDeclType}}
+\index{MemberDeclType@{MemberDeclType}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{MemberDeclType}{MemberDeclType}}
+{\footnotesize\ttfamily typedef std\+::vector$<$std\+::tuple$<$std\+::string, \mbox{\hyperlink{classsystemc__clang_1_1PortDecl}{Port\+Decl}} $\ast$$>$ $>$ \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::\+Member\+Decl\+Type}}}
+
+A vector of tuples that holds the name of the port, and a pointer to Port\+Decl. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a1bd74e34abdc8377be310d1f1580fc05}\label{classsc__ast__matchers_1_1PortMatcher_a1bd74e34abdc8377be310d1f1580fc05}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!PortMatcher@{PortMatcher}}
+\index{PortMatcher@{PortMatcher}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{PortMatcher()}{PortMatcher()}}
+{\footnotesize\ttfamily sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::\+Port\+Matcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a3d8d06b809af592cc82099c54fa93368}\label{classsc__ast__matchers_1_1PortMatcher_a3d8d06b809af592cc82099c54fa93368}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!checkMatch@{checkMatch}}
+\index{checkMatch@{checkMatch}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{checkMatch()}{checkMatch()}}
+{\footnotesize\ttfamily template$<$typename Node\+Type $>$ \\
+auto sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::check\+Match (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const Match\+Finder\+::\+Match\+Result \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_ae641d2f5b01bb74dba999630d3b779c2}\label{classsc__ast__matchers_1_1PortMatcher_ae641d2f5b01bb74dba999630d3b779c2}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!dump@{dump}}
+\index{dump@{dump}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a999daf8b4930ebb7910de642011227db}\label{classsc__ast__matchers_1_1PortMatcher_a999daf8b4930ebb7910de642011227db}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!getClockPorts@{getClockPorts}}
+\index{getClockPorts@{getClockPorts}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{getClockPorts()}{getClockPorts()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}}\& sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::get\+Clock\+Ports (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the identified clock ports. \mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a1ad8937d9f60d552594f8f3fdedb0e18}\label{classsc__ast__matchers_1_1PortMatcher_a1ad8937d9f60d552594f8f3fdedb0e18}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!getInOutPorts@{getInOutPorts}}
+\index{getInOutPorts@{getInOutPorts}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{getInOutPorts()}{getInOutPorts()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}}\& sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::get\+In\+Out\+Ports (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the identified inout ports. \mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a931f9cd871638761ba1442053aca90a7}\label{classsc__ast__matchers_1_1PortMatcher_a931f9cd871638761ba1442053aca90a7}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!getInputPorts@{getInputPorts}}
+\index{getInputPorts@{getInputPorts}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{getInputPorts()}{getInputPorts()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}}\& sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::get\+Input\+Ports (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the identified input ports. \mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a2ab5f114faa28b64cd7082c4964fe2f1}\label{classsc__ast__matchers_1_1PortMatcher_a2ab5f114faa28b64cd7082c4964fe2f1}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!getInputStreamPorts@{getInputStreamPorts}}
+\index{getInputStreamPorts@{getInputStreamPorts}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{getInputStreamPorts()}{getInputStreamPorts()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}}\& sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::get\+Input\+Stream\+Ports (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the identified sc\+\_\+stream input ports. \mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a65778692eb11492e527165156e90ea18}\label{classsc__ast__matchers_1_1PortMatcher_a65778692eb11492e527165156e90ea18}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!getOtherVars@{getOtherVars}}
+\index{getOtherVars@{getOtherVars}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{getOtherVars()}{getOtherVars()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}}\& sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::get\+Other\+Vars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the identified variables that are not ports or signals. \mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_ab6015537c8e1640a738da4e406923fe2}\label{classsc__ast__matchers_1_1PortMatcher_ab6015537c8e1640a738da4e406923fe2}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!getOutputPorts@{getOutputPorts}}
+\index{getOutputPorts@{getOutputPorts}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{getOutputPorts()}{getOutputPorts()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}}\& sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::get\+Output\+Ports (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the identified output ports. \mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a77709066aca9433c605accb3dfcde857}\label{classsc__ast__matchers_1_1PortMatcher_a77709066aca9433c605accb3dfcde857}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!getOutputStreamPorts@{getOutputStreamPorts}}
+\index{getOutputStreamPorts@{getOutputStreamPorts}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{getOutputStreamPorts()}{getOutputStreamPorts()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}}\& sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::get\+Output\+Stream\+Ports (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the identified sc\+\_\+stream output ports. \mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a0a3bb14d0f664ad16baad96c92e3b54d}\label{classsc__ast__matchers_1_1PortMatcher_a0a3bb14d0f664ad16baad96c92e3b54d}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!getPorts@{getPorts}}
+\index{getPorts@{getPorts}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{getPorts()}{getPorts()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}}\& sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::get\+Ports (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the identified ports. 
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_ae61a181de0ab202424e9735dab85a456}\label{classsc__ast__matchers_1_1PortMatcher_ae61a181de0ab202424e9735dab85a456}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!getSignals@{getSignals}}
+\index{getSignals@{getSignals}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{getSignals()}{getSignals()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}}\& sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::get\+Signals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the identified signals. \mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_acbae38d79009ad6c41e31eb4deb935a7}\label{classsc__ast__matchers_1_1PortMatcher_acbae38d79009ad6c41e31eb4deb935a7}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!getSubmodules@{getSubmodules}}
+\index{getSubmodules@{getSubmodules}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{getSubmodules()}{getSubmodules()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}}\& sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::get\+Submodules (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the identified submodules. \mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a4d4a0d38c8dcfd0cca88fdd4056fa92d}\label{classsc__ast__matchers_1_1PortMatcher_a4d4a0d38c8dcfd0cca88fdd4056fa92d}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!insert\_port@{insert\_port}}
+\index{insert\_port@{insert\_port}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{insert\_port()}{insert\_port()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::insert\+\_\+port (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \&}]{port,  }\item[{T $\ast$}]{decl,  }\item[{bool}]{is\+Field\+Decl = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Cast it to see if it\textquotesingle{}s array type.\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a9b33046ea76702cc1c8d163b75ce5e4d}\label{classsc__ast__matchers_1_1PortMatcher_a9b33046ea76702cc1c8d163b75ce5e4d}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!makeArraySubModule@{makeArraySubModule}}
+\index{makeArraySubModule@{makeArraySubModule}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{makeArraySubModule()}{makeArraySubModule()}}
+{\footnotesize\ttfamily auto sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::make\+Array\+Sub\+Module (\begin{DoxyParamCaption}\item[{llvm\+::\+String\+Ref}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_add66f655ad7ede0fe79c9b339ccba482}\label{classsc__ast__matchers_1_1PortMatcher_add66f655ad7ede0fe79c9b339ccba482}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!makeArrayTypeMatcher@{makeArrayTypeMatcher}}
+\index{makeArrayTypeMatcher@{makeArrayTypeMatcher}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{makeArrayTypeMatcher()}{makeArrayTypeMatcher()}}
+{\footnotesize\ttfamily auto sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::make\+Array\+Type\+Matcher (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a21e6809bbd32312c91c46e677489ed16}\label{classsc__ast__matchers_1_1PortMatcher_a21e6809bbd32312c91c46e677489ed16}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!makeFieldMatcher@{makeFieldMatcher}}
+\index{makeFieldMatcher@{makeFieldMatcher}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{makeFieldMatcher()}{makeFieldMatcher()}}
+{\footnotesize\ttfamily auto sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::make\+Field\+Matcher (\begin{DoxyParamCaption}\item[{llvm\+::\+String\+Ref}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+AST matcher to detect field declarations. 
+
+The generic field matcher has the following conditions.
+\begin{DoxyItemize}
+\item It is in the main provided file (not in the library files).
+\item It is derived from sc\+\_\+module
+\item For each child that is a Field\+Decl,
+\begin{DoxyItemize}
+\item The type of it is a C++ class whose class name is \char`\"{}name\char`\"{}
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a6b4fe3147cce017779723220a7860064}\label{classsc__ast__matchers_1_1PortMatcher_a6b4fe3147cce017779723220a7860064}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!makeMemberIsSubModule@{makeMemberIsSubModule}}
+\index{makeMemberIsSubModule@{makeMemberIsSubModule}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{makeMemberIsSubModule()}{makeMemberIsSubModule()}}
+{\footnotesize\ttfamily auto sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::make\+Member\+Is\+Sub\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a70ceea1e69e277a55c60533d42117ed0}\label{classsc__ast__matchers_1_1PortMatcher_a70ceea1e69e277a55c60533d42117ed0}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!makePortHasNamedDeclNameMatcher@{makePortHasNamedDeclNameMatcher}}
+\index{makePortHasNamedDeclNameMatcher@{makePortHasNamedDeclNameMatcher}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{makePortHasNamedDeclNameMatcher()}{makePortHasNamedDeclNameMatcher()}}
+{\footnotesize\ttfamily auto sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::make\+Port\+Has\+Named\+Decl\+Name\+Matcher (\begin{DoxyParamCaption}\item[{llvm\+::\+String\+Ref}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is a matcher for sc\+\_\+in\+\_\+clk since it uses a Named\+Decl. It has the following conditions\+:
+\begin{DoxyItemize}
+\item It must be a Field\+Decl,
+\begin{DoxyItemize}
+\item It has a type that is an array whose type has a name \char`\"{}name\char`\"{}.
+\item Or, it has a type that is a Named\+Decl whose name is \char`\"{}name\char`\"{}. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a6062254c872b265293c9a384f8ec3f39}\label{classsc__ast__matchers_1_1PortMatcher_a6062254c872b265293c9a384f8ec3f39}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!makePortHasNameMatcher@{makePortHasNameMatcher}}
+\index{makePortHasNameMatcher@{makePortHasNameMatcher}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{makePortHasNameMatcher()}{makePortHasNameMatcher()}}
+{\footnotesize\ttfamily auto sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::make\+Port\+Has\+Name\+Matcher (\begin{DoxyParamCaption}\item[{llvm\+::\+String\+Ref}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_aa23d0e0720b102dd9f5b99cc2af9da4f}\label{classsc__ast__matchers_1_1PortMatcher_aa23d0e0720b102dd9f5b99cc2af9da4f}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!makeSignalArrayType@{makeSignalArrayType}}
+\index{makeSignalArrayType@{makeSignalArrayType}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{makeSignalArrayType()}{makeSignalArrayType()}}
+{\footnotesize\ttfamily auto sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::make\+Signal\+Array\+Type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is a matcher to identify sc\+\_\+signal. The reason for this matcher is for it to match arrays of sc\+\_\+signals as well. The conditions are as follows\+:
+\begin{DoxyItemize}
+\item It must be a Field\+Decl
+\begin{DoxyItemize}
+\item It must have a type that is either an array whose type is a c++ class derived from a class name called \char`\"{}name\char`\"{}
+\item Or, it is has a type that is a c++ class that is derived from class name \char`\"{}name\char`\"{}. 
+\end{DoxyItemize}
+\end{DoxyItemize}\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_ac45ad8918c6b3ace857842a6e41eb7d6}\label{classsc__ast__matchers_1_1PortMatcher_ac45ad8918c6b3ace857842a6e41eb7d6}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!makeSignalMatcher@{makeSignalMatcher}}
+\index{makeSignalMatcher@{makeSignalMatcher}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{makeSignalMatcher()}{makeSignalMatcher()}}
+{\footnotesize\ttfamily auto sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::make\+Signal\+Matcher (\begin{DoxyParamCaption}\item[{llvm\+::\+String\+Ref}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_ac537904be7197f770dfcc317481cc624}\label{classsc__ast__matchers_1_1PortMatcher_ac537904be7197f770dfcc317481cc624}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!parseTemplateType@{parseTemplateType}}
+\index{parseTemplateType@{parseTemplateType}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{parseTemplateType()}{parseTemplateType()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+auto sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::parse\+Template\+Type (\begin{DoxyParamCaption}\item[{const T $\ast$}]{fd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_aa216994927873cee14ae2d889fb6f382}\label{classsc__ast__matchers_1_1PortMatcher_aa216994927873cee14ae2d889fb6f382}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!portNameMatcher@{portNameMatcher}}
+\index{portNameMatcher@{portNameMatcher}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{portNameMatcher()}{portNameMatcher()}}
+{\footnotesize\ttfamily auto sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::port\+Name\+Matcher (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is a matcher for sc\+\_\+port. It has the following conditions\+:
+\begin{DoxyItemize}
+\item It must be a Field\+Decl
+\begin{DoxyItemize}
+\item It has a type that is an array whose type has a name \char`\"{}name\char`\"{}
+\item Or, it has a type that is a C++ class whose class name is \char`\"{}name\char`\"{}.
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+I\textquotesingle{}m not sure how to do 1d,2d,3d array matching other than the way it is done. The key idea is to see that there is an array\+Type() within an array\+Type(), and so on. \mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a20ca4349a2d84d35992a77ad30805430}\label{classsc__ast__matchers_1_1PortMatcher_a20ca4349a2d84d35992a77ad30805430}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!printTemplateArguments@{printTemplateArguments}}
+\index{printTemplateArguments@{printTemplateArguments}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{printTemplateArguments()}{printTemplateArguments()}}
+{\footnotesize\ttfamily void sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::print\+Template\+Arguments (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} \&}]{found\+\_\+ports }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a399a97f258fecfb0c5bca9de84a92822}\label{classsc__ast__matchers_1_1PortMatcher_a399a97f258fecfb0c5bca9de84a92822}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!registerMatchers@{registerMatchers}}
+\index{registerMatchers@{registerMatchers}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{registerMatchers()}{registerMatchers()}}
+{\footnotesize\ttfamily void sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::register\+Matchers (\begin{DoxyParamCaption}\item[{Match\+Finder \&}]{finder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Matchers for compositions. These matchers are used to form other matchers. ~\newline
+
+
+Matches all the SystemC Ports.\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_ad9f8dff551d34080d67d973c119edab8}\label{classsc__ast__matchers_1_1PortMatcher_ad9f8dff551d34080d67d973c119edab8}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!run@{run}}
+\index{run@{run}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily virtual void sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::run (\begin{DoxyParamCaption}\item[{const Match\+Finder\+::\+Match\+Result \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Array types
+
+Submodules
+
+Not a submodule and not a port\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a8386ce39015a0c2e27b7abd022b2331c}\label{classsc__ast__matchers_1_1PortMatcher_a8386ce39015a0c2e27b7abd022b2331c}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!signalMatcher@{signalMatcher}}
+\index{signalMatcher@{signalMatcher}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{signalMatcher()}{signalMatcher()}}
+{\footnotesize\ttfamily auto sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::signal\+Matcher (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a6c9455bf67e1f10d2f466b787fe86eed}\label{classsc__ast__matchers_1_1PortMatcher_a6c9455bf67e1f10d2f466b787fe86eed}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!clock\_ports\_@{clock\_ports\_}}
+\index{clock\_ports\_@{clock\_ports\_}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{clock\_ports\_}{clock\_ports\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::clock\+\_\+ports\+\_\+}
+
+
+
+Separate out the member declarations found within a SystemC module. 
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a6cd9c1fbdce7a63e2290869a3a2d91bd}\label{classsc__ast__matchers_1_1PortMatcher_a6cd9c1fbdce7a63e2290869a3a2d91bd}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!in\_ports\_@{in\_ports\_}}
+\index{in\_ports\_@{in\_ports\_}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{in\_ports\_}{in\_ports\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::in\+\_\+ports\+\_\+}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_ac8656e52700fdf69ef385e6053f413a6}\label{classsc__ast__matchers_1_1PortMatcher_ac8656e52700fdf69ef385e6053f413a6}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!inout\_ports\_@{inout\_ports\_}}
+\index{inout\_ports\_@{inout\_ports\_}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{inout\_ports\_}{inout\_ports\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::inout\+\_\+ports\+\_\+}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a9ed1d0cc8e4537b8862a0422640e9550}\label{classsc__ast__matchers_1_1PortMatcher_a9ed1d0cc8e4537b8862a0422640e9550}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!instream\_ports\_@{instream\_ports\_}}
+\index{instream\_ports\_@{instream\_ports\_}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{instream\_ports\_}{instream\_ports\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::instream\+\_\+ports\+\_\+}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_aad7fa3383018549914978aa2ae70cbe0}\label{classsc__ast__matchers_1_1PortMatcher_aad7fa3383018549914978aa2ae70cbe0}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!other\_fields\_@{other\_fields\_}}
+\index{other\_fields\_@{other\_fields\_}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{other\_fields\_}{other\_fields\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::other\+\_\+fields\+\_\+}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a6c758be3a03eda8017b63e7b1d26005f}\label{classsc__ast__matchers_1_1PortMatcher_a6c758be3a03eda8017b63e7b1d26005f}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!out\_ports\_@{out\_ports\_}}
+\index{out\_ports\_@{out\_ports\_}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{out\_ports\_}{out\_ports\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::out\+\_\+ports\+\_\+}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a1871cef913dd1e3f60e698b9b70e429e}\label{classsc__ast__matchers_1_1PortMatcher_a1871cef913dd1e3f60e698b9b70e429e}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!outstream\_ports\_@{outstream\_ports\_}}
+\index{outstream\_ports\_@{outstream\_ports\_}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{outstream\_ports\_}{outstream\_ports\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::outstream\+\_\+ports\+\_\+}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_aee2cffb6787abffd58c2fb924e41c0bb}\label{classsc__ast__matchers_1_1PortMatcher_aee2cffb6787abffd58c2fb924e41c0bb}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!sc\_ports\_@{sc\_ports\_}}
+\index{sc\_ports\_@{sc\_ports\_}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{sc\_ports\_}{sc\_ports\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::sc\+\_\+ports\+\_\+}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_abf60489f8beb59c611631acf505ec127}\label{classsc__ast__matchers_1_1PortMatcher_abf60489f8beb59c611631acf505ec127}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!signal\_fields\_@{signal\_fields\_}}
+\index{signal\_fields\_@{signal\_fields\_}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{signal\_fields\_}{signal\_fields\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::signal\+\_\+fields\+\_\+}
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1PortMatcher_a3bf521271c460c87b76f2e4dcce26463}\label{classsc__ast__matchers_1_1PortMatcher_a3bf521271c460c87b76f2e4dcce26463}} 
+\index{sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}!submodules\_@{submodules\_}}
+\index{submodules\_@{submodules\_}!sc\_ast\_matchers::PortMatcher@{sc\_ast\_matchers::PortMatcher}}
+\doxysubsubsection{\texorpdfstring{submodules\_}{submodules\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc__ast__matchers_1_1PortMatcher_ae8f416e37b31a66f4fa78cda64cf1f02}{Member\+Decl\+Type}} sc\+\_\+ast\+\_\+matchers\+::\+Port\+Matcher\+::submodules\+\_\+}
+
+
+
+Store the declaration of submodules. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/matchers/\mbox{\hyperlink{PortMatcher_8h}{Port\+Matcher.\+h}}\end{DoxyCompactItemize}

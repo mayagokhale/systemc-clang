@@ -1,0 +1,427 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="FindTemplateTypes_8h" kind="file" language="C++">
+    <compoundname>FindTemplateTypes.h</compoundname>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">stack</includes>
+    <includes local="yes">json.hpp</includes>
+    <includes local="yes">clang/AST/RecursiveASTVisitor.h</includes>
+    <includes local="yes">llvm/Support/raw_ostream.h</includes>
+    <includes refid="Tree_8h" local="yes">Tree.h</includes>
+    <includedby refid="FindEvents_8cpp" local="yes">src/matchers/FindEvents.cpp</includedby>
+    <includedby refid="FindPorts_8h" local="yes">src/matchers/FindPorts.h</includedby>
+    <includedby refid="FindTemplateParameters_8cpp" local="yes">src/matchers/FindTemplateParameters.cpp</includedby>
+    <includedby refid="FindTemplateTypes_8cpp" local="yes">src/matchers/FindTemplateTypes.cpp</includedby>
+    <includedby refid="FindTLMInterfaces_8cpp" local="yes">src/matchers/FindTLMInterfaces.cpp</includedby>
+    <includedby refid="FindTLMInterfaces_8h" local="yes">src/matchers/FindTLMInterfaces.h</includedby>
+    <includedby refid="EventDecl_8cpp" local="yes">src/model/EventDecl.cpp</includedby>
+    <includedby refid="InterfaceDecl_8cpp" local="yes">src/model/InterfaceDecl.cpp</includedby>
+    <includedby refid="InterfaceDecl_8h" local="yes">src/model/InterfaceDecl.h</includedby>
+    <includedby refid="PortDecl_8cpp" local="yes">src/model/PortDecl.cpp</includedby>
+    <includedby refid="SignalDecl_8cpp" local="yes">src/model/SignalDecl.cpp</includedby>
+    <incdepgraph>
+      <node id="10">
+        <label>queue</label>
+      </node>
+      <node id="7">
+        <label>llvm/Support/raw_ostream.h</label>
+      </node>
+      <node id="6">
+        <label>clang/AST/RecursiveASTVisitor.h</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>map</label>
+      </node>
+      <node id="5">
+        <label>json.hpp</label>
+      </node>
+      <node id="1">
+        <label>src/matchers/FindTemplateTypes.h</label>
+        <link refid="FindTemplateTypes_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Tree.h</label>
+        <link refid="Tree_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stack</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="17">
+        <label>src/PluginAction.h</label>
+        <link refid="PluginAction_8h"/>
+      </node>
+      <node id="32">
+        <label>src/model/InterfaceDecl.h</label>
+        <link refid="InterfaceDecl_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/matchers/FindTLMInterfaces.cpp</label>
+        <link refid="FindTLMInterfaces_8cpp"/>
+      </node>
+      <node id="21">
+        <label>plugins/hdl/HDLBody.h</label>
+        <link refid="HDLBody_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>src/SystemCClang.h</label>
+        <link refid="SystemCClang_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>src/SCuitable/GlobalSuspensionAutomata.cpp</label>
+        <link refid="GlobalSuspensionAutomata_8cpp"/>
+      </node>
+      <node id="20">
+        <label>plugins/hdl/HDLBody.cpp</label>
+        <link refid="HDLBody_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/matchers/FindTemplateParameters.cpp</label>
+        <link refid="FindTemplateParameters_8cpp"/>
+      </node>
+      <node id="30">
+        <label>src/model/EventDecl.cpp</label>
+        <link refid="EventDecl_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/matchers/FindPorts.h</label>
+        <link refid="FindPorts_8h"/>
+      </node>
+      <node id="13">
+        <label>src/model/Model.cpp</label>
+        <link refid="Model_8cpp"/>
+      </node>
+      <node id="26">
+        <label>plugins/hdl/HDLType.cpp</label>
+        <link refid="HDLType_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/matchers/FindTemplateTypes.h</label>
+        <link refid="FindTemplateTypes_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>src/matchers/PortMatcher.h</label>
+        <link refid="PortMatcher_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>src/SCuitable/GlobalSuspensionAutomata.h</label>
+        <link refid="GlobalSuspensionAutomata_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>src/model/Model.h</label>
+        <link refid="Model_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>plugins/hdl/HDLHnode.cpp</label>
+        <link refid="HDLHnode_8cpp"/>
+      </node>
+      <node id="5">
+        <label>src/matchers/FindTemplateTypes.cpp</label>
+        <link refid="FindTemplateTypes_8cpp"/>
+      </node>
+      <node id="22">
+        <label>plugins/hdl/HDLMain.h</label>
+        <link refid="HDLMain_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>src/matchers/Matchers.h</label>
+        <link refid="Matchers_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>plugins/hdl/HDLMain.cpp</label>
+        <link refid="HDLMain_8cpp"/>
+      </node>
+      <node id="33">
+        <label>src/model/PortDecl.cpp</label>
+        <link refid="PortDecl_8cpp"/>
+      </node>
+      <node id="31">
+        <label>src/model/InterfaceDecl.cpp</label>
+        <link refid="InterfaceDecl_8cpp"/>
+      </node>
+      <node id="8">
+        <label>src/model/ModuleInstance.h</label>
+        <link refid="ModuleInstance_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>src/SystemCClang.cpp</label>
+        <link refid="SystemCClang_8cpp"/>
+      </node>
+      <node id="24">
+        <label>plugins/hdl/HDLHnode.h</label>
+        <link refid="HDLHnode_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>src/matchers/NetlistMatcher.h</label>
+        <link refid="NetlistMatcher_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>src/SAPlugin.h</label>
+        <link refid="SAPlugin_8h"/>
+      </node>
+      <node id="27">
+        <label>plugins/hdl/HDLType.h</label>
+        <link refid="HDLType_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/matchers/FindEvents.cpp</label>
+        <link refid="FindEvents_8cpp"/>
+      </node>
+      <node id="34">
+        <label>src/model/SignalDecl.cpp</label>
+        <link refid="SignalDecl_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/matchers/FindTLMInterfaces.h</label>
+        <link refid="FindTLMInterfaces_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>src/SCuitable/TimeAnalysis.h</label>
+        <link refid="TimeAnalysis_8h"/>
+      </node>
+      <node id="29">
+        <label>src/model/ModuleInstance.cpp</label>
+        <link refid="ModuleInstance_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsystemc__clang_1_1TemplateType" prot="public">systemc_clang::TemplateType</innerclass>
+    <innerclass refid="classsystemc__clang_1_1FindTemplateTypes" prot="public">systemc_clang::FindTemplateTypes</innerclass>
+    <innernamespace refid="namespaceclang">clang</innernamespace>
+    <innernamespace refid="namespacesystemc__clang">systemc_clang</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_FIND_TEMPLATE_TYPES_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FIND_TEMPLATE_TYPES_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stack&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;json.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;clang/AST/RecursiveASTVisitor.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;llvm/Support/raw_ostream.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Tree_8h" kindref="compound">Tree.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceclang" kindref="compound">clang</ref><sp/>{<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Type;<sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesystemc__clang" kindref="compound">systemc_clang</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceclang" kindref="compound">clang</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="namespacesystemc__clang_1ab232545035b571c3f3cd13a4459f2d9e" kindref="member">json</ref><sp/>=<sp/><ref refid="namespacesystemc__clang_1ab232545035b571c3f3cd13a4459f2d9e" kindref="member">nlohmann::json</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Forward<sp/>declarations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>class<sp/>holds<sp/>the<sp/>name<sp/>of<sp/>the<sp/>type,<sp/>and<sp/>a<sp/>pointer<sp/>to<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>type<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="classsystemc__clang_1_1TemplateType" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsystemc__clang_1_1TemplateType" kindref="compound">TemplateType</ref><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Default<sp/>constructor.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1TemplateType" kindref="compound">TemplateType</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Overloaded<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classsystemc__clang_1_1TemplateType_1a4abdddeefdd160e4c53d9c67c4e44cb8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1TemplateType_1a4abdddeefdd160e4c53d9c67c4e44cb8" kindref="member">TemplateType</ref>(std::string,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>clang::Type<sp/>*);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>~<ref refid="classsystemc__clang_1_1TemplateType" kindref="compound">TemplateType</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1TemplateType" kindref="compound">TemplateType</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1TemplateType" kindref="compound">TemplateType</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>std::string<sp/>getTypeName()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>std::string<sp/>toString()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>clang::Type<sp/>*getTypePtr()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38" refid="classsystemc__clang_1_1TemplateType_1a0c443d55e4925c143f2c9e209fe5a567" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1TemplateType_1a0c443d55e4925c143f2c9e209fe5a567" kindref="member">dump</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41" refid="classsystemc__clang_1_1TemplateType_1a056a0a4453a2395e722e9ac87af483a6" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="classsystemc__clang_1_1TemplateType_1a056a0a4453a2395e722e9ac87af483a6" kindref="member">type_name_</ref>;</highlight></codeline>
+<codeline lineno="42" refid="classsystemc__clang_1_1TemplateType_1aed32832c653df6e1b894e21ee10dd613" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>clang::Type<sp/>*<ref refid="classsystemc__clang_1_1TemplateType_1aed32832c653df6e1b894e21ee10dd613" kindref="member">type_ptr_</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>class<sp/>is<sp/>going<sp/>to<sp/>find<sp/>the<sp/>arguments<sp/>from<sp/>templates</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classsystemc__clang_1_1FindTemplateTypes" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>RecursiveASTVisitor&lt;FindTemplateTypes&gt;<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49" refid="classsystemc__clang_1_1FindTemplateTypes_1a36fe33fbaeabb402ed67ab84bfb284c0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1TemplateType" kindref="compound">TemplateType</ref><sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes_1a36fe33fbaeabb402ed67ab84bfb284c0" kindref="member">TemplateTypePtr</ref>;</highlight></codeline>
+<codeline lineno="50" refid="classsystemc__clang_1_1FindTemplateTypes_1a7aca95e84873d0dd891c2dc53c492cfd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;TemplateTypePtr&gt;<sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes_1a7aca95e84873d0dd891c2dc53c492cfd" kindref="member">type_vector_t</ref>;</highlight></codeline>
+<codeline lineno="51" refid="classsystemc__clang_1_1FindTemplateTypes_1a7a71e9cab2cda2feca1100605e869191" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;TemplateTypePtr&gt;<sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes_1a7a71e9cab2cda2feca1100605e869191" kindref="member">argVectorType</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>typedef<sp/>tree&lt;<sp/>TemplateType<sp/>&gt;<sp/>template_arguments_type;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref><sp/>&amp;rhs);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref><sp/>*rhs);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>allows<sp/>for<sp/>template<sp/>instantiations<sp/>to<sp/>be<sp/>visited<sp/>using<sp/>RAV.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>shouldVisitTemplateInstantiations()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>VisitIntegerLiteral(IntegerLiteral<sp/>*l);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>VisitTemplateSpecializationType(</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>TemplateSpecializationType<sp/>*special_type);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>VisitTypedefType(TypedefType<sp/>*typedef_type);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>VisitCXXRecordDecl(CXXRecordDecl<sp/>*cxx_type);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>VisitRecordType(RecordType<sp/>*rt);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>VisitBuiltinType(BuiltinType<sp/>*bi_type);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>VisitDeclRefExpr(DeclRefExpr<sp/>*dre);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>~<ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Enumerate(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>clang::Type<sp/>*type);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//type_vector_t<sp/>getTemplateArgumentsType();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//std::vector&lt;std::string&gt;<sp/>getTemplateArguments();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1Tree" kindref="compound">Tree&lt;TemplateType&gt;</ref><sp/>*getTemplateArgTreePtr();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//size_t<sp/>size();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>printTemplateArguments(llvm::raw_ostream<sp/>&amp;os);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><ref refid="namespacesystemc__clang_1ab232545035b571c3f3cd13a4459f2d9e" kindref="member">json</ref><sp/>dump_json();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>(std::string,<sp/>Type*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Classes<sp/>such<sp/>as<sp/>sc_port<sp/>and<sp/>sc_in<sp/>can<sp/>have<sp/>nested<sp/>types<sp/>within<sp/>it.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>example:<sp/>sc_in&lt;<sp/>sc_int&lt;16&gt;<sp/>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>general<sp/>way<sp/>to<sp/>handle<sp/>this<sp/>would<sp/>be<sp/>to<sp/>have<sp/>a<sp/>vector<sp/>starting<sp/>from<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>outside<sp/>type<sp/>to<sp/>the<sp/>inside<sp/>type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//type_vector_t<sp/>template_types_;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classsystemc__clang_1_1FindTemplateTypes_1aaebfc9684fe0c1679fe39ad8689c06f0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1Tree" kindref="compound">Tree&lt;TemplateType&gt;</ref><sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes_1aaebfc9684fe0c1679fe39ad8689c06f0" kindref="member">template_args_</ref>;</highlight></codeline>
+<codeline lineno="94" refid="classsystemc__clang_1_1FindTemplateTypes_1a1a5a05a299d882cce7e2f99d17f85f1a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1TreeNode" kindref="compound">Tree&lt;TemplateType&gt;::TreeNodePtr</ref><sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes_1a1a5a05a299d882cce7e2f99d17f85f1a" kindref="member">current_type_node_</ref>;</highlight></codeline>
+<codeline lineno="95" refid="classsystemc__clang_1_1FindTemplateTypes_1a3e3a6f5f7cfb2ad47fb77a4253794d1b" refkind="member"><highlight class="normal"><sp/><sp/>std::stack&lt;Tree&lt;TemplateType&gt;::TreeNodePtr&gt;<sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes_1a3e3a6f5f7cfb2ad47fb77a4253794d1b" kindref="member">stack_current_node_</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>systemc_clang</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/matchers/FindTemplateTypes.h"/>
+  </compounddef>
+</doxygen>

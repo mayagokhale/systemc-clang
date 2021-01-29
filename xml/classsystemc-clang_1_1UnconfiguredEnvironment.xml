@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc-clang_1_1UnconfiguredEnvironment" kind="class" language="Python" prot="public">
+    <compoundname>systemc-clang::UnconfiguredEnvironment</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc-clang_1_1UnconfiguredEnvironment_1a5dc5299e3294bf909e80cb0a0c6d2410" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def systemc-clang.UnconfiguredEnvironment.__init__</definition>
+        <argsstring>(self, env)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>env</type>
+          <defname>env</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="39" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="39" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>raised when an environment variable is not set</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>systemc-clang.UnconfiguredEnvironment</label>
+        <link refid="classsystemc-clang_1_1UnconfiguredEnvironment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>systemc-clang.UnconfiguredEnvironment</label>
+        <link refid="classsystemc-clang_1_1UnconfiguredEnvironment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/systemc-clang.py" line="36" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="36" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classsystemc-clang_1_1UnconfiguredEnvironment_1a5dc5299e3294bf909e80cb0a0c6d2410" prot="public" virt="non-virtual"><scope>systemc-clang::UnconfiguredEnvironment</scope><name>__init__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

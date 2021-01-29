@@ -1,0 +1,89 @@
+\hypertarget{namespaceparselib_1_1utils}{}\doxysection{parselib.\+utils Namespace Reference}
+\label{namespaceparselib_1_1utils}\index{parselib.utils@{parselib.utils}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceparselib_1_1utils_a41a9e40ebc52ca075bbe7d5ecd184d34}{tidify}} (verilog, current\+\_\+indent=0, indent\+\_\+width=2)
+\item 
+def \mbox{\hyperlink{namespaceparselib_1_1utils_ab81a1e875b4ab8a6c0b13efab8be1115}{p}} (decorated)
+\item 
+def \mbox{\hyperlink{namespaceparselib_1_1utils_a9e1fe72403522f24758bb59a55be52e5}{dprint}} ($\ast$arg, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{namespaceparselib_1_1utils_a09053f88609cbe422327a1fd7af65503}{is\+\_\+tree\+\_\+type}} (t, name)
+\item 
+def \mbox{\hyperlink{namespaceparselib_1_1utils_aa5c39b6d417e8911ce6853f7524c6c82}{is\+\_\+tree\+\_\+types}} (t, names)
+\item 
+def \mbox{\hyperlink{namespaceparselib_1_1utils_a0221135d384562381f5b8a5b15940ef2}{get\+\_\+ids\+\_\+in\+\_\+tree}} (tree)
+\item 
+def \mbox{\hyperlink{namespaceparselib_1_1utils_ac40a3d79a87830f6105e7f24baadd007}{alternate\+\_\+ids}} (tree, ops)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceparselib_1_1utils_a34f9a47e153cc8a5c7939ca47f3261f0}{debug}} = True
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Utility library\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceparselib_1_1utils_ac40a3d79a87830f6105e7f24baadd007}\label{namespaceparselib_1_1utils_ac40a3d79a87830f6105e7f24baadd007}} 
+\index{parselib.utils@{parselib.utils}!alternate\_ids@{alternate\_ids}}
+\index{alternate\_ids@{alternate\_ids}!parselib.utils@{parselib.utils}}
+\doxysubsubsection{\texorpdfstring{alternate\_ids()}{alternate\_ids()}}
+{\footnotesize\ttfamily def parselib.\+utils.\+alternate\+\_\+ids (\begin{DoxyParamCaption}\item[{}]{tree,  }\item[{}]{ops }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Change the ids within a tree, given operations ops as an array of lambdas\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceparselib_1_1utils_a9e1fe72403522f24758bb59a55be52e5}\label{namespaceparselib_1_1utils_a9e1fe72403522f24758bb59a55be52e5}} 
+\index{parselib.utils@{parselib.utils}!dprint@{dprint}}
+\index{dprint@{dprint}!parselib.utils@{parselib.utils}}
+\doxysubsubsection{\texorpdfstring{dprint()}{dprint()}}
+{\footnotesize\ttfamily def parselib.\+utils.\+dprint (\begin{DoxyParamCaption}\item[{$\ast$}]{arg,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}debug utility for printing, prints line number\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceparselib_1_1utils_a0221135d384562381f5b8a5b15940ef2}\label{namespaceparselib_1_1utils_a0221135d384562381f5b8a5b15940ef2}} 
+\index{parselib.utils@{parselib.utils}!get\_ids\_in\_tree@{get\_ids\_in\_tree}}
+\index{get\_ids\_in\_tree@{get\_ids\_in\_tree}!parselib.utils@{parselib.utils}}
+\doxysubsubsection{\texorpdfstring{get\_ids\_in\_tree()}{get\_ids\_in\_tree()}}
+{\footnotesize\ttfamily def parselib.\+utils.\+get\+\_\+ids\+\_\+in\+\_\+tree (\begin{DoxyParamCaption}\item[{}]{tree }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}get all ids\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceparselib_1_1utils_a09053f88609cbe422327a1fd7af65503}\label{namespaceparselib_1_1utils_a09053f88609cbe422327a1fd7af65503}} 
+\index{parselib.utils@{parselib.utils}!is\_tree\_type@{is\_tree\_type}}
+\index{is\_tree\_type@{is\_tree\_type}!parselib.utils@{parselib.utils}}
+\doxysubsubsection{\texorpdfstring{is\_tree\_type()}{is\_tree\_type()}}
+{\footnotesize\ttfamily def parselib.\+utils.\+is\+\_\+tree\+\_\+type (\begin{DoxyParamCaption}\item[{}]{t,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check whether t is lark Tree and whether the tree type is name\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceparselib_1_1utils_aa5c39b6d417e8911ce6853f7524c6c82}\label{namespaceparselib_1_1utils_aa5c39b6d417e8911ce6853f7524c6c82}} 
+\index{parselib.utils@{parselib.utils}!is\_tree\_types@{is\_tree\_types}}
+\index{is\_tree\_types@{is\_tree\_types}!parselib.utils@{parselib.utils}}
+\doxysubsubsection{\texorpdfstring{is\_tree\_types()}{is\_tree\_types()}}
+{\footnotesize\ttfamily def parselib.\+utils.\+is\+\_\+tree\+\_\+types (\begin{DoxyParamCaption}\item[{}]{t,  }\item[{}]{names }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check whether t is lark Tree and whether the tree type is name\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceparselib_1_1utils_ab81a1e875b4ab8a6c0b13efab8be1115}\label{namespaceparselib_1_1utils_ab81a1e875b4ab8a6c0b13efab8be1115}} 
+\index{parselib.utils@{parselib.utils}!p@{p}}
+\index{p@{p}!parselib.utils@{parselib.utils}}
+\doxysubsubsection{\texorpdfstring{p()}{p()}}
+{\footnotesize\ttfamily def parselib.\+utils.\+p (\begin{DoxyParamCaption}\item[{}]{decorated }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}a decorator that helps printing out the transformation results\end{DoxyVerb}
+ \mbox{\Hypertarget{namespaceparselib_1_1utils_a41a9e40ebc52ca075bbe7d5ecd184d34}\label{namespaceparselib_1_1utils_a41a9e40ebc52ca075bbe7d5ecd184d34}} 
+\index{parselib.utils@{parselib.utils}!tidify@{tidify}}
+\index{tidify@{tidify}!parselib.utils@{parselib.utils}}
+\doxysubsubsection{\texorpdfstring{tidify()}{tidify()}}
+{\footnotesize\ttfamily def parselib.\+utils.\+tidify (\begin{DoxyParamCaption}\item[{}]{verilog,  }\item[{}]{current\+\_\+indent = {\ttfamily 0},  }\item[{}]{indent\+\_\+width = {\ttfamily 2} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}makes the generated verilog looks a bit better, may be subject to changes later\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceparselib_1_1utils_a34f9a47e153cc8a5c7939ca47f3261f0}\label{namespaceparselib_1_1utils_a34f9a47e153cc8a5c7939ca47f3261f0}} 
+\index{parselib.utils@{parselib.utils}!debug@{debug}}
+\index{debug@{debug}!parselib.utils@{parselib.utils}}
+\doxysubsubsection{\texorpdfstring{debug}{debug}}
+{\footnotesize\ttfamily bool parselib.\+utils.\+debug = True}
+

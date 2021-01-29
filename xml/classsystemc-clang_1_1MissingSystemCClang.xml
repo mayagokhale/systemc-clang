@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc-clang_1_1MissingSystemCClang" kind="class" language="Python" prot="public">
+    <compoundname>systemc-clang::MissingSystemCClang</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>raised when the systemc-clang binary is not found</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>systemc-clang.MissingSystemCClang</label>
+        <link refid="classsystemc-clang_1_1MissingSystemCClang"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>systemc-clang.MissingSystemCClang</label>
+        <link refid="classsystemc-clang_1_1MissingSystemCClang"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/systemc-clang.py" line="43" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="43" bodyend="47"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

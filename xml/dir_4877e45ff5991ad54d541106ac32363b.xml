@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_4877e45ff5991ad54d541106ac32363b" kind="dir">
+    <compoundname>plugins/hdl/parselib</compoundname>
+    <innerdir refid="dir_3b9c9f6a3c5668ea97a197dc3c80e986">plugins/hdl/parselib/transforms</innerdir>
+    <innerfile refid="____init_____8py">__init__.py</innerfile>
+    <innerfile refid="compound_8py">compound.py</innerfile>
+    <innerfile refid="grammar_8py">grammar.py</innerfile>
+    <innerfile refid="primitives_8py">primitives.py</innerfile>
+    <innerfile refid="utils_8py">utils.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="plugins/hdl/parselib/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="NotifyContainer_8cpp" kind="file" language="C++">
+    <compoundname>NotifyContainer.cpp</compoundname>
+    <includes refid="NotifyContainer_8h" local="yes">NotifyContainer.h</includes>
+    <includes local="yes">llvm/Support/raw_ostream.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>llvm/Support/raw_ostream.h</label>
+      </node>
+      <node id="4">
+        <label>clang/AST/PrettyPrinter.h</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>map</label>
+      </node>
+      <node id="2">
+        <label>NotifyContainer.h</label>
+        <link refid="NotifyContainer_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/model/NotifyContainer.cpp</label>
+        <link refid="NotifyContainer_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>clang/AST/DeclCXX.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacellvm">llvm</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="NotifyContainer_8h" kindref="compound">NotifyContainer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;llvm/Support/raw_ostream.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesystemc__clang" kindref="compound">systemc_clang</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">llvm;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="classsystemc__clang_1_1NotifyContainer_1ab93e76a62cb00892ea2ed4501ed475e1" kindref="member">NotifyContainer::~NotifyContainer</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>DO<sp/>NOT<sp/>free<sp/>anything<sp/>since<sp/>nothing<sp/>is<sp/>dynamically<sp/>allocated.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Clear<sp/>_args.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/>_args.clear();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="classsystemc__clang_1_1NotifyContainer_1a0aab8dcca4c343e8b12279ee91db72df" kindref="member">NotifyContainer::NotifyContainer</ref>(CXXMethodDecl<sp/>*m,<sp/>CallExpr<sp/>*c)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>_entryMethodDecl(m),<sp/>_astNode(c),<sp/>_numArgs(c-&gt;getNumArgs())<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Use<sp/>CXXMemberCallExpr<sp/>to<sp/>populate<sp/>the<sp/>ARgMap.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/>populateArgMap();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">NotifyContainer::NotifyContainer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1NotifyContainer" kindref="compound">NotifyContainer</ref><sp/>&amp;from)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1a880b3b35a4891b79c4480a6295b411c0" kindref="member">_entryMethodDecl</ref><sp/>=<sp/>from.<ref refid="classsystemc__clang_1_1NotifyContainer_1a880b3b35a4891b79c4480a6295b411c0" kindref="member">_entryMethodDecl</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1ad71387555da5f3bc9c98121b8dbecea8" kindref="member">_astNode</ref><sp/>=<sp/>from.<ref refid="classsystemc__clang_1_1NotifyContainer_1ad71387555da5f3bc9c98121b8dbecea8" kindref="member">_astNode</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1aaf7a37b2aafeaa938ad3ae40806721c6" kindref="member">_numArgs</ref><sp/>=<sp/>from.<ref refid="classsystemc__clang_1_1NotifyContainer_1aaf7a37b2aafeaa938ad3ae40806721c6" kindref="member">_numArgs</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>Copy<sp/>all<sp/>strings<sp/>(std::vector<sp/>handles<sp/>this)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1a0e0f45623980f0a131338f6779808072" kindref="member">_args</ref><sp/>=<sp/>from.<ref refid="classsystemc__clang_1_1NotifyContainer_1a0e0f45623980f0a131338f6779808072" kindref="member">_args</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1a7cfba08630a3b6647c609e10affd1e76" kindref="member">NotifyContainer::getNumArgs</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1aaf7a37b2aafeaa938ad3ae40806721c6" kindref="member">_numArgs</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">CXXMethodDecl<sp/>*<ref refid="classsystemc__clang_1_1NotifyContainer_1a6e89aa20250b34664883255c056f38af" kindref="member">NotifyContainer::getEntryMethod</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1a880b3b35a4891b79c4480a6295b411c0" kindref="member">_entryMethodDecl</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">CallExpr<sp/>*<ref refid="classsystemc__clang_1_1NotifyContainer_1a645f34bea02fe0e3d770696a2da1b910" kindref="member">NotifyContainer::getASTNode</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1ad71387555da5f3bc9c98121b8dbecea8" kindref="member">_astNode</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="classsystemc__clang_1_1NotifyContainer_1a6b94a9df734b4983af81964e08caaa73" kindref="member">NotifyContainer::waitArgVectorType</ref><sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1ae81acefda1a851a62a5536b7c35a8c49" kindref="member">NotifyContainer::getArgList</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1a0e0f45623980f0a131338f6779808072" kindref="member">_args</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1a3b11056c35cdbca21b1babd231e9a57d" kindref="member">NotifyContainer::getArgString</ref>(Expr<sp/>*e)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!e)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>string(</highlight><highlight class="stringliteral">&quot;NULL&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>LangOptions<sp/>LO;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>LO.CPlusPlus<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>PrintingPolicy<sp/>Policy(LO);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>TypeS;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>raw_string_ostream<sp/>s(TypeS);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>e-&gt;printPretty(s,<sp/>0,<sp/>Policy);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s.str();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1a57f0ca66d08e1507e0dd51e1dad1eaa8" kindref="member">NotifyContainer::populateArgMap</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classsystemc__clang_1_1NotifyContainer_1ad71387555da5f3bc9c98121b8dbecea8" kindref="member">_astNode</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1ad71387555da5f3bc9c98121b8dbecea8" kindref="member">_astNode</ref>-&gt;getNumArgs();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1a0e0f45623980f0a131338f6779808072" kindref="member">_args</ref>.push_back(<ref refid="classsystemc__clang_1_1NotifyContainer_1a3b11056c35cdbca21b1babd231e9a57d" kindref="member">getArgString</ref>(<ref refid="classsystemc__clang_1_1NotifyContainer_1ad71387555da5f3bc9c98121b8dbecea8" kindref="member">_astNode</ref>-&gt;getArg(i)));</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1af6bb12f1d5a0c515337644e625aa529a" kindref="member">NotifyContainer::dump</ref>(raw_ostream<sp/>&amp;os,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tabn)<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>tabn;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classsystemc__clang_1_1NotifyContainer_1a7cfba08630a3b6647c609e10affd1e76" kindref="member">getNumArgs</ref>()<sp/>&gt;<sp/>2)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;NotifyContainer<sp/>numargs:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1a7cfba08630a3b6647c609e10affd1e76" kindref="member">getNumArgs</ref>()<sp/>-<sp/>1<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>arglist:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1a7cfba08630a3b6647c609e10affd1e76" kindref="member">getNumArgs</ref>()<sp/>-<sp/>1;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&apos;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1a0e0f45623980f0a131338f6779808072" kindref="member">_args</ref>[i]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&apos;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;NotifyContainer<sp/>numargs:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1a7cfba08630a3b6647c609e10affd1e76" kindref="member">getNumArgs</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classsystemc__clang_1_1NotifyContainer_1a7cfba08630a3b6647c609e10affd1e76" kindref="member">getNumArgs</ref>()<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>arglist:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1a7cfba08630a3b6647c609e10affd1e76" kindref="member">getNumArgs</ref>();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&apos;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="classsystemc__clang_1_1NotifyContainer_1a0e0f45623980f0a131338f6779808072" kindref="member">_args</ref>[i]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&apos;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>os<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/model/NotifyContainer.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,213 @@
+\hypertarget{classsystemc__clang_1_1State}{}\doxysection{systemc\+\_\+clang\+::State Class Reference}
+\label{classsystemc__clang_1_1State}\index{systemc\_clang::State@{systemc\_clang::State}}
+
+
+{\ttfamily \#include $<$Suspension\+Automata.\+h$>$}
+
+
+
+Collaboration diagram for systemc\+\_\+clang\+::State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{classsystemc__clang_1_1State__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1State_ad37dddd460756873361f938634f0b6a4}{State}} (\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$, bool, bool, bool, bool)
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1State_afab438d92b90dc18d194dbd9c9c8bab3}{$\sim$\+State}} ()
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1State_adcde585e5b1df5f64df6f0a194c901f7}{is\+Timed}} ()
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1State_a0ab7a0ef45c4b14ee93c4164643d7316}{is\+Delta}} ()
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1State_a643dfd2a6ebe7f21bc5697433c6d11d0}{is\+Initial}} ()
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1State_a2ea429b1fcd285943367cfe8a3f65c1d}{is\+Event}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1State_ae43c91cfc56d051351a28ea1987e0d8b}{add\+Event\+Name}} (string)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1State_afae55d45430056860b2e6b3ef244f9c2}{add\+Sim\+Time}} (float)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1State_abecd2759cf4e2be06e3bf843d86730f0}{set\+Timed}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1State_a5bb9146ab23235ba40befc51df84dd9b}{set\+Delta}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1State_a060421965cdc1cec1205673a684f1619}{set\+Event}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1State_a9062e8b2a0857e87be962fda738caa3a}{set\+Initial}} ()
+\item 
+string \mbox{\hyperlink{classsystemc__clang_1_1State_a2bc5bfac607d8519452737899137b4c0}{get\+Event\+Name}} ()
+\item 
+float \mbox{\hyperlink{classsystemc__clang_1_1State_acf009bf9bd20107ee1220c4315a1222b}{get\+Sim\+Time}} ()
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1State_ac6751ed581aadfe736693c36b8bc763c}{return\+Sus\+CFGBlock}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1State_aa7e3da9b2f104c454fa113a2a43d6fb8}{\+\_\+sus\+CFGBlock}}
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1State_a864e511f166adc2dcad06254f8a7974b}{\+\_\+is\+Timed}}
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1State_a8e768289fed0c75abb45ded3aff1338b}{\+\_\+is\+Delta}}
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1State_a4b583ff3fff98b1491d594d88807704a}{\+\_\+is\+Initial}}
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1State_aaa9a268d6bfd13a99e26004493e4c341}{\+\_\+is\+Event}}
+\item 
+string \mbox{\hyperlink{classsystemc__clang_1_1State_a1119f6704b5f0cbedc82150fbcda75ff}{\+\_\+event\+Name}}
+\item 
+float \mbox{\hyperlink{classsystemc__clang_1_1State_afd087313ff6180a75f89ff5c73afec7e}{\+\_\+time\+In\+NS}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1State_ad37dddd460756873361f938634f0b6a4}\label{classsystemc__clang_1_1State_ad37dddd460756873361f938634f0b6a4}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!State@{State}}
+\index{State@{State}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{State()}{State()}}
+{\footnotesize\ttfamily State\+::\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$}]{sus\+CFG,  }\item[{bool}]{is\+Timed,  }\item[{bool}]{is\+Delta,  }\item[{bool}]{is\+Initial,  }\item[{bool}]{is\+Event }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1State_afab438d92b90dc18d194dbd9c9c8bab3}\label{classsystemc__clang_1_1State_afab438d92b90dc18d194dbd9c9c8bab3}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!````~State@{$\sim$State}}
+\index{````~State@{$\sim$State}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{$\sim$State()}{~State()}}
+{\footnotesize\ttfamily State\+::$\sim$\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1State_ae43c91cfc56d051351a28ea1987e0d8b}\label{classsystemc__clang_1_1State_ae43c91cfc56d051351a28ea1987e0d8b}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!addEventName@{addEventName}}
+\index{addEventName@{addEventName}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{addEventName()}{addEventName()}}
+{\footnotesize\ttfamily void State\+::add\+Event\+Name (\begin{DoxyParamCaption}\item[{string}]{event\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1State_afae55d45430056860b2e6b3ef244f9c2}\label{classsystemc__clang_1_1State_afae55d45430056860b2e6b3ef244f9c2}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!addSimTime@{addSimTime}}
+\index{addSimTime@{addSimTime}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{addSimTime()}{addSimTime()}}
+{\footnotesize\ttfamily void State\+::add\+Sim\+Time (\begin{DoxyParamCaption}\item[{float}]{sim\+Time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1State_a2bc5bfac607d8519452737899137b4c0}\label{classsystemc__clang_1_1State_a2bc5bfac607d8519452737899137b4c0}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!getEventName@{getEventName}}
+\index{getEventName@{getEventName}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{getEventName()}{getEventName()}}
+{\footnotesize\ttfamily string State\+::get\+Event\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1State_acf009bf9bd20107ee1220c4315a1222b}\label{classsystemc__clang_1_1State_acf009bf9bd20107ee1220c4315a1222b}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!getSimTime@{getSimTime}}
+\index{getSimTime@{getSimTime}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{getSimTime()}{getSimTime()}}
+{\footnotesize\ttfamily float State\+::get\+Sim\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1State_a0ab7a0ef45c4b14ee93c4164643d7316}\label{classsystemc__clang_1_1State_a0ab7a0ef45c4b14ee93c4164643d7316}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!isDelta@{isDelta}}
+\index{isDelta@{isDelta}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{isDelta()}{isDelta()}}
+{\footnotesize\ttfamily bool State\+::is\+Delta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1State_a2ea429b1fcd285943367cfe8a3f65c1d}\label{classsystemc__clang_1_1State_a2ea429b1fcd285943367cfe8a3f65c1d}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!isEvent@{isEvent}}
+\index{isEvent@{isEvent}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{isEvent()}{isEvent()}}
+{\footnotesize\ttfamily bool State\+::is\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1State_a643dfd2a6ebe7f21bc5697433c6d11d0}\label{classsystemc__clang_1_1State_a643dfd2a6ebe7f21bc5697433c6d11d0}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!isInitial@{isInitial}}
+\index{isInitial@{isInitial}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{isInitial()}{isInitial()}}
+{\footnotesize\ttfamily bool State\+::is\+Initial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1State_adcde585e5b1df5f64df6f0a194c901f7}\label{classsystemc__clang_1_1State_adcde585e5b1df5f64df6f0a194c901f7}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!isTimed@{isTimed}}
+\index{isTimed@{isTimed}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{isTimed()}{isTimed()}}
+{\footnotesize\ttfamily bool State\+::is\+Timed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1State_ac6751ed581aadfe736693c36b8bc763c}\label{classsystemc__clang_1_1State_ac6751ed581aadfe736693c36b8bc763c}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!returnSusCFGBlock@{returnSusCFGBlock}}
+\index{returnSusCFGBlock@{returnSusCFGBlock}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{returnSusCFGBlock()}{returnSusCFGBlock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ State\+::return\+Sus\+CFGBlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1State_a5bb9146ab23235ba40befc51df84dd9b}\label{classsystemc__clang_1_1State_a5bb9146ab23235ba40befc51df84dd9b}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!setDelta@{setDelta}}
+\index{setDelta@{setDelta}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{setDelta()}{setDelta()}}
+{\footnotesize\ttfamily void State\+::set\+Delta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1State_a060421965cdc1cec1205673a684f1619}\label{classsystemc__clang_1_1State_a060421965cdc1cec1205673a684f1619}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!setEvent@{setEvent}}
+\index{setEvent@{setEvent}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{setEvent()}{setEvent()}}
+{\footnotesize\ttfamily void State\+::set\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1State_a9062e8b2a0857e87be962fda738caa3a}\label{classsystemc__clang_1_1State_a9062e8b2a0857e87be962fda738caa3a}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!setInitial@{setInitial}}
+\index{setInitial@{setInitial}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{setInitial()}{setInitial()}}
+{\footnotesize\ttfamily void State\+::set\+Initial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1State_abecd2759cf4e2be06e3bf843d86730f0}\label{classsystemc__clang_1_1State_abecd2759cf4e2be06e3bf843d86730f0}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!setTimed@{setTimed}}
+\index{setTimed@{setTimed}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{setTimed()}{setTimed()}}
+{\footnotesize\ttfamily void State\+::set\+Timed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1State_a1119f6704b5f0cbedc82150fbcda75ff}\label{classsystemc__clang_1_1State_a1119f6704b5f0cbedc82150fbcda75ff}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!\_eventName@{\_eventName}}
+\index{\_eventName@{\_eventName}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{\_eventName}{\_eventName}}
+{\footnotesize\ttfamily string systemc\+\_\+clang\+::\+State\+::\+\_\+event\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1State_a8e768289fed0c75abb45ded3aff1338b}\label{classsystemc__clang_1_1State_a8e768289fed0c75abb45ded3aff1338b}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!\_isDelta@{\_isDelta}}
+\index{\_isDelta@{\_isDelta}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{\_isDelta}{\_isDelta}}
+{\footnotesize\ttfamily bool systemc\+\_\+clang\+::\+State\+::\+\_\+is\+Delta\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1State_aaa9a268d6bfd13a99e26004493e4c341}\label{classsystemc__clang_1_1State_aaa9a268d6bfd13a99e26004493e4c341}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!\_isEvent@{\_isEvent}}
+\index{\_isEvent@{\_isEvent}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{\_isEvent}{\_isEvent}}
+{\footnotesize\ttfamily bool systemc\+\_\+clang\+::\+State\+::\+\_\+is\+Event\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1State_a4b583ff3fff98b1491d594d88807704a}\label{classsystemc__clang_1_1State_a4b583ff3fff98b1491d594d88807704a}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!\_isInitial@{\_isInitial}}
+\index{\_isInitial@{\_isInitial}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{\_isInitial}{\_isInitial}}
+{\footnotesize\ttfamily bool systemc\+\_\+clang\+::\+State\+::\+\_\+is\+Initial\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1State_a864e511f166adc2dcad06254f8a7974b}\label{classsystemc__clang_1_1State_a864e511f166adc2dcad06254f8a7974b}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!\_isTimed@{\_isTimed}}
+\index{\_isTimed@{\_isTimed}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{\_isTimed}{\_isTimed}}
+{\footnotesize\ttfamily bool systemc\+\_\+clang\+::\+State\+::\+\_\+is\+Timed\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1State_aa7e3da9b2f104c454fa113a2a43d6fb8}\label{classsystemc__clang_1_1State_aa7e3da9b2f104c454fa113a2a43d6fb8}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!\_susCFGBlock@{\_susCFGBlock}}
+\index{\_susCFGBlock@{\_susCFGBlock}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{\_susCFGBlock}{\_susCFGBlock}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}}$\ast$ systemc\+\_\+clang\+::\+State\+::\+\_\+sus\+CFGBlock\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1State_afd087313ff6180a75f89ff5c73afec7e}\label{classsystemc__clang_1_1State_afd087313ff6180a75f89ff5c73afec7e}} 
+\index{systemc\_clang::State@{systemc\_clang::State}!\_timeInNS@{\_timeInNS}}
+\index{\_timeInNS@{\_timeInNS}!systemc\_clang::State@{systemc\_clang::State}}
+\doxysubsubsection{\texorpdfstring{\_timeInNS}{\_timeInNS}}
+{\footnotesize\ttfamily float systemc\+\_\+clang\+::\+State\+::\+\_\+time\+In\+NS\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+SCuitable/\mbox{\hyperlink{SuspensionAutomata_8h}{Suspension\+Automata.\+h}}\item 
+src/\+SCuitable/\mbox{\hyperlink{SuspensionAutomata_8cpp}{Suspension\+Automata.\+cpp}}\end{DoxyCompactItemize}

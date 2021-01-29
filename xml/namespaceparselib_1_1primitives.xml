@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceparselib_1_1primitives" kind="namespace" language="Python">
+    <compoundname>parselib::primitives</compoundname>
+    <innerclass refid="classparselib_1_1primitives_1_1TypeContext" prot="public">parselib::primitives::TypeContext</innerclass>
+    <innerclass refid="classparselib_1_1primitives_1_1Primitive" prot="public">parselib::primitives::Primitive</innerclass>
+    <innerclass refid="classparselib_1_1primitives_1_1sc__in" prot="public">parselib::primitives::sc_in</innerclass>
+    <innerclass refid="classparselib_1_1primitives_1_1____func__inout" prot="public">parselib::primitives::__func_inout</innerclass>
+    <innerclass refid="classparselib_1_1primitives_1_1sc__rvd__out" prot="public">parselib::primitives::sc_rvd_out</innerclass>
+    <innerclass refid="classparselib_1_1primitives_1_1sc__rvd__in" prot="public">parselib::primitives::sc_rvd_in</innerclass>
+    <innerclass refid="classparselib_1_1primitives_1_1sc__out" prot="public">parselib::primitives::sc_out</innerclass>
+    <innerclass refid="classparselib_1_1primitives_1_1sc__bv" prot="public">parselib::primitives::sc_bv</innerclass>
+    <innerclass refid="classparselib_1_1primitives_1_1sc__uint" prot="public">parselib::primitives::sc_uint</innerclass>
+    <innerclass refid="classparselib_1_1primitives_1_1sc__int" prot="public">parselib::primitives::sc_int</innerclass>
+    <innerclass refid="classparselib_1_1primitives_1_1sc__signal" prot="public">parselib::primitives::sc_signal</innerclass>
+    <innerclass refid="classparselib_1_1primitives_1_1array" prot="public">parselib::primitives::array</innerclass>
+    <innerclass refid="classparselib_1_1primitives_1_1cppbool" prot="public">parselib::primitives::cppbool</innerclass>
+    <innerclass refid="classparselib_1_1primitives_1_1cppint" prot="public">parselib::primitives::cppint</innerclass>
+    <innerclass refid="classparselib_1_1primitives_1_1cppuint" prot="public">parselib::primitives::cppuint</innerclass>
+    <innerclass refid="classparselib_1_1primitives_1_1cppshort" prot="public">parselib::primitives::cppshort</innerclass>
+    <innerclass refid="classparselib_1_1primitives_1_1cppushort" prot="public">parselib::primitives::cppushort</innerclass>
+    <innerclass refid="classparselib_1_1primitives_1_1sc__clock" prot="public">parselib::primitives::sc_clock</innerclass>
+    <innerclass refid="classparselib_1_1primitives_1_1vmodule" prot="public">parselib::primitives::vmodule</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Primitive types from System C and C++</verbatim> </para>
+    </detaileddescription>
+    <location file="plugins/hdl/parselib/primitives.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

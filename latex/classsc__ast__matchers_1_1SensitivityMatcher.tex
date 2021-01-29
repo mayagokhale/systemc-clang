@@ -1,0 +1,185 @@
+\hypertarget{classsc__ast__matchers_1_1SensitivityMatcher}{}\doxysection{sc\+\_\+ast\+\_\+matchers\+::Sensitivity\+Matcher Class Reference}
+\label{classsc__ast__matchers_1_1SensitivityMatcher}\index{sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}}
+
+
+Class \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher}{Sensitivity\+Matcher}}.  
+
+
+
+
+{\ttfamily \#include $<$Sensitivity\+Matcher.\+h$>$}
+
+
+
+Inheritance diagram for sc\+\_\+ast\+\_\+matchers\+::Sensitivity\+Matcher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{classsc__ast__matchers_1_1SensitivityMatcher__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for sc\+\_\+ast\+\_\+matchers\+::Sensitivity\+Matcher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{classsc__ast__matchers_1_1SensitivityMatcher__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::tuple$<$ std\+::string, clang\+::\+Value\+Decl $\ast$, clang\+::\+Member\+Expr $\ast$, clang\+::\+Decl\+Ref\+Expr $\ast$, clang\+::\+Array\+Subscript\+Expr $\ast$ $>$ \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_aafd4cb069bd8191fe9dff6e4034cbc60}{Sensitivity\+Tuple\+Type}}
+\item 
+typedef std\+::pair$<$ std\+::string, std\+::vector$<$ \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_aafd4cb069bd8191fe9dff6e4034cbc60}{Sensitivity\+Tuple\+Type}} $>$ $>$ \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_a4a1b0e3b68182be4384fe67f247b9555}{Sensitivity\+Pair\+Type}}
+\begin{DoxyCompactList}\small\item\em This is the pair for inserting key-\/value entries in the map. \end{DoxyCompactList}\item 
+typedef std\+::map$<$ std\+::string, std\+::vector$<$ \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_aafd4cb069bd8191fe9dff6e4034cbc60}{Sensitivity\+Tuple\+Type}} $>$ $>$ \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_a96b39bcbdce6458e57f9abf038d48a20}{Sense\+Map\+Type}}
+\begin{DoxyCompactList}\small\item\em The key is going to be the name of the Field\+Decl/\+Var\+Decl. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_a96b39bcbdce6458e57f9abf038d48a20}{Sense\+Map\+Type}} \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_a99d19c738a2ae450e9d459ccefdcd4ec}{get\+Sensitivity\+Map}} ()
+\begin{DoxyCompactList}\small\item\em Return the sensitivity map that has been created. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_a92bd6c2d7eac3dfaf9275c3fdba538a9}{register\+Matchers}} (Match\+Finder \&finder)
+\begin{DoxyCompactList}\small\item\em Defines the matcher, and setup the matcher. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_a06b1f9e16feadaf50e77dcfddd31cf3b}{run}} (const Match\+Finder\+::\+Match\+Result \&result)
+\begin{DoxyCompactList}\small\item\em This is the callback function whenever there is a match. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_a9beae4c7b15cd3f4b00750104dbfee00}{dump}} ()
+\begin{DoxyCompactList}\small\item\em Dump out the detected sensitivity list for every process. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_afa2eb5d64c58309f87ae5fd69afc2437}{generate\+Sensitivity\+Name}} (const std\+::vector$<$ \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_aafd4cb069bd8191fe9dff6e4034cbc60}{Sensitivity\+Tuple\+Type}} $>$ \&sense\+\_\+args)
+\begin{DoxyCompactList}\small\item\em This generates an encoded name of the argument for the sensitivity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_a96b39bcbdce6458e57f9abf038d48a20}{Sense\+Map\+Type}} \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_afcdb6aa9e91e267172669333602d17aa}{sensitivity\+\_\+}}
+\begin{DoxyCompactList}\small\item\em This is the map structure to store the identified sensitivity list. \end{DoxyCompactList}\item 
+clang\+::\+Decl\+Ref\+Expr $\ast$ \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_abd3386988ec3ebac0c4fe22e9af22a05}{process\+\_\+handle\+\_\+}}
+\begin{DoxyCompactList}\small\item\em This provides access to the SystemC process\textquotesingle{} entry function handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher}{Sensitivity\+Matcher}}. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classsc__ast__matchers_1_1SensitivityMatcher_a96b39bcbdce6458e57f9abf038d48a20}\label{classsc__ast__matchers_1_1SensitivityMatcher_a96b39bcbdce6458e57f9abf038d48a20}} 
+\index{sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}!SenseMapType@{SenseMapType}}
+\index{SenseMapType@{SenseMapType}!sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}}
+\doxysubsubsection{\texorpdfstring{SenseMapType}{SenseMapType}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, std\+::vector$<$\mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_aafd4cb069bd8191fe9dff6e4034cbc60}{Sensitivity\+Tuple\+Type}}$>$ $>$ \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_a96b39bcbdce6458e57f9abf038d48a20}{sc\+\_\+ast\+\_\+matchers\+::\+Sensitivity\+Matcher\+::\+Sense\+Map\+Type}}}
+
+
+
+The key is going to be the name of the Field\+Decl/\+Var\+Decl. 
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1SensitivityMatcher_a4a1b0e3b68182be4384fe67f247b9555}\label{classsc__ast__matchers_1_1SensitivityMatcher_a4a1b0e3b68182be4384fe67f247b9555}} 
+\index{sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}!SensitivityPairType@{SensitivityPairType}}
+\index{SensitivityPairType@{SensitivityPairType}!sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}}
+\doxysubsubsection{\texorpdfstring{SensitivityPairType}{SensitivityPairType}}
+{\footnotesize\ttfamily typedef std\+::pair$<$std\+::string, std\+::vector$<$\mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_aafd4cb069bd8191fe9dff6e4034cbc60}{Sensitivity\+Tuple\+Type}}$>$ $>$ \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_a4a1b0e3b68182be4384fe67f247b9555}{sc\+\_\+ast\+\_\+matchers\+::\+Sensitivity\+Matcher\+::\+Sensitivity\+Pair\+Type}}}
+
+
+
+This is the pair for inserting key-\/value entries in the map. 
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1SensitivityMatcher_aafd4cb069bd8191fe9dff6e4034cbc60}\label{classsc__ast__matchers_1_1SensitivityMatcher_aafd4cb069bd8191fe9dff6e4034cbc60}} 
+\index{sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}!SensitivityTupleType@{SensitivityTupleType}}
+\index{SensitivityTupleType@{SensitivityTupleType}!sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}}
+\doxysubsubsection{\texorpdfstring{SensitivityTupleType}{SensitivityTupleType}}
+{\footnotesize\ttfamily typedef std\+::tuple$<$std\+::string, clang\+::\+Value\+Decl$\ast$, clang\+::\+Member\+Expr$\ast$, clang\+::\+Decl\+Ref\+Expr$\ast$, clang\+::\+Array\+Subscript\+Expr$\ast$$>$ \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_aafd4cb069bd8191fe9dff6e4034cbc60}{sc\+\_\+ast\+\_\+matchers\+::\+Sensitivity\+Matcher\+::\+Sensitivity\+Tuple\+Type}}}
+
+A sensitivity will typically have a member field, and sometimes a call on the member field. The Value\+Decl records the Field\+Decl, and the Var\+Decl that may be used in the sensitivity list. The Member\+Expr is just a way to represent where this particular Value\+Decl was found for further parsing. The Var\+Decl$\ast$ is the process handle to which this sensitivity is bound to. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsc__ast__matchers_1_1SensitivityMatcher_a9beae4c7b15cd3f4b00750104dbfee00}\label{classsc__ast__matchers_1_1SensitivityMatcher_a9beae4c7b15cd3f4b00750104dbfee00}} 
+\index{sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}!dump@{dump}}
+\index{dump@{dump}!sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void sc\+\_\+ast\+\_\+matchers\+::\+Sensitivity\+Matcher\+::dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dump out the detected sensitivity list for every process. 
+
+This is going to print out the sensitivity list. \mbox{\Hypertarget{classsc__ast__matchers_1_1SensitivityMatcher_afa2eb5d64c58309f87ae5fd69afc2437}\label{classsc__ast__matchers_1_1SensitivityMatcher_afa2eb5d64c58309f87ae5fd69afc2437}} 
+\index{sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}!generateSensitivityName@{generateSensitivityName}}
+\index{generateSensitivityName@{generateSensitivityName}!sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}}
+\doxysubsubsection{\texorpdfstring{generateSensitivityName()}{generateSensitivityName()}}
+{\footnotesize\ttfamily std\+::string sc\+\_\+ast\+\_\+matchers\+::\+Sensitivity\+Matcher\+::generate\+Sensitivity\+Name (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_aafd4cb069bd8191fe9dff6e4034cbc60}{Sensitivity\+Tuple\+Type}} $>$ \&}]{sense\+\_\+args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+This generates an encoded name of the argument for the sensitivity. 
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1SensitivityMatcher_a99d19c738a2ae450e9d459ccefdcd4ec}\label{classsc__ast__matchers_1_1SensitivityMatcher_a99d19c738a2ae450e9d459ccefdcd4ec}} 
+\index{sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}!getSensitivityMap@{getSensitivityMap}}
+\index{getSensitivityMap@{getSensitivityMap}!sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}}
+\doxysubsubsection{\texorpdfstring{getSensitivityMap()}{getSensitivityMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_a96b39bcbdce6458e57f9abf038d48a20}{Sense\+Map\+Type}} sc\+\_\+ast\+\_\+matchers\+::\+Sensitivity\+Matcher\+::get\+Sensitivity\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the sensitivity map that has been created. 
+
+\begin{DoxyReturn}{Returns}
+A map of sensitivity lists found.
+\end{DoxyReturn}
+This method just returns the identified map of sensitivity lists. \mbox{\Hypertarget{classsc__ast__matchers_1_1SensitivityMatcher_a92bd6c2d7eac3dfaf9275c3fdba538a9}\label{classsc__ast__matchers_1_1SensitivityMatcher_a92bd6c2d7eac3dfaf9275c3fdba538a9}} 
+\index{sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}!registerMatchers@{registerMatchers}}
+\index{registerMatchers@{registerMatchers}!sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}}
+\doxysubsubsection{\texorpdfstring{registerMatchers()}{registerMatchers()}}
+{\footnotesize\ttfamily void sc\+\_\+ast\+\_\+matchers\+::\+Sensitivity\+Matcher\+::register\+Matchers (\begin{DoxyParamCaption}\item[{Match\+Finder \&}]{finder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Defines the matcher, and setup the matcher. 
+
+Add the matcher.\mbox{\Hypertarget{classsc__ast__matchers_1_1SensitivityMatcher_a06b1f9e16feadaf50e77dcfddd31cf3b}\label{classsc__ast__matchers_1_1SensitivityMatcher_a06b1f9e16feadaf50e77dcfddd31cf3b}} 
+\index{sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}!run@{run}}
+\index{run@{run}!sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily virtual void sc\+\_\+ast\+\_\+matchers\+::\+Sensitivity\+Matcher\+::run (\begin{DoxyParamCaption}\item[{const Match\+Finder\+::\+Match\+Result \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+This is the callback function whenever there is a match. 
+
+Debug code
+
+If the argument to the operator$<$$<$() is a Member\+Expr. This is the situation when we only have a Field\+Decl as a part of the sensitivity list. This is when there is no member call being invoked on the Field\+Decl.
+
+If the argument to the operator$<$$<$() is a CXXMember\+Call\+Expr. This is needed when there is a clk.\+pos() in the sensitivity list. This is when we have member call expressions on the Field\+Decl.
+
+If the argument is an Array\+Subscript\+Expr, then only provide access to the pointer to Array\+Subscript\+Expr.
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsc__ast__matchers_1_1SensitivityMatcher_abd3386988ec3ebac0c4fe22e9af22a05}\label{classsc__ast__matchers_1_1SensitivityMatcher_abd3386988ec3ebac0c4fe22e9af22a05}} 
+\index{sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}!process\_handle\_@{process\_handle\_}}
+\index{process\_handle\_@{process\_handle\_}!sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}}
+\doxysubsubsection{\texorpdfstring{process\_handle\_}{process\_handle\_}}
+{\footnotesize\ttfamily clang\+::\+Decl\+Ref\+Expr$\ast$ sc\+\_\+ast\+\_\+matchers\+::\+Sensitivity\+Matcher\+::process\+\_\+handle\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This provides access to the SystemC process\textquotesingle{} entry function handler. 
+
+\mbox{\Hypertarget{classsc__ast__matchers_1_1SensitivityMatcher_afcdb6aa9e91e267172669333602d17aa}\label{classsc__ast__matchers_1_1SensitivityMatcher_afcdb6aa9e91e267172669333602d17aa}} 
+\index{sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}!sensitivity\_@{sensitivity\_}}
+\index{sensitivity\_@{sensitivity\_}!sc\_ast\_matchers::SensitivityMatcher@{sc\_ast\_matchers::SensitivityMatcher}}
+\doxysubsubsection{\texorpdfstring{sensitivity\_}{sensitivity\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsc__ast__matchers_1_1SensitivityMatcher_a96b39bcbdce6458e57f9abf038d48a20}{Sense\+Map\+Type}} sc\+\_\+ast\+\_\+matchers\+::\+Sensitivity\+Matcher\+::sensitivity\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This is the map structure to store the identified sensitivity list. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/matchers/\mbox{\hyperlink{SensitivityMatcher_8h}{Sensitivity\+Matcher.\+h}}\end{DoxyCompactItemize}

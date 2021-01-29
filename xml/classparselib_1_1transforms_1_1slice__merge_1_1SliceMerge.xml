@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge" kind="class" language="Python" prot="public">
+    <compoundname>parselib::transforms::slice_merge::SliceMerge</compoundname>
+    <basecompoundref refid="classparselib_1_1transforms_1_1top__down_1_1TopDown" prot="public" virt="non-virtual">parselib.transforms.top_down.TopDown</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_1a75d4e89cd4b3462b71a182e68ff6cc75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.slice_merge.SliceMerge.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <reimplements refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1aba7572132ec76ea47811c9d077763441">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/slice_merge.py" line="9" column="1" bodyfile="plugins/hdl/parselib/transforms/slice_merge.py" bodystart="9" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_1a966449884942d4cd65516b1160ffbee7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.slice_merge.SliceMerge.harrayref</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>harrayref</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/slice_merge.py" line="70" column="1" bodyfile="plugins/hdl/parselib/transforms/slice_merge.py" bodystart="70" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_1a4fe9521e39c73aaa1c2a77372b89e071" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.slice_merge.SliceMerge.hslice</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hslice</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/slice_merge.py" line="79" column="1" bodyfile="plugins/hdl/parselib/transforms/slice_merge.py" bodystart="79" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_1a1f349a5612105c5a2d340eaf08f2226e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.slice_merge.SliceMerge.__to_seq</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>__to_seq</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/slice_merge.py" line="12" column="1" bodyfile="plugins/hdl/parselib/transforms/slice_merge.py" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_1a48657d221dda84212199e3f0f50a992b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.slice_merge.SliceMerge.__is_literal_node</definition>
+        <argsstring>(self, t)</argsstring>
+        <name>__is_literal_node</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>t</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/slice_merge.py" line="15" column="1" bodyfile="plugins/hdl/parselib/transforms/slice_merge.py" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_1a4f5f8164c4400f73d5af930a2c2b491b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.slice_merge.SliceMerge.__check_part_select_left</definition>
+        <argsstring>(self, tr)</argsstring>
+        <name>__check_part_select_left</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tr</type>
+          <defname>tr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>check if the left hand side is width * (ID + 1) - 1
+returns result, width, ID
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/slice_merge.py" line="18" column="1" bodyfile="plugins/hdl/parselib/transforms/slice_merge.py" bodystart="18" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_1af41cd7d4325727e75e2ed9b6f65816ca" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.slice_merge.SliceMerge.__check_part_select_right</definition>
+        <argsstring>(self, tr)</argsstring>
+        <name>__check_part_select_right</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tr</type>
+          <defname>tr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>check if the right hand-side is width * ID
+returns result, width, ID
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/slice_merge.py" line="53" column="1" bodyfile="plugins/hdl/parselib/transforms/slice_merge.py" bodystart="53" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>recognize slice patterns and convert slicing into synthesizable index part select</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>parselib.transforms.slice_merge.SliceMerge</label>
+        <link refid="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>parselib.transforms.top_down.TopDown</label>
+        <link refid="classparselib_1_1transforms_1_1top__down_1_1TopDown"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Interpreter</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>parselib.transforms.slice_merge.SliceMerge</label>
+        <link refid="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>parselib.transforms.top_down.TopDown</label>
+        <link refid="classparselib_1_1transforms_1_1top__down_1_1TopDown"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Interpreter</label>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/parselib/transforms/slice_merge.py" line="7" column="1" bodyfile="plugins/hdl/parselib/transforms/slice_merge.py" bodystart="7" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_1a4f5f8164c4400f73d5af930a2c2b491b" prot="private" virt="non-virtual"><scope>parselib::transforms::slice_merge::SliceMerge</scope><name>__check_part_select_left</name></member>
+      <member refid="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_1af41cd7d4325727e75e2ed9b6f65816ca" prot="private" virt="non-virtual"><scope>parselib::transforms::slice_merge::SliceMerge</scope><name>__check_part_select_right</name></member>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1a2738f9bf2467d410d3990343dcaf88ff" prot="public" virt="non-virtual"><scope>parselib::transforms::slice_merge::SliceMerge</scope><name>__default__</name></member>
+      <member refid="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_1a75d4e89cd4b3462b71a182e68ff6cc75" prot="public" virt="non-virtual"><scope>parselib::transforms::slice_merge::SliceMerge</scope><name>__init__</name></member>
+      <member refid="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_1a48657d221dda84212199e3f0f50a992b" prot="private" virt="non-virtual"><scope>parselib::transforms::slice_merge::SliceMerge</scope><name>__is_literal_node</name></member>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1a7064a163977352a2b47acbf7e388116c" prot="private" virt="non-virtual"><scope>parselib::transforms::slice_merge::SliceMerge</scope><name>__push_up</name></member>
+      <member refid="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_1a1f349a5612105c5a2d340eaf08f2226e" prot="private" virt="non-virtual"><scope>parselib::transforms::slice_merge::SliceMerge</scope><name>__to_seq</name></member>
+      <member refid="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_1a966449884942d4cd65516b1160ffbee7" prot="public" virt="non-virtual"><scope>parselib::transforms::slice_merge::SliceMerge</scope><name>harrayref</name></member>
+      <member refid="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_1a4fe9521e39c73aaa1c2a77372b89e071" prot="public" virt="non-virtual"><scope>parselib::transforms::slice_merge::SliceMerge</scope><name>hslice</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

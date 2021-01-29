@@ -1,0 +1,50 @@
+\hypertarget{HDLMain_8cpp}{}\doxysection{plugins/hdl/\+HDLMain.cpp File Reference}
+\label{HDLMain_8cpp}\index{plugins/hdl/HDLMain.cpp@{plugins/hdl/HDLMain.cpp}}
+{\ttfamily \#include $<$regex$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include \char`\"{}System\+CClang.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Port\+Binding.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tree.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}HDLMain.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}HDLType.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Sensitivity\+Matcher.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}clang/\+Basic/\+File\+Manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}llvm/\+Support/\+Debug.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}clang/\+Basic/\+Diagnostic.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}HDLHnode.\+h\char`\"{}}\newline
+Include dependency graph for HDLMain.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{HDLMain_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacesystemc__hdl}{systemc\+\_\+hdl}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{HDLMain_8cpp_ad78e062f62e0d6e453941fb4ca843e4d}{DEBUG\+\_\+\+TYPE}}~\char`\"{}HDL\char`\"{}
+\begin{DoxyCompactList}\small\item\em Different matchers may use different DEBUG\+\_\+\+TYPE. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ clang\+::tooling\+::\+Frontend\+Action\+Factory $>$ \mbox{\hyperlink{namespacesystemc__hdl_a8fb0c82c653745ba6e05bde394f63f42}{systemc\+\_\+hdl\+::new\+Frontend\+Action\+Factory}} (const std\+::string \&top\+\_\+module)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{HDLMain_8cpp_ad78e062f62e0d6e453941fb4ca843e4d}\label{HDLMain_8cpp_ad78e062f62e0d6e453941fb4ca843e4d}} 
+\index{HDLMain.cpp@{HDLMain.cpp}!DEBUG\_TYPE@{DEBUG\_TYPE}}
+\index{DEBUG\_TYPE@{DEBUG\_TYPE}!HDLMain.cpp@{HDLMain.cpp}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_TYPE}{DEBUG\_TYPE}}
+{\footnotesize\ttfamily \#define DEBUG\+\_\+\+TYPE~\char`\"{}HDL\char`\"{}}
+
+
+
+Different matchers may use different DEBUG\+\_\+\+TYPE. 
+

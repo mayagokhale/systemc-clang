@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc-clang_1_1SystemCClang" kind="class" language="Python" prot="public">
+    <compoundname>systemc-clang::SystemCClang</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsystemc-clang_1_1SystemCClang_1a1da35c77e30a2bcae44dfb5cc99f2f5b" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>systemc-clang.SystemCClang::_systemc_clang_build_dir</definition>
+        <argsstring></argsstring>
+        <name>_systemc_clang_build_dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="66" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc-clang_1_1SystemCClang_1ab6cec37133b8a50cc5c66247b98162d3" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>systemc-clang.SystemCClang::_llvm_install_path</definition>
+        <argsstring></argsstring>
+        <name>_llvm_install_path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="71" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc-clang_1_1SystemCClang_1afb45d9e3a5c5c5ac80c95a453df80884" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>systemc-clang.SystemCClang::_systemc_path</definition>
+        <argsstring></argsstring>
+        <name>_systemc_path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="76" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsystemc-clang_1_1SystemCClang_1acd7e528ab658f57d4b3337f011ea4e0d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def systemc-clang.SystemCClang.__check_systemc_clang_executable_exists</definition>
+        <argsstring>(self)</argsstring>
+        <name>__check_systemc_clang_executable_exists</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="58" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="58" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc-clang_1_1SystemCClang_1ad01dc6ad20ef71ccc871432f8e6e0a27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def systemc-clang.SystemCClang.__init__</definition>
+        <argsstring>(self, systemc_clang_build_dir=None, llvm_install_path=None, systemc_path=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classsystemc-clang_1_1SystemCClang_1a26776c2ad797baebcb7ee3a6712951ac" kindref="member">systemc_clang_build_dir</ref></type>
+          <defname>systemc_clang_build_dir</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classsystemc-clang_1_1SystemCClang_1a9914cf6d88f76bbfc700303fe482072a" kindref="member">llvm_install_path</ref></type>
+          <defname>llvm_install_path</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classsystemc-clang_1_1SystemCClang_1a4bcee436d1d8e90f23912255f013315e" kindref="member">systemc_path</ref></type>
+          <defname>systemc_path</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="62" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="64" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc-clang_1_1SystemCClang_1a26776c2ad797baebcb7ee3a6712951ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def systemc-clang.SystemCClang.systemc_clang_build_dir</definition>
+        <argsstring>(self)</argsstring>
+        <name>systemc_clang_build_dir</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="83" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc-clang_1_1SystemCClang_1ab00fe4af27d4ec5786648f1bf4b20121" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def systemc-clang.SystemCClang.systemc_clang_binary</definition>
+        <argsstring>(self)</argsstring>
+        <name>systemc_clang_binary</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="87" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc-clang_1_1SystemCClang_1a9914cf6d88f76bbfc700303fe482072a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def systemc-clang.SystemCClang.llvm_install_path</definition>
+        <argsstring>(self)</argsstring>
+        <name>llvm_install_path</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="92" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="92" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc-clang_1_1SystemCClang_1afd24adbb29b49895b46052da2baaba98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def systemc-clang.SystemCClang.llvm_inc_dir</definition>
+        <argsstring>(self)</argsstring>
+        <name>llvm_inc_dir</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>returns the include directory necessary for systemc-clang to locate headers.
+Currently, it only supports version 11.0.0
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="96" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="96" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc-clang_1_1SystemCClang_1a4bcee436d1d8e90f23912255f013315e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def systemc-clang.SystemCClang.systemc_path</definition>
+        <argsstring>(self)</argsstring>
+        <name>systemc_path</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="105" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="105" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc-clang_1_1SystemCClang_1aaf532714556fa092126e2568d53a6c60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def systemc-clang.SystemCClang.systemc_inc_dir</definition>
+        <argsstring>(self)</argsstring>
+        <name>systemc_inc_dir</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="109" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="109" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc-clang_1_1SystemCClang_1ab12b25451475eeecfa070f5f38412762" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def systemc-clang.SystemCClang.execute</definition>
+        <argsstring>(self, args, target_name=None)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <param>
+          <type>target_name</type>
+          <defname>target_name</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>executes systemc-clang as if it is on the commandline
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="112" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="112" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classsystemc-clang_1_1SystemCClang_1ad82a84afa4976779fa97a40c1bd43022" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def systemc-clang.SystemCClang.__get_systemc_clang_output_files</definition>
+        <argsstring>(argv)</argsstring>
+        <name>__get_systemc_clang_output_files</name>
+        <param>
+          <type>argv</type>
+          <defname>argv</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="141" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="141" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc-clang_1_1SystemCClang_1a16ba5e75761d3641d1e455b21b795af2" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def systemc-clang.SystemCClang.__get_hdl_file_out</definition>
+        <argsstring>(argv)</argsstring>
+        <name>__get_hdl_file_out</name>
+        <param>
+          <type>argv</type>
+          <defname>argv</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="151" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="151" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc-clang_1_1SystemCClang_1abdf0847d5216059eb5c236828568bcf1" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def systemc-clang.SystemCClang.__get_sources_from_args</definition>
+        <argsstring>(argv)</argsstring>
+        <name>__get_sources_from_args</name>
+        <param>
+          <type>argv</type>
+          <defname>argv</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/systemc-clang.py" line="162" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="162" bodyend="178"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A class that encapsulate the execution of systemc-clang binary</verbatim> </para>
+    </detaileddescription>
+    <location file="plugins/hdl/systemc-clang.py" line="55" column="1" bodyfile="plugins/hdl/systemc-clang.py" bodystart="55" bodyend="179"/>
+    <listofallmembers>
+      <member refid="classsystemc-clang_1_1SystemCClang_1acd7e528ab658f57d4b3337f011ea4e0d" prot="private" virt="non-virtual"><scope>systemc-clang::SystemCClang</scope><name>__check_systemc_clang_executable_exists</name></member>
+      <member refid="classsystemc-clang_1_1SystemCClang_1a16ba5e75761d3641d1e455b21b795af2" prot="private" virt="non-virtual"><scope>systemc-clang::SystemCClang</scope><name>__get_hdl_file_out</name></member>
+      <member refid="classsystemc-clang_1_1SystemCClang_1abdf0847d5216059eb5c236828568bcf1" prot="private" virt="non-virtual"><scope>systemc-clang::SystemCClang</scope><name>__get_sources_from_args</name></member>
+      <member refid="classsystemc-clang_1_1SystemCClang_1ad82a84afa4976779fa97a40c1bd43022" prot="private" virt="non-virtual"><scope>systemc-clang::SystemCClang</scope><name>__get_systemc_clang_output_files</name></member>
+      <member refid="classsystemc-clang_1_1SystemCClang_1ad01dc6ad20ef71ccc871432f8e6e0a27" prot="public" virt="non-virtual"><scope>systemc-clang::SystemCClang</scope><name>__init__</name></member>
+      <member refid="classsystemc-clang_1_1SystemCClang_1ab6cec37133b8a50cc5c66247b98162d3" prot="private" virt="non-virtual"><scope>systemc-clang::SystemCClang</scope><name>_llvm_install_path</name></member>
+      <member refid="classsystemc-clang_1_1SystemCClang_1a1da35c77e30a2bcae44dfb5cc99f2f5b" prot="private" virt="non-virtual"><scope>systemc-clang::SystemCClang</scope><name>_systemc_clang_build_dir</name></member>
+      <member refid="classsystemc-clang_1_1SystemCClang_1afb45d9e3a5c5c5ac80c95a453df80884" prot="private" virt="non-virtual"><scope>systemc-clang::SystemCClang</scope><name>_systemc_path</name></member>
+      <member refid="classsystemc-clang_1_1SystemCClang_1ab12b25451475eeecfa070f5f38412762" prot="public" virt="non-virtual"><scope>systemc-clang::SystemCClang</scope><name>execute</name></member>
+      <member refid="classsystemc-clang_1_1SystemCClang_1afd24adbb29b49895b46052da2baaba98" prot="public" virt="non-virtual"><scope>systemc-clang::SystemCClang</scope><name>llvm_inc_dir</name></member>
+      <member refid="classsystemc-clang_1_1SystemCClang_1a9914cf6d88f76bbfc700303fe482072a" prot="public" virt="non-virtual"><scope>systemc-clang::SystemCClang</scope><name>llvm_install_path</name></member>
+      <member refid="classsystemc-clang_1_1SystemCClang_1ab00fe4af27d4ec5786648f1bf4b20121" prot="public" virt="non-virtual"><scope>systemc-clang::SystemCClang</scope><name>systemc_clang_binary</name></member>
+      <member refid="classsystemc-clang_1_1SystemCClang_1a26776c2ad797baebcb7ee3a6712951ac" prot="public" virt="non-virtual"><scope>systemc-clang::SystemCClang</scope><name>systemc_clang_build_dir</name></member>
+      <member refid="classsystemc-clang_1_1SystemCClang_1aaf532714556fa092126e2568d53a6c60" prot="public" virt="non-virtual"><scope>systemc-clang::SystemCClang</scope><name>systemc_inc_dir</name></member>
+      <member refid="classsystemc-clang_1_1SystemCClang_1a4bcee436d1d8e90f23912255f013315e" prot="public" virt="non-virtual"><scope>systemc-clang::SystemCClang</scope><name>systemc_path</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

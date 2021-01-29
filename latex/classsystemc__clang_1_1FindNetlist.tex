@@ -1,0 +1,245 @@
+\hypertarget{classsystemc__clang_1_1FindNetlist}{}\doxysection{systemc\+\_\+clang\+::Find\+Netlist Class Reference}
+\label{classsystemc__clang_1_1FindNetlist}\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+
+
+{\ttfamily \#include $<$Find\+Netlist.\+h$>$}
+
+
+
+Inheritance diagram for systemc\+\_\+clang\+::Find\+Netlist\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classsystemc__clang_1_1FindNetlist__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for systemc\+\_\+clang\+::Find\+Netlist\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classsystemc__clang_1_1FindNetlist__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef pair$<$ string, string $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a5d3bc5e0b09c88b902fbf73e7ba91eb8}{instance\+Module\+Pair\+Type}}
+\item 
+typedef map$<$ string, string $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a52b44a67e9256fb58d17050a35acb953}{instance\+Module\+Map\+Type}}
+\item 
+typedef pair$<$ string, string $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a149fe83ade7e3468bc49ae42dee28a46}{port\+Signal\+Pair\+Type}}
+\item 
+typedef map$<$ string, string $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a9f9a1a9b49e67f0d8861887ccbdabc01}{port\+Signal\+Map\+Type}}
+\item 
+typedef pair$<$ string, \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a9f9a1a9b49e67f0d8861887ccbdabc01}{port\+Signal\+Map\+Type}} $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a9a9dfe4431764501134dd2aa80eff673}{instance\+Port\+Signal\+Pair\+Type}}
+\item 
+typedef map$<$ string, \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a9f9a1a9b49e67f0d8861887ccbdabc01}{port\+Signal\+Map\+Type}} $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a0c687bf7d0bac3a2fb59d5fa889435c1}{instance\+Port\+Signal\+Map\+Type}}
+\item 
+typedef pair$<$ string, vector$<$ string $>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_acae6cc93b649887a31e0d0c93abb6e6e}{instance\+List\+Module\+Pair\+Type}}
+\item 
+typedef map$<$ string, vector$<$ string $>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a7b975fb543df586174c99f6d4ed81800}{instance\+List\+Module\+Map\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_abae20b453424f6a47b95cea9deb1735b}{Find\+Netlist}} (Function\+Decl $\ast$)
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_aabb4ed26b0338482913d6f0a632afb7f}{Find\+Netlist}} (const \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist}{Find\+Netlist}} \&)
+\item 
+virtual \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a5bd381d4b4162fc56168c88aa207e888}{$\sim$\+Find\+Netlist}} ()
+\item 
+virtual bool \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a0817d4cab851f6f9c07226795d3bb9f1}{Visit\+CXXOperator\+Call\+Expr}} (CXXOperator\+Call\+Expr $\ast$ce)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a10770af9d8ab4826e0943c1f77085dc1}{update\+Instance\+List\+Module\+Map}} (const std\+::string \&, const std\+::string \&)
+\item 
+const \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a52b44a67e9256fb58d17050a35acb953}{instance\+Module\+Map\+Type}} \& \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a8d35235664b5b29582fd67105e7f6557}{get\+Instance\+Module\+Map}} ()
+\item 
+const \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a0c687bf7d0bac3a2fb59d5fa889435c1}{instance\+Port\+Signal\+Map\+Type}} \& \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a118b0dba9c558682f329ee385481baad}{get\+Instance\+Port\+Signal\+Map}} ()
+\item 
+const \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a7b975fb543df586174c99f6d4ed81800}{instance\+List\+Module\+Map\+Type}} \& \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a535e45334a681317911a5b3d9e1d6f0e}{get\+Instance\+List\+Module\+Map}} ()
+\item 
+const \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a9f9a1a9b49e67f0d8861887ccbdabc01}{port\+Signal\+Map\+Type}} \& \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a51222b712d7b801d2e4bbf277e85b834}{get\+Port\+Signal\+Map}} ()
+\item 
+int \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_ad9356ee3634a7ab8f6df78eb952cc374}{get\+Num\+Instances}} (std\+::string)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_ad3183c643a3cb32f756f102b0d81431d}{dump}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_acfb41e8566e17999fabd9584f97edeb2}{\+\_\+pass}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a52b44a67e9256fb58d17050a35acb953}{instance\+Module\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a8bf741a3f9c422cfa96323592144cdb4}{inst\+\_\+module\+\_\+map\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a9f9a1a9b49e67f0d8861887ccbdabc01}{port\+Signal\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a1a31fdb6341bd370b5aac69ef6b4d9e9}{port\+\_\+signal\+\_\+map\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a0c687bf7d0bac3a2fb59d5fa889435c1}{instance\+Port\+Signal\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a5c239fe7f713261cbbd7eff4c7fdc205}{inst\+\_\+port\+\_\+signal\+\_\+map\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a7b975fb543df586174c99f6d4ed81800}{instance\+List\+Module\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a382835fd994c7c545cd265877b68c286}{inst\+\_\+list\+\_\+module\+\_\+map\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_a7b975fb543df586174c99f6d4ed81800}\label{classsystemc__clang_1_1FindNetlist_a7b975fb543df586174c99f6d4ed81800}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!instanceListModuleMapType@{instanceListModuleMapType}}
+\index{instanceListModuleMapType@{instanceListModuleMapType}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{instanceListModuleMapType}{instanceListModuleMapType}}
+{\footnotesize\ttfamily typedef map$<$string, vector$<$string$>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a7b975fb543df586174c99f6d4ed81800}{systemc\+\_\+clang\+::\+Find\+Netlist\+::instance\+List\+Module\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_acae6cc93b649887a31e0d0c93abb6e6e}\label{classsystemc__clang_1_1FindNetlist_acae6cc93b649887a31e0d0c93abb6e6e}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!instanceListModulePairType@{instanceListModulePairType}}
+\index{instanceListModulePairType@{instanceListModulePairType}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{instanceListModulePairType}{instanceListModulePairType}}
+{\footnotesize\ttfamily typedef pair$<$string, vector$<$string$>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_acae6cc93b649887a31e0d0c93abb6e6e}{systemc\+\_\+clang\+::\+Find\+Netlist\+::instance\+List\+Module\+Pair\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_a52b44a67e9256fb58d17050a35acb953}\label{classsystemc__clang_1_1FindNetlist_a52b44a67e9256fb58d17050a35acb953}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!instanceModuleMapType@{instanceModuleMapType}}
+\index{instanceModuleMapType@{instanceModuleMapType}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{instanceModuleMapType}{instanceModuleMapType}}
+{\footnotesize\ttfamily typedef map$<$string, string$>$ \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a52b44a67e9256fb58d17050a35acb953}{systemc\+\_\+clang\+::\+Find\+Netlist\+::instance\+Module\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_a5d3bc5e0b09c88b902fbf73e7ba91eb8}\label{classsystemc__clang_1_1FindNetlist_a5d3bc5e0b09c88b902fbf73e7ba91eb8}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!instanceModulePairType@{instanceModulePairType}}
+\index{instanceModulePairType@{instanceModulePairType}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{instanceModulePairType}{instanceModulePairType}}
+{\footnotesize\ttfamily typedef pair$<$string, string$>$ \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a5d3bc5e0b09c88b902fbf73e7ba91eb8}{systemc\+\_\+clang\+::\+Find\+Netlist\+::instance\+Module\+Pair\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_a0c687bf7d0bac3a2fb59d5fa889435c1}\label{classsystemc__clang_1_1FindNetlist_a0c687bf7d0bac3a2fb59d5fa889435c1}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!instancePortSignalMapType@{instancePortSignalMapType}}
+\index{instancePortSignalMapType@{instancePortSignalMapType}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{instancePortSignalMapType}{instancePortSignalMapType}}
+{\footnotesize\ttfamily typedef map$<$string, \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a9f9a1a9b49e67f0d8861887ccbdabc01}{port\+Signal\+Map\+Type}}$>$ \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a0c687bf7d0bac3a2fb59d5fa889435c1}{systemc\+\_\+clang\+::\+Find\+Netlist\+::instance\+Port\+Signal\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_a9a9dfe4431764501134dd2aa80eff673}\label{classsystemc__clang_1_1FindNetlist_a9a9dfe4431764501134dd2aa80eff673}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!instancePortSignalPairType@{instancePortSignalPairType}}
+\index{instancePortSignalPairType@{instancePortSignalPairType}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{instancePortSignalPairType}{instancePortSignalPairType}}
+{\footnotesize\ttfamily typedef pair$<$string, \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a9f9a1a9b49e67f0d8861887ccbdabc01}{port\+Signal\+Map\+Type}}$>$ \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a9a9dfe4431764501134dd2aa80eff673}{systemc\+\_\+clang\+::\+Find\+Netlist\+::instance\+Port\+Signal\+Pair\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_a9f9a1a9b49e67f0d8861887ccbdabc01}\label{classsystemc__clang_1_1FindNetlist_a9f9a1a9b49e67f0d8861887ccbdabc01}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!portSignalMapType@{portSignalMapType}}
+\index{portSignalMapType@{portSignalMapType}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{portSignalMapType}{portSignalMapType}}
+{\footnotesize\ttfamily typedef map$<$string, string$>$ \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a9f9a1a9b49e67f0d8861887ccbdabc01}{systemc\+\_\+clang\+::\+Find\+Netlist\+::port\+Signal\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_a149fe83ade7e3468bc49ae42dee28a46}\label{classsystemc__clang_1_1FindNetlist_a149fe83ade7e3468bc49ae42dee28a46}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!portSignalPairType@{portSignalPairType}}
+\index{portSignalPairType@{portSignalPairType}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{portSignalPairType}{portSignalPairType}}
+{\footnotesize\ttfamily typedef pair$<$string, string$>$ \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a149fe83ade7e3468bc49ae42dee28a46}{systemc\+\_\+clang\+::\+Find\+Netlist\+::port\+Signal\+Pair\+Type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_abae20b453424f6a47b95cea9deb1735b}\label{classsystemc__clang_1_1FindNetlist_abae20b453424f6a47b95cea9deb1735b}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!FindNetlist@{FindNetlist}}
+\index{FindNetlist@{FindNetlist}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{FindNetlist()}{FindNetlist()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Find\+Netlist\+::\+Find\+Netlist (\begin{DoxyParamCaption}\item[{Function\+Decl $\ast$}]{fdecl }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_aabb4ed26b0338482913d6f0a632afb7f}\label{classsystemc__clang_1_1FindNetlist_aabb4ed26b0338482913d6f0a632afb7f}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!FindNetlist@{FindNetlist}}
+\index{FindNetlist@{FindNetlist}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{FindNetlist()}{FindNetlist()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Find\+Netlist\+::\+Find\+Netlist (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist}{Find\+Netlist}} \&}]{from }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_a5bd381d4b4162fc56168c88aa207e888}\label{classsystemc__clang_1_1FindNetlist_a5bd381d4b4162fc56168c88aa207e888}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!````~FindNetlist@{$\sim$FindNetlist}}
+\index{````~FindNetlist@{$\sim$FindNetlist}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{$\sim$FindNetlist()}{~FindNetlist()}}
+{\footnotesize\ttfamily Find\+Netlist\+::$\sim$\+Find\+Netlist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_ad3183c643a3cb32f756f102b0d81431d}\label{classsystemc__clang_1_1FindNetlist_ad3183c643a3cb32f756f102b0d81431d}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!dump@{dump}}
+\index{dump@{dump}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void Find\+Netlist\+::dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_a535e45334a681317911a5b3d9e1d6f0e}\label{classsystemc__clang_1_1FindNetlist_a535e45334a681317911a5b3d9e1d6f0e}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!getInstanceListModuleMap@{getInstanceListModuleMap}}
+\index{getInstanceListModuleMap@{getInstanceListModuleMap}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{getInstanceListModuleMap()}{getInstanceListModuleMap()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a7b975fb543df586174c99f6d4ed81800}{Find\+Netlist\+::instance\+List\+Module\+Map\+Type}} \& Find\+Netlist\+::get\+Instance\+List\+Module\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_a8d35235664b5b29582fd67105e7f6557}\label{classsystemc__clang_1_1FindNetlist_a8d35235664b5b29582fd67105e7f6557}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!getInstanceModuleMap@{getInstanceModuleMap}}
+\index{getInstanceModuleMap@{getInstanceModuleMap}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{getInstanceModuleMap()}{getInstanceModuleMap()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a52b44a67e9256fb58d17050a35acb953}{Find\+Netlist\+::instance\+Module\+Map\+Type}} \& Find\+Netlist\+::get\+Instance\+Module\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_a118b0dba9c558682f329ee385481baad}\label{classsystemc__clang_1_1FindNetlist_a118b0dba9c558682f329ee385481baad}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!getInstancePortSignalMap@{getInstancePortSignalMap}}
+\index{getInstancePortSignalMap@{getInstancePortSignalMap}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{getInstancePortSignalMap()}{getInstancePortSignalMap()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a0c687bf7d0bac3a2fb59d5fa889435c1}{Find\+Netlist\+::instance\+Port\+Signal\+Map\+Type}} \& Find\+Netlist\+::get\+Instance\+Port\+Signal\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_ad9356ee3634a7ab8f6df78eb952cc374}\label{classsystemc__clang_1_1FindNetlist_ad9356ee3634a7ab8f6df78eb952cc374}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!getNumInstances@{getNumInstances}}
+\index{getNumInstances@{getNumInstances}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{getNumInstances()}{getNumInstances()}}
+{\footnotesize\ttfamily int Find\+Netlist\+::get\+Num\+Instances (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_a51222b712d7b801d2e4bbf277e85b834}\label{classsystemc__clang_1_1FindNetlist_a51222b712d7b801d2e4bbf277e85b834}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!getPortSignalMap@{getPortSignalMap}}
+\index{getPortSignalMap@{getPortSignalMap}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{getPortSignalMap()}{getPortSignalMap()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a9f9a1a9b49e67f0d8861887ccbdabc01}{Find\+Netlist\+::port\+Signal\+Map\+Type}} \& Find\+Netlist\+::get\+Port\+Signal\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_a10770af9d8ab4826e0943c1f77085dc1}\label{classsystemc__clang_1_1FindNetlist_a10770af9d8ab4826e0943c1f77085dc1}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!updateInstanceListModuleMap@{updateInstanceListModuleMap}}
+\index{updateInstanceListModuleMap@{updateInstanceListModuleMap}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{updateInstanceListModuleMap()}{updateInstanceListModuleMap()}}
+{\footnotesize\ttfamily void Find\+Netlist\+::update\+Instance\+List\+Module\+Map (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instance\+Name,  }\item[{const std\+::string \&}]{module\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_a0817d4cab851f6f9c07226795d3bb9f1}\label{classsystemc__clang_1_1FindNetlist_a0817d4cab851f6f9c07226795d3bb9f1}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!VisitCXXOperatorCallExpr@{VisitCXXOperatorCallExpr}}
+\index{VisitCXXOperatorCallExpr@{VisitCXXOperatorCallExpr}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{VisitCXXOperatorCallExpr()}{VisitCXXOperatorCallExpr()}}
+{\footnotesize\ttfamily bool Find\+Netlist\+::\+Visit\+CXXOperator\+Call\+Expr (\begin{DoxyParamCaption}\item[{CXXOperator\+Call\+Expr $\ast$}]{ce }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_acfb41e8566e17999fabd9584f97edeb2}\label{classsystemc__clang_1_1FindNetlist_acfb41e8566e17999fabd9584f97edeb2}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!\_pass@{\_pass}}
+\index{\_pass@{\_pass}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{\_pass}{\_pass}}
+{\footnotesize\ttfamily int systemc\+\_\+clang\+::\+Find\+Netlist\+::\+\_\+pass\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_a382835fd994c7c545cd265877b68c286}\label{classsystemc__clang_1_1FindNetlist_a382835fd994c7c545cd265877b68c286}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!inst\_list\_module\_map\_@{inst\_list\_module\_map\_}}
+\index{inst\_list\_module\_map\_@{inst\_list\_module\_map\_}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{inst\_list\_module\_map\_}{inst\_list\_module\_map\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a7b975fb543df586174c99f6d4ed81800}{instance\+List\+Module\+Map\+Type}} systemc\+\_\+clang\+::\+Find\+Netlist\+::inst\+\_\+list\+\_\+module\+\_\+map\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_a8bf741a3f9c422cfa96323592144cdb4}\label{classsystemc__clang_1_1FindNetlist_a8bf741a3f9c422cfa96323592144cdb4}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!inst\_module\_map\_@{inst\_module\_map\_}}
+\index{inst\_module\_map\_@{inst\_module\_map\_}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{inst\_module\_map\_}{inst\_module\_map\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a52b44a67e9256fb58d17050a35acb953}{instance\+Module\+Map\+Type}} systemc\+\_\+clang\+::\+Find\+Netlist\+::inst\+\_\+module\+\_\+map\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_a5c239fe7f713261cbbd7eff4c7fdc205}\label{classsystemc__clang_1_1FindNetlist_a5c239fe7f713261cbbd7eff4c7fdc205}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!inst\_port\_signal\_map\_@{inst\_port\_signal\_map\_}}
+\index{inst\_port\_signal\_map\_@{inst\_port\_signal\_map\_}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{inst\_port\_signal\_map\_}{inst\_port\_signal\_map\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a0c687bf7d0bac3a2fb59d5fa889435c1}{instance\+Port\+Signal\+Map\+Type}} systemc\+\_\+clang\+::\+Find\+Netlist\+::inst\+\_\+port\+\_\+signal\+\_\+map\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindNetlist_a1a31fdb6341bd370b5aac69ef6b4d9e9}\label{classsystemc__clang_1_1FindNetlist_a1a31fdb6341bd370b5aac69ef6b4d9e9}} 
+\index{systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}!port\_signal\_map\_@{port\_signal\_map\_}}
+\index{port\_signal\_map\_@{port\_signal\_map\_}!systemc\_clang::FindNetlist@{systemc\_clang::FindNetlist}}
+\doxysubsubsection{\texorpdfstring{port\_signal\_map\_}{port\_signal\_map\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a9f9a1a9b49e67f0d8861887ccbdabc01}{port\+Signal\+Map\+Type}} systemc\+\_\+clang\+::\+Find\+Netlist\+::port\+\_\+signal\+\_\+map\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/matchers/\mbox{\hyperlink{FindNetlist_8h}{Find\+Netlist.\+h}}\item 
+src/matchers/\mbox{\hyperlink{FindNetlist_8cpp}{Find\+Netlist.\+cpp}}\end{DoxyCompactItemize}

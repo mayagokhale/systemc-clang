@@ -1,0 +1,393 @@
+\hypertarget{classsystemc__clang_1_1PortBinding}{}\doxysection{systemc\+\_\+clang\+::Port\+Binding Class Reference}
+\label{classsystemc__clang_1_1PortBinding}\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+
+
+{\ttfamily \#include $<$Port\+Binding.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ const clang\+::\+Expr $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a0effb4c0e27bbcfbd56f59bca0ca46e6}{Array\+Subscripts\+Expr\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a4bd0428a8f23be87f89e7cda084139a3}{get\+Caller\+Instance\+Name}} () const
+\item 
+const std\+::string \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a31718873d60c8a69ef3357b0fc1d3fca}{get\+Caller\+Instance\+Type\+Name}} () const
+\item 
+const std\+::string \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_af2aa9c5d2455ab06f1661cd76ded189f}{get\+Caller\+Port\+Name}} () const
+\item 
+const std\+::string \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a1376ee922434c1d318027bf5623c936b}{get\+Callee\+Instance\+Name}} () const
+\item 
+const std\+::string \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a056c88fb1c71198441be3779e9c1ff12}{get\+Callee\+Port\+Name}} () const
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a0effb4c0e27bbcfbd56f59bca0ca46e6}{Array\+Subscripts\+Expr\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_aa0ad3a4de12bf03fd0382f0f8fb2c0dc}{get\+Caller\+Array\+Subscripts}} () const
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a0effb4c0e27bbcfbd56f59bca0ca46e6}{Array\+Subscripts\+Expr\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_ad83753efdd44051cfa710bfa00d57084}{get\+Caller\+Port\+Array\+Subscripts}} () const
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a0effb4c0e27bbcfbd56f59bca0ca46e6}{Array\+Subscripts\+Expr\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a7da5517adff2b424a37aa0a9c8ea4bba}{get\+Callee\+Array\+Subscripts}} () const
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_aae351ed5cfcc4a1203d2c96160060872}{set\+Instance\+Var\+Name}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a552fc900e72c58a08fe91a601d083d99}{set\+Instance\+Constructor\+Name}} (const std\+::string \&name)
+\item 
+const std\+::string \& \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a515880f9dc12f43627d54e111c41ddef}{get\+Port\+Name}} () const
+\item 
+const clang\+::\+Member\+Expr $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a6c451d3430ce1e4d9b84539ba608156c}{get\+Caller\+Member\+Expr}} () const
+\item 
+const std\+::string \& \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_aca81e65bd1f98d625e71247a946dd4d8}{get\+Instance\+Type}} () const
+\item 
+const std\+::string \& \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a5db914273696e24ec68351b3f6767a5a}{get\+Instance\+Var\+Name}} () const
+\item 
+const std\+::string \& \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a3b6421c1ef347ca6bad167b9b944f88c}{get\+Instance\+Constructor\+Name}} () const
+\item 
+const clang\+::\+CXXRecord\+Decl $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a9e7757029c29a36711c931d1f9434cd1}{get\+Instance\+Type\+Decl}} () const
+\item 
+const std\+::string \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a356024c2075154042aeb19be51dbd197}{to\+String}} () const
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a25fdfd072120fe0c79cfe6cba4f86542}{dump}} ()
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a408edf12d41406dc7d7957b3f975f2b3}{Port\+Binding}} (clang\+::\+Expr $\ast$caller\+\_\+expr, clang\+::\+Expr $\ast$caller\+\_\+port\+\_\+expr, clang\+::\+Member\+Expr $\ast$caller\+\_\+port\+\_\+me\+\_\+expr, clang\+::\+Expr $\ast$callee\+\_\+expr, clang\+::\+Member\+Expr $\ast$callee\+\_\+port\+\_\+me\+\_\+expr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const clang\+::\+Expr $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a026b4d99698ce6e3d49b82488e5f7e69}{caller\+\_\+expr\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Caller. \end{DoxyCompactList}\item 
+const clang\+::\+Array\+Subscript\+Expr $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a143dbab63245fc86bb7c3ef2144ec8b5}{caller\+\_\+array\+\_\+expr\+\_\+}}
+\item 
+const clang\+::\+Member\+Expr $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_ae14c585c2c9ba37a0aa9644cb5ca5cc8}{caller\+\_\+instance\+\_\+me\+\_\+expr\+\_\+}}
+\item 
+const clang\+::\+Expr $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a7ca2386055369582bcfb15e2782e64ad}{caller\+\_\+port\+\_\+array\+\_\+expr\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a0effb4c0e27bbcfbd56f59bca0ca46e6}{Array\+Subscripts\+Expr\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a716943516d2dc10fd3f6805494c67114}{caller\+\_\+port\+\_\+array\+\_\+subscripts\+\_\+}}
+\item 
+const clang\+::\+Member\+Expr $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a9af7a1acc339034ae2fb32c43b985169}{caller\+\_\+port\+\_\+me\+\_\+expr\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a0effb4c0e27bbcfbd56f59bca0ca46e6}{Array\+Subscripts\+Expr\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a99959a59584fe9b98e37394d1800ec05}{caller\+\_\+array\+\_\+subscripts\+\_\+}}
+\item 
+const clang\+::\+Expr $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a4f5e8a8950f91aa19070c252e2920d9c}{callee\+\_\+expr\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Callee. \end{DoxyCompactList}\item 
+const clang\+::\+Member\+Expr $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a46fa575845c6a9bb0edd004bf6bf353e}{callee\+\_\+port\+\_\+me\+\_\+expr\+\_\+}}
+\item 
+const clang\+::\+Member\+Expr $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a3f12e3964d8904c2c594dc6dd559bae8}{callee\+\_\+instance\+\_\+me\+\_\+expr\+\_\+}}
+\item 
+const clang\+::\+Array\+Subscript\+Expr $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a942150b95463bf26159072f1f1044914}{callee\+\_\+array\+\_\+expr\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a0effb4c0e27bbcfbd56f59bca0ca46e6}{Array\+Subscripts\+Expr\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a02a0565ab3a38b5aee283e7d5f8adf30}{callee\+\_\+array\+\_\+subscripts\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a715028e7c52f0085911fbf204a4ba9d5}{caller\+\_\+instance\+\_\+name\+\_\+}}
+\begin{DoxyCompactList}\small\item\em We no longer support sc\+\_\+main parsing. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_aae42a0a5eb8919133e7f0fe46806e18b}{caller\+\_\+port\+\_\+name\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a143d25608456e5b2c7fb0d2d10561688}{caller\+\_\+instance\+\_\+type\+\_\+name\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a91067964a5466069408d740ad5d3d7fe}{callee\+\_\+instance\+\_\+name\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a7f355ba5c93438a515238b370cfad3de}{callee\+\_\+port\+\_\+name\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a8e400410dc8687510dec2b4b4820e654}{callee\+\_\+type\+\_\+name\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a2d1ca9566823728e7bef38aad186dcde}{instance\+\_\+type\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_afda27f653f063b97e5434d85a4e80a7f}{instance\+\_\+var\+\_\+name\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a1f6c1768a1be812b51b968e00822853d}{instance\+\_\+constructor\+\_\+name\+\_\+}}
+\item 
+const clang\+::\+CXXRecord\+Decl $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a840edc4d7d15b2584ff27d923cc67a4e}{instance\+\_\+type\+\_\+decl\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a0effb4c0e27bbcfbd56f59bca0ca46e6}\label{classsystemc__clang_1_1PortBinding_a0effb4c0e27bbcfbd56f59bca0ca46e6}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!ArraySubscriptsExprType@{ArraySubscriptsExprType}}
+\index{ArraySubscriptsExprType@{ArraySubscriptsExprType}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{ArraySubscriptsExprType}{ArraySubscriptsExprType}}
+{\footnotesize\ttfamily typedef std\+::vector$<$const clang\+::\+Expr $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a0effb4c0e27bbcfbd56f59bca0ca46e6}{systemc\+\_\+clang\+::\+Port\+Binding\+::\+Array\+Subscripts\+Expr\+Type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a408edf12d41406dc7d7957b3f975f2b3}\label{classsystemc__clang_1_1PortBinding_a408edf12d41406dc7d7957b3f975f2b3}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!PortBinding@{PortBinding}}
+\index{PortBinding@{PortBinding}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{PortBinding()}{PortBinding()}}
+{\footnotesize\ttfamily systemc\+\_\+clang\+::\+Port\+Binding\+::\+Port\+Binding (\begin{DoxyParamCaption}\item[{clang\+::\+Expr $\ast$}]{caller\+\_\+expr,  }\item[{clang\+::\+Expr $\ast$}]{caller\+\_\+port\+\_\+expr,  }\item[{clang\+::\+Member\+Expr $\ast$}]{caller\+\_\+port\+\_\+me\+\_\+expr,  }\item[{clang\+::\+Expr $\ast$}]{callee\+\_\+expr,  }\item[{clang\+::\+Member\+Expr $\ast$}]{callee\+\_\+port\+\_\+me\+\_\+expr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor that records the port binding.
+
+
+\begin{DoxyParams}{Parameters}
+{\em caller\+\_\+expr} & provides access to the caller information irrespective of whether it is an array or not.\\
+\hline
+{\em caller\+\_\+port\+\_\+expr} & provides access to the caller\textquotesingle{}s port. \\
+\hline
+\end{DoxyParams}
+Cast to see if it\textquotesingle{}s an array.
+
+If it is an array.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a25fdfd072120fe0c79cfe6cba4f86542}\label{classsystemc__clang_1_1PortBinding_a25fdfd072120fe0c79cfe6cba4f86542}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!dump@{dump}}
+\index{dump@{dump}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void systemc\+\_\+clang\+::\+Port\+Binding\+::dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Dumps to llvm\+::outs() the recorded port binding information. \mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a7da5517adff2b424a37aa0a9c8ea4bba}\label{classsystemc__clang_1_1PortBinding_a7da5517adff2b424a37aa0a9c8ea4bba}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!getCalleeArraySubscripts@{getCalleeArraySubscripts}}
+\index{getCalleeArraySubscripts@{getCalleeArraySubscripts}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{getCalleeArraySubscripts()}{getCalleeArraySubscripts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a0effb4c0e27bbcfbd56f59bca0ca46e6}{Array\+Subscripts\+Expr\+Type}} systemc\+\_\+clang\+::\+Port\+Binding\+::get\+Callee\+Array\+Subscripts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a1376ee922434c1d318027bf5623c936b}\label{classsystemc__clang_1_1PortBinding_a1376ee922434c1d318027bf5623c936b}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!getCalleeInstanceName@{getCalleeInstanceName}}
+\index{getCalleeInstanceName@{getCalleeInstanceName}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{getCalleeInstanceName()}{getCalleeInstanceName()}}
+{\footnotesize\ttfamily const std\+::string systemc\+\_\+clang\+::\+Port\+Binding\+::get\+Callee\+Instance\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a056c88fb1c71198441be3779e9c1ff12}\label{classsystemc__clang_1_1PortBinding_a056c88fb1c71198441be3779e9c1ff12}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!getCalleePortName@{getCalleePortName}}
+\index{getCalleePortName@{getCalleePortName}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{getCalleePortName()}{getCalleePortName()}}
+{\footnotesize\ttfamily const std\+::string systemc\+\_\+clang\+::\+Port\+Binding\+::get\+Callee\+Port\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_aa0ad3a4de12bf03fd0382f0f8fb2c0dc}\label{classsystemc__clang_1_1PortBinding_aa0ad3a4de12bf03fd0382f0f8fb2c0dc}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!getCallerArraySubscripts@{getCallerArraySubscripts}}
+\index{getCallerArraySubscripts@{getCallerArraySubscripts}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{getCallerArraySubscripts()}{getCallerArraySubscripts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a0effb4c0e27bbcfbd56f59bca0ca46e6}{Array\+Subscripts\+Expr\+Type}} systemc\+\_\+clang\+::\+Port\+Binding\+::get\+Caller\+Array\+Subscripts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a4bd0428a8f23be87f89e7cda084139a3}\label{classsystemc__clang_1_1PortBinding_a4bd0428a8f23be87f89e7cda084139a3}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!getCallerInstanceName@{getCallerInstanceName}}
+\index{getCallerInstanceName@{getCallerInstanceName}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{getCallerInstanceName()}{getCallerInstanceName()}}
+{\footnotesize\ttfamily const std\+::string systemc\+\_\+clang\+::\+Port\+Binding\+::get\+Caller\+Instance\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a31718873d60c8a69ef3357b0fc1d3fca}\label{classsystemc__clang_1_1PortBinding_a31718873d60c8a69ef3357b0fc1d3fca}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!getCallerInstanceTypeName@{getCallerInstanceTypeName}}
+\index{getCallerInstanceTypeName@{getCallerInstanceTypeName}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{getCallerInstanceTypeName()}{getCallerInstanceTypeName()}}
+{\footnotesize\ttfamily const std\+::string systemc\+\_\+clang\+::\+Port\+Binding\+::get\+Caller\+Instance\+Type\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a6c451d3430ce1e4d9b84539ba608156c}\label{classsystemc__clang_1_1PortBinding_a6c451d3430ce1e4d9b84539ba608156c}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!getCallerMemberExpr@{getCallerMemberExpr}}
+\index{getCallerMemberExpr@{getCallerMemberExpr}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{getCallerMemberExpr()}{getCallerMemberExpr()}}
+{\footnotesize\ttfamily const clang\+::\+Member\+Expr$\ast$ systemc\+\_\+clang\+::\+Port\+Binding\+::get\+Caller\+Member\+Expr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_ad83753efdd44051cfa710bfa00d57084}\label{classsystemc__clang_1_1PortBinding_ad83753efdd44051cfa710bfa00d57084}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!getCallerPortArraySubscripts@{getCallerPortArraySubscripts}}
+\index{getCallerPortArraySubscripts@{getCallerPortArraySubscripts}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{getCallerPortArraySubscripts()}{getCallerPortArraySubscripts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a0effb4c0e27bbcfbd56f59bca0ca46e6}{Array\+Subscripts\+Expr\+Type}} systemc\+\_\+clang\+::\+Port\+Binding\+::get\+Caller\+Port\+Array\+Subscripts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_af2aa9c5d2455ab06f1661cd76ded189f}\label{classsystemc__clang_1_1PortBinding_af2aa9c5d2455ab06f1661cd76ded189f}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!getCallerPortName@{getCallerPortName}}
+\index{getCallerPortName@{getCallerPortName}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{getCallerPortName()}{getCallerPortName()}}
+{\footnotesize\ttfamily const std\+::string systemc\+\_\+clang\+::\+Port\+Binding\+::get\+Caller\+Port\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a3b6421c1ef347ca6bad167b9b944f88c}\label{classsystemc__clang_1_1PortBinding_a3b6421c1ef347ca6bad167b9b944f88c}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!getInstanceConstructorName@{getInstanceConstructorName}}
+\index{getInstanceConstructorName@{getInstanceConstructorName}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{getInstanceConstructorName()}{getInstanceConstructorName()}}
+{\footnotesize\ttfamily const std\+::string\& systemc\+\_\+clang\+::\+Port\+Binding\+::get\+Instance\+Constructor\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_aca81e65bd1f98d625e71247a946dd4d8}\label{classsystemc__clang_1_1PortBinding_aca81e65bd1f98d625e71247a946dd4d8}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!getInstanceType@{getInstanceType}}
+\index{getInstanceType@{getInstanceType}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{getInstanceType()}{getInstanceType()}}
+{\footnotesize\ttfamily const std\+::string\& systemc\+\_\+clang\+::\+Port\+Binding\+::get\+Instance\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a9e7757029c29a36711c931d1f9434cd1}\label{classsystemc__clang_1_1PortBinding_a9e7757029c29a36711c931d1f9434cd1}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!getInstanceTypeDecl@{getInstanceTypeDecl}}
+\index{getInstanceTypeDecl@{getInstanceTypeDecl}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{getInstanceTypeDecl()}{getInstanceTypeDecl()}}
+{\footnotesize\ttfamily const clang\+::\+CXXRecord\+Decl$\ast$ systemc\+\_\+clang\+::\+Port\+Binding\+::get\+Instance\+Type\+Decl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a5db914273696e24ec68351b3f6767a5a}\label{classsystemc__clang_1_1PortBinding_a5db914273696e24ec68351b3f6767a5a}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!getInstanceVarName@{getInstanceVarName}}
+\index{getInstanceVarName@{getInstanceVarName}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{getInstanceVarName()}{getInstanceVarName()}}
+{\footnotesize\ttfamily const std\+::string\& systemc\+\_\+clang\+::\+Port\+Binding\+::get\+Instance\+Var\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a515880f9dc12f43627d54e111c41ddef}\label{classsystemc__clang_1_1PortBinding_a515880f9dc12f43627d54e111c41ddef}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!getPortName@{getPortName}}
+\index{getPortName@{getPortName}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{getPortName()}{getPortName()}}
+{\footnotesize\ttfamily const std\+::string\& systemc\+\_\+clang\+::\+Port\+Binding\+::get\+Port\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a552fc900e72c58a08fe91a601d083d99}\label{classsystemc__clang_1_1PortBinding_a552fc900e72c58a08fe91a601d083d99}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!setInstanceConstructorName@{setInstanceConstructorName}}
+\index{setInstanceConstructorName@{setInstanceConstructorName}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{setInstanceConstructorName()}{setInstanceConstructorName()}}
+{\footnotesize\ttfamily void systemc\+\_\+clang\+::\+Port\+Binding\+::set\+Instance\+Constructor\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_aae351ed5cfcc4a1203d2c96160060872}\label{classsystemc__clang_1_1PortBinding_aae351ed5cfcc4a1203d2c96160060872}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!setInstanceVarName@{setInstanceVarName}}
+\index{setInstanceVarName@{setInstanceVarName}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{setInstanceVarName()}{setInstanceVarName()}}
+{\footnotesize\ttfamily void systemc\+\_\+clang\+::\+Port\+Binding\+::set\+Instance\+Var\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a356024c2075154042aeb19be51dbd197}\label{classsystemc__clang_1_1PortBinding_a356024c2075154042aeb19be51dbd197}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!toString@{toString}}
+\index{toString@{toString}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily const std\+::string systemc\+\_\+clang\+::\+Port\+Binding\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert the port binding information into a single string.
+
+This is mainly used in the regression tests. The returned string is compared with what is expected. Caller port name
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a942150b95463bf26159072f1f1044914}\label{classsystemc__clang_1_1PortBinding_a942150b95463bf26159072f1f1044914}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!callee\_array\_expr\_@{callee\_array\_expr\_}}
+\index{callee\_array\_expr\_@{callee\_array\_expr\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{callee\_array\_expr\_}{callee\_array\_expr\_}}
+{\footnotesize\ttfamily const clang\+::\+Array\+Subscript\+Expr$\ast$ systemc\+\_\+clang\+::\+Port\+Binding\+::callee\+\_\+array\+\_\+expr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a02a0565ab3a38b5aee283e7d5f8adf30}\label{classsystemc__clang_1_1PortBinding_a02a0565ab3a38b5aee283e7d5f8adf30}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!callee\_array\_subscripts\_@{callee\_array\_subscripts\_}}
+\index{callee\_array\_subscripts\_@{callee\_array\_subscripts\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{callee\_array\_subscripts\_}{callee\_array\_subscripts\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a0effb4c0e27bbcfbd56f59bca0ca46e6}{Array\+Subscripts\+Expr\+Type}} systemc\+\_\+clang\+::\+Port\+Binding\+::callee\+\_\+array\+\_\+subscripts\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a4f5e8a8950f91aa19070c252e2920d9c}\label{classsystemc__clang_1_1PortBinding_a4f5e8a8950f91aa19070c252e2920d9c}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!callee\_expr\_@{callee\_expr\_}}
+\index{callee\_expr\_@{callee\_expr\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{callee\_expr\_}{callee\_expr\_}}
+{\footnotesize\ttfamily const clang\+::\+Expr$\ast$ systemc\+\_\+clang\+::\+Port\+Binding\+::callee\+\_\+expr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Callee. 
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a3f12e3964d8904c2c594dc6dd559bae8}\label{classsystemc__clang_1_1PortBinding_a3f12e3964d8904c2c594dc6dd559bae8}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!callee\_instance\_me\_expr\_@{callee\_instance\_me\_expr\_}}
+\index{callee\_instance\_me\_expr\_@{callee\_instance\_me\_expr\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{callee\_instance\_me\_expr\_}{callee\_instance\_me\_expr\_}}
+{\footnotesize\ttfamily const clang\+::\+Member\+Expr$\ast$ systemc\+\_\+clang\+::\+Port\+Binding\+::callee\+\_\+instance\+\_\+me\+\_\+expr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a91067964a5466069408d740ad5d3d7fe}\label{classsystemc__clang_1_1PortBinding_a91067964a5466069408d740ad5d3d7fe}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!callee\_instance\_name\_@{callee\_instance\_name\_}}
+\index{callee\_instance\_name\_@{callee\_instance\_name\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{callee\_instance\_name\_}{callee\_instance\_name\_}}
+{\footnotesize\ttfamily std\+::string systemc\+\_\+clang\+::\+Port\+Binding\+::callee\+\_\+instance\+\_\+name\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a46fa575845c6a9bb0edd004bf6bf353e}\label{classsystemc__clang_1_1PortBinding_a46fa575845c6a9bb0edd004bf6bf353e}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!callee\_port\_me\_expr\_@{callee\_port\_me\_expr\_}}
+\index{callee\_port\_me\_expr\_@{callee\_port\_me\_expr\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{callee\_port\_me\_expr\_}{callee\_port\_me\_expr\_}}
+{\footnotesize\ttfamily const clang\+::\+Member\+Expr$\ast$ systemc\+\_\+clang\+::\+Port\+Binding\+::callee\+\_\+port\+\_\+me\+\_\+expr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a7f355ba5c93438a515238b370cfad3de}\label{classsystemc__clang_1_1PortBinding_a7f355ba5c93438a515238b370cfad3de}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!callee\_port\_name\_@{callee\_port\_name\_}}
+\index{callee\_port\_name\_@{callee\_port\_name\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{callee\_port\_name\_}{callee\_port\_name\_}}
+{\footnotesize\ttfamily std\+::string systemc\+\_\+clang\+::\+Port\+Binding\+::callee\+\_\+port\+\_\+name\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a8e400410dc8687510dec2b4b4820e654}\label{classsystemc__clang_1_1PortBinding_a8e400410dc8687510dec2b4b4820e654}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!callee\_type\_name\_@{callee\_type\_name\_}}
+\index{callee\_type\_name\_@{callee\_type\_name\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{callee\_type\_name\_}{callee\_type\_name\_}}
+{\footnotesize\ttfamily std\+::string systemc\+\_\+clang\+::\+Port\+Binding\+::callee\+\_\+type\+\_\+name\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a143dbab63245fc86bb7c3ef2144ec8b5}\label{classsystemc__clang_1_1PortBinding_a143dbab63245fc86bb7c3ef2144ec8b5}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!caller\_array\_expr\_@{caller\_array\_expr\_}}
+\index{caller\_array\_expr\_@{caller\_array\_expr\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{caller\_array\_expr\_}{caller\_array\_expr\_}}
+{\footnotesize\ttfamily const clang\+::\+Array\+Subscript\+Expr$\ast$ systemc\+\_\+clang\+::\+Port\+Binding\+::caller\+\_\+array\+\_\+expr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a99959a59584fe9b98e37394d1800ec05}\label{classsystemc__clang_1_1PortBinding_a99959a59584fe9b98e37394d1800ec05}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!caller\_array\_subscripts\_@{caller\_array\_subscripts\_}}
+\index{caller\_array\_subscripts\_@{caller\_array\_subscripts\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{caller\_array\_subscripts\_}{caller\_array\_subscripts\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a0effb4c0e27bbcfbd56f59bca0ca46e6}{Array\+Subscripts\+Expr\+Type}} systemc\+\_\+clang\+::\+Port\+Binding\+::caller\+\_\+array\+\_\+subscripts\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a026b4d99698ce6e3d49b82488e5f7e69}\label{classsystemc__clang_1_1PortBinding_a026b4d99698ce6e3d49b82488e5f7e69}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!caller\_expr\_@{caller\_expr\_}}
+\index{caller\_expr\_@{caller\_expr\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{caller\_expr\_}{caller\_expr\_}}
+{\footnotesize\ttfamily const clang\+::\+Expr$\ast$ systemc\+\_\+clang\+::\+Port\+Binding\+::caller\+\_\+expr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Caller. 
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_ae14c585c2c9ba37a0aa9644cb5ca5cc8}\label{classsystemc__clang_1_1PortBinding_ae14c585c2c9ba37a0aa9644cb5ca5cc8}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!caller\_instance\_me\_expr\_@{caller\_instance\_me\_expr\_}}
+\index{caller\_instance\_me\_expr\_@{caller\_instance\_me\_expr\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{caller\_instance\_me\_expr\_}{caller\_instance\_me\_expr\_}}
+{\footnotesize\ttfamily const clang\+::\+Member\+Expr$\ast$ systemc\+\_\+clang\+::\+Port\+Binding\+::caller\+\_\+instance\+\_\+me\+\_\+expr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a715028e7c52f0085911fbf204a4ba9d5}\label{classsystemc__clang_1_1PortBinding_a715028e7c52f0085911fbf204a4ba9d5}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!caller\_instance\_name\_@{caller\_instance\_name\_}}
+\index{caller\_instance\_name\_@{caller\_instance\_name\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{caller\_instance\_name\_}{caller\_instance\_name\_}}
+{\footnotesize\ttfamily std\+::string systemc\+\_\+clang\+::\+Port\+Binding\+::caller\+\_\+instance\+\_\+name\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+We no longer support sc\+\_\+main parsing. 
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a143d25608456e5b2c7fb0d2d10561688}\label{classsystemc__clang_1_1PortBinding_a143d25608456e5b2c7fb0d2d10561688}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!caller\_instance\_type\_name\_@{caller\_instance\_type\_name\_}}
+\index{caller\_instance\_type\_name\_@{caller\_instance\_type\_name\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{caller\_instance\_type\_name\_}{caller\_instance\_type\_name\_}}
+{\footnotesize\ttfamily std\+::string systemc\+\_\+clang\+::\+Port\+Binding\+::caller\+\_\+instance\+\_\+type\+\_\+name\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a7ca2386055369582bcfb15e2782e64ad}\label{classsystemc__clang_1_1PortBinding_a7ca2386055369582bcfb15e2782e64ad}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!caller\_port\_array\_expr\_@{caller\_port\_array\_expr\_}}
+\index{caller\_port\_array\_expr\_@{caller\_port\_array\_expr\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{caller\_port\_array\_expr\_}{caller\_port\_array\_expr\_}}
+{\footnotesize\ttfamily const clang\+::\+Expr$\ast$ systemc\+\_\+clang\+::\+Port\+Binding\+::caller\+\_\+port\+\_\+array\+\_\+expr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a716943516d2dc10fd3f6805494c67114}\label{classsystemc__clang_1_1PortBinding_a716943516d2dc10fd3f6805494c67114}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!caller\_port\_array\_subscripts\_@{caller\_port\_array\_subscripts\_}}
+\index{caller\_port\_array\_subscripts\_@{caller\_port\_array\_subscripts\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{caller\_port\_array\_subscripts\_}{caller\_port\_array\_subscripts\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1PortBinding_a0effb4c0e27bbcfbd56f59bca0ca46e6}{Array\+Subscripts\+Expr\+Type}} systemc\+\_\+clang\+::\+Port\+Binding\+::caller\+\_\+port\+\_\+array\+\_\+subscripts\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a9af7a1acc339034ae2fb32c43b985169}\label{classsystemc__clang_1_1PortBinding_a9af7a1acc339034ae2fb32c43b985169}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!caller\_port\_me\_expr\_@{caller\_port\_me\_expr\_}}
+\index{caller\_port\_me\_expr\_@{caller\_port\_me\_expr\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{caller\_port\_me\_expr\_}{caller\_port\_me\_expr\_}}
+{\footnotesize\ttfamily const clang\+::\+Member\+Expr$\ast$ systemc\+\_\+clang\+::\+Port\+Binding\+::caller\+\_\+port\+\_\+me\+\_\+expr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_aae42a0a5eb8919133e7f0fe46806e18b}\label{classsystemc__clang_1_1PortBinding_aae42a0a5eb8919133e7f0fe46806e18b}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!caller\_port\_name\_@{caller\_port\_name\_}}
+\index{caller\_port\_name\_@{caller\_port\_name\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{caller\_port\_name\_}{caller\_port\_name\_}}
+{\footnotesize\ttfamily std\+::string systemc\+\_\+clang\+::\+Port\+Binding\+::caller\+\_\+port\+\_\+name\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a1f6c1768a1be812b51b968e00822853d}\label{classsystemc__clang_1_1PortBinding_a1f6c1768a1be812b51b968e00822853d}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!instance\_constructor\_name\_@{instance\_constructor\_name\_}}
+\index{instance\_constructor\_name\_@{instance\_constructor\_name\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{instance\_constructor\_name\_}{instance\_constructor\_name\_}}
+{\footnotesize\ttfamily std\+::string systemc\+\_\+clang\+::\+Port\+Binding\+::instance\+\_\+constructor\+\_\+name\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a2d1ca9566823728e7bef38aad186dcde}\label{classsystemc__clang_1_1PortBinding_a2d1ca9566823728e7bef38aad186dcde}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!instance\_type\_@{instance\_type\_}}
+\index{instance\_type\_@{instance\_type\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{instance\_type\_}{instance\_type\_}}
+{\footnotesize\ttfamily std\+::string systemc\+\_\+clang\+::\+Port\+Binding\+::instance\+\_\+type\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_a840edc4d7d15b2584ff27d923cc67a4e}\label{classsystemc__clang_1_1PortBinding_a840edc4d7d15b2584ff27d923cc67a4e}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!instance\_type\_decl\_@{instance\_type\_decl\_}}
+\index{instance\_type\_decl\_@{instance\_type\_decl\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{instance\_type\_decl\_}{instance\_type\_decl\_}}
+{\footnotesize\ttfamily const clang\+::\+CXXRecord\+Decl$\ast$ systemc\+\_\+clang\+::\+Port\+Binding\+::instance\+\_\+type\+\_\+decl\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1PortBinding_afda27f653f063b97e5434d85a4e80a7f}\label{classsystemc__clang_1_1PortBinding_afda27f653f063b97e5434d85a4e80a7f}} 
+\index{systemc\_clang::PortBinding@{systemc\_clang::PortBinding}!instance\_var\_name\_@{instance\_var\_name\_}}
+\index{instance\_var\_name\_@{instance\_var\_name\_}!systemc\_clang::PortBinding@{systemc\_clang::PortBinding}}
+\doxysubsubsection{\texorpdfstring{instance\_var\_name\_}{instance\_var\_name\_}}
+{\footnotesize\ttfamily std\+::string systemc\+\_\+clang\+::\+Port\+Binding\+::instance\+\_\+var\+\_\+name\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/model/\mbox{\hyperlink{PortBinding_8h}{Port\+Binding.\+h}}\end{DoxyCompactItemize}

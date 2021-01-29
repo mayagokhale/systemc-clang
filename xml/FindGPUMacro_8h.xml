@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="FindGPUMacro_8h" kind="file" language="C++">
+    <compoundname>FindGPUMacro.h</compoundname>
+    <includes local="yes">clang/AST/DeclCXX.h</includes>
+    <includes local="yes">clang/AST/RecursiveASTVisitor.h</includes>
+    <includes local="yes">llvm/Support/raw_ostream.h</includes>
+    <includes local="no">map</includes>
+    <includes local="no">set</includes>
+    <includedby refid="Model_8h" local="yes">src/model/Model.h</includedby>
+    <includedby refid="FindGPUMacro_8cpp" local="yes">src/SCuitable/FindGPUMacro.cpp</includedby>
+    <includedby refid="GlobalSuspensionAutomata_8h" local="yes">src/SCuitable/GlobalSuspensionAutomata.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>llvm/Support/raw_ostream.h</label>
+      </node>
+      <node id="3">
+        <label>clang/AST/RecursiveASTVisitor.h</label>
+      </node>
+      <node id="5">
+        <label>map</label>
+      </node>
+      <node id="1">
+        <label>src/SCuitable/FindGPUMacro.h</label>
+        <link refid="FindGPUMacro_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>clang/AST/DeclCXX.h</label>
+      </node>
+      <node id="6">
+        <label>set</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="19">
+        <label>src/SCuitable/FindGPUMacro.cpp</label>
+        <link refid="FindGPUMacro_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/PluginAction.h</label>
+        <link refid="PluginAction_8h"/>
+      </node>
+      <node id="12">
+        <label>plugins/hdl/HDLBody.h</label>
+        <link refid="HDLBody_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/SystemCClang.h</label>
+        <link refid="SystemCClang_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>src/SCuitable/GlobalSuspensionAutomata.cpp</label>
+        <link refid="GlobalSuspensionAutomata_8cpp"/>
+      </node>
+      <node id="11">
+        <label>plugins/hdl/HDLBody.cpp</label>
+        <link refid="HDLBody_8cpp"/>
+      </node>
+      <node id="3">
+        <label>src/model/Model.cpp</label>
+        <link refid="Model_8cpp"/>
+      </node>
+      <node id="17">
+        <label>plugins/hdl/HDLType.cpp</label>
+        <link refid="HDLType_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/SCuitable/GlobalSuspensionAutomata.h</label>
+        <link refid="GlobalSuspensionAutomata_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>src/model/Model.h</label>
+        <link refid="Model_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>plugins/hdl/HDLHnode.cpp</label>
+        <link refid="HDLHnode_8cpp"/>
+      </node>
+      <node id="13">
+        <label>plugins/hdl/HDLMain.h</label>
+        <link refid="HDLMain_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>plugins/hdl/HDLMain.cpp</label>
+        <link refid="HDLMain_8cpp"/>
+      </node>
+      <node id="10">
+        <label>src/SystemCClang.cpp</label>
+        <link refid="SystemCClang_8cpp"/>
+      </node>
+      <node id="15">
+        <label>plugins/hdl/HDLHnode.h</label>
+        <link refid="HDLHnode_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/SCuitable/FindGPUMacro.h</label>
+        <link refid="FindGPUMacro_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>src/SAPlugin.h</label>
+        <link refid="SAPlugin_8h"/>
+      </node>
+      <node id="18">
+        <label>plugins/hdl/HDLType.h</label>
+        <link refid="HDLType_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>src/SCuitable/TimeAnalysis.h</label>
+        <link refid="TimeAnalysis_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsystemc__clang_1_1GPUMacro" prot="public">systemc_clang::GPUMacro</innerclass>
+    <innerclass refid="classsystemc__clang_1_1FindGPUMacro" prot="public">systemc_clang::FindGPUMacro</innerclass>
+    <innernamespace refid="namespacesystemc__clang">systemc_clang</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__FIND_GPU_MACRO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__FIND_GPU_MACRO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;clang/AST/DeclCXX.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;clang/AST/RecursiveASTVisitor.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;llvm/Support/raw_ostream.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesystemc__clang" kindref="compound">systemc_clang</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceclang" kindref="compound">clang</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classsystemc__clang_1_1GPUMacro" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsystemc__clang_1_1GPUMacro" kindref="compound">GPUMacro</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1GPUMacro" kindref="compound">GPUMacro</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1GPUMacro" kindref="compound">GPUMacro</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>~<ref refid="classsystemc__clang_1_1GPUMacro" kindref="compound">GPUMacro</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addGPUFit();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>denyGPUFit();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getBlockIdx();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getBlockIdy();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getBlockIdz();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getThreadIdx();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getThreadIdy();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getThreadIdz();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getGPUTime();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getCPUTime();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isGPUFit();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dump(raw_ostream<sp/>&amp;);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36" refid="classsystemc__clang_1_1GPUMacro_1a06f803a27fdc9e008f8cc1904400ec5c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1GPUMacro_1a06f803a27fdc9e008f8cc1904400ec5c" kindref="member">_blockIdx</ref>;</highlight></codeline>
+<codeline lineno="37" refid="classsystemc__clang_1_1GPUMacro_1a4ca499a59b50cebf760f95c4220ef463" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1GPUMacro_1a4ca499a59b50cebf760f95c4220ef463" kindref="member">_blockIdy</ref>;</highlight></codeline>
+<codeline lineno="38" refid="classsystemc__clang_1_1GPUMacro_1a2b6b46b2957fbe97a815b437b3346f5b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1GPUMacro_1a2b6b46b2957fbe97a815b437b3346f5b" kindref="member">_blockIdz</ref>;</highlight></codeline>
+<codeline lineno="39" refid="classsystemc__clang_1_1GPUMacro_1aa11a64d7561d885020a41d1415d760d1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1GPUMacro_1aa11a64d7561d885020a41d1415d760d1" kindref="member">_threadIdx</ref>;</highlight></codeline>
+<codeline lineno="40" refid="classsystemc__clang_1_1GPUMacro_1a1be3f3799006c7139cc3eac1e8d02fa8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1GPUMacro_1a1be3f3799006c7139cc3eac1e8d02fa8" kindref="member">_threadIdy</ref>;</highlight></codeline>
+<codeline lineno="41" refid="classsystemc__clang_1_1GPUMacro_1aa0c70be95d461aff5063a21467906dc8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1GPUMacro_1aa0c70be95d461aff5063a21467906dc8" kindref="member">_threadIdz</ref>;</highlight></codeline>
+<codeline lineno="42" refid="classsystemc__clang_1_1GPUMacro_1a16a787c0743b526b0f9fe0b3104369bb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1GPUMacro_1a16a787c0743b526b0f9fe0b3104369bb" kindref="member">_gpuTime</ref>;</highlight></codeline>
+<codeline lineno="43" refid="classsystemc__clang_1_1GPUMacro_1a2575febfce15bdc3d8909cfb188fa680" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1GPUMacro_1a2575febfce15bdc3d8909cfb188fa680" kindref="member">_cpuTime</ref>;</highlight></codeline>
+<codeline lineno="44" refid="classsystemc__clang_1_1GPUMacro_1a9b1a0381f39e36104fad9f64658c8b1f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1GPUMacro_1a9b1a0381f39e36104fad9f64658c8b1f" kindref="member">_gpuFit</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classsystemc__clang_1_1FindGPUMacro" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsystemc__clang_1_1FindGPUMacro" kindref="compound">FindGPUMacro</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>RecursiveASTVisitor&lt;FindGPUMacro&gt;<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49" refid="classsystemc__clang_1_1FindGPUMacro_1a9bed9afe2922108381ef0ac5bb3505de" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>pair&lt;int,<sp/>ForStmt<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1FindGPUMacro_1a9bed9afe2922108381ef0ac5bb3505de" kindref="member">forStmtInstanceIdPairType</ref>;</highlight></codeline>
+<codeline lineno="50" refid="classsystemc__clang_1_1FindGPUMacro_1ab7896ae9188debbbaa54744048bb467a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>map&lt;int,<sp/>ForStmt<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1FindGPUMacro_1ab7896ae9188debbbaa54744048bb467a" kindref="member">forStmtInstanceIdMapType</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classsystemc__clang_1_1FindGPUMacro_1a86a326f526c790d043be6ec3df04ca64" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>pair&lt;forStmtInstanceIdPairType,<sp/>GPUMacro<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1FindGPUMacro_1a86a326f526c790d043be6ec3df04ca64" kindref="member">forStmtGPUMacroPairType</ref>;</highlight></codeline>
+<codeline lineno="53" refid="classsystemc__clang_1_1FindGPUMacro_1a683dfecf001a3f455e3894ac825ca1bc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>map&lt;forStmtInstanceIdPairType,<sp/>GPUMacro<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1FindGPUMacro_1a683dfecf001a3f455e3894ac825ca1bc" kindref="member">forStmtGPUMacroMapType</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindGPUMacro" kindref="compound">FindGPUMacro</ref>(CXXMethodDecl<sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/>raw_ostream<sp/>&amp;);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classsystemc__clang_1_1FindGPUMacro" kindref="compound">FindGPUMacro</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>ANI<sp/>:<sp/>Need<sp/>to<sp/>add<sp/>other<sp/>loops<sp/>as<sp/>well.....</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>VisitForStmt(ForStmt<sp/>*);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindGPUMacro_1a683dfecf001a3f455e3894ac825ca1bc" kindref="member">forStmtGPUMacroMapType</ref><sp/>getForStmtGPUMacroMap();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dump();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>===</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Analyze<sp/>the<sp/>simple<sp/>for<sp/>loop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>int<sp/>a[5];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>(int<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>5;<sp/>++i)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>a[i]<sp/>=<sp/>i;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>===</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>analyze_data_struct(Stmt<sp/>*stmtList);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>analyze_expr(Expr<sp/>*expr);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>analyze_lhs(Expr<sp/>*expr);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>analyze_rhs(Expr<sp/>*expr);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>analyze_array_base(Expr<sp/>*base,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isLHS);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>analyze_value_decl(ValueDecl<sp/>*val);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="80" refid="classsystemc__clang_1_1FindGPUMacro_1a0a3753815bf244ca9118488308efc72f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindGPUMacro_1a683dfecf001a3f455e3894ac825ca1bc" kindref="member">forStmtGPUMacroMapType</ref><sp/><ref refid="classsystemc__clang_1_1FindGPUMacro_1a0a3753815bf244ca9118488308efc72f" kindref="member">_forStmtGPUMacroMap</ref>;</highlight></codeline>
+<codeline lineno="81" refid="classsystemc__clang_1_1FindGPUMacro_1a585f8511e9f89e8a2040b4fc3822e085" refkind="member"><highlight class="normal"><sp/><sp/>CXXMethodDecl<sp/>*<ref refid="classsystemc__clang_1_1FindGPUMacro_1a585f8511e9f89e8a2040b4fc3822e085" kindref="member">_entryFunction</ref>;</highlight></codeline>
+<codeline lineno="82" refid="classsystemc__clang_1_1FindGPUMacro_1aa10739a2026c42b81edccb90f8387ce4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindGPUMacro_1aa10739a2026c42b81edccb90f8387ce4" kindref="member">_instanceNum</ref>;</highlight></codeline>
+<codeline lineno="83" refid="classsystemc__clang_1_1FindGPUMacro_1af80cd73149352603f357c75377e93c5f" refkind="member"><highlight class="normal"><sp/><sp/>raw_ostream<sp/>&amp;<ref refid="classsystemc__clang_1_1FindGPUMacro_1af80cd73149352603f357c75377e93c5f" kindref="member">_os</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="classsystemc__clang_1_1FindGPUMacro_1aa73c9642fd8f219f60ec0311e06146a4" refkind="member"><highlight class="normal"><sp/><sp/>std::set&lt;ValueDecl<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1FindGPUMacro_1aa73c9642fd8f219f60ec0311e06146a4" kindref="member">lhs_decls</ref>;</highlight></codeline>
+<codeline lineno="86" refid="classsystemc__clang_1_1FindGPUMacro_1a39fec397d1fe11c9268ffc79aa440c9b" refkind="member"><highlight class="normal"><sp/><sp/>std::set&lt;ValueDecl<sp/>*&gt;<sp/><ref refid="classsystemc__clang_1_1FindGPUMacro_1a39fec397d1fe11c9268ffc79aa440c9b" kindref="member">rhs_decls</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>systemc_clang</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/SCuitable/FindGPUMacro.h"/>
+  </compounddef>
+</doxygen>

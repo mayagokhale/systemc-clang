@@ -1,0 +1,462 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structsc__ast__matchers_1_1ModuleInstanceType" kind="struct" language="C++" prot="public">
+    <compoundname>sc_ast_matchers::ModuleInstanceType</compoundname>
+    <includes refid="ModuleInstanceType_8h" local="no">ModuleInstanceType.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structsc__ast__matchers_1_1ModuleInstanceType_1aac2023ad45d93dba8f49b60a99187900" prot="public" static="no">
+        <type>std::tuple&lt; std::size_t, std::size_t, std::size_t &gt;</type>
+        <definition>typedef std::tuple&lt;std::size_t, std::size_t, std::size_t&gt; sc_ast_matchers::ModuleInstanceType::ArrayParamType</definition>
+        <argsstring></argsstring>
+        <name>ArrayParamType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="38" column="22" bodyfile="src/model/ModuleInstanceType.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsc__ast__matchers_1_1ModuleInstanceType_1a3b3ac6bc7550058593b15444e3f058ce" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string sc_ast_matchers::ModuleInstanceType::var_name</definition>
+        <argsstring></argsstring>
+        <name>var_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="17" column="15" bodyfile="src/model/ModuleInstanceType.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsc__ast__matchers_1_1ModuleInstanceType_1a270baee7ec4b2b885ed4b765b7714062" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string sc_ast_matchers::ModuleInstanceType::var_type_name</definition>
+        <argsstring></argsstring>
+        <name>var_type_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="18" column="15" bodyfile="src/model/ModuleInstanceType.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsc__ast__matchers_1_1ModuleInstanceType_1ac2e3331654217483b96515b50fd7172d" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string sc_ast_matchers::ModuleInstanceType::instance_name</definition>
+        <argsstring></argsstring>
+        <name>instance_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="19" column="15" bodyfile="src/model/ModuleInstanceType.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsc__ast__matchers_1_1ModuleInstanceType_1a3f89bb63d3cb8f7aa0ba6ff6e08bb693" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string sc_ast_matchers::ModuleInstanceType::parent_name</definition>
+        <argsstring></argsstring>
+        <name>parent_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="21" column="7" bodyfile="src/model/ModuleInstanceType.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsc__ast__matchers_1_1ModuleInstanceType_1ace8d813116395be7de22d9d492283a69" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sc_ast_matchers::ModuleInstanceType::is_field_decl</definition>
+        <argsstring></argsstring>
+        <name>is_field_decl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="22" column="8" bodyfile="src/model/ModuleInstanceType.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsc__ast__matchers_1_1ModuleInstanceType_1ab09f623c60a3aed02d2648512beca6e1" prot="public" static="no" mutable="no">
+        <type>clang::Decl *</type>
+        <definition>clang::Decl* sc_ast_matchers::ModuleInstanceType::type_decl</definition>
+        <argsstring></argsstring>
+        <name>type_decl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="23" column="15" bodyfile="src/model/ModuleInstanceType.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsc__ast__matchers_1_1ModuleInstanceType_1a2a82a26b5175ffbd26146154cde7b054" prot="public" static="no" mutable="no">
+        <type>clang::Decl *</type>
+        <definition>clang::Decl* sc_ast_matchers::ModuleInstanceType::instance_decl</definition>
+        <argsstring></argsstring>
+        <name>instance_decl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="24" column="15" bodyfile="src/model/ModuleInstanceType.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsc__ast__matchers_1_1ModuleInstanceType_1a7176c5491aa5e6cd2fc04dae3e63eb66" prot="public" static="no" mutable="no">
+        <type>clang::ValueDecl *</type>
+        <definition>clang::ValueDecl* sc_ast_matchers::ModuleInstanceType::parent_decl</definition>
+        <argsstring></argsstring>
+        <name>parent_decl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="25" column="20" bodyfile="src/model/ModuleInstanceType.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsc__ast__matchers_1_1ModuleInstanceType_1ad9056089538277c3b0fb3b04ed7a00c9" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sc_ast_matchers::ModuleInstanceType::is_array</definition>
+        <argsstring></argsstring>
+        <name>is_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="26" column="8" bodyfile="src/model/ModuleInstanceType.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsc__ast__matchers_1_1ModuleInstanceType_1aca4d97a4786fa633d27ed90ecca494a0" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; sc_ast_matchers::ModuleInstanceType::instance_names</definition>
+        <argsstring></argsstring>
+        <name>instance_names</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="28" column="15" bodyfile="src/model/ModuleInstanceType.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsc__ast__matchers_1_1ModuleInstanceType_1afdb810b7b04e23673a3c2e64b4cb3001" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool sc_ast_matchers::ModuleInstanceType::is_array_</definition>
+        <argsstring></argsstring>
+        <name>is_array_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="36" column="8" bodyfile="src/model/ModuleInstanceType.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsc__ast__matchers_1_1ModuleInstanceType_1add7481687d407362b2aa2771ab44c81f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; llvm::APInt &gt;</type>
+        <definition>std::vector&lt;llvm::APInt&gt; sc_ast_matchers::ModuleInstanceType::array_sizes_</definition>
+        <argsstring></argsstring>
+        <name>array_sizes_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="37" column="15" bodyfile="src/model/ModuleInstanceType.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsc__ast__matchers_1_1ModuleInstanceType_1a236514c93fde675146a536181d6972c2" prot="public" static="no" mutable="no">
+        <type><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1aac2023ad45d93dba8f49b60a99187900" kindref="member">ArrayParamType</ref></type>
+        <definition>ArrayParamType sc_ast_matchers::ModuleInstanceType::array_parameters_</definition>
+        <argsstring></argsstring>
+        <name>array_parameters_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="39" column="18" bodyfile="src/model/ModuleInstanceType.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structsc__ast__matchers_1_1ModuleInstanceType_1a10969391ab3bdda46fddafea615a17c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sc_ast_matchers::ModuleInstanceType::add_instance_name</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>add_instance_name</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="30" column="8" bodyfile="src/model/ModuleInstanceType.h" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="structsc__ast__matchers_1_1ModuleInstanceType_1adea60ab02b411fa1c7c893b22bd60f2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; sc_ast_matchers::ModuleInstanceType::getInstanceNames</definition>
+        <argsstring>()</argsstring>
+        <name>getInstanceNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="33" column="15" bodyfile="src/model/ModuleInstanceType.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="structsc__ast__matchers_1_1ModuleInstanceType_1af689bd6362ade596b39cf60e0580a7e2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>clang::Decl *</type>
+        <definition>clang::Decl* sc_ast_matchers::ModuleInstanceType::getInstanceTypeDecl</definition>
+        <argsstring>() const</argsstring>
+        <name>getInstanceTypeDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="41" column="15" bodyfile="src/model/ModuleInstanceType.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="structsc__ast__matchers_1_1ModuleInstanceType_1a7de22e4517b0ea62852b08a721874e4f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>clang::Decl *</type>
+        <definition>clang::Decl* sc_ast_matchers::ModuleInstanceType::getInstanceDecl</definition>
+        <argsstring>() const</argsstring>
+        <name>getInstanceDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="42" column="15" bodyfile="src/model/ModuleInstanceType.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="structsc__ast__matchers_1_1ModuleInstanceType_1a6f465b5e89502c3e28b91194c10bc15c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>clang::ValueDecl *</type>
+        <definition>clang::ValueDecl* sc_ast_matchers::ModuleInstanceType::getParentDecl</definition>
+        <argsstring>() const</argsstring>
+        <name>getParentDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="43" column="20" bodyfile="src/model/ModuleInstanceType.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="structsc__ast__matchers_1_1ModuleInstanceType_1afe46b03c037611210008d2163a5545a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sc_ast_matchers::ModuleInstanceType::setArrayType</definition>
+        <argsstring>()</argsstring>
+        <name>setArrayType</name>
+        <briefdescription>
+<para>Array handling. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="46" column="8" bodyfile="src/model/ModuleInstanceType.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="structsc__ast__matchers_1_1ModuleInstanceType_1a26667c2766b34d55061efedda27946be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sc_ast_matchers::ModuleInstanceType::setArrayParameters</definition>
+        <argsstring>(ArrayParamType parm)</argsstring>
+        <name>setArrayParameters</name>
+        <param>
+          <type><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1aac2023ad45d93dba8f49b60a99187900" kindref="member">ArrayParamType</ref></type>
+          <declname>parm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="47" column="8" bodyfile="src/model/ModuleInstanceType.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="structsc__ast__matchers_1_1ModuleInstanceType_1a28162f2cd35d5d9f58bb6f6114ba3664" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structsc__ast__matchers_1_1ModuleInstanceType_1aac2023ad45d93dba8f49b60a99187900" kindref="member">ArrayParamType</ref></type>
+        <definition>ArrayParamType sc_ast_matchers::ModuleInstanceType::getArrayParameters</definition>
+        <argsstring>()</argsstring>
+        <name>getArrayParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="48" column="18" bodyfile="src/model/ModuleInstanceType.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="structsc__ast__matchers_1_1ModuleInstanceType_1a4371dc69e15c57afbf4488d7897b8c83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sc_ast_matchers::ModuleInstanceType::isArrayType</definition>
+        <argsstring>()</argsstring>
+        <name>isArrayType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="49" column="8" bodyfile="src/model/ModuleInstanceType.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="structsc__ast__matchers_1_1ModuleInstanceType_1a04ffe18b47e0526bc72d523764f9cf01" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int sc_ast_matchers::ModuleInstanceType::getArrayDimension</definition>
+        <argsstring>() const</argsstring>
+        <name>getArrayDimension</name>
+        <briefdescription>
+<para>Return the array dimension, if the module instance is an array. 0 means a single instance k means kD array with a maximum of k = 3. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="54" column="16" bodyfile="src/model/ModuleInstanceType.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="structsc__ast__matchers_1_1ModuleInstanceType_1af3c77277d6002bbc654332fcff9ac1de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sc_ast_matchers::ModuleInstanceType::addArraySizes</definition>
+        <argsstring>(std::vector&lt; llvm::APInt &gt; sizes)</argsstring>
+        <name>addArraySizes</name>
+        <param>
+          <type>std::vector&lt; llvm::APInt &gt;</type>
+          <declname>sizes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="56" column="8" bodyfile="src/model/ModuleInstanceType.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="structsc__ast__matchers_1_1ModuleInstanceType_1a2e2b3da949e2f822f1f07eaa8726f5af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; llvm::APInt &gt;</type>
+        <definition>std::vector&lt;llvm::APInt&gt; sc_ast_matchers::ModuleInstanceType::getArraySizes</definition>
+        <argsstring>()</argsstring>
+        <name>getArraySizes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="57" column="15" bodyfile="src/model/ModuleInstanceType.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="structsc__ast__matchers_1_1ModuleInstanceType_1ad62e9f4402009961f4ba3383bcfb88df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sc_ast_matchers::ModuleInstanceType::ModuleInstanceType</definition>
+        <argsstring>()</argsstring>
+        <name>ModuleInstanceType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="59" column="3" bodyfile="src/model/ModuleInstanceType.h" bodystart="59" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="structsc__ast__matchers_1_1ModuleInstanceType_1ac7d33859a1ca9e45797c1077c9246b4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>sc_ast_matchers::ModuleInstanceType::ModuleInstanceType</definition>
+        <argsstring>(const ModuleInstanceType &amp;rhs)</argsstring>
+        <name>ModuleInstanceType</name>
+        <param>
+          <type>const <ref refid="structsc__ast__matchers_1_1ModuleInstanceType" kindref="compound">ModuleInstanceType</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="71" column="3" bodyfile="src/model/ModuleInstanceType.h" bodystart="71" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="structsc__ast__matchers_1_1ModuleInstanceType_1afaf59d3bf2ff23c65984cd66bdc5f072" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sc_ast_matchers::ModuleInstanceType::operator==</definition>
+        <argsstring>(const ModuleInstanceType &amp;rhs)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="structsc__ast__matchers_1_1ModuleInstanceType" kindref="compound">ModuleInstanceType</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="86" column="8" bodyfile="src/model/ModuleInstanceType.h" bodystart="86" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="structsc__ast__matchers_1_1ModuleInstanceType_1a442d565b3145ed94b42106a8be15a906" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sc_ast_matchers::ModuleInstanceType::dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ModuleInstanceType.h" line="96" column="8" bodyfile="src/model/ModuleInstanceType.h" bodystart="96" bodyend="124"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/model/ModuleInstanceType.h" line="16" column="1" bodyfile="src/model/ModuleInstanceType.h" bodystart="16" bodyend="125"/>
+    <listofallmembers>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1a10969391ab3bdda46fddafea615a17c0" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>add_instance_name</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1af3c77277d6002bbc654332fcff9ac1de" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>addArraySizes</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1a236514c93fde675146a536181d6972c2" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>array_parameters_</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1add7481687d407362b2aa2771ab44c81f" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>array_sizes_</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1aac2023ad45d93dba8f49b60a99187900" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>ArrayParamType</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1a442d565b3145ed94b42106a8be15a906" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>dump</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1a04ffe18b47e0526bc72d523764f9cf01" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>getArrayDimension</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1a28162f2cd35d5d9f58bb6f6114ba3664" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>getArrayParameters</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1a2e2b3da949e2f822f1f07eaa8726f5af" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>getArraySizes</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1a7de22e4517b0ea62852b08a721874e4f" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>getInstanceDecl</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1adea60ab02b411fa1c7c893b22bd60f2a" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>getInstanceNames</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1af689bd6362ade596b39cf60e0580a7e2" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>getInstanceTypeDecl</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1a6f465b5e89502c3e28b91194c10bc15c" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>getParentDecl</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1a2a82a26b5175ffbd26146154cde7b054" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>instance_decl</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1ac2e3331654217483b96515b50fd7172d" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>instance_name</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1aca4d97a4786fa633d27ed90ecca494a0" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>instance_names</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1ad9056089538277c3b0fb3b04ed7a00c9" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>is_array</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1afdb810b7b04e23673a3c2e64b4cb3001" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>is_array_</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1ace8d813116395be7de22d9d492283a69" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>is_field_decl</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1a4371dc69e15c57afbf4488d7897b8c83" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>isArrayType</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1ad62e9f4402009961f4ba3383bcfb88df" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>ModuleInstanceType</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1ac7d33859a1ca9e45797c1077c9246b4e" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>ModuleInstanceType</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1afaf59d3bf2ff23c65984cd66bdc5f072" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>operator==</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1a7176c5491aa5e6cd2fc04dae3e63eb66" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>parent_decl</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1a3f89bb63d3cb8f7aa0ba6ff6e08bb693" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>parent_name</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1a26667c2766b34d55061efedda27946be" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>setArrayParameters</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1afe46b03c037611210008d2163a5545a9" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>setArrayType</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1ab09f623c60a3aed02d2648512beca6e1" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>type_decl</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1a3b3ac6bc7550058593b15444e3f058ce" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>var_name</name></member>
+      <member refid="structsc__ast__matchers_1_1ModuleInstanceType_1a270baee7ec4b2b885ed4b765b7714062" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleInstanceType</scope><name>var_type_name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

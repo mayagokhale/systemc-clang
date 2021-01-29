@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsc__ast__matchers_1_1ModuleDeclarationMatcher" kind="class" language="C++" prot="public">
+    <compoundname>sc_ast_matchers::ModuleDeclarationMatcher</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MatchFinder::MatchCallback</basecompoundref>
+    <includes refid="Matchers_8h" local="no">Matchers.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1ac3dae740827d5f892268a7334bc01a65" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classsc__ast__matchers_1_1InstanceMatcher_1a70b046aa0e773c870c2f169dc09b11a6" kindref="member">InstanceMatcher::InstanceDeclType</ref> &gt;</type>
+        <definition>typedef std::vector&lt;InstanceMatcher::InstanceDeclType&gt; sc_ast_matchers::ModuleDeclarationMatcher::InstanceListType</definition>
+        <argsstring></argsstring>
+        <name>InstanceListType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/Matchers.h" line="28" column="23" bodyfile="src/matchers/Matchers.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1adee6b44640fd0cdc83a9ea270c8c2a77" prot="public" static="no">
+        <type>std::pair&lt; clang::CXXRecordDecl *, <ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref> * &gt;</type>
+        <definition>typedef std::pair&lt;clang::CXXRecordDecl *, ModuleInstance *&gt; sc_ast_matchers::ModuleDeclarationMatcher::ModulePairType</definition>
+        <argsstring></argsstring>
+        <name>ModulePairType</name>
+        <briefdescription>
+<para>This will store all the modules as ModuleDecl. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/Matchers.h" line="31" column="21" bodyfile="src/matchers/Matchers.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1ac9eb5a346eddccc3bf5e4def371c4a00" prot="public" static="no">
+        <type>std::multimap&lt; clang::CXXRecordDecl *, <ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref> * &gt;</type>
+        <definition>typedef std::multimap&lt;clang::CXXRecordDecl *, ModuleInstance *&gt; sc_ast_matchers::ModuleDeclarationMatcher::ModuleMapType</definition>
+        <argsstring></argsstring>
+        <name>ModuleMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/Matchers.h" line="32" column="25" bodyfile="src/matchers/Matchers.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1acdc5aec85f8992d45e5d515e27686cd8" prot="private" static="no" mutable="no">
+        <type><ref refid="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1ac9eb5a346eddccc3bf5e4def371c4a00" kindref="member">ModuleMapType</ref></type>
+        <definition>ModuleMapType sc_ast_matchers::ModuleDeclarationMatcher::modules_</definition>
+        <argsstring></argsstring>
+        <name>modules_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This will store the module instances as pair of CXXRecordDecl*, ModuleInstance*. The CXXRecordDecl* is the type of the sc_module, and ModuleInstance holds additional parsed information. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/Matchers.h" line="39" column="17" bodyfile="src/matchers/Matchers.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1a177826a10a2e53d440b2fa0f6e47233e" prot="private" static="no" mutable="no">
+        <type><ref refid="classsc__ast__matchers_1_1InstanceMatcher" kindref="compound">InstanceMatcher</ref></type>
+        <definition>InstanceMatcher sc_ast_matchers::ModuleDeclarationMatcher::instance_matcher_</definition>
+        <argsstring></argsstring>
+        <name>instance_matcher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/Matchers.h" line="42" column="19" bodyfile="src/matchers/Matchers.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1a5050a59b8896a04367b83c1ad25b92bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classsc__ast__matchers_1_1InstanceMatcher" kindref="compound">InstanceMatcher</ref> &amp;</type>
+        <definition>const InstanceMatcher&amp; sc_ast_matchers::ModuleDeclarationMatcher::getInstanceMatcher</definition>
+        <argsstring>()</argsstring>
+        <name>getInstanceMatcher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/Matchers.h" line="45" column="25" bodyfile="src/matchers/Matchers.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1a41be6b3f725dc4773e2908acb5e6c0f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sc_ast_matchers::ModuleDeclarationMatcher::registerMatchers</definition>
+        <argsstring>(MatchFinder &amp;finder)</argsstring>
+        <name>registerMatchers</name>
+        <param>
+          <type>MatchFinder &amp;</type>
+          <declname>finder</declname>
+        </param>
+        <briefdescription>
+<para>Register the matchers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/Matchers.h" line="48" column="8" bodyfile="src/matchers/Matchers.h" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1aae4820979b827babc2122b17c53a5595" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sc_ast_matchers::ModuleDeclarationMatcher::run</definition>
+        <argsstring>(const MatchFinder::MatchResult &amp;result)</argsstring>
+        <name>run</name>
+        <param>
+          <type>const MatchFinder::MatchResult &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/Matchers.h" line="53" column="16" bodyfile="src/matchers/Matchers.h" bodystart="53" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1a4cdced231707237391633b2490ab076e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1ac9eb5a346eddccc3bf5e4def371c4a00" kindref="member">ModuleMapType</ref> &amp;</type>
+        <definition>const ModuleMapType&amp; sc_ast_matchers::ModuleDeclarationMatcher::getFoundModuleDeclarations</definition>
+        <argsstring>() const</argsstring>
+        <name>getFoundModuleDeclarations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/Matchers.h" line="56" column="23" bodyfile="src/matchers/Matchers.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1a1cef2f798064c1f405b494d951715e80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sc_ast_matchers::ModuleDeclarationMatcher::pruneMatches</definition>
+        <argsstring>(ASTContext &amp;context)</argsstring>
+        <name>pruneMatches</name>
+        <param>
+          <type>ASTContext &amp;</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/Matchers.h" line="58" column="8" bodyfile="src/matchers/Matchers.h" bodystart="58" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1a920e15b79dd21c03d36ae5b50a74ea11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sc_ast_matchers::ModuleDeclarationMatcher::dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/Matchers.h" line="114" column="8" bodyfile="src/matchers/Matchers.h" bodystart="114" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class <ref refid="classsc__ast__matchers_1_1ModuleDeclarationMatcher" kindref="compound">ModuleDeclarationMatcher</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MatchFinder::MatchCallback</label>
+      </node>
+      <node id="1">
+        <label>sc_ast_matchers::ModuleDeclarationMatcher</label>
+        <link refid="classsc__ast__matchers_1_1ModuleDeclarationMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MatchFinder::MatchCallback</label>
+      </node>
+      <node id="3">
+        <label>sc_ast_matchers::InstanceMatcher</label>
+        <link refid="classsc__ast__matchers_1_1InstanceMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>sc_ast_matchers::ModuleDeclarationMatcher</label>
+        <link refid="classsc__ast__matchers_1_1ModuleDeclarationMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>instance_matcher_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/matchers/Matchers.h" line="25" column="1" bodyfile="src/matchers/Matchers.h" bodystart="25" bodyend="130"/>
+    <listofallmembers>
+      <member refid="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1a920e15b79dd21c03d36ae5b50a74ea11" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleDeclarationMatcher</scope><name>dump</name></member>
+      <member refid="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1a4cdced231707237391633b2490ab076e" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleDeclarationMatcher</scope><name>getFoundModuleDeclarations</name></member>
+      <member refid="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1a5050a59b8896a04367b83c1ad25b92bf" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleDeclarationMatcher</scope><name>getInstanceMatcher</name></member>
+      <member refid="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1a177826a10a2e53d440b2fa0f6e47233e" prot="private" virt="non-virtual"><scope>sc_ast_matchers::ModuleDeclarationMatcher</scope><name>instance_matcher_</name></member>
+      <member refid="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1ac3dae740827d5f892268a7334bc01a65" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleDeclarationMatcher</scope><name>InstanceListType</name></member>
+      <member refid="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1ac9eb5a346eddccc3bf5e4def371c4a00" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleDeclarationMatcher</scope><name>ModuleMapType</name></member>
+      <member refid="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1adee6b44640fd0cdc83a9ea270c8c2a77" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleDeclarationMatcher</scope><name>ModulePairType</name></member>
+      <member refid="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1acdc5aec85f8992d45e5d515e27686cd8" prot="private" virt="non-virtual"><scope>sc_ast_matchers::ModuleDeclarationMatcher</scope><name>modules_</name></member>
+      <member refid="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1a1cef2f798064c1f405b494d951715e80" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleDeclarationMatcher</scope><name>pruneMatches</name></member>
+      <member refid="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1a41be6b3f725dc4773e2908acb5e6c0f4" prot="public" virt="non-virtual"><scope>sc_ast_matchers::ModuleDeclarationMatcher</scope><name>registerMatchers</name></member>
+      <member refid="classsc__ast__matchers_1_1ModuleDeclarationMatcher_1aae4820979b827babc2122b17c53a5595" prot="public" virt="virtual"><scope>sc_ast_matchers::ModuleDeclarationMatcher</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classparselib_1_1transforms_1_1top__down_1_1TopDown" kind="class" language="Python" prot="public">
+    <compoundname>parselib::transforms::top_down::TopDown</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Interpreter</basecompoundref>
+    <derivedcompoundref refid="classparselib_1_1transforms_1_1alias__translation_1_1AliasTranslation" prot="public" virt="non-virtual">parselib.transforms.alias_translation.AliasTranslation</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1transforms_1_1function__param__marker_1_1FunctionParamMarker" prot="public" virt="non-virtual">parselib.transforms.function_param_marker.FunctionParamMarker</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1transforms_1_1literal__expansion_1_1LiteralExpansion" prot="public" virt="non-virtual">parselib.transforms.literal_expansion.LiteralExpansion</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass" prot="public" virt="non-virtual">parselib.transforms.node_merge.NodeMergePass</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1transforms_1_1node__movement_1_1NodeMovement" prot="public" virt="non-virtual">parselib.transforms.node_movement.NodeMovement</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion" prot="public" virt="non-virtual">parselib.transforms.port_expansion.PortExpansion</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1transforms_1_1reorder__mod__init__block_1_1ReorderModInitBlock" prot="public" virt="non-virtual">parselib.transforms.reorder_mod_init_block.ReorderModInitBlock</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge" prot="public" virt="non-virtual">parselib.transforms.slice_merge.SliceMerge</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl" prot="public" virt="non-virtual">parselib.transforms.sort_var_decl.SortVarDecl</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion" prot="public" virt="non-virtual">parselib.transforms.typedef_expansion.TypedefExpansion</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1transforms_1_1typedef__filter_1_1TypeDefFilter" prot="public" virt="non-virtual">parselib.transforms.typedef_filter.TypeDefFilter</derivedcompoundref>
+    <derivedcompoundref refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass" prot="public" virt="non-virtual">parselib.transforms.verilog_tranlation.VerilogTranslationPass</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1top__down_1_1TopDown_1a2738f9bf2467d410d3990343dcaf88ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.top_down.TopDown.__default__</definition>
+        <argsstring>(self, t)</argsstring>
+        <name>__default__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>t</type>
+          <defname>t</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/top_down.py" line="25" column="1" bodyfile="plugins/hdl/parselib/transforms/top_down.py" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1top__down_1_1TopDown_1aba7572132ec76ea47811c9d077763441" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.top_down.TopDown.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <reimplementedby refid="classparselib_1_1transforms_1_1alias__translation_1_1AliasTranslation_1aa101c0df6d45f12134d7f16ddeab00e4">__init__</reimplementedby>
+        <reimplementedby refid="classparselib_1_1transforms_1_1function__param__marker_1_1FunctionParamMarker_1a1ca1c6da40e3320e8515a0d4387a8338">__init__</reimplementedby>
+        <reimplementedby refid="classparselib_1_1transforms_1_1literal__expansion_1_1LiteralExpansion_1abf661c8487507a7d3bd849b941f75365">__init__</reimplementedby>
+        <reimplementedby refid="classparselib_1_1transforms_1_1node__movement_1_1NodeMovement_1a5b96e69e58ae08437bcc04fe973b90b2">__init__</reimplementedby>
+        <reimplementedby refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion_1acf33105cf50c728fdbddc4423e8b799a">__init__</reimplementedby>
+        <reimplementedby refid="classparselib_1_1transforms_1_1reorder__mod__init__block_1_1ReorderModInitBlock_1a16da6dc4d8f17586c4d3b3aeb31f85f0">__init__</reimplementedby>
+        <reimplementedby refid="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge_1a75d4e89cd4b3462b71a182e68ff6cc75">__init__</reimplementedby>
+        <reimplementedby refid="classparselib_1_1transforms_1_1typedef__filter_1_1TypeDefFilter_1af91733ab2ff8a60b34f8d774b739ee9c">__init__</reimplementedby>
+        <reimplementedby refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass_1ab2481ae6da2d740bc0b872e91645632c">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/top_down.py" line="32" column="1" bodyfile="plugins/hdl/parselib/transforms/top_down.py" bodystart="32" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1top__down_1_1TopDown_1a7064a163977352a2b47acbf7e388116c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.top_down.TopDown.__push_up</definition>
+        <argsstring>(self, current_node)</argsstring>
+        <name>__push_up</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>current_node</type>
+          <defname>current_node</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/top_down.py" line="29" column="1" bodyfile="plugins/hdl/parselib/transforms/top_down.py" bodystart="29" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7">
+        <label>parselib.transforms.node_movement.NodeMovement</label>
+        <link refid="classparselib_1_1transforms_1_1node__movement_1_1NodeMovement"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>parselib.transforms.alias_translation.AliasTranslation</label>
+        <link refid="classparselib_1_1transforms_1_1alias__translation_1_1AliasTranslation"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>parselib.transforms.node_merge.NodeMergePass</label>
+        <link refid="classparselib_1_1transforms_1_1node__merge_1_1NodeMergePass"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>parselib.transforms.reorder_mod_init_block.ReorderModInitBlock</label>
+        <link refid="classparselib_1_1transforms_1_1reorder__mod__init__block_1_1ReorderModInitBlock"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>parselib.transforms.slice_merge.SliceMerge</label>
+        <link refid="classparselib_1_1transforms_1_1slice__merge_1_1SliceMerge"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>parselib.transforms.port_expansion.PortExpansion</label>
+        <link refid="classparselib_1_1transforms_1_1port__expansion_1_1PortExpansion"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>parselib.transforms.typedef_expansion.TypedefExpansion</label>
+        <link refid="classparselib_1_1transforms_1_1typedef__expansion_1_1TypedefExpansion"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>parselib.transforms.top_down.TopDown</label>
+        <link refid="classparselib_1_1transforms_1_1top__down_1_1TopDown"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>parselib.transforms.function_param_marker.FunctionParamMarker</label>
+        <link refid="classparselib_1_1transforms_1_1function__param__marker_1_1FunctionParamMarker"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>parselib.transforms.typedef_filter.TypeDefFilter</label>
+        <link refid="classparselib_1_1transforms_1_1typedef__filter_1_1TypeDefFilter"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>parselib.transforms.verilog_tranlation.VerilogTranslationPass</label>
+        <link refid="classparselib_1_1transforms_1_1verilog__tranlation_1_1VerilogTranslationPass"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Interpreter</label>
+      </node>
+      <node id="5">
+        <label>parselib.transforms.literal_expansion.LiteralExpansion</label>
+        <link refid="classparselib_1_1transforms_1_1literal__expansion_1_1LiteralExpansion"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>parselib.transforms.sort_var_decl.SortVarDecl</label>
+        <link refid="classparselib_1_1transforms_1_1sort__var__decl_1_1SortVarDecl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>parselib.transforms.top_down.TopDown</label>
+        <link refid="classparselib_1_1transforms_1_1top__down_1_1TopDown"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Interpreter</label>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/parselib/transforms/top_down.py" line="24" column="1" bodyfile="plugins/hdl/parselib/transforms/top_down.py" bodystart="24" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1a2738f9bf2467d410d3990343dcaf88ff" prot="public" virt="non-virtual"><scope>parselib::transforms::top_down::TopDown</scope><name>__default__</name></member>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1aba7572132ec76ea47811c9d077763441" prot="public" virt="non-virtual"><scope>parselib::transforms::top_down::TopDown</scope><name>__init__</name></member>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1a7064a163977352a2b47acbf7e388116c" prot="private" virt="non-virtual"><scope>parselib::transforms::top_down::TopDown</scope><name>__push_up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespacesc__ast__matchers_1_1utils_1_1array__type" kind="namespace" language="C++">
+    <compoundname>sc_ast_matchers::utils::array_type</compoundname>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacesc__ast__matchers_1_1utils_1_1array__type_1a51fab4502d93ed9bfe3511c0fd03a142" prot="public" static="no">
+        <type>std::pair&lt; std::string, std::tuple&lt; std::size_t, std::size_t, std::size_t &gt; &gt;</type>
+        <definition>typedef std::pair&lt;std::string, std::tuple&lt;std::size_t, std::size_t, std::size_t&gt; &gt; sc_ast_matchers::utils::array_type::IndexPairType</definition>
+        <argsstring></argsstring>
+        <name>IndexPairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utils/ArrayTypeUtils.h" line="18" column="5" bodyfile="src/utils/ArrayTypeUtils.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacesc__ast__matchers_1_1utils_1_1array__type_1a8d73d3e8a037eafac89d3561cbafb162" prot="public" static="no">
+        <type>std::map&lt; std::string, std::tuple&lt; std::size_t, std::size_t, std::size_t &gt; &gt;</type>
+        <definition>typedef std::map&lt;std::string, std::tuple&lt;std::size_t, std::size_t, std::size_t&gt; &gt; sc_ast_matchers::utils::array_type::IndexMapType</definition>
+        <argsstring></argsstring>
+        <name>IndexMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utils/ArrayTypeUtils.h" line="20" column="5" bodyfile="src/utils/ArrayTypeUtils.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacesc__ast__matchers_1_1utils_1_1array__type_1ae8bd783b0a85b63dd15d51d2105819e7" prot="public" static="no">
+        <type>std::vector&lt; llvm::APInt &gt;</type>
+        <definition>typedef std::vector&lt;llvm::APInt&gt; sc_ast_matchers::utils::array_type::ArraySizesType</definition>
+        <argsstring></argsstring>
+        <name>ArraySizesType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utils/ArrayTypeUtils.h" line="23" column="21" bodyfile="src/utils/ArrayTypeUtils.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacesc__ast__matchers_1_1utils_1_1array__type_1acff532eeeea53088536f606a537ccd24" prot="public" static="no">
+        <type>std::vector&lt; const clang::Expr * &gt;</type>
+        <definition>typedef std::vector&lt;const clang::Expr *&gt; sc_ast_matchers::utils::array_type::ArraySizesExprType</definition>
+        <argsstring></argsstring>
+        <name>ArraySizesExprType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utils/ArrayTypeUtils.h" line="24" column="21" bodyfile="src/utils/ArrayTypeUtils.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacesc__ast__matchers_1_1utils_1_1array__type_1a8caeed19d064a60af5447e3b3b2bc7b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacesc__ast__matchers_1_1utils_1_1array__type_1a8d73d3e8a037eafac89d3561cbafb162" kindref="member">IndexMapType</ref></type>
+        <definition>IndexMapType sc_ast_matchers::utils::array_type::getArrayInstanceIndex</definition>
+        <argsstring>(clang::CXXCtorInitializer *ctor_init)</argsstring>
+        <name>getArrayInstanceIndex</name>
+        <param>
+          <type>clang::CXXCtorInitializer *</type>
+          <declname>ctor_init</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the indices associated with each element of an array of objects that is instantiated using a constructor.</para>
+<para>For example, class A { public: A( std::string s) {} } A array_a[2][3]{ {&quot;0_0&quot;, &quot;0_1&quot;, &quot;0_2&quot;}, {&quot;1_0&quot;, &quot;1_1&quot;, &quot;1_2&quot;}, {&quot;2_0&quot;, &quot;2_1&quot;, &quot;2_2&quot;} };</para>
+<para>This should identify the appropriate index for each instance of object A. That is, array_a[0][1] should be associated with instance named &quot;0_1&quot;. </para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Assumption: We will only support 1D, 2D and 3D arrays.</para>
+<para>Retrieve the number of initializer lists.</para>
+<para>Level 2</para>
+<para>Get the constructor argument.</para>
+<para>Level 3</para>
+        </inbodydescription>
+        <location file="src/utils/ArrayTypeUtils.cpp" line="9" column="14" bodyfile="src/utils/ArrayTypeUtils.cpp" bodystart="9" bodyend="115" declfile="src/utils/ArrayTypeUtils.h" declline="40" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesc__ast__matchers_1_1utils_1_1array__type_1a5d1a3a0c3ca7852900707e6847544394" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacesc__ast__matchers_1_1utils_1_1array__type_1ae8bd783b0a85b63dd15d51d2105819e7" kindref="member">ArraySizesType</ref></type>
+        <definition>ArraySizesType sc_ast_matchers::utils::array_type::getConstantArraySizes</definition>
+        <argsstring>(const clang::FieldDecl *fd)</argsstring>
+        <name>getConstantArraySizes</name>
+        <param>
+          <type>const clang::FieldDecl *</type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the sizes of an array that are provided when the array is declared.</para>
+<para>For example, AType a[4][5]; Would return 4 and 5 in a vector. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/utils/ArrayTypeUtils.cpp" line="117" column="16" bodyfile="src/utils/ArrayTypeUtils.cpp" bodystart="117" bodyend="134" declfile="src/utils/ArrayTypeUtils.h" declline="49" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesc__ast__matchers_1_1utils_1_1array__type_1aaceb5ab834462ecaf2da90c3b1da1794" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacesc__ast__matchers_1_1utils_1_1array__type_1acff532eeeea53088536f606a537ccd24" kindref="member">ArraySizesExprType</ref></type>
+        <definition>ArraySizesExprType sc_ast_matchers::utils::array_type::getArraySubscripts</definition>
+        <argsstring>(const clang::Expr *expr)</argsstring>
+        <name>getArraySubscripts</name>
+        <param>
+          <type>const clang::Expr *</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the array subscripts used in an ArraySubscriptExpr. For example, arr[0][1] would return 0, 1. </para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Check if it is an ArraySubscriptExpr</para>
+<para>The index could be an integer or a variable name a[x]. The integer a[4] is represented as an IntegerLiteral, and the variable name uses a DeclRefExpr.</para>
+<para>TODO: Need to insert into subscripts, but it should really be Expr that is the value element. So, change subscripts to hold that, and then use it to hold both IntegerLiteral and DeclRefExpr.</para>
+<para>INFO: For some reason, dyn_cast on the ArraySubscriptExpr to get the ImplicitCastExpr does not work. So the way to get to it is to call getBase(), which makes sense that it accesses the nested array instance.</para>
+        </inbodydescription>
+        <location file="src/utils/ArrayTypeUtils.cpp" line="136" column="20" bodyfile="src/utils/ArrayTypeUtils.cpp" bodystart="136" bodyend="175" declfile="src/utils/ArrayTypeUtils.h" declline="53" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacesc__ast__matchers_1_1utils_1_1array__type_1affa9a73bdbbac2e524a3e6babc1cbfd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const clang::MemberExpr *</type>
+        <definition>const clang::MemberExpr * sc_ast_matchers::utils::array_type::getArrayMemberExprName</definition>
+        <argsstring>(const clang::Expr *expr)</argsstring>
+        <name>getArrayMemberExprName</name>
+        <param>
+          <type>const clang::Expr *</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Check if it is an ArraySubscriptExpr</para>
+<para>Get access to the MemberExpr name.</para>
+        </inbodydescription>
+        <location file="src/utils/ArrayTypeUtils.cpp" line="177" column="25" bodyfile="src/utils/ArrayTypeUtils.cpp" bodystart="177" bodyend="195" declfile="src/utils/ArrayTypeUtils.h" declline="55" declcolumn="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/utils/ArrayTypeUtils.cpp" line="7" column="1"/>
+  </compounddef>
+</doxygen>

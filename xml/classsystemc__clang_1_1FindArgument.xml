@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__clang_1_1FindArgument" kind="class" language="C++" prot="public">
+    <compoundname>systemc_clang::FindArgument</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">RecursiveASTVisitor&lt; FindArgument &gt;</basecompoundref>
+    <includes refid="FindArgument_8h" local="no">FindArgument.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindArgument_1a1e675602a667da1286753f796bd494af" prot="private" static="no" mutable="no">
+        <type>Expr *</type>
+        <definition>Expr* systemc_clang::FindArgument::expression_</definition>
+        <argsstring></argsstring>
+        <name>expression_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindArgument.h" line="27" column="8" bodyfile="src/matchers/FindArgument.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindArgument_1adc5dfffc9ef8c32873317bee6936d719" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string systemc_clang::FindArgument::argument_name_</definition>
+        <argsstring></argsstring>
+        <name>argument_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindArgument.h" line="28" column="10" bodyfile="src/matchers/FindArgument.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1FindArgument_1ad7571a690038b771d857b08a2a558277" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FindArgument::FindArgument</definition>
+        <argsstring>(Expr *)</argsstring>
+        <name>FindArgument</name>
+        <param>
+          <type>Expr *</type>
+          <defname>e</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindArgument.h" line="15" column="3" bodyfile="src/matchers/FindArgument.cpp" bodystart="5" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindArgument_1a158ce3a31a4c86850d99121d7f718099" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>FindArgument::~FindArgument</definition>
+        <argsstring>()</argsstring>
+        <name>~FindArgument</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindArgument.h" line="16" column="11" bodyfile="src/matchers/FindArgument.cpp" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindArgument_1ab18a59ccf070543386e8c789ebf771bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool FindArgument::VisitMemberExpr</definition>
+        <argsstring>(MemberExpr *me)</argsstring>
+        <name>VisitMemberExpr</name>
+        <param>
+          <type>MemberExpr *</type>
+          <declname>me</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindArgument.h" line="17" column="16" bodyfile="src/matchers/FindArgument.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindArgument_1ae586b3b1fe6346798094087329046d3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool FindArgument::VisitDeclRefExpr</definition>
+        <argsstring>(DeclRefExpr *de)</argsstring>
+        <name>VisitDeclRefExpr</name>
+        <param>
+          <type>DeclRefExpr *</type>
+          <declname>de</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindArgument.h" line="18" column="16" bodyfile="src/matchers/FindArgument.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindArgument_1a5cb378afcbf202f0bfd59f685cdd7b3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool FindArgument::VisitIntegerLiteral</definition>
+        <argsstring>(IntegerLiteral *il)</argsstring>
+        <name>VisitIntegerLiteral</name>
+        <param>
+          <type>IntegerLiteral *</type>
+          <declname>il</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindArgument.h" line="19" column="16" bodyfile="src/matchers/FindArgument.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindArgument_1a6718bb6bf1c540da785e0c92d757c0f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool FindArgument::VisitCXXBoolLiteralExpr</definition>
+        <argsstring>(CXXBoolLiteralExpr *bl)</argsstring>
+        <name>VisitCXXBoolLiteralExpr</name>
+        <param>
+          <type>CXXBoolLiteralExpr *</type>
+          <declname>bl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindArgument.h" line="20" column="16" bodyfile="src/matchers/FindArgument.cpp" bodystart="26" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindArgument_1a29d16bd7020286a4762d960a5ea88e32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string FindArgument::getArgumentName</definition>
+        <argsstring>()</argsstring>
+        <name>getArgumentName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindArgument.h" line="24" column="10" bodyfile="src/matchers/FindArgument.cpp" bodystart="35" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>RecursiveASTVisitor&lt; FindArgument &gt;</label>
+      </node>
+      <node id="1">
+        <label>systemc_clang::FindArgument</label>
+        <link refid="classsystemc__clang_1_1FindArgument"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>RecursiveASTVisitor&lt; FindArgument &gt;</label>
+      </node>
+      <node id="1">
+        <label>systemc_clang::FindArgument</label>
+        <link refid="classsystemc__clang_1_1FindArgument"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/matchers/FindArgument.h" line="12" column="1" bodyfile="src/matchers/FindArgument.h" bodystart="12" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classsystemc__clang_1_1FindArgument_1adc5dfffc9ef8c32873317bee6936d719" prot="private" virt="non-virtual"><scope>systemc_clang::FindArgument</scope><name>argument_name_</name></member>
+      <member refid="classsystemc__clang_1_1FindArgument_1a1e675602a667da1286753f796bd494af" prot="private" virt="non-virtual"><scope>systemc_clang::FindArgument</scope><name>expression_</name></member>
+      <member refid="classsystemc__clang_1_1FindArgument_1ad7571a690038b771d857b08a2a558277" prot="public" virt="non-virtual"><scope>systemc_clang::FindArgument</scope><name>FindArgument</name></member>
+      <member refid="classsystemc__clang_1_1FindArgument_1a29d16bd7020286a4762d960a5ea88e32" prot="public" virt="non-virtual"><scope>systemc_clang::FindArgument</scope><name>getArgumentName</name></member>
+      <member refid="classsystemc__clang_1_1FindArgument_1a6718bb6bf1c540da785e0c92d757c0f9" prot="public" virt="virtual"><scope>systemc_clang::FindArgument</scope><name>VisitCXXBoolLiteralExpr</name></member>
+      <member refid="classsystemc__clang_1_1FindArgument_1ae586b3b1fe6346798094087329046d3d" prot="public" virt="virtual"><scope>systemc_clang::FindArgument</scope><name>VisitDeclRefExpr</name></member>
+      <member refid="classsystemc__clang_1_1FindArgument_1a5cb378afcbf202f0bfd59f685cdd7b3b" prot="public" virt="virtual"><scope>systemc_clang::FindArgument</scope><name>VisitIntegerLiteral</name></member>
+      <member refid="classsystemc__clang_1_1FindArgument_1ab18a59ccf070543386e8c789ebf771bb" prot="public" virt="virtual"><scope>systemc_clang::FindArgument</scope><name>VisitMemberExpr</name></member>
+      <member refid="classsystemc__clang_1_1FindArgument_1a158ce3a31a4c86850d99121d7f718099" prot="public" virt="virtual"><scope>systemc_clang::FindArgument</scope><name>~FindArgument</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

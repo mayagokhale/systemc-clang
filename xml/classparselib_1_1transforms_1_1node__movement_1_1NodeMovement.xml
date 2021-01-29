@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classparselib_1_1transforms_1_1node__movement_1_1NodeMovement" kind="class" language="Python" prot="public">
+    <compoundname>parselib::transforms::node_movement::NodeMovement</compoundname>
+    <basecompoundref refid="classparselib_1_1transforms_1_1top__down_1_1TopDown" prot="public" virt="non-virtual">parselib.transforms.top_down.TopDown</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classparselib_1_1transforms_1_1node__movement_1_1NodeMovement_1a67f8cb8643445e4d59d69447b1b3a9ca" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.transforms.node_movement.NodeMovement::functions</definition>
+        <argsstring></argsstring>
+        <name>functions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/node_movement.py" line="10" column="1" bodyfile="plugins/hdl/parselib/transforms/node_movement.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparselib_1_1transforms_1_1node__movement_1_1NodeMovement_1ac1e247d78d82dd9e17a30744510bdd96" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.transforms.node_movement.NodeMovement::current_module</definition>
+        <argsstring></argsstring>
+        <name>current_module</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/node_movement.py" line="11" column="1" bodyfile="plugins/hdl/parselib/transforms/node_movement.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1node__movement_1_1NodeMovement_1a5b96e69e58ae08437bcc04fe973b90b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.node_movement.NodeMovement.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <reimplements refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1aba7572132ec76ea47811c9d077763441">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/node_movement.py" line="7" column="1" bodyfile="plugins/hdl/parselib/transforms/node_movement.py" bodystart="7" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1node__movement_1_1NodeMovement_1ae29b940b8c2a79d3ae2e203aa8ac7d95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.node_movement.NodeMovement.hmodule</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hmodule</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/node_movement.py" line="13" column="1" bodyfile="plugins/hdl/parselib/transforms/node_movement.py" bodystart="13" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1node__movement_1_1NodeMovement_1ad69b4f9976b4f29ccf0ce905aa64a2d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.node_movement.NodeMovement.hprocess</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>hprocess</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/node_movement.py" line="27" column="1" bodyfile="plugins/hdl/parselib/transforms/node_movement.py" bodystart="27" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1node__movement_1_1NodeMovement_1ad10d826af6cbd5366cc02a7da8a0533e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.node_movement.NodeMovement.__add_functions</definition>
+        <argsstring>(self, functions)</argsstring>
+        <name>__add_functions</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classparselib_1_1transforms_1_1node__movement_1_1NodeMovement_1a67f8cb8643445e4d59d69447b1b3a9ca" kindref="member">functions</ref></type>
+          <defname>functions</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/node_movement.py" line="23" column="1" bodyfile="plugins/hdl/parselib/transforms/node_movement.py" bodystart="23" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>parselib.transforms.node_movement.NodeMovement</label>
+        <link refid="classparselib_1_1transforms_1_1node__movement_1_1NodeMovement"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>parselib.transforms.top_down.TopDown</label>
+        <link refid="classparselib_1_1transforms_1_1top__down_1_1TopDown"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Interpreter</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>parselib.transforms.node_movement.NodeMovement</label>
+        <link refid="classparselib_1_1transforms_1_1node__movement_1_1NodeMovement"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>parselib.transforms.top_down.TopDown</label>
+        <link refid="classparselib_1_1transforms_1_1top__down_1_1TopDown"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Interpreter</label>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/parselib/transforms/node_movement.py" line="6" column="1" bodyfile="plugins/hdl/parselib/transforms/node_movement.py" bodystart="6" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classparselib_1_1transforms_1_1node__movement_1_1NodeMovement_1ad10d826af6cbd5366cc02a7da8a0533e" prot="private" virt="non-virtual"><scope>parselib::transforms::node_movement::NodeMovement</scope><name>__add_functions</name></member>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1a2738f9bf2467d410d3990343dcaf88ff" prot="public" virt="non-virtual"><scope>parselib::transforms::node_movement::NodeMovement</scope><name>__default__</name></member>
+      <member refid="classparselib_1_1transforms_1_1node__movement_1_1NodeMovement_1a5b96e69e58ae08437bcc04fe973b90b2" prot="public" virt="non-virtual"><scope>parselib::transforms::node_movement::NodeMovement</scope><name>__init__</name></member>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1a7064a163977352a2b47acbf7e388116c" prot="private" virt="non-virtual"><scope>parselib::transforms::node_movement::NodeMovement</scope><name>__push_up</name></member>
+      <member refid="classparselib_1_1transforms_1_1node__movement_1_1NodeMovement_1ac1e247d78d82dd9e17a30744510bdd96" prot="public" virt="non-virtual"><scope>parselib::transforms::node_movement::NodeMovement</scope><name>current_module</name></member>
+      <member refid="classparselib_1_1transforms_1_1node__movement_1_1NodeMovement_1a67f8cb8643445e4d59d69447b1b3a9ca" prot="public" virt="non-virtual"><scope>parselib::transforms::node_movement::NodeMovement</scope><name>functions</name></member>
+      <member refid="classparselib_1_1transforms_1_1node__movement_1_1NodeMovement_1ae29b940b8c2a79d3ae2e203aa8ac7d95" prot="public" virt="non-virtual"><scope>parselib::transforms::node_movement::NodeMovement</scope><name>hmodule</name></member>
+      <member refid="classparselib_1_1transforms_1_1node__movement_1_1NodeMovement_1ad69b4f9976b4f29ccf0ce905aa64a2d9" prot="public" virt="non-virtual"><scope>parselib::transforms::node_movement::NodeMovement</scope><name>hprocess</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

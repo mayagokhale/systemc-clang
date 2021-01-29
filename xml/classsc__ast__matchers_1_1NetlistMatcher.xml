@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsc__ast__matchers_1_1NetlistMatcher" kind="class" language="C++" prot="public">
+    <compoundname>sc_ast_matchers::NetlistMatcher</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MatchFinder::MatchCallback</basecompoundref>
+    <includes refid="NetlistMatcher_8h" local="no">NetlistMatcher.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsc__ast__matchers_1_1NetlistMatcher_1a831183355ba8d58eb9f5a67a0b248300" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1Model" kindref="compound">Model</ref> *</type>
+        <definition>Model* sc_ast_matchers::NetlistMatcher::model_</definition>
+        <argsstring></argsstring>
+        <name>model_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/NetlistMatcher.h" line="28" column="9" bodyfile="src/matchers/NetlistMatcher.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsc__ast__matchers_1_1NetlistMatcher_1ad4f23514978e9a5c52c87763c112b8f4" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classsc__ast__matchers_1_1InstanceMatcher" kindref="compound">InstanceMatcher</ref> *</type>
+        <definition>const InstanceMatcher* sc_ast_matchers::NetlistMatcher::instance_matcher_</definition>
+        <argsstring></argsstring>
+        <name>instance_matcher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/NetlistMatcher.h" line="29" column="25" bodyfile="src/matchers/NetlistMatcher.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsc__ast__matchers_1_1NetlistMatcher_1aa77afa2735c6e5db7510630309fe32fe" prot="private" static="no" mutable="no">
+        <type><ref refid="classsc__ast__matchers_1_1ModuleDeclarationMatcher" kindref="compound">ModuleDeclarationMatcher</ref> *</type>
+        <definition>ModuleDeclarationMatcher* sc_ast_matchers::NetlistMatcher::module_matcher_</definition>
+        <argsstring></argsstring>
+        <name>module_matcher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/NetlistMatcher.h" line="30" column="28" bodyfile="src/matchers/NetlistMatcher.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsc__ast__matchers_1_1NetlistMatcher_1a72c9e9aa2f0f6ba691f05c5c624bdcb2" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string sc_ast_matchers::NetlistMatcher::top_</definition>
+        <argsstring></argsstring>
+        <name>top_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/NetlistMatcher.h" line="31" column="15" bodyfile="src/matchers/NetlistMatcher.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsc__ast__matchers_1_1NetlistMatcher_1ac5c502b0eea90661a0508d3289ba5eec" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref> *</type>
+        <definition>ModuleInstance* sc_ast_matchers::NetlistMatcher::findModuleDeclInstance</definition>
+        <argsstring>(clang::Decl *decl)</argsstring>
+        <name>findModuleDeclInstance</name>
+        <param>
+          <type>clang::Decl *</type>
+          <declname>decl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/NetlistMatcher.h" line="33" column="18" bodyfile="src/matchers/NetlistMatcher.h" bodystart="33" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsc__ast__matchers_1_1NetlistMatcher_1a49be880f9579fce2021135937d59ed58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sc_ast_matchers::NetlistMatcher::registerMatchers</definition>
+        <argsstring>(MatchFinder &amp;finder, systemc_clang::Model *model, ModuleDeclarationMatcher *module_matcher)</argsstring>
+        <name>registerMatchers</name>
+        <param>
+          <type>MatchFinder &amp;</type>
+          <declname>finder</declname>
+        </param>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1Model" kindref="compound">systemc_clang::Model</ref> *</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type><ref refid="classsc__ast__matchers_1_1ModuleDeclarationMatcher" kindref="compound">ModuleDeclarationMatcher</ref> *</type>
+          <declname>module_matcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Either a port (with sc_port base class) or module (with sc_module base class) can be bound. This will match if either one of those is the type.</para>
+<para>Callers are nested within the CXXOperatorCallExpr; hence, the hasDescendant().</para>
+<para>This priority is imporant. anyOf() priority is in the order of specification. Thus, we check if there is an ArraySubscriptExpr for the port, and only if it is not then we check a non-array port. The caller port could also be a array, so we need to check if the ancestor has an ArraySubscriptExpr. This should have worked better with using optionally(), but it didn&apos;t work.</para>
+<para>Callees are children of the cxxOperatorCallExpr; hence, the use of has().</para>
+<para>The memberExpr gives the port name. The arraySubscriptExpr gives the ArraySubscriptExpr to the array.</para>
+        </inbodydescription>
+        <location file="src/matchers/NetlistMatcher.h" line="48" column="8" bodyfile="src/matchers/NetlistMatcher.h" bodystart="48" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classsc__ast__matchers_1_1NetlistMatcher_1ade1e4bb1475dfeda376496085b315b82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void sc_ast_matchers::NetlistMatcher::run</definition>
+        <argsstring>(const MatchFinder::MatchResult &amp;result)</argsstring>
+        <name>run</name>
+        <param>
+          <type>const MatchFinder::MatchResult &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Rework</para>
+<para>MemberExpr that gives the method name (port name).</para>
+<para>This string is necessary since addPortbinding stores a map of string =&gt; Portbinding. Thus just using port name is not unique.</para>
+        </inbodydescription>
+        <location file="src/matchers/NetlistMatcher.h" line="183" column="16" bodyfile="src/matchers/NetlistMatcher.h" bodystart="183" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classsc__ast__matchers_1_1NetlistMatcher_1a0633b51e4ccdd82624623fd7c17aad66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void sc_ast_matchers::NetlistMatcher::dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/NetlistMatcher.h" line="294" column="8" bodyfile="src/matchers/NetlistMatcher.h" bodystart="294" bodyend="306"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class <ref refid="classsc__ast__matchers_1_1NetlistMatcher" kindref="compound">NetlistMatcher</ref> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MatchFinder::MatchCallback</label>
+      </node>
+      <node id="1">
+        <label>sc_ast_matchers::NetlistMatcher</label>
+        <link refid="classsc__ast__matchers_1_1NetlistMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>systemc_clang::ModuleInstance</label>
+        <link refid="classsystemc__clang_1_1ModuleInstance"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>instance_info_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MatchFinder::MatchCallback</label>
+      </node>
+      <node id="1">
+        <label>sc_ast_matchers::NetlistMatcher</label>
+        <link refid="classsc__ast__matchers_1_1NetlistMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>model_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>module_matcher_</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>instance_matcher_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>systemc_clang::Model</label>
+        <link refid="classsystemc__clang_1_1Model"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>root_module_inst_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>sc_ast_matchers::InstanceMatcher</label>
+        <link refid="classsc__ast__matchers_1_1InstanceMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sc_ast_matchers::ModuleInstanceType</label>
+        <link refid="structsc__ast__matchers_1_1ModuleInstanceType"/>
+      </node>
+      <node id="6">
+        <label>sc_ast_matchers::ModuleDeclarationMatcher</label>
+        <link refid="classsc__ast__matchers_1_1ModuleDeclarationMatcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>instance_matcher_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/matchers/NetlistMatcher.h" line="26" column="1" bodyfile="src/matchers/NetlistMatcher.h" bodystart="26" bodyend="307"/>
+    <listofallmembers>
+      <member refid="classsc__ast__matchers_1_1NetlistMatcher_1a0633b51e4ccdd82624623fd7c17aad66" prot="public" virt="non-virtual"><scope>sc_ast_matchers::NetlistMatcher</scope><name>dump</name></member>
+      <member refid="classsc__ast__matchers_1_1NetlistMatcher_1ac5c502b0eea90661a0508d3289ba5eec" prot="private" virt="non-virtual"><scope>sc_ast_matchers::NetlistMatcher</scope><name>findModuleDeclInstance</name></member>
+      <member refid="classsc__ast__matchers_1_1NetlistMatcher_1ad4f23514978e9a5c52c87763c112b8f4" prot="private" virt="non-virtual"><scope>sc_ast_matchers::NetlistMatcher</scope><name>instance_matcher_</name></member>
+      <member refid="classsc__ast__matchers_1_1NetlistMatcher_1a831183355ba8d58eb9f5a67a0b248300" prot="private" virt="non-virtual"><scope>sc_ast_matchers::NetlistMatcher</scope><name>model_</name></member>
+      <member refid="classsc__ast__matchers_1_1NetlistMatcher_1aa77afa2735c6e5db7510630309fe32fe" prot="private" virt="non-virtual"><scope>sc_ast_matchers::NetlistMatcher</scope><name>module_matcher_</name></member>
+      <member refid="classsc__ast__matchers_1_1NetlistMatcher_1a49be880f9579fce2021135937d59ed58" prot="public" virt="non-virtual"><scope>sc_ast_matchers::NetlistMatcher</scope><name>registerMatchers</name></member>
+      <member refid="classsc__ast__matchers_1_1NetlistMatcher_1ade1e4bb1475dfeda376496085b315b82" prot="public" virt="virtual"><scope>sc_ast_matchers::NetlistMatcher</scope><name>run</name></member>
+      <member refid="classsc__ast__matchers_1_1NetlistMatcher_1a72c9e9aa2f0f6ba691f05c5c624bdcb2" prot="private" virt="non-virtual"><scope>sc_ast_matchers::NetlistMatcher</scope><name>top_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

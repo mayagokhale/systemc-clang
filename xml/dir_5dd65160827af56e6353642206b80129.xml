@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_5dd65160827af56e6353642206b80129" kind="dir">
+    <compoundname>src/model</compoundname>
+    <innerfile refid="EntryFunctionContainer_8cpp">EntryFunctionContainer.cpp</innerfile>
+    <innerfile refid="EntryFunctionContainer_8h">EntryFunctionContainer.h</innerfile>
+    <innerfile refid="EventContainer_8cpp">EventContainer.cpp</innerfile>
+    <innerfile refid="EventContainer_8h">EventContainer.h</innerfile>
+    <innerfile refid="EventDecl_8cpp">EventDecl.cpp</innerfile>
+    <innerfile refid="EventDecl_8h">EventDecl.h</innerfile>
+    <innerfile refid="InterfaceDecl_8cpp">InterfaceDecl.cpp</innerfile>
+    <innerfile refid="InterfaceDecl_8h">InterfaceDecl.h</innerfile>
+    <innerfile refid="Model_8cpp">Model.cpp</innerfile>
+    <innerfile refid="Model_8h">Model.h</innerfile>
+    <innerfile refid="ModuleInstance_8cpp">ModuleInstance.cpp</innerfile>
+    <innerfile refid="ModuleInstance_8h">ModuleInstance.h</innerfile>
+    <innerfile refid="ModuleInstanceType_8h">ModuleInstanceType.h</innerfile>
+    <innerfile refid="NotifyCalls_8cpp">NotifyCalls.cpp</innerfile>
+    <innerfile refid="NotifyCalls_8h">NotifyCalls.h</innerfile>
+    <innerfile refid="NotifyContainer_8cpp">NotifyContainer.cpp</innerfile>
+    <innerfile refid="NotifyContainer_8h">NotifyContainer.h</innerfile>
+    <innerfile refid="PortBinding_8h">PortBinding.h</innerfile>
+    <innerfile refid="PortDecl_8cpp">PortDecl.cpp</innerfile>
+    <innerfile refid="PortDecl_8h">PortDecl.h</innerfile>
+    <innerfile refid="ProcessDecl_8cpp">ProcessDecl.cpp</innerfile>
+    <innerfile refid="ProcessDecl_8h">ProcessDecl.h</innerfile>
+    <innerfile refid="SignalDecl_8cpp">SignalDecl.cpp</innerfile>
+    <innerfile refid="SignalDecl_8h">SignalDecl.h</innerfile>
+    <innerfile refid="WaitCalls_8cpp">WaitCalls.cpp</innerfile>
+    <innerfile refid="WaitCalls_8h">WaitCalls.h</innerfile>
+    <innerfile refid="WaitContainer_8cpp">WaitContainer.cpp</innerfile>
+    <innerfile refid="WaitContainer_8h">WaitContainer.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/model/"/>
+  </compounddef>
+</doxygen>

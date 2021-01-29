@@ -1,0 +1,342 @@
+\hypertarget{classsystemc__clang_1_1Model}{}\doxysection{systemc\+\_\+clang\+::Model Class Reference}
+\label{classsystemc__clang_1_1Model}\index{systemc\_clang::Model@{systemc\_clang::Model}}
+
+
+{\ttfamily \#include $<$Model.\+h$>$}
+
+
+
+Collaboration diagram for systemc\+\_\+clang\+::Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classsystemc__clang_1_1Model__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::pair$<$ std\+::string, \mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1Model_a2d1a106632c336f2eac7f02aeb64f436}{module\+Pair\+Type}}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1Model_a2d1a106632c336f2eac7f02aeb64f436}{module\+Pair\+Type}} $>$ \mbox{\hyperlink{classsystemc__clang_1_1Model_a11e8e55332ce1b1d432d0836010514b9}{module\+Map\+Type}}
+\item 
+typedef std\+::pair$<$ std\+::string, \mbox{\hyperlink{classsystemc__clang_1_1EventContainer}{Event\+Container}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1Model_aac5d70784acba705b517bffe69a1438d}{event\+Pair\+Type}}
+\item 
+typedef std\+::map$<$ std\+::string, \mbox{\hyperlink{classsystemc__clang_1_1EventContainer}{Event\+Container}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1Model_ad5b45a89d42a948313c31c35179745c9}{event\+Map\+Type}}
+\item 
+typedef std\+::pair$<$ \mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$, std\+::vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$ $>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1Model_a5f9fe0bad369fa57dcce9957065e85fd}{module\+Instance\+Pair\+Type}}
+\item 
+typedef std\+::map$<$ \mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$, std\+::vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$ $>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1Model_adb14c5fc604752f5a1b5a26b58b3590b}{module\+Instance\+Map\+Type}}
+\item 
+typedef pair$<$ \mbox{\hyperlink{classsystemc__clang_1_1EntryFunctionContainer}{Entry\+Function\+Container}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a683dfecf001a3f455e3894ac825ca1bc}{Find\+GPUMacro\+::for\+Stmt\+GPUMacro\+Map\+Type}} $>$ \mbox{\hyperlink{classsystemc__clang_1_1Model_a69b9dcf7c4b4d8a6b6a735110bfecd15}{entry\+Function\+GPUMacro\+Pair\+Type}}
+\item 
+typedef map$<$ \mbox{\hyperlink{classsystemc__clang_1_1EntryFunctionContainer}{Entry\+Function\+Container}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a683dfecf001a3f455e3894ac825ca1bc}{Find\+GPUMacro\+::for\+Stmt\+GPUMacro\+Map\+Type}} $>$ \mbox{\hyperlink{classsystemc__clang_1_1Model_a9ce62bbafa3ec966ba8de8c98a238bb2}{entry\+Function\+GPUMacro\+Map\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1Model_ae3b375de5f6df4faf74a95d64748e048}{Model}} ()
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1Model_ad6ebd2062a0b823db841a0b88baac4c0}{$\sim$\+Model}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1Model_aba1517e147f013fe0d98e6f30c86dbeb}{add\+Instance}} (\mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1Model_a74a2ff371b953881310a41432331b3d9}{add\+Simulation\+Time}} (\mbox{\hyperlink{classsystemc__clang_1_1FindSimTime_a825b0d05702c9257ea2e4b7abf29b1a6}{Find\+Sim\+Time\+::simulation\+Time\+Map\+Type}})
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1Model_a616e60f9b7a63145f646c6a96fe11e87}{add\+Global\+Events}} (\mbox{\hyperlink{classsystemc__clang_1_1FindGlobalEvents_a07d8ada4c3bf82ddeaf241c30cdd257a}{Find\+Global\+Events\+::global\+Event\+Map\+Type}})
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1Model_a7c60331399e34281366679b7bfb484c6}{add\+SCMain}} (Function\+Decl $\ast$)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1Model_ac773c1205e29c552d9b1a5b2df435a4c}{add\+Entry\+Function\+GPUMacro\+Map}} (\mbox{\hyperlink{classsystemc__clang_1_1Model_a9ce62bbafa3ec966ba8de8c98a238bb2}{entry\+Function\+GPUMacro\+Map\+Type}})
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1Model_a87d8110d8a47853c2420fae77e44f525}{update\+Module\+Decl}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1Model_a1d873012ddb4bcb559dfbc08551d08ca}{populate\+Nested\+Modules}} ()
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1Model_aaa520d4751e3356adf95d22da04efb3b}{get\+Instance}} (const std\+::string \&instance\+\_\+name)
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1Model_a38145f5de77de05c68841ea62ea8fb2e}{get\+Instance}} (Decl $\ast$instance\+\_\+decl)
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1Model_a04cfa4254df094161b4f8672d6fbac90}{get\+Root\+Module\+Instance}} () const
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1Model_a9ce62bbafa3ec966ba8de8c98a238bb2}{entry\+Function\+GPUMacro\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1Model_aa0c07dfe1669cce2d0da6869fc2eef88}{get\+Entry\+Function\+GPUMacro\+Map}} ()
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1Model_ad5b45a89d42a948313c31c35179745c9}{event\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1Model_a2b9df68d993f0d43a194a7a1885d6565}{get\+Event\+Map\+Type}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$ $>$ \& \mbox{\hyperlink{classsystemc__clang_1_1Model_ac1ad5e0f23656450e2a8183f6d7889c4}{get\+Instances}} ()
+\item 
+unsigned int \mbox{\hyperlink{classsystemc__clang_1_1Model_ad355f8ff01f39fd6338f65dc5c106a05}{get\+Num\+Events}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1Model_ab3f4ba34a40a01859e879e1b0814ee21}{get\+GSauto}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1Model_a84f96d1ca4c931b4642eae4e0859a5e0}{dump}} (raw\+\_\+ostream \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1Model_af69296c842ac8745cc924453f70a98ad}{module\+\_\+instances\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1Model_a2350c5ffc4550cb37502891c31e4c9d1}{root\+\_\+module\+\_\+inst\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindSimTime_a825b0d05702c9257ea2e4b7abf29b1a6}{Find\+Sim\+Time\+::simulation\+Time\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1Model_aba295d5c65270b693dcac7320e6815a5}{simulation\+\_\+time\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1Model_ad5b45a89d42a948313c31c35179745c9}{event\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1Model_ac60e8933f8817916d083544aa2a567e3}{event\+\_\+map\+\_\+}}
+\item 
+Function\+Decl $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1Model_a472229d8f8fe429335a85d95e61a4c46}{scmain\+\_\+function\+\_\+decl\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a52b44a67e9256fb58d17050a35acb953}{Find\+Netlist\+::instance\+Module\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1Model_a23cffb90397641c7a1405a8145b94e3b}{instance\+\_\+module\+\_\+map\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a9f9a1a9b49e67f0d8861887ccbdabc01}{Find\+Netlist\+::port\+Signal\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1Model_a249409917ac83aba57dc8096be773eb7}{port\+\_\+signal\+\_\+map\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a0c687bf7d0bac3a2fb59d5fa889435c1}{Find\+Netlist\+::instance\+Port\+Signal\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1Model_a6b9d98d87c5224778046c38894ba98a3}{port\+\_\+signal\+\_\+instance\+\_\+map\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a7b975fb543df586174c99f6d4ed81800}{Find\+Netlist\+::instance\+List\+Module\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1Model_ae3f1415377bb43a8cda4b0cbef328605}{module\+\_\+instance\+\_\+list\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1Model_a9ce62bbafa3ec966ba8de8c98a238bb2}{entry\+Function\+GPUMacro\+Map\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1Model_a5900aec67e9e1839581eefdec2542d7e}{entry\+\_\+function\+\_\+gpu\+\_\+macro\+\_\+map\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1Model_afe06c7b7be7051909c4c1d86707fc7df}{Model}} (const \mbox{\hyperlink{classsystemc__clang_1_1Model}{Model}} \&)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_a9ce62bbafa3ec966ba8de8c98a238bb2}\label{classsystemc__clang_1_1Model_a9ce62bbafa3ec966ba8de8c98a238bb2}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!entryFunctionGPUMacroMapType@{entryFunctionGPUMacroMapType}}
+\index{entryFunctionGPUMacroMapType@{entryFunctionGPUMacroMapType}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{entryFunctionGPUMacroMapType}{entryFunctionGPUMacroMapType}}
+{\footnotesize\ttfamily typedef map$<$\mbox{\hyperlink{classsystemc__clang_1_1EntryFunctionContainer}{Entry\+Function\+Container}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a683dfecf001a3f455e3894ac825ca1bc}{Find\+GPUMacro\+::for\+Stmt\+GPUMacro\+Map\+Type}}$>$ \mbox{\hyperlink{classsystemc__clang_1_1Model_a9ce62bbafa3ec966ba8de8c98a238bb2}{systemc\+\_\+clang\+::\+Model\+::entry\+Function\+GPUMacro\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_a69b9dcf7c4b4d8a6b6a735110bfecd15}\label{classsystemc__clang_1_1Model_a69b9dcf7c4b4d8a6b6a735110bfecd15}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!entryFunctionGPUMacroPairType@{entryFunctionGPUMacroPairType}}
+\index{entryFunctionGPUMacroPairType@{entryFunctionGPUMacroPairType}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{entryFunctionGPUMacroPairType}{entryFunctionGPUMacroPairType}}
+{\footnotesize\ttfamily typedef pair$<$\mbox{\hyperlink{classsystemc__clang_1_1EntryFunctionContainer}{Entry\+Function\+Container}} $\ast$, \mbox{\hyperlink{classsystemc__clang_1_1FindGPUMacro_a683dfecf001a3f455e3894ac825ca1bc}{Find\+GPUMacro\+::for\+Stmt\+GPUMacro\+Map\+Type}}$>$ \mbox{\hyperlink{classsystemc__clang_1_1Model_a69b9dcf7c4b4d8a6b6a735110bfecd15}{systemc\+\_\+clang\+::\+Model\+::entry\+Function\+GPUMacro\+Pair\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_ad5b45a89d42a948313c31c35179745c9}\label{classsystemc__clang_1_1Model_ad5b45a89d42a948313c31c35179745c9}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!eventMapType@{eventMapType}}
+\index{eventMapType@{eventMapType}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{eventMapType}{eventMapType}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, \mbox{\hyperlink{classsystemc__clang_1_1EventContainer}{Event\+Container}} $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1Model_ad5b45a89d42a948313c31c35179745c9}{systemc\+\_\+clang\+::\+Model\+::event\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_aac5d70784acba705b517bffe69a1438d}\label{classsystemc__clang_1_1Model_aac5d70784acba705b517bffe69a1438d}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!eventPairType@{eventPairType}}
+\index{eventPairType@{eventPairType}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{eventPairType}{eventPairType}}
+{\footnotesize\ttfamily typedef std\+::pair$<$std\+::string, \mbox{\hyperlink{classsystemc__clang_1_1EventContainer}{Event\+Container}} $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1Model_aac5d70784acba705b517bffe69a1438d}{systemc\+\_\+clang\+::\+Model\+::event\+Pair\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_adb14c5fc604752f5a1b5a26b58b3590b}\label{classsystemc__clang_1_1Model_adb14c5fc604752f5a1b5a26b58b3590b}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!moduleInstanceMapType@{moduleInstanceMapType}}
+\index{moduleInstanceMapType@{moduleInstanceMapType}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{moduleInstanceMapType}{moduleInstanceMapType}}
+{\footnotesize\ttfamily typedef std\+::map$<$\mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$, std\+::vector$<$\mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$$>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1Model_adb14c5fc604752f5a1b5a26b58b3590b}{systemc\+\_\+clang\+::\+Model\+::module\+Instance\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_a5f9fe0bad369fa57dcce9957065e85fd}\label{classsystemc__clang_1_1Model_a5f9fe0bad369fa57dcce9957065e85fd}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!moduleInstancePairType@{moduleInstancePairType}}
+\index{moduleInstancePairType@{moduleInstancePairType}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{moduleInstancePairType}{moduleInstancePairType}}
+{\footnotesize\ttfamily typedef std\+::pair$<$\mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$, std\+::vector$<$\mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$$>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1Model_a5f9fe0bad369fa57dcce9957065e85fd}{systemc\+\_\+clang\+::\+Model\+::module\+Instance\+Pair\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_a11e8e55332ce1b1d432d0836010514b9}\label{classsystemc__clang_1_1Model_a11e8e55332ce1b1d432d0836010514b9}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!moduleMapType@{moduleMapType}}
+\index{moduleMapType@{moduleMapType}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{moduleMapType}{moduleMapType}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{classsystemc__clang_1_1Model_a2d1a106632c336f2eac7f02aeb64f436}{module\+Pair\+Type}}$>$ \mbox{\hyperlink{classsystemc__clang_1_1Model_a11e8e55332ce1b1d432d0836010514b9}{systemc\+\_\+clang\+::\+Model\+::module\+Map\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_a2d1a106632c336f2eac7f02aeb64f436}\label{classsystemc__clang_1_1Model_a2d1a106632c336f2eac7f02aeb64f436}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!modulePairType@{modulePairType}}
+\index{modulePairType@{modulePairType}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{modulePairType}{modulePairType}}
+{\footnotesize\ttfamily typedef std\+::pair$<$std\+::string, \mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1Model_a2d1a106632c336f2eac7f02aeb64f436}{systemc\+\_\+clang\+::\+Model\+::module\+Pair\+Type}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_ae3b375de5f6df4faf74a95d64748e048}\label{classsystemc__clang_1_1Model_ae3b375de5f6df4faf74a95d64748e048}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!Model@{Model}}
+\index{Model@{Model}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Model\+::\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_ad6ebd2062a0b823db841a0b88baac4c0}\label{classsystemc__clang_1_1Model_ad6ebd2062a0b823db841a0b88baac4c0}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!````~Model@{$\sim$Model}}
+\index{````~Model@{$\sim$Model}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{$\sim$Model()}{~Model()}}
+{\footnotesize\ttfamily Model\+::$\sim$\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_afe06c7b7be7051909c4c1d86707fc7df}\label{classsystemc__clang_1_1Model_afe06c7b7be7051909c4c1d86707fc7df}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!Model@{Model}}
+\index{Model@{Model}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily systemc\+\_\+clang\+::\+Model\+::\+Model (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsystemc__clang_1_1Model}{Model}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_ac773c1205e29c552d9b1a5b2df435a4c}\label{classsystemc__clang_1_1Model_ac773c1205e29c552d9b1a5b2df435a4c}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!addEntryFunctionGPUMacroMap@{addEntryFunctionGPUMacroMap}}
+\index{addEntryFunctionGPUMacroMap@{addEntryFunctionGPUMacroMap}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{addEntryFunctionGPUMacroMap()}{addEntryFunctionGPUMacroMap()}}
+{\footnotesize\ttfamily void Model\+::add\+Entry\+Function\+GPUMacro\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1Model_a9ce62bbafa3ec966ba8de8c98a238bb2}{entry\+Function\+GPUMacro\+Map\+Type}}}]{e }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_a616e60f9b7a63145f646c6a96fe11e87}\label{classsystemc__clang_1_1Model_a616e60f9b7a63145f646c6a96fe11e87}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!addGlobalEvents@{addGlobalEvents}}
+\index{addGlobalEvents@{addGlobalEvents}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{addGlobalEvents()}{addGlobalEvents()}}
+{\footnotesize\ttfamily void Model\+::add\+Global\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1FindGlobalEvents_a07d8ada4c3bf82ddeaf241c30cdd257a}{Find\+Global\+Events\+::global\+Event\+Map\+Type}}}]{event\+Map }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_aba1517e147f013fe0d98e6f30c86dbeb}\label{classsystemc__clang_1_1Model_aba1517e147f013fe0d98e6f30c86dbeb}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!addInstance@{addInstance}}
+\index{addInstance@{addInstance}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{addInstance()}{addInstance()}}
+{\footnotesize\ttfamily void Model\+::add\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$}]{mod }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_a7c60331399e34281366679b7bfb484c6}\label{classsystemc__clang_1_1Model_a7c60331399e34281366679b7bfb484c6}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!addSCMain@{addSCMain}}
+\index{addSCMain@{addSCMain}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{addSCMain()}{addSCMain()}}
+{\footnotesize\ttfamily void Model\+::add\+SCMain (\begin{DoxyParamCaption}\item[{Function\+Decl $\ast$}]{fn\+Decl }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_a74a2ff371b953881310a41432331b3d9}\label{classsystemc__clang_1_1Model_a74a2ff371b953881310a41432331b3d9}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!addSimulationTime@{addSimulationTime}}
+\index{addSimulationTime@{addSimulationTime}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{addSimulationTime()}{addSimulationTime()}}
+{\footnotesize\ttfamily void Model\+::add\+Simulation\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1FindSimTime_a825b0d05702c9257ea2e4b7abf29b1a6}{Find\+Sim\+Time\+::simulation\+Time\+Map\+Type}}}]{sim\+Time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_a84f96d1ca4c931b4642eae4e0859a5e0}\label{classsystemc__clang_1_1Model_a84f96d1ca4c931b4642eae4e0859a5e0}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!dump@{dump}}
+\index{dump@{dump}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void Model\+::dump (\begin{DoxyParamCaption}\item[{raw\+\_\+ostream \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_aa0c07dfe1669cce2d0da6869fc2eef88}\label{classsystemc__clang_1_1Model_aa0c07dfe1669cce2d0da6869fc2eef88}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!getEntryFunctionGPUMacroMap@{getEntryFunctionGPUMacroMap}}
+\index{getEntryFunctionGPUMacroMap@{getEntryFunctionGPUMacroMap}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{getEntryFunctionGPUMacroMap()}{getEntryFunctionGPUMacroMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1Model_a9ce62bbafa3ec966ba8de8c98a238bb2}{Model\+::entry\+Function\+GPUMacro\+Map\+Type}} Model\+::get\+Entry\+Function\+GPUMacro\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_a2b9df68d993f0d43a194a7a1885d6565}\label{classsystemc__clang_1_1Model_a2b9df68d993f0d43a194a7a1885d6565}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!getEventMapType@{getEventMapType}}
+\index{getEventMapType@{getEventMapType}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{getEventMapType()}{getEventMapType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1Model_ad5b45a89d42a948313c31c35179745c9}{Model\+::event\+Map\+Type}} Model\+::get\+Event\+Map\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_ab3f4ba34a40a01859e879e1b0814ee21}\label{classsystemc__clang_1_1Model_ab3f4ba34a40a01859e879e1b0814ee21}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!getGSauto@{getGSauto}}
+\index{getGSauto@{getGSauto}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{getGSauto()}{getGSauto()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classsystemc__clang_1_1Transition}{Transition}} $\ast$$>$ systemc\+\_\+clang\+::\+Model\+::get\+GSauto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_aaa520d4751e3356adf95d22da04efb3b}\label{classsystemc__clang_1_1Model_aaa520d4751e3356adf95d22da04efb3b}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$ Model\+::get\+Instance (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{instance\+\_\+name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_a38145f5de77de05c68841ea62ea8fb2e}\label{classsystemc__clang_1_1Model_a38145f5de77de05c68841ea62ea8fb2e}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$ Model\+::get\+Instance (\begin{DoxyParamCaption}\item[{Decl $\ast$}]{instance\+\_\+decl }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_ac1ad5e0f23656450e2a8183f6d7889c4}\label{classsystemc__clang_1_1Model_ac1ad5e0f23656450e2a8183f6d7889c4}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!getInstances@{getInstances}}
+\index{getInstances@{getInstances}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{getInstances()}{getInstances()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$ $>$ \& Model\+::get\+Instances (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_ad355f8ff01f39fd6338f65dc5c106a05}\label{classsystemc__clang_1_1Model_ad355f8ff01f39fd6338f65dc5c106a05}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!getNumEvents@{getNumEvents}}
+\index{getNumEvents@{getNumEvents}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{getNumEvents()}{getNumEvents()}}
+{\footnotesize\ttfamily unsigned int Model\+::get\+Num\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_a04cfa4254df094161b4f8672d6fbac90}\label{classsystemc__clang_1_1Model_a04cfa4254df094161b4f8672d6fbac90}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!getRootModuleInstance@{getRootModuleInstance}}
+\index{getRootModuleInstance@{getRootModuleInstance}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{getRootModuleInstance()}{getRootModuleInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$ Model\+::get\+Root\+Module\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_a1d873012ddb4bcb559dfbc08551d08ca}\label{classsystemc__clang_1_1Model_a1d873012ddb4bcb559dfbc08551d08ca}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!populateNestedModules@{populateNestedModules}}
+\index{populateNestedModules@{populateNestedModules}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{populateNestedModules()}{populateNestedModules()}}
+{\footnotesize\ttfamily void Model\+::populate\+Nested\+Modules (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is a \mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} that has no parent. This means that it is a root note.\mbox{\Hypertarget{classsystemc__clang_1_1Model_a87d8110d8a47853c2420fae77e44f525}\label{classsystemc__clang_1_1Model_a87d8110d8a47853c2420fae77e44f525}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!updateModuleDecl@{updateModuleDecl}}
+\index{updateModuleDecl@{updateModuleDecl}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{updateModuleDecl()}{updateModuleDecl()}}
+{\footnotesize\ttfamily void systemc\+\_\+clang\+::\+Model\+::update\+Module\+Decl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_a5900aec67e9e1839581eefdec2542d7e}\label{classsystemc__clang_1_1Model_a5900aec67e9e1839581eefdec2542d7e}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!entry\_function\_gpu\_macro\_map\_@{entry\_function\_gpu\_macro\_map\_}}
+\index{entry\_function\_gpu\_macro\_map\_@{entry\_function\_gpu\_macro\_map\_}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{entry\_function\_gpu\_macro\_map\_}{entry\_function\_gpu\_macro\_map\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1Model_a9ce62bbafa3ec966ba8de8c98a238bb2}{entry\+Function\+GPUMacro\+Map\+Type}} systemc\+\_\+clang\+::\+Model\+::entry\+\_\+function\+\_\+gpu\+\_\+macro\+\_\+map\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_ac60e8933f8817916d083544aa2a567e3}\label{classsystemc__clang_1_1Model_ac60e8933f8817916d083544aa2a567e3}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!event\_map\_@{event\_map\_}}
+\index{event\_map\_@{event\_map\_}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{event\_map\_}{event\_map\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1Model_ad5b45a89d42a948313c31c35179745c9}{event\+Map\+Type}} systemc\+\_\+clang\+::\+Model\+::event\+\_\+map\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_a23cffb90397641c7a1405a8145b94e3b}\label{classsystemc__clang_1_1Model_a23cffb90397641c7a1405a8145b94e3b}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!instance\_module\_map\_@{instance\_module\_map\_}}
+\index{instance\_module\_map\_@{instance\_module\_map\_}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{instance\_module\_map\_}{instance\_module\_map\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a52b44a67e9256fb58d17050a35acb953}{Find\+Netlist\+::instance\+Module\+Map\+Type}} systemc\+\_\+clang\+::\+Model\+::instance\+\_\+module\+\_\+map\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_ae3f1415377bb43a8cda4b0cbef328605}\label{classsystemc__clang_1_1Model_ae3f1415377bb43a8cda4b0cbef328605}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!module\_instance\_list\_@{module\_instance\_list\_}}
+\index{module\_instance\_list\_@{module\_instance\_list\_}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{module\_instance\_list\_}{module\_instance\_list\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a7b975fb543df586174c99f6d4ed81800}{Find\+Netlist\+::instance\+List\+Module\+Map\+Type}} systemc\+\_\+clang\+::\+Model\+::module\+\_\+instance\+\_\+list\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_af69296c842ac8745cc924453f70a98ad}\label{classsystemc__clang_1_1Model_af69296c842ac8745cc924453f70a98ad}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!module\_instances\_@{module\_instances\_}}
+\index{module\_instances\_@{module\_instances\_}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{module\_instances\_}{module\_instances\_}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}} $\ast$$>$ systemc\+\_\+clang\+::\+Model\+::module\+\_\+instances\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_a6b9d98d87c5224778046c38894ba98a3}\label{classsystemc__clang_1_1Model_a6b9d98d87c5224778046c38894ba98a3}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!port\_signal\_instance\_map\_@{port\_signal\_instance\_map\_}}
+\index{port\_signal\_instance\_map\_@{port\_signal\_instance\_map\_}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{port\_signal\_instance\_map\_}{port\_signal\_instance\_map\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a0c687bf7d0bac3a2fb59d5fa889435c1}{Find\+Netlist\+::instance\+Port\+Signal\+Map\+Type}} systemc\+\_\+clang\+::\+Model\+::port\+\_\+signal\+\_\+instance\+\_\+map\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_a249409917ac83aba57dc8096be773eb7}\label{classsystemc__clang_1_1Model_a249409917ac83aba57dc8096be773eb7}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!port\_signal\_map\_@{port\_signal\_map\_}}
+\index{port\_signal\_map\_@{port\_signal\_map\_}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{port\_signal\_map\_}{port\_signal\_map\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindNetlist_a9f9a1a9b49e67f0d8861887ccbdabc01}{Find\+Netlist\+::port\+Signal\+Map\+Type}} systemc\+\_\+clang\+::\+Model\+::port\+\_\+signal\+\_\+map\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_a2350c5ffc4550cb37502891c31e4c9d1}\label{classsystemc__clang_1_1Model_a2350c5ffc4550cb37502891c31e4c9d1}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!root\_module\_inst\_@{root\_module\_inst\_}}
+\index{root\_module\_inst\_@{root\_module\_inst\_}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{root\_module\_inst\_}{root\_module\_inst\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1ModuleInstance}{Module\+Instance}}$\ast$ systemc\+\_\+clang\+::\+Model\+::root\+\_\+module\+\_\+inst\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_a472229d8f8fe429335a85d95e61a4c46}\label{classsystemc__clang_1_1Model_a472229d8f8fe429335a85d95e61a4c46}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!scmain\_function\_decl\_@{scmain\_function\_decl\_}}
+\index{scmain\_function\_decl\_@{scmain\_function\_decl\_}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{scmain\_function\_decl\_}{scmain\_function\_decl\_}}
+{\footnotesize\ttfamily Function\+Decl$\ast$ systemc\+\_\+clang\+::\+Model\+::scmain\+\_\+function\+\_\+decl\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1Model_aba295d5c65270b693dcac7320e6815a5}\label{classsystemc__clang_1_1Model_aba295d5c65270b693dcac7320e6815a5}} 
+\index{systemc\_clang::Model@{systemc\_clang::Model}!simulation\_time\_@{simulation\_time\_}}
+\index{simulation\_time\_@{simulation\_time\_}!systemc\_clang::Model@{systemc\_clang::Model}}
+\doxysubsubsection{\texorpdfstring{simulation\_time\_}{simulation\_time\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindSimTime_a825b0d05702c9257ea2e4b7abf29b1a6}{Find\+Sim\+Time\+::simulation\+Time\+Map\+Type}} systemc\+\_\+clang\+::\+Model\+::simulation\+\_\+time\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/model/\mbox{\hyperlink{Model_8h}{Model.\+h}}\item 
+src/model/\mbox{\hyperlink{Model_8cpp}{Model.\+cpp}}\end{DoxyCompactItemize}

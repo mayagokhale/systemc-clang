@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__clang_1_1ProcessDecl" kind="class" language="C++" prot="public">
+    <compoundname>systemc_clang::ProcessDecl</compoundname>
+    <includes refid="ProcessDecl_8h" local="no">ProcessDecl.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classsystemc__clang_1_1ProcessDecl_1a1fcc5baea64e5913f6b4903c734b1a10" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string systemc_clang::ProcessDecl::process_type_</definition>
+        <argsstring></argsstring>
+        <name>process_type_</name>
+        <briefdescription>
+<para>Process information. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ProcessDecl.h" line="40" column="15" bodyfile="src/model/ProcessDecl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ProcessDecl_1aa8aee4f042eecc9f649a140014c9f41f" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string systemc_clang::ProcessDecl::entry_name_</definition>
+        <argsstring></argsstring>
+        <name>entry_name_</name>
+        <briefdescription>
+<para>Name of the entry function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ProcessDecl.h" line="42" column="15" bodyfile="src/model/ProcessDecl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ProcessDecl_1a03a58e6f1aa4ba9f959f48d3e66488fe" prot="protected" static="no" mutable="no">
+        <type>const clang::CXXMethodDecl *</type>
+        <definition>const clang::CXXMethodDecl* systemc_clang::ProcessDecl::entry_method_decl_</definition>
+        <argsstring></argsstring>
+        <name>entry_method_decl_</name>
+        <briefdescription>
+<para>Each process can have 1 entry function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ProcessDecl.h" line="44" column="30" bodyfile="src/model/ProcessDecl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1ProcessDecl_1a69f8bb48ef4b77a58135f7ac8713fbf4" prot="protected" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1EntryFunctionContainer" kindref="compound">EntryFunctionContainer</ref> *</type>
+        <definition>EntryFunctionContainer* systemc_clang::ProcessDecl::entry_function_ptr_</definition>
+        <argsstring></argsstring>
+        <name>entry_function_ptr_</name>
+        <briefdescription>
+<para>This is a container that holds information about the entry function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ProcessDecl.h" line="46" column="26" bodyfile="src/model/ProcessDecl.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1ProcessDecl_1a2abc565903341e8d2eeb276a30118c0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ProcessDecl::ProcessDecl</definition>
+        <argsstring>(std::string, std::string, clang::CXXMethodDecl *, EntryFunctionContainer *)</argsstring>
+        <name>ProcessDecl</name>
+        <param>
+          <type>std::string</type>
+          <defname>t</defname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <defname>n</defname>
+        </param>
+        <param>
+          <type>clang::CXXMethodDecl *</type>
+          <defname>entryMethodDecl</defname>
+        </param>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1EntryFunctionContainer" kindref="compound">EntryFunctionContainer</ref> *</type>
+          <defname>e</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ProcessDecl.h" line="22" column="3" bodyfile="src/model/ProcessDecl.cpp" bodystart="7" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ProcessDecl_1a0c271d9e309ae525b2e125e2d67dc609" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ProcessDecl::ProcessDecl</definition>
+        <argsstring>(const ProcessDecl &amp;)</argsstring>
+        <name>ProcessDecl</name>
+        <param>
+          <type>const <ref refid="classsystemc__clang_1_1ProcessDecl" kindref="compound">ProcessDecl</ref> &amp;</type>
+          <defname>from</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ProcessDecl.h" line="25" column="3" bodyfile="src/model/ProcessDecl.cpp" bodystart="24" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ProcessDecl_1a0abe95118862ed44b88cafcaebdaf479" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ProcessDecl::~ProcessDecl</definition>
+        <argsstring>()</argsstring>
+        <name>~ProcessDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ProcessDecl.h" line="26" column="11" bodyfile="src/model/ProcessDecl.cpp" bodystart="15" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ProcessDecl_1a640153a556d93a7163b8161f32c18157" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string ProcessDecl::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <briefdescription>
+<para>Get methods. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ProcessDecl.h" line="29" column="15" bodyfile="src/model/ProcessDecl.cpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ProcessDecl_1a2152f18924607183c687554f616ee945" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string ProcessDecl::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ProcessDecl.h" line="30" column="15" bodyfile="src/model/ProcessDecl.cpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ProcessDecl_1ad036d278d1641de2ae93e508ac08d76a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const clang::CXXMethodDecl *</type>
+        <definition>const clang::CXXMethodDecl * ProcessDecl::getEntryMethodDecl</definition>
+        <argsstring>() const</argsstring>
+        <name>getEntryMethodDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ProcessDecl.h" line="31" column="30" bodyfile="src/model/ProcessDecl.cpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ProcessDecl_1ad6d08ebd6ae33a0d3b22e2a73b28abbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1EntryFunctionContainer" kindref="compound">EntryFunctionContainer</ref> *</type>
+        <definition>EntryFunctionContainer * ProcessDecl::getEntryFunction</definition>
+        <argsstring>()</argsstring>
+        <name>getEntryFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ProcessDecl.h" line="32" column="26" bodyfile="src/model/ProcessDecl.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ProcessDecl_1a12bf888764c8029f39d6c344a1df6652" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ProcessDecl::dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <briefdescription>
+<para>Dump. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ProcessDecl.h" line="35" column="8" bodyfile="src/model/ProcessDecl.cpp" bodystart="43" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1ProcessDecl_1ababb19926de4ddb33284694bd4b0681e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacesystemc__clang_1ab232545035b571c3f3cd13a4459f2d9e" kindref="member">json</ref></type>
+        <definition>json ProcessDecl::dump_json</definition>
+        <argsstring>() const</argsstring>
+        <name>dump_json</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/ProcessDecl.h" line="36" column="8" bodyfile="src/model/ProcessDecl.cpp" bodystart="52" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>systemc_clang::EntryFunctionContainer</label>
+        <link refid="classsystemc__clang_1_1EntryFunctionContainer"/>
+      </node>
+      <node id="1">
+        <label>systemc_clang::ProcessDecl</label>
+        <link refid="classsystemc__clang_1_1ProcessDecl"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>entry_function_ptr_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/model/ProcessDecl.h" line="20" column="1" bodyfile="src/model/ProcessDecl.h" bodystart="20" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classsystemc__clang_1_1ProcessDecl_1a12bf888764c8029f39d6c344a1df6652" prot="public" virt="non-virtual"><scope>systemc_clang::ProcessDecl</scope><name>dump</name></member>
+      <member refid="classsystemc__clang_1_1ProcessDecl_1ababb19926de4ddb33284694bd4b0681e" prot="public" virt="non-virtual"><scope>systemc_clang::ProcessDecl</scope><name>dump_json</name></member>
+      <member refid="classsystemc__clang_1_1ProcessDecl_1a69f8bb48ef4b77a58135f7ac8713fbf4" prot="protected" virt="non-virtual"><scope>systemc_clang::ProcessDecl</scope><name>entry_function_ptr_</name></member>
+      <member refid="classsystemc__clang_1_1ProcessDecl_1a03a58e6f1aa4ba9f959f48d3e66488fe" prot="protected" virt="non-virtual"><scope>systemc_clang::ProcessDecl</scope><name>entry_method_decl_</name></member>
+      <member refid="classsystemc__clang_1_1ProcessDecl_1aa8aee4f042eecc9f649a140014c9f41f" prot="protected" virt="non-virtual"><scope>systemc_clang::ProcessDecl</scope><name>entry_name_</name></member>
+      <member refid="classsystemc__clang_1_1ProcessDecl_1ad6d08ebd6ae33a0d3b22e2a73b28abbb" prot="public" virt="non-virtual"><scope>systemc_clang::ProcessDecl</scope><name>getEntryFunction</name></member>
+      <member refid="classsystemc__clang_1_1ProcessDecl_1ad036d278d1641de2ae93e508ac08d76a" prot="public" virt="non-virtual"><scope>systemc_clang::ProcessDecl</scope><name>getEntryMethodDecl</name></member>
+      <member refid="classsystemc__clang_1_1ProcessDecl_1a2152f18924607183c687554f616ee945" prot="public" virt="non-virtual"><scope>systemc_clang::ProcessDecl</scope><name>getName</name></member>
+      <member refid="classsystemc__clang_1_1ProcessDecl_1a640153a556d93a7163b8161f32c18157" prot="public" virt="non-virtual"><scope>systemc_clang::ProcessDecl</scope><name>getType</name></member>
+      <member refid="classsystemc__clang_1_1ProcessDecl_1a1fcc5baea64e5913f6b4903c734b1a10" prot="protected" virt="non-virtual"><scope>systemc_clang::ProcessDecl</scope><name>process_type_</name></member>
+      <member refid="classsystemc__clang_1_1ProcessDecl_1a2abc565903341e8d2eeb276a30118c0c" prot="public" virt="non-virtual"><scope>systemc_clang::ProcessDecl</scope><name>ProcessDecl</name></member>
+      <member refid="classsystemc__clang_1_1ProcessDecl_1a0c271d9e309ae525b2e125e2d67dc609" prot="public" virt="non-virtual"><scope>systemc_clang::ProcessDecl</scope><name>ProcessDecl</name></member>
+      <member refid="classsystemc__clang_1_1ProcessDecl_1a0abe95118862ed44b88cafcaebdaf479" prot="public" virt="virtual"><scope>systemc_clang::ProcessDecl</scope><name>~ProcessDecl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

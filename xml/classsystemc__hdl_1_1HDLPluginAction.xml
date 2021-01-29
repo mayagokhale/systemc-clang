@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__hdl_1_1HDLPluginAction" kind="class" language="C++" prot="public">
+    <compoundname>systemc_hdl::HDLPluginAction</compoundname>
+    <includes refid="HDLMain_8h" local="no">HDLMain.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLPluginAction_1aa7261191d6534cc7903802c45729ce96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>systemc_hdl::HDLPluginAction::HDLPluginAction</definition>
+        <argsstring>(int argc, const char **argv)</argsstring>
+        <name>HDLPluginAction</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Setup the debug mode.</para>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.h" line="115" column="5" bodyfile="plugins/hdl/HDLMain.h" bodystart="115" bodyend="171"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="plugins/hdl/HDLMain.h" line="113" column="3" bodyfile="plugins/hdl/HDLMain.h" bodystart="113" bodyend="172"/>
+    <listofallmembers>
+      <member refid="classsystemc__hdl_1_1HDLPluginAction_1aa7261191d6534cc7903802c45729ce96" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLPluginAction</scope><name>HDLPluginAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

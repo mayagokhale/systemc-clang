@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classparselib_1_1transforms_1_1typedef__filter_1_1TypeDefFilter" kind="class" language="Python" prot="public">
+    <compoundname>parselib::transforms::typedef_filter::TypeDefFilter</compoundname>
+    <basecompoundref refid="classparselib_1_1transforms_1_1top__down_1_1TopDown" prot="public" virt="non-virtual">parselib.transforms.top_down.TopDown</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classparselib_1_1transforms_1_1typedef__filter_1_1TypeDefFilter_1a8ac2093c84eed1913be9d4a7348473e7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.transforms.typedef_filter.TypeDefFilter::types</definition>
+        <argsstring></argsstring>
+        <name>types</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_filter.py" line="9" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_filter.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparselib_1_1transforms_1_1typedef__filter_1_1TypeDefFilter_1a932cd9625d368bfcfb2d90c49449187e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.transforms.typedef_filter.TypeDefFilter::current_params</definition>
+        <argsstring></argsstring>
+        <name>current_params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_filter.py" line="10" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_filter.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__filter_1_1TypeDefFilter_1af91733ab2ff8a60b34f8d774b739ee9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_filter.TypeDefFilter.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <reimplements refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1aba7572132ec76ea47811c9d077763441">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_filter.py" line="7" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_filter.py" bodystart="7" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__filter_1_1TypeDefFilter_1ac57144dc7faaea61bb0eae0da6a5ea26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_filter.TypeDefFilter.htypedef</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>htypedef</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_filter.py" line="12" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_filter.py" bodystart="12" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__filter_1_1TypeDefFilter_1ad9e58c89b0d75bda28627e6b591edc72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_filter.TypeDefFilter.htype</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>htype</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_filter.py" line="25" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_filter.py" bodystart="25" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1transforms_1_1typedef__filter_1_1TypeDefFilter_1ab01a2e73acebfb346f3b6d356a7c86ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.transforms.typedef_filter.TypeDefFilter.start</definition>
+        <argsstring>(self, tree)</argsstring>
+        <name>start</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>tree</type>
+          <defname>tree</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/transforms/typedef_filter.py" line="33" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_filter.py" bodystart="33" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>This pass recognizes the custom typedef type and remove it from the grammar tree</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>parselib.transforms.top_down.TopDown</label>
+        <link refid="classparselib_1_1transforms_1_1top__down_1_1TopDown"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>parselib.transforms.typedef_filter.TypeDefFilter</label>
+        <link refid="classparselib_1_1transforms_1_1typedef__filter_1_1TypeDefFilter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Interpreter</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>parselib.transforms.top_down.TopDown</label>
+        <link refid="classparselib_1_1transforms_1_1top__down_1_1TopDown"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>parselib.transforms.typedef_filter.TypeDefFilter</label>
+        <link refid="classparselib_1_1transforms_1_1typedef__filter_1_1TypeDefFilter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Interpreter</label>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/parselib/transforms/typedef_filter.py" line="5" column="1" bodyfile="plugins/hdl/parselib/transforms/typedef_filter.py" bodystart="5" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1a2738f9bf2467d410d3990343dcaf88ff" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_filter::TypeDefFilter</scope><name>__default__</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__filter_1_1TypeDefFilter_1af91733ab2ff8a60b34f8d774b739ee9c" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_filter::TypeDefFilter</scope><name>__init__</name></member>
+      <member refid="classparselib_1_1transforms_1_1top__down_1_1TopDown_1a7064a163977352a2b47acbf7e388116c" prot="private" virt="non-virtual"><scope>parselib::transforms::typedef_filter::TypeDefFilter</scope><name>__push_up</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__filter_1_1TypeDefFilter_1a932cd9625d368bfcfb2d90c49449187e" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_filter::TypeDefFilter</scope><name>current_params</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__filter_1_1TypeDefFilter_1ad9e58c89b0d75bda28627e6b591edc72" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_filter::TypeDefFilter</scope><name>htype</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__filter_1_1TypeDefFilter_1ac57144dc7faaea61bb0eae0da6a5ea26" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_filter::TypeDefFilter</scope><name>htypedef</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__filter_1_1TypeDefFilter_1ab01a2e73acebfb346f3b6d356a7c86ee" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_filter::TypeDefFilter</scope><name>start</name></member>
+      <member refid="classparselib_1_1transforms_1_1typedef__filter_1_1TypeDefFilter_1a8ac2093c84eed1913be9d4a7348473e7" prot="public" virt="non-virtual"><scope>parselib::transforms::typedef_filter::TypeDefFilter</scope><name>types</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

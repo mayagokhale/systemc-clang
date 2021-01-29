@@ -1,0 +1,325 @@
+\hypertarget{classsystemc__clang_1_1SusCFG}{}\doxysection{systemc\+\_\+clang\+::Sus\+CFG Class Reference}
+\label{classsystemc__clang_1_1SusCFG}\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+
+
+{\ttfamily \#include $<$Suspension\+Automata.\+h$>$}
+
+
+
+Collaboration diagram for systemc\+\_\+clang\+::Sus\+CFG\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{classsystemc__clang_1_1SusCFG__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a225702c64f53648159228f3bd9e94a8a}{Sus\+CFG}} (CFGBlock $\ast$)
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1SusCFG_aa21efcdff506ed63216d6ce20ba6cad1}{$\sim$\+Sus\+CFG}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a38f88af422e1427ddb0aeb4e6b5a1d04}{add\+Pred\+Blocks}} (\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a89e88ace80fd920e9a3b15989b18b47a}{add\+Succ\+Blocks}} (\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a5efdf503741c4b287448f388515a4e8d}{add\+Parent\+Block}} (CFGBlock $\ast$)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a3953990c2bfa5f8df6a979098306e3b4}{add\+Parent\+Block}} (\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a92f11cfbf9299bed6677ef957e910cd0}{set\+Wait\+Block}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_aef66008d2d7e51db211ea46302d5d226}{set\+Wait\+Stmt}} (Stmt $\ast$)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a135ec6375d399f705a442e5e051d80ac}{set\+Parent\+Block}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_af72da676ff0fbef5507b3dfee9ee37ae}{add\+Child\+Block\+List}} (\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_ab54ac708721fc38d63829097d5fd5f57}{add\+Child\+Block\+List}} (vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$)
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_ab698e8ed976903a367660b92bd15540d}{add\+GPUFit}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a869d7b42e192a9ba85218da99f67b78d}{deny\+GPUFit}} ()
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a196e62967d4a2820873c7833b037d836}{is\+Wait\+Block}} ()
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_aa3949a664ee91427a318509c0bd718ec}{is\+Parent\+Block}} ()
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_afad9f5ac04f02ecd8ea1415e9b3a2918}{is\+Parent\+Wait\+Block}} ()
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a37f2f99651a57efa46931a57bf813c2a}{is\+GPUFit}} ()
+\item 
+unsigned int \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a87b1bd459e23e5a90f714167047d9def}{get\+Block\+ID}} ()
+\item 
+unsigned int \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_ac9b31dde5f5087e9c0d8c21fb6ef203c}{get\+Parent\+Block\+ID}} ()
+\item 
+vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a6aa20b36799667e001b7633a8790e43a}{get\+Child\+Block\+List}} ()
+\item 
+vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a84e8585af04867b898f585ec34ce7c05}{get\+Pred\+Blocks}} ()
+\item 
+vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a581f1ab02fa66de70074e2617167214c}{get\+Succ\+Blocks}} ()
+\item 
+CFGBlock $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a5896f7a1e1132bfea080ff478698f8c1}{get\+Block}} ()
+\item 
+CFGBlock $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a6566e476db1533a07d8743c2edc91626}{get\+Parent\+CFGBlock}} ()
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a62f906a5658d0a1eea0c3af5900a60cf}{get\+Parent\+Sus\+CFGBlock}} ()
+\item 
+Stmt $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a89a0f3c5d082345be8584dd591cf9036}{get\+Wait\+Stmt}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+CFGBlock $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a3682141568078686873931f366980623}{\+\_\+block}}
+\item 
+CFGBlock $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a64f7852a9f61968fab89572d1ec1b269}{\+\_\+parent\+CFGBlock}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a107aa1307d8ef6b18dd22ab34183575a}{\+\_\+parent\+Sus\+CFGBlock}}
+\item 
+vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a9643182c4775869b388162bec9a06125}{\+\_\+pred\+Blocks}}
+\item 
+vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_afa744bc952a2909ae76d0668edf20cc5}{\+\_\+succ\+Blocks}}
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a45c3ae09d9153dfb09c907aba5907e19}{\+\_\+is\+Wait\+Block}}
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a8c0c8a42d56d68426ac177195ab39cc8}{\+\_\+is\+Parent\+Block}}
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_ae51d413c93bdcf4dd7180a6409ff95bf}{\+\_\+is\+GPUFit}}
+\item 
+Stmt $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_acc0768e947474bc4852c50ae4ec41d6b}{\+\_\+wait\+Stmt}}
+\item 
+vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG_a8c586ab9a968beca5ed4afcc2d1fd796}{\+\_\+child\+Block\+List}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a225702c64f53648159228f3bd9e94a8a}\label{classsystemc__clang_1_1SusCFG_a225702c64f53648159228f3bd9e94a8a}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!SusCFG@{SusCFG}}
+\index{SusCFG@{SusCFG}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{SusCFG()}{SusCFG()}}
+{\footnotesize\ttfamily Sus\+CFG\+::\+Sus\+CFG (\begin{DoxyParamCaption}\item[{CFGBlock $\ast$}]{block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_aa21efcdff506ed63216d6ce20ba6cad1}\label{classsystemc__clang_1_1SusCFG_aa21efcdff506ed63216d6ce20ba6cad1}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!````~SusCFG@{$\sim$SusCFG}}
+\index{````~SusCFG@{$\sim$SusCFG}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{$\sim$SusCFG()}{~SusCFG()}}
+{\footnotesize\ttfamily Sus\+CFG\+::$\sim$\+Sus\+CFG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_af72da676ff0fbef5507b3dfee9ee37ae}\label{classsystemc__clang_1_1SusCFG_af72da676ff0fbef5507b3dfee9ee37ae}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!addChildBlockList@{addChildBlockList}}
+\index{addChildBlockList@{addChildBlockList}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{addChildBlockList()}{addChildBlockList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Sus\+CFG\+::add\+Child\+Block\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$}]{block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_ab54ac708721fc38d63829097d5fd5f57}\label{classsystemc__clang_1_1SusCFG_ab54ac708721fc38d63829097d5fd5f57}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!addChildBlockList@{addChildBlockList}}
+\index{addChildBlockList@{addChildBlockList}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{addChildBlockList()}{addChildBlockList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Sus\+CFG\+::add\+Child\+Block\+List (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$}]{block\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_ab698e8ed976903a367660b92bd15540d}\label{classsystemc__clang_1_1SusCFG_ab698e8ed976903a367660b92bd15540d}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!addGPUFit@{addGPUFit}}
+\index{addGPUFit@{addGPUFit}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{addGPUFit()}{addGPUFit()}}
+{\footnotesize\ttfamily void Sus\+CFG\+::add\+GPUFit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a5efdf503741c4b287448f388515a4e8d}\label{classsystemc__clang_1_1SusCFG_a5efdf503741c4b287448f388515a4e8d}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!addParentBlock@{addParentBlock}}
+\index{addParentBlock@{addParentBlock}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{addParentBlock()}{addParentBlock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Sus\+CFG\+::add\+Parent\+Block (\begin{DoxyParamCaption}\item[{CFGBlock $\ast$}]{parent\+Block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a3953990c2bfa5f8df6a979098306e3b4}\label{classsystemc__clang_1_1SusCFG_a3953990c2bfa5f8df6a979098306e3b4}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!addParentBlock@{addParentBlock}}
+\index{addParentBlock@{addParentBlock}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{addParentBlock()}{addParentBlock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Sus\+CFG\+::add\+Parent\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$}]{parent\+Block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a38f88af422e1427ddb0aeb4e6b5a1d04}\label{classsystemc__clang_1_1SusCFG_a38f88af422e1427ddb0aeb4e6b5a1d04}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!addPredBlocks@{addPredBlocks}}
+\index{addPredBlocks@{addPredBlocks}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{addPredBlocks()}{addPredBlocks()}}
+{\footnotesize\ttfamily void Sus\+CFG\+::add\+Pred\+Blocks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$}]{block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a89e88ace80fd920e9a3b15989b18b47a}\label{classsystemc__clang_1_1SusCFG_a89e88ace80fd920e9a3b15989b18b47a}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!addSuccBlocks@{addSuccBlocks}}
+\index{addSuccBlocks@{addSuccBlocks}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{addSuccBlocks()}{addSuccBlocks()}}
+{\footnotesize\ttfamily void Sus\+CFG\+::add\+Succ\+Blocks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$}]{block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a869d7b42e192a9ba85218da99f67b78d}\label{classsystemc__clang_1_1SusCFG_a869d7b42e192a9ba85218da99f67b78d}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!denyGPUFit@{denyGPUFit}}
+\index{denyGPUFit@{denyGPUFit}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{denyGPUFit()}{denyGPUFit()}}
+{\footnotesize\ttfamily void Sus\+CFG\+::deny\+GPUFit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a5896f7a1e1132bfea080ff478698f8c1}\label{classsystemc__clang_1_1SusCFG_a5896f7a1e1132bfea080ff478698f8c1}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!getBlock@{getBlock}}
+\index{getBlock@{getBlock}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{getBlock()}{getBlock()}}
+{\footnotesize\ttfamily CFGBlock $\ast$ Sus\+CFG\+::get\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a87b1bd459e23e5a90f714167047d9def}\label{classsystemc__clang_1_1SusCFG_a87b1bd459e23e5a90f714167047d9def}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!getBlockID@{getBlockID}}
+\index{getBlockID@{getBlockID}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{getBlockID()}{getBlockID()}}
+{\footnotesize\ttfamily unsigned int Sus\+CFG\+::get\+Block\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a6aa20b36799667e001b7633a8790e43a}\label{classsystemc__clang_1_1SusCFG_a6aa20b36799667e001b7633a8790e43a}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!getChildBlockList@{getChildBlockList}}
+\index{getChildBlockList@{getChildBlockList}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{getChildBlockList()}{getChildBlockList()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ Sus\+CFG\+::get\+Child\+Block\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_ac9b31dde5f5087e9c0d8c21fb6ef203c}\label{classsystemc__clang_1_1SusCFG_ac9b31dde5f5087e9c0d8c21fb6ef203c}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!getParentBlockID@{getParentBlockID}}
+\index{getParentBlockID@{getParentBlockID}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{getParentBlockID()}{getParentBlockID()}}
+{\footnotesize\ttfamily unsigned int Sus\+CFG\+::get\+Parent\+Block\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a6566e476db1533a07d8743c2edc91626}\label{classsystemc__clang_1_1SusCFG_a6566e476db1533a07d8743c2edc91626}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!getParentCFGBlock@{getParentCFGBlock}}
+\index{getParentCFGBlock@{getParentCFGBlock}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{getParentCFGBlock()}{getParentCFGBlock()}}
+{\footnotesize\ttfamily CFGBlock $\ast$ Sus\+CFG\+::get\+Parent\+CFGBlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a62f906a5658d0a1eea0c3af5900a60cf}\label{classsystemc__clang_1_1SusCFG_a62f906a5658d0a1eea0c3af5900a60cf}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!getParentSusCFGBlock@{getParentSusCFGBlock}}
+\index{getParentSusCFGBlock@{getParentSusCFGBlock}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{getParentSusCFGBlock()}{getParentSusCFGBlock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ Sus\+CFG\+::get\+Parent\+Sus\+CFGBlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a84e8585af04867b898f585ec34ce7c05}\label{classsystemc__clang_1_1SusCFG_a84e8585af04867b898f585ec34ce7c05}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!getPredBlocks@{getPredBlocks}}
+\index{getPredBlocks@{getPredBlocks}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{getPredBlocks()}{getPredBlocks()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ Sus\+CFG\+::get\+Pred\+Blocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a581f1ab02fa66de70074e2617167214c}\label{classsystemc__clang_1_1SusCFG_a581f1ab02fa66de70074e2617167214c}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!getSuccBlocks@{getSuccBlocks}}
+\index{getSuccBlocks@{getSuccBlocks}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{getSuccBlocks()}{getSuccBlocks()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$ $>$ Sus\+CFG\+::get\+Succ\+Blocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a89a0f3c5d082345be8584dd591cf9036}\label{classsystemc__clang_1_1SusCFG_a89a0f3c5d082345be8584dd591cf9036}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!getWaitStmt@{getWaitStmt}}
+\index{getWaitStmt@{getWaitStmt}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{getWaitStmt()}{getWaitStmt()}}
+{\footnotesize\ttfamily Stmt $\ast$ Sus\+CFG\+::get\+Wait\+Stmt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a37f2f99651a57efa46931a57bf813c2a}\label{classsystemc__clang_1_1SusCFG_a37f2f99651a57efa46931a57bf813c2a}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!isGPUFit@{isGPUFit}}
+\index{isGPUFit@{isGPUFit}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{isGPUFit()}{isGPUFit()}}
+{\footnotesize\ttfamily bool Sus\+CFG\+::is\+GPUFit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_aa3949a664ee91427a318509c0bd718ec}\label{classsystemc__clang_1_1SusCFG_aa3949a664ee91427a318509c0bd718ec}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!isParentBlock@{isParentBlock}}
+\index{isParentBlock@{isParentBlock}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{isParentBlock()}{isParentBlock()}}
+{\footnotesize\ttfamily bool Sus\+CFG\+::is\+Parent\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_afad9f5ac04f02ecd8ea1415e9b3a2918}\label{classsystemc__clang_1_1SusCFG_afad9f5ac04f02ecd8ea1415e9b3a2918}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!isParentWaitBlock@{isParentWaitBlock}}
+\index{isParentWaitBlock@{isParentWaitBlock}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{isParentWaitBlock()}{isParentWaitBlock()}}
+{\footnotesize\ttfamily bool systemc\+\_\+clang\+::\+Sus\+CFG\+::is\+Parent\+Wait\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a196e62967d4a2820873c7833b037d836}\label{classsystemc__clang_1_1SusCFG_a196e62967d4a2820873c7833b037d836}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!isWaitBlock@{isWaitBlock}}
+\index{isWaitBlock@{isWaitBlock}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{isWaitBlock()}{isWaitBlock()}}
+{\footnotesize\ttfamily bool Sus\+CFG\+::is\+Wait\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a135ec6375d399f705a442e5e051d80ac}\label{classsystemc__clang_1_1SusCFG_a135ec6375d399f705a442e5e051d80ac}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!setParentBlock@{setParentBlock}}
+\index{setParentBlock@{setParentBlock}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{setParentBlock()}{setParentBlock()}}
+{\footnotesize\ttfamily void Sus\+CFG\+::set\+Parent\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a92f11cfbf9299bed6677ef957e910cd0}\label{classsystemc__clang_1_1SusCFG_a92f11cfbf9299bed6677ef957e910cd0}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!setWaitBlock@{setWaitBlock}}
+\index{setWaitBlock@{setWaitBlock}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{setWaitBlock()}{setWaitBlock()}}
+{\footnotesize\ttfamily void Sus\+CFG\+::set\+Wait\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_aef66008d2d7e51db211ea46302d5d226}\label{classsystemc__clang_1_1SusCFG_aef66008d2d7e51db211ea46302d5d226}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!setWaitStmt@{setWaitStmt}}
+\index{setWaitStmt@{setWaitStmt}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{setWaitStmt()}{setWaitStmt()}}
+{\footnotesize\ttfamily void Sus\+CFG\+::set\+Wait\+Stmt (\begin{DoxyParamCaption}\item[{Stmt $\ast$}]{stmt }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a3682141568078686873931f366980623}\label{classsystemc__clang_1_1SusCFG_a3682141568078686873931f366980623}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!\_block@{\_block}}
+\index{\_block@{\_block}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{\_block}{\_block}}
+{\footnotesize\ttfamily CFGBlock$\ast$ systemc\+\_\+clang\+::\+Sus\+CFG\+::\+\_\+block\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a8c586ab9a968beca5ed4afcc2d1fd796}\label{classsystemc__clang_1_1SusCFG_a8c586ab9a968beca5ed4afcc2d1fd796}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!\_childBlockList@{\_childBlockList}}
+\index{\_childBlockList@{\_childBlockList}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{\_childBlockList}{\_childBlockList}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$$>$ systemc\+\_\+clang\+::\+Sus\+CFG\+::\+\_\+child\+Block\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_ae51d413c93bdcf4dd7180a6409ff95bf}\label{classsystemc__clang_1_1SusCFG_ae51d413c93bdcf4dd7180a6409ff95bf}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!\_isGPUFit@{\_isGPUFit}}
+\index{\_isGPUFit@{\_isGPUFit}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{\_isGPUFit}{\_isGPUFit}}
+{\footnotesize\ttfamily bool systemc\+\_\+clang\+::\+Sus\+CFG\+::\+\_\+is\+GPUFit\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a8c0c8a42d56d68426ac177195ab39cc8}\label{classsystemc__clang_1_1SusCFG_a8c0c8a42d56d68426ac177195ab39cc8}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!\_isParentBlock@{\_isParentBlock}}
+\index{\_isParentBlock@{\_isParentBlock}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{\_isParentBlock}{\_isParentBlock}}
+{\footnotesize\ttfamily bool systemc\+\_\+clang\+::\+Sus\+CFG\+::\+\_\+is\+Parent\+Block\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a45c3ae09d9153dfb09c907aba5907e19}\label{classsystemc__clang_1_1SusCFG_a45c3ae09d9153dfb09c907aba5907e19}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!\_isWaitBlock@{\_isWaitBlock}}
+\index{\_isWaitBlock@{\_isWaitBlock}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{\_isWaitBlock}{\_isWaitBlock}}
+{\footnotesize\ttfamily bool systemc\+\_\+clang\+::\+Sus\+CFG\+::\+\_\+is\+Wait\+Block\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a64f7852a9f61968fab89572d1ec1b269}\label{classsystemc__clang_1_1SusCFG_a64f7852a9f61968fab89572d1ec1b269}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!\_parentCFGBlock@{\_parentCFGBlock}}
+\index{\_parentCFGBlock@{\_parentCFGBlock}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{\_parentCFGBlock}{\_parentCFGBlock}}
+{\footnotesize\ttfamily CFGBlock$\ast$ systemc\+\_\+clang\+::\+Sus\+CFG\+::\+\_\+parent\+CFGBlock\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a107aa1307d8ef6b18dd22ab34183575a}\label{classsystemc__clang_1_1SusCFG_a107aa1307d8ef6b18dd22ab34183575a}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!\_parentSusCFGBlock@{\_parentSusCFGBlock}}
+\index{\_parentSusCFGBlock@{\_parentSusCFGBlock}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{\_parentSusCFGBlock}{\_parentSusCFGBlock}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}}$\ast$ systemc\+\_\+clang\+::\+Sus\+CFG\+::\+\_\+parent\+Sus\+CFGBlock\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_a9643182c4775869b388162bec9a06125}\label{classsystemc__clang_1_1SusCFG_a9643182c4775869b388162bec9a06125}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!\_predBlocks@{\_predBlocks}}
+\index{\_predBlocks@{\_predBlocks}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{\_predBlocks}{\_predBlocks}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$$>$ systemc\+\_\+clang\+::\+Sus\+CFG\+::\+\_\+pred\+Blocks\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_afa744bc952a2909ae76d0668edf20cc5}\label{classsystemc__clang_1_1SusCFG_afa744bc952a2909ae76d0668edf20cc5}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!\_succBlocks@{\_succBlocks}}
+\index{\_succBlocks@{\_succBlocks}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{\_succBlocks}{\_succBlocks}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classsystemc__clang_1_1SusCFG}{Sus\+CFG}} $\ast$$>$ systemc\+\_\+clang\+::\+Sus\+CFG\+::\+\_\+succ\+Blocks\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1SusCFG_acc0768e947474bc4852c50ae4ec41d6b}\label{classsystemc__clang_1_1SusCFG_acc0768e947474bc4852c50ae4ec41d6b}} 
+\index{systemc\_clang::SusCFG@{systemc\_clang::SusCFG}!\_waitStmt@{\_waitStmt}}
+\index{\_waitStmt@{\_waitStmt}!systemc\_clang::SusCFG@{systemc\_clang::SusCFG}}
+\doxysubsubsection{\texorpdfstring{\_waitStmt}{\_waitStmt}}
+{\footnotesize\ttfamily Stmt$\ast$ systemc\+\_\+clang\+::\+Sus\+CFG\+::\+\_\+wait\+Stmt\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+SCuitable/\mbox{\hyperlink{SuspensionAutomata_8h}{Suspension\+Automata.\+h}}\item 
+src/\+SCuitable/\mbox{\hyperlink{SuspensionAutomata_8cpp}{Suspension\+Automata.\+cpp}}\end{DoxyCompactItemize}

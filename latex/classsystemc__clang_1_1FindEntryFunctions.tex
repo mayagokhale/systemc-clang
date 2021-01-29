@@ -1,0 +1,310 @@
+\hypertarget{classsystemc__clang_1_1FindEntryFunctions}{}\doxysection{systemc\+\_\+clang\+::Find\+Entry\+Functions Class Reference}
+\label{classsystemc__clang_1_1FindEntryFunctions}\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+
+
+{\ttfamily \#include $<$Find\+Entry\+Functions.\+h$>$}
+
+
+
+Inheritance diagram for systemc\+\_\+clang\+::Find\+Entry\+Functions\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classsystemc__clang_1_1FindEntryFunctions__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for systemc\+\_\+clang\+::Find\+Entry\+Functions\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsystemc__clang_1_1FindEntryFunctions__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{classsystemc__clang_1_1EntryFunctionContainer}{Entry\+Function\+Container}} $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a7414ce6160d09ea8539f4513bc204338}{entry\+Function\+Vector\+Type}}
+\begin{DoxyCompactList}\small\item\em Typedefs. \end{DoxyCompactList}\item 
+typedef std\+::pair$<$ string, vector$<$ string $>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a9a5f9822d44e890c428e58f02f7a519c}{entry\+Function\+LHSPair\+Type}}
+\item 
+typedef std\+::map$<$ string, vector$<$ string $>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_aff6d7588de582ac4424d09bfd22f3993}{entry\+Function\+LHSMap\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a873d57d37c7f0d20010958f961cc0189}{Find\+Entry\+Functions}} (CXXRecord\+Decl $\ast$d, llvm\+::raw\+\_\+ostream \&os)
+\item 
+virtual \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_ae10448c8cd8936262c471757b100a870}{$\sim$\+Find\+Entry\+Functions}} ()
+\item 
+virtual bool \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a2fadc394a413c49341bb994c4cc87891}{Visit\+String\+Literal}} (String\+Literal $\ast$l)
+\begin{DoxyCompactList}\small\item\em Virtual methods from Recursive\+ASTVisitor. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a0aad58d8b2a42e496ba79519dd277a37}{Visit\+CXXMethod\+Decl}} (CXXMethod\+Decl $\ast$d)
+\item 
+virtual bool \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a9a2e505c15b40da548c24ad7c2593bd4}{Visit\+Member\+Expr}} (Member\+Expr $\ast$e)
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_ac7165b7fc5f121975190f62f60a32247}{should\+Visit\+Template\+Instantiations}} () const
+\item 
+CXXRecord\+Decl $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_ac446832a87870fc13179e8b713574081}{get\+Entry\+CXXRecord\+Decl}} ()
+\item 
+CXXMethod\+Decl $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_aa0f2f247b3a02230180881351537a0a5}{get\+Entry\+Method\+Decl}} ()
+\item 
+string \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_ab69b3a5704295d3655b6f77405506b1d}{get\+Entry\+Name}} ()
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a7414ce6160d09ea8539f4513bc204338}{entry\+Function\+Vector\+Type}} $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_af7a21991fe8d8e3b5789c28dcb4001bc}{get\+Entry\+Functions}} ()
+\item 
+vector$<$ CXXMethod\+Decl $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a6f7589522be2c6e22585a950afc07d73}{get\+Other\+Functions}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a673209f6cc96685a46af0fc5b6a3310b}{dump}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a39ea981a0f141da33a95ec7e6c10feaa}{Find\+Entry\+Functions}} (llvm\+::raw\+\_\+ostream \&os)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+llvm\+::raw\+\_\+ostream \& \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a693c60bf6a806b7323ce13ed1070230f}{os\+\_\+}}
+\item 
+CXXRecord\+Decl $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_af6b692f7f5e419504f6d9c6c7194e656}{\+\_\+d}}
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_ab67becfe5748fc2b42e23a2a739bc77a}{is\+\_\+entry\+\_\+function\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacesystemc__clang_aee628e0c13dbaaeb824bd830dc47a138}{PROCESS\+\_\+\+TYPE}} \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a1e84094f47e97c948c674a631a74b6f6}{proc\+\_\+type\+\_\+}}
+\item 
+string \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a673b7911bddb00776acbd6a80bc757f4}{entry\+\_\+name\+\_\+}}
+\item 
+CXXRecord\+Decl $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a0847c1c40aabb1c90939d929a63187a7}{entry\+\_\+cxx\+\_\+record\+\_\+decl\+\_\+}}
+\item 
+CXXMethod\+Decl $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a743ed8eda884d5ca2252e6ca7259c35f}{entry\+\_\+method\+\_\+decl\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a12970bdbd070601e1c886ebaa00c283e}{found\+\_\+entry\+\_\+decl\+\_\+}}
+\item 
+Stmt $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a8759e45cd4ebb8290a0892f70fa5edba}{constructor\+\_\+stmt\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1EntryFunctionContainer}{Entry\+Function\+Container}} $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a30a5efb59a564acfe4ce1cebf167d8bc}{ef}}
+\item 
+int \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_adefc3c1a7fc8504ac7aea94b62c16db3}{pass\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a7414ce6160d09ea8539f4513bc204338}{entry\+Function\+Vector\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a44ce48e91ea56e28e46e6cf3dca4438b}{entry\+\_\+function\+\_\+list\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_aff6d7588de582ac4424d09bfd22f3993}{entry\+Function\+LHSMap\+Type}} \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a5b32df3d56ee25cae46075545975c31b}{entry\+\_\+function\+\_\+map\+\_\+}}
+\item 
+vector$<$ CXXMethod\+Decl $\ast$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a37ec517421a5e437e5cad9ec6697db55}{other\+\_\+function\+\_\+list\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_aff6d7588de582ac4424d09bfd22f3993}\label{classsystemc__clang_1_1FindEntryFunctions_aff6d7588de582ac4424d09bfd22f3993}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!entryFunctionLHSMapType@{entryFunctionLHSMapType}}
+\index{entryFunctionLHSMapType@{entryFunctionLHSMapType}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{entryFunctionLHSMapType}{entryFunctionLHSMapType}}
+{\footnotesize\ttfamily typedef std\+::map$<$string, vector$<$string$>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_aff6d7588de582ac4424d09bfd22f3993}{systemc\+\_\+clang\+::\+Find\+Entry\+Functions\+::entry\+Function\+LHSMap\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_a9a5f9822d44e890c428e58f02f7a519c}\label{classsystemc__clang_1_1FindEntryFunctions_a9a5f9822d44e890c428e58f02f7a519c}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!entryFunctionLHSPairType@{entryFunctionLHSPairType}}
+\index{entryFunctionLHSPairType@{entryFunctionLHSPairType}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{entryFunctionLHSPairType}{entryFunctionLHSPairType}}
+{\footnotesize\ttfamily typedef std\+::pair$<$string, vector$<$string$>$ $>$ \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a9a5f9822d44e890c428e58f02f7a519c}{systemc\+\_\+clang\+::\+Find\+Entry\+Functions\+::entry\+Function\+LHSPair\+Type}}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_a7414ce6160d09ea8539f4513bc204338}\label{classsystemc__clang_1_1FindEntryFunctions_a7414ce6160d09ea8539f4513bc204338}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!entryFunctionVectorType@{entryFunctionVectorType}}
+\index{entryFunctionVectorType@{entryFunctionVectorType}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{entryFunctionVectorType}{entryFunctionVectorType}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{classsystemc__clang_1_1EntryFunctionContainer}{Entry\+Function\+Container}} $\ast$$>$ \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a7414ce6160d09ea8539f4513bc204338}{systemc\+\_\+clang\+::\+Find\+Entry\+Functions\+::entry\+Function\+Vector\+Type}}}
+
+
+
+Typedefs. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_a873d57d37c7f0d20010958f961cc0189}\label{classsystemc__clang_1_1FindEntryFunctions_a873d57d37c7f0d20010958f961cc0189}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!FindEntryFunctions@{FindEntryFunctions}}
+\index{FindEntryFunctions@{FindEntryFunctions}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{FindEntryFunctions()}{FindEntryFunctions()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Find\+Entry\+Functions\+::\+Find\+Entry\+Functions (\begin{DoxyParamCaption}\item[{CXXRecord\+Decl $\ast$}]{d,  }\item[{llvm\+::raw\+\_\+ostream \&}]{os }\end{DoxyParamCaption})}
+
+Pass\+\_\+ 1\+: Find the constructor definition, and the Stmt$\ast$ that has the code for it. Set the constructor\+\_\+stmt\+\_\+ pointer.
+
+Pass 2\+: Get the entry function name from constructor
+
+Pass 3\+: Find the CXXMethod\+Decl$\ast$ to the entry function\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_ae10448c8cd8936262c471757b100a870}\label{classsystemc__clang_1_1FindEntryFunctions_ae10448c8cd8936262c471757b100a870}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!````~FindEntryFunctions@{$\sim$FindEntryFunctions}}
+\index{````~FindEntryFunctions@{$\sim$FindEntryFunctions}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{$\sim$FindEntryFunctions()}{~FindEntryFunctions()}}
+{\footnotesize\ttfamily Find\+Entry\+Functions\+::$\sim$\+Find\+Entry\+Functions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_a39ea981a0f141da33a95ec7e6c10feaa}\label{classsystemc__clang_1_1FindEntryFunctions_a39ea981a0f141da33a95ec7e6c10feaa}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!FindEntryFunctions@{FindEntryFunctions}}
+\index{FindEntryFunctions@{FindEntryFunctions}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{FindEntryFunctions()}{FindEntryFunctions()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily systemc\+\_\+clang\+::\+Find\+Entry\+Functions\+::\+Find\+Entry\+Functions (\begin{DoxyParamCaption}\item[{llvm\+::raw\+\_\+ostream \&}]{os }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_a673209f6cc96685a46af0fc5b6a3310b}\label{classsystemc__clang_1_1FindEntryFunctions_a673209f6cc96685a46af0fc5b6a3310b}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!dump@{dump}}
+\index{dump@{dump}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily void Find\+Entry\+Functions\+::dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_ac446832a87870fc13179e8b713574081}\label{classsystemc__clang_1_1FindEntryFunctions_ac446832a87870fc13179e8b713574081}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!getEntryCXXRecordDecl@{getEntryCXXRecordDecl}}
+\index{getEntryCXXRecordDecl@{getEntryCXXRecordDecl}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{getEntryCXXRecordDecl()}{getEntryCXXRecordDecl()}}
+{\footnotesize\ttfamily CXXRecord\+Decl $\ast$ Find\+Entry\+Functions\+::get\+Entry\+CXXRecord\+Decl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_af7a21991fe8d8e3b5789c28dcb4001bc}\label{classsystemc__clang_1_1FindEntryFunctions_af7a21991fe8d8e3b5789c28dcb4001bc}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!getEntryFunctions@{getEntryFunctions}}
+\index{getEntryFunctions@{getEntryFunctions}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{getEntryFunctions()}{getEntryFunctions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a7414ce6160d09ea8539f4513bc204338}{Find\+Entry\+Functions\+::entry\+Function\+Vector\+Type}} $\ast$ Find\+Entry\+Functions\+::get\+Entry\+Functions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_aa0f2f247b3a02230180881351537a0a5}\label{classsystemc__clang_1_1FindEntryFunctions_aa0f2f247b3a02230180881351537a0a5}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!getEntryMethodDecl@{getEntryMethodDecl}}
+\index{getEntryMethodDecl@{getEntryMethodDecl}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{getEntryMethodDecl()}{getEntryMethodDecl()}}
+{\footnotesize\ttfamily CXXMethod\+Decl $\ast$ Find\+Entry\+Functions\+::get\+Entry\+Method\+Decl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_ab69b3a5704295d3655b6f77405506b1d}\label{classsystemc__clang_1_1FindEntryFunctions_ab69b3a5704295d3655b6f77405506b1d}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!getEntryName@{getEntryName}}
+\index{getEntryName@{getEntryName}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{getEntryName()}{getEntryName()}}
+{\footnotesize\ttfamily string Find\+Entry\+Functions\+::get\+Entry\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_a6f7589522be2c6e22585a950afc07d73}\label{classsystemc__clang_1_1FindEntryFunctions_a6f7589522be2c6e22585a950afc07d73}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!getOtherFunctions@{getOtherFunctions}}
+\index{getOtherFunctions@{getOtherFunctions}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{getOtherFunctions()}{getOtherFunctions()}}
+{\footnotesize\ttfamily vector$<$ CXXMethod\+Decl $\ast$ $>$ Find\+Entry\+Functions\+::get\+Other\+Functions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_ac7165b7fc5f121975190f62f60a32247}\label{classsystemc__clang_1_1FindEntryFunctions_ac7165b7fc5f121975190f62f60a32247}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!shouldVisitTemplateInstantiations@{shouldVisitTemplateInstantiations}}
+\index{shouldVisitTemplateInstantiations@{shouldVisitTemplateInstantiations}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{shouldVisitTemplateInstantiations()}{shouldVisitTemplateInstantiations()}}
+{\footnotesize\ttfamily bool Find\+Entry\+Functions\+::should\+Visit\+Template\+Instantiations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_a0aad58d8b2a42e496ba79519dd277a37}\label{classsystemc__clang_1_1FindEntryFunctions_a0aad58d8b2a42e496ba79519dd277a37}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!VisitCXXMethodDecl@{VisitCXXMethodDecl}}
+\index{VisitCXXMethodDecl@{VisitCXXMethodDecl}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{VisitCXXMethodDecl()}{VisitCXXMethodDecl()}}
+{\footnotesize\ttfamily bool Find\+Entry\+Functions\+::\+Visit\+CXXMethod\+Decl (\begin{DoxyParamCaption}\item[{CXXMethod\+Decl $\ast$}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Check if method is a constructor
+
+Check if name is the same as \+\_\+entry\+Function.\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_a9a2e505c15b40da548c24ad7c2593bd4}\label{classsystemc__clang_1_1FindEntryFunctions_a9a2e505c15b40da548c24ad7c2593bd4}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!VisitMemberExpr@{VisitMemberExpr}}
+\index{VisitMemberExpr@{VisitMemberExpr}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{VisitMemberExpr()}{VisitMemberExpr()}}
+{\footnotesize\ttfamily bool Find\+Entry\+Functions\+::\+Visit\+Member\+Expr (\begin{DoxyParamCaption}\item[{Member\+Expr $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_a2fadc394a413c49341bb994c4cc87891}\label{classsystemc__clang_1_1FindEntryFunctions_a2fadc394a413c49341bb994c4cc87891}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!VisitStringLiteral@{VisitStringLiteral}}
+\index{VisitStringLiteral@{VisitStringLiteral}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{VisitStringLiteral()}{VisitStringLiteral()}}
+{\footnotesize\ttfamily bool Find\+Entry\+Functions\+::\+Visit\+String\+Literal (\begin{DoxyParamCaption}\item[{String\+Literal $\ast$}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Virtual methods from Recursive\+ASTVisitor. 
+
+FIXME\+: Where do we erase these? Create the object to handle multiple entry functions.
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_af6b692f7f5e419504f6d9c6c7194e656}\label{classsystemc__clang_1_1FindEntryFunctions_af6b692f7f5e419504f6d9c6c7194e656}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!\_d@{\_d}}
+\index{\_d@{\_d}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{\_d}{\_d}}
+{\footnotesize\ttfamily CXXRecord\+Decl$\ast$ systemc\+\_\+clang\+::\+Find\+Entry\+Functions\+::\+\_\+d\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_a8759e45cd4ebb8290a0892f70fa5edba}\label{classsystemc__clang_1_1FindEntryFunctions_a8759e45cd4ebb8290a0892f70fa5edba}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!constructor\_stmt\_@{constructor\_stmt\_}}
+\index{constructor\_stmt\_@{constructor\_stmt\_}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{constructor\_stmt\_}{constructor\_stmt\_}}
+{\footnotesize\ttfamily Stmt$\ast$ systemc\+\_\+clang\+::\+Find\+Entry\+Functions\+::constructor\+\_\+stmt\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_a30a5efb59a564acfe4ce1cebf167d8bc}\label{classsystemc__clang_1_1FindEntryFunctions_a30a5efb59a564acfe4ce1cebf167d8bc}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!ef@{ef}}
+\index{ef@{ef}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{ef}{ef}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1EntryFunctionContainer}{Entry\+Function\+Container}}$\ast$ systemc\+\_\+clang\+::\+Find\+Entry\+Functions\+::ef\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_a0847c1c40aabb1c90939d929a63187a7}\label{classsystemc__clang_1_1FindEntryFunctions_a0847c1c40aabb1c90939d929a63187a7}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!entry\_cxx\_record\_decl\_@{entry\_cxx\_record\_decl\_}}
+\index{entry\_cxx\_record\_decl\_@{entry\_cxx\_record\_decl\_}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{entry\_cxx\_record\_decl\_}{entry\_cxx\_record\_decl\_}}
+{\footnotesize\ttfamily CXXRecord\+Decl$\ast$ systemc\+\_\+clang\+::\+Find\+Entry\+Functions\+::entry\+\_\+cxx\+\_\+record\+\_\+decl\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_a44ce48e91ea56e28e46e6cf3dca4438b}\label{classsystemc__clang_1_1FindEntryFunctions_a44ce48e91ea56e28e46e6cf3dca4438b}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!entry\_function\_list\_@{entry\_function\_list\_}}
+\index{entry\_function\_list\_@{entry\_function\_list\_}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{entry\_function\_list\_}{entry\_function\_list\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_a7414ce6160d09ea8539f4513bc204338}{entry\+Function\+Vector\+Type}} systemc\+\_\+clang\+::\+Find\+Entry\+Functions\+::entry\+\_\+function\+\_\+list\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_a5b32df3d56ee25cae46075545975c31b}\label{classsystemc__clang_1_1FindEntryFunctions_a5b32df3d56ee25cae46075545975c31b}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!entry\_function\_map\_@{entry\_function\_map\_}}
+\index{entry\_function\_map\_@{entry\_function\_map\_}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{entry\_function\_map\_}{entry\_function\_map\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsystemc__clang_1_1FindEntryFunctions_aff6d7588de582ac4424d09bfd22f3993}{entry\+Function\+LHSMap\+Type}} systemc\+\_\+clang\+::\+Find\+Entry\+Functions\+::entry\+\_\+function\+\_\+map\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_a743ed8eda884d5ca2252e6ca7259c35f}\label{classsystemc__clang_1_1FindEntryFunctions_a743ed8eda884d5ca2252e6ca7259c35f}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!entry\_method\_decl\_@{entry\_method\_decl\_}}
+\index{entry\_method\_decl\_@{entry\_method\_decl\_}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{entry\_method\_decl\_}{entry\_method\_decl\_}}
+{\footnotesize\ttfamily CXXMethod\+Decl$\ast$ systemc\+\_\+clang\+::\+Find\+Entry\+Functions\+::entry\+\_\+method\+\_\+decl\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_a673b7911bddb00776acbd6a80bc757f4}\label{classsystemc__clang_1_1FindEntryFunctions_a673b7911bddb00776acbd6a80bc757f4}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!entry\_name\_@{entry\_name\_}}
+\index{entry\_name\_@{entry\_name\_}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{entry\_name\_}{entry\_name\_}}
+{\footnotesize\ttfamily string systemc\+\_\+clang\+::\+Find\+Entry\+Functions\+::entry\+\_\+name\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_a12970bdbd070601e1c886ebaa00c283e}\label{classsystemc__clang_1_1FindEntryFunctions_a12970bdbd070601e1c886ebaa00c283e}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!found\_entry\_decl\_@{found\_entry\_decl\_}}
+\index{found\_entry\_decl\_@{found\_entry\_decl\_}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{found\_entry\_decl\_}{found\_entry\_decl\_}}
+{\footnotesize\ttfamily bool systemc\+\_\+clang\+::\+Find\+Entry\+Functions\+::found\+\_\+entry\+\_\+decl\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_ab67becfe5748fc2b42e23a2a739bc77a}\label{classsystemc__clang_1_1FindEntryFunctions_ab67becfe5748fc2b42e23a2a739bc77a}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!is\_entry\_function\_@{is\_entry\_function\_}}
+\index{is\_entry\_function\_@{is\_entry\_function\_}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{is\_entry\_function\_}{is\_entry\_function\_}}
+{\footnotesize\ttfamily bool systemc\+\_\+clang\+::\+Find\+Entry\+Functions\+::is\+\_\+entry\+\_\+function\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_a693c60bf6a806b7323ce13ed1070230f}\label{classsystemc__clang_1_1FindEntryFunctions_a693c60bf6a806b7323ce13ed1070230f}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!os\_@{os\_}}
+\index{os\_@{os\_}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{os\_}{os\_}}
+{\footnotesize\ttfamily llvm\+::raw\+\_\+ostream\& systemc\+\_\+clang\+::\+Find\+Entry\+Functions\+::os\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_a37ec517421a5e437e5cad9ec6697db55}\label{classsystemc__clang_1_1FindEntryFunctions_a37ec517421a5e437e5cad9ec6697db55}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!other\_function\_list\_@{other\_function\_list\_}}
+\index{other\_function\_list\_@{other\_function\_list\_}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{other\_function\_list\_}{other\_function\_list\_}}
+{\footnotesize\ttfamily vector$<$CXXMethod\+Decl $\ast$$>$ systemc\+\_\+clang\+::\+Find\+Entry\+Functions\+::other\+\_\+function\+\_\+list\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_adefc3c1a7fc8504ac7aea94b62c16db3}\label{classsystemc__clang_1_1FindEntryFunctions_adefc3c1a7fc8504ac7aea94b62c16db3}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!pass\_@{pass\_}}
+\index{pass\_@{pass\_}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{pass\_}{pass\_}}
+{\footnotesize\ttfamily int systemc\+\_\+clang\+::\+Find\+Entry\+Functions\+::pass\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1FindEntryFunctions_a1e84094f47e97c948c674a631a74b6f6}\label{classsystemc__clang_1_1FindEntryFunctions_a1e84094f47e97c948c674a631a74b6f6}} 
+\index{systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}!proc\_type\_@{proc\_type\_}}
+\index{proc\_type\_@{proc\_type\_}!systemc\_clang::FindEntryFunctions@{systemc\_clang::FindEntryFunctions}}
+\doxysubsubsection{\texorpdfstring{proc\_type\_}{proc\_type\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacesystemc__clang_aee628e0c13dbaaeb824bd830dc47a138}{PROCESS\+\_\+\+TYPE}} systemc\+\_\+clang\+::\+Find\+Entry\+Functions\+::proc\+\_\+type\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/matchers/\mbox{\hyperlink{FindEntryFunctions_8h}{Find\+Entry\+Functions.\+h}}\item 
+src/matchers/\mbox{\hyperlink{FindEntryFunctions_8cpp}{Find\+Entry\+Functions.\+cpp}}\end{DoxyCompactItemize}

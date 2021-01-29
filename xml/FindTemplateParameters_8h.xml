@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="FindTemplateParameters_8h" kind="file" language="C++">
+    <compoundname>FindTemplateParameters.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="yes">clang/AST/RecursiveASTVisitor.h</includes>
+    <includedby refid="FindTemplateParameters_8cpp" local="yes">src/matchers/FindTemplateParameters.cpp</includedby>
+    <includedby refid="SystemCClang_8cpp" local="yes">src/SystemCClang.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>clang/AST/RecursiveASTVisitor.h</label>
+      </node>
+      <node id="1">
+        <label>src/matchers/FindTemplateParameters.h</label>
+        <link refid="FindTemplateParameters_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/matchers/FindTemplateParameters.cpp</label>
+        <link refid="FindTemplateParameters_8cpp"/>
+      </node>
+      <node id="1">
+        <label>src/matchers/FindTemplateParameters.h</label>
+        <link refid="FindTemplateParameters_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/SystemCClang.cpp</label>
+        <link refid="SystemCClang_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classsystemc__clang_1_1FindTemplateParameters" prot="public">systemc_clang::FindTemplateParameters</innerclass>
+    <innernamespace refid="namespaceclang">clang</innernamespace>
+    <innernamespace refid="namespacesystemc__clang">systemc_clang</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="FindTemplateParameters_8h_1ad78e062f62e0d6e453941fb4ca843e4d" prot="public" static="no">
+        <name>DEBUG_TYPE</name>
+        <initializer>&quot;Find&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindTemplateParameters.h" line="9" column="10" bodyfile="src/matchers/FindTemplateParameters.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_FIND_TEMPLATE_PARAMETERS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FIND_TEMPLATE_PARAMETERS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;clang/AST/RecursiveASTVisitor.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>DEBUG_TYPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="FindTemplateParameters_8h_1ad78e062f62e0d6e453941fb4ca843e4d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEBUG_TYPE<sp/>&quot;Find&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Forward<sp/>declarations.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceclang" kindref="compound">clang</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CXXRecordDecl;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesystemc__clang" kindref="compound">systemc_clang</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classsystemc__clang_1_1FindTemplateParameters" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsystemc__clang_1_1FindTemplateParameters" kindref="compound">FindTemplateParameters</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>clang::RecursiveASTVisitor&lt;FindTemplateParameters&gt;<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1FindTemplateParameters_1a4a14851abfbbc857b34030354a08d886" kindref="member">FindTemplateParameters</ref>(clang::CXXRecordDecl<sp/>*);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindTemplateParameters_1a29011376b0e676e7cd63ff8a05372970" kindref="member">VisitCXXRecordDecl</ref>(clang::CXXRecordDecl<sp/>*decl);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindTemplateParameters_1ac3afe9cb44b350848418510f2d1822d8" kindref="member">~FindTemplateParameters</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="classsystemc__clang_1_1FindTemplateParameters_1af993cd8c8c54ed5873d73d1bf6b1bb2a" kindref="member">getTemplateParameters</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="classsystemc__clang_1_1FindTemplateParameters_1a39e2a33dbb7a8446e4a51847e3d07896" kindref="member">getTemplateArgs</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindTemplateParameters_1ab4d79a10ad3b714554ee7278a2219d49" kindref="member">dump</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32" refid="classsystemc__clang_1_1FindTemplateParameters_1a8bd39c2ecedcfcd7072189e471a05c4e" refkind="member"><highlight class="normal"><sp/><sp/>clang::CXXRecordDecl<sp/>*<ref refid="classsystemc__clang_1_1FindTemplateParameters_1a8bd39c2ecedcfcd7072189e471a05c4e" kindref="member">declaration_</ref>;</highlight></codeline>
+<codeline lineno="33" refid="classsystemc__clang_1_1FindTemplateParameters_1af97d8aec896f3f8811b834fe7e51b5b6" refkind="member"><highlight class="normal"><sp/><sp/>clang::TemplateParameterList<sp/>*<ref refid="classsystemc__clang_1_1FindTemplateParameters_1af97d8aec896f3f8811b834fe7e51b5b6" kindref="member">template_parameters_</ref>;</highlight></codeline>
+<codeline lineno="34" refid="classsystemc__clang_1_1FindTemplateParameters_1aa52770375f41a0b84707b83d2802b0fb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>clang::TemplateArgumentList<sp/>*<ref refid="classsystemc__clang_1_1FindTemplateParameters_1aa52770375f41a0b84707b83d2802b0fb" kindref="member">template_args_</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>systemc_clang</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/matchers/FindTemplateParameters.h"/>
+  </compounddef>
+</doxygen>

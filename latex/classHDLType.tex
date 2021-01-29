@@ -1,0 +1,104 @@
+\hypertarget{classHDLType}{}\doxysection{HDLType Class Reference}
+\label{classHDLType}\index{HDLType@{HDLType}}
+
+
+{\ttfamily \#include $<$HDLType.\+h$>$}
+
+
+
+Collaboration diagram for HDLType\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=140pt]{classHDLType__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHDLType_aaa8e5116a4baaba73ab526315de39c78}{HDLType}} ()
+\item 
+\mbox{\hyperlink{classHDLType_a77380ab95df65c28289f6ce8d68f3b85}{$\sim$\+HDLType}} ()
+\item 
+void \mbox{\hyperlink{classHDLType_a6438b9a449e3fedf55ab579878a33480}{SCtype2hcode}} (string prefix, \mbox{\hyperlink{classsystemc__clang_1_1Tree}{Tree}}$<$ \mbox{\hyperlink{classsystemc__clang_1_1TemplateType}{Template\+Type}} $>$ $\ast$template\+\_\+argtp, std\+::vector$<$ llvm\+::\+APInt $>$ $\ast$arr\+\_\+sizes, \mbox{\hyperlink{classhnode_1_1hNode_a72bcc22543c267571a24ec713633e39a}{h\+Node\+::hdlops\+Enum}} h\+\_\+op, \mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}} \&h\+\_\+info)
+\item 
+void \mbox{\hyperlink{classHDLType_a433b9891f019a75accd21b0af76f4f78}{generatetype}} (\mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{systemc\+\_\+clang\+::\+Tree\+Node}}$<$ \mbox{\hyperlink{classsystemc__clang_1_1TemplateType}{systemc\+\_\+clang\+::\+Template\+Type}} $>$ $\ast$const \&node, \mbox{\hyperlink{classsystemc__clang_1_1Tree}{systemc\+\_\+clang\+::\+Tree}}$<$ \mbox{\hyperlink{classsystemc__clang_1_1TemplateType}{systemc\+\_\+clang\+::\+Template\+Type}} $>$ $\ast$const \&treehead, \mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}} \&h\+\_\+info)
+\item 
+\mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}} \mbox{\hyperlink{classHDLType_a3af4b2476e7143388f415531d5b2384f}{addtype}} (string typname, Qual\+Type qtyp, ASTContext \&astcontext)
+\item 
+void \mbox{\hyperlink{classHDLType_a7311aa244ba45252456b87a56000e102}{addfieldtype}} (const Field\+Decl $\ast$fld, \mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}} \&h\+\_\+typdef)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ string, Qual\+Type $>$ \mbox{\hyperlink{classHDLType_a18f4ba5ed554687ef615dbf573740797}{usertypes}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhnode_1_1util}{util}} \mbox{\hyperlink{classHDLType_a8f161eb374dfcbd7b0c32626d521b324}{tutil}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHDLType_aaa8e5116a4baaba73ab526315de39c78}\label{classHDLType_aaa8e5116a4baaba73ab526315de39c78}} 
+\index{HDLType@{HDLType}!HDLType@{HDLType}}
+\index{HDLType@{HDLType}!HDLType@{HDLType}}
+\doxysubsubsection{\texorpdfstring{HDLType()}{HDLType()}}
+{\footnotesize\ttfamily HDLType\+::\+HDLType (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classHDLType_a77380ab95df65c28289f6ce8d68f3b85}\label{classHDLType_a77380ab95df65c28289f6ce8d68f3b85}} 
+\index{HDLType@{HDLType}!````~HDLType@{$\sim$HDLType}}
+\index{````~HDLType@{$\sim$HDLType}!HDLType@{HDLType}}
+\doxysubsubsection{\texorpdfstring{$\sim$HDLType()}{~HDLType()}}
+{\footnotesize\ttfamily HDLType\+::$\sim$\+HDLType (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHDLType_a7311aa244ba45252456b87a56000e102}\label{classHDLType_a7311aa244ba45252456b87a56000e102}} 
+\index{HDLType@{HDLType}!addfieldtype@{addfieldtype}}
+\index{addfieldtype@{addfieldtype}!HDLType@{HDLType}}
+\doxysubsubsection{\texorpdfstring{addfieldtype()}{addfieldtype()}}
+{\footnotesize\ttfamily void HDLType\+::addfieldtype (\begin{DoxyParamCaption}\item[{const Field\+Decl $\ast$}]{fld,  }\item[{\mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}} \&}]{h\+\_\+typdef }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHDLType_a3af4b2476e7143388f415531d5b2384f}\label{classHDLType_a3af4b2476e7143388f415531d5b2384f}} 
+\index{HDLType@{HDLType}!addtype@{addtype}}
+\index{addtype@{addtype}!HDLType@{HDLType}}
+\doxysubsubsection{\texorpdfstring{addtype()}{addtype()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}} HDLType\+::addtype (\begin{DoxyParamCaption}\item[{string}]{typname,  }\item[{Qual\+Type}]{qtyp,  }\item[{ASTContext \&}]{astcontext }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHDLType_a433b9891f019a75accd21b0af76f4f78}\label{classHDLType_a433b9891f019a75accd21b0af76f4f78}} 
+\index{HDLType@{HDLType}!generatetype@{generatetype}}
+\index{generatetype@{generatetype}!HDLType@{HDLType}}
+\doxysubsubsection{\texorpdfstring{generatetype()}{generatetype()}}
+{\footnotesize\ttfamily void HDLType\+::generatetype (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{systemc\+\_\+clang\+::\+Tree\+Node}}$<$ \mbox{\hyperlink{classsystemc__clang_1_1TemplateType}{systemc\+\_\+clang\+::\+Template\+Type}} $>$ $\ast$const \&}]{node,  }\item[{\mbox{\hyperlink{classsystemc__clang_1_1Tree}{systemc\+\_\+clang\+::\+Tree}}$<$ \mbox{\hyperlink{classsystemc__clang_1_1TemplateType}{systemc\+\_\+clang\+::\+Template\+Type}} $>$ $\ast$const \&}]{treehead,  }\item[{\mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}} \&}]{h\+\_\+info }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHDLType_a6438b9a449e3fedf55ab579878a33480}\label{classHDLType_a6438b9a449e3fedf55ab579878a33480}} 
+\index{HDLType@{HDLType}!SCtype2hcode@{SCtype2hcode}}
+\index{SCtype2hcode@{SCtype2hcode}!HDLType@{HDLType}}
+\doxysubsubsection{\texorpdfstring{SCtype2hcode()}{SCtype2hcode()}}
+{\footnotesize\ttfamily void HDLType\+::\+SCtype2hcode (\begin{DoxyParamCaption}\item[{string}]{prefix,  }\item[{\mbox{\hyperlink{classsystemc__clang_1_1Tree}{Tree}}$<$ \mbox{\hyperlink{classsystemc__clang_1_1TemplateType}{Template\+Type}} $>$ $\ast$}]{template\+\_\+argtp,  }\item[{std\+::vector$<$ llvm\+::\+APInt $>$ $\ast$}]{arr\+\_\+sizes,  }\item[{\mbox{\hyperlink{classhnode_1_1hNode_a72bcc22543c267571a24ec713633e39a}{h\+Node\+::hdlops\+Enum}}}]{h\+\_\+op,  }\item[{\mbox{\hyperlink{namespacehnode_ae5db0847c00e6e0627bc73df624628d0}{h\+Nodep}} \&}]{h\+\_\+info }\end{DoxyParamCaption})}
+
+Resolve types of systemc variables, signals, and ports including templated types and generate primitive type declarations Relies on Template\+Tree matcher provided by front end and can handle structured types. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHDLType_a8f161eb374dfcbd7b0c32626d521b324}\label{classHDLType_a8f161eb374dfcbd7b0c32626d521b324}} 
+\index{HDLType@{HDLType}!tutil@{tutil}}
+\index{tutil@{tutil}!HDLType@{HDLType}}
+\doxysubsubsection{\texorpdfstring{tutil}{tutil}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhnode_1_1util}{util}} HDLType\+::tutil\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classHDLType_a18f4ba5ed554687ef615dbf573740797}\label{classHDLType_a18f4ba5ed554687ef615dbf573740797}} 
+\index{HDLType@{HDLType}!usertypes@{usertypes}}
+\index{usertypes@{usertypes}!HDLType@{HDLType}}
+\doxysubsubsection{\texorpdfstring{usertypes}{usertypes}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$string, Qual\+Type$>$ HDLType\+::usertypes}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+plugins/hdl/\mbox{\hyperlink{HDLType_8h}{HDLType.\+h}}\item 
+plugins/hdl/\mbox{\hyperlink{HDLType_8cpp}{HDLType.\+cpp}}\end{DoxyCompactItemize}

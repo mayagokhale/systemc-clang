@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classparselib_1_1primitives_1_1array" kind="class" language="Python" prot="public">
+    <compoundname>parselib::primitives::array</compoundname>
+    <basecompoundref refid="classparselib_1_1primitives_1_1Primitive" prot="public" virt="non-virtual">parselib.primitives.Primitive</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classparselib_1_1primitives_1_1array_1a3fe8caa263c29530633adc0befeb6af2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.primitives.array::T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/primitives.py" line="200" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classparselib_1_1primitives_1_1array_1af0808720fab5cd3080c00ae0da5d64c7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>parselib.primitives.array::sz</definition>
+        <argsstring></argsstring>
+        <name>sz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/primitives.py" line="201" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classparselib_1_1primitives_1_1array_1a9180c7b070e056ed6d433ce3867dc274" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.primitives.array.__init__</definition>
+        <argsstring>(self, T, size)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classparselib_1_1primitives_1_1array_1a3fe8caa263c29530633adc0befeb6af2" kindref="member">T</ref></type>
+          <defname>T</defname>
+        </param>
+        <param>
+          <type>size</type>
+          <defname>size</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/primitives.py" line="199" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="199" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classparselib_1_1primitives_1_1array_1a9b89507649c41f55e3a65ea3be5a0812" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parselib.primitives.array.to_str</definition>
+        <argsstring>(self, var_name, context=None)</argsstring>
+        <name>to_str</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>var_name</type>
+          <defname>var_name</defname>
+        </param>
+        <param>
+          <type>context</type>
+          <defname>context</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/parselib/primitives.py" line="203" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="203" bodyend="206"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>parselib.primitives.Primitive</label>
+        <link refid="classparselib_1_1primitives_1_1Primitive"/>
+      </node>
+      <node id="1">
+        <label>parselib.primitives.array</label>
+        <link refid="classparselib_1_1primitives_1_1array"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>parselib.primitives.Primitive</label>
+        <link refid="classparselib_1_1primitives_1_1Primitive"/>
+      </node>
+      <node id="1">
+        <label>parselib.primitives.array</label>
+        <link refid="classparselib_1_1primitives_1_1array"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/parselib/primitives.py" line="198" column="1" bodyfile="plugins/hdl/parselib/primitives.py" bodystart="198" bodyend="207"/>
+    <listofallmembers>
+      <member refid="classparselib_1_1primitives_1_1array_1a9180c7b070e056ed6d433ce3867dc274" prot="public" virt="non-virtual"><scope>parselib::primitives::array</scope><name>__init__</name></member>
+      <member refid="classparselib_1_1primitives_1_1Primitive_1a062285edf31e537be6a0f228cfe0eb5d" prot="public" virt="non-virtual"><scope>parselib::primitives::array</scope><name>__init_subclass__</name></member>
+      <member refid="classparselib_1_1primitives_1_1Primitive_1a883ddfc550f0cc66ae33b9787cd97412" prot="public" virt="non-virtual"><scope>parselib::primitives::array</scope><name>get_primitive</name></member>
+      <member refid="classparselib_1_1primitives_1_1Primitive_1af46fa1f3666383e39598f4abb402f83f" prot="public" virt="non-virtual"><scope>parselib::primitives::array</scope><name>get_primitive_name_dict</name></member>
+      <member refid="classparselib_1_1primitives_1_1Primitive_1ae03c1c6609d4622b3753708cae8fd47f" prot="public" virt="non-virtual"><scope>parselib::primitives::array</scope><name>name_filter</name></member>
+      <member refid="classparselib_1_1primitives_1_1Primitive_1ae8f4ff243e4df9f304540a76e7be5a0f" prot="public" virt="non-virtual"><scope>parselib::primitives::array</scope><name>name_mapping</name></member>
+      <member refid="classparselib_1_1primitives_1_1Primitive_1af371635dccfb2a6eaf6a5ffd19cf1acb" prot="public" virt="non-virtual"><scope>parselib::primitives::array</scope><name>primitive_type_names</name></member>
+      <member refid="classparselib_1_1primitives_1_1array_1af0808720fab5cd3080c00ae0da5d64c7" prot="public" virt="non-virtual"><scope>parselib::primitives::array</scope><name>sz</name></member>
+      <member refid="classparselib_1_1primitives_1_1array_1a3fe8caa263c29530633adc0befeb6af2" prot="public" virt="non-virtual"><scope>parselib::primitives::array</scope><name>T</name></member>
+      <member refid="classparselib_1_1primitives_1_1array_1a9b89507649c41f55e3a65ea3be5a0812" prot="public" virt="non-virtual"><scope>parselib::primitives::array</scope><name>to_str</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

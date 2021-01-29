@@ -1,0 +1,504 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__clang_1_1FindEntryFunctions" kind="class" language="C++" prot="public">
+    <compoundname>systemc_clang::FindEntryFunctions</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">RecursiveASTVisitor&lt; FindEntryFunctions &gt;</basecompoundref>
+    <includes refid="FindEntryFunctions_8h" local="no">FindEntryFunctions.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classsystemc__clang_1_1FindEntryFunctions_1a7414ce6160d09ea8539f4513bc204338" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classsystemc__clang_1_1EntryFunctionContainer" kindref="compound">EntryFunctionContainer</ref> * &gt;</type>
+        <definition>typedef std::vector&lt;EntryFunctionContainer *&gt; systemc_clang::FindEntryFunctions::entryFunctionVectorType</definition>
+        <argsstring></argsstring>
+        <name>entryFunctionVectorType</name>
+        <briefdescription>
+<para>Typedefs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="17" column="23" bodyfile="src/matchers/FindEntryFunctions.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1FindEntryFunctions_1a9a5f9822d44e890c428e58f02f7a519c" prot="public" static="no">
+        <type>std::pair&lt; string, vector&lt; string &gt; &gt;</type>
+        <definition>typedef std::pair&lt;string, vector&lt;string&gt; &gt; systemc_clang::FindEntryFunctions::entryFunctionLHSPairType</definition>
+        <argsstring></argsstring>
+        <name>entryFunctionLHSPairType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="19" column="21" bodyfile="src/matchers/FindEntryFunctions.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classsystemc__clang_1_1FindEntryFunctions_1aff6d7588de582ac4424d09bfd22f3993" prot="public" static="no">
+        <type>std::map&lt; string, vector&lt; string &gt; &gt;</type>
+        <definition>typedef std::map&lt;string, vector&lt;string&gt; &gt; systemc_clang::FindEntryFunctions::entryFunctionLHSMapType</definition>
+        <argsstring></argsstring>
+        <name>entryFunctionLHSMapType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="20" column="20" bodyfile="src/matchers/FindEntryFunctions.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindEntryFunctions_1a693c60bf6a806b7323ce13ed1070230f" prot="private" static="no" mutable="no">
+        <type>llvm::raw_ostream &amp;</type>
+        <definition>llvm::raw_ostream&amp; systemc_clang::FindEntryFunctions::os_</definition>
+        <argsstring></argsstring>
+        <name>os_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="41" column="21" bodyfile="src/matchers/FindEntryFunctions.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindEntryFunctions_1af6b692f7f5e419504f6d9c6c7194e656" prot="private" static="no" mutable="no">
+        <type>CXXRecordDecl *</type>
+        <definition>CXXRecordDecl* systemc_clang::FindEntryFunctions::_d</definition>
+        <argsstring></argsstring>
+        <name>_d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="42" column="17" bodyfile="src/matchers/FindEntryFunctions.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindEntryFunctions_1ab67becfe5748fc2b42e23a2a739bc77a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool systemc_clang::FindEntryFunctions::is_entry_function_</definition>
+        <argsstring></argsstring>
+        <name>is_entry_function_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="43" column="8" bodyfile="src/matchers/FindEntryFunctions.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindEntryFunctions_1a1e84094f47e97c948c674a631a74b6f6" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacesystemc__clang_1aee628e0c13dbaaeb824bd830dc47a138" kindref="member">PROCESS_TYPE</ref></type>
+        <definition>PROCESS_TYPE systemc_clang::FindEntryFunctions::proc_type_</definition>
+        <argsstring></argsstring>
+        <name>proc_type_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="44" column="16" bodyfile="src/matchers/FindEntryFunctions.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindEntryFunctions_1a673b7911bddb00776acbd6a80bc757f4" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string systemc_clang::FindEntryFunctions::entry_name_</definition>
+        <argsstring></argsstring>
+        <name>entry_name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="45" column="10" bodyfile="src/matchers/FindEntryFunctions.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindEntryFunctions_1a0847c1c40aabb1c90939d929a63187a7" prot="private" static="no" mutable="no">
+        <type>CXXRecordDecl *</type>
+        <definition>CXXRecordDecl* systemc_clang::FindEntryFunctions::entry_cxx_record_decl_</definition>
+        <argsstring></argsstring>
+        <name>entry_cxx_record_decl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="46" column="17" bodyfile="src/matchers/FindEntryFunctions.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindEntryFunctions_1a743ed8eda884d5ca2252e6ca7259c35f" prot="private" static="no" mutable="no">
+        <type>CXXMethodDecl *</type>
+        <definition>CXXMethodDecl* systemc_clang::FindEntryFunctions::entry_method_decl_</definition>
+        <argsstring></argsstring>
+        <name>entry_method_decl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="47" column="17" bodyfile="src/matchers/FindEntryFunctions.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindEntryFunctions_1a12970bdbd070601e1c886ebaa00c283e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool systemc_clang::FindEntryFunctions::found_entry_decl_</definition>
+        <argsstring></argsstring>
+        <name>found_entry_decl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="48" column="8" bodyfile="src/matchers/FindEntryFunctions.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindEntryFunctions_1a8759e45cd4ebb8290a0892f70fa5edba" prot="private" static="no" mutable="no">
+        <type>Stmt *</type>
+        <definition>Stmt* systemc_clang::FindEntryFunctions::constructor_stmt_</definition>
+        <argsstring></argsstring>
+        <name>constructor_stmt_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="49" column="8" bodyfile="src/matchers/FindEntryFunctions.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindEntryFunctions_1a30a5efb59a564acfe4ce1cebf167d8bc" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1EntryFunctionContainer" kindref="compound">EntryFunctionContainer</ref> *</type>
+        <definition>EntryFunctionContainer* systemc_clang::FindEntryFunctions::ef</definition>
+        <argsstring></argsstring>
+        <name>ef</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="50" column="26" bodyfile="src/matchers/FindEntryFunctions.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindEntryFunctions_1adefc3c1a7fc8504ac7aea94b62c16db3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int systemc_clang::FindEntryFunctions::pass_</definition>
+        <argsstring></argsstring>
+        <name>pass_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="51" column="7" bodyfile="src/matchers/FindEntryFunctions.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindEntryFunctions_1a44ce48e91ea56e28e46e6cf3dca4438b" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a7414ce6160d09ea8539f4513bc204338" kindref="member">entryFunctionVectorType</ref></type>
+        <definition>entryFunctionVectorType systemc_clang::FindEntryFunctions::entry_function_list_</definition>
+        <argsstring></argsstring>
+        <name>entry_function_list_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="52" column="27" bodyfile="src/matchers/FindEntryFunctions.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindEntryFunctions_1a5b32df3d56ee25cae46075545975c31b" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1FindEntryFunctions_1aff6d7588de582ac4424d09bfd22f3993" kindref="member">entryFunctionLHSMapType</ref></type>
+        <definition>entryFunctionLHSMapType systemc_clang::FindEntryFunctions::entry_function_map_</definition>
+        <argsstring></argsstring>
+        <name>entry_function_map_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="53" column="27" bodyfile="src/matchers/FindEntryFunctions.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1FindEntryFunctions_1a37ec517421a5e437e5cad9ec6697db55" prot="private" static="no" mutable="no">
+        <type>vector&lt; CXXMethodDecl * &gt;</type>
+        <definition>vector&lt;CXXMethodDecl *&gt; systemc_clang::FindEntryFunctions::other_function_list_</definition>
+        <argsstring></argsstring>
+        <name>other_function_list_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="54" column="10" bodyfile="src/matchers/FindEntryFunctions.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1FindEntryFunctions_1a873d57d37c7f0d20010958f961cc0189" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FindEntryFunctions::FindEntryFunctions</definition>
+        <argsstring>(CXXRecordDecl *d, llvm::raw_ostream &amp;os)</argsstring>
+        <name>FindEntryFunctions</name>
+        <param>
+          <type>CXXRecordDecl *</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>llvm::raw_ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Pass_ 1: Find the constructor definition, and the Stmt* that has the code for it. Set the constructor_stmt_ pointer.</para>
+<para>Pass 2: Get the entry function name from constructor</para>
+<para>Pass 3: Find the CXXMethodDecl* to the entry function</para>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="22" column="3" bodyfile="src/matchers/FindEntryFunctions.cpp" bodystart="5" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindEntryFunctions_1ae10448c8cd8936262c471757b100a870" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>FindEntryFunctions::~FindEntryFunctions</definition>
+        <argsstring>()</argsstring>
+        <name>~FindEntryFunctions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="23" column="11" bodyfile="src/matchers/FindEntryFunctions.cpp" bodystart="36" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindEntryFunctions_1a2fadc394a413c49341bb994c4cc87891" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool FindEntryFunctions::VisitStringLiteral</definition>
+        <argsstring>(StringLiteral *l)</argsstring>
+        <name>VisitStringLiteral</name>
+        <param>
+          <type>StringLiteral *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para>Virtual methods from RecursiveASTVisitor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>FIXME: Where do we erase these? Create the object to handle multiple entry functions.</para>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="26" column="16" bodyfile="src/matchers/FindEntryFunctions.cpp" bodystart="70" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindEntryFunctions_1a0aad58d8b2a42e496ba79519dd277a37" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool FindEntryFunctions::VisitCXXMethodDecl</definition>
+        <argsstring>(CXXMethodDecl *d)</argsstring>
+        <name>VisitCXXMethodDecl</name>
+        <param>
+          <type>CXXMethodDecl *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Check if method is a constructor</para>
+<para>Check if name is the same as _entryFunction.</para>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="27" column="16" bodyfile="src/matchers/FindEntryFunctions.cpp" bodystart="105" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindEntryFunctions_1a9a2e505c15b40da548c24ad7c2593bd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool FindEntryFunctions::VisitMemberExpr</definition>
+        <argsstring>(MemberExpr *e)</argsstring>
+        <name>VisitMemberExpr</name>
+        <param>
+          <type>MemberExpr *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="28" column="16" bodyfile="src/matchers/FindEntryFunctions.cpp" bodystart="46" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindEntryFunctions_1ac7165b7fc5f121975190f62f60a32247" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FindEntryFunctions::shouldVisitTemplateInstantiations</definition>
+        <argsstring>() const</argsstring>
+        <name>shouldVisitTemplateInstantiations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="29" column="8" bodyfile="src/matchers/FindEntryFunctions.cpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindEntryFunctions_1ac446832a87870fc13179e8b713574081" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CXXRecordDecl *</type>
+        <definition>CXXRecordDecl * FindEntryFunctions::getEntryCXXRecordDecl</definition>
+        <argsstring>()</argsstring>
+        <name>getEntryCXXRecordDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="32" column="17" bodyfile="src/matchers/FindEntryFunctions.cpp" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindEntryFunctions_1aa0f2f247b3a02230180881351537a0a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>CXXMethodDecl *</type>
+        <definition>CXXMethodDecl * FindEntryFunctions::getEntryMethodDecl</definition>
+        <argsstring>()</argsstring>
+        <name>getEntryMethodDecl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="33" column="17" bodyfile="src/matchers/FindEntryFunctions.cpp" bodystart="153" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindEntryFunctions_1ab69b3a5704295d3655b6f77405506b1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string FindEntryFunctions::getEntryName</definition>
+        <argsstring>()</argsstring>
+        <name>getEntryName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="34" column="10" bodyfile="src/matchers/FindEntryFunctions.cpp" bodystart="196" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindEntryFunctions_1af7a21991fe8d8e3b5789c28dcb4001bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1FindEntryFunctions_1a7414ce6160d09ea8539f4513bc204338" kindref="member">entryFunctionVectorType</ref> *</type>
+        <definition>FindEntryFunctions::entryFunctionVectorType * FindEntryFunctions::getEntryFunctions</definition>
+        <argsstring>()</argsstring>
+        <name>getEntryFunctions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="35" column="27" bodyfile="src/matchers/FindEntryFunctions.cpp" bodystart="188" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindEntryFunctions_1a6f7589522be2c6e22585a950afc07d73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; CXXMethodDecl * &gt;</type>
+        <definition>vector&lt; CXXMethodDecl * &gt; FindEntryFunctions::getOtherFunctions</definition>
+        <argsstring>()</argsstring>
+        <name>getOtherFunctions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="36" column="10" bodyfile="src/matchers/FindEntryFunctions.cpp" bodystart="192" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1FindEntryFunctions_1a673209f6cc96685a46af0fc5b6a3310b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FindEntryFunctions::dump</definition>
+        <argsstring>()</argsstring>
+        <name>dump</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="38" column="8" bodyfile="src/matchers/FindEntryFunctions.cpp" bodystart="158" bodyend="185"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1FindEntryFunctions_1a39ea981a0f141da33a95ec7e6c10feaa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>systemc_clang::FindEntryFunctions::FindEntryFunctions</definition>
+        <argsstring>(llvm::raw_ostream &amp;os)</argsstring>
+        <name>FindEntryFunctions</name>
+        <param>
+          <type>llvm::raw_ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/matchers/FindEntryFunctions.h" line="57" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>systemc_clang::FindEntryFunctions</label>
+        <link refid="classsystemc__clang_1_1FindEntryFunctions"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>RecursiveASTVisitor&lt; FindEntryFunctions &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>systemc_clang::FindEntryFunctions</label>
+        <link refid="classsystemc__clang_1_1FindEntryFunctions"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ef</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>systemc_clang::EntryFunctionContainer</label>
+        <link refid="classsystemc__clang_1_1EntryFunctionContainer"/>
+      </node>
+      <node id="2">
+        <label>RecursiveASTVisitor&lt; FindEntryFunctions &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/matchers/FindEntryFunctions.h" line="14" column="1" bodyfile="src/matchers/FindEntryFunctions.h" bodystart="14" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1af6b692f7f5e419504f6d9c6c7194e656" prot="private" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>_d</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1a8759e45cd4ebb8290a0892f70fa5edba" prot="private" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>constructor_stmt_</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1a673209f6cc96685a46af0fc5b6a3310b" prot="public" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>dump</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1a30a5efb59a564acfe4ce1cebf167d8bc" prot="private" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>ef</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1a0847c1c40aabb1c90939d929a63187a7" prot="private" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>entry_cxx_record_decl_</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1a44ce48e91ea56e28e46e6cf3dca4438b" prot="private" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>entry_function_list_</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1a5b32df3d56ee25cae46075545975c31b" prot="private" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>entry_function_map_</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1a743ed8eda884d5ca2252e6ca7259c35f" prot="private" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>entry_method_decl_</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1a673b7911bddb00776acbd6a80bc757f4" prot="private" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>entry_name_</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1aff6d7588de582ac4424d09bfd22f3993" prot="public" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>entryFunctionLHSMapType</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1a9a5f9822d44e890c428e58f02f7a519c" prot="public" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>entryFunctionLHSPairType</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1a7414ce6160d09ea8539f4513bc204338" prot="public" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>entryFunctionVectorType</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1a873d57d37c7f0d20010958f961cc0189" prot="public" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>FindEntryFunctions</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1a39ea981a0f141da33a95ec7e6c10feaa" prot="private" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>FindEntryFunctions</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1a12970bdbd070601e1c886ebaa00c283e" prot="private" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>found_entry_decl_</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1ac446832a87870fc13179e8b713574081" prot="public" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>getEntryCXXRecordDecl</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1af7a21991fe8d8e3b5789c28dcb4001bc" prot="public" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>getEntryFunctions</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1aa0f2f247b3a02230180881351537a0a5" prot="public" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>getEntryMethodDecl</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1ab69b3a5704295d3655b6f77405506b1d" prot="public" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>getEntryName</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1a6f7589522be2c6e22585a950afc07d73" prot="public" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>getOtherFunctions</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1ab67becfe5748fc2b42e23a2a739bc77a" prot="private" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>is_entry_function_</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1a693c60bf6a806b7323ce13ed1070230f" prot="private" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>os_</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1a37ec517421a5e437e5cad9ec6697db55" prot="private" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>other_function_list_</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1adefc3c1a7fc8504ac7aea94b62c16db3" prot="private" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>pass_</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1a1e84094f47e97c948c674a631a74b6f6" prot="private" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>proc_type_</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1ac7165b7fc5f121975190f62f60a32247" prot="public" virt="non-virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>shouldVisitTemplateInstantiations</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1a0aad58d8b2a42e496ba79519dd277a37" prot="public" virt="virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>VisitCXXMethodDecl</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1a9a2e505c15b40da548c24ad7c2593bd4" prot="public" virt="virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>VisitMemberExpr</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1a2fadc394a413c49341bb994c4cc87891" prot="public" virt="virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>VisitStringLiteral</name></member>
+      <member refid="classsystemc__clang_1_1FindEntryFunctions_1ae10448c8cd8936262c471757b100a870" prot="public" virt="virtual"><scope>systemc_clang::FindEntryFunctions</scope><name>~FindEntryFunctions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

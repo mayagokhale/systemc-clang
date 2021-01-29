@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__clang_1_1NotifyCalls" kind="class" language="C++" prot="public">
+    <compoundname>systemc_clang::NotifyCalls</compoundname>
+    <includes refid="NotifyCalls_8h" local="no">NotifyCalls.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsystemc__clang_1_1NotifyCalls_1a260ab066f951af1203db230eef98ffdb" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string systemc_clang::NotifyCalls::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/NotifyCalls.h" line="48" column="10" bodyfile="src/model/NotifyCalls.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__clang_1_1NotifyCalls_1abea71681d233e979c80c5f615172f606" prot="private" static="no" mutable="no">
+        <type><ref refid="classsystemc__clang_1_1FindNotify_1aebd5c90665011a52c5037b4953a6796f" kindref="member">FindNotify::NotifyCallListType</ref></type>
+        <definition>FindNotify::NotifyCallListType systemc_clang::NotifyCalls::notify_call_list_</definition>
+        <argsstring></argsstring>
+        <name>notify_call_list_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/NotifyCalls.h" line="49" column="34" bodyfile="src/model/NotifyCalls.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__clang_1_1NotifyCalls_1a6e4eadb356a0ac1576d4fad6cd81f897" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NotifyCalls::NotifyCalls</definition>
+        <argsstring>()</argsstring>
+        <name>NotifyCalls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/NotifyCalls.h" line="30" column="3" bodyfile="src/model/NotifyCalls.cpp" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1NotifyCalls_1a920cbbb926104913f19f2c18d9fd5210" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NotifyCalls::NotifyCalls</definition>
+        <argsstring>(const string &amp;, FindNotify::NotifyCallListType)</argsstring>
+        <name>NotifyCalls</name>
+        <param>
+          <type>const string &amp;</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1FindNotify_1aebd5c90665011a52c5037b4953a6796f" kindref="member">FindNotify::NotifyCallListType</ref></type>
+          <defname>notify_list</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/NotifyCalls.h" line="31" column="3" bodyfile="src/model/NotifyCalls.cpp" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1NotifyCalls_1a8a0936f6271d3747014a9cc0afb5ef02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NotifyCalls::NotifyCalls</definition>
+        <argsstring>(const NotifyCalls &amp;)</argsstring>
+        <name>NotifyCalls</name>
+        <param>
+          <type>const <ref refid="classsystemc__clang_1_1NotifyCalls" kindref="compound">NotifyCalls</ref> &amp;</type>
+          <defname>from</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/NotifyCalls.h" line="34" column="3" bodyfile="src/model/NotifyCalls.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1NotifyCalls_1a7ad6c371f5e19ffa8d9dfa40295bc033" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>NotifyCalls::~NotifyCalls</definition>
+        <argsstring>()</argsstring>
+        <name>~NotifyCalls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/NotifyCalls.h" line="37" column="3" bodyfile="src/model/NotifyCalls.cpp" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1NotifyCalls_1a0fd6ea73ffc69bb99bbfeab04d4e4359" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string NotifyCalls::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+<para>Get parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/NotifyCalls.h" line="40" column="10" bodyfile="src/model/NotifyCalls.cpp" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1NotifyCalls_1a04b92e1b2cf254c553ef603a3096e17a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classsystemc__clang_1_1FindNotify_1aebd5c90665011a52c5037b4953a6796f" kindref="member">FindNotify::NotifyCallListType</ref></type>
+        <definition>FindNotify::NotifyCallListType NotifyCalls::getNotifyCallList</definition>
+        <argsstring>()</argsstring>
+        <name>getNotifyCallList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/NotifyCalls.h" line="41" column="34" bodyfile="src/model/NotifyCalls.cpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1NotifyCalls_1a31dceb473a9f326f61da1e8b20b6d908" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int NotifyCalls::getNumNotifyCalls</definition>
+        <argsstring>()</argsstring>
+        <name>getNumNotifyCalls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/NotifyCalls.h" line="43" column="16" bodyfile="src/model/NotifyCalls.cpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__clang_1_1NotifyCalls_1a22fd4c18479f3adb28a1d05e582da7f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NotifyCalls::dump</definition>
+        <argsstring>(llvm::raw_ostream &amp;, int)</argsstring>
+        <name>dump</name>
+        <param>
+          <type>llvm::raw_ostream &amp;</type>
+          <defname>os</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>tabn</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/model/NotifyCalls.h" line="45" column="8" bodyfile="src/model/NotifyCalls.cpp" bodystart="32" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/model/NotifyCalls.h" line="27" column="1" bodyfile="src/model/NotifyCalls.h" bodystart="27" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classsystemc__clang_1_1NotifyCalls_1a22fd4c18479f3adb28a1d05e582da7f4" prot="public" virt="non-virtual"><scope>systemc_clang::NotifyCalls</scope><name>dump</name></member>
+      <member refid="classsystemc__clang_1_1NotifyCalls_1a0fd6ea73ffc69bb99bbfeab04d4e4359" prot="public" virt="non-virtual"><scope>systemc_clang::NotifyCalls</scope><name>getName</name></member>
+      <member refid="classsystemc__clang_1_1NotifyCalls_1a04b92e1b2cf254c553ef603a3096e17a" prot="public" virt="non-virtual"><scope>systemc_clang::NotifyCalls</scope><name>getNotifyCallList</name></member>
+      <member refid="classsystemc__clang_1_1NotifyCalls_1a31dceb473a9f326f61da1e8b20b6d908" prot="public" virt="non-virtual"><scope>systemc_clang::NotifyCalls</scope><name>getNumNotifyCalls</name></member>
+      <member refid="classsystemc__clang_1_1NotifyCalls_1a260ab066f951af1203db230eef98ffdb" prot="private" virt="non-virtual"><scope>systemc_clang::NotifyCalls</scope><name>name_</name></member>
+      <member refid="classsystemc__clang_1_1NotifyCalls_1abea71681d233e979c80c5f615172f606" prot="private" virt="non-virtual"><scope>systemc_clang::NotifyCalls</scope><name>notify_call_list_</name></member>
+      <member refid="classsystemc__clang_1_1NotifyCalls_1a6e4eadb356a0ac1576d4fad6cd81f897" prot="public" virt="non-virtual"><scope>systemc_clang::NotifyCalls</scope><name>NotifyCalls</name></member>
+      <member refid="classsystemc__clang_1_1NotifyCalls_1a920cbbb926104913f19f2c18d9fd5210" prot="public" virt="non-virtual"><scope>systemc_clang::NotifyCalls</scope><name>NotifyCalls</name></member>
+      <member refid="classsystemc__clang_1_1NotifyCalls_1a8a0936f6271d3747014a9cc0afb5ef02" prot="public" virt="non-virtual"><scope>systemc_clang::NotifyCalls</scope><name>NotifyCalls</name></member>
+      <member refid="classsystemc__clang_1_1NotifyCalls_1a7ad6c371f5e19ffa8d9dfa40295bc033" prot="public" virt="non-virtual"><scope>systemc_clang::NotifyCalls</scope><name>~NotifyCalls</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,412 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__hdl_1_1HDLMain" kind="class" language="C++" prot="public">
+    <compoundname>systemc_hdl::HDLMain</compoundname>
+    <basecompoundref refid="classsystemc__clang_1_1SystemCConsumer" prot="public" virt="non-virtual">systemc_clang::SystemCConsumer</basecompoundref>
+    <includes refid="HDLMain_8h" local="no">HDLMain.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsystemc__hdl_1_1HDLMain_1a930cc6788c47b22ba634d050ee1c1200" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacehnode_1ae5db0847c00e6e0627bc73df624628d0" kindref="member">hNodep</ref></type>
+        <definition>hNodep systemc_hdl::HDLMain::h_top</definition>
+        <argsstring></argsstring>
+        <name>h_top</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.h" line="50" column="12" bodyfile="plugins/hdl/HDLMain.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__hdl_1_1HDLMain_1a79f2382f453bb0e8c414c7c92445fb0f" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; string, FunctionDecl * &gt;</type>
+        <definition>std::unordered_map&lt;string, FunctionDecl *&gt; systemc_hdl::HDLMain::allmethodecls</definition>
+        <argsstring></argsstring>
+        <name>allmethodecls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.h" line="52" column="8" bodyfile="plugins/hdl/HDLMain.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__hdl_1_1HDLMain_1a3f393848b0c5306a974657203672c20f" prot="private" static="no" mutable="no">
+        <type><ref refid="classHDLType" kindref="compound">HDLType</ref></type>
+        <definition>HDLType systemc_hdl::HDLMain::HDLt</definition>
+        <argsstring></argsstring>
+        <name>HDLt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.h" line="54" column="13" bodyfile="plugins/hdl/HDLMain.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__hdl_1_1HDLMain_1a27f2cf9e193b03b3ae1c41224fe8f998" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacehnode_1a895d5dd4b2ad8625d95e059f85f9bef7" kindref="member">hmodinst_name_map_t</ref></type>
+        <definition>hmodinst_name_map_t systemc_hdl::HDLMain::mod_name_map</definition>
+        <argsstring></argsstring>
+        <name>mod_name_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.h" line="56" column="25" bodyfile="plugins/hdl/HDLMain.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__hdl_1_1HDLMain_1ac22fef2b46e54f004db447da0db5eb2a" prot="private" static="no" mutable="no">
+        <type><ref refid="classhnode_1_1name__serve" kindref="compound">name_serve</ref></type>
+        <definition>name_serve systemc_hdl::HDLMain::mod_newn</definition>
+        <argsstring></argsstring>
+        <name>mod_newn</name>
+        <initializer>{&quot;_sc_module_&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.h" line="57" column="16" bodyfile="plugins/hdl/HDLMain.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__hdl_1_1HDLMain_1aff1b131a2d1d484f966a3aa97bf69c61" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string systemc_hdl::HDLMain::hdl_file_out_</definition>
+        <argsstring></argsstring>
+        <name>hdl_file_out_</name>
+        <briefdescription>
+<para>Command line options. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.h" line="60" column="17" bodyfile="plugins/hdl/HDLMain.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLMain_1a563a3dd0e92d4cea92109b59383d5971" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>systemc_hdl::HDLMain::HDLMain</definition>
+        <argsstring>(CompilerInstance &amp;ci, std::string topModule=&quot;!none&quot;, const std::string &amp;hdl_file_out=&quot;default_hdl.txt&quot;)</argsstring>
+        <name>HDLMain</name>
+        <param>
+          <type>CompilerInstance &amp;</type>
+          <declname>ci</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>topModule</declname>
+          <defval>&quot;!none&quot;</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>hdl_file_out</declname>
+          <defval>&quot;default_hdl.txt&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Provide hdl_file_out as argument. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.h" line="28" column="3" bodyfile="plugins/hdl/HDLMain.h" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLMain_1ae29d8fa3a6194fe4ed655dd87dccdd27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>systemc_hdl::HDLMain::HDLMain</definition>
+        <argsstring>(ASTUnit *from_ast, std::string topModule=&quot;!none&quot;, const std::string &amp;hdl_file_out=&quot;default_hdl.txt&quot;)</argsstring>
+        <name>HDLMain</name>
+        <param>
+          <type>ASTUnit *</type>
+          <declname>from_ast</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>topModule</declname>
+          <defval>&quot;!none&quot;</defval>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>hdl_file_out</declname>
+          <defval>&quot;default_hdl.txt&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.h" line="31" column="3" bodyfile="plugins/hdl/HDLMain.h" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLMain_1a9ffb914cdea1fd4e797001a34ba8e2e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool systemc_hdl::HDLMain::postFire</definition>
+        <argsstring>()</argsstring>
+        <name>postFire</name>
+        <reimplements refid="classsystemc__clang_1_1SystemCConsumer_1a5abaaf14db3be571b79714eac76737bc">postFire</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Entry point for HDL generation</para>
+<para>Starting with top level module, process systemc objects Generate hcode for modules and submodules, including their ports and variables, port bindings, sensitivity lists Generate hcode for SC_METHOD body declarations </para>
+        </detaileddescription>
+        <inbodydescription>
+<para>File name passed from command line argument.</para>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.h" line="35" column="10" bodyfile="plugins/hdl/HDLMain.cpp" bodystart="43" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLMain_1a317c893ed14e48218f7f9ebc3df31d19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void systemc_hdl::HDLMain::SCmodule2hcode</definition>
+        <argsstring>(ModuleInstance *mod, hNodep &amp;h_module, llvm::raw_fd_ostream &amp;SCout)</argsstring>
+        <name>SCmodule2hcode</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref> *</type>
+          <declname>mod</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehnode_1ae5db0847c00e6e0627bc73df624628d0" kindref="member">hNodep</ref> &amp;</type>
+          <declname>h_module</declname>
+        </param>
+        <param>
+          <type>llvm::raw_fd_ostream &amp;</type>
+          <declname>SCout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.h" line="36" column="9" bodyfile="plugins/hdl/HDLMain.cpp" bodystart="119" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLMain_1afbe3d65373a8155fdcac641d7b4103af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void systemc_hdl::HDLMain::SCport2hcode</definition>
+        <argsstring>(ModuleInstance::portMapType pmap, hNode::hdlopsEnum h_op, hNodep &amp;h_info)</argsstring>
+        <name>SCport2hcode</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1ModuleInstance_1ae5e4d7d956225b28aac30182a5649f84" kindref="member">ModuleInstance::portMapType</ref></type>
+          <declname>pmap</declname>
+        </param>
+        <param>
+          <type><ref refid="classhnode_1_1hNode_1a72bcc22543c267571a24ec713633e39a" kindref="member">hNode::hdlopsEnum</ref></type>
+          <declname>h_op</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehnode_1ae5db0847c00e6e0627bc73df624628d0" kindref="member">hNodep</ref> &amp;</type>
+          <declname>h_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.h" line="38" column="9" bodyfile="plugins/hdl/HDLMain.cpp" bodystart="316" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLMain_1aa6395f70a628ea2f245e2adf03b15c44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void systemc_hdl::HDLMain::SCsig2hcode</definition>
+        <argsstring>(ModuleInstance::signalMapType pmap, hNode::hdlopsEnum h_op, hNodep &amp;h_info)</argsstring>
+        <name>SCsig2hcode</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1ModuleInstance_1adad65a1c03e742c7c8eb6d0bd1a57271" kindref="member">ModuleInstance::signalMapType</ref></type>
+          <declname>pmap</declname>
+        </param>
+        <param>
+          <type><ref refid="classhnode_1_1hNode_1a72bcc22543c267571a24ec713633e39a" kindref="member">hNode::hdlopsEnum</ref></type>
+          <declname>h_op</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehnode_1ae5db0847c00e6e0627bc73df624628d0" kindref="member">hNodep</ref> &amp;</type>
+          <declname>h_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.h" line="40" column="9" bodyfile="plugins/hdl/HDLMain.cpp" bodystart="366" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLMain_1aa049f860557e5f14345f5563be6df6fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void systemc_hdl::HDLMain::SCproc2hcode</definition>
+        <argsstring>(ModuleInstance::processMapType pm, hNodep &amp;h_top)</argsstring>
+        <name>SCproc2hcode</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1ModuleInstance_1aa971eba18c75ee5a38fcfc9739bbf9a5" kindref="member">ModuleInstance::processMapType</ref></type>
+          <declname>pm</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehnode_1ae5db0847c00e6e0627bc73df624628d0" kindref="member">hNodep</ref> &amp;</type>
+          <declname>h_top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Get the diagnostic engine.</para>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.h" line="42" column="10" bodyfile="plugins/hdl/HDLMain.cpp" bodystart="388" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLMain_1a229d7c785e8ad4e02d5a198df4d8d6de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void systemc_hdl::HDLMain::SCportbindings2hcode</definition>
+        <argsstring>(ModuleInstance *mod, hNodep &amp;h_pb)</argsstring>
+        <name>SCportbindings2hcode</name>
+        <param>
+          <type><ref refid="classsystemc__clang_1_1ModuleInstance" kindref="compound">ModuleInstance</ref> *</type>
+          <declname>mod</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacehnode_1ae5db0847c00e6e0627bc73df624628d0" kindref="member">hNodep</ref> &amp;</type>
+          <declname>h_pb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.h" line="44" column="10" bodyfile="plugins/hdl/HDLMain.cpp" bodystart="267" bodyend="314"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>clang::RecursiveASTVisitor&lt; SystemCConsumer &gt;</label>
+      </node>
+      <node id="3">
+        <label>ASTConsumer</label>
+      </node>
+      <node id="1">
+        <label>systemc_hdl::HDLMain</label>
+        <link refid="classsystemc__hdl_1_1HDLMain"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>systemc_clang::SystemCConsumer</label>
+        <link refid="classsystemc__clang_1_1SystemCConsumer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>systemc_clang::ModuleInstance</label>
+        <link refid="classsystemc__clang_1_1ModuleInstance"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>instance_info_</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>hnode::name_serve</label>
+        <link refid="classhnode_1_1name__serve"/>
+      </node>
+      <node id="4">
+        <label>clang::RecursiveASTVisitor&lt; SystemCConsumer &gt;</label>
+      </node>
+      <node id="3">
+        <label>ASTConsumer</label>
+      </node>
+      <node id="9">
+        <label>HDLType</label>
+        <link refid="classHDLType"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>tutil</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>systemc_clang::Model</label>
+        <link refid="classsystemc__clang_1_1Model"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>root_module_inst_</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>systemc_hdl::HDLMain</label>
+        <link refid="classsystemc__hdl_1_1HDLMain"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>h_top</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>HDLt</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>mod_newn</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>systemc_clang::SystemCConsumer</label>
+        <link refid="classsystemc__clang_1_1SystemCConsumer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>systemc_model_</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>hnode::hNode</label>
+        <link refid="classhnode_1_1hNode"/>
+      </node>
+      <node id="7">
+        <label>sc_ast_matchers::ModuleInstanceType</label>
+        <link refid="structsc__ast__matchers_1_1ModuleInstanceType"/>
+      </node>
+      <node id="10">
+        <label>hnode::util</label>
+        <link refid="classhnode_1_1util"/>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/HDLMain.h" line="24" column="3" bodyfile="plugins/hdl/HDLMain.h" bodystart="24" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classsystemc__hdl_1_1HDLMain_1a79f2382f453bb0e8c414c7c92445fb0f" prot="private" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>allmethodecls</name></member>
+      <member refid="classsystemc__clang_1_1SystemCConsumer_1a53d03841ed71ecf0ca5cd056e5e8a69a" prot="private" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>context_</name></member>
+      <member refid="classsystemc__clang_1_1SystemCConsumer_1a3c77d4b6256d0cae17688fdf10fdfd4c" prot="public" virt="virtual"><scope>systemc_hdl::HDLMain</scope><name>fire</name></member>
+      <member refid="classsystemc__clang_1_1SystemCConsumer_1ad83b670a41e54b55954ec9fa305dce99" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>getContext</name></member>
+      <member refid="classsystemc__clang_1_1SystemCConsumer_1a4272ad2c5a6239127aa4cbe6cd27c1a8" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>getSourceManager</name></member>
+      <member refid="classsystemc__clang_1_1SystemCConsumer_1ae1eda508d3a15cb37f332205f8127e04" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>getSystemCModel</name></member>
+      <member refid="classsystemc__clang_1_1SystemCConsumer_1a1a302f2c0ce93bacfe2287d4e76a537e" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>getTopModule</name></member>
+      <member refid="classsystemc__hdl_1_1HDLMain_1a930cc6788c47b22ba634d050ee1c1200" prot="private" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>h_top</name></member>
+      <member refid="classsystemc__clang_1_1SystemCConsumer_1a905aa1175d3b875a286ce3104f397ab3" prot="public" virt="virtual"><scope>systemc_hdl::HDLMain</scope><name>HandleTranslationUnit</name></member>
+      <member refid="classsystemc__hdl_1_1HDLMain_1aff1b131a2d1d484f966a3aa97bf69c61" prot="private" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>hdl_file_out_</name></member>
+      <member refid="classsystemc__hdl_1_1HDLMain_1a563a3dd0e92d4cea92109b59383d5971" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>HDLMain</name></member>
+      <member refid="classsystemc__hdl_1_1HDLMain_1ae29d8fa3a6194fe4ed655dd87dccdd27" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>HDLMain</name></member>
+      <member refid="classsystemc__hdl_1_1HDLMain_1a3f393848b0c5306a974657203672c20f" prot="private" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>HDLt</name></member>
+      <member refid="classsystemc__hdl_1_1HDLMain_1a27f2cf9e193b03b3ae1c41224fe8f998" prot="private" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>mod_name_map</name></member>
+      <member refid="classsystemc__hdl_1_1HDLMain_1ac22fef2b46e54f004db447da0db5eb2a" prot="private" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>mod_newn</name></member>
+      <member refid="classsystemc__clang_1_1SystemCConsumer_1a4f19cdcdc826eced7e9bdcd8890b4b85" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>os_</name></member>
+      <member refid="classsystemc__hdl_1_1HDLMain_1a9ffb914cdea1fd4e797001a34ba8e2e4" prot="public" virt="virtual"><scope>systemc_hdl::HDLMain</scope><name>postFire</name></member>
+      <member refid="classsystemc__clang_1_1SystemCConsumer_1a7ecea0031ec9e348f9054123bb84a0e8" prot="public" virt="virtual"><scope>systemc_hdl::HDLMain</scope><name>preFire</name></member>
+      <member refid="classsystemc__hdl_1_1HDLMain_1a317c893ed14e48218f7f9ebc3df31d19" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>SCmodule2hcode</name></member>
+      <member refid="classsystemc__hdl_1_1HDLMain_1afbe3d65373a8155fdcac641d7b4103af" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>SCport2hcode</name></member>
+      <member refid="classsystemc__hdl_1_1HDLMain_1a229d7c785e8ad4e02d5a198df4d8d6de" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>SCportbindings2hcode</name></member>
+      <member refid="classsystemc__hdl_1_1HDLMain_1aa049f860557e5f14345f5563be6df6fa" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>SCproc2hcode</name></member>
+      <member refid="classsystemc__hdl_1_1HDLMain_1aa6395f70a628ea2f245e2adf03b15c44" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>SCsig2hcode</name></member>
+      <member refid="classsystemc__clang_1_1SystemCConsumer_1a9f951a7b3b7159cc52768dc5df775279" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>setTopModule</name></member>
+      <member refid="classsystemc__clang_1_1SystemCConsumer_1a22da7bc944c40b4a978f3a62c1b64df6" prot="private" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>sm_</name></member>
+      <member refid="classsystemc__clang_1_1SystemCConsumer_1a9b479529e66790c1ff22460dfcff871f" prot="private" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>systemc_model_</name></member>
+      <member refid="classsystemc__clang_1_1SystemCConsumer_1a7329006e29dd8aaade834857342ca945" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>SystemCConsumer</name></member>
+      <member refid="classsystemc__clang_1_1SystemCConsumer_1a8144d02a15221bb1e3809835c566e73d" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>SystemCConsumer</name></member>
+      <member refid="classsystemc__clang_1_1SystemCConsumer_1a75c11443ed0a5ae9924fbd00f84d115a" prot="private" virt="non-virtual"><scope>systemc_hdl::HDLMain</scope><name>top_</name></member>
+      <member refid="classsystemc__clang_1_1SystemCConsumer_1a87c3945a47ef25c30a372898789251cf" prot="public" virt="virtual"><scope>systemc_hdl::HDLMain</scope><name>~SystemCConsumer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

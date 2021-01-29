@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="PortDecl_8cpp" kind="file" language="C++">
+    <compoundname>PortDecl.cpp</compoundname>
+    <includes local="yes">clang/AST/DeclCXX.h</includes>
+    <includes refid="FindTemplateTypes_8h" local="yes">FindTemplateTypes.h</includes>
+    <includes refid="PortDecl_8h" local="yes">PortDecl.h</includes>
+    <includes local="yes">llvm/Support/Debug.h</includes>
+    <incdepgraph>
+      <node id="12">
+        <label>queue</label>
+      </node>
+      <node id="9">
+        <label>llvm/Support/raw_ostream.h</label>
+      </node>
+      <node id="8">
+        <label>clang/AST/RecursiveASTVisitor.h</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="11">
+        <label>map</label>
+      </node>
+      <node id="7">
+        <label>json.hpp</label>
+      </node>
+      <node id="3">
+        <label>FindTemplateTypes.h</label>
+        <link refid="FindTemplateTypes_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Tree.h</label>
+        <link refid="Tree_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stack</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+      <node id="13">
+        <label>PortDecl.h</label>
+        <link refid="PortDecl_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/model/PortDecl.cpp</label>
+        <link refid="PortDecl_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>llvm/Support/Debug.h</label>
+      </node>
+      <node id="2">
+        <label>clang/AST/DeclCXX.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;clang/AST/DeclCXX.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="FindTemplateTypes_8h" kindref="compound">FindTemplateTypes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="PortDecl_8h" kindref="compound">PortDecl.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;llvm/Support/Debug.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacesystemc__clang" kindref="compound">systemc_clang</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="classsystemc__clang_1_1PortDecl_1ab555f771865181e610019b7d3abccc40" kindref="member">PortDecl::~PortDecl</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Only<sp/>delete<sp/>the<sp/>template_type_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/>DEBUG_WITH_TYPE(</highlight><highlight class="stringliteral">&quot;DebugDestructors&quot;</highlight><highlight class="normal">,<sp/>llvm::dbgs()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;~PortDecl\n&quot;</highlight><highlight class="normal">;);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classsystemc__clang_1_1PortDecl_1ae2afcf990e7c859dd47ad057c5c79409" kindref="member">template_type_</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1PortDecl_1ae2afcf990e7c859dd47ad057c5c79409" kindref="member">template_type_</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1PortDecl_1ae2afcf990e7c859dd47ad057c5c79409" kindref="member">template_type_</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1PortDecl_1ab907f3dbfe7a2bada940b37c896d48e7" kindref="member">field_decl_</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="classsystemc__clang_1_1PortDecl_1af53768c4cd2985ef74dfc9074d6a73f9" kindref="member">PortDecl::PortDecl</ref>()</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>port_name_{</highlight><highlight class="stringliteral">&quot;NONE&quot;</highlight><highlight class="normal">},</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>template_type_{nullptr},</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>field_decl_{nullptr},</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>is_array_{false}<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">PortDecl::PortDecl(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name,<sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref><sp/>*tt)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>port_name_{name},</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>template_type_{tt},</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>field_decl_{nullptr},</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>is_array_{false}<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">PortDecl::PortDecl(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Decl<sp/>*fd,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref><sp/>*tt)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>port_name_{name},</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>template_type_{tt},</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>field_decl_{const_cast&lt;Decl<sp/>*&gt;(fd)},</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>is_array_{false}<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">PortDecl::PortDecl(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1PortDecl" kindref="compound">PortDecl</ref><sp/>&amp;from)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1PortDecl_1a03d8aad20ac4114a3170bd6c6173b312" kindref="member">port_name_</ref><sp/>=<sp/>from.<ref refid="classsystemc__clang_1_1PortDecl_1a03d8aad20ac4114a3170bd6c6173b312" kindref="member">port_name_</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1PortDecl_1ae2afcf990e7c859dd47ad057c5c79409" kindref="member">template_type_</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref>{*from.<ref refid="classsystemc__clang_1_1PortDecl_1ae2afcf990e7c859dd47ad057c5c79409" kindref="member">template_type_</ref>};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1PortDecl_1ab907f3dbfe7a2bada940b37c896d48e7" kindref="member">field_decl_</ref><sp/>=<sp/>from.<ref refid="classsystemc__clang_1_1PortDecl_1ab907f3dbfe7a2bada940b37c896d48e7" kindref="member">field_decl_</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1PortDecl_1aaa40e3567d2a19a6f7310c455e4fc54d" kindref="member">is_array_</ref><sp/>=<sp/>from.<ref refid="classsystemc__clang_1_1PortDecl_1aaa40e3567d2a19a6f7310c455e4fc54d" kindref="member">is_array_</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="classsystemc__clang_1_1PortDecl_1a1ed8b0f52527f43862e8576422f1bb84" kindref="member">array_sizes_</ref><sp/>=<sp/>from.<ref refid="classsystemc__clang_1_1PortDecl_1a1ed8b0f52527f43862e8576422f1bb84" kindref="member">array_sizes_</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1PortDecl_1a5b5e271b1bd0ae65bf341f208a2f057c" kindref="member">PortDecl::addArraySize</ref>(llvm::APInt<sp/>sz)<sp/>{<sp/><ref refid="classsystemc__clang_1_1PortDecl_1a1ed8b0f52527f43862e8576422f1bb84" kindref="member">array_sizes_</ref>.push_back(sz);<sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1PortDecl_1ade19aaa93ba5dd851d56f103541a79d0" kindref="member">PortDecl::setArrayType</ref>()<sp/>{<sp/><ref refid="classsystemc__clang_1_1PortDecl_1aaa40e3567d2a19a6f7310c455e4fc54d" kindref="member">is_array_</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1PortDecl_1a43ca64dccbd062324c2abc5963154546" kindref="member">PortDecl::getArrayType</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1PortDecl_1aaa40e3567d2a19a6f7310c455e4fc54d" kindref="member">is_array_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1PortDecl_1a493bb5572de153c0022f164d01f0c73c" kindref="member">PortDecl::setModuleName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name)<sp/>{<sp/><ref refid="classsystemc__clang_1_1PortDecl_1a03d8aad20ac4114a3170bd6c6173b312" kindref="member">port_name_</ref><sp/>=<sp/>name;<sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">std::vector&lt;llvm::APInt&gt;<sp/><ref refid="classsystemc__clang_1_1PortDecl_1aa3622ca7b78d0a9e5aabc114829e1d14" kindref="member">PortDecl::getArraySizes</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1PortDecl_1a1ed8b0f52527f43862e8576422f1bb84" kindref="member">array_sizes_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">std::string<sp/><ref refid="classsystemc__clang_1_1PortDecl_1a407dcd68862014e89d9f9666e4dc6231" kindref="member">PortDecl::getName</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1PortDecl_1a03d8aad20ac4114a3170bd6c6173b312" kindref="member">port_name_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">FieldDecl<sp/>*<ref refid="classsystemc__clang_1_1PortDecl_1ae3257767b9f9234b66de907bbdfbceb7" kindref="member">PortDecl::getAsFieldDecl</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dyn_cast&lt;FieldDecl&gt;(<ref refid="classsystemc__clang_1_1PortDecl_1ab907f3dbfe7a2bada940b37c896d48e7" kindref="member">field_decl_</ref>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">VarDecl<sp/>*<ref refid="classsystemc__clang_1_1PortDecl_1a0936c825c062aeba0b741c15fe05c914" kindref="member">PortDecl::getAsVarDecl</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dyn_cast&lt;VarDecl&gt;(<ref refid="classsystemc__clang_1_1PortDecl_1ab907f3dbfe7a2bada940b37c896d48e7" kindref="member">field_decl_</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><ref refid="classsystemc__clang_1_1FindTemplateTypes" kindref="compound">FindTemplateTypes</ref><sp/>*<ref refid="classsystemc__clang_1_1PortDecl_1a97faf57eddf2f20618033bf334301c4c" kindref="member">PortDecl::getTemplateType</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classsystemc__clang_1_1PortDecl_1ae2afcf990e7c859dd47ad057c5c79409" kindref="member">template_type_</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><ref refid="namespacesystemc__clang_1ab232545035b571c3f3cd13a4459f2d9e" kindref="member">json</ref><sp/><ref refid="classsystemc__clang_1_1PortDecl_1a699003872595070eee23d589528e0adc" kindref="member">PortDecl::dump_json</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><ref refid="namespacesystemc__clang_1ab232545035b571c3f3cd13a4459f2d9e" kindref="member">json</ref><sp/>port_j;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>port_j[</highlight><highlight class="stringliteral">&quot;signal_port_name&quot;</highlight><highlight class="normal">]<sp/>=<sp/><ref refid="classsystemc__clang_1_1PortDecl_1a407dcd68862014e89d9f9666e4dc6231" kindref="member">getName</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>port_j[</highlight><highlight class="stringliteral">&quot;signal_port_arguments&quot;</highlight><highlight class="normal">]<sp/>=<sp/><ref refid="classsystemc__clang_1_1PortDecl_1ae2afcf990e7c859dd47ad057c5c79409" kindref="member">template_type_</ref>-&gt;<ref refid="classsystemc__clang_1_1FindTemplateTypes_1af899986dd7eb6be75e8a749a4508f77e" kindref="member">dump_json</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>port_j[</highlight><highlight class="stringliteral">&quot;is_array_type&quot;</highlight><highlight class="normal">]<sp/>=<sp/><ref refid="classsystemc__clang_1_1PortDecl_1a43ca64dccbd062324c2abc5963154546" kindref="member">getArrayType</ref>();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classsystemc__clang_1_1PortDecl_1a43ca64dccbd062324c2abc5963154546" kindref="member">getArrayType</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sz:<sp/><ref refid="classsystemc__clang_1_1PortDecl_1aa3622ca7b78d0a9e5aabc114829e1d14" kindref="member">getArraySizes</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::size_t<sp/>i{0};</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>port_j[</highlight><highlight class="stringliteral">&quot;array_sizes&quot;</highlight><highlight class="normal">]<sp/>+=<sp/>sz.getLimitedValue();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//port_j[&quot;array_size&quot;]<sp/>=<sp/>getArraySize().getLimitedValue();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classsystemc__clang_1_1PortDecl_1ae3257767b9f9234b66de907bbdfbceb7" kindref="member">getAsFieldDecl</ref>())<sp/>{<sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>port_j[</highlight><highlight class="stringliteral">&quot;decl_type&quot;</highlight><highlight class="normal">]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;FieldDecl&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classsystemc__clang_1_1PortDecl_1a0936c825c062aeba0b741c15fe05c914" kindref="member">getAsVarDecl</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>port_j[</highlight><highlight class="stringliteral">&quot;decl_type&quot;</highlight><highlight class="normal">]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;VarDecl&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>port_j;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/model/PortDecl.cpp"/>
+  </compounddef>
+</doxygen>

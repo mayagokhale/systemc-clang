@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classsystemc__hdl_1_1HDLAXN" kind="class" language="C++" prot="public">
+    <compoundname>systemc_hdl::HDLAXN</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ASTFrontendAction</basecompoundref>
+    <includes refid="HDLMain_8h" local="no">HDLMain.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsystemc__hdl_1_1HDLAXN_1ad6701ec48b8ffde7286e8177ba524f93" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string systemc_hdl::HDLAXN::top_</definition>
+        <argsstring></argsstring>
+        <name>top_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.h" line="78" column="17" bodyfile="plugins/hdl/HDLMain.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsystemc__hdl_1_1HDLAXN_1a4202443ecf31d91cc87427c853b60057" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string systemc_hdl::HDLAXN::hdl_file_out_</definition>
+        <argsstring></argsstring>
+        <name>hdl_file_out_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.h" line="79" column="17" bodyfile="plugins/hdl/HDLMain.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLAXN_1a39a47fb32711262a05801e505f55b033" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>systemc_hdl::HDLAXN::HDLAXN</definition>
+        <argsstring>(const std::string &amp;top)</argsstring>
+        <name>HDLAXN</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.h" line="73" column="3" bodyfile="plugins/hdl/HDLMain.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLAXN_1acc2ac92fa83be7d971cbb53bc98a3d25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>systemc_hdl::HDLAXN::HDLAXN</definition>
+        <argsstring>(const std::string &amp;top, const std::string &amp;hdl_file_out)</argsstring>
+        <name>HDLAXN</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>top</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>hdl_file_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.h" line="74" column="3" bodyfile="plugins/hdl/HDLMain.h" bodystart="74" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classsystemc__hdl_1_1HDLAXN_1aadb55866e64bddbdfcdc2acda10fafca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::unique_ptr&lt; ASTConsumer &gt;</type>
+        <definition>virtual std::unique_ptr&lt;ASTConsumer&gt; systemc_hdl::HDLAXN::CreateASTConsumer</definition>
+        <argsstring>(clang::CompilerInstance &amp;Compiler, llvm::StringRef inFile)</argsstring>
+        <name>CreateASTConsumer</name>
+        <param>
+          <type>clang::CompilerInstance &amp;</type>
+          <declname>Compiler</declname>
+        </param>
+        <param>
+          <type>llvm::StringRef</type>
+          <declname>inFile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="plugins/hdl/HDLMain.h" line="82" column="29" bodyfile="plugins/hdl/HDLMain.h" bodystart="82" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>systemc_hdl::HDLAXN</label>
+        <link refid="classsystemc__hdl_1_1HDLAXN"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ASTFrontendAction</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>systemc_hdl::HDLAXN</label>
+        <link refid="classsystemc__hdl_1_1HDLAXN"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ASTFrontendAction</label>
+      </node>
+    </collaborationgraph>
+    <location file="plugins/hdl/HDLMain.h" line="71" column="3" bodyfile="plugins/hdl/HDLMain.h" bodystart="71" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classsystemc__hdl_1_1HDLAXN_1aadb55866e64bddbdfcdc2acda10fafca" prot="public" virt="virtual"><scope>systemc_hdl::HDLAXN</scope><name>CreateASTConsumer</name></member>
+      <member refid="classsystemc__hdl_1_1HDLAXN_1a4202443ecf31d91cc87427c853b60057" prot="private" virt="non-virtual"><scope>systemc_hdl::HDLAXN</scope><name>hdl_file_out_</name></member>
+      <member refid="classsystemc__hdl_1_1HDLAXN_1a39a47fb32711262a05801e505f55b033" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLAXN</scope><name>HDLAXN</name></member>
+      <member refid="classsystemc__hdl_1_1HDLAXN_1acc2ac92fa83be7d971cbb53bc98a3d25" prot="public" virt="non-virtual"><scope>systemc_hdl::HDLAXN</scope><name>HDLAXN</name></member>
+      <member refid="classsystemc__hdl_1_1HDLAXN_1ad6701ec48b8ffde7286e8177ba524f93" prot="private" virt="non-virtual"><scope>systemc_hdl::HDLAXN</scope><name>top_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

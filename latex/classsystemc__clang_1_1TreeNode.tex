@@ -1,0 +1,180 @@
+\hypertarget{classsystemc__clang_1_1TreeNode}{}\doxysection{systemc\+\_\+clang\+::Tree\+Node$<$ T $>$ Class Template Reference}
+\label{classsystemc__clang_1_1TreeNode}\index{systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Tree.\+h$>$}
+
+
+
+Collaboration diagram for systemc\+\_\+clang\+::Tree\+Node$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classsystemc__clang_1_1TreeNode__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1TreeNode_afc5dc71e550a2f1b97f31348faea0a42}{Tree\+Node}} (T data)
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1TreeNode_ae4df9acfad4e8734fb344bc36ac3ebbb}{Tree\+Node}} (const \mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{Tree\+Node}} \&from)
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1TreeNode_a504829bc51e53feaeadaec11abd894d7}{$\sim$\+Tree\+Node}} ()
+\item 
+T \mbox{\hyperlink{classsystemc__clang_1_1TreeNode_a1b2ccf587f21fe34d12d59a97c9308b6}{get\+Data}} () const
+\item 
+const T $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1TreeNode_ac79adf291553b0bed07357b194836583}{get\+Data\+Ptr}} ()
+\item 
+std\+::string \mbox{\hyperlink{classsystemc__clang_1_1TreeNode_af753d344aa7c5f1a8cfdc63ed88714b9}{to\+String}} () const
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1TreeNode_a0155728cd4c230ece1da3f7c484eb0d9}{is\+Discovered}} () const
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1TreeNode_a056c6410d3527c575bc22a588242f5ae}{set\+Discovered}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1TreeNode_ad5822c3030a768e974bbc694c39b0d13}{reset\+Discovered}} ()
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1TreeNode_a9b4c33b13848aa25ef768e9eac358378}{set\+Parent}} (\mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{Tree\+Node}} $\ast$from)
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{Tree\+Node}} $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1TreeNode_a2797e9913811daaa98fb71c8964b6db3}{get\+Parent}} () const
+\item 
+void \mbox{\hyperlink{classsystemc__clang_1_1TreeNode_a13856869703857c13541330d4dfeaeed}{dump}} ()
+\item 
+virtual void \mbox{\hyperlink{classsystemc__clang_1_1TreeNode_a1b61d6391344a979ab6636bb2fba689c}{visit}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{classsystemc__clang_1_1TreeNode_a39196ce3bb1f4b3baaeb1806cb099e3d}{data\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classsystemc__clang_1_1TreeNode_ade4cfca76d30192595ed41ceee36617d}{discovered\+\_\+}}
+\item 
+\mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{Tree\+Node}} $\ast$ \mbox{\hyperlink{classsystemc__clang_1_1TreeNode_a88f697624515c4eff540f4fd44d4cf07}{parent\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1TreeNode_afc5dc71e550a2f1b97f31348faea0a42}\label{classsystemc__clang_1_1TreeNode_afc5dc71e550a2f1b97f31348faea0a42}} 
+\index{systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}!TreeNode@{TreeNode}}
+\index{TreeNode@{TreeNode}!systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TreeNode()}{TreeNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{systemc\+\_\+clang\+::\+Tree\+Node}}$<$ T $>$\+::\mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{Tree\+Node}} (\begin{DoxyParamCaption}\item[{T}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1TreeNode_ae4df9acfad4e8734fb344bc36ac3ebbb}\label{classsystemc__clang_1_1TreeNode_ae4df9acfad4e8734fb344bc36ac3ebbb}} 
+\index{systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}!TreeNode@{TreeNode}}
+\index{TreeNode@{TreeNode}!systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TreeNode()}{TreeNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{systemc\+\_\+clang\+::\+Tree\+Node}}$<$ T $>$\+::\mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{Tree\+Node}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{Tree\+Node}}$<$ T $>$ \&}]{from }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1TreeNode_a504829bc51e53feaeadaec11abd894d7}\label{classsystemc__clang_1_1TreeNode_a504829bc51e53feaeadaec11abd894d7}} 
+\index{systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}!````~TreeNode@{$\sim$TreeNode}}
+\index{````~TreeNode@{$\sim$TreeNode}!systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$TreeNode()}{~TreeNode()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{systemc\+\_\+clang\+::\+Tree\+Node}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{Tree\+Node}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1TreeNode_a13856869703857c13541330d4dfeaeed}\label{classsystemc__clang_1_1TreeNode_a13856869703857c13541330d4dfeaeed}} 
+\index{systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}!dump@{dump}}
+\index{dump@{dump}!systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{systemc\+\_\+clang\+::\+Tree\+Node}}$<$ T $>$\+::dump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1TreeNode_a1b2ccf587f21fe34d12d59a97c9308b6}\label{classsystemc__clang_1_1TreeNode_a1b2ccf587f21fe34d12d59a97c9308b6}} 
+\index{systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}!getData@{getData}}
+\index{getData@{getData}!systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{systemc\+\_\+clang\+::\+Tree\+Node}}$<$ T $>$\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1TreeNode_ac79adf291553b0bed07357b194836583}\label{classsystemc__clang_1_1TreeNode_ac79adf291553b0bed07357b194836583}} 
+\index{systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}!getDataPtr@{getDataPtr}}
+\index{getDataPtr@{getDataPtr}!systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getDataPtr()}{getDataPtr()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T$\ast$ \mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{systemc\+\_\+clang\+::\+Tree\+Node}}$<$ T $>$\+::get\+Data\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1TreeNode_a2797e9913811daaa98fb71c8964b6db3}\label{classsystemc__clang_1_1TreeNode_a2797e9913811daaa98fb71c8964b6db3}} 
+\index{systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}!getParent@{getParent}}
+\index{getParent@{getParent}!systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getParent()}{getParent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{Tree\+Node}}$\ast$ \mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{systemc\+\_\+clang\+::\+Tree\+Node}}$<$ T $>$\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1TreeNode_a0155728cd4c230ece1da3f7c484eb0d9}\label{classsystemc__clang_1_1TreeNode_a0155728cd4c230ece1da3f7c484eb0d9}} 
+\index{systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}!isDiscovered@{isDiscovered}}
+\index{isDiscovered@{isDiscovered}!systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isDiscovered()}{isDiscovered()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{systemc\+\_\+clang\+::\+Tree\+Node}}$<$ T $>$\+::is\+Discovered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1TreeNode_ad5822c3030a768e974bbc694c39b0d13}\label{classsystemc__clang_1_1TreeNode_ad5822c3030a768e974bbc694c39b0d13}} 
+\index{systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}!resetDiscovered@{resetDiscovered}}
+\index{resetDiscovered@{resetDiscovered}!systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{resetDiscovered()}{resetDiscovered()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{systemc\+\_\+clang\+::\+Tree\+Node}}$<$ T $>$\+::reset\+Discovered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1TreeNode_a056c6410d3527c575bc22a588242f5ae}\label{classsystemc__clang_1_1TreeNode_a056c6410d3527c575bc22a588242f5ae}} 
+\index{systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}!setDiscovered@{setDiscovered}}
+\index{setDiscovered@{setDiscovered}!systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setDiscovered()}{setDiscovered()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{systemc\+\_\+clang\+::\+Tree\+Node}}$<$ T $>$\+::set\+Discovered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1TreeNode_a9b4c33b13848aa25ef768e9eac358378}\label{classsystemc__clang_1_1TreeNode_a9b4c33b13848aa25ef768e9eac358378}} 
+\index{systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}!setParent@{setParent}}
+\index{setParent@{setParent}!systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setParent()}{setParent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{systemc\+\_\+clang\+::\+Tree\+Node}}$<$ T $>$\+::set\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{Tree\+Node}}$<$ T $>$ $\ast$}]{from }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1TreeNode_af753d344aa7c5f1a8cfdc63ed88714b9}\label{classsystemc__clang_1_1TreeNode_af753d344aa7c5f1a8cfdc63ed88714b9}} 
+\index{systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}!toString@{toString}}
+\index{toString@{toString}!systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::string \mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{systemc\+\_\+clang\+::\+Tree\+Node}}$<$ T $>$\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1TreeNode_a1b61d6391344a979ab6636bb2fba689c}\label{classsystemc__clang_1_1TreeNode_a1b61d6391344a979ab6636bb2fba689c}} 
+\index{systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}!visit@{visit}}
+\index{visit@{visit}!systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{visit()}{visit()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{systemc\+\_\+clang\+::\+Tree\+Node}}$<$ T $>$\+::visit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsystemc__clang_1_1TreeNode_a39196ce3bb1f4b3baaeb1806cb099e3d}\label{classsystemc__clang_1_1TreeNode_a39196ce3bb1f4b3baaeb1806cb099e3d}} 
+\index{systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}!data\_@{data\_}}
+\index{data\_@{data\_}!systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{data\_}{data\_}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{systemc\+\_\+clang\+::\+Tree\+Node}}$<$ T $>$\+::data\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1TreeNode_ade4cfca76d30192595ed41ceee36617d}\label{classsystemc__clang_1_1TreeNode_ade4cfca76d30192595ed41ceee36617d}} 
+\index{systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}!discovered\_@{discovered\_}}
+\index{discovered\_@{discovered\_}!systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{discovered\_}{discovered\_}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{systemc\+\_\+clang\+::\+Tree\+Node}}$<$ T $>$\+::discovered\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classsystemc__clang_1_1TreeNode_a88f697624515c4eff540f4fd44d4cf07}\label{classsystemc__clang_1_1TreeNode_a88f697624515c4eff540f4fd44d4cf07}} 
+\index{systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}!parent\_@{parent\_}}
+\index{parent\_@{parent\_}!systemc\_clang::TreeNode$<$ T $>$@{systemc\_clang::TreeNode$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{parent\_}{parent\_}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{Tree\+Node}}$\ast$ \mbox{\hyperlink{classsystemc__clang_1_1TreeNode}{systemc\+\_\+clang\+::\+Tree\+Node}}$<$ T $>$\+::parent\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{Tree_8h}{Tree.\+h}}\end{DoxyCompactItemize}
