@@ -51,5 +51,6 @@ var searchData=
   ['analyze_5fvalue_5fdecl_1818',['analyze_value_decl',['../classsystemc__clang_1_1FindGPUMacro.html#a4b22fcf68700ffc2f5248b9ab6320eb8',1,'systemc_clang::FindGPUMacro']]],
   ['annotatetransitionsdpseg_1819',['annotateTransitionsDPSeg',['../classsystemc__clang_1_1GlobalSuspensionAutomata.html#a2e2a5da7293995d455107f520b7a91cf',1,'systemc_clang::GlobalSuspensionAutomata']]],
   ['arrangegpususcfgblocks_1820',['arrangeGPUSusCFGBlocks',['../classsystemc__clang_1_1GlobalSuspensionAutomata.html#acad967eb6262a3354775642a5189b92c',1,'systemc_clang::GlobalSuspensionAutomata']]],
-  ['arraydimlength_1821',['arraydimlength',['../classparselib_1_1transforms_1_1alias__translation_1_1AliasTranslation.html#a7e7c56dbcbcac74731388e012ef3b3cb',1,'parselib::transforms::alias_translation::AliasTranslation']]]
+  ['arraydimlength_1821',['arraydimlength',['../classparselib_1_1transforms_1_1alias__translation_1_1AliasTranslation.html#a7e7c56dbcbcac74731388e012ef3b3cb',1,'parselib::transforms::alias_translation::AliasTranslation']]],
+  ['asstring_1822',['asString',['../classsystemc__clang_1_1PortDecl.html#a492f16d90d0553082e482a942042a692',1,'systemc_clang::PortDecl']]]
 ];
