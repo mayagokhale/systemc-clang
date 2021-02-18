@@ -1,12 +1,11 @@
 <map id="src/matchers/FindGlobalEvents.h" name="src/matchers/FindGlobalEvents.h">
-<area shape="rect" id="node1" title=" " alt="" coords="414,5,629,32"/>
-<area shape="rect" id="node2" href="$systemc-clang_8h.html" title=" " alt="" coords="74,80,190,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="198,155,253,181"/>
-<area shape="rect" id="node6" title=" " alt="" coords="265,80,388,107"/>
-<area shape="rect" id="node7" title=" " alt="" coords="412,80,631,107"/>
-<area shape="rect" id="node8" title=" " alt="" coords="655,80,839,107"/>
-<area shape="rect" id="node9" title=" " alt="" coords="863,80,910,107"/>
-<area shape="rect" id="node10" title=" " alt="" coords="935,80,993,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,155,75,181"/>
-<area shape="rect" id="node5" title=" " alt="" coords="99,155,170,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="345,5,560,32"/>
+<area shape="rect" id="node2" href="$systemc-clang_8h.html" title=" " alt="" coords="5,80,121,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="127,155,181,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="197,80,319,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="343,80,562,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="586,80,770,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="795,80,841,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="866,80,925,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="29,155,98,181"/>
 </map>
