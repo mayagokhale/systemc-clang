@@ -33,7 +33,7 @@ var searchData=
   ['visittransitionpairtype_1391',['visitTransitionPairType',['../classsystemc__clang_1_1GlobalSuspensionAutomata.html#aa98d9120219f6deb9d1c9f8bc2b03dc8',1,'systemc_clang::GlobalSuspensionAutomata']]],
   ['visittypedeftype_1392',['VisitTypedefType',['../classsystemc__clang_1_1FindTemplateTypes.html#a0867ed3e94d6c427fcc1081f2e44ae91',1,'systemc_clang::FindTemplateTypes']]],
   ['visitunresolvedmemberexpr_1393',['VisitUnresolvedMemberExpr',['../classsystemc__clang_1_1FindWait.html#aef2ad112fb931511dbea2407793bca45',1,'systemc_clang::FindWait']]],
-  ['visitvardecl_1394',['VisitVarDecl',['../classsystemc__clang_1_1FindGlobalEvents.html#aec04bcf2707035d2a45869439cd5fe62',1,'systemc_clang::FindGlobalEvents']]],
+  ['visitvardecl_1394',['VisitVarDecl',['../classsystemc__clang_1_1FindGlobalEvents.html#a37ccd4a582b1b283fb9def2ef0fded51',1,'systemc_clang::FindGlobalEvents']]],
   ['vmodule_1395',['vmodule',['../classparselib_1_1primitives_1_1vmodule.html',1,'parselib::primitives']]],
   ['vname_5fmap_1396',['vname_map',['../classsystemc__hdl_1_1HDLBody.html#a3378aca791068509cfa933cade96eb2d',1,'systemc_hdl::HDLBody']]]
 ];

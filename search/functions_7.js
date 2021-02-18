@@ -78,7 +78,7 @@ var searchData=
   ['geteventmap_1970',['getEventMap',['../classsystemc__clang_1_1FindGlobalEvents.html#a281cab7140c2ede50bfc886adabf240e',1,'systemc_clang::FindGlobalEvents']]],
   ['geteventmaptype_1971',['getEventMapType',['../classsystemc__clang_1_1Model.html#a2b9df68d993f0d43a194a7a1885d6565',1,'systemc_clang::Model']]],
   ['geteventname_1972',['getEventName',['../classsystemc__clang_1_1EventContainer.html#a4c3469d3f67875d9c43975f11868d628',1,'systemc_clang::EventContainer::getEventName()'],['../classsystemc__clang_1_1State.html#a2bc5bfac607d8519452737899137b4c0',1,'systemc_clang::State::getEventName()']]],
-  ['geteventnames_1973',['getEventNames',['../classsystemc__clang_1_1FindGlobalEvents.html#af17d5125892b5e5f8425d0806d557279',1,'systemc_clang::FindGlobalEvents::getEventNames()'],['../classsystemc__clang_1_1FindEvents.html#ad8cf11b1a0709b7d6a841c9a0020e453',1,'systemc_clang::FindEvents::getEventNames()']]],
+  ['geteventnames_1973',['getEventNames',['../classsystemc__clang_1_1FindGlobalEvents.html#aa59b95c2910b69b17f682d40a77c0546',1,'systemc_clang::FindGlobalEvents::getEventNames()'],['../classsystemc__clang_1_1FindEvents.html#ad8cf11b1a0709b7d6a841c9a0020e453',1,'systemc_clang::FindEvents::getEventNames()']]],
   ['getfielddecls_1974',['getFieldDecls',['../classsc__ast__matchers_1_1FindMemberFieldMatcher.html#a2d9ef594140bda6452a4702d6cf4187c',1,'sc_ast_matchers::FindMemberFieldMatcher']]],
   ['getfields_1975',['getFields',['../classTemplateParametersMatcher.html#a4ae346305db4ff1dde8a5bf873daca48',1,'TemplateParametersMatcher']]],
   ['getforstmtgpumacromap_1976',['getForStmtGPUMacroMap',['../classsystemc__clang_1_1FindGPUMacro.html#a3f0922dcab5a57b789e4775040a6eb09',1,'systemc_clang::FindGPUMacro']]],

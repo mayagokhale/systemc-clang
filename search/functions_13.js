@@ -21,5 +21,5 @@ var searchData=
   ['visittemplatespecializationtype_2406',['VisitTemplateSpecializationType',['../classsystemc__clang_1_1FindTemplateTypes.html#a08be908975a5331dee884534b3678b31',1,'systemc_clang::FindTemplateTypes']]],
   ['visittypedeftype_2407',['VisitTypedefType',['../classsystemc__clang_1_1FindTemplateTypes.html#a0867ed3e94d6c427fcc1081f2e44ae91',1,'systemc_clang::FindTemplateTypes']]],
   ['visitunresolvedmemberexpr_2408',['VisitUnresolvedMemberExpr',['../classsystemc__clang_1_1FindWait.html#aef2ad112fb931511dbea2407793bca45',1,'systemc_clang::FindWait']]],
-  ['visitvardecl_2409',['VisitVarDecl',['../classsystemc__clang_1_1FindGlobalEvents.html#aec04bcf2707035d2a45869439cd5fe62',1,'systemc_clang::FindGlobalEvents']]]
+  ['visitvardecl_2409',['VisitVarDecl',['../classsystemc__clang_1_1FindGlobalEvents.html#a37ccd4a582b1b283fb9def2ef0fded51',1,'systemc_clang::FindGlobalEvents']]]
 ];
