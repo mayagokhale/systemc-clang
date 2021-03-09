@@ -119,8 +119,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acbbca6eaf9fbbc3585f3e18932f13cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3317d935480e9288da5234459d0987b"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsc__ast__matchers_1_1InstanceMatcher.html#ae3317d935480e9288da5234459d0987b">match_ctor_arg</a> (const std::string &amp;bind_arg_name, const std::string &amp;bind_ctor_expr)</td></tr>
 <tr class="separator:ae3317d935480e9288da5234459d0987b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87ee03e1e17cf1ffe6f8d2a14d0246d7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsc__ast__matchers_1_1InstanceMatcher.html#a87ee03e1e17cf1ffe6f8d2a14d0246d7">makeArraySubModule</a> (llvm::StringRef name)</td></tr>
-<tr class="separator:a87ee03e1e17cf1ffe6f8d2a14d0246d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3cff2c0cda2af1452ead21e00f2fef"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsc__ast__matchers_1_1InstanceMatcher.html#aea3cff2c0cda2af1452ead21e00f2fef">match_is_derived_sc_module</a> (const std::string &amp;bind_name)</td></tr>
+<tr class="separator:aea3cff2c0cda2af1452ead21e00f2fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d0236cbba66632cf6aa5b20056eea0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsc__ast__matchers_1_1InstanceMatcher.html#a9d0236cbba66632cf6aa5b20056eea0d">registerMatchers</a> (MatchFinder &amp;finder)</td></tr>
 <tr class="separator:a9d0236cbba66632cf6aa5b20056eea0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a770fd63f4e6a2ae106fda6d1d91f590e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsc__ast__matchers_1_1InstanceMatcher.html#a770fd63f4e6a2ae106fda6d1d91f590e">parseVarDecl</a> (clang::VarDecl *instance_decl, std::string &amp;instance_name)</td></tr>
@@ -288,32 +288,6 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a87ee03e1e17cf1ffe6f8d2a14d0246d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87ee03e1e17cf1ffe6f8d2a14d0246d7">&#9670;&nbsp;</a></span>makeArraySubModule()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto sc_ast_matchers::InstanceMatcher::makeArraySubModule </td>
-          <td>(</td>
-          <td class="paramtype">llvm::StringRef&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ae3317d935480e9288da5234459d0987b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae3317d935480e9288da5234459d0987b">&#9670;&nbsp;</a></span>match_ctor_arg()</h2>
 
@@ -339,6 +313,32 @@ Private Attributes</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea3cff2c0cda2af1452ead21e00f2fef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea3cff2c0cda2af1452ead21e00f2fef">&#9670;&nbsp;</a></span>match_is_derived_sc_module()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto sc_ast_matchers::InstanceMatcher::match_is_derived_sc_module </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>bind_name</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
