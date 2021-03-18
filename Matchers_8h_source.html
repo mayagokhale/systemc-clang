@@ -82,7 +82,7 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ModuleInstance_8h.html">ModuleInstance.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="PortMatcher_8h.html">PortMatcher.h</a>&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ArrayTypeUtils_8h.html">ArrayTypeUtils.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;CXXRecordDeclUtils.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CXXRecordDeclUtils_8h.html">CXXRecordDeclUtils.h</a>&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;clang/ASTMatchers/ASTMatchers.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacesystemc__clang.html">systemc_clang</a>;</div>
@@ -164,7 +164,7 @@ $(function() {
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      clang::CXXRecordDecl *decl{</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;          dyn_cast&lt;clang::CXXRecordDecl&gt;(inst.second.getInstanceTypeDecl())};</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <span class="keyword">auto</span> bases{getAllBaseClasses(decl)};</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <span class="keyword">auto</span> bases{<a class="code" href="namespacesc__ast__matchers_1_1utils_1_1cxx__construct__decl__utils.html#a7c650da2772f4f737fbcbe7956f7a0a2">getAllBaseClasses</a>(decl)};</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;base_decl : bases) {</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        llvm::dbgs() &lt;&lt; <span class="stringliteral">&quot;Processing &quot;</span> &lt;&lt; base_decl-&gt;getNameAsString()</div>
@@ -179,7 +179,7 @@ $(function() {
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keyword">auto</span> index_map{<a class="code" href="namespacesc__ast__matchers_1_1utils_1_1array__type.html#a8caeed19d064a60af5447e3b3b2bc7b7">getArrayInstanceIndex</a>(init)};</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            llvm::dbgs() &lt;&lt; <span class="stringliteral">&quot;Index map size: &quot;</span> &lt;&lt; index_map.size() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keyword">auto</span> submodule_info{getModuleInitializerNames(init)};</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keyword">auto</span> submodule_info{<a class="code" href="namespacesc__ast__matchers_1_1utils_1_1cxx__construct__decl__utils.html#a1aa40264eb4f7c6bc5ee671d3c95da9b">getModuleInitializerNames</a>(init)};</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> submod : submodule_info) {</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;              clang::ValueDecl *parent_decl{</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                  llvm::dyn_cast&lt;clang::ValueDecl&gt;(instance.getInstanceDecl())};</div>
@@ -216,7 +216,7 @@ $(function() {
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      modules_.insert(std::pair&lt;clang::CXXRecordDecl *, ModuleInstance *&gt;(</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;          decl, add_module));</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <span class="keyword">auto</span> bases{getAllBaseClasses(decl)};</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <span class="keyword">auto</span> bases{<a class="code" href="namespacesc__ast__matchers_1_1utils_1_1cxx__construct__decl__utils.html#a7c650da2772f4f737fbcbe7956f7a0a2">getAllBaseClasses</a>(decl)};</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;base_decl : bases) {</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        runPortMatcher(context, base_decl, add_module);</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      }</div>
@@ -289,6 +289,7 @@ $(function() {
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aArrayTypeUtils_8h_html"><div class="ttname"><a href="ArrayTypeUtils_8h.html">ArrayTypeUtils.h</a></div></div>
+<div class="ttc" id="aCXXRecordDeclUtils_8h_html"><div class="ttname"><a href="CXXRecordDeclUtils_8h.html">CXXRecordDeclUtils.h</a></div></div>
 <div class="ttc" id="aInstanceMatcher_8h_html"><div class="ttname"><a href="InstanceMatcher_8h.html">InstanceMatcher.h</a></div></div>
 <div class="ttc" id="aModuleInstance_8h_html"><div class="ttname"><a href="ModuleInstance_8h.html">ModuleInstance.h</a></div></div>
 <div class="ttc" id="aPortMatcher_8h_html"><div class="ttname"><a href="PortMatcher_8h.html">PortMatcher.h</a></div></div>
@@ -317,6 +318,8 @@ $(function() {
 <div class="ttc" id="aclasssystemc__clang_1_1ModuleInstance_html_abc740918c2e997127ed087312badb1bc"><div class="ttname"><a href="classsystemc__clang_1_1ModuleInstance.html#abc740918c2e997127ed087312badb1bc">systemc_clang::ModuleInstance::setInstanceInfo</a></div><div class="ttdeci">void setInstanceInfo(const sc_ast_matchers::ModuleInstanceType &amp;info)</div><div class="ttdef"><b>Definition:</b> ModuleInstance.cpp:180</div></div>
 <div class="ttc" id="aclasssystemc__clang_1_1ModuleInstance_html_af3573478433d9fa95957b30ee76a0238"><div class="ttname"><a href="classsystemc__clang_1_1ModuleInstance.html#af3573478433d9fa95957b30ee76a0238">systemc_clang::ModuleInstance::addPorts</a></div><div class="ttdeci">void addPorts(const PortType &amp;found_ports, const std::string &amp;port_type)</div><div class="ttdef"><b>Definition:</b> ModuleInstance.cpp:220</div></div>
 <div class="ttc" id="anamespacesc__ast__matchers_1_1utils_1_1array__type_html_a8caeed19d064a60af5447e3b3b2bc7b7"><div class="ttname"><a href="namespacesc__ast__matchers_1_1utils_1_1array__type.html#a8caeed19d064a60af5447e3b3b2bc7b7">sc_ast_matchers::utils::array_type::getArrayInstanceIndex</a></div><div class="ttdeci">IndexMapType getArrayInstanceIndex(clang::CXXCtorInitializer *ctor_init)</div><div class="ttdef"><b>Definition:</b> ArrayTypeUtils.cpp:9</div></div>
+<div class="ttc" id="anamespacesc__ast__matchers_1_1utils_1_1cxx__construct__decl__utils_html_a1aa40264eb4f7c6bc5ee671d3c95da9b"><div class="ttname"><a href="namespacesc__ast__matchers_1_1utils_1_1cxx__construct__decl__utils.html#a1aa40264eb4f7c6bc5ee671d3c95da9b">sc_ast_matchers::utils::cxx_construct_decl_utils::getModuleInitializerNames</a></div><div class="ttdeci">std::vector&lt; ModuleInitializerTupleType &gt; getModuleInitializerNames(const clang::CXXCtorInitializer *init)</div><div class="ttdoc">Get the first constructor argument.</div><div class="ttdef"><b>Definition:</b> CXXRecordDeclUtils.cpp:54</div></div>
+<div class="ttc" id="anamespacesc__ast__matchers_1_1utils_1_1cxx__construct__decl__utils_html_a7c650da2772f4f737fbcbe7956f7a0a2"><div class="ttname"><a href="namespacesc__ast__matchers_1_1utils_1_1cxx__construct__decl__utils.html#a7c650da2772f4f737fbcbe7956f7a0a2">sc_ast_matchers::utils::cxx_construct_decl_utils::getAllBaseClasses</a></div><div class="ttdeci">std::vector&lt; const clang::CXXRecordDecl * &gt; getAllBaseClasses(const clang::CXXRecordDecl *decl)</div><div class="ttdef"><b>Definition:</b> CXXRecordDeclUtils.cpp:13</div></div>
 <div class="ttc" id="anamespacesc__ast__matchers_html"><div class="ttname"><a href="namespacesc__ast__matchers.html">sc_ast_matchers</a></div><div class="ttdef"><b>Definition:</b> FindMemberFieldMatcher.h:18</div></div>
 <div class="ttc" id="anamespacesystemc__clang_html"><div class="ttname"><a href="namespacesystemc__clang.html">systemc_clang</a></div><div class="ttdef"><b>Definition:</b> FindArgument.h:8</div></div>
 <div class="ttc" id="astructsc__ast__matchers_1_1ModuleInstanceType_html"><div class="ttname"><a href="structsc__ast__matchers_1_1ModuleInstanceType.html">sc_ast_matchers::ModuleInstanceType</a></div><div class="ttdef"><b>Definition:</b> ModuleInstanceType.h:16</div></div>

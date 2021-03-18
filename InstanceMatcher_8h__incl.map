@@ -1,13 +1,13 @@
 <map id="src/matchers/InstanceMatcher.h" name="src/matchers/InstanceMatcher.h">
-<area shape="rect" id="node1" title=" " alt="" coords="265,5,474,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="133,155,192,181"/>
-<area shape="rect" id="node3" href="$ModuleInstanceType_8h.html" title=" " alt="" coords="5,80,157,107"/>
-<area shape="rect" id="node5" href="$ArrayTypeUtils_8h.html" title=" " alt="" coords="232,80,349,107"/>
-<area shape="rect" id="node9" title=" " alt="" coords="373,80,526,107"/>
-<area shape="rect" id="node10" title=" " alt="" coords="550,80,781,107"/>
-<area shape="rect" id="node11" title=" " alt="" coords="805,80,952,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="54,155,109,181"/>
-<area shape="rect" id="node6" title=" " alt="" coords="389,155,515,181"/>
-<area shape="rect" id="node7" title=" " alt="" coords="539,155,690,181"/>
-<area shape="rect" id="node8" title=" " alt="" coords="216,155,365,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="426,5,635,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,155,64,181"/>
+<area shape="rect" id="node3" href="$ModuleInstanceType_8h.html" title=" " alt="" coords="544,80,696,107"/>
+<area shape="rect" id="node5" href="$ArrayTypeUtils_8h.html" title=" " alt="" coords="225,80,343,107"/>
+<area shape="rect" id="node9" href="$CXXRecordDeclUtils_8h.html" title=" " alt="" coords="366,80,519,107"/>
+<area shape="rect" id="node10" title=" " alt="" coords="667,155,813,181"/>
+<area shape="rect" id="node11" title=" " alt="" coords="771,80,1002,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="587,155,642,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="88,155,213,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="238,155,389,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="413,155,563,181"/>
 </map>
