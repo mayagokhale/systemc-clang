@@ -127,8 +127,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a770fd63f4e6a2ae106fda6d1d91f590e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a932c5e4717cb56e805541329a045b026"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsc__ast__matchers_1_1InstanceMatcher.html#a932c5e4717cb56e805541329a045b026">parseFieldDecl</a> (clang::FieldDecl *instance_decl, clang::ValueDecl *parent_decl, std::string instance_name, <a class="el" href="namespacesc__ast__matchers_1_1utils_1_1array__type.html#a8d73d3e8a037eafac89d3561cbafb162">IndexMapType</a> &amp;index_map)</td></tr>
 <tr class="separator:a932c5e4717cb56e805541329a045b026"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a388a63f9dae96cc158664338ca49ad04"><td class="memItemLeft" align="right" valign="top">std::vector&lt; clang::FieldDecl * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsc__ast__matchers_1_1InstanceMatcher.html#a388a63f9dae96cc158664338ca49ad04">getBaseClassNestedModules</a> (const clang::CXXRecordDecl *decl)</td></tr>
-<tr class="separator:a388a63f9dae96cc158664338ca49ad04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a170c8fb20d0d812ec515cf9c09600f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsc__ast__matchers_1_1InstanceMatcher.html#a9a170c8fb20d0d812ec515cf9c09600f">run</a> (const MatchFinder::MatchResult &amp;result)</td></tr>
 <tr class="separator:a9a170c8fb20d0d812ec515cf9c09600f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b6ac85a7e4666104cd786415326fe87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsc__ast__matchers_1_1InstanceMatcher.html#a5b6ac85a7e4666104cd786415326fe87">dump</a> ()</td></tr>
@@ -262,38 +260,6 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a388a63f9dae96cc158664338ca49ad04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a388a63f9dae96cc158664338ca49ad04">&#9670;&nbsp;</a></span>getBaseClassNestedModules()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;clang::FieldDecl*&gt; sc_ast_matchers::InstanceMatcher::getBaseClassNestedModules </td>
-          <td>(</td>
-          <td class="paramtype">const clang::CXXRecordDecl *&#160;</td>
-          <td class="paramname"><em>decl</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>For every base class, go through the member fields and see if any of them is derived from sc_module.</p>
-<p>Go through all fields. Check if type for the field is derived from sc_module</p>
-<p>Check if its base class has an sc_module</p>
-<p>Find the name for provided for this field_decl (sc_module). Check first if there is an in-class initializer.</p>
-<p>Get the initialized value.</p>
-<p>Get the names from the constructors from base_decl. This must be the derived class's constructors.</p>
 
 </div>
 </div>
