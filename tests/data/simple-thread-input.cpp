@@ -41,6 +41,7 @@ SC_MODULE(test) {
 
   void test_thread() {
     while (true) {
+     /* 
       for (int i = 0; i < 4; i++) {
         k = 1;
         wait();
@@ -49,7 +50,7 @@ SC_MODULE(test) {
       k =3;
       wait();
       k =4;
-      /*
+      */
       //func_call();
       x = 1;
       if (x > 3) {
@@ -62,7 +63,6 @@ SC_MODULE(test) {
       wait(4);
       wait(4, SC_NS);
       x = 5;
-      */
     }
   }
 

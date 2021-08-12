@@ -45,6 +45,7 @@ class SplitCFGBlock {
  public:
   SplitCFGBlock();
   SplitCFGBlock(const SplitCFGBlock &from);
+  SplitCFGBlock& operator=(const SplitCFGBlock &from);
 
   clang::CFGBlock *getCFGBlock() const;
   std::size_t getSplitBlockSize() const;

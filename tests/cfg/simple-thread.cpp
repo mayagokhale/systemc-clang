@@ -10,6 +10,7 @@
 #include "SplitCFG.h"
 
 using namespace systemc_clang;
+
 TEST_CASE("Simple thread test", "[threads]") {
   std::string code{systemc_clang::read_systemc_file(
       systemc_clang::test_data_dir, "simple-thread-input.cpp")};
@@ -98,7 +99,7 @@ TEST_CASE("Simple thread test", "[threads]") {
     SplitCFG scfg{from_ast->getASTContext()};
     scfg.split_wait_blocks(method);
     // scfg.build_sccfg( method );
-    scfg.generate_paths();
+    //scfg.generate_paths();
     scfg.dump();
   }
 }

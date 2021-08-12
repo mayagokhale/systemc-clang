@@ -11,21 +11,24 @@ void SplitCFG::dfs_pop_on_wait(
     const clang::CFGBlock* basic_block,
     llvm::SmallVectorImpl<const clang::CFGBlock*>& waits_in_stack,
     llvm::SmallPtrSetImpl<const clang::CFGBlock*>& visited_waits) {
-  /// Empty CFG block
+
+  /// If the CFG block's successor is empty, then simply return.
   if (basic_block->succ_empty()) {
     return;
   }
 
+  /// Stores the visited CFGBlocks.
   llvm::SmallPtrSet<const clang::CFGBlock*, 8> visited;
+  /// This holds the CFGBlock's that need to be visited. 
   llvm::SmallVector<
       std::pair<const clang::CFGBlock*, clang::CFGBlock::const_succ_iterator>,
       8>
       visit_stack;
-  llvm::SmallVector<const clang::CFGBlock*, 8> in_stack;
 
   visited.insert(basic_block);
   visit_stack.push_back(std::make_pair(basic_block, basic_block->succ_begin()));
 
+  /// Path of basic blocks that constitute paths to wait() statements. 
   VectorCFGBlock curr_path;
   do {
     std::pair<const clang::CFGBlock*, clang::CFGBlock::const_succ_iterator>&
@@ -151,9 +154,8 @@ void SplitCFG::split_wait_blocks(const clang::CXXMethodDecl* method) {
     /// Try to split the block.
     SplitCFGBlock sp{};
     sp.split_block(block);
+    //sp.dump();
 
-    //////////////////////////////////////////
-    //
     if (sp.hasWait()) {
       /// The block has been split.
       split_blocks_.insert(
@@ -164,6 +166,7 @@ void SplitCFG::split_wait_blocks(const clang::CXXMethodDecl* method) {
 
 void SplitCFG::dump() const {
   /// Dump all the paths found.
+  /*
   llvm::dbgs() << "Dump all paths to wait() found in the CFG.\n";
   unsigned int i{0};
   for (auto const& block_vector : paths_found_) {
@@ -176,8 +179,8 @@ void SplitCFG::dump() const {
     }
     llvm::dbgs() << "\n";
   }
+  */
 
-  /*
   llvm::dbgs() << "Dump all blocks that were split\n";
   for (auto const& sblock : split_blocks_) {
     llvm::dbgs() << "Block ID: " << sblock.first->getBlockID() << "\n";
@@ -186,7 +189,6 @@ void SplitCFG::dump() const {
     llvm::dbgs() << "Print all info for split block\n";
     block_with_wait->dump();
   }
-  */
 }
 
 SplitCFG::SplitCFG(clang::ASTContext& context) : context_{context} {}

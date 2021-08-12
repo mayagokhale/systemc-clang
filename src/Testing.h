@@ -8,6 +8,7 @@
 
 namespace systemc_clang {
 
+
 std::ifstream file{};
 // Open the file for reading
 std::string read_systemc_file(std::string const data_dir,

@@ -13,6 +13,16 @@ SplitCFGBlock::SplitCFGBlock(const SplitCFGBlock& from) {
   wait_element_ids_ = from.wait_element_ids_;
 }
 
+SplitCFGBlock& SplitCFGBlock::operator=(const SplitCFGBlock& from) {
+
+  block_ = from.block_;
+  has_wait_ = from.has_wait_;
+  split_elements_ = from.split_elements_;
+  wait_element_ids_ = from.wait_element_ids_;
+
+  return *this;
+}
+
 clang::CFGBlock* SplitCFGBlock::getCFGBlock() const { return block_; }
 
 bool SplitCFGBlock::hasWait() const { return has_wait_; }
@@ -59,7 +69,7 @@ bool SplitCFGBlock::isWait(const clang::CFGElement& element) const {
         if (auto direct_callee = cxx_me->getDirectCallee()) {
           auto name{direct_callee->getNameInfo().getAsString()};
           if (name == std::string("wait")) {
-            //llvm::dbgs() << "@@@@ FOUND WAIT @@@@\n";
+            // llvm::dbgs() << "@@@@ FOUND WAIT @@@@\n";
 
             /// Check that there is only 1 or 0 arguments
             auto args{cxx_me->getNumArgs()};
@@ -139,6 +149,7 @@ void SplitCFGBlock::dump() const {
   if (block_) {
     llvm::dbgs() << "Dump split blocks\n";
     unsigned int i{0};
+
     for (auto const& split : split_elements_) {
       llvm::dbgs() << "Split block " << i++ << "\n";
       for (auto const& element : split) {
