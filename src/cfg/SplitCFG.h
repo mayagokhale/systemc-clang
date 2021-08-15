@@ -10,12 +10,35 @@
 //#include "llvm/ADT/SmallPtrSet.h"
 
 namespace systemc_clang {
+
+struct CFGBlockContainer {
+ private:
+  const clang::CFGBlock *cfg_block_;
+  unsigned int split_index_;
+
+ public:
+  CFGBlockContainer(const clang::CFGBlock *block, unsigned int idx)
+      : cfg_block_{(block)}, split_index_{idx} {};
+  const clang::CFGBlock *get_cfg_block() const { return cfg_block_; }
+  unsigned int get_split_index() { return split_index_; }
+  /// Needed by std::map<>
+  bool operator<(const CFGBlockContainer &from) const {
+    return std::tie(cfg_block_, split_index_) <
+           std::tie(from.cfg_block_, from.split_index_);
+  }
+  bool operator==(const CFGBlockContainer &from) const {
+    return std::tie(cfg_block_, split_index_) ==
+           std::tie(from.cfg_block_, from.split_index_);
+  }
+};
+
 /// ===========================================
 /// SplitCFG
 /// ===========================================
 class SplitCFG {
  private:
-  using VectorCFGBlock = llvm::SmallVector<const clang::CFGBlock *>;
+  using BigCFGBlock = CFGBlockContainer;
+  using VectorCFGBlock = llvm::SmallVector<BigCFGBlock>;
 
  private:
   /// \brief The context necessary to access translation unit.
@@ -39,10 +62,9 @@ class SplitCFG {
   SplitCFG(clang::ASTContext &context, const clang::CXXMethodDecl *cxx_decl);
 
   void split_wait_blocks(const clang::CXXMethodDecl *cxx_decl);
-  void dfs_pop_on_wait(
-      const clang::CFGBlock *BB,
-      llvm::SmallVectorImpl<const clang::CFGBlock *> &waits_in_stack,
-      llvm::SmallSet<const clang::CFGBlock *, 8> &visited_waits);
+  void dfs_pop_on_wait(const clang::CFGBlock *BB,
+                       llvm::SmallVectorImpl<BigCFGBlock> &waits_in_stack,
+                       llvm::SmallSet<BigCFGBlock, 8> &visited_waits);
 
   void generate_paths();
   void dump() const;
