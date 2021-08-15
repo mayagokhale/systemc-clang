@@ -6,7 +6,8 @@
 #include "clang/Analysis/CFG.h"
 #include "SplitCFGBlock.h"
 #include "llvm/ADT/SmallVector.h"
-#include "llvm/ADT/SmallPtrSet.h"
+#include "llvm/ADT/SmallSet.h"
+//#include "llvm/ADT/SmallPtrSet.h"
 
 namespace systemc_clang {
 /// ===========================================
@@ -41,7 +42,7 @@ class SplitCFG {
   void dfs_pop_on_wait(
       const clang::CFGBlock *BB,
       llvm::SmallVectorImpl<const clang::CFGBlock *> &waits_in_stack,
-      llvm::SmallPtrSetImpl<const clang::CFGBlock *> &visited_waits);
+      llvm::SmallSet<const clang::CFGBlock *, 8> &visited_waits);
 
   void generate_paths();
   void dump() const;

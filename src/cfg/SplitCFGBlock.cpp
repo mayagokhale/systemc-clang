@@ -11,6 +11,8 @@ SplitCFGBlock::SplitCFGBlock(const SplitCFGBlock& from) {
   has_wait_ = from.has_wait_;
   split_elements_ = from.split_elements_;
   wait_element_ids_ = from.wait_element_ids_;
+  preds_ = from.preds_;
+  succs_ = from.succs_;
 }
 
 SplitCFGBlock& SplitCFGBlock::operator=(const SplitCFGBlock& from) {
@@ -19,6 +21,8 @@ SplitCFGBlock& SplitCFGBlock::operator=(const SplitCFGBlock& from) {
   has_wait_ = from.has_wait_;
   split_elements_ = from.split_elements_;
   wait_element_ids_ = from.wait_element_ids_;
+  preds_ = from.preds_;
+  succs_ = from.succs_;
 
   return *this;
 }
@@ -89,6 +93,7 @@ bool SplitCFGBlock::isWait(const clang::CFGElement& element) const {
 
 void SplitCFGBlock::split_block(clang::CFGBlock* block) {
   assert(block != nullptr);
+
   block_ = block;
 
   llvm::dbgs() << "Checking if block " << block->getBlockID()
@@ -147,12 +152,12 @@ void SplitCFGBlock::split_block(clang::CFGBlock* block) {
 
 void SplitCFGBlock::dump() const {
   if (block_) {
-    llvm::dbgs() << "Dump split blocks\n";
     unsigned int i{0};
 
     for (auto const& split : split_elements_) {
-      llvm::dbgs() << "Split block " << i++ << "\n";
+      llvm::dbgs() << "SB" << i++ << ":\n";
       for (auto const& element : split) {
+        llvm::dbgs() << "  ";
         element->dump();
       }
     }

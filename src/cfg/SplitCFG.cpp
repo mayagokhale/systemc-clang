@@ -10,7 +10,7 @@ using namespace systemc_clang;
 void SplitCFG::dfs_pop_on_wait(
     const clang::CFGBlock* basic_block,
     llvm::SmallVectorImpl<const clang::CFGBlock*>& waits_in_stack,
-    llvm::SmallPtrSetImpl<const clang::CFGBlock*>& visited_waits) {
+    llvm::SmallSet<const clang::CFGBlock*, 8 >& visited_waits) {
 
   /// If the CFG block's successor is empty, then simply return.
   if (basic_block->succ_empty()) {
@@ -18,7 +18,7 @@ void SplitCFG::dfs_pop_on_wait(
   }
 
   /// Stores the visited CFGBlocks.
-  llvm::SmallPtrSet<const clang::CFGBlock*, 8> visited;
+  llvm::SmallSet<const clang::CFGBlock*, 8> visited;
   /// This holds the CFGBlock's that need to be visited. 
   llvm::SmallVector<
       std::pair<const clang::CFGBlock*, clang::CFGBlock::const_succ_iterator>,
@@ -122,7 +122,7 @@ bool SplitCFG::isWait(const clang::CFGBlock& block) const {
 
 void SplitCFG::generate_paths() {
   /// Set of visited wait blocks.
-  llvm::SmallPtrSet<const clang::CFGBlock*, 8> visited_waits;
+  llvm::SmallSet<const clang::CFGBlock*, 8> visited_waits;
   llvm::SmallVector<const clang::CFGBlock*> waits_in_stack;
 
   /// G = cfg_
@@ -166,7 +166,6 @@ void SplitCFG::split_wait_blocks(const clang::CXXMethodDecl* method) {
 
 void SplitCFG::dump() const {
   /// Dump all the paths found.
-  /*
   llvm::dbgs() << "Dump all paths to wait() found in the CFG.\n";
   unsigned int i{0};
   for (auto const& block_vector : paths_found_) {
@@ -179,7 +178,6 @@ void SplitCFG::dump() const {
     }
     llvm::dbgs() << "\n";
   }
-  */
 
   llvm::dbgs() << "Dump all blocks that were split\n";
   for (auto const& sblock : split_blocks_) {

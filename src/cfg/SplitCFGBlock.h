@@ -27,9 +27,14 @@ namespace systemc_clang {
 class SplitCFGBlock {
  private:
   using VectorCFGElementPtr = llvm::SmallVector<const clang::CFGElement *>;
+  using VectorSplitBlocks = llvm::SmallVector<const SplitCFGBlock*>;
 
   clang::CFGBlock *block_;
   bool has_wait_;
+
+  /// Predecessors and successors.
+  VectorSplitBlocks preds_;
+  VectorSplitBlocks succs_;
 
   /// Split the elements into blocks separated by wait() statements
   llvm::SmallVector<VectorCFGElementPtr> split_elements_;
