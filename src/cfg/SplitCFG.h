@@ -19,8 +19,8 @@ struct CFGBlockContainer {
  public:
   CFGBlockContainer(const clang::CFGBlock *block, unsigned int idx)
       : cfg_block_{(block)}, split_index_{idx} {};
-  const clang::CFGBlock *get_cfg_block() const { return cfg_block_; }
-  unsigned int get_split_index() { return split_index_; }
+  const clang::CFGBlock *getCFGBlock() const { return cfg_block_; }
+  unsigned int getSplitIndex() { return split_index_; }
   /// Needed by std::map<>
   bool operator<(const CFGBlockContainer &from) const {
     return std::tie(cfg_block_, split_index_) <
