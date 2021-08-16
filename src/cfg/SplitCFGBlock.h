@@ -15,7 +15,8 @@
 #define _SPLIT_CFG_BLOCK_H_
 
 #include "clang/Analysis/CFG.h"
-#include <vector>
+#include "llvm/ADT/SmallVector.h"
+//#include <vector>
 
 namespace systemc_clang {
 

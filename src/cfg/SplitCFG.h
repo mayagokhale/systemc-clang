@@ -13,14 +13,25 @@ namespace systemc_clang {
 
 struct CFGBlockContainer {
  private:
-  const clang::CFGBlock *cfg_block_;
+  const SplitCFGBlock *cfg_block_;
   unsigned int split_index_;
 
  public:
-  CFGBlockContainer(const clang::CFGBlock *block, unsigned int idx)
-      : cfg_block_{(block)}, split_index_{idx} {};
-  const clang::CFGBlock *getCFGBlock() const { return cfg_block_; }
+  CFGBlockContainer(const SplitCFGBlock &block, unsigned int idx)
+      : cfg_block_{&block}, split_index_{idx} {};
+  const clang::CFGBlock *getCFGBlock() const { return cfg_block_->getCFGBlock(); }
   unsigned int getSplitIndex() { return split_index_; }
+
+  CFGBlockContainer(const CFGBlockContainer& from) {
+    cfg_block_ = from.cfg_block_ ; 
+    split_index_ = from.split_index_;
+  }
+
+  CFGBlockContainer& operator=(const CFGBlockContainer &from) {
+    cfg_block_ = from.cfg_block_ ; 
+    split_index_ = from.split_index_;
+    return *this;
+  }
   /// Needed by std::map<>
   bool operator<(const CFGBlockContainer &from) const {
     return std::tie(cfg_block_, split_index_) <

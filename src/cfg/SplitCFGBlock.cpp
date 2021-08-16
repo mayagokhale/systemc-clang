@@ -164,7 +164,7 @@ void SplitCFGBlock::dump() const {
 
     llvm::dbgs() << "\n";
     /// Dump the wait ids
-    llvm::dbgs() << "Dump wait elements\n";
+    llvm::dbgs() << "Dump wait elements: " << wait_element_ids_.size() << " \n";
     for (auto const& id : wait_element_ids_) {
       llvm::dbgs() << "Wait element at id " << id << "\n";
     }
