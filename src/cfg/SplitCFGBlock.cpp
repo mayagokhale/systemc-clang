@@ -16,7 +16,6 @@ SplitCFGBlock::SplitCFGBlock(const SplitCFGBlock& from) {
 }
 
 SplitCFGBlock& SplitCFGBlock::operator=(const SplitCFGBlock& from) {
-
   block_ = from.block_;
   has_wait_ = from.has_wait_;
   split_elements_ = from.split_elements_;
@@ -33,6 +32,61 @@ bool SplitCFGBlock::hasWait() const { return has_wait_; }
 
 std::size_t SplitCFGBlock::getSplitBlockSize() const {
   return split_elements_.size();
+}
+
+bool SplitCFGBlock::getSuccessorIndex(unsigned int& idx) const {
+  /// There are X situations:
+  //
+  // 1. [code][wait]
+  //       0    1
+  // Assuming idx is 0, this function would return FALSE because it is beyond
+  // the size of the split_elements_.
+  // - Regular CFGBlock's successor should be added to the wait_stack (WAIT)
+  // since there is a wait at 1.
+  // - No changes to the visit_stack (VISIT)
+  //
+  //
+  // 2. [code][wait][code]
+  //       0    1      2
+  //
+  // Assuming idx is 0, idx will point to 2.
+  // - This new block will be added to the wait_stack (nodes after waits to be
+  // visited).
+  // - This block will NOT be added to the visit stack since this is passing
+  // over a wait
+  //
+  // Assuming idx is 2, this function will return FALSE.
+  // - 2 should NOT be added to the wait_stack (WAIT) since the next block is
+  // not a wait
+  // - Regular CFGBlock's successor should be added to the visit_stack (VISIT)
+  // since there is no wait in 2.
+  //
+  // getSuccessorIndex is FALSE && isNextBlockWait is FALSE (case 2)
+  // - visit_stack: add CFGBlock's successor
+  // - wait_stack: do nothing
+  //
+  // getSuccessorIndex is FALSE && isNextBlockWait is TRUE (case 1)
+  //
+  // - visit_stack: do nothing
+  // - wait_stack: add CFGBlock's successor
+  //
+  // getSuccessorIndex is TRUE (by defn. isNextBlockWait should be TRUE)
+  // - visit_stack: do nothing
+  // - wait_stack: add idx to it.
+  if ((idx + 2) < split_elements_.size()) {
+    idx += 2;
+    return true;
+  }
+  return false;
+}
+
+bool SplitCFGBlock::isNextBlockWait(unsigned int idx) const {
+  llvm::dbgs() << "idx " << idx << " split_elements_size " <<  split_elements_.size() << "\n";
+  if (idx < split_elements_.size()) {
+    return false;
+  }
+  auto const sblock{split_elements_[++idx]};
+  return sblock.second;
 }
 
 bool SplitCFGBlock::isFunctionCall(const clang::CFGElement& element) const {
@@ -129,13 +183,13 @@ void SplitCFGBlock::split_block(clang::CFGBlock* block) {
       }
 
       if (vec_elements.size() != 0) {
-        split_elements_.push_back(vec_elements);
+        split_elements_.push_back(std::make_pair(vec_elements, false));
         vec_elements.clear();
       }
 
       /// Add the wait as a separate entry in the list.
       vec_elements.push_back(element_ptr);
-      split_elements_.push_back(vec_elements);
+      split_elements_.push_back(std::make_pair(vec_elements, true));
       vec_elements.clear();
       wait_element_ids_.push_back(split_elements_.size() - 1);
 
@@ -146,7 +200,7 @@ void SplitCFGBlock::split_block(clang::CFGBlock* block) {
   }
 
   if (vec_elements.size() != 0) {
-    split_elements_.push_back(vec_elements);
+    split_elements_.push_back(std::make_pair(vec_elements, false));
   }
 }
 
@@ -155,8 +209,14 @@ void SplitCFGBlock::dump() const {
     unsigned int i{0};
 
     for (auto const& split : split_elements_) {
-      llvm::dbgs() << "SB" << i++ << ":\n";
-      for (auto const& element : split) {
+      llvm::dbgs() << "SB" << i++ << " wait status is ";
+      if (split.second) {
+        llvm::dbgs() << "true\n";
+      } else {
+        llvm::dbgs() << "false\n";
+      }
+
+      for (auto const& element : split.first) {
         llvm::dbgs() << "  ";
         element->dump();
       }

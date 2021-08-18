@@ -98,7 +98,6 @@ TEST_CASE("Simple thread test", "[threads]") {
     llvm::outs() << " ********************* CFG ***********************\n";
     SplitCFG scfg{from_ast->getASTContext()};
     scfg.split_wait_blocks(method);
-    scfg.dump();
     scfg.generate_paths();
     scfg.dump();
   }

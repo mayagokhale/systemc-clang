@@ -38,7 +38,8 @@ class SplitCFGBlock {
   VectorSplitBlocks succs_;
 
   /// Split the elements into blocks separated by wait() statements
-  llvm::SmallVector<VectorCFGElementPtr> split_elements_;
+  /// Is it a wait statement
+  llvm::SmallVector<std::pair<VectorCFGElementPtr,bool> > split_elements_;
 
   /// This holds the ids in split_elements_ that correspond to the wait
   /// statements.  This will be a single vector with just the wait() element.
@@ -52,6 +53,9 @@ class SplitCFGBlock {
   SplitCFGBlock();
   SplitCFGBlock(const SplitCFGBlock &from);
   SplitCFGBlock& operator=(const SplitCFGBlock &from);
+
+  bool getSuccessorIndex(unsigned int& idx) const;
+  bool isNextBlockWait(unsigned int idx) const;
 
   clang::CFGBlock *getCFGBlock() const;
   std::size_t getSplitBlockSize() const;

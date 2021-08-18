@@ -7,6 +7,7 @@
 #include "SplitCFGBlock.h"
 #include "llvm/ADT/SmallVector.h"
 #include "llvm/ADT/SmallSet.h"
+#include "llvm/Support/Debug.h"
 //#include "llvm/ADT/SmallPtrSet.h"
 
 namespace systemc_clang {
@@ -19,16 +20,36 @@ struct CFGBlockContainer {
  public:
   CFGBlockContainer(const SplitCFGBlock &block, unsigned int idx)
       : cfg_block_{&block}, split_index_{idx} {};
-  const clang::CFGBlock *getCFGBlock() const { return cfg_block_->getCFGBlock(); }
-  unsigned int getSplitIndex() { return split_index_; }
+  const SplitCFGBlock *getSplitCFGBlock() const { return cfg_block_; }
+  const clang::CFGBlock *getCFGBlock() const {
+    return cfg_block_->getCFGBlock();
+  }
+  unsigned int getSplitIndex() const { return split_index_; }
+  bool isNextBlockWait(unsigned int idx) {
+    return cfg_block_->isNextBlockWait(idx);
+  }
+  bool getSuccessorIndex() {
+    unsigned int id{split_index_};
+    if (cfg_block_->getSuccessorIndex(id)) {
+      split_index_ = id;
+      return true;
+    }
+    return false;
+  }
+  void dump() {
+    if (cfg_block_) {
+      llvm::dbgs() << "BB# " << cfg_block_->getCFGBlock()->getBlockID() << "."
+                   << split_index_ << "\n";
+    }
+  }
 
-  CFGBlockContainer(const CFGBlockContainer& from) {
-    cfg_block_ = from.cfg_block_ ; 
+  CFGBlockContainer(const CFGBlockContainer &from) {
+    cfg_block_ = from.cfg_block_;
     split_index_ = from.split_index_;
   }
 
-  CFGBlockContainer& operator=(const CFGBlockContainer &from) {
-    cfg_block_ = from.cfg_block_ ; 
+  CFGBlockContainer &operator=(const CFGBlockContainer &from) {
+    cfg_block_ = from.cfg_block_;
     split_index_ = from.split_index_;
     return *this;
   }
@@ -73,7 +94,7 @@ class SplitCFG {
   SplitCFG(clang::ASTContext &context, const clang::CXXMethodDecl *cxx_decl);
 
   void split_wait_blocks(const clang::CXXMethodDecl *cxx_decl);
-  void dfs_pop_on_wait(const clang::CFGBlock *BB,
+  void dfs_pop_on_wait(const BigCFGBlock &bbb,
                        llvm::SmallVectorImpl<BigCFGBlock> &waits_in_stack,
                        llvm::SmallSet<BigCFGBlock, 8> &visited_waits);
 
