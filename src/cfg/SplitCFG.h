@@ -13,7 +13,7 @@ namespace systemc_clang {
 /// SplitCFG
 /// ===========================================
 class SplitCFG {
- private:
+ public:
   using VectorCFGBlock = llvm::SmallVector<const clang::CFGBlock *>;
 
  private:
@@ -37,6 +37,8 @@ class SplitCFG {
   SplitCFG(clang::ASTContext &context);
   SplitCFG(clang::ASTContext &context, const clang::CXXMethodDecl *cxx_decl);
 
+  const llvm::SmallVector<VectorCFGBlock> &getPathsFound() ;
+ 
   void split_wait_blocks(const clang::CXXMethodDecl *cxx_decl);
   void dfs_pop_on_wait(
       const clang::CFGBlock *BB,

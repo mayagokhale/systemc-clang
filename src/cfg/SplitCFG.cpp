@@ -118,6 +118,10 @@ bool SplitCFG::isWait(const clang::CFGBlock& block) const {
   return false;
 };
 
+const llvm::SmallVector<SplitCFG::VectorCFGBlock>& SplitCFG::getPathsFound() {
+  return paths_found_;
+}
+
 void SplitCFG::generate_paths() {
   /// Set of visited wait blocks.
   llvm::SmallPtrSet<const clang::CFGBlock*, 8> visited_waits;

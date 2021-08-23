@@ -100,5 +100,19 @@ TEST_CASE("Simple thread test", "[threads]") {
     // scfg.build_sccfg( method );
     scfg.generate_paths();
     scfg.dump();
+
+    auto paths_found{ scfg.getPathsFound()};
+
+    // path
+    unsigned int id{0};
+    for (auto const& pt: paths_found) {
+      llvm::dbgs() << "S" << id << ": ";
+      for (auto const& block : pt) {
+        llvm::dbgs() << block->getBlockID() << "  ";
+      }
+      llvm::dbgs() << "\n";
+      ++id;
+    }
+
   }
 }
