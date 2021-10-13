@@ -1,0 +1,168 @@
+$date
+	Wed Oct 13 16:08:17 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var reg 1 ! arst $end
+$var reg 1 " clock $end
+$scope module dut $end
+$var wire 1 " clk $end
+$var wire 32 # in1 [31:0] $end
+$var wire 1 ! reset $end
+$var reg 32 $ _scclang_next_state_single_wait [31:0] $end
+$var reg 32 % _scclang_next_wait_counter_single_wait [31:0] $end
+$var reg 32 & _scclang_save_wait_next_state_single_wait [31:0] $end
+$var reg 32 ' _scclang_state_single_wait [31:0] $end
+$var reg 32 ( _scclang_wait_counter_single_wait [31:0] $end
+$var reg 32 ) _scclang_wait_next_state_single_wait [31:0] $end
+$var reg 32 * k [31:0] $end
+$var reg 32 + out1 [31:0] $end
+$scope begin single_wait $end
+$upscope $end
+$scope begin single_wait_state_update $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx +
+bx *
+bx )
+bx (
+bx '
+bx &
+bx %
+bx $
+bz #
+0"
+1!
+$end
+#5
+1"
+#10
+b1 *
+b1 &
+b100 %
+b10 $
+b0 (
+b0 )
+b0 '
+0"
+0!
+#15
+1"
+#20
+0"
+1!
+#25
+b11 %
+b1 )
+b100 (
+b10 '
+1"
+#30
+0"
+#35
+b10 %
+b11 (
+1"
+#40
+0"
+#45
+b1 %
+b10 (
+1"
+#50
+0"
+#55
+b1 $
+b0 %
+b1 (
+1"
+#60
+0"
+#65
+b10 $
+b100 %
+b1 *
+b0 (
+b1 '
+1"
+#70
+0"
+#75
+b11 %
+b100 (
+b10 '
+1"
+#80
+0"
+#85
+b10 %
+b11 (
+1"
+#90
+0"
+#95
+b1 %
+b10 (
+1"
+#100
+0"
+#105
+b1 $
+b0 %
+b1 (
+1"
+#110
+0"
+#115
+b10 $
+b100 %
+b1 *
+b0 (
+b1 '
+1"
+#120
+0"
+#125
+b11 %
+b100 (
+b10 '
+1"
+#130
+0"
+#135
+b10 %
+b11 (
+1"
+#140
+0"
+#145
+b1 %
+b10 (
+1"
+#150
+0"
+#155
+b1 $
+b0 %
+b1 (
+1"
+#160
+0"
+#165
+b10 $
+b100 %
+b1 *
+b0 (
+b1 '
+1"
+#170
+0"

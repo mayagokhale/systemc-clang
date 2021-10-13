@@ -1,0 +1,35 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Oct 13 20:11:03 2021
+[*]
+[dumpfile] "/Users/allen/working/systemc-clang/single-wait.vcd"
+[dumpfile_mtime] "Wed Oct 13 20:08:17 2021"
+[dumpfile_size] 1459
+[savefile] "/Users/allen/working/systemc-clang/v0.gtkw"
+[timestart] 0
+[size] 1920 1035
+[pos] 1920 0
+*-4.881800 47 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[sst_width] 274
+[signals_width] 434
+[sst_expanded] 1
+[sst_vpaned_height] 796
+@28
+tb.dut.clk
+tb.dut.reset
+@200
+-Registers
+@22
+tb.dut._scclang_state_single_wait[31:0]
+tb.dut._scclang_wait_counter_single_wait[31:0]
+tb.dut._scclang_wait_next_state_single_wait[31:0]
+@200
+-Combinational
+@22
+tb.dut.k[31:0]
+tb.dut._scclang_next_state_single_wait[31:0]
+tb.dut._scclang_next_wait_counter_single_wait[31:0]
+tb.dut._scclang_save_wait_next_state_single_wait[31:0]
+[pattern_trace] 1
+[pattern_trace] 0
